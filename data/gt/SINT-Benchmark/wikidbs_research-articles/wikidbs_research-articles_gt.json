@@ -1,0 +1,718 @@
+{
+    "schema_by_entity": {
+        "wikidbs_research-articles_subset_1.csv": {
+            "Publication": {
+                "attributes": [
+                    "ArticleDescription",
+                    "ArticleType",
+                    "ArticleTitle",
+                    "JournalIssue",
+                    "JournalVolume",
+                    "PublicationDate",
+                    "CoAuthorName",
+                    "JournalName",
+                    "ArticleDoi",
+                    "PrimaryAuthor",
+                    "CitedWorks"
+                ],
+                "table_group": "Publication"
+            },
+            "Journal": {
+                "attributes": [
+                    "JournalName",
+                    "JournalDescription",
+                    "JournalType",
+                    "PublisherName",
+                    "InceptionDate",
+                    "JournalCountry"
+                ],
+                "table_group": "Journal"
+            }
+        },
+        "wikidbs_research-articles_subset_2.csv": {
+            "Publication": {
+                "attributes": [
+                    "paper_abstract",
+                    "publication_category",
+                    "paper_title",
+                    "issue_no",
+                    "page_range",
+                    "volume_no",
+                    "pub_date",
+                    "coauthor_list",
+                    "journal_title",
+                    "doi",
+                    "lead_author",
+                    "references_cited",
+                    "topic_keywords"
+                ],
+                "table_group": "Publication"
+            },
+            "Journal": {
+                "attributes": [
+                    "journal_title",
+                    "journal_scope",
+                    "journal_url",
+                    "journal_country"
+                ],
+                "table_group": "Journal"
+            }
+        },
+        "wikidbs_research-articles_subset_3.csv": {
+            "Publication": {
+                "attributes": [
+                    "article_summary",
+                    "article_class",
+                    "title",
+                    "journal_issue",
+                    "pages",
+                    "journal_volume",
+                    "published_at",
+                    "coauthor_name",
+                    "journal_name",
+                    "doi_id",
+                    "primary_author",
+                    "research_area"
+                ],
+                "table_group": "Publication"
+            },
+            "Journal": {
+                "attributes": [
+                    "journal_name",
+                    "journal_overview",
+                    "journal_category",
+                    "publisher",
+                    "journal_website",
+                    "journal_start_date"
+                ],
+                "table_group": "Journal"
+            }
+        },
+        "wikidbs_research-articles_subset_4.csv": {
+            "Publication": {
+                "attributes": [
+                    "article_abstract_text",
+                    "article_format",
+                    "article_headline",
+                    "issue_no",
+                    "page_range",
+                    "volume_no",
+                    "contributor_name",
+                    "journal_title",
+                    "lead_author"
+                ],
+                "table_group": "Publication"
+            },
+            "Journal": {
+                "attributes": [
+                    "journal_title",
+                    "journal_profile",
+                    "journal_classification",
+                    "journal_url",
+                    "journal_founded_on",
+                    "journal_origin_country"
+                ],
+                "table_group": "Journal"
+            }
+        },
+        "wikidbs_research-articles_subset_5.csv": {
+            "Publication": {
+                "attributes": [
+                    "article_summary",
+                    "publication_category",
+                    "paper_title",
+                    "page_count",
+                    "published_at",
+                    "journal_name",
+                    "doi",
+                    "first_author",
+                    "references",
+                    "subject_area"
+                ],
+                "table_group": "Publication"
+            },
+            "Journal": {
+                "attributes": [
+                    "journal_name",
+                    "journal_overview",
+                    "publisher",
+                    "journal_homepage",
+                    "journal_start_date"
+                ],
+                "table_group": "Journal"
+            }
+        },
+        "wikidbs_research-articles_subset_6.csv": {
+            "Publication": {
+                "attributes": [
+                    "article_abstract",
+                    "article_format",
+                    "article_heading",
+                    "issue_number",
+                    "volume_number",
+                    "publication_timestamp",
+                    "coauthor_full_name",
+                    "journal_title",
+                    "doi_identifier",
+                    "lead_author",
+                    "research_domain"
+                ],
+                "table_group": "Publication"
+            },
+            "Journal": {
+                "attributes": [
+                    "journal_title",
+                    "journal_profile",
+                    "journal_category",
+                    "journal_founding_date"
+                ],
+                "table_group": "Journal"
+            }
+        },
+        "wikidbs_research-articles_subset_7.csv": {
+            "Publication": {
+                "attributes": [
+                    "article_summary",
+                    "article_genre",
+                    "article_title",
+                    "journal_issue_no",
+                    "page_range",
+                    "journal_volume_no",
+                    "published_on",
+                    "journal_name",
+                    "first_author",
+                    "references"
+                ],
+                "table_group": "Publication"
+            },
+            "Journal": {
+                "attributes": [
+                    "journal_name",
+                    "journal_overview",
+                    "journal_class",
+                    "publisher",
+                    "journal_url",
+                    "established_on",
+                    "publisher_country"
+                ],
+                "table_group": "Journal"
+            }
+        },
+        "wikidbs_research-articles_subset_8.csv": {
+            "Publication": {
+                "attributes": [
+                    "article_abstract",
+                    "article_category",
+                    "title",
+                    "issue_number",
+                    "pages",
+                    "publication_timestamp",
+                    "coauthor",
+                    "journal_title",
+                    "doi",
+                    "primary_author",
+                    "cited_references"
+                ],
+                "table_group": "Publication"
+            },
+            "Journal": {
+                "attributes": [
+                    "journal_title",
+                    "journal_profile",
+                    "journal_category",
+                    "journal_start_date"
+                ],
+                "table_group": "Journal"
+            }
+        },
+        "Publication_NRC_publications_2012_127_125_125_125_125_125.csv": {
+            "Publication": {
+                "attributes": [
+                    "paper_title",
+                    "summary_text",
+                    "keywords_list",
+                    "lead_author",
+                    "journal_name",
+                    "vol_no",
+                    "iss_no",
+                    "pub_date",
+                    "doi",
+                    "pub_type"
+                ],
+                "table_group": "Publication"
+            }
+        },
+        "Publication_NRC_publications_2012_127_126.csv": {
+            "Publication": {
+                "attributes": [
+                    "article_title",
+                    "abstract_text",
+                    "topic_terms",
+                    "first_author",
+                    "journal_title",
+                    "volume",
+                    "issue_num",
+                    "published_on",
+                    "document_genre"
+                ],
+                "table_group": "Publication"
+            }
+        },
+        "Publication_NRC_Publications_2015_127_125_125_125_125.csv": {
+            "Publication": {
+                "attributes": [
+                    "doc_title",
+                    "subject_terms",
+                    "primary_author",
+                    "source_journal",
+                    "volume_no",
+                    "issue_id",
+                    "release_date",
+                    "content_type"
+                ],
+                "table_group": "Publication"
+            }
+        },
+        "Publication_NRC_Publications_2015_128_126_125_125_125.csv": {
+            "Publication": {
+                "attributes": [
+                    "title",
+                    "abstract",
+                    "subjects",
+                    "author_first",
+                    "journal",
+                    "vol",
+                    "issue",
+                    "publication_date",
+                    "doi",
+                    "record_type"
+                ],
+                "table_group": "Publication"
+            }
+        },
+        "Publication_nrc-peer-reviewed-publications-2018_fulltext_125_126_125_125_125_125.csv": {
+            "Publication": {
+                "attributes": [
+                    "work_title",
+                    "abstract_notes",
+                    "author_primary",
+                    "journal_source",
+                    "volume_code",
+                    "issue_code",
+                    "date_issued",
+                    "Doi",
+                    "item_category"
+                ],
+                "table_group": "Publication"
+            }
+        }
+    },
+    "schema_by_normalization": {
+        "wikidbs_research-articles_subset_1.csv": {
+            "Publication": {
+                "attributes": [
+                    "ArticleDescription",
+                    "ArticleType",
+                    "ArticleTitle",
+                    "JournalIssue",
+                    "JournalVolume",
+                    "PublicationDate",
+                    "CoAuthorName",
+                    "JournalName",
+                    "ArticleDoi",
+                    "PrimaryAuthor",
+                    "CitedWorks"
+                ],
+                "primary_key": [
+                    "ArticleDoi"
+                ],
+                "foreign_keys": {
+                    "JournalName": {
+                        "Journal": "JournalName"
+                    }
+                },
+                "table_group": "Publication"
+            },
+            "Journal": {
+                "attributes": [
+                    "JournalName",
+                    "JournalDescription",
+                    "JournalType",
+                    "PublisherName",
+                    "InceptionDate",
+                    "JournalCountry"
+                ],
+                "primary_key": [
+                    "JournalName"
+                ],
+                "foreign_keys": {},
+                "table_group": "Journal"
+            }
+        },
+        "wikidbs_research-articles_subset_2.csv": {
+            "Publication": {
+                "attributes": [
+                    "paper_abstract",
+                    "publication_category",
+                    "paper_title",
+                    "issue_no",
+                    "page_range",
+                    "volume_no",
+                    "pub_date",
+                    "coauthor_list",
+                    "journal_title",
+                    "doi",
+                    "lead_author",
+                    "references_cited",
+                    "topic_keywords"
+                ],
+                "primary_key": [
+                    "doi"
+                ],
+                "foreign_keys": {
+                    "journal_title": {
+                        "Journal": "journal_title"
+                    }
+                },
+                "table_group": "Publication"
+            },
+            "Journal": {
+                "attributes": [
+                    "journal_title",
+                    "journal_scope",
+                    "journal_url",
+                    "journal_country"
+                ],
+                "primary_key": [
+                    "journal_title"
+                ],
+                "foreign_keys": {},
+                "table_group": "Journal"
+            }
+        },
+        "wikidbs_research-articles_subset_3.csv": {
+            "Publication": {
+                "attributes": [
+                    "article_summary",
+                    "article_class",
+                    "title",
+                    "journal_issue",
+                    "pages",
+                    "journal_volume",
+                    "published_at",
+                    "coauthor_name",
+                    "journal_name",
+                    "doi_id",
+                    "primary_author",
+                    "research_area"
+                ],
+                "primary_key": [
+                    "doi_id"
+                ],
+                "foreign_keys": {
+                    "journal_name": {
+                        "Journal": "journal_name"
+                    }
+                },
+                "table_group": "Publication"
+            },
+            "Journal": {
+                "attributes": [
+                    "journal_name",
+                    "journal_overview",
+                    "journal_category",
+                    "publisher",
+                    "journal_website",
+                    "journal_start_date"
+                ],
+                "primary_key": [
+                    "journal_name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Journal"
+            }
+        },
+        "wikidbs_research-articles_subset_4.csv": {
+            "Publication": {
+                "attributes": [
+                    "article_abstract_text",
+                    "article_format",
+                    "article_headline",
+                    "issue_no",
+                    "page_range",
+                    "volume_no",
+                    "contributor_name",
+                    "journal_title",
+                    "lead_author"
+                ],
+                "primary_key": [
+                    "article_headline"
+                ],
+                "foreign_keys": {
+                    "journal_title": {
+                        "Journal": "journal_title"
+                    }
+                },
+                "table_group": "Publication"
+            },
+            "Journal": {
+                "attributes": [
+                    "journal_title",
+                    "journal_profile",
+                    "journal_classification",
+                    "journal_url",
+                    "journal_founded_on",
+                    "journal_origin_country"
+                ],
+                "primary_key": [
+                    "journal_title"
+                ],
+                "foreign_keys": {},
+                "table_group": "Journal"
+            }
+        },
+        "wikidbs_research-articles_subset_5.csv": {
+            "Publication": {
+                "attributes": [
+                    "article_summary",
+                    "publication_category",
+                    "paper_title",
+                    "page_count",
+                    "published_at",
+                    "journal_name",
+                    "doi",
+                    "first_author",
+                    "references",
+                    "subject_area"
+                ],
+                "primary_key": [
+                    "doi"
+                ],
+                "foreign_keys": {
+                    "journal_name": {
+                        "Journal": "journal_name"
+                    }
+                },
+                "table_group": "Publication"
+            },
+            "Journal": {
+                "attributes": [
+                    "journal_name",
+                    "journal_overview",
+                    "publisher",
+                    "journal_homepage",
+                    "journal_start_date"
+                ],
+                "primary_key": [
+                    "journal_name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Journal"
+            }
+        },
+        "wikidbs_research-articles_subset_6.csv": {
+            "Publication": {
+                "attributes": [
+                    "article_abstract",
+                    "article_format",
+                    "article_heading",
+                    "issue_number",
+                    "volume_number",
+                    "publication_timestamp",
+                    "coauthor_full_name",
+                    "journal_title",
+                    "doi_identifier",
+                    "lead_author",
+                    "research_domain"
+                ],
+                "primary_key": [
+                    "doi_identifier"
+                ],
+                "foreign_keys": {
+                    "journal_title": {
+                        "Journal": "journal_title"
+                    }
+                },
+                "table_group": "Publication"
+            },
+            "Journal": {
+                "attributes": [
+                    "journal_title",
+                    "journal_profile",
+                    "journal_category",
+                    "journal_founding_date"
+                ],
+                "primary_key": [
+                    "journal_title"
+                ],
+                "foreign_keys": {},
+                "table_group": "Journal"
+            }
+        },
+        "wikidbs_research-articles_subset_7.csv": {
+            "Publication": {
+                "attributes": [
+                    "article_summary",
+                    "article_genre",
+                    "article_title",
+                    "journal_issue_no",
+                    "page_range",
+                    "journal_volume_no",
+                    "published_on",
+                    "journal_name",
+                    "first_author",
+                    "references"
+                ],
+                "primary_key": [
+                    "article_title"
+                ],
+                "foreign_keys": {
+                    "journal_name": {
+                        "Journal": "journal_name"
+                    }
+                },
+                "table_group": "Publication"
+            },
+            "Journal": {
+                "attributes": [
+                    "journal_name",
+                    "journal_overview",
+                    "journal_class",
+                    "publisher",
+                    "journal_url",
+                    "established_on",
+                    "publisher_country"
+                ],
+                "primary_key": [
+                    "journal_name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Journal"
+            }
+        },
+        "wikidbs_research-articles_subset_8.csv": {
+            "Publication": {
+                "attributes": [
+                    "article_abstract",
+                    "article_category",
+                    "title",
+                    "issue_number",
+                    "pages",
+                    "publication_timestamp",
+                    "coauthor",
+                    "journal_title",
+                    "doi",
+                    "primary_author",
+                    "cited_references"
+                ],
+                "primary_key": [
+                    "doi"
+                ],
+                "foreign_keys": {
+                    "journal_title": {
+                        "Journal": "journal_title"
+                    }
+                },
+                "table_group": "Publication"
+            },
+            "Journal": {
+                "attributes": [
+                    "journal_title",
+                    "journal_profile",
+                    "journal_category",
+                    "journal_start_date"
+                ],
+                "primary_key": [
+                    "journal_title"
+                ],
+                "foreign_keys": {},
+                "table_group": "Journal"
+            }
+        },
+        "Publication_NRC_publications_2012_127_125_125_125_125_125.csv": {
+            "Publication": {
+                "attributes": [
+                    "Title",
+                    "Abstract",
+                    "Subject",
+                    "F.Author",
+                    "Journal_title",
+                    "Volume",
+                    "Issue",
+                    "Date_published",
+                    "Doi",
+                    "Genre"
+                ],
+                "table_group": "Publication"
+            }
+        },
+        "Publication_NRC_publications_2012_127_126.csv": {
+            "Publication": {
+                "attributes": [
+                    "Title",
+                    "Abstract",
+                    "Subject",
+                    "F.Author",
+                    "Journal_title",
+                    "Volume",
+                    "Issue",
+                    "Date_published",
+                    "Doi",
+                    "Genre"
+                ],
+                "table_group": "Publication"
+            }
+        },
+        "Publication_NRC_Publications_2015_127_125_125_125_125.csv": {
+            "Publication": {
+                "attributes": [
+                    "Title",
+                    "Abstract",
+                    "Subject",
+                    "F.Author",
+                    "Journal_title",
+                    "Volume",
+                    "Issue",
+                    "Date_published",
+                    "Doi",
+                    "Genre"
+                ],
+                "table_group": "Publication"
+            }
+        },
+        "Publication_NRC_Publications_2015_128_126_125_125_125.csv": {
+            "Publication": {
+                "attributes": [
+                    "Title",
+                    "Abstract",
+                    "Subject",
+                    "F.Author",
+                    "Journal_title",
+                    "Volume",
+                    "Issue",
+                    "Date_published",
+                    "Doi",
+                    "Genre"
+                ],
+                "table_group": "Publication"
+            }
+        },
+        "Publication_nrc-peer-reviewed-publications-2018_fulltext_125_126_125_125_125_125.csv": {
+            "Publication": {
+                "attributes": [
+                    "Title",
+                    "Abstract",
+                    "Subject",
+                    "F.Author",
+                    "Journal_title",
+                    "Volume",
+                    "Issue",
+                    "Date_published",
+                    "Doi",
+                    "Genre"
+                ],
+                "table_group": "Publication"
+            }
+        }
+    }
+}

@@ -1,0 +1,364 @@
+{
+    "column_mappings": {
+        "Chicago_Park_District__Movies_in_the_Parks_2014.csv": {
+            "EventName": "EventName",
+            "MovieName": "MovieName",
+            "ParkName": "ParkName",
+            "ZipCode": "ZipCode",
+            "Phone": "Phone",
+            "StartDate": "StartDate",
+            "EndDate": "EndDate",
+            "EventUrl": "EventUrl",
+            "ParkUrl": "ParkUrl",
+            "Community": "Community",
+            "MovieClosedCaption": "MovieClosedCaption",
+            "MovieRating": "MovieRating",
+            "Location 1": "Location"
+        },
+        "Chicago_Park_District__Movies_in_the_Parks_2015.csv": {
+            "EventName": "EventName",
+            "MovieName": "MovieName",
+            "ParkName": "ParkName",
+            "ZipCode": "ZipCode",
+            "Phone": "Phone",
+            "StartDate": "StartDate",
+            "EndDate": "EndDate",
+            "ContactName": "ContactName",
+            "ContactEmail": "ContactEmail",
+            "EventUrl": "EventUrl",
+            "ParkUrl": "ParkUrl",
+            "Community": "Community",
+            "MovieClosedCaption": "MovieClosedCaption",
+            "MovieRating": "MovieRating",
+            "Location 1": "Location"
+        },
+        "Chicago_Park_District__Movies_in_the_Parks_2016.csv": {
+            "EventName": "EventName",
+            "MovieName": "MovieName",
+            "MovieClosedCaption": "MovieClosedCaption",
+            "MovieRating": "MovieRating",
+            "Location": "ParkName",
+            "Zipcode": "ZipCode",
+            "Phone": "Phone",
+            "ContactName": "ContactName",
+            "ContactEmail": "ContactEmail",
+            "Location 1": "Location"
+        },
+        "Chicago_Park_District__Movies_in_the_Parks_2017.csv": {
+            "MovieName": "MovieName",
+            "ParkName": "ParkName",
+            "Underwriter": "Underwriter",
+            "Phone": "Phone",
+            "MovieRating": "MovieRating",
+            "Location": "Location"
+        },
+        "Chicago_Park_District__Movies_in_the_Parks_2018.csv": {
+            "MovieName": "MovieName",
+            "ParkName": "ParkName",
+            "Underwriter": "Underwriter",
+            "Phone": "Phone",
+            "MovieRating": "MovieRating",
+            "Location": "Location"
+        },
+        "Chicago_Park_District__Movies_in_the_Parks_2019.csv": {
+            "MovieName": "MovieName",
+            "ParkName": "ParkName",
+            "Underwriter": "Underwriter",
+            "Phone": "Phone",
+            "Rating": "MovieRating",
+            "Location": "Location"
+        }
+    },
+    "integrated_schema_by_entity": {
+        "Event": {
+            "attributes": [
+                "MovieName",
+                "ContactEmail",
+                "Phone",
+                "ContactName",
+                "MovieRating",
+                "EventUrl",
+                "Location",
+                "EventName",
+                "EndDate",
+                "ParkName",
+                "Underwriter",
+                "StartDate"
+            ],
+            "column_mappings_by_table": {
+                "Chicago_Park_District__Movies_in_the_Parks_2014.csv": {
+                    "EventName": "EventName",
+                    "MovieName": "MovieName",
+                    "ParkName": "ParkName",
+                    "Phone": "Phone",
+                    "StartDate": "StartDate",
+                    "EndDate": "EndDate",
+                    "EventUrl": "EventUrl"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2015.csv": {
+                    "EventName": "EventName",
+                    "MovieName": "MovieName",
+                    "ParkName": "ParkName",
+                    "Phone": "Phone",
+                    "StartDate": "StartDate",
+                    "EndDate": "EndDate",
+                    "ContactName": "ContactName",
+                    "ContactEmail": "ContactEmail",
+                    "EventUrl": "EventUrl"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2016.csv": {
+                    "EventName": "EventName",
+                    "MovieName": "MovieName",
+                    "Location": "ParkName",
+                    "Phone": "Phone",
+                    "ContactName": "ContactName",
+                    "ContactEmail": "ContactEmail"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2017.csv": {
+                    "MovieName": "MovieName",
+                    "ParkName": "ParkName",
+                    "Underwriter": "Underwriter",
+                    "Phone": "Phone",
+                    "MovieRating": "MovieRating",
+                    "Location": "Location"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2018.csv": {
+                    "MovieName": "MovieName",
+                    "ParkName": "ParkName",
+                    "Underwriter": "Underwriter",
+                    "Phone": "Phone",
+                    "MovieRating": "MovieRating",
+                    "Location": "Location"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2019.csv": {
+                    "MovieName": "MovieName",
+                    "ParkName": "ParkName",
+                    "Underwriter": "Underwriter",
+                    "Phone": "Phone",
+                    "Rating": "MovieRating",
+                    "Location": "Location"
+                }
+            }
+        },
+        "Movie": {
+            "attributes": [
+                "MovieName",
+                "MovieClosedCaption",
+                "MovieRating"
+            ],
+            "column_mappings_by_table": {
+                "Chicago_Park_District__Movies_in_the_Parks_2014.csv": {
+                    "MovieName": "MovieName",
+                    "MovieClosedCaption": "MovieClosedCaption",
+                    "MovieRating": "MovieRating"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2015.csv": {
+                    "MovieName": "MovieName",
+                    "MovieClosedCaption": "MovieClosedCaption",
+                    "MovieRating": "MovieRating"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2016.csv": {
+                    "MovieName": "MovieName",
+                    "MovieClosedCaption": "MovieClosedCaption",
+                    "MovieRating": "MovieRating"
+                }
+            }
+        },
+        "Location": {
+            "attributes": [
+                "ParkUrl",
+                "Community",
+                "Location",
+                "ParkName",
+                "ZipCode"
+            ],
+            "column_mappings_by_table": {
+                "Chicago_Park_District__Movies_in_the_Parks_2014.csv": {
+                    "ParkName": "ParkName",
+                    "ZipCode": "ZipCode",
+                    "ParkUrl": "ParkUrl",
+                    "Community": "Community",
+                    "Location 1": "Location"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2015.csv": {
+                    "ParkName": "ParkName",
+                    "ZipCode": "ZipCode",
+                    "ParkUrl": "ParkUrl",
+                    "Community": "Community",
+                    "Location 1": "Location"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2016.csv": {
+                    "Location": "ParkName",
+                    "Zipcode": "ZipCode",
+                    "Location 1": "Location"
+                }
+            }
+        }
+    },
+    "integrated_schema_by_table": {
+        "Event": {
+            "attributes": [
+                "MovieName",
+                "Phone",
+                "ContactName",
+                "EventUrl",
+                "EventName",
+                "EndDate",
+                "ParkName",
+                "Underwriter",
+                "StartDate"
+            ],
+            "foreign_keys": {
+                "MovieName": {
+                    "Movie": "MovieName"
+                },
+                "Location": {
+                    "Location": "Location"
+                }
+            },
+            "column_mappings_by_table": {
+                "Chicago_Park_District__Movies_in_the_Parks_2014.csv": {
+                    "EventName": "EventName",
+                    "MovieName": "MovieName",
+                    "ParkName": "ParkName",
+                    "Phone": "Phone",
+                    "StartDate": "StartDate",
+                    "EndDate": "EndDate",
+                    "EventUrl": "EventUrl"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2015.csv": {
+                    "EventName": "EventName",
+                    "MovieName": "MovieName",
+                    "ParkName": "ParkName",
+                    "Phone": "Phone",
+                    "StartDate": "StartDate",
+                    "EndDate": "EndDate",
+                    "ContactName": "ContactName",
+                    "EventUrl": "EventUrl"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2016.csv": {
+                    "EventName": "EventName",
+                    "MovieName": "MovieName",
+                    "Location": "ParkName",
+                    "Phone": "Phone",
+                    "ContactName": "ContactName"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2017.csv": {
+                    "MovieName": "MovieName",
+                    "ParkName": "ParkName",
+                    "Underwriter": "Underwriter",
+                    "Phone": "Phone"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2018.csv": {
+                    "MovieName": "MovieName",
+                    "ParkName": "ParkName",
+                    "Underwriter": "Underwriter",
+                    "Phone": "Phone"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2019.csv": {
+                    "MovieName": "MovieName",
+                    "ParkName": "ParkName",
+                    "Underwriter": "Underwriter",
+                    "Phone": "Phone"
+                }
+            }
+        },
+        "Movie": {
+            "attributes": [
+                "MovieName",
+                "MovieClosedCaption",
+                "MovieRating"
+            ],
+            "foreign_keys": {},
+            "column_mappings_by_table": {
+                "Chicago_Park_District__Movies_in_the_Parks_2014.csv": {
+                    "MovieName": "MovieName",
+                    "MovieClosedCaption": "MovieClosedCaption",
+                    "MovieRating": "MovieRating"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2015.csv": {
+                    "MovieName": "MovieName",
+                    "MovieClosedCaption": "MovieClosedCaption",
+                    "MovieRating": "MovieRating"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2016.csv": {
+                    "MovieName": "MovieName",
+                    "MovieClosedCaption": "MovieClosedCaption",
+                    "MovieRating": "MovieRating"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2017.csv": {
+                    "MovieName": "MovieName",
+                    "MovieRating": "MovieRating"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2018.csv": {
+                    "MovieName": "MovieName",
+                    "MovieRating": "MovieRating"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2019.csv": {
+                    "MovieName": "MovieName",
+                    "Rating": "MovieRating"
+                }
+            }
+        },
+        "Contact": {
+            "attributes": [
+                "ContactEmail",
+                "ContactName"
+            ],
+            "foreign_keys": {},
+            "column_mappings_by_table": {
+                "Chicago_Park_District__Movies_in_the_Parks_2015.csv": {
+                    "ContactName": "ContactName",
+                    "ContactEmail": "ContactEmail"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2016.csv": {
+                    "ContactName": "ContactName",
+                    "ContactEmail": "ContactEmail"
+                }
+            }
+        },
+        "Location": {
+            "attributes": [
+                "ParkUrl",
+                "Community",
+                "Location",
+                "ParkName",
+                "ZipCode"
+            ],
+            "foreign_keys": {},
+            "column_mappings_by_table": {
+                "Chicago_Park_District__Movies_in_the_Parks_2014.csv": {
+                    "ParkName": "ParkName",
+                    "ZipCode": "ZipCode",
+                    "ParkUrl": "ParkUrl",
+                    "Community": "Community",
+                    "Location 1": "Location"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2015.csv": {
+                    "ParkName": "ParkName",
+                    "ZipCode": "ZipCode",
+                    "ParkUrl": "ParkUrl",
+                    "Community": "Community",
+                    "Location 1": "Location"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2016.csv": {
+                    "Location": "ParkName",
+                    "Zipcode": "ZipCode",
+                    "Location 1": "Location"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2017.csv": {
+                    "ParkName": "ParkName",
+                    "Location": "Location"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2018.csv": {
+                    "ParkName": "ParkName",
+                    "Location": "Location"
+                },
+                "Chicago_Park_District__Movies_in_the_Parks_2019.csv": {
+                    "ParkName": "ParkName",
+                    "Location": "Location"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,338 @@
+{
+    "schema_by_entity": {
+        "wikidbs_monuments_subset_1.csv": {
+            "Monument": {
+                "attributes": [
+                    "MonumentName",
+                    "MonumentDescription",
+                    "Latitude",
+                    "Longitude",
+                    "LocationName",
+                    "StreetAddress"
+                ],
+                "table_group": "Monument"
+            },
+            "Location": {
+                "attributes": [
+                    "LocationName",
+                    "LocationDescription",
+                    "TimeZone",
+                    "PostalCode",
+                    "LocationType"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "wikidbs_monuments_subset_2.csv": {
+            "Monument": {
+                "attributes": [
+                    "heritage_site_name",
+                    "heritage_site_summary",
+                    "lat_deg",
+                    "admin_area_name",
+                    "heritage_category"
+                ],
+                "table_group": "Monument"
+            },
+            "Location": {
+                "attributes": [
+                    "admin_area_name",
+                    "admin_area_description",
+                    "country_name",
+                    "tz_offset",
+                    "postal_code",
+                    "admin_area_type"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "wikidbs_monuments_subset_3.csv": {
+            "Monument": {
+                "attributes": [
+                    "monument_title",
+                    "monument_details",
+                    "latitude",
+                    "longitude",
+                    "locality_name",
+                    "designation_type",
+                    "address_line"
+                ],
+                "table_group": "Monument"
+            },
+            "Location": {
+                "attributes": [
+                    "locality_name",
+                    "locality_description",
+                    "country_full_name",
+                    "zip_code",
+                    "locality_type"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "wikidbs_monuments_subset_4.csv": {
+            "Monument": {
+                "attributes": [
+                    "site_name",
+                    "site_summary",
+                    "lon",
+                    "admin_area_name",
+                    "heritage_status",
+                    "street_address"
+                ],
+                "table_group": "Monument"
+            },
+            "Location": {
+                "attributes": [
+                    "admin_area_name",
+                    "admin_area_description",
+                    "country_name"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "wikidbs_monuments_subset_5.csv": {
+            "Monument": {
+                "attributes": [
+                    "monument_title",
+                    "monument_details",
+                    "latitude_deg",
+                    "longitude_deg",
+                    "locality_name",
+                    "monument_category",
+                    "designation_label",
+                    "address_line"
+                ],
+                "table_group": "Monument"
+            },
+            "Location": {
+                "attributes": [
+                    "locality_name",
+                    "locality_description",
+                    "country",
+                    "tz_offset",
+                    "location_type"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "wikidbs_monuments_subset_6.csv": {
+            "Monument": {
+                "attributes": [
+                    "site_name",
+                    "site_summary",
+                    "lat",
+                    "lon",
+                    "admin_area_name"
+                ],
+                "table_group": "Monument"
+            },
+            "Location": {
+                "attributes": [
+                    "admin_area_name",
+                    "admin_area_summary",
+                    "country_name",
+                    "postal_code",
+                    "admin_area_type"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "Archaeological_Monuments.csv": {
+            "Monument": {
+                "attributes": [
+                    "X",
+                    "Y",
+                    "RecordType",
+                    "MonUID",
+                    "Name",
+                    "MonType"
+                ],
+                "table_group": "Monument"
+            }
+        },
+        "Monuments.csv": {
+            "Monument": {
+                "attributes": [
+                    "Roadname and Road ID",
+                    "Asset ID (Identifier)",
+                    "Description (Monument Details)",
+                    "Monument Descripti (Monument Details)",
+                    "Monument Type (Monument Details)",
+                    "Monument Material (Monument Details)",
+                    "Easting (Location/Map Coordinates)",
+                    "Northing (Location/Map Coordinates)"
+                ],
+                "table_group": "Monument"
+            }
+        }
+    },
+    "schema_by_normalization": {
+        "wikidbs_monuments_subset_1.csv": {
+            "Monument": {
+                "attributes": [
+                    "MonumentName",
+                    "MonumentDescription",
+                    "Latitude",
+                    "Longitude",
+                    "LocationName",
+                    "StreetAddress"
+                ],
+                "table_group": "Monument"
+            },
+            "Location": {
+                "attributes": [
+                    "LocationName",
+                    "LocationDescription",
+                    "TimeZone",
+                    "PostalCode",
+                    "LocationType"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "wikidbs_monuments_subset_2.csv": {
+            "Monument": {
+                "attributes": [
+                    "heritage_site_name",
+                    "heritage_site_summary",
+                    "lat_deg",
+                    "admin_area_name",
+                    "heritage_category"
+                ],
+                "table_group": "Monument"
+            },
+            "Location": {
+                "attributes": [
+                    "admin_area_name",
+                    "admin_area_description",
+                    "country_name",
+                    "tz_offset",
+                    "postal_code",
+                    "admin_area_type"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "wikidbs_monuments_subset_3.csv": {
+            "Monument": {
+                "attributes": [
+                    "monument_title",
+                    "monument_details",
+                    "latitude",
+                    "longitude",
+                    "locality_name",
+                    "designation_type",
+                    "address_line"
+                ],
+                "table_group": "Monument"
+            },
+            "Location": {
+                "attributes": [
+                    "locality_name",
+                    "locality_description",
+                    "country_full_name",
+                    "zip_code",
+                    "locality_type"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "wikidbs_monuments_subset_4.csv": {
+            "Monument": {
+                "attributes": [
+                    "site_name",
+                    "site_summary",
+                    "lon",
+                    "admin_area_name",
+                    "heritage_status",
+                    "street_address"
+                ],
+                "table_group": "Monument"
+            },
+            "Location": {
+                "attributes": [
+                    "admin_area_name",
+                    "admin_area_description",
+                    "country_name"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "wikidbs_monuments_subset_5.csv": {
+            "Monument": {
+                "attributes": [
+                    "monument_title",
+                    "monument_details",
+                    "latitude_deg",
+                    "longitude_deg",
+                    "locality_name",
+                    "monument_category",
+                    "designation_label",
+                    "address_line"
+                ],
+                "table_group": "Monument"
+            },
+            "Location": {
+                "attributes": [
+                    "locality_name",
+                    "locality_description",
+                    "country",
+                    "tz_offset",
+                    "location_type"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "wikidbs_monuments_subset_6.csv": {
+            "Monument": {
+                "attributes": [
+                    "site_name",
+                    "site_summary",
+                    "lat",
+                    "lon",
+                    "admin_area_name"
+                ],
+                "table_group": "Monument"
+            },
+            "Location": {
+                "attributes": [
+                    "admin_area_name",
+                    "admin_area_summary",
+                    "country_name",
+                    "postal_code",
+                    "admin_area_type"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "Archaeological_Monuments.csv": {
+            "Monument": {
+                "attributes": [
+                    "X",
+                    "Y",
+                    "RecordType",
+                    "MonUID",
+                    "Name",
+                    "MonType"
+                ],
+                "table_group": "Monument"
+            }
+        },
+        "Monuments.csv": {
+            "Monument": {
+                "attributes": [
+                    "Roadname and Road ID",
+                    "Asset ID (Identifier)",
+                    "Description (Monument Details)",
+                    "Monument Descripti (Monument Details)",
+                    "Monument Type (Monument Details)",
+                    "Monument Material (Monument Details)",
+                    "Easting (Location/Map Coordinates)",
+                    "Northing (Location/Map Coordinates)"
+                ],
+                "table_group": "Monument"
+            }
+        }
+    }
+}

@@ -1,0 +1,710 @@
+{
+    "column_mappings": {
+        "wikidbs_research-articles_subset_1.csv": {
+            "ArticleDescription": "ArticleDescription",
+            "ArticleType": "ArticleType",
+            "ArticleTitle": "ArticleTitle",
+            "JournalIssue": "JournalIssue",
+            "JournalVolume": "JournalVolume",
+            "PublicationDate": "PublicationDate",
+            "CoAuthorName": "CoAuthorName",
+            "JournalName": "JournalName",
+            "ArticleDoi": "ArticleDoi",
+            "PrimaryAuthor": "PrimaryAuthor",
+            "CitedWorks": "CitedWorks",
+            "JournalDescription": "JournalDescription",
+            "JournalType": "JournalType",
+            "PublisherName": "PublisherName",
+            "InceptionDate": "InceptionDate",
+            "JournalCountry": "JournalCountry"
+        },
+        "wikidbs_research-articles_subset_2.csv": {
+            "paper_abstract": "ArticleDescription",
+            "publication_category": "ArticleType",
+            "paper_title": "ArticleTitle",
+            "issue_no": "JournalIssue",
+            "page_range": "ArticlePages",
+            "volume_no": "JournalVolume",
+            "pub_date": "PublicationDate",
+            "coauthor_list": "CoAuthorName",
+            "journal_title": "JournalName",
+            "doi": "ArticleDoi",
+            "lead_author": "PrimaryAuthor",
+            "references_cited": "CitedWorks",
+            "topic_keywords": "ResearchSubject",
+            "journal_scope": "JournalDescription",
+            "journal_url": "JournalWebsite",
+            "journal_country": "JournalCountry"
+        },
+        "wikidbs_research-articles_subset_3.csv": {
+            "article_summary": "ArticleDescription",
+            "article_class": "ArticleType",
+            "title": "ArticleTitle",
+            "journal_issue": "JournalIssue",
+            "pages": "ArticlePages",
+            "journal_volume": "JournalVolume",
+            "published_at": "PublicationDate",
+            "coauthor_name": "CoAuthorName",
+            "journal_name": "JournalName",
+            "doi_id": "ArticleDoi",
+            "primary_author": "PrimaryAuthor",
+            "research_area": "ResearchSubject",
+            "journal_overview": "JournalDescription",
+            "journal_category": "JournalType",
+            "publisher": "PublisherName",
+            "journal_website": "JournalWebsite",
+            "journal_start_date": "InceptionDate"
+        },
+        "wikidbs_research-articles_subset_4.csv": {
+            "article_abstract_text": "ArticleDescription",
+            "article_format": "ArticleType",
+            "article_headline": "ArticleTitle",
+            "issue_no": "JournalIssue",
+            "page_range": "ArticlePages",
+            "volume_no": "JournalVolume",
+            "contributor_name": "CoAuthorName",
+            "journal_title": "JournalName",
+            "lead_author": "PrimaryAuthor",
+            "journal_profile": "JournalDescription",
+            "journal_classification": "JournalType",
+            "journal_url": "JournalWebsite",
+            "journal_founded_on": "InceptionDate",
+            "journal_origin_country": "JournalCountry"
+        },
+        "wikidbs_research-articles_subset_5.csv": {
+            "article_summary": "ArticleDescription",
+            "publication_category": "ArticleType",
+            "paper_title": "ArticleTitle",
+            "page_count": "ArticlePages",
+            "published_at": "PublicationDate",
+            "journal_name": "JournalName",
+            "doi": "ArticleDoi",
+            "first_author": "PrimaryAuthor",
+            "references": "CitedWorks",
+            "subject_area": "ResearchSubject",
+            "journal_overview": "JournalDescription",
+            "publisher": "PublisherName",
+            "journal_homepage": "JournalWebsite",
+            "journal_start_date": "InceptionDate"
+        },
+        "wikidbs_research-articles_subset_6.csv": {
+            "article_abstract": "ArticleDescription",
+            "article_format": "ArticleType",
+            "article_heading": "ArticleTitle",
+            "issue_number": "JournalIssue",
+            "volume_number": "JournalVolume",
+            "publication_timestamp": "PublicationDate",
+            "coauthor_full_name": "CoAuthorName",
+            "journal_title": "JournalName",
+            "doi_identifier": "ArticleDoi",
+            "lead_author": "PrimaryAuthor",
+            "research_domain": "ResearchSubject",
+            "journal_profile": "JournalDescription",
+            "journal_category": "JournalType",
+            "journal_founding_date": "InceptionDate"
+        },
+        "wikidbs_research-articles_subset_7.csv": {
+            "article_summary": "ArticleDescription",
+            "article_genre": "ArticleType",
+            "article_title": "ArticleTitle",
+            "journal_issue_no": "JournalIssue",
+            "page_range": "ArticlePages",
+            "journal_volume_no": "JournalVolume",
+            "published_on": "PublicationDate",
+            "journal_name": "JournalName",
+            "first_author": "PrimaryAuthor",
+            "references": "CitedWorks",
+            "journal_overview": "JournalDescription",
+            "journal_class": "JournalType",
+            "publisher": "PublisherName",
+            "journal_url": "JournalWebsite",
+            "established_on": "InceptionDate",
+            "publisher_country": "JournalCountry"
+        },
+        "wikidbs_research-articles_subset_8.csv": {
+            "article_abstract": "ArticleDescription",
+            "article_category": "ArticleType",
+            "title": "ArticleTitle",
+            "issue_number": "JournalIssue",
+            "pages": "ArticlePages",
+            "publication_timestamp": "PublicationDate",
+            "coauthor": "CoAuthorName",
+            "journal_title": "JournalName",
+            "doi": "ArticleDoi",
+            "primary_author": "PrimaryAuthor",
+            "cited_references": "CitedWorks",
+            "journal_profile": "JournalDescription",
+            "journal_category": "JournalType",
+            "journal_start_date": "InceptionDate"
+        },
+        "Publication_NRC_publications_2012_127_125_125_125_125_125.csv": {
+            "paper_title": "ArticleTitle",
+            "summary_text": "Abstract",
+            "keywords_list": "ResearchSubject",
+            "lead_author": "PrimaryAuthor",
+            "journal_name": "JournalName",
+            "vol_no": "JournalVolume",
+            "iss_no": "JournalIssue",
+            "pub_date": "PublicationDate",
+            "doi": "ArticleDoi",
+            "pub_type": "ArticleType"
+        },
+        "Publication_NRC_publications_2012_127_126.csv": {
+            "article_title": "ArticleTitle",
+            "abstract_text": "Abstract",
+            "topic_terms": "ResearchSubject",
+            "first_author": "PrimaryAuthor",
+            "journal_title": "JournalName",
+            "volume": "JournalVolume",
+            "issue_num": "JournalIssue",
+            "published_on": "PublicationDate",
+            "document_genre": "ArticleType"
+        },
+        "Publication_NRC_Publications_2015_127_125_125_125_125.csv": {
+            "doc_title": "ArticleTitle",
+            "subject_terms": "ResearchSubject",
+            "primary_author": "PrimaryAuthor",
+            "source_journal": "JournalName",
+            "volume_no": "JournalVolume",
+            "issue_id": "JournalIssue",
+            "release_date": "PublicationDate",
+            "content_type": "ArticleType"
+        },
+        "Publication_NRC_Publications_2015_128_126_125_125_125.csv": {
+            "title": "ArticleTitle",
+            "abstract": "Abstract",
+            "subjects": "ResearchSubject",
+            "author_first": "PrimaryAuthor",
+            "journal": "JournalName",
+            "vol": "JournalVolume",
+            "issue": "JournalIssue",
+            "publication_date": "PublicationDate",
+            "doi": "ArticleDoi",
+            "record_type": "ArticleType"
+        },
+        "Publication_nrc-peer-reviewed-publications-2018_fulltext_125_126_125_125_125_125.csv": {
+            "work_title": "ArticleTitle",
+            "abstract_notes": "Abstract",
+            "author_primary": "PrimaryAuthor",
+            "journal_source": "JournalName",
+            "volume_code": "JournalVolume",
+            "issue_code": "JournalIssue",
+            "date_issued": "PublicationDate",
+            "Doi": "ArticleDoi",
+            "item_category": "ArticleType"
+        }
+    },
+    "integrated_schema_by_entity": {
+        "Publication": {
+            "attributes": [
+                "Abstract",
+                "ResearchSubject",
+                "ArticleDescription",
+                "JournalName",
+                "ArticleTitle",
+                "CoAuthorName",
+                "ArticleType",
+                "PublicationDate",
+                "JournalVolume",
+                "ArticlePages",
+                "CitedWorks",
+                "ArticleDoi",
+                "PrimaryAuthor",
+                "JournalIssue"
+            ],
+            "column_mappings_by_table": {
+                "wikidbs_research-articles_subset_1.csv": {
+                    "ArticleDescription": "ArticleDescription",
+                    "ArticleType": "ArticleType",
+                    "ArticleTitle": "ArticleTitle",
+                    "JournalIssue": "JournalIssue",
+                    "JournalVolume": "JournalVolume",
+                    "PublicationDate": "PublicationDate",
+                    "CoAuthorName": "CoAuthorName",
+                    "JournalName": "JournalName",
+                    "ArticleDoi": "ArticleDoi",
+                    "PrimaryAuthor": "PrimaryAuthor",
+                    "CitedWorks": "CitedWorks"
+                },
+                "wikidbs_research-articles_subset_2.csv": {
+                    "paper_abstract": "ArticleDescription",
+                    "publication_category": "ArticleType",
+                    "paper_title": "ArticleTitle",
+                    "issue_no": "JournalIssue",
+                    "page_range": "ArticlePages",
+                    "volume_no": "JournalVolume",
+                    "pub_date": "PublicationDate",
+                    "coauthor_list": "CoAuthorName",
+                    "journal_title": "JournalName",
+                    "doi": "ArticleDoi",
+                    "lead_author": "PrimaryAuthor",
+                    "references_cited": "CitedWorks",
+                    "topic_keywords": "ResearchSubject"
+                },
+                "wikidbs_research-articles_subset_3.csv": {
+                    "article_summary": "ArticleDescription",
+                    "article_class": "ArticleType",
+                    "title": "ArticleTitle",
+                    "journal_issue": "JournalIssue",
+                    "pages": "ArticlePages",
+                    "journal_volume": "JournalVolume",
+                    "published_at": "PublicationDate",
+                    "coauthor_name": "CoAuthorName",
+                    "journal_name": "JournalName",
+                    "doi_id": "ArticleDoi",
+                    "primary_author": "PrimaryAuthor",
+                    "research_area": "ResearchSubject"
+                },
+                "wikidbs_research-articles_subset_4.csv": {
+                    "article_abstract_text": "ArticleDescription",
+                    "article_format": "ArticleType",
+                    "article_headline": "ArticleTitle",
+                    "issue_no": "JournalIssue",
+                    "page_range": "ArticlePages",
+                    "volume_no": "JournalVolume",
+                    "contributor_name": "CoAuthorName",
+                    "journal_title": "JournalName",
+                    "lead_author": "PrimaryAuthor"
+                },
+                "wikidbs_research-articles_subset_5.csv": {
+                    "article_summary": "ArticleDescription",
+                    "publication_category": "ArticleType",
+                    "paper_title": "ArticleTitle",
+                    "page_count": "ArticlePages",
+                    "published_at": "PublicationDate",
+                    "journal_name": "JournalName",
+                    "doi": "ArticleDoi",
+                    "first_author": "PrimaryAuthor",
+                    "references": "CitedWorks",
+                    "subject_area": "ResearchSubject"
+                },
+                "wikidbs_research-articles_subset_6.csv": {
+                    "article_abstract": "ArticleDescription",
+                    "article_format": "ArticleType",
+                    "article_heading": "ArticleTitle",
+                    "issue_number": "JournalIssue",
+                    "volume_number": "JournalVolume",
+                    "publication_timestamp": "PublicationDate",
+                    "coauthor_full_name": "CoAuthorName",
+                    "journal_title": "JournalName",
+                    "doi_identifier": "ArticleDoi",
+                    "lead_author": "PrimaryAuthor",
+                    "research_domain": "ResearchSubject"
+                },
+                "wikidbs_research-articles_subset_7.csv": {
+                    "article_summary": "ArticleDescription",
+                    "article_genre": "ArticleType",
+                    "article_title": "ArticleTitle",
+                    "journal_issue_no": "JournalIssue",
+                    "page_range": "ArticlePages",
+                    "journal_volume_no": "JournalVolume",
+                    "published_on": "PublicationDate",
+                    "journal_name": "JournalName",
+                    "first_author": "PrimaryAuthor",
+                    "references": "CitedWorks"
+                },
+                "wikidbs_research-articles_subset_8.csv": {
+                    "article_abstract": "ArticleDescription",
+                    "article_category": "ArticleType",
+                    "title": "ArticleTitle",
+                    "issue_number": "JournalIssue",
+                    "pages": "ArticlePages",
+                    "publication_timestamp": "PublicationDate",
+                    "coauthor": "CoAuthorName",
+                    "journal_title": "JournalName",
+                    "doi": "ArticleDoi",
+                    "primary_author": "PrimaryAuthor",
+                    "cited_references": "CitedWorks"
+                },
+                "Publication_NRC_publications_2012_127_125_125_125_125_125.csv": {
+                    "paper_title": "ArticleTitle",
+                    "summary_text": "Abstract",
+                    "keywords_list": "ResearchSubject",
+                    "lead_author": "PrimaryAuthor",
+                    "journal_name": "JournalName",
+                    "vol_no": "JournalVolume",
+                    "iss_no": "JournalIssue",
+                    "pub_date": "PublicationDate",
+                    "doi": "ArticleDoi",
+                    "pub_type": "ArticleType"
+                },
+                "Publication_NRC_publications_2012_127_126.csv": {
+                    "article_title": "ArticleTitle",
+                    "abstract_text": "Abstract",
+                    "topic_terms": "ResearchSubject",
+                    "first_author": "PrimaryAuthor",
+                    "journal_title": "JournalName",
+                    "volume": "JournalVolume",
+                    "issue_num": "JournalIssue",
+                    "published_on": "PublicationDate",
+                    "document_genre": "ArticleType"
+                },
+                "Publication_NRC_Publications_2015_127_125_125_125_125.csv": {
+                    "doc_title": "ArticleTitle",
+                    "subject_terms": "ResearchSubject",
+                    "primary_author": "PrimaryAuthor",
+                    "source_journal": "JournalName",
+                    "volume_no": "JournalVolume",
+                    "issue_id": "JournalIssue",
+                    "release_date": "PublicationDate",
+                    "content_type": "ArticleType"
+                },
+                "Publication_NRC_Publications_2015_128_126_125_125_125.csv": {
+                    "title": "ArticleTitle",
+                    "abstract": "Abstract",
+                    "subjects": "ResearchSubject",
+                    "author_first": "PrimaryAuthor",
+                    "journal": "JournalName",
+                    "vol": "JournalVolume",
+                    "issue": "JournalIssue",
+                    "publication_date": "PublicationDate",
+                    "doi": "ArticleDoi",
+                    "record_type": "ArticleType"
+                },
+                "Publication_nrc-peer-reviewed-publications-2018_fulltext_125_126_125_125_125_125.csv": {
+                    "work_title": "ArticleTitle",
+                    "abstract_notes": "Abstract",
+                    "author_primary": "PrimaryAuthor",
+                    "journal_source": "JournalName",
+                    "volume_code": "JournalVolume",
+                    "issue_code": "JournalIssue",
+                    "date_issued": "PublicationDate",
+                    "Doi": "ArticleDoi",
+                    "item_category": "ArticleType"
+                }
+            }
+        },
+        "Journal": {
+            "attributes": [
+                "JournalType",
+                "JournalDescription",
+                "JournalName",
+                "JournalCountry",
+                "PublisherName",
+                "JournalWebsite",
+                "InceptionDate"
+            ],
+            "column_mappings_by_table": {
+                "wikidbs_research-articles_subset_1.csv": {
+                    "JournalName": "JournalName",
+                    "JournalDescription": "JournalDescription",
+                    "JournalType": "JournalType",
+                    "PublisherName": "PublisherName",
+                    "InceptionDate": "InceptionDate",
+                    "JournalCountry": "JournalCountry"
+                },
+                "wikidbs_research-articles_subset_2.csv": {
+                    "journal_title": "JournalName",
+                    "journal_scope": "JournalDescription",
+                    "journal_url": "JournalWebsite",
+                    "journal_country": "JournalCountry"
+                },
+                "wikidbs_research-articles_subset_3.csv": {
+                    "journal_name": "JournalName",
+                    "journal_overview": "JournalDescription",
+                    "journal_category": "JournalType",
+                    "publisher": "PublisherName",
+                    "journal_website": "JournalWebsite",
+                    "journal_start_date": "InceptionDate"
+                },
+                "wikidbs_research-articles_subset_4.csv": {
+                    "journal_title": "JournalName",
+                    "journal_profile": "JournalDescription",
+                    "journal_classification": "JournalType",
+                    "journal_url": "JournalWebsite",
+                    "journal_founded_on": "InceptionDate",
+                    "journal_origin_country": "JournalCountry"
+                },
+                "wikidbs_research-articles_subset_5.csv": {
+                    "journal_name": "JournalName",
+                    "journal_overview": "JournalDescription",
+                    "publisher": "PublisherName",
+                    "journal_homepage": "JournalWebsite",
+                    "journal_start_date": "InceptionDate"
+                },
+                "wikidbs_research-articles_subset_6.csv": {
+                    "journal_title": "JournalName",
+                    "journal_profile": "JournalDescription",
+                    "journal_category": "JournalType",
+                    "journal_founding_date": "InceptionDate"
+                },
+                "wikidbs_research-articles_subset_7.csv": {
+                    "journal_name": "JournalName",
+                    "journal_overview": "JournalDescription",
+                    "journal_class": "JournalType",
+                    "publisher": "PublisherName",
+                    "journal_url": "JournalWebsite",
+                    "established_on": "InceptionDate",
+                    "publisher_country": "JournalCountry"
+                },
+                "wikidbs_research-articles_subset_8.csv": {
+                    "journal_title": "JournalName",
+                    "journal_profile": "JournalDescription",
+                    "journal_category": "JournalType",
+                    "journal_start_date": "InceptionDate"
+                }
+            }
+        }
+    },
+    "integrated_schema_by_table": {
+        "Publication": {
+            "attributes": [
+                "ResearchSubject",
+                "ArticleDescription",
+                "JournalName",
+                "ArticleTitle",
+                "CoAuthorName",
+                "ArticleType",
+                "PublicationDate",
+                "JournalVolume",
+                "ArticlePages",
+                "CitedWorks",
+                "ArticleDoi",
+                "PrimaryAuthor",
+                "JournalIssue"
+            ],
+            "foreign_keys": {
+                "JournalName": {
+                    "Journal": "JournalName"
+                }
+            },
+            "column_mappings_by_table": {
+                "wikidbs_research-articles_subset_1.csv": {
+                    "ArticleDescription": "ArticleDescription",
+                    "ArticleType": "ArticleType",
+                    "ArticleTitle": "ArticleTitle",
+                    "JournalIssue": "JournalIssue",
+                    "JournalVolume": "JournalVolume",
+                    "PublicationDate": "PublicationDate",
+                    "CoAuthorName": "CoAuthorName",
+                    "JournalName": "JournalName",
+                    "ArticleDoi": "ArticleDoi",
+                    "PrimaryAuthor": "PrimaryAuthor",
+                    "CitedWorks": "CitedWorks"
+                },
+                "wikidbs_research-articles_subset_2.csv": {
+                    "paper_abstract": "ArticleDescription",
+                    "publication_category": "ArticleType",
+                    "paper_title": "ArticleTitle",
+                    "issue_no": "JournalIssue",
+                    "page_range": "ArticlePages",
+                    "volume_no": "JournalVolume",
+                    "pub_date": "PublicationDate",
+                    "coauthor_list": "CoAuthorName",
+                    "journal_title": "JournalName",
+                    "doi": "ArticleDoi",
+                    "lead_author": "PrimaryAuthor",
+                    "references_cited": "CitedWorks",
+                    "topic_keywords": "ResearchSubject"
+                },
+                "wikidbs_research-articles_subset_3.csv": {
+                    "article_summary": "ArticleDescription",
+                    "article_class": "ArticleType",
+                    "title": "ArticleTitle",
+                    "journal_issue": "JournalIssue",
+                    "pages": "ArticlePages",
+                    "journal_volume": "JournalVolume",
+                    "published_at": "PublicationDate",
+                    "coauthor_name": "CoAuthorName",
+                    "journal_name": "JournalName",
+                    "doi_id": "ArticleDoi",
+                    "primary_author": "PrimaryAuthor",
+                    "research_area": "ResearchSubject"
+                },
+                "wikidbs_research-articles_subset_4.csv": {
+                    "article_abstract_text": "ArticleDescription",
+                    "article_format": "ArticleType",
+                    "article_headline": "ArticleTitle",
+                    "issue_no": "JournalIssue",
+                    "page_range": "ArticlePages",
+                    "volume_no": "JournalVolume",
+                    "contributor_name": "CoAuthorName",
+                    "journal_title": "JournalName",
+                    "lead_author": "PrimaryAuthor"
+                },
+                "wikidbs_research-articles_subset_5.csv": {
+                    "article_summary": "ArticleDescription",
+                    "publication_category": "ArticleType",
+                    "paper_title": "ArticleTitle",
+                    "page_count": "ArticlePages",
+                    "published_at": "PublicationDate",
+                    "journal_name": "JournalName",
+                    "doi": "ArticleDoi",
+                    "first_author": "PrimaryAuthor",
+                    "references": "CitedWorks",
+                    "subject_area": "ResearchSubject"
+                },
+                "wikidbs_research-articles_subset_6.csv": {
+                    "article_abstract": "ArticleDescription",
+                    "article_format": "ArticleType",
+                    "article_heading": "ArticleTitle",
+                    "issue_number": "JournalIssue",
+                    "volume_number": "JournalVolume",
+                    "publication_timestamp": "PublicationDate",
+                    "coauthor_full_name": "CoAuthorName",
+                    "journal_title": "JournalName",
+                    "doi_identifier": "ArticleDoi",
+                    "lead_author": "PrimaryAuthor",
+                    "research_domain": "ResearchSubject"
+                },
+                "wikidbs_research-articles_subset_7.csv": {
+                    "article_summary": "ArticleDescription",
+                    "article_genre": "ArticleType",
+                    "article_title": "ArticleTitle",
+                    "journal_issue_no": "JournalIssue",
+                    "page_range": "ArticlePages",
+                    "journal_volume_no": "JournalVolume",
+                    "published_on": "PublicationDate",
+                    "journal_name": "JournalName",
+                    "first_author": "PrimaryAuthor",
+                    "references": "CitedWorks"
+                },
+                "wikidbs_research-articles_subset_8.csv": {
+                    "article_abstract": "ArticleDescription",
+                    "article_category": "ArticleType",
+                    "title": "ArticleTitle",
+                    "issue_number": "JournalIssue",
+                    "pages": "ArticlePages",
+                    "publication_timestamp": "PublicationDate",
+                    "coauthor": "CoAuthorName",
+                    "journal_title": "JournalName",
+                    "doi": "ArticleDoi",
+                    "primary_author": "PrimaryAuthor",
+                    "cited_references": "CitedWorks"
+                },
+                "Publication_NRC_publications_2012_127_125_125_125_125_125.csv": {
+                    "Title": "ArticleTitle",
+                    "Abstract": "Abstract",
+                    "Subject": "ResearchSubject",
+                    "F.Author": "PrimaryAuthor",
+                    "Journal_title": "JournalName",
+                    "Volume": "JournalVolume",
+                    "Issue": "JournalIssue",
+                    "Date_published": "PublicationDate",
+                    "Doi": "ArticleDoi",
+                    "Genre": "ArticleType"
+                },
+                "Publication_NRC_publications_2012_127_126.csv": {
+                    "Title": "ArticleTitle",
+                    "Abstract": "Abstract",
+                    "Subject": "ResearchSubject",
+                    "F.Author": "PrimaryAuthor",
+                    "Journal_title": "JournalName",
+                    "Volume": "JournalVolume",
+                    "Issue": "JournalIssue",
+                    "Date_published": "PublicationDate",
+                    "Doi": "ArticleDoi",
+                    "Genre": "ArticleType"
+                },
+                "Publication_NRC_Publications_2015_127_125_125_125_125.csv": {
+                    "Title": "ArticleTitle",
+                    "Abstract": "Abstract",
+                    "Subject": "ResearchSubject",
+                    "F.Author": "PrimaryAuthor",
+                    "Journal_title": "JournalName",
+                    "Volume": "JournalVolume",
+                    "Issue": "JournalIssue",
+                    "Date_published": "PublicationDate",
+                    "Doi": "ArticleDoi",
+                    "Genre": "ArticleType"
+                },
+                "Publication_NRC_Publications_2015_128_126_125_125_125.csv": {
+                    "Title": "ArticleTitle",
+                    "Abstract": "Abstract",
+                    "Subject": "ResearchSubject",
+                    "F.Author": "PrimaryAuthor",
+                    "Journal_title": "JournalName",
+                    "Volume": "JournalVolume",
+                    "Issue": "JournalIssue",
+                    "Date_published": "PublicationDate",
+                    "Doi": "ArticleDoi",
+                    "Genre": "ArticleType"
+                },
+                "Publication_nrc-peer-reviewed-publications-2018_fulltext_125_126_125_125_125_125.csv": {
+                    "Title": "ArticleTitle",
+                    "Abstract": "Abstract",
+                    "Subject": "ResearchSubject",
+                    "F.Author": "PrimaryAuthor",
+                    "Journal_title": "JournalName",
+                    "Volume": "JournalVolume",
+                    "Issue": "JournalIssue",
+                    "Date_published": "PublicationDate",
+                    "Doi": "ArticleDoi",
+                    "Genre": "ArticleType"
+                }
+            }
+        },
+        "Journal": {
+            "attributes": [
+                "JournalType",
+                "JournalDescription",
+                "JournalName",
+                "JournalCountry",
+                "PublisherName",
+                "JournalWebsite",
+                "InceptionDate"
+            ],
+            "foreign_keys": {},
+            "column_mappings_by_table": {
+                "wikidbs_research-articles_subset_1.csv": {
+                    "JournalName": "JournalName",
+                    "JournalDescription": "JournalDescription",
+                    "JournalType": "JournalType",
+                    "PublisherName": "PublisherName",
+                    "InceptionDate": "InceptionDate",
+                    "JournalCountry": "JournalCountry"
+                },
+                "wikidbs_research-articles_subset_2.csv": {
+                    "journal_title": "JournalName",
+                    "journal_scope": "JournalDescription",
+                    "journal_url": "JournalWebsite",
+                    "journal_country": "JournalCountry"
+                },
+                "wikidbs_research-articles_subset_3.csv": {
+                    "journal_name": "JournalName",
+                    "journal_overview": "JournalDescription",
+                    "journal_category": "JournalType",
+                    "publisher": "PublisherName",
+                    "journal_website": "JournalWebsite",
+                    "journal_start_date": "InceptionDate"
+                },
+                "wikidbs_research-articles_subset_4.csv": {
+                    "journal_title": "JournalName",
+                    "journal_profile": "JournalDescription",
+                    "journal_classification": "JournalType",
+                    "journal_url": "JournalWebsite",
+                    "journal_founded_on": "InceptionDate",
+                    "journal_origin_country": "JournalCountry"
+                },
+                "wikidbs_research-articles_subset_5.csv": {
+                    "journal_name": "JournalName",
+                    "journal_overview": "JournalDescription",
+                    "publisher": "PublisherName",
+                    "journal_homepage": "JournalWebsite",
+                    "journal_start_date": "InceptionDate"
+                },
+                "wikidbs_research-articles_subset_6.csv": {
+                    "journal_title": "JournalName",
+                    "journal_profile": "JournalDescription",
+                    "journal_category": "JournalType",
+                    "journal_founding_date": "InceptionDate"
+                },
+                "wikidbs_research-articles_subset_7.csv": {
+                    "journal_name": "JournalName",
+                    "journal_overview": "JournalDescription",
+                    "journal_class": "JournalType",
+                    "publisher": "PublisherName",
+                    "journal_url": "JournalWebsite",
+                    "established_on": "InceptionDate",
+                    "publisher_country": "JournalCountry"
+                },
+                "wikidbs_research-articles_subset_8.csv": {
+                    "journal_title": "JournalName",
+                    "journal_profile": "JournalDescription",
+                    "journal_category": "JournalType",
+                    "journal_start_date": "InceptionDate"
+                }
+            }
+        }
+    }
+}

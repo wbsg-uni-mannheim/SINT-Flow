@@ -1,0 +1,488 @@
+id,make,vehicle_name,fuel_type,displacement_cc,mileage_km,year,price_pkr
+66481,Subaru,Pleo   F SPECIAL ,Petrol,660.0,50000,2014,1200000.0
+14656,Nissan,Clipper   E ,Petrol,660.0,16000,2016,2190000.0
+76430,Suzuki,Mehran   VX (CNG) ,CNG,800.0,16,2012,580000.0
+12063,Toyota,Corolla   Altis Automatic 1.6 ,Petrol,1600.0,94000,2015,2650000.0
+59885,Toyota,Land Cruiser   ZX ,Petrol,4600.0,90000,2012,21500000.0
+38915,Suzuki,Wagon R   VXR ,Petrol,1000.0,150000,2017,1525000.0
+63690,Suzuki,Mehran   VXR Euro II ,Petrol,800.0,48945,2018,1050000.0
+22492,Honda,City   Aspire Prosmatec 1.3 i-VTEC f...,Petrol,1300.0,75713,2016,2600000.0
+17455,Mitsubishi,Lancer   GLX Automatic 1.6 for ...,Petrol,1600.0,114000,2007,1250000.0
+9954,Toyota,"Fortuner   2.7 VVTi 
+9.8/10",Petrol,2700.0,35757,2019,8800000.0
+8546,Honda,City   1.5 i-VTEC ,Petrol,1500.0,39500,2018,2525000.0
+27387,Toyota,Corolla   XLi VVTi Limited Edition ...,Petrol,1300.0,100000,2009,1555000.0
+2388,Suzuki,Mehran   VX ,Petrol,800.0,50000,2011,650000.0
+18048,Toyota,Prado 120 Series  TX Limited 3.0D f...,Diesel,3000.0,130000,2004,5500000.0
+23376,Toyota,Prado 90 Series  TZ 3.0D ,Diesel,3000.0,178796,1998,3700000.0
+17530,Honda,City   i-DSI ,Petrol,1300.0,104000,2006,1485000.0
+57807,Suzuki,Ravi   Euro ll ,Petrol,800.0,133452,2012,790000.0
+2892,Honda,Civic Reborn  VTi 1.8 i-VTEC ,Petrol,1800.0,160000,2011,1625000.0
+10550,Suzuki,Ravi    ,Petrol,800.0,80000,2012,620000.0
+33081,Toyota,Corolla   Altis Automatic 1.6 ,Petrol,1600.0,120000,2015,2600000.0
+14237,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,138000,2015,2350000.0
+26024,KIA,Sportage   FWD ,Petrol,2000.0,4,2021,5600000.0
+51579,Honda,City   1.3 i-VTEC Prosmatec ,Petrol,1300.0,80000,2018,2550000.0
+7485,Suzuki,Wagon R   VXL ,Petrol,1000.0,64000,2017,1600000.0
+65094,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,99000,2011,2150000.0
+17091,Toyota,Other    ,Petrol,1500.0,125000,1988,740000.0
+18479,Toyota,Corolla   Altis Automatic 1.6 ,Petrol,1600.0,24000,2019,3550000.0
+28041,Toyota,Corolla Axio    ,Petrol,1500.0,12300,2007,2500000.0
+38781,Jeep,Cj 7    ,Diesel,2000.0,1,1976,1100000.0
+54893,Suzuki,Cultus   VXRi ,Petrol,1000.0,70000,2008,785000.0
+69916,Honda,City   Aspire Prosmatec 1.5 i-VTEC f...,Petrol,1500.0,14000,2018,2700000.0
+132,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,39000,2019,3125000.0
+74972,Daihatsu,Cuore   CX Eco ,Petrol,800.0,167000,2009,790000.0
+47733,Honda,BR-V   i-VTEC S ,Petrol,1500.0,47000,2017,2950000.0
+13458,Toyota,Vitz   F 1.0 ,Petrol,1000.0,45000,2015,2110000.0
+11245,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,90000,2015,2300000.0
+68439,Toyota,Corolla 9th Generation  XLi ,Petrol,1300.0,163000,2007,1285000.0
+72136,Toyota,Corolla   Altis SR 1.8 ,Petrol,1800.0,218923,2009,1700000.0
+23727,MG,HS   1.5 Turbo ,Petrol,1500.0,2000,2021,5700000.0
+76174,MG,HS   1.5 Turbo ,Petrol,1500.0,1,2021,6100000.0
+8564,Toyota,Land Cruiser 100 Series  VX Limited...,Diesel,4200.0,200000,2002,5700000.0
+56041,Honda,Civic Reborn  VTi 1.8 i-VTEC ,Petrol,1800.0,138000,2007,1775000.0
+60969,Toyota,Corolla   GLi Automatic 1.3 VVTi fo...,Petrol,1300.0,120000,2017,2700000.0
+42503,Toyota,Hilux   D-4D Automatic ,Diesel,3000.0,149000,2012,4950000.0
+33760,Toyota,Prado   TX 2.7 ,Petrol,2700.0,59680,2013,13000000.0
+843,Toyota,Camry XV50  Hybrid ,Petrol,2500.0,91000,2013,5800000.0
+387,Toyota,Passo   + Hana 1.0 ,Petrol,1000.0,55000,2014,1975000.0
+14871,Toyota,Fortuner   2.8 Sigma 4 ,Diesel,2800.0,10,2021,11000000.0
+53973,FAW,V2   VCT-i ,Petrol,1300.0,160000,2014,1080000.0
+26376,Honda,City   1.5 i-VTEC Prosmatec ,Petrol,1500.0,2200,2021,3300000.0
+54751,Toyota,Corolla   GLi 1.3 ,Petrol,1300.0,212800,2005,1550000.0
+20764,Daihatsu,Cuore   CX ,Petrol,800.0,124000,2005,630000.0
+63520,Toyota,Corolla   GLi 1.3 VVTi Ecotec  for ...,Petrol,1300.0,201000,2012,2200000.0
+32613,Honda,Civic   Oriel 1.8 i-VTEC CVT ,Petrol,1800.0,1,2021,4490000.0
+10108,Toyota,Hilux   Revo V Automatic 2.8 ,Diesel,2800.0,10,2021,8130000.0
+70374,Toyota,Prado 120 Series  TZ 3.0D ,Diesel,3000.0,190000,2003,6250000.0
+50563,Honda,City   Aspire Prosmatec 1.5 i-VTEC f...,Petrol,1500.0,23000,2021,3200000.0
+41988,Toyota,Prado 90 Series   ,Diesel,3000.0,217000,2000,4000000.0
+38815,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,87000,2014,1975000.0
+34553,Toyota,Corolla   Altis Grande CVT-i 1.8 fo...,Petrol,1800.0,100000,2018,3740000.0
+13523,Honda,Vezel   Hybrid X ,Petrol,1500.0,5,2021,7850000.0
+31423,Haval,Jolion    ,Petrol,1500.0,100,2021,6200000.0
+15966,Toyota,Corolla   GLi Automatic 1.3 VVTi fo...,Petrol,1300.0,92000,2017,2650000.0
+59117,Toyota,Corolla 9th Generation   ,Petrol,1500.0,235000,2007,2450000.0
+43983,Suzuki,Alto   VXR ,Petrol,1000.0,55000,2008,730000.0
+54580,Honda,Civic Reborn  VTi Oriel Prosmatec 1....,Petrol,1800.0,95000,2011,1870000.0
+48699,Toyota,Corolla   Altis X Automatic 1.6 for...,Petrol,1600.0,1000,2021,3750000.0
+23804,Toyota,Corolla   XLi Automatic ,Petrol,1300.0,28000,2019,2750000.0
+25094,Toyota,Passo   X L Package S  ,Petrol,1000.0,91000,2017,2450000.0
+60798,Hyundai,Tucson    ,Petrol,2000.0,15000,2021,6250000.0
+43255,Toyota,Corolla   Altis Automatic 1.6 ,Petrol,1600.0,69800,2016,2800000.0
+32245,KIA,Sportage   AWD ,Petrol,2000.0,7000,2021,5800000.0
+1012,Mercedes,Benz C Class    ,Petrol,1800.0,110000,2008,3200000.0
+5091,Nissan,Clipper   E Four ,Petrol,660.0,47000,2017,1625000.0
+31329,Toyota,Corolla   Altis Grande CVT-i 1.8 fo...,Petrol,1800.0,74000,2017,3100000.0
+43480,Toyota,Corolla   LX Limited 1.3 ,Petrol,1300.0,109000,1993,1400000.0
+61379,Toyota,Corolla   Altis Automatic 1.6 ,Petrol,1600.0,15000,2021,3900000.0
+454,Toyota,Corolla   Altis SR 1.8 ,Petrol,1800.0,188200,2009,1950000.0
+58,Suzuki,Alto   VXR ,Petrol,1000.0,95000,2012,770000.0
+39672,Honda,Freed   Hybrid B  ,Petrol,1500.0,96000,2016,3300000.0
+60272,Honda,Civic   Oriel 1.8 i-VTEC CVT ,Petrol,1800.0,48000,2018,3650000.0
+12767,Toyota,Corolla   Altis SR 1.8 ,Petrol,1800.0,90311,2009,1970000.0
+36586,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,115000,2016,2700000.0
+73840,Suzuki,Wagon R   VXL ,Petrol,1000.0,90000,2017,1695000.0
+23117,Mazda,Flair Wagon    ,Petrol,660.0,76000,2017,2375000.0
+23423,Toyota,Land Cruiser    ,Petrol,800.0,2,2018,57500000.0
+26941,Nissan,Dayz   Bolero S ,Petrol,660.0,25000,2015,1550000.0
+22511,Toyota,Corolla   X 1.3 ,Petrol,1300.0,300000,2004,1150000.0
+24055,Daihatsu,Boon    ,Petrol,1000.0,35000,2018,2525000.0
+15263,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,85000,2015,2400000.0
+65397,Suzuki,Kei   A ,Petrol,660.0,1000,1999,875000.0
+27997,Toyota,Corolla 9th Generation  GLi 1.3 for...,Petrol,1300.0,300000,2007,1235000.0
+26239,Suzuki,Mehran   VXR (CNG) ,Petrol,800.0,40000,2012,710000.0
+46525,Suzuki,Liana    ,Petrol,1300.0,150000,2008,850000.0
+71723,Honda,Civic   VTi Oriel 1.6 ,Petrol,1600.0,65000,2000,970000.0
+51176,Honda,Vezel   Hybrid RS Honda Sensing  for...,Hybrid,1500.0,58000,2017,4850000.0
+47479,Toyota,Corolla   GLi Automatic 1.6 VVTi fo...,Petrol,1600.0,92000,2011,2245000.0
+4791,FAW,X-PV   Dual AC ,Petrol,1000.0,80000,2019,920000.0
+33869,Toyota,Corolla Indus  XE ,Petrol,1300.0,200000,1996,1250000.0
+19935,Daihatsu,Cuore   CL ,Petrol,800.0,56000,2008,750000.0
+52690,Suzuki,Every   Join Turbo ,Petrol,660.0,35000,2016,1850000.0
+6650,MG,HS   1.5 Turbo ,Petrol,1500.0,1600,2020,6200000.0
+43111,Honda,Civic EG  EX ,Petrol,1500.0,100000,1992,900000.0
+61364,Toyota,Corolla   Altis Grande CVT-i 1.8 fo...,Petrol,1800.0,31000,2020,4115000.0
+75391,Prince,Pearl   MT ,Petrol,800.0,11500,2020,1200000.0
+41652,Hyundai,Santro   Club ,Petrol,1000.0,20000,2006,770000.0
+70062,Suzuki,Mehran   VXR Euro II ,Petrol,800.0,156000,2012,635000.0
+71818,Suzuki,Ciaz   Automatic ,Petrol,1400.0,55000,2017,2400000.0
+18030,Mitsubishi,Lancer   GLX Automatic 1.6 for ...,Petrol,1600.0,98000,2004,975000.0
+69391,Honda,Civic Reborn  VTi Oriel Prosmatec 1....,Petrol,1800.0,130000,2007,1630000.0
+26648,Honda,Civic   EXi ,Petrol,1500.0,220000,2004,1100000.0
+52990,Toyota,Corolla   XLi ,Petrol,1300.0,100000,2008,1850000.0
+8783,Hyundai,Sonata    ,Petrol,2500.0,15,2021,8150000.0
+51506,Honda,City   1.2L M/T ,Petrol,1200.0,1,2021,2875000.0
+12762,MG,"HS   1.5 Turbo 
+9.9/10",Petrol,1500.0,70,2021,5995000.0
+27931,Honda,City   1.5 i-VTEC Prosmatec ,Petrol,1500.0,14500,2018,2900000.0
+10139,Toyota,Corolla   Altis Grande X CVT-i 1.8 ...,Petrol,1800.0,16000,2020,4250000.0
+27038,Toyota,Corolla   Altis 1.6 ,Petrol,1600.0,80000,2012,2350000.0
+22784,Honda,City   1.5L CVT ,Petrol,1500.0,1,2021,3279999.9999999995
+64197,Suzuki,Every   Join ,Petrol,660.0,60200,2015,1415000.0
+7838,Suzuki,Cultus   EURO II ,Petrol,1000.0,94000,2013,1000000.0
+3130,Honda,"Civic Reborn  VTi Oriel Prosmatec 1....
+7.2/10",Petrol,1800.0,132732,2010,1920000.0
+59702,Toyota,Passo   + Hana 1.0 ,Petrol,1000.0,102000,2015,1950000.0
+31003,Suzuki,Every   Join Turbo ,Petrol,660.0,85000,2017,1795000.0
+60150,Toyota,Corolla    ,Petrol,1300.0,69551,2015,2350000.0
+69179,Honda,City   1.3 i-VTEC Prosmatec ,Petrol,1300.0,46000,2020,2675000.0
+57582,Hyundai,Elantra   GLS ,Petrol,2000.0,20000,2021,4050000.0
+18168,Suzuki,Wagon R   Stingray X ,Petrol,660.0,86000,2017,1580000.0
+15714,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,118000,2012,1950000.0
+48519,Toyota,Prius    ,Hybrid,1500.0,210000,2010,1980000.0
+32961,Toyota,Vitz   FL 1.0 ,Petrol,1000.0,150000,2003,1340000.0
+1452,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,119000,2017,2600000.0
+69191,Honda,BR-V   i-VTEC S ,Petrol,1500.0,30000,2020,3400000.0
+16376,Toyota,Corolla   Altis Grande CVT-i 1.8 fo...,Petrol,1800.0,153000,2015,2750000.0
+40338,Toyota,Corolla   GLi Automatic 1.3 VVTi fo...,Petrol,1300.0,70000,2015,2400000.0
+20326,Honda,City   1.5 i-VTEC Prosmatec ,Petrol,1500.0,53000,2018,2730000.0
+3609,Honda,"Vezel   Hybrid RS Honda Sensing  for...
+7.6/10",Petrol,1500.0,90567,2017,4350000.0
+40208,Toyota,Vitz   F 1.0 ,Petrol,1000.0,84000,2009,1530000.0
+66561,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,140000,2016,2650000.0
+48662,Honda,Vezel   Hybrid RS Honda Sensing  for...,Hybrid,1500.0,61332,2016,4800000.0
+47818,Suzuki,Alto   F ,Petrol,660.0,38000,2015,1350000.0
+18404,KIA,Sportage   AWD ,Petrol,2000.0,62000,2019,5200000.0
+31956,Honda,City   1.3 i-VTEC ,Petrol,1300.0,22000,2021,2750000.0
+56308,Honda,Vezel   Hybrid Z ,Hybrid,1500.0,56000,2016,4000000.0
+70769,Honda,Civic   Oriel 1.8 i-VTEC CVT ,Petrol,1800.0,19000,2020,4100000.0
+55213,Toyota,Corolla   SE Saloon ,Petrol,1300.0,300000,2004,1325000.0
+62546,Suzuki,Every   PA ,Petrol,660.0,156000,2016,1578000.0
+29691,Nissan,Juke   15RS ,Petrol,1500.0,110000,2010,2250000.0
+1058,Suzuki,Swift   DLX 1.3 ,Petrol,1300.0,62000,2015,1495000.0
+58386,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,71000,2015,2099000.0
+29200,Suzuki,Alto   VXR (CNG) ,Petrol,1000.0,92000,2010,675000.0
+21104,Toyota,Belta   X 1.0 ,Petrol,1000.0,98000,2007,1700000.0
+57882,Toyota,Corolla   GLi Automatic 1.3 VVTi fo...,Petrol,1300.0,90000,2016,2750000.0
+12247,Honda,Civic   Oriel 1.8 i-VTEC CVT ,Petrol,1800.0,41000,2018,3725000.0
+35682,Haval,Jolion   Top ,Petrol,1500.0,5,2021,6225000.0
+62946,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,126000,2011,1950000.0
+49106,Honda,Civic Reborn  VTi Prosmatec 1.8 i-VT...,Petrol,1800.0,110000,2009,1430000.0
+21430,Suzuki,Swift   DLX 1.3 ,Petrol,1300.0,64200,2016,1650000.0
+22019,Toyota,Corolla   LX Limited 1.3 ,Petrol,1300.0,150000,1995,1250000.0
+652,MG,HS   1.5 Turbo ,Petrol,1500.0,1900,2021,6075000.0
+71626,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,135000,2010,1530000.0
+60313,Honda,Civic Reborn  VTi Prosmatec 1.8 i-VT...,Petrol,1800.0,120000,2009,1700000.0
+56628,Toyota,Belta   X Business A Package 1.0 fo...,Petrol,1000.0,158000,2007,1599000.0
+22447,Honda,Civic   VTi Oriel Prosmatec 1.6 for ...,Petrol,1600.0,15868,2004,1420000.0
+48085,Suzuki,Baleno   JXL ,Petrol,1300.0,1,2005,850000.0
+33835,Toyota,Vitz   F Limited 1.0 ,Petrol,1000.0,64000,2018,2675000.0
+70694,Toyota,Corolla   SE ,Petrol,1500.0,100000,1990,1100000.0
+1557,Toyota,Corolla   XE ,Petrol,1300.0,100000,1995,850000.0
+36439,Honda,Civic   Oriel 1.8 i-VTEC CVT ,Petrol,1800.0,8500,2021,4625000.0
+71595,Toyota,Corolla   Altis Automatic 1.6 ,Petrol,1600.0,62000,2016,2645000.0
+73132,Toyota,Corolla   GLi Automatic 1.6 VVTi fo...,Petrol,1600.0,100000,2012,2100000.0
+74638,Suzuki,Every   Join ,Petrol,660.0,56000,2006,760000.0
+12073,Honda,City   1.3 i-VTEC ,Petrol,1300.0,90000,2015,1900000.0
+21642,Toyota,Vitz   B Intelligent Package 1.0 fo...,Petrol,1000.0,49000,2017,2725000.0
+44231,Honda,Civic   VTi Oriel Automatic 1.6 for ...,Petrol,1600.0,55400,2001,1590000.0
+32977,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,71000,2009,1490000.0
+41354,Haval,Jolion    ,Petrol,1500.0,10,2021,6300000.0
+32423,Honda,N Wgn   G ,Petrol,660.0,2600,2018,2165000.0
+42211,Toyota,Corolla   Altis 1.8 ,Petrol,1800.0,88000,2014,2550000.0
+37329,Toyota,Vitz    ,Petrol,1000.0,69000,2018,2850000.0
+16950,Toyota,Premio   X EX Package 1.8 ,Petrol,1800.0,200000,2004,2400000.0
+50306,Toyota,Corolla   GLi 1.3 VVTi Ecotec  for ...,Petrol,1300.0,103022,2012,1664999.9999999998
+67087,Toyota,Corolla   X 1.5 ,Petrol,1500.0,150000,2001,1850000.0
+13235,Toyota,Yaris   ATIV CVT 1.3 ,Petrol,1300.0,40,2021,3025000.0
+2116,Toyota,Prado    ,Petrol,2700.0,30000,2016,19000000.0
+10067,Daihatsu,Mira   L ,Petrol,660.0,30000,2018,2245000.0
+61485,Suzuki,Cultus   VXR ,Petrol,1000.0,1,2021,2125000.0
+35148,Toyota,Prius   S 1.8 ,Petrol,1800.0,145000,2014,3275000.0
+42085,Toyota,Corolla 9th Generation  2.0D ,Diesel,2000.0,61500,2007,1650000.0
+9359,Honda,Civic Eagle Eye  VTi Oriel UG 1.6 fo...,Petrol,1600.0,192000,2005,1295000.0
+44017,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,71000,2017,2925000.0
+3163,Toyota,Vitz   F Smile Edition 1.0 ,Petrol,1000.0,45500,2019,2975000.0
+17109,Suzuki,Mehran    ,Petrol,800.0,300000,2008,570000.0
+76438,Suzuki,Bolan    ,Petrol,800.0,16300,2019,1170000.0
+66688,Honda,City   Aspire Prosmatec 1.3 i-VTEC f...,Petrol,1300.0,46000,2017,2525000.0
+15615,Toyota,Corolla    ,Petrol,100.0,1,2004,1325000.0
+9349,Toyota,Vitz   F Limited 1.0 ,Petrol,1000.0,27000,2018,2600000.0
+31207,Toyota,Premio   X EX Package 1.8 ,Petrol,1800.0,36000,2006,3100000.0
+41962,Suzuki,Bolan   VX Euro II ,Petrol,800.0,32000,2020,1350000.0
+38699,Suzuki,Swift   XG C Selection 1.2 ,Petrol,1200.0,142000,2008,1500000.0
+4254,Toyota,Yaris    ,Petrol,1300.0,16000,2021,2950000.0
+1908,Toyota,Land Cruiser   ZX ,Petrol,4600.0,32000,2016,35000000.0
+45136,Honda,Civic   Oriel 1.8 i-VTEC CVT ,Petrol,1800.0,44000,2018,3625000.0
+63542,Suzuki,Every   Join Turbo ,Petrol,660.0,124000,2013,1440000.0
+24503,Suzuki,Margalla   GLX ,Petrol,1300.0,71250,1998,625000.0
+7945,Suzuki,Cultus   VXRi (CNG) ,Petrol,1000.0,78000,2011,799000.0
+42258,Toyota,Corolla Fielder   X G Edition ,Petrol,1500.0,330000,2006,2325000.0
+47064,Toyota,Corolla   2.0D Saloon ,Diesel,2000.0,60000,2005,1200000.0
+71754,Toyota,Crown   Super Deluxe ,Petrol,2000.0,165000,1993,1800000.0
+16641,Honda,Civic EK  EXi ,Petrol,1500.0,140000,1997,680000.0
+788,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,225000,2016,2200000.0
+37150,MG,ZS    ,Petrol,1500.0,1000,2021,5190000.0
+49933,Toyota,C-HR    ,Hybrid,1800.0,56000,2017,6250000.0
+41016,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,109500,2009,1540000.0
+42895,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,40000,2010,1600000.0
+13480,Toyota,Corolla   Altis Grande CVT-i 1.8 fo...,Petrol,1800.0,115000,2014,2650000.0
+34698,Toyota,C-HR    ,Hybrid,1800.0,38000,2017,6000000.0
+5371,KIA,Grand Carnival    ,Petrol,3500.0,100,2021,10000000.0
+59055,Suzuki,Cultus    ,Petrol,1000.0,150000,2004,650000.0
+16640,Daihatsu,Boon   1.0 CL ,Petrol,1000.0,153000,2009,1420000.0
+18299,Honda,City   EXi ,Petrol,1300.0,126345,2001,840000.0
+71603,Suzuki,Alto   VXR (CNG) ,Petrol,1000.0,65000,2006,680000.0
+39692,Toyota,Prado 90 Series  TZ 3.0D ,Diesel,3000.0,133000,1997,3250000.0
+51881,Honda,Civic Reborn   ,Petrol,1800.0,170000,2010,1775000.0
+1652,Toyota,Land Cruiser   ZX ,Petrol,4600.0,10,2016,33000000.0
+30281,Honda,Civic   Oriel 1.8 i-VTEC CVT ,Petrol,1800.0,10,2021,4500000.0
+5145,Suzuki,Alto   GII ,Petrol,660.0,94000,2007,1200000.0
+69260,Toyota,Vitz   F 1.0 ,Petrol,1000.0,71000,2010,1600000.0
+63943,Suzuki,Wagon R   VXR ,Petrol,1000.0,80000,2019,1600000.0
+49191,Toyota,Prius Alpha   S ,Petrol,1800.0,133000,2013,2600000.0
+67847,Suzuki,Alto   VXR ,Petrol,1000.0,193000,2005,585000.0
+73267,Honda,Civic   Oriel 1.8 i-VTEC CVT ,Petrol,1800.0,56000,2019,4100000.0
+12478,Suzuki,Alto   VXR (CNG) ,Petrol,1000.0,78300,2006,535000.0
+25644,Suzuki,Wagon R   Stingray T ,Petrol,660.0,79000,2013,1650000.0
+61459,Honda,Civic   EXi ,Petrol,1300.0,160000,2006,1350000.0
+20125,Toyota,Aqua   G ,Petrol,1500.0,99000,2014,2375000.0
+60967,Toyota,Hilux   Revo V Automatic 2.8 ,Diesel,2800.0,600,2021,8850000.0
+21686,Suzuki,Alto   VXR (CNG) ,Petrol,1000.0,95000,2010,819999.9999999999
+36928,Toyota,Corolla Axio   Luxel Alpha Edition ...,Petrol,1800.0,140000,2006,2930000.0
+35655,Toyota,Corolla   Altis Grande CVT-i 1.8 fo...,Petrol,1800.0,64000,2018,3470000.0000000005
+745,Toyota,Corolla   GLi Automatic 1.6 VVTi fo...,Petrol,1600.0,200000,2012,2275000.0
+50590,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,134000,2011,1725000.0
+48013,Suzuki,Cultus   EURO II ,Petrol,1000.0,50000,2015,1250000.0
+19254,Toyota,Corolla   Altis Grande X CVT-i 1.8 ...,Petrol,1800.0,1,2021,4375000.0
+23770,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,42000,2017,2465000.0
+64148,Suzuki,Every Wagon   JP Turbo Limited for ...,Petrol,660.0,100000,2014,1490000.0
+72439,Suzuki,Cultus    ,Petrol,1000.0,170000,2002,650000.0
+47042,Honda,Civic   EXi ,Petrol,1500.0,123456,2004,925000.0
+11020,MG,HS   1.5 Turbo ,Petrol,1500.0,2000,2021,5950000.0
+12117,Mitsubishi,Pajero    ,Petrol,2000.0,186000,2000,2765000.0
+59534,Suzuki,Cultus   Limited Edition ,Petrol,1000.0,49000,2016,1210000.0
+59154,Honda,Civic EG  EL ,Petrol,1300.0,195000,1995,650000.0
+57966,Honda,Fit   1.5 Hybrid Smart Selection for...,Hybrid,1300.0,130000,2013,2370000.0
+74624,Toyota,Corolla   GLi 1.3 VVTi Ecotec  for ...,Petrol,1300.0,185000,2013,2050000.0
+42081,Toyota,Land Cruiser 100 Series  VX Limited...,Diesel,4200.0,205000,2004,6600000.0
+26548,Suzuki,Baleno    ,Petrol,1300.0,200000,1999,660000.0
+37792,Toyota,Vitz   FL 1.0 ,Petrol,1000.0,100000,1999,1250000.0
+24223,Daihatsu,Copen   Robe S ,Petrol,660.0,36500,2014,2100000.0
+1071,Suzuki,Mehran   VXR ,Petrol,800.0,143500,2007,580000.0
+71178,Suzuki,Mehran   VXR Euro II ,Petrol,800.0,57000,2017,920000.0
+8,Mercedes,Benz E Class 3rd (W211) Generation 20...,Petrol,2600.0,168000,2005,3100000.0
+72371,Suzuki,Baleno   JXR ,Petrol,1300.0,200000,2004,780000.0
+63909,Suzuki,Wagon R   VXL ,Petrol,1000.0,72000,2016,1365000.0
+30911,Toyota,Corolla   Altis Automatic 1.6 ,Petrol,1600.0,6000,2021,3850000.0
+28876,Suzuki,Every    ,Petrol,660.0,95000,2012,1150000.0
+55215,Honda,City   EXi S Automatic ,Petrol,1500.0,130000,2001,670000.0
+47163,Suzuki,Alto   VXR ,Petrol,1000.0,100000,2007,550000.0
+72723,Toyota,Prius Alpha   S ,Petrol,1800.0,110000,2012,2600000.0
+1661,Suzuki,Cultus   Limited Edition ,Petrol,1000.0,61000,2017,1350000.0
+40956,Toyota,Crown   Royal Saloon ,Petrol,3000.0,54000,1993,1475000.0
+73108,Suzuki,Mehran   VXR (CNG) ,Petrol,800.0,86000,2009,580000.0
+51662,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,76000,2013,2180000.0
+10858,Toyota,Fortuner   2.8 Sigma 4 ,Diesel,2800.0,6000,2021,1055000.0
+19555,Toyota,Corolla 9th Generation  GLi 1.3 for...,Petrol,1300.0,115000,2007,1350000.0
+17273,Honda,Fit   1.5 Hybrid S Package ,Hybrid,1500.0,90000,2014,2345000.0
+21566,Honda,Civic   Oriel 1.8 i-VTEC CVT ,Petrol,1800.0,7000,2021,4520000.0
+16171,Nissan,Tiida   15G ,Petrol,1500.0,190000,2007,1430000.0
+57591,Honda,Civic   EXi ,Petrol,1500.0,460000,1996,750000.0
+19094,Suzuki,Mehran    ,Petrol,800.0,15,2002,520000.0
+26874,Toyota,C-HR    ,Hybrid,1800.0,38000,2018,6200000.0
+54889,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,60000,2016,2400000.0
+18997,Suzuki,Cultus   VXRi ,Petrol,1000.0,81000,2014,1050000.0
+70549,Honda,City    ,Petrol,1300.0,150000,2007,1350000.0
+30409,Toyota,Corolla   GLi Limited Edition 1.3 V...,Petrol,1300.0,109000,2014,1900000.0
+73514,Toyota,Corolla   GLi Automatic 1.3 VVTi fo...,Petrol,1300.0,67000,2017,2700000.0
+69356,Suzuki,Swift   DLX 1.3 ,Petrol,1300.0,65000,2015,1520000.0
+39356,Honda,Civic Reborn  VTi Oriel Prosmatec 1....,Petrol,1800.0,96000,2008,1600000.0
+28308,MG,HS   1.5 Turbo ,Petrol,1500.0,10,2021,6250000.0
+57343,Daihatsu,Mira   X Memorial Edition ,Petrol,660.0,107000,2012,1225000.0
+57748,Toyota,Prius   S LED Edition 1.8 ,Petrol,1800.0,150000,2010,2450000.0
+29012,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,105000,2011,1664999.9999999998
+17202,Honda,Vezel   Hybrid Z Honda Sensing  for ...,Hybrid,1500.0,61000,2016,4780000.0
+31263,Toyota,Corolla   Altis Grande CVT-i 1.8 fo...,Petrol,1800.0,40000,2018,3800000.0
+65837,Toyota,Corolla   GLi Automatic 1.3 VVTi fo...,Petrol,1300.0,49000,2015,2500000.0
+69882,JW,Forland C-314    ,Diesel,2800.0,29000,2021,2550000.0
+69284,Hyundai,Santro   Club ,Petrol,1000.0,100000,2004,670000.0
+43860,Toyota,Fortuner   2.8 Sigma 4 ,Diesel,2800.0,20,2021,10800000.0
+53874,Honda,City   Aspire Prosmatec 1.5 i-VTEC f...,Petrol,1500.0,130000,2015,2475000.0
+6998,Toyota,Corolla   GLi Automatic 1.3 VVTi fo...,Petrol,1300.0,49460,2018,2975000.0
+57296,Suzuki,Mehran   VX Euro II ,Petrol,800.0,44500,2017,925000.0
+40785,Toyota,Yaris   ATIV MT 1.3 ,Petrol,1300.0,26800,2020,2675000.0
+8292,Honda,Civic Rebirth  VTi Oriel Prosmatec 1...,Petrol,1800.0,62000,2014,2625000.0
+45063,Mitsubishi,Pajero    ,Petrol,1800.0,18856,1989,700000.0
+66289,Daihatsu,Move    ,Petrol,660.0,54000,2018,2085000.0
+30818,Honda,Civic   EXi Prosmatec ,Petrol,1500.0,209000,2003,1185000.0
+76159,Toyota,Corolla   Altis Grande CVT-i 1.8 fo...,Petrol,1800.0,90000,2015,2900000.0
+35617,Honda,Civic   VTi Oriel Prosmatec 1.6 for ...,Petrol,1600.0,235000,2004,1350000.0
+45683,Changan,Karvaan   Base Model 1.0 ,Petrol,1000.0,55000,2020,1650000.0
+67188,Honda,City   1.3 i-VTEC ,Petrol,1300.0,73000,2017,2320000.0
+12187,Toyota,Yaris   ATIV X CVT 1.5 ,Petrol,1500.0,20000,2020,2990000.0
+20216,Suzuki,Margalla   GL ,Petrol,1300.0,100000,1993,550000.0
+4552,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,81000,2018,3000000.0
+74080,Suzuki,Cultus   EURO II ,Petrol,1000.0,130000,2014,1175000.0
+10924,Suzuki,Cultus   EURO II ,Petrol,1000.0,84000,2013,990000.0
+46510,Suzuki,Mehran   VXR Euro II ,Petrol,800.0,21000,2018,1135000.0
+70478,Honda,Civic Eagle Eye  EXi ,Petrol,1500.0,175000,2005,1350000.0
+622,Honda,Civic Rebirth  VTi Oriel Prosmatec 1...,Petrol,1800.0,90000,2014,2600000.0
+76258,Honda,Civic   Oriel 1.8 i-VTEC CVT ,Petrol,1800.0,22000,2020,4200000.0
+37287,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,115000,2013,1950000.0
+32584,Honda,Civic   VTi 1.6 ,Petrol,1600.0,152000,2006,1225000.0
+38566,Honda,Civic   VTi Oriel Prosmatec 1.8 i-VT...,Petrol,1800.0,117000,2012,2150000.0
+34656,Suzuki,Mehran   VX Euro II ,Petrol,800.0,70000,2012,620000.0
+45006,Suzuki,Mehran   VX ,Petrol,800.0,10000,2007,505000.0
+50289,Toyota,"Aqua   G LED Soft Leather Selection...
+8.9/10",Hybrid,1500.0,8647,2019,4100000.0
+28216,Toyota,Corolla   Altis Grande CVT-i 1.8 fo...,Petrol,1800.0,13000,2021,4350000.0
+63643,Honda,Accord   CL9 ,Petrol,2400.0,68000,2003,2150000.0
+20362,Toyota,Corolla   Altis Automatic 1.6 ,Petrol,1600.0,68000,2014,2400000.0
+28284,Honda,City   Aspire Prosmatec 1.5 i-VTEC f...,Petrol,1500.0,68000,2017,2750000.0
+76070,Hyundai,Santro   Club ,Petrol,1000.0,150000,2006,795000.0
+44032,Toyota,Corolla   Altis X Automatic 1.6 for...,Petrol,1600.0,400,2021,3700000.0
+40207,FAW,X-PV   Power Edition ,Petrol,1000.0,32500,2020,1290000.0
+36374,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,55000,2016,2400000.0
+6305,KIA,Sportage    ,Petrol,2000.0,11000,2019,5500000.0
+65361,Daihatsu,Cuore   CX Automatic ,Petrol,800.0,18,2006,725000.0
+56330,Toyota,Yaris   ATIV MT 1.3 ,Petrol,1300.0,500,2021,2980000.0
+48856,Suzuki,Alto   VXR ,Petrol,660.0,43000,2020,1540000.0
+2716,Daihatsu,Mira   ES ,Petrol,660.0,78000,2013,1600000.0
+6874,Suzuki,Cultus   Limited Edition ,Petrol,1000.0,84000,2008,630000.0
+46910,Toyota,Corolla   XLi ,Petrol,1300.0,190000,2004,1200000.0
+43863,Suzuki,Bolan    ,Petrol,800.0,84000,2011,610000.0
+26287,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,7261,2020,3300000.0
+3779,Suzuki,Alto   VXR ,Petrol,660.0,10,2021,1675000.0
+58544,Toyota,Corolla Axio   Hybrid 1.5 ,Petrol,1500.0,115000,2015,3450000.0
+42331,Toyota,Corolla   GLi Automatic 1.3 VVTi fo...,Petrol,1300.0,7000,2018,3050000.0
+31550,Suzuki,Cultus   VXL ,Petrol,1000.0,106000,2006,650000.0
+44959,MG,HS   1.5 Turbo ,Petrol,1500.0,1,2021,5750000.0
+56868,Suzuki,Cultus   VX ,Petrol,1000.0,120000,2003,500000.0
+21186,Suzuki,Alto   G ,Petrol,660.0,160000,2011,1315000.0
+71513,Toyota,Hilux   Revo V Automatic 2.8 ,Diesel,2800.0,41000,2021,7800000.0
+47517,Suzuki,Cultus   EURO II ,Petrol,1000.0,119400,2012,1180000.0
+75712,Daihatsu,Cuore   CX Eco ,Petrol,800.0,57000,2007,650000.0
+64768,Toyota,Aqua   S ,Hybrid,1500.0,112000,2014,2350000.0
+65241,Suzuki,Wagon R   FX Idling Stop ,Petrol,660.0,90000,2012,1350000.0
+33239,Suzuki,Every    ,Petrol,660.0,78800,2015,1150000.0
+18249,Audi,Q3    ,Petrol,2500.0,123456,2016,7500000.0
+26259,Suzuki,Cultus   VXR ,Petrol,1000.0,100000,2006,675000.0
+20906,Toyota,Corolla 9th Generation   ,Petrol,1500.0,169000,2006,2550000.0
+6987,Toyota,Cami   P ,Petrol,1300.0,110000,2000,1250000.0
+37196,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,170000,2010,1650000.0
+8907,Suzuki,Mehran   VX (CNG) ,Petrol,800.0,234568,2007,500000.0
+21191,Honda,N Wgn   C ,Petrol,660.0,17000,2021,2100000.0
+71456,Suzuki,Mehran   VXR Euro II ,Petrol,800.0,65000,2013,740000.0
+33623,Suzuki,APV   GLX (CNG) ,Petrol,1500.0,200000,2008,2000000.0
+6089,Honda,Vezel   Hybrid Z Honda Sensing  for ...,Petrol,1500.0,94000,2016,4400000.0
+69320,Suzuki,Cultus   VXR ,Petrol,1000.0,73650,2006,800000.0
+13034,Toyota,Corolla   SE Saloon Automatic ,Petrol,1600.0,80000,2004,1600000.0
+64345,Toyota,Corolla   GLi Automatic 1.3 VVTi fo...,Petrol,1300.0,25000,2015,2540000.0
+56493,Toyota,Yaris   GLI MT 1.3 ,Petrol,1300.0,30000,2020,2665000.0
+65399,Suzuki,Ravi    ,Petrol,800.0,74000,2011,630000.0
+73407,Toyota,Corolla Axio   Hybrid 1.5 ,Petrol,1500.0,60000,2015,3100000.0
+39499,Suzuki,Wagon R   VXL ,Petrol,1000.0,10,2021,1852000.0
+46001,Suzuki,Cultus   VXRi (CNG) ,Petrol,1000.0,84000,2010,840000.0
+68063,Toyota,Aqua   G ,Hybrid,1500.0,175000,2013,2500000.0
+9710,Toyota,Fortuner   2.7 G ,Petrol,2700.0,10,2021,8600000.0
+13148,Suzuki,Cultus   VXRi ,Petrol,1000.0,51000,2014,1045000.0
+10539,Toyota,Land Cruiser   ZX ,Petrol,4608.0,21000,2016,34500000.0
+38450,Honda,City   1.3 i-VTEC ,Petrol,1300.0,150000,2015,2150000.0
+55718,Toyota,Corolla   Altis SR Cruisetronic 1.6...,Petrol,1600.0,54000,2012,2500000.0
+55991,Toyota,Corolla 9th Generation  XLi ,Petrol,1300.0,200000,2007,1500000.0
+39082,Suzuki,Carry    ,Petrol,800.0,156000,2012,750000.0
+29225,Toyota,Corolla   Altis Automatic 1.6 ,Petrol,1600.0,100000,2016,2800000.0
+11014,Toyota,"Prado 120 Series  TX Limited 3.4 fo...
+7.2/10",Petrol,3400.0,148057,2004,6700000.0
+70938,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,95000,2016,2430000.0
+45658,Haval,Jolion   Top ,Petrol,1500.0,1600,2021,6175000.0
+1233,Toyota,Corolla   Altis Grande CVT-i 1.8 fo...,Petrol,1800.0,58000,2018,3750000.0
+7932,Mercedes,Benz C Class    ,Petrol,1800.0,100000,2004,3200000.0
+63215,Toyota,Corolla   Altis Automatic 1.6 ,Petrol,1600.0,1,2021,4000000.0
+67325,Honda,Civic Rebirth  Oriel Prosmatec UG fo...,Petrol,1800.0,48000,2015,2585000.0
+26871,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,118000,2015,2550000.0
+13430,Toyota,Corolla   GLi 1.3 VVTi Special Edit...,Petrol,1300.0,192000,2014,2000000.0
+57241,Hyundai,Santro   Plus ,Petrol,1000.0,80285,2002,535000.0
+66720,Toyota,Vitz   F 1.0 ,Petrol,1000.0,45000,2014,2285000.0
+25177,Audi,A4 4th (B8) Generation  S-Line Compet...,Petrol,2000.0,79000,2013,5700000.0
+36952,Toyota,Corolla Fielder   X Special Edition...,Petrol,1500.0,200000,2007,2450000.0
+49024,Suzuki,Alto   TURBO RS ,Petrol,660.0,40000,2016,1850000.0
+11775,Toyota,Vitz   F Smile Edition 1.0 ,Petrol,1000.0,40000,2018,2950000.0
+51339,Suzuki,Every   Join Turbo ,Petrol,660.0,53000,2014,1580000.0
+13980,Honda,Civic Reborn  VTi Oriel 1.8 i-VTEC f...,Petrol,1800.0,145000,2009,1670000.0
+4033,Nissan,Otti    ,Petrol,660.0,100000,2010,1090000.0
+53065,Honda,Civic Reborn  VTi 1.8 i-VTEC ,Petrol,1800.0,104000,2010,1750000.0
+19568,Changan,Karvaan   Plus ,Petrol,1000.0,13000,2021,1250000.0
+69509,Nissan,Juke   15RX ,Petrol,1500.0,87000,2011,2225000.0
+831,Daihatsu,Cuore   CX Automatic ,Petrol,800.0,60241,2012,1145000.0
+53220,Toyota,Corolla   GLi 1.3 VVTi ,Petrol,1300.0,147000,2015,2450000.0
+9494,KIA,"Sportage   AWD 
+9.7/10",Petrol,2000.0,32364,2021,6000000.0
+34246,Suzuki,Swift   DLX 1.3 ,Petrol,1300.0,140000,2018,1850000.0
+50379,Honda,City   i-DSI ,Petrol,1300.0,132755,2007,1475000.0
+50426,Toyota,Corolla   SE Limited ,Petrol,1500.0,123488,1994,1400000.0
+27613,Honda,BR-V   i-VTEC S ,Petrol,1500.0,59000,2018,3075000.0
+10350,Honda,Civic   VTi Oriel Prosmatec 1.6 for ...,Petrol,1600.0,84269,2003,1275000.0
+39410,Suzuki,Every Wagon   JP Turbo ,Petrol,660.0,995000,2015,1095000.0
+35658,Suzuki,Mehran   VX Euro II ,Petrol,800.0,89000,2013,720000.0
+31608,Toyota,Fortuner   2.8 Sigma 4 ,Diesel,2800.0,1,2021,10800000.0
+9322,Toyota,Sienta   G ,Hybrid,1500.0,80000,2016,3475000.0
+19616,KIA,Sportage   AWD ,Petrol,2000.0,30000,2020,5550000.0
+74225,Toyota,Aqua    ,Hybrid,1500.0,85000,2014,2450000.0
+11306,Honda,City   EXi S Automatic ,Petrol,1500.0,211000,2001,1025000.0
+20950,Toyota,Hilux   Revo V Automatic 2.8 ,Diesel,2800.0,34,2021,8225000.0
+75113,Toyota,Corolla   GLi 1.3 VVTi Ecotec  for ...,Petrol,1300.0,90000,2013,1930000.0
+57667,Toyota,Corolla   GLi Automatic 1.6 VVTi fo...,Petrol,1600.0,64500,2011,2050000.0
+12496,Suzuki,Bolan   VX Euro II ,Petrol,800.0,42000,2019,1100000.0
+750,Suzuki,Wagon R   VXR ,Petrol,1000.0,1500,2021,1835000.0
+55763,Suzuki,Cultus   VXL ,Petrol,1000.0,5000,2021,2350000.0
+51126,Honda,Civic Reborn  VTi Oriel Prosmatec 1....,Petrol,1800.0,132888,2010,2000000.0
+27663,Toyota,Yaris   GLI CVT 1.3 ,Petrol,1300.0,9800,2021,2850000.0
+25985,Suzuki,Wagon R   VXL ,Petrol,1000.0,80000,2018,1750000.0
+31996,Suzuki,Cultus   VXR ,Petrol,1000.0,80000,2005,700000.0
+25540,Honda,BR-V   i-VTEC S ,Petrol,1500.0,43000,2018,2850000.0
+59615,Honda,Civic Rebirth  Turbo 1.5 VTEC CVT fo...,Petrol,1500.0,18500,2016,3800000.0
+73678,Daihatsu,Cuore   CX ,Petrol,800.0,120000,2004,690000.0
+45220,Suzuki,Mehran   VX Euro II ,Petrol,800.0,80000,2014,750000.0
+47707,Nissan,Sunny   EX Saloon 1.3 ,Petrol,1300.0,300000,2006,1150000.0
+27634,Mitsubishi,I   G ,Petrol,660.0,95000,2007,985000.0
+72980,Suzuki,Wagon R   VXL ,Petrol,1000.0,123465,2016,1370000.0
+69850,Honda,Vezel   Hybrid Z Honda Sensing  for ...,Petrol,1500.0,80000,2017,4700000.0
+35262,Mercedes,Benz E Class 4th (W212) Generation 20...,Petrol,2000.0,77699,2010,6200000.0
+13999,Honda,Accord   VTi 2.4 ,Petrol,2400.0,76000,2013,5700000.0
+33456,Toyota,Corolla   XLi Automatic ,Petrol,1300.0,22500,2019,2890000.0
+50991,Suzuki,Mehran   VX (CNG) ,Petrol,800.0,114000,2011,740000.0
+24046,Suzuki,Every   GA ,Petrol,660.0,11600,2015,1300000.0
+12758,Toyota,Passo    ,Petrol,1000.0,57000,2007,1125000.0
+3814,KIA,Sportage   AWD ,Petrol,2000.0,52000,2020,5150000.0
+2783,Suzuki,"Wagon R   Stingray T 
+8.4/10",Petrol,660.0,144116,2013,1500000.0
+40176,Honda,City   1.2L CVT ,Petrol,1200.0,2000,2021,3300000.0
+53249,Suzuki,Cultus   VXR ,Petrol,1000.0,49000,2007,780000.0
+19676,Suzuki,Cultus   VXL ,Petrol,1000.0,57000,2018,1920000.0
+30475,Toyota,Vitz   F 1.0 ,Petrol,1000.0,127000,2011,1645000.0
+63321,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,230000,2014,2190000.0
+61809,Honda,Civic   VTi Oriel 1.6 ,Petrol,1600.0,183000,2003,1270000.0
+52624,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,140000,2014,2050000.0
+38455,Honda,Vezel   Hybrid Z ,Hybrid,1500.0,51000,2015,3600000.0
+68118,Suzuki,Alto   VXR (CNG) ,Petrol,1000.0,288056,2010,850000.0
+55978,Suzuki,Cultus   Euro II (CNG) ,Petrol,1000.0,85000,2013,990000.0
+57117,Honda,City   1.3 i-VTEC ,Petrol,1300.0,71000,2013,1850000.0
+25938,Toyota,Passo   + Hana Apricot Collection 1...,Petrol,1000.0,86000,2014,1850000.0
+72285,Honda,Civic   EXi ,Petrol,1500.0,400000,1999,1000000.0
+61895,Honda,Civic Rebirth  VTi Oriel Prosmatec 1...,Petrol,1800.0,110000,2013,2500000.0
+42230,Toyota,Prado   TX 2.7 ,Petrol,2700.0,44000,2016,14800000.0
+21000,Lexus,RX Series   450H ,Petrol,3500.0,68000,2010,8200000.0
+37933,Honda,Civic   VTi 1.6 ,CNG,1600.0,150000,1996,720000.0
+61046,Suzuki,Swift   DLX 1.3 ,Petrol,1300.0,74570,2010,1260000.0
+4224,Honda,Civic   EXi ,Petrol,1500.0,108000,2006,1200000.0
+34206,Toyota,Surf   SSR-G 2.7 ,Petrol,2700.0,150,1999,2600000.0
+47102,Daihatsu,Mira   Custom L ,Petrol,660.0,42000,2012,1500000.0
+70026,Suzuki,Mehran   VXR (CNG) ,Petrol,800.0,92000,2007,535000.0
+35738,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,150000,2010,1700000.0
+68142,Suzuki,Mehran   VX (CNG) ,Petrol,800.0,65000,2012,680000.0
+31051,Honda,City   Aspire Prosmatec 1.3 i-VTEC f...,Petrol,1300.0,96000,2015,2300000.0
+50013,Toyota,Corolla   Altis Sportivo Automatic ...,Petrol,1600.0,126000,2013,2670000.0
+70128,Toyota,Voxy   X L EDITION ,Hybrid,1800.0,113000,2015,4325000.0
+39399,Honda,Civic   1.5 RS Turbo ,Petrol,1000.0,10000,2017,3800000.0
+54803,Suzuki,Cultus   VXR ,Petrol,1000.0,18500,2005,630000.0
+7738,Toyota,Prado   TX 2.7 ,Petrol,2700.0,30000,2016,18000000.0
+30482,Toyota,Corolla   XLi VVTi ,Petrol,1300.0,97000,2011,1689999.9999999998
+42928,DFSK,Glory 580   Pro ,Petrol,1500.0,2500,2021,4695000.0
+57030,Toyota,Prado   TX Limited 2.7 ,Petrol,2700.0,70000,2012,12900000.0
+65639,Toyota,C-HR   1.8 Hybrid ,Hybrid,1800.0,30000,2021,5550000.0
+41432,Audi,A4 4th (B8) Generation  1.8 TFSI for ...,Petrol,1800.0,105000,2013,5500000.0
+74036,Honda,Vezel   Hybrid Z Honda Sensing  for ...,Petrol,1500.0,60000,2015,3450000.0

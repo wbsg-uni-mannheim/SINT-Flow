@@ -1,0 +1,533 @@
+{
+    "schema_by_entity": {
+        "Airline Dataset Updated - v2_9.csv": {
+            "Passenger": {
+                "attributes": [
+                    "Passenger ID",
+                    "First Name",
+                    "Last Name",
+                    "Gender",
+                    "Age",
+                    "Nationality"
+                ],
+                "table_group": "Passenger"
+            },
+            "Airport": {
+                "attributes": [
+                    "Airport Name",
+                    "Airport Country Code",
+                    "Country Name",
+                    "Airport Continent",
+                    "Continents"
+                ],
+                "table_group": "Airport"
+            },
+            "Flight": {
+                "attributes": [
+                    "Departure Date",
+                    "Airport Name",
+                    "Arrival Airport",
+                    "Pilot Name",
+                    "Flight Status"
+                ],
+                "table_group": "Flight"
+            }
+        },
+        "Airline Dataset Updated - v2_14.csv": {
+            "Passenger": {
+                "attributes": [
+                    "Passenger ID",
+                    "GivenName",
+                    "Surname",
+                    "Sex",
+                    "Age",
+                    "Citizenship"
+                ],
+                "table_group": "Passenger"
+            },
+            "Airport": {
+                "attributes": [
+                    "OriginAirportName",
+                    "OriginCountryISO2",
+                    "OriginCountry",
+                    "OriginContinentCode",
+                    "OriginContinent"
+                ],
+                "table_group": "Airport"
+            },
+            "Flight": {
+                "attributes": [
+                    "DepartDate",
+                    "DestAirportCode",
+                    "Captain",
+                    "OriginAirportName",
+                    "Status"
+                ],
+                "table_group": "Flight"
+            }
+        },
+        "Airline Dataset Updated - v2_16.csv": {
+            "Passenger": {
+                "attributes": [
+                    "Passenger ID",
+                    "FirstNm",
+                    "LastNm",
+                    "Gender",
+                    "Age",
+                    "Nationality"
+                ],
+                "table_group": "Passenger"
+            },
+            "Airport": {
+                "attributes": [
+                    "DepAirport",
+                    "DepCtryCode",
+                    "DepCountryName",
+                    "DepContCode",
+                    "DepContinentName"
+                ],
+                "table_group": "Airport"
+            },
+            "Flight": {
+                "attributes": [
+                    "FlightDate",
+                    "DepAirport",
+                    "ArrAirport",
+                    "PilotInCommand",
+                    "FlightState"
+                ],
+                "table_group": "Flight"
+            }
+        },
+        "Airline Dataset Updated - v2_18.csv": {
+            "Passenger": {
+                "attributes": [
+                    "Passenger ID",
+                    "FName",
+                    "LName",
+                    "Gender",
+                    "Age",
+                    "Nationality"
+                ],
+                "table_group": "Passenger"
+            },
+            "Airport": {
+                "attributes": [
+                    "AirportName",
+                    "CountryCode",
+                    "Country",
+                    "ContinentCode",
+                    "Continent"
+                ],
+                "table_group": "Airport"
+            },
+            "Flight": {
+                "attributes": [
+                    "DepartureDt",
+                    "AirportName",
+                    "ArrivalAirportCode",
+                    "FlightPilot",
+                    "StatusFlag"
+                ],
+                "table_group": "Flight"
+            }
+        },
+        "Airline Dataset Updated - v2_126.csv": {
+            "Passenger": {
+                "attributes": [
+                    "Passenger ID",
+                    "Fname",
+                    "FamilyName",
+                    "Gender",
+                    "AgeYrs",
+                    "Nationality"
+                ],
+                "table_group": "Passenger"
+            },
+            "Airport": {
+                "attributes": [
+                    "Airport",
+                    "ISO2",
+                    "CountryName",
+                    "ContCode",
+                    "ContinentName"
+                ],
+                "table_group": "Airport"
+            },
+            "Flight": {
+                "attributes": [
+                    "DepDate",
+                    "Airport",
+                    "ArrAirport",
+                    "Pilot",
+                    "FlightStatus"
+                ],
+                "table_group": "Flight"
+            }
+        },
+        "airports.csv": {
+            "Airport": {
+                "attributes": [
+                    "AirportName",
+                    "IATA",
+                    "ICAO",
+                    "City_Name",
+                    "Country_CodeA2",
+                    "Country_CodeA3",
+                    "Country_Name",
+                    "GeoPointLat",
+                    "GeoPointLong"
+                ],
+                "table_group": "Airport"
+            }
+        },
+        "data_182.csv": {
+            "Airport": {
+                "attributes": [
+                    "Airport_ID",
+                    "SiteCode",
+                    "AerodromeClass",
+                    "FacilityName",
+                    "LatitudeDeg",
+                    "LongitudeDeg",
+                    "FieldElevationFt",
+                    "ContCode",
+                    "ISO2Country",
+                    "ISORegionCode",
+                    "Locality",
+                    "IATA"
+                ],
+                "table_group": "Airport"
+            }
+        },
+        "data_233.csv": {
+            "Airport": {
+                "attributes": [
+                    "Airport_ID",
+                    "AirportCode",
+                    "LocationType",
+                    "OfficialName",
+                    "Lat",
+                    "Lng",
+                    "ElevationFeet",
+                    "Continent",
+                    "CountryCode",
+                    "RegionCode",
+                    "MunicipalityName",
+                    "IATA_Code"
+                ],
+                "table_group": "Airport"
+            }
+        },
+        "airports _174.csv": {
+            "Airport": {
+                "attributes": [
+                    "id",
+                    "facility_ident",
+                    "facility_type",
+                    "site_name",
+                    "lat_deg",
+                    "lon_deg",
+                    "elev_ft_msl",
+                    "continent_code",
+                    "country_iso2",
+                    "admin_region_iso",
+                    "local_municipality",
+                    "iata"
+                ],
+                "table_group": "Airport"
+            }
+        },
+        "airports _233.csv": {
+            "Airport": {
+                "attributes": [
+                    "id",
+                    "location_ident",
+                    "facility_category",
+                    "facility_name",
+                    "latitude_dd",
+                    "longitude_dd",
+                    "elevation_ft_agl",
+                    "continent_abbrev",
+                    "iso2_country",
+                    "iso_region_code",
+                    "nearest_municipality",
+                    "iata_airport_code"
+                ],
+                "table_group": "Airport"
+            }
+        }
+    },
+    "schema_by_normalization": {
+        "cardata.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "Car_Name",
+                    "Year",
+                    "Fuel_Type",
+                    "Transmission",
+                    "Selling_Price",
+                    "Present_Price",
+                    "Kms_Driven",
+                    "Seller_Type",
+                    "Owner"
+                ],
+                "primary_key": [
+                    "Car_Name",
+                    "Year",
+                    "Fuel_Type",
+                    "Transmission",
+                    "Kms_Driven",
+                    "Selling_Price"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car_Listing"
+            }
+        },
+        "cars_24_combined_128.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "Car Name",
+                    "Year",
+                    "Fuel",
+                    "Drive",
+                    "Distance",
+                    "Owner",
+                    "Location",
+                    "Price"
+                ],
+                "primary_key": [
+                    "listing_id"
+                ],
+                "foreign_keys": {
+                    "Car Name": {
+                        "Car": "Car Name"
+                    }
+                },
+                "table_group": "Car_Listing"
+            },
+            "Car": {
+                "attributes": [
+                    "Car Name",
+                    "Type"
+                ],
+                "primary_key": [
+                    "Car Name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car"
+            }
+        },
+        "cars_24_combined_133.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "Car Name",
+                    "Year",
+                    "Fuel",
+                    "Drive",
+                    "Distance",
+                    "Owner",
+                    "Location",
+                    "Price"
+                ],
+                "primary_key": [
+                    "listing_id"
+                ],
+                "foreign_keys": {
+                    "Car Name": {
+                        "Car": "Car Name"
+                    }
+                },
+                "table_group": "Car_Listing"
+            },
+            "Car": {
+                "attributes": [
+                    "Car Name",
+                    "Type"
+                ],
+                "primary_key": [
+                    "Car Name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car"
+            }
+        },
+        "cars_24_combined_136.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "Car Name",
+                    "Year",
+                    "Fuel",
+                    "Drive",
+                    "Distance",
+                    "Owner",
+                    "Location",
+                    "Price"
+                ],
+                "primary_key": [
+                    "listing_id"
+                ],
+                "foreign_keys": {
+                    "Car Name": {
+                        "Car": "Car Name"
+                    }
+                },
+                "table_group": "Car_Listing"
+            },
+            "Car": {
+                "attributes": [
+                    "Car Name",
+                    "Type"
+                ],
+                "primary_key": [
+                    "Car Name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car"
+            }
+        },
+        "cars_24_combined_137.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "Car Name",
+                    "Year",
+                    "Fuel",
+                    "Drive",
+                    "Distance",
+                    "Owner",
+                    "Location",
+                    "Price"
+                ],
+                "primary_key": [
+                    "listing_id"
+                ],
+                "foreign_keys": {
+                    "Car Name": {
+                        "Car": "Car Name"
+                    }
+                },
+                "table_group": "Car_Listing"
+            },
+            "Car": {
+                "attributes": [
+                    "Car Name",
+                    "Type"
+                ],
+                "primary_key": [
+                    "Car Name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car"
+            }
+        },
+        "cars_24_combined_139.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "Car Name",
+                    "Year",
+                    "Fuel",
+                    "Drive",
+                    "Distance",
+                    "Owner",
+                    "Location",
+                    "Price"
+                ],
+                "primary_key": [
+                    "listing_id"
+                ],
+                "foreign_keys": {
+                    "Car Name": {
+                        "Car": "Car Name"
+                    }
+                },
+                "table_group": "Car_Listing"
+            },
+            "Car": {
+                "attributes": [
+                    "Car Name",
+                    "Type"
+                ],
+                "primary_key": [
+                    "Car Name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car"
+            }
+        },
+        "cars_24_combined_142.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "Car Name",
+                    "Year",
+                    "Fuel",
+                    "Drive",
+                    "Distance",
+                    "Owner",
+                    "Location",
+                    "Price"
+                ],
+                "primary_key": [
+                    "listing_id"
+                ],
+                "foreign_keys": {
+                    "Car Name": {
+                        "Car": "Car Name"
+                    }
+                },
+                "table_group": "Car_Listing"
+            },
+            "Car": {
+                "attributes": [
+                    "Car Name",
+                    "Type"
+                ],
+                "primary_key": [
+                    "Car Name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car"
+            }
+        },
+        "cars_24_combined_144.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "Car Name",
+                    "Year",
+                    "Fuel",
+                    "Drive",
+                    "Distance",
+                    "Owner",
+                    "Location",
+                    "Price"
+                ],
+                "primary_key": [
+                    "listing_id"
+                ],
+                "foreign_keys": {
+                    "Car Name": {
+                        "Car": "Car Name"
+                    }
+                },
+                "table_group": "Car_Listing"
+            },
+            "Car": {
+                "attributes": [
+                    "Car Name",
+                    "Type"
+                ],
+                "primary_key": [
+                    "Car Name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car"
+            }
+        }
+    }
+}

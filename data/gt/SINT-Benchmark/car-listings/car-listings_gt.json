@@ -1,0 +1,481 @@
+{
+    "schema_by_entity": {
+        "cardata.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "Model",
+                    "Year",
+                    "Selling_Price",
+                    "Present_Price",
+                    "Kms_Driven",
+                    "Fuel_Type",
+                    "Seller_Type",
+                    "Transmission",
+                    "Owner"
+                ],
+                "table_group": "Car_Listing"
+            }
+        },
+        "cars_24_combined_128.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "make",
+                    "model_name",
+                    "yr",
+                    "odometer_km",
+                    "rto_code",
+                    "transmission",
+                    "body_style",
+                    "asking_price_inr"
+                ],
+                "table_group": "Car_Listing"
+            }
+        },
+        "cars_24_combined_133.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "manufacturer",
+                    "variant",
+                    "mfg_year",
+                    "km_run",
+                    "fuel_type",
+                    "reg_code",
+                    "gearbox",
+                    "vehicle_class",
+                    "price_inr"
+                ],
+                "table_group": "Car_Listing"
+            }
+        },
+        "cars_24_combined_136.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "brand_name",
+                    "car_model",
+                    "year_built",
+                    "mileage",
+                    "fuel_cat",
+                    "location_code",
+                    "trans_type",
+                    "vehicle_type",
+                    "sale_price"
+                ],
+                "table_group": "Car_Listing"
+            }
+        },
+        "cars_24_combined_137.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "automaker",
+                    "model",
+                    "year",
+                    "kms_driven",
+                    "owner_count",
+                    "fuel",
+                    "plate_code",
+                    "trans",
+                    "segment",
+                    "price"
+                ],
+                "table_group": "Car_Listing"
+            }
+        },
+        "cars_24_combined_139.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "marque",
+                    "nameplate",
+                    "year_reg",
+                    "run_km",
+                    "owner_num",
+                    "fuel_mode",
+                    "rto_region",
+                    "shift_type",
+                    "body_type",
+                    "price_amt"
+                ],
+                "table_group": "Car_Listing"
+            }
+        },
+        "cars_24_combined_142.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "make_name",
+                    "trim",
+                    "model_year",
+                    "distance_km",
+                    "owner_index",
+                    "fuel_class",
+                    "registration_zone",
+                    "listed_price"
+                ],
+                "table_group": "Car_Listing"
+            }
+        },
+        "cars_24_combined_144.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "oem",
+                    "model_line",
+                    "year_made",
+                    "driven_total",
+                    "fuel_used",
+                    "registration_code",
+                    "transmission_mode",
+                    "listed_price_inr"
+                ],
+                "table_group": "Car_Listing"
+            }
+        },
+        "PakWheelsDataSet_165.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "id",
+                    "maker",
+                    "full_title",
+                    "gear_type",
+                    "fuel_grade",
+                    "engine_cc",
+                    "odo_m",
+                    "year",
+                    "list_price"
+                ],
+                "table_group": "Car_Listing"
+            }
+        },
+        "PakWheelsDataSet_177.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "id",
+                    "make",
+                    "vehicle_name",
+                    "fuel_type",
+                    "displacement_cc",
+                    "mileage_km",
+                    "year",
+                    "price_pkr"
+                ],
+                "table_group": "Car_Listing"
+            }
+        }
+    },
+    "schema_by_normalization": {
+        "cardata.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "Model",
+                    "Year",
+                    "Fuel_Type",
+                    "Transmission",
+                    "Selling_Price",
+                    "Present_Price",
+                    "Kms_Driven",
+                    "Seller_Type",
+                    "Owner"
+                ],
+                "primary_key": [
+                    "Model",
+                    "Year",
+                    "Fuel_Type",
+                    "Transmission",
+                    "Kms_Driven",
+                    "Selling_Price"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car_Listing"
+            }
+        },
+        "cars_24_combined_128.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "Car Name",
+                    "Year",
+                    "Fuel",
+                    "Drive",
+                    "Distance",
+                    "Owner",
+                    "Location",
+                    "Price"
+                ],
+                "primary_key": [
+                    "listing_id"
+                ],
+                "foreign_keys": {
+                    "Car Name": {
+                        "Car": "Car Name"
+                    }
+                },
+                "table_group": "Car_Listing"
+            },
+            "Car": {
+                "attributes": [
+                    "Car Name",
+                    "Type"
+                ],
+                "primary_key": [
+                    "Car Name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car"
+            }
+        },
+        "cars_24_combined_133.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "Car Name",
+                    "Year",
+                    "Fuel",
+                    "Drive",
+                    "Distance",
+                    "Owner",
+                    "Location",
+                    "Price"
+                ],
+                "primary_key": [
+                    "listing_id"
+                ],
+                "foreign_keys": {
+                    "Car Name": {
+                        "Car": "Car Name"
+                    }
+                },
+                "table_group": "Car_Listing"
+            },
+            "Car": {
+                "attributes": [
+                    "Car Name",
+                    "Type"
+                ],
+                "primary_key": [
+                    "Car Name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car"
+            }
+        },
+        "cars_24_combined_136.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "Car Name",
+                    "Year",
+                    "Fuel",
+                    "Drive",
+                    "Distance",
+                    "Owner",
+                    "Location",
+                    "Price"
+                ],
+                "primary_key": [
+                    "listing_id"
+                ],
+                "foreign_keys": {
+                    "Car Name": {
+                        "Car": "Car Name"
+                    }
+                },
+                "table_group": "Car_Listing"
+            },
+            "Car": {
+                "attributes": [
+                    "Car Name",
+                    "Type"
+                ],
+                "primary_key": [
+                    "Car Name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car"
+            }
+        },
+        "cars_24_combined_137.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "Car Name",
+                    "Year",
+                    "Fuel",
+                    "Drive",
+                    "Distance",
+                    "Owner",
+                    "Location",
+                    "Price"
+                ],
+                "primary_key": [
+                    "listing_id"
+                ],
+                "foreign_keys": {
+                    "Car Name": {
+                        "Car": "Car Name"
+                    }
+                },
+                "table_group": "Car_Listing"
+            },
+            "Car": {
+                "attributes": [
+                    "Car Name",
+                    "Type"
+                ],
+                "primary_key": [
+                    "Car Name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car"
+            }
+        },
+        "cars_24_combined_139.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "Car Name",
+                    "Year",
+                    "Fuel",
+                    "Drive",
+                    "Distance",
+                    "Owner",
+                    "Location",
+                    "Price"
+                ],
+                "primary_key": [
+                    "listing_id"
+                ],
+                "foreign_keys": {
+                    "Car Name": {
+                        "Car": "Car Name"
+                    }
+                },
+                "table_group": "Car_Listing"
+            },
+            "Car": {
+                "attributes": [
+                    "Car Name",
+                    "Type"
+                ],
+                "primary_key": [
+                    "Car Name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car"
+            }
+        },
+        "cars_24_combined_142.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "Car Name",
+                    "Year",
+                    "Fuel",
+                    "Drive",
+                    "Distance",
+                    "Owner",
+                    "Location",
+                    "Price"
+                ],
+                "primary_key": [
+                    "listing_id"
+                ],
+                "foreign_keys": {
+                    "Car Name": {
+                        "Car": "Car Name"
+                    }
+                },
+                "table_group": "Car_Listing"
+            },
+            "Car": {
+                "attributes": [
+                    "Car Name",
+                    "Type"
+                ],
+                "primary_key": [
+                    "Car Name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car"
+            }
+        },
+        "cars_24_combined_144.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "listing_id",
+                    "Car Name",
+                    "Year",
+                    "Fuel",
+                    "Drive",
+                    "Distance",
+                    "Owner",
+                    "Location",
+                    "Price"
+                ],
+                "primary_key": [
+                    "listing_id"
+                ],
+                "foreign_keys": {
+                    "Car Name": {
+                        "Car": "Car Name"
+                    }
+                },
+                "table_group": "Car_Listing"
+            },
+            "Car": {
+                "attributes": [
+                    "Car Name",
+                    "Type"
+                ],
+                "primary_key": [
+                    "Car Name"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car"
+            }
+        },
+        "PakWheelsDataSet_165.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "id",
+                    "Make",
+                    "Name",
+                    "Transmission",
+                    "Engine Type",
+                    "Engine Capacity(CC)",
+                    "Mileage(kms)",
+                    "Year",
+                    "Price"
+                ],
+                "primary_key": [
+                    "id"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car_Listing"
+            }
+        },
+        "PakWheelsDataSet_177.csv": {
+            "Car_Listing": {
+                "attributes": [
+                    "id",
+                    "Make",
+                    "Name",
+                    "Transmission",
+                    "Engine Type",
+                    "Engine Capacity(CC)",
+                    "Mileage(kms)",
+                    "Year",
+                    "Price"
+                ],
+                "primary_key": [
+                    "id"
+                ],
+                "foreign_keys": {},
+                "table_group": "Car_Listing"
+            }
+        }
+    }
+}

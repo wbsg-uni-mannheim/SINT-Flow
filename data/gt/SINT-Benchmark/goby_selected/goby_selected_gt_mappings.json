@@ -1,0 +1,992 @@
+{
+    "column_mappings": {
+        "goby_205.csv": {
+            "showName": "name",
+            "type": "type",
+            "sMoreInfo": "website",
+            "sSynopsis": "description",
+            "closes": "endDate",
+            "more": "moreDetailURL",
+            "opens": "startDate",
+            "sTicketPhone": "phone",
+            "sTicketPrice": "ticketPrice",
+            "theater": "venue",
+            "sTheaterAddress": "address",
+            "sTheaterCity": "city",
+            "sTheaterState": "state",
+            "sTheaterZip": "zip"
+        },
+        "goby_6409.csv": {
+            "showName": "name",
+            "type": "type",
+            "sSynopsis": "description",
+            "sTicketPrice": "ticketPrice",
+            "sTicketPhone": "phone",
+            "more": "moreDetailURL",
+            "opens": "startDate",
+            "close": "endDate",
+            "sMoreInfo": "website",
+            "theater": "venue",
+            "sTheaterCity": "city",
+            "sTheaterAddress": "address",
+            "sTheaterState": "state",
+            "sTheaterZip": "zip"
+        },
+        "goby_7096.csv": {
+            "showName": "name",
+            "type": "type",
+            "sTicketPhone": "phone",
+            "more": "moreDetailURL",
+            "sMoreInfo": "website",
+            "endDate": "endDate",
+            "startDate": "startDate",
+            "sTicketPrice": "ticketPrice",
+            "sSynopsis": "description",
+            "theater": "venue",
+            "sTheaterCity": "city",
+            "sTheaterAddress": "address",
+            "sTheaterState": "state",
+            "sTheaterZip": "zip"
+        },
+        "goby_11193.csv": {
+            "showName": "name",
+            "type": "type",
+            "sTicketPrice": "ticketPrice",
+            "close": "endDate",
+            "opens": "startDate",
+            "more": "moreDetailURL",
+            "sMoreInfo": "website",
+            "fullDates": "fullDates",
+            "sSynopsis": "description",
+            "sTicketPhone": "phone",
+            "theater": "venue",
+            "sTheaterCity": "city",
+            "sTheaterAddress": "address",
+            "sTheaterState": "state",
+            "sTheaterZip": "zip"
+        },
+        "goby_2279.csv": {
+            "title": "name",
+            "ages": "ages",
+            "artists": "artists",
+            "eventDescription": "description",
+            "date": "fullDates",
+            "eventImage": "eventImage",
+            "ticketPrice": "ticketPrice",
+            "moreInfo": "moreDetailURL",
+            "showTime": "showTime",
+            "doorTime": "doorTime",
+            "website": "website",
+            "phone": "phone",
+            "venue": "venue",
+            "region": "city",
+            "address": "address",
+            "state": "state",
+            "zip": "zip"
+        },
+        "goby_5073.csv": {
+            "name": "name",
+            "subCategory": "type",
+            "picture": "eventImage",
+            "showTime": "showTime",
+            "cost": "ticketPrice",
+            "moreDetailURL": "moreDetailURL",
+            "showDates": "fullDates",
+            "eventURL": "website",
+            "description": "description",
+            "shortDescription": "shortDescription",
+            "phone": "phone",
+            "venue": "venue",
+            "zip": "zip",
+            "state": "state",
+            "city": "city",
+            "address": "address",
+            "location": "location",
+            "locationName": "locationName"
+        },
+        "goby_8831.csv": {
+            "name": "name",
+            "subCategory": "type",
+            "cost": "ticketPrice",
+            "moreDetailURL": "moreDetailURL",
+            "showTime": "showTime",
+            "description": "description",
+            "picture": "eventImage",
+            "eventURL": "website",
+            "phone": "phone",
+            "venue": "venue",
+            "state": "state",
+            "city": "city",
+            "address": "address",
+            "location": "location",
+            "zip": "zip",
+            "locationName": "locationName"
+        },
+        "goby_8940.csv": {
+            "name": "name",
+            "subCategory": "type",
+            "showDates": "fullDates",
+            "cost": "ticketPrice",
+            "showTime": "showTime",
+            "description": "description",
+            "picture": "eventImage",
+            "eventURL": "website",
+            "moreDetailURL": "moreDetailURL",
+            "phone": "phone",
+            "venue": "venue",
+            "state": "state",
+            "city": "city",
+            "address": "address",
+            "location": "location",
+            "zip": "zip",
+            "locationName": "locationName"
+        },
+        "goby_9397.csv": {
+            "name": "name",
+            "endDate": "endDate",
+            "description": "description",
+            "email": "email",
+            "businessURL": "website",
+            "startDate": "startDate",
+            "picture": "eventImage",
+            "moreDetailURL": "moreDetailURL",
+            "venue": "venue",
+            "admission": "ticketPrice",
+            "longitude": "longitude",
+            "streetAddress": "address",
+            "city": "city",
+            "latitude": "latitude",
+            "zipCode": "zip",
+            "state": "state"
+        },
+        "goby_6306.csv": {
+            "to": "endDate",
+            "description": "description",
+            "venue": "venue",
+            "type": "type",
+            "image": "eventImage",
+            "website": "website",
+            "title": "name",
+            "ticketPhone": "phone",
+            "moreInfoLink": "moreDetailURL",
+            "from": "startDate",
+            "times": "showTime",
+            "tickets": "ticketPrice",
+            "city": "city",
+            "address": "address",
+            "state": "state",
+            "zipcode": "zip"
+        },
+        "goby_696.csv": {
+            "admission": "ticketPrice",
+            "category": "type",
+            "date": "fullDates",
+            "description": "description",
+            "moreInfoLink": "moreDetailURL",
+            "phone": "phone",
+            "photo": "eventImage",
+            "time": "showTime",
+            "title": "name",
+            "url": "website",
+            "venue": "venue",
+            "city": "city",
+            "state": "state",
+            "street": "address",
+            "zipcode": "zip"
+        },
+        "goby_1381.csv": {
+            "address": "address",
+            "admission": "ticketPrice",
+            "category": "type",
+            "date": "fullDates",
+            "description": "description",
+            "name": "name",
+            "time": "showTime",
+            "website": "website"
+        },
+        "goby_1450.csv": {
+            "city": "city",
+            "dateFrom": "startDate",
+            "details": "description",
+            "eventName": "name",
+            "image": "eventImage",
+            "length": "length",
+            "moreInfo": "moreDetailURL",
+            "price": "ticketPrice",
+            "state": "state",
+            "webSite": "website"
+        },
+        "goby_2238.csv": {
+            "description": "description",
+            "endDate": "endDate",
+            "endTime": "endTime",
+            "moreInfoLink": "moreDetailURL",
+            "startDate": "startDate",
+            "title": "name",
+            "venueID": "venueID",
+            "venue": "venue",
+            "venueAddress": "address",
+            "venueCity": "city",
+            "venueCountry": "country",
+            "venueState": "state",
+            "venueZip": "zip",
+            "latitude": "latitude",
+            "longitud": "longitude"
+        },
+        "goby_2461.csv": {
+            "category": "type",
+            "date": "startDate",
+            "description": "description",
+            "image": "eventImage",
+            "moreInfo": "moreDetailURL",
+            "name": "name",
+            "time": "showTime",
+            "venue": "venue",
+            "city": "city",
+            "lat": "latitude",
+            "lon": "longitude",
+            "state": "state",
+            "zip": "zip"
+        }
+    },
+    "integrated_schema_by_entity": {
+        "Event": {
+            "attributes": [
+                "startDate",
+                "ages",
+                "venueID",
+                "ticketPrice",
+                "phone",
+                "endTime",
+                "city",
+                "address",
+                "endDate",
+                "email",
+                "state",
+                "length",
+                "moreDetailURL",
+                "doorTime",
+                "name",
+                "website",
+                "showTime",
+                "artists",
+                "eventImage",
+                "description",
+                "venue",
+                "shortDescription",
+                "fullDates",
+                "type"
+            ],
+            "column_mappings_by_table": {
+                "goby_205.csv": {
+                    "showName": "name",
+                    "type": "type",
+                    "sMoreInfo": "website",
+                    "sSynopsis": "description",
+                    "closes": "endDate",
+                    "more": "moreDetailURL",
+                    "opens": "startDate",
+                    "sTicketPhone": "phone",
+                    "sTicketPrice": "ticketPrice",
+                    "theater": "venue"
+                },
+                "goby_6409.csv": {
+                    "showName": "name",
+                    "type": "type",
+                    "sSynopsis": "description",
+                    "sTicketPrice": "ticketPrice",
+                    "sTicketPhone": "phone",
+                    "more": "moreDetailURL",
+                    "opens": "startDate",
+                    "close": "endDate",
+                    "sMoreInfo": "website",
+                    "theater": "venue"
+                },
+                "goby_7096.csv": {
+                    "showName": "name",
+                    "type": "type",
+                    "sTicketPhone": "phone",
+                    "more": "moreDetailURL",
+                    "sMoreInfo": "website",
+                    "endDate": "endDate",
+                    "startDate": "startDate",
+                    "sTicketPrice": "ticketPrice",
+                    "sSynopsis": "description",
+                    "theater": "venue"
+                },
+                "goby_11193.csv": {
+                    "showName": "name",
+                    "type": "type",
+                    "sTicketPrice": "ticketPrice",
+                    "close": "endDate",
+                    "opens": "startDate",
+                    "more": "moreDetailURL",
+                    "sMoreInfo": "website",
+                    "fullDates": "fullDates",
+                    "sSynopsis": "description",
+                    "sTicketPhone": "phone",
+                    "theater": "venue"
+                },
+                "goby_2279.csv": {
+                    "title": "name",
+                    "ages": "ages",
+                    "artists": "artists",
+                    "eventDescription": "description",
+                    "date": "fullDates",
+                    "eventImage": "eventImage",
+                    "ticketPrice": "ticketPrice",
+                    "moreInfo": "moreDetailURL",
+                    "showTime": "showTime",
+                    "doorTime": "doorTime",
+                    "website": "website",
+                    "phone": "phone",
+                    "venue": "venue"
+                },
+                "goby_5073.csv": {
+                    "name": "name",
+                    "subCategory": "type",
+                    "picture": "eventImage",
+                    "showTime": "showTime",
+                    "cost": "ticketPrice",
+                    "moreDetailURL": "moreDetailURL",
+                    "showDates": "fullDates",
+                    "eventURL": "website",
+                    "description": "description",
+                    "shortDescription": "shortDescription",
+                    "phone": "phone",
+                    "venue": "venue"
+                },
+                "goby_8831.csv": {
+                    "name": "name",
+                    "subCategory": "type",
+                    "cost": "ticketPrice",
+                    "moreDetailURL": "moreDetailURL",
+                    "showTime": "showTime",
+                    "description": "description",
+                    "picture": "eventImage",
+                    "eventURL": "website",
+                    "phone": "phone",
+                    "venue": "venue"
+                },
+                "goby_8940.csv": {
+                    "name": "name",
+                    "subCategory": "type",
+                    "showDates": "fullDates",
+                    "cost": "ticketPrice",
+                    "showTime": "showTime",
+                    "description": "description",
+                    "picture": "eventImage",
+                    "eventURL": "website",
+                    "moreDetailURL": "moreDetailURL",
+                    "phone": "phone",
+                    "venue": "venue"
+                },
+                "goby_9397.csv": {
+                    "name": "name",
+                    "endDate": "endDate",
+                    "description": "description",
+                    "email": "email",
+                    "businessURL": "website",
+                    "startDate": "startDate",
+                    "picture": "eventImage",
+                    "moreDetailURL": "moreDetailURL",
+                    "venue": "venue",
+                    "admission": "ticketPrice"
+                },
+                "goby_6306.csv": {
+                    "to": "endDate",
+                    "description": "description",
+                    "venue": "venue",
+                    "type": "type",
+                    "image": "eventImage",
+                    "website": "website",
+                    "title": "name",
+                    "ticketPhone": "phone",
+                    "moreInfoLink": "moreDetailURL",
+                    "from": "startDate",
+                    "times": "showTime",
+                    "tickets": "ticketPrice"
+                },
+                "goby_696.csv": {
+                    "admission": "ticketPrice",
+                    "category": "type",
+                    "date": "fullDates",
+                    "description": "description",
+                    "moreInfoLink": "moreDetailURL",
+                    "phone": "phone",
+                    "photo": "eventImage",
+                    "time": "showTime",
+                    "title": "name",
+                    "url": "website",
+                    "venue": "venue"
+                },
+                "goby_1381.csv": {
+                    "address": "address",
+                    "admission": "ticketPrice",
+                    "category": "type",
+                    "date": "fullDates",
+                    "description": "description",
+                    "name": "name",
+                    "time": "showTime",
+                    "website": "website"
+                },
+                "goby_1450.csv": {
+                    "city": "city",
+                    "dateFrom": "startDate",
+                    "details": "description",
+                    "eventName": "name",
+                    "image": "eventImage",
+                    "length": "length",
+                    "moreInfo": "moreDetailURL",
+                    "price": "ticketPrice",
+                    "state": "state",
+                    "webSite": "website"
+                },
+                "goby_2238.csv": {
+                    "description": "description",
+                    "endDate": "endDate",
+                    "endTime": "endTime",
+                    "moreInfoLink": "moreDetailURL",
+                    "startDate": "startDate",
+                    "title": "name",
+                    "venueID": "venueID"
+                },
+                "goby_2461.csv": {
+                    "category": "type",
+                    "date": "startDate",
+                    "description": "description",
+                    "image": "eventImage",
+                    "moreInfo": "moreDetailURL",
+                    "name": "name",
+                    "time": "showTime",
+                    "venue": "venue"
+                }
+            }
+        },
+        "Venue": {
+            "attributes": [
+                "venue",
+                "zip",
+                "country",
+                "locationName",
+                "city",
+                "address",
+                "location",
+                "longitude",
+                "state",
+                "latitude",
+                "venueID"
+            ],
+            "column_mappings_by_table": {
+                "goby_205.csv": {
+                    "theater": "venue",
+                    "sTheaterAddress": "address",
+                    "sTheaterCity": "city",
+                    "sTheaterState": "state",
+                    "sTheaterZip": "zip"
+                },
+                "goby_6409.csv": {
+                    "theater": "venue",
+                    "sTheaterCity": "city",
+                    "sTheaterAddress": "address",
+                    "sTheaterState": "state",
+                    "sTheaterZip": "zip"
+                },
+                "goby_7096.csv": {
+                    "theater": "venue",
+                    "sTheaterCity": "city",
+                    "sTheaterAddress": "address",
+                    "sTheaterState": "state",
+                    "sTheaterZip": "zip"
+                },
+                "goby_11193.csv": {
+                    "theater": "venue",
+                    "sTheaterCity": "city",
+                    "sTheaterAddress": "address",
+                    "sTheaterState": "state",
+                    "sTheaterZip": "zip"
+                },
+                "goby_2279.csv": {
+                    "venue": "venue",
+                    "region": "city",
+                    "address": "address",
+                    "state": "state",
+                    "zip": "zip"
+                },
+                "goby_5073.csv": {
+                    "venue": "venue",
+                    "zip": "zip",
+                    "state": "state",
+                    "city": "city",
+                    "address": "address",
+                    "location": "location",
+                    "locationName": "locationName"
+                },
+                "goby_8831.csv": {
+                    "venue": "venue",
+                    "state": "state",
+                    "city": "city",
+                    "address": "address",
+                    "location": "location",
+                    "zip": "zip",
+                    "locationName": "locationName"
+                },
+                "goby_8940.csv": {
+                    "venue": "venue",
+                    "state": "state",
+                    "city": "city",
+                    "address": "address",
+                    "location": "location",
+                    "zip": "zip",
+                    "locationName": "locationName"
+                },
+                "goby_9397.csv": {
+                    "venue": "venue",
+                    "longitude": "longitude",
+                    "streetAddress": "address",
+                    "city": "city",
+                    "latitude": "latitude",
+                    "zipCode": "zip",
+                    "state": "state"
+                },
+                "goby_6306.csv": {
+                    "venue": "venue",
+                    "city": "city",
+                    "address": "address",
+                    "state": "state",
+                    "zipcode": "zip"
+                },
+                "goby_696.csv": {
+                    "venue": "venue",
+                    "city": "city",
+                    "state": "state",
+                    "street": "address",
+                    "zipcode": "zip"
+                },
+                "goby_2238.csv": {
+                    "venueID": "venueID",
+                    "venue": "venue",
+                    "venueAddress": "address",
+                    "venueCity": "city",
+                    "venueCountry": "country",
+                    "venueState": "state",
+                    "venueZip": "zip",
+                    "latitude": "latitude",
+                    "longitud": "longitude"
+                },
+                "goby_2461.csv": {
+                    "venue": "venue",
+                    "city": "city",
+                    "lat": "latitude",
+                    "lon": "longitude",
+                    "state": "state",
+                    "zip": "zip"
+                }
+            }
+        }
+    },
+    "integrated_schema_by_table": {
+        "Event": {
+            "attributes": [
+                "startDate",
+                "ages",
+                "venueID",
+                "ticketPrice",
+                "phone",
+                "endTime",
+                "city",
+                "address",
+                "endDate",
+                "state",
+                "length",
+                "moreDetailURL",
+                "name",
+                "website",
+                "showTime",
+                "eventImage",
+                "description",
+                "venue",
+                "fullDates",
+                "type"
+            ],
+            "foreign_keys": {},
+            "column_mappings_by_table": {
+                "goby_205.csv": {
+                    "showName": "name",
+                    "type": "type"
+                },
+                "goby_6409.csv": {
+                    "showName": "name",
+                    "type": "type"
+                },
+                "goby_7096.csv": {
+                    "showName": "name",
+                    "type": "type"
+                },
+                "goby_11193.csv": {
+                    "showName": "name",
+                    "type": "type"
+                },
+                "goby_2279.csv": {
+                    "title": "name",
+                    "ages": "ages"
+                },
+                "goby_5073.csv": {
+                    "name": "name",
+                    "subCategory": "type"
+                },
+                "goby_8831.csv": {
+                    "name": "name",
+                    "subCategory": "type"
+                },
+                "goby_8940.csv": {
+                    "name": "name",
+                    "subCategory": "type"
+                },
+                "goby_6306.csv": {
+                    "to": "endDate",
+                    "description": "description",
+                    "venue": "venue",
+                    "image": "eventImage",
+                    "website": "website",
+                    "title": "name",
+                    "ticketPhone": "phone",
+                    "moreInfoLink": "moreDetailURL",
+                    "from": "startDate",
+                    "times": "showTime",
+                    "tickets": "ticketPrice"
+                },
+                "goby_696.csv": {
+                    "admission": "ticketPrice",
+                    "category": "type",
+                    "date": "fullDates",
+                    "description": "description",
+                    "moreInfoLink": "moreDetailURL",
+                    "phone": "phone",
+                    "photo": "eventImage",
+                    "time": "showTime",
+                    "title": "name",
+                    "url": "website",
+                    "venue": "venue"
+                },
+                "goby_1381.csv": {
+                    "address": "address",
+                    "admission": "ticketPrice",
+                    "category": "type",
+                    "date": "fullDates",
+                    "description": "description",
+                    "name": "name",
+                    "time": "showTime",
+                    "website": "website"
+                },
+                "goby_1450.csv": {
+                    "city": "city",
+                    "dateFrom": "startDate",
+                    "details": "description",
+                    "eventName": "name",
+                    "image": "eventImage",
+                    "length": "length",
+                    "moreInfo": "moreDetailURL",
+                    "price": "ticketPrice",
+                    "state": "state",
+                    "webSite": "website"
+                },
+                "goby_2238.csv": {
+                    "description": "description",
+                    "endDate": "endDate",
+                    "endTime": "endTime",
+                    "moreInfoLink": "moreDetailURL",
+                    "startDate": "startDate",
+                    "title": "name",
+                    "venueID": "venueID"
+                },
+                "goby_2461.csv": {
+                    "category": "type",
+                    "date": "startDate",
+                    "description": "description",
+                    "image": "eventImage",
+                    "moreInfo": "moreDetailURL",
+                    "name": "name",
+                    "time": "showTime",
+                    "venue": "venue"
+                }
+            }
+        },
+        "Artist": {
+            "attributes": [
+                "name",
+                "artists"
+            ],
+            "foreign_keys": {
+                "title": {
+                    "Event": "name"
+                }
+            },
+            "column_mappings_by_table": {
+                "goby_2279.csv": {
+                    "title": "name",
+                    "artists": "artists"
+                }
+            }
+        },
+        "EventScreening": {
+            "attributes": [
+                "moreDetailURL",
+                "phone",
+                "description",
+                "venue",
+                "doorTime",
+                "name",
+                "shortDescription",
+                "type",
+                "website",
+                "fullDates",
+                "endDate",
+                "startDate",
+                "email",
+                "showTime",
+                "eventImage",
+                "ticketPrice"
+            ],
+            "foreign_keys": {
+                "name": "Event.name",
+                "venue": "Venue.venue"
+            },
+            "column_mappings_by_table": {
+                "goby_205.csv": {
+                    "showName": "name",
+                    "sMoreInfo": "website",
+                    "sSynopsis": "description",
+                    "closes": "endDate",
+                    "more": "moreDetailURL",
+                    "opens": "startDate",
+                    "sTicketPhone": "phone",
+                    "sTicketPrice": "ticketPrice",
+                    "theater": "venue"
+                },
+                "goby_6409.csv": {
+                    "showName": "name",
+                    "sSynopsis": "description",
+                    "sTicketPrice": "ticketPrice",
+                    "sTicketPhone": "phone",
+                    "more": "moreDetailURL",
+                    "opens": "startDate",
+                    "close": "endDate",
+                    "sMoreInfo": "website",
+                    "theater": "venue"
+                },
+                "goby_7096.csv": {
+                    "showName": "name",
+                    "sTicketPhone": "phone",
+                    "more": "moreDetailURL",
+                    "sMoreInfo": "website",
+                    "endDate": "endDate",
+                    "startDate": "startDate",
+                    "sTicketPrice": "ticketPrice",
+                    "sSynopsis": "description",
+                    "theater": "venue"
+                },
+                "goby_11193.csv": {
+                    "showName": "name",
+                    "sTicketPrice": "ticketPrice",
+                    "close": "endDate",
+                    "opens": "startDate",
+                    "more": "moreDetailURL",
+                    "sMoreInfo": "website",
+                    "fullDates": "fullDates",
+                    "sSynopsis": "description",
+                    "sTicketPhone": "phone",
+                    "theater": "venue"
+                },
+                "goby_2279.csv": {
+                    "title": "name",
+                    "eventDescription": "description",
+                    "date": "fullDates",
+                    "eventImage": "eventImage",
+                    "ticketPrice": "ticketPrice",
+                    "moreInfo": "moreDetailURL",
+                    "showTime": "showTime",
+                    "doorTime": "doorTime",
+                    "website": "website",
+                    "phone": "phone",
+                    "venue": "venue"
+                },
+                "goby_5073.csv": {
+                    "name": "name",
+                    "picture": "eventImage",
+                    "showTime": "showTime",
+                    "cost": "ticketPrice",
+                    "moreDetailURL": "moreDetailURL",
+                    "showDates": "fullDates",
+                    "eventURL": "website",
+                    "description": "description",
+                    "shortDescription": "shortDescription",
+                    "phone": "phone",
+                    "venue": "venue"
+                },
+                "goby_8831.csv": {
+                    "name": "name",
+                    "cost": "ticketPrice",
+                    "moreDetailURL": "moreDetailURL",
+                    "showTime": "showTime",
+                    "description": "description",
+                    "picture": "eventImage",
+                    "eventURL": "website",
+                    "phone": "phone",
+                    "venue": "venue"
+                },
+                "goby_8940.csv": {
+                    "name": "name",
+                    "showDates": "fullDates",
+                    "cost": "ticketPrice",
+                    "showTime": "showTime",
+                    "description": "description",
+                    "picture": "eventImage",
+                    "eventURL": "website",
+                    "moreDetailURL": "moreDetailURL",
+                    "phone": "phone",
+                    "venue": "venue"
+                },
+                "goby_9397.csv": {
+                    "name": "name",
+                    "endDate": "endDate",
+                    "description": "description",
+                    "email": "email",
+                    "businessURL": "website",
+                    "startDate": "startDate",
+                    "picture": "eventImage",
+                    "moreDetailURL": "moreDetailURL",
+                    "venue": "venue",
+                    "admission": "ticketPrice"
+                },
+                "goby_6306.csv": {
+                    "venue": "venue",
+                    "type": "type",
+                    "title": "name"
+                }
+            }
+        },
+        "Venue": {
+            "attributes": [
+                "venue",
+                "zip",
+                "country",
+                "locationName",
+                "city",
+                "address",
+                "location",
+                "longitude",
+                "state",
+                "latitude",
+                "venueID"
+            ],
+            "foreign_keys": {},
+            "column_mappings_by_table": {
+                "goby_205.csv": {
+                    "theater": "venue",
+                    "sTheaterAddress": "address",
+                    "sTheaterCity": "city",
+                    "sTheaterState": "state",
+                    "sTheaterZip": "zip"
+                },
+                "goby_6409.csv": {
+                    "theater": "venue",
+                    "sTheaterCity": "city",
+                    "sTheaterAddress": "address",
+                    "sTheaterState": "state",
+                    "sTheaterZip": "zip"
+                },
+                "goby_7096.csv": {
+                    "theater": "venue",
+                    "sTheaterCity": "city",
+                    "sTheaterAddress": "address",
+                    "sTheaterState": "state",
+                    "sTheaterZip": "zip"
+                },
+                "goby_11193.csv": {
+                    "theater": "venue",
+                    "sTheaterCity": "city",
+                    "sTheaterAddress": "address",
+                    "sTheaterState": "state",
+                    "sTheaterZip": "zip"
+                },
+                "goby_2279.csv": {
+                    "venue": "venue",
+                    "region": "city",
+                    "address": "address",
+                    "state": "state",
+                    "zip": "zip"
+                },
+                "goby_5073.csv": {
+                    "venue": "venue",
+                    "zip": "zip",
+                    "state": "state",
+                    "city": "city",
+                    "address": "address",
+                    "location": "location",
+                    "locationName": "locationName"
+                },
+                "goby_8831.csv": {
+                    "venue": "venue",
+                    "state": "state",
+                    "city": "city",
+                    "address": "address",
+                    "location": "location",
+                    "zip": "zip",
+                    "locationName": "locationName"
+                },
+                "goby_8940.csv": {
+                    "venue": "venue",
+                    "state": "state",
+                    "city": "city",
+                    "address": "address",
+                    "location": "location",
+                    "zip": "zip",
+                    "locationName": "locationName"
+                },
+                "goby_9397.csv": {
+                    "venue": "venue",
+                    "longitude": "longitude",
+                    "streetAddress": "address",
+                    "city": "city",
+                    "latitude": "latitude",
+                    "zipCode": "zip",
+                    "state": "state"
+                },
+                "goby_6306.csv": {
+                    "venue": "venue",
+                    "city": "city",
+                    "address": "address",
+                    "state": "state",
+                    "zipcode": "zip"
+                },
+                "goby_696.csv": {
+                    "venue": "venue",
+                    "city": "city",
+                    "state": "state",
+                    "street": "address",
+                    "zipcode": "zip"
+                },
+                "goby_2238.csv": {
+                    "venueID": "venueID",
+                    "venue": "venue",
+                    "venueAddress": "address",
+                    "venueCity": "city",
+                    "venueCountry": "country",
+                    "venueState": "state",
+                    "venueZip": "zip",
+                    "latitude": "latitude",
+                    "longitud": "longitude"
+                },
+                "goby_2461.csv": {
+                    "venue": "venue",
+                    "city": "city",
+                    "lat": "latitude",
+                    "lon": "longitude",
+                    "state": "state",
+                    "zip": "zip"
+                }
+            }
+        }
+    }
+}

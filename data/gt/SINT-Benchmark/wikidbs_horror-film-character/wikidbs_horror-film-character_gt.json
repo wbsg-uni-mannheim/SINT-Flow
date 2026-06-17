@@ -1,0 +1,226 @@
+{
+    "schema_by_entity": {
+        "wikidbs_horror-film-character_subset_1.csv": {
+            "Character": {
+                "attributes": [
+                    "character",
+                    "description",
+                    "actor",
+                    "work"
+                ],
+                "table_group": "Character"
+            },
+            "Actor": {
+                "attributes": [
+                    "actor",
+                    "actor_description",
+                    "actor_date_of_birth"
+                ],
+                "table_group": "Actor"
+            },
+            "Work": {
+                "attributes": [
+                    "work",
+                    "work_description",
+                    "type",
+                    "publication_date"
+                ],
+                "table_group": "Work"
+            }
+        },
+        "wikidbs_horror-film-character_subset_2.csv": {
+            "Character": {
+                "attributes": [
+                    "character_name",
+                    "character_summary",
+                    "character_creator",
+                    "portrayed_by",
+                    "source_work"
+                ],
+                "table_group": "Character"
+            },
+            "Actor": {
+                "attributes": [
+                    "portrayed_by",
+                    "performer_bio",
+                    "performer_birth_date",
+                    "performer_birthplace",
+                    "performer_gender"
+                ],
+                "table_group": "Actor"
+            },
+            "Work": {
+                "attributes": [
+                    "source_work",
+                    "source_work_summary",
+                    "work_genre",
+                    "release_date"
+                ],
+                "table_group": "Work"
+            }
+        },
+        "wikidbs_horror-film-character_subset_3.csv": {
+            "Character": {
+                "attributes": [
+                    "character_entity",
+                    "character_blurb",
+                    "originator",
+                    "title_of_work"
+                ],
+                "table_group": "Character"
+            },
+            "Work": {
+                "attributes": [
+                    "title_of_work",
+                    "work_blurb",
+                    "work_medium",
+                    "genre_label",
+                    "first_published_at"
+                ],
+                "table_group": "Work"
+            }
+        },
+        "wikidbs_horror-film-character_subset_4.csv": {
+            "Character": {
+                "attributes": [
+                    "character_name",
+                    "character_summary",
+                    "character_creator",
+                    "portrayed_by",
+                    "franchise_or_work"
+                ],
+                "table_group": "Character"
+            },
+            "Actor": {
+                "attributes": [
+                    "portrayed_by",
+                    "performer_bio",
+                    "performer_gender"
+                ],
+                "table_group": "Actor"
+            },
+            "Work": {
+                "attributes": [
+                    "franchise_or_work",
+                    "work_summary",
+                    "work_format",
+                    "work_genre",
+                    "release_date"
+                ],
+                "table_group": "Work"
+            }
+        }
+    },
+    "schema_by_normalization": {
+        "wikidbs_horror-film-character_subset_1.csv": {
+            "Character": {
+                "attributes": [
+                    "character",
+                    "description",
+                    "actor",
+                    "work"
+                ],
+                "table_group": "Character"
+            },
+            "Actor": {
+                "attributes": [
+                    "actor",
+                    "actor_description",
+                    "actor_date_of_birth"
+                ],
+                "table_group": "Actor"
+            },
+            "Work": {
+                "attributes": [
+                    "work",
+                    "work_description",
+                    "type",
+                    "publication_date"
+                ],
+                "table_group": "Work"
+            }
+        },
+        "wikidbs_horror-film-character_subset_2.csv": {
+            "Character": {
+                "attributes": [
+                    "character_name",
+                    "character_summary",
+                    "character_creator",
+                    "portrayed_by",
+                    "source_work"
+                ],
+                "table_group": "Character"
+            },
+            "Actor": {
+                "attributes": [
+                    "portrayed_by",
+                    "performer_bio",
+                    "performer_birth_date",
+                    "performer_birthplace",
+                    "performer_gender"
+                ],
+                "table_group": "Actor"
+            },
+            "Work": {
+                "attributes": [
+                    "source_work",
+                    "source_work_summary",
+                    "work_genre",
+                    "release_date"
+                ],
+                "table_group": "Work"
+            }
+        },
+        "wikidbs_horror-film-character_subset_3.csv": {
+            "Character": {
+                "attributes": [
+                    "character_entity",
+                    "character_blurb",
+                    "originator",
+                    "title_of_work"
+                ],
+                "table_group": "Character"
+            },
+            "Work": {
+                "attributes": [
+                    "title_of_work",
+                    "work_blurb",
+                    "work_medium",
+                    "genre_label",
+                    "first_published_at"
+                ],
+                "table_group": "Work"
+            }
+        },
+        "wikidbs_horror-film-character_subset_4.csv": {
+            "Character": {
+                "attributes": [
+                    "character_name",
+                    "character_summary",
+                    "character_creator",
+                    "portrayed_by",
+                    "franchise_or_work"
+                ],
+                "table_group": "Character"
+            },
+            "Actor": {
+                "attributes": [
+                    "portrayed_by",
+                    "performer_bio",
+                    "performer_gender"
+                ],
+                "table_group": "Actor"
+            },
+            "Work": {
+                "attributes": [
+                    "franchise_or_work",
+                    "work_summary",
+                    "work_format",
+                    "work_genre",
+                    "release_date"
+                ],
+                "table_group": "Work"
+            }
+        }
+    }
+}

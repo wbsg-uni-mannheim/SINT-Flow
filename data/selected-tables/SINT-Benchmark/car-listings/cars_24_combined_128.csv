@@ -1,0 +1,403 @@
+listing_id,make,model_name,yr,odometer_km,rto_code,transmission,body_style,asking_price_inr
+535,Honda,WR-V,2017,81348 km,TN-05,Manual,SUV,704000
+5287,Hyundai,Elite i20,2018,97017 km,TS-13,Manual,HatchBack,692000
+1587,Maruti,Dzire,2021,13324 km,TN-58,Manual,Sedan,705000
+4765,Maruti,Alto,2019,67329 km,KA-16,Manual,HatchBack,372000
+4464,Maruti,Dzire,2018,24092 km,WB-02,Manual,Sedan,720000
+6573,Mahindra,XUV 3OO,2019,90111 km,TS-09,Manual,SUV,883000
+3066,Maruti,Alto 800,2016,62202 km,WB-24,Manual,HatchBack,262000
+2579,Skoda,Rapid,2018,94375 km,GJ-01,Manual,Sedan,590000
+492,Maruti,Swift Dzire,2013,17387 km,KA-03,Manual,Sedan,497000
+3378,Maruti,Alto,2019,83611 km,PB-10,Manual,HatchBack,362000
+7007,Honda,Civic,2020,63533 km,HR-26,Manual,Sedan,378000
+7815,Honda,Brio,2014,58687 km,DL-3C,Manual,HatchBack,337000
+7124,Maruti,Celerio,2017,47734 km,TN-12,Automatic,HatchBack,414000
+1479,Honda,City,2018,11406 km,MH-12,Manual,Sedan,766000
+3959,Mahindra,XUV500,2014,95918 km,AP-28,Manual,Lux_SUV,800000
+2756,Hyundai,i20,2011,80496 km,MH-04,Manual,HatchBack,305000
+1808,Maruti,Alto K10,2018,47248 km,PB-19,Manual,HatchBack,375000
+553,Honda,City,2013,96271 km,DL-3C,Manual,Sedan,395000
+6759,Honda,Jazz,2016,89113 km,MH-46,Manual,HatchBack,523000
+4459,Hyundai,VENUE,2019,32567 km,HR-26,Automatic,SUV,1069000
+7901,Hyundai,Elite i20,2014,43733 km,MH-02,Manual,HatchBack,499000
+1348,Hyundai,New Elantra,2019,24185 km,KA-53,Automatic,Lux_sedan,1491000
+6949,Hyundai,Grand i10,2016,62505 km,TN-03,Manual,HatchBack,430000
+999,Ford,New Figo,2020,57668 km,BR-31,Manual,HatchBack,510000
+4649,Honda,Civic,2019,55494 km,MH-04,Manual,Sedan,467000
+2572,Maruti,Celerio,2015,17140 km,MH-12,Manual,HatchBack,439000
+1115,Hyundai,Creta,2019,48183 km,WB-50,Manual,SUV,870000
+615,Toyota,YARIS,2018,22528 km,KA-01,Automatic,Sedan,704000
+5220,Hyundai,i10,2011,120084 km,,Manual,HatchBack,195000
+1352,Maruti,Swift,2012,67954 km,TN-05,Manual,HatchBack,398000
+6215,Maruti,Dzire,2018,67778 km,UP-53,Automatic,Sedan,686000
+5553,Hyundai,Elite i20,2016,71388 km,DL-10,Manual,HatchBack,505000
+819,Maruti,IGNIS,2017,70693 km,DL-8C,Manual,HatchBack,432000
+6331,Maruti,Celerio,2015,45701 km,KA-50,Automatic,HatchBack,487000
+3862,Tata,PUNCH,2022,10093 km,TN-09,Manual,SUV,737000
+60,Honda,City,2017,4756 km,MH-47,Manual,Sedan,940000
+7171,Hyundai,Eon,2016,53055 km,MP-04,Manual,HatchBack,318000
+2329,Hyundai,Grand i10,2016,60999 km,TS-07,Manual,HatchBack,516000
+7170,Maruti,Celerio,2014,24129 km,MH-04,Manual,HatchBack,340000
+2308,Skoda,Rapid,2017,120754 km,KA-63,Automatic,Sedan,781000
+2593,Hyundai,Verna,2021,37842 km,TS-12,Automatic,Sedan,1360000
+5316,Maruti,Swift,2016,41107 km,KA-07,Manual,HatchBack,573000
+6401,Hyundai,Elite i20,2018,91441 km,TS-28,Manual,HatchBack,757000
+7827,Maruti,Swift,2018,99007 km,TS-11,Automatic,HatchBack,721000
+7543,Maruti,IGNIS,2017,34281 km,MH-12,Manual,HatchBack,523000
+3960,Maruti,Alto 800,2017,12277 km,GJ-15,Manual,HatchBack,320000
+5337,Maruti,S PRESSO,2022,7870 km,HR-51,Manual,HatchBack,524000
+6713,Honda,Brio,2012,62731 km,MH-01,Manual,HatchBack,268000
+4276,Maruti,Swift,2018,22518 km,MH-08,Manual,HatchBack,573000
+2102,Skoda,Rapid,2020,49220 km,UP-78,Manual,Sedan,490000
+1467,Honda,City,2016,54056 km,TN-38,Manual,Sedan,718000
+4321,Hyundai,Elite i20,2018,42185 km,TS-09,Manual,HatchBack,743000
+4430,Hyundai,Verna,2018,61684 km,MH-16,Manual,Sedan,460000
+3818,Hyundai,Grand i10,2014,16608 km,KA-51,Automatic,HatchBack,526000
+3836,Volkswagen,Ameo,2017,26282 km,KA-42,Automatic,Sedan,970000
+1247,Hyundai,i10,2014,27116 km,KA-19,Manual,HatchBack,397000
+7081,Maruti,Wagon R 1.0,2012,38843 km,TN-22,Manual,HatchBack,338000
+6752,Hyundai,Grand i10,2014,30233 km,DL-12,Automatic,HatchBack,371000
+7932,Maruti,Swift,2016,62832 km,KL-02,Manual,HatchBack,562000
+1042,Tata,PUNCH,2022,4392 km,PB-10,Manual,SUV,736000
+1212,Maruti,Baleno,2017,41418 km,MH-12,Automatic,HatchBack,677000
+5093,Hyundai,Verna,2011,113536 km,KA-01,Manual,Sedan,327000
+5745,Volkswagen,Ameo,2016,42175 km,MH-02,Manual,Sedan,327000
+6853,Maruti,Alto K10,2016,45652 km,DL-14,Automatic,HatchBack,337000
+6019,Renault,TRIBER,2021,15063 km,TN-13,Automatic,SUV,798000
+5237,Maruti,Alto 800,2014,46270 km,KL-25,Manual,HatchBack,242000
+6243,Maruti,Celerio,2021,3731 km,UP-32,Automatic,HatchBack,654000
+2657,Renault,Kwid,2021,23628 km,KA-09,Automatic,HatchBack,525000
+2274,Maruti,Swift,2015,47507 km,MH-03,Manual,HatchBack,462000
+1312,Renault,Kiger,2022,21838 km,UP-32,Manual,HatchBack,662000
+2724,Maruti,Wagon R 1.0,2015,89218 km,TS-11,Manual,HatchBack,379000
+2925,Renault,Kwid,2019,12873 km,WB-12,Manual,HatchBack,390000
+6640,Hyundai,Eon,2017,14654 km,MH-15,Manual,HatchBack,350000
+4116,Maruti,Wagon R 1.0,2018,49694 km,WB-12,Manual,HatchBack,345000
+4955,Ford,Ecosport,2019,108772 km,TN-72,Manual,SUV,771000
+6712,Hyundai,Grand i10,2018,10911 km,GJ-18,Manual,HatchBack,532000
+6410,Maruti,New Wagon-R,2021,35887 km,HR-98,Manual,HatchBack,525000
+2558,Hyundai,Grand i10,2017,17427 km,DL-4C,Manual,HatchBack,483000
+165,Maruti,Vitara Brezza,2018,73081 km,UP-65,Manual,SUV,635000
+4756,Honda,City,2011,43603 km,KA-53,Manual,Sedan,343000
+6614,Hyundai,GRAND I10 NIOS,2022,5200 km,BR-01,Manual,HatchBack,677000
+4191,Maruti,Alto,2020,27090 km,WB-98,Manual,HatchBack,333000
+3365,Maruti,Swift,2015,89183 km,TN-13,Manual,HatchBack,481000
+4992,Maruti,Baleno,2017,52527 km,TN-07,Manual,HatchBack,656000
+7094,Datsun,Redi Go,2018,65548 km,UP-16,Automatic,HatchBack,252000
+1201,Honda,Jazz,2021,35562 km,KA-20,Manual,HatchBack,850000
+4205,Maruti,Wagon R 1.0,2012,88986 km,MH-03,Manual,HatchBack,276000
+1426,Mahindra,XUV500,2019,36847 km,KA-03,Manual,Lux_SUV,1756000
+5096,Hyundai,Elite i20,2017,54760 km,DL-12,Manual,HatchBack,540000
+1813,Toyota,YARIS,2018,64638 km,GJ-01,Automatic,Sedan,748000
+3988,Hyundai,Elite i20,2016,61060 km,TS-08,Manual,HatchBack,615000
+4530,Volkswagen,Ameo,2016,82556 km,TS-08,Manual,Sedan,633000
+4610,Maruti,Celerio,2015,99579 km,KA-04,Automatic,HatchBack,443000
+6578,Maruti,Swift,2012,23815 km,KA-02,Manual,HatchBack,490000
+2830,Maruti,Alto 800,2019,2619 km,WB-02,Manual,HatchBack,298000
+6405,KIA,SONET,2021,25263 km,KA-03,Automatic,SUV,1516000
+6128,Hyundai,Grand i10,2017,82848 km,DL-10,Manual,HatchBack,439000
+2326,Maruti,Swift,2021,56409 km,KA-50,Manual,HatchBack,733000
+4381,Hyundai,Creta,2017,25273 km,MH-02,Manual,SUV,853000
+4049,Maruti,Swift,2018,55919 km,HR-26,Manual,HatchBack,657000
+3366,Maruti,Dzire,2017,52033 km,MH-05,Automatic,Sedan,736000
+3895,Hyundai,Santro Xing,2013,51645 km,HR-26,Manual,HatchBack,235000
+1299,Hyundai,Verna,2016,41188 km,MH-01,Automatic,Sedan,729000
+6748,Hyundai,AURA,2020,35860 km,UP-53,Manual,Sedan,773000
+2132,Hyundai,i10,2011,54682 km,DL-12,Manual,HatchBack,241000
+7390,Maruti,Swift,2013,116936 km,MH-31,Manual,HatchBack,431000
+2583,Maruti,Alto 800,2018,65083 km,TS-07,Manual,HatchBack,288000
+3406,Honda,City,2016,83052 km,MH-12,Automatic,Sedan,567000
+1814,Maruti,Baleno,2018,15063 km,BR-01,Manual,HatchBack,601000
+1205,Maruti,Baleno,2016,51955 km,GJ-01,Manual,HatchBack,542000
+4069,Hyundai,i10,2012,75166 km,MH-12,Automatic,HatchBack,286000
+1967,Maruti,Alto K10,2012,92682 km,KL-02,Manual,HatchBack,206000
+6284,Datsun,Redi Go,2018,7659 km,DL-8C,Automatic,HatchBack,273000
+2245,Maruti,Dzire,2018,74352 km,TN-01,Manual,Sedan,367000
+7102,Honda,City,2012,29332 km,DL-4C,Manual,Sedan,455000
+143,Maruti,Alto K10,2012,80172 km,AP-29,Manual,HatchBack,197300
+3461,Maruti,Vitara Brezza,2016,91429 km,HR-26,Manual,SUV,643000
+2660,Maruti,Swift,2019,43012 km,GJ-27,Manual,HatchBack,580000
+5183,Hyundai,Elite i20,2020,43973 km,RJ-45,Manual,HatchBack,637000
+803,Maruti,Ertiga,2016,93648 km,MH-47,Manual,SUV,723000
+5406,Maruti,Alto K10,2017,65742 km,GJ-24,Manual,HatchBack,334000
+3606,Maruti,Baleno,2018,24390 km,WB-02,Manual,HatchBack,555000
+3621,Renault,Kwid,2017,47837 km,GJ-01,Manual,HatchBack,313000
+2379,Hyundai,Elite i20,2015,21693 km,DL-10,Manual,HatchBack,570000
+7857,Maruti,Wagon R 1.0,2012,70523 km,MH-05,Manual,HatchBack,304000
+1013,Maruti,Swift,2016,108560 km,,Manual,HatchBack,522000
+1377,Maruti,Ciaz,2018,92668 km,DL-10,Automatic,Sedan,730000
+5037,Maruti,Swift,2015,81442 km,MH-01,Manual,HatchBack,382000
+5291,Hyundai,Creta,2016,55188 km,MH-02,Automatic,SUV,919000
+3949,Maruti,Baleno,2020,30469 km,HR-82,Manual,HatchBack,664000
+816,Mahindra,KUV 100 NXT,2018,61528 km,GJ-05,Manual,SUV,382000
+1686,Renault,TRIBER,2020,25179 km,KA-02,Manual,SUV,619000
+5629,Mahindra,XUV 3OO,2022,19148 km,TN-45,Manual,SUV,1010000
+4735,Honda,Amaze,2019,39485 km,HR-26,Automatic,Sedan,733000
+7426,Renault,Duster,2016,73494 km,KA-05,Manual,SUV,745000
+2991,Maruti,Swift,2014,66156 km,MH-41,Manual,HatchBack,409000
+546,Renault,Kwid,2017,47400 km,TN-64,Automatic,HatchBack,378000
+1631,Hyundai,NEW SANTRO,2021,16502 km,KA-14,Manual,HatchBack,520000
+8,Hyundai,Grand i10,2015,39950 km,HR-26,Manual,HatchBack,443000
+4447,Hyundai,i20 Active,2015,62593 km,UP-78,Manual,HatchBack,516000
+4011,Renault,Kwid,2022,7775 km,GJ-01,Manual,HatchBack,514000
+2174,Hyundai,Elite i20,2017,93975 km,KA-03,Manual,HatchBack,699000
+6634,Toyota,Etios,2011,117052 km,,Manual,Sedan,201000
+3,Maruti,Vitara Brezza,2019,51718 km,WB-24,Manual,SUV,690000
+3991,Toyota,YARIS,2021,97446 km,MH-48,Manual,Sedan,614000
+466,Hyundai,i20,2014,77526 km,KA-04,Manual,HatchBack,535000
+3043,Hyundai,Elite i20,2019,56099 km,TS-07,Automatic,HatchBack,791000
+5408,Maruti,Swift,2014,24700 km,KA-03,Manual,HatchBack,565000
+4920,Hyundai,Verna,2015,40714 km,HR-51,Manual,Sedan,727000
+4590,Toyota,Corolla Altis,2014,102477 km,,Automatic,Lux_sedan,750000
+3694,Maruti,Celerio,2017,88386 km,GJ-01,Manual,HatchBack,400000
+7122,Maruti,Vitara Brezza,2018,75774 km,MH-14,Automatic,SUV,892000
+6154,Hyundai,Grand i10,2017,79178 km,GJ-27,Manual,HatchBack,501000
+2594,Hyundai,AURA,2020,49931 km,RJ-10,Manual,Sedan,611000
+5033,Maruti,Swift,2015,69946 km,DL-12,Manual,HatchBack,396000
+7233,Tata,NEXON,2021,28414 km,PB-27,Manual,SUV,876000
+5380,Hyundai,Elite i20,2015,9515 km,DL-4C,Manual,HatchBack,496000
+4670,Hyundai,i10,2011,22679 km,KA-01,Automatic,HatchBack,328000
+163,Hyundai,Xcent,2015,40791 km,MH-01,Manual,Sedan,444000
+5966,Maruti,Wagon R 1.0,2018,92055 km,MH-46,Manual,HatchBack,431000
+565,Renault,Kwid,2022,6592 km,DL-14,Automatic,HatchBack,562000
+4022,Maruti,IGNIS,2017,74643 km,KA-06,Automatic,HatchBack,530000
+5788,Volkswagen,Vento,2020,68303 km,KA-09,Manual,Sedan,1233000
+5457,Datsun,Redi Go,2018,8790 km,MH-01,Automatic,HatchBack,349000
+3110,Maruti,Dzire,2017,76526 km,MH-14,Manual,Sedan,584000
+7034,Renault,Kwid,2018,34290 km,KA-02,Automatic,HatchBack,447000
+55,Maruti,Wagon R 1.0,2014,21799 km,MH-04,Manual,HatchBack,351000
+5681,Honda,Brio,2013,59493 km,GJ-03,Manual,HatchBack,317000
+2948,Maruti,Celerio,2019,26026 km,DL-9C,Automatic,HatchBack,562000
+1327,Maruti,Dzire,2019,99097 km,KA-04,Manual,Sedan,339000
+6326,Hyundai,Elite i20,2019,59924 km,RJ-02,Manual,HatchBack,604000
+1492,Hyundai,New Elantra,2017,42802 km,GJ-06,Automatic,Lux_sedan,962000
+6397,Tata,Bolt,2016,90084 km,GJ-05,Manual,HatchBack,382000
+5498,Hyundai,Elite i20,2016,62950 km,MP-04,Manual,HatchBack,531000
+1260,Honda,Amaze,2015,96861 km,TN-07,Manual,Sedan,552000
+5125,Maruti,Swift,2020,46469 km,WB-06,Manual,HatchBack,555000
+3307,Maruti,Swift,2014,63998 km,MP-09,Manual,HatchBack,457000
+4736,Hyundai,Verna,2018,78698 km,DL-2C,Automatic,Sedan,960000
+4402,Hyundai,Elite i20,2016,18774 km,MH-03,Manual,HatchBack,555000
+6245,Tata,Tiago,2018,83340 km,KA-04,Manual,HatchBack,460650
+2887,Hyundai,GRAND I10 NIOS,2019,85747 km,GJ-35,Manual,HatchBack,636000
+777,Maruti,Swift,2010,96216 km,UP-16,Manual,HatchBack,189000
+6207,Skoda,Rapid,2015,82677 km,KA-51,Automatic,Sedan,624000
+3547,Hyundai,AURA,2021,80881 km,TN-12,Manual,Sedan,407000
+3824,Hyundai,Eon,2016,38662 km,KL-43,Manual,HatchBack,249000
+6157,Maruti,Swift,2015,52486 km,KA-35,Manual,HatchBack,541000
+7597,Honda,City,2020,17622 km,MH-13,Manual,Sedan,1102000
+3679,Hyundai,Grand i10,2017,40795 km,DL-4C,Manual,HatchBack,474000
+3929,Maruti,Vitara Brezza,2016,68943 km,MP-04,Manual,SUV,666000
+3119,Hyundai,Verna,2019,15821 km,KA-03,Automatic,Sedan,1188000
+3251,Hyundai,Eon,2015,90774 km,GJ-01,Manual,HatchBack,229000
+4715,Maruti,Alto K10,2017,47967 km,HR-36,Manual,HatchBack,359000
+6790,Hyundai,Grand i10,2017,70336 km,DL-12,Manual,HatchBack,490000
+2691,Maruti,Alto K10,2017,59323 km,UP-32,Manual,HatchBack,294250
+7252,Mahindra,XUV 3OO,2021,25852 km,DL-3C,Automatic,SUV,945000
+4532,Skoda,Rapid,2017,70248 km,UP-53,Automatic,Sedan,705000
+349,Maruti,Wagon R 1.0,2017,15993 km,KA-04,Manual,HatchBack,463000
+652,Hyundai,Creta,2017,82642 km,GJ-01,Automatic,SUV,1029000
+2713,Maruti,Swift,2014,71318 km,KA-05,Manual,HatchBack,475000
+3419,Hyundai,Elite i20,2016,70040 km,GJ-19,Manual,HatchBack,593000
+5977,Maruti,Vitara Brezza,2021,24808 km,PB-32,Manual,SUV,901000
+4519,Maruti,Alto K10,2018,46731 km,MH-05,Manual,HatchBack,374000
+7988,Renault,TRIBER,2022,4196 km,DL-12,Automatic,SUV,794000
+4797,Maruti,Swift Dzire,2016,66020 km,MH-48,Manual,Sedan,596000
+3893,Hyundai,GRAND I10 NIOS,2021,10559 km,TN-58,Automatic,HatchBack,752000
+4831,Ford,Ecosport,2014,47208 km,WB-08,Manual,SUV,403000
+1839,Maruti,Baleno,2016,38385 km,DL-2C,Manual,HatchBack,513000
+5227,Hyundai,Elite i20,2017,26195 km,KA-04,Manual,HatchBack,706000
+2049,Maruti,S Cross,2021,17916 km,UP-85,Manual,SUV,839000
+2566,Hyundai,Eon,2015,19508 km,MH-05,Manual,HatchBack,275000
+4258,Maruti,Ritz,2012,97419 km,TN-02,Manual,HatchBack,347000
+3161,Tata,NEXON,2020,36427 km,TN-10,Automatic,SUV,1039000
+3280,Hyundai,NEW I20 N LINE,2021,45479 km,TS-07,Manual,HatchBack,959000
+490,Maruti,Swift,2018,47004 km,MP-09,Manual,HatchBack,586000
+2263,Tata,ALTROZ,2021,9934 km,MH-05,Manual,HatchBack,756000
+2268,Maruti,New Wagon-R,2019,33412 km,TN-09,Manual,HatchBack,501000
+2607,Hyundai,VENUE,2021,26508 km,GJ-06,Manual,SUV,814000
+2001,Maruti,Wagon R 1.0,2016,40561 km,MH-46,Automatic,HatchBack,379000
+3758,Maruti,Swift,2021,22321 km,GJ-01,Manual,HatchBack,658000
+2087,Renault,Kiger,2021,17632 km,UP-62,Manual,HatchBack,778000
+3101,Maruti,Alto 800,2013,59845 km,KA-41,Manual,HatchBack,253000
+4227,Renault,Kwid,2019,70727 km,GJ-05,Manual,HatchBack,320000
+7300,Maruti,Alto 800,2014,54690 km,MP-09,Manual,HatchBack,233800
+3896,Hyundai,NEW I20,2021,12007 km,RJ-45,Manual,HatchBack,695000
+3738,Maruti,Baleno,2021,14130 km,PB-09,Manual,HatchBack,594000
+4543,Hyundai,GRAND I10 NIOS,2020,79701 km,DL-2C,Manual,HatchBack,655000
+6509,Hyundai,Verna,2013,117658 km,KA-51,Manual,Sedan,545000
+7050,KIA,SELTOS,2021,55767 km,HR-24,Manual,SUV,964000
+4387,Maruti,Dzire,2019,18097 km,KA-04,Manual,Sedan,805000
+1183,Maruti,Celerio X,2020,45263 km,GJ-32,Manual,HatchBack,521000
+649,Maruti,Swift Dzire,2012,60351 km,UP-16,Manual,Sedan,506000
+509,Honda,Brio,2016,27699 km,PB-10,Automatic,HatchBack,467000
+155,Hyundai,NEW I20,2021,14261 km,TN-14,Manual,HatchBack,763000
+297,Maruti,New Wagon-R,2019,85969 km,DL-9C,Manual,HatchBack,496000
+5165,Maruti,S PRESSO,2019,99003 km,TS-07,Manual,HatchBack,443000
+5493,Maruti,Wagon R 1.0,2016,67497 km,TS-07,Manual,HatchBack,414000
+1164,Maruti,Celerio,2017,77485 km,MH-47,Manual,HatchBack,450000
+1852,Renault,Kwid,2018,18334 km,MH-05,Automatic,HatchBack,420000
+5741,Honda,City,2010,63799 km,WB-06,Manual,Sedan,227000
+5384,Honda,Amaze,2022,14234 km,TN-81,Manual,Sedan,766000
+6259,Hyundai,Elite i20,2017,29498 km,WB-02,Manual,HatchBack,426000
+1196,Hyundai,Grand i10,2016,42428 km,DL-8C,Manual,HatchBack,421000
+5214,Hyundai,GRAND I10 NIOS,2019,54670 km,RJ-45,Manual,HatchBack,621000
+4056,Honda,Jazz,2016,32919 km,MH-02,Manual,HatchBack,510000
+4914,Honda,Jazz,2019,47033 km,KA-50,Automatic,HatchBack,731000
+4915,Maruti,Celerio,2016,47465 km,DL-6C,Automatic,HatchBack,407000
+118,Hyundai,NEW SANTRO,2019,27153 km,RJ-36,Manual,HatchBack,486000
+3498,Maruti,Wagon R 1.0,2017,66092 km,MH-47,Manual,HatchBack,447000
+6394,Hyundai,i20,2014,69716 km,GJ-01,Manual,HatchBack,397000
+1755,Ford,Ecosport,2018,54937 km,WB-02,Manual,SUV,668000
+3665,Honda,WR-V,2021,23861 km,TN-14,Manual,SUV,880000
+411,Maruti,Alto 800,2016,22042 km,KA-02,Manual,HatchBack,296000
+2780,Maruti,Baleno,2017,66853 km,TN-01,Manual,HatchBack,604000
+3046,Maruti,Alto,2019,68236 km,GJ-02,Manual,HatchBack,317000
+1656,Maruti,Swift,2012,48005 km,UP-14,Manual,HatchBack,313000
+7769,Honda,Brio,2013,64551 km,GJ-21,Manual,HatchBack,309000
+3703,Maruti,Swift,2014,40337 km,KA-53,Manual,HatchBack,599000
+7845,Maruti,Celerio,2015,93172 km,DL-1C,Automatic,HatchBack,385000
+4159,Maruti,New Wagon-R,2021,31413 km,DL-5C,Manual,HatchBack,565200
+5292,Skoda,Rapid,2019,112814 km,,Manual,Sedan,302000
+1214,Volkswagen,Polo,2015,96842 km,TN-10,Manual,HatchBack,437000
+1541,Maruti,Swift,2017,10991 km,MH-05,Manual,HatchBack,530000
+300,Maruti,Alto K10,2015,61108 km,CH-01,Manual,HatchBack,281000
+3367,Maruti,Celerio,2021,12364 km,KA-04,Automatic,HatchBack,617000
+3996,Maruti,Wagon R 1.0,2015,73805 km,HR-26,Manual,HatchBack,323000
+3546,Renault,Kwid,2016,68988 km,MH-48,Manual,HatchBack,289000
+3342,Hyundai,GRAND I10 NIOS,2019,38857 km,MH-12,Automatic,HatchBack,725000
+3353,Maruti,Ertiga,2013,105946 km,,Manual,SUV,571000
+4281,Maruti,IGNIS,2017,69429 km,GJ-35,Manual,HatchBack,498000
+3663,Honda,Amaze,2019,66854 km,TN-02,Automatic,Sedan,843000
+5351,Maruti,New Wagon-R,2021,6090 km,PB-37,Manual,HatchBack,521000
+2238,Maruti,Dzire,2022,73980 km,GJ-01,Manual,Sedan,573000
+6295,Maruti,Wagon R 1.0,2014,62423 km,MH-02,Manual,HatchBack,365000
+778,Hyundai,Grand i10,2018,50688 km,PB-10,Manual,HatchBack,470000
+5344,Maruti,Alto 800,2018,61029 km,GJ-21,Manual,HatchBack,326000
+3778,Maruti,Baleno,2017,120311 km,,Automatic,HatchBack,623000
+3185,Hyundai,New Elantra,2014,110827 km,MH-02,Manual,Lux_sedan,598000
+4332,Maruti,Ritz,2011,23103 km,KA-03,Manual,HatchBack,377000
+2895,Hyundai,i10,2015,45815 km,MH-04,Manual,HatchBack,350000
+5597,Maruti,Ciaz,2016,33405 km,TS-09,Automatic,Sedan,1032000
+2013,KIA,SONET,2020,56330 km,TS-08,Automatic,SUV,1138000
+1018,Tata,ALTROZ,2021,49819 km,TS-06,Manual,HatchBack,748000
+5901,Ford,Ecosport,2016,88415 km,KA-03,Automatic,SUV,703000
+7292,Mahindra,XUV500,2018,56519 km,HR-26,Manual,Lux_SUV,1082000
+3247,Maruti,Baleno,2020,27459 km,KA-05,Manual,HatchBack,743000
+2457,Maruti,Celerio,2019,103872 km,MH-12,Manual,HatchBack,509000
+7937,Maruti,New Wagon-R,2022,13586 km,TN-03,Manual,HatchBack,682000
+7649,Honda,WR-V,2019,50923 km,RJ-45,Manual,SUV,756000
+3512,Honda,City,2020,114247 km,MH-04,Automatic,Sedan,616000
+1347,Tata,Tiago,2018,38272 km,KA-51,Manual,HatchBack,529000
+5210,Hyundai,Elite i20,2017,25440 km,MH-05,Manual,HatchBack,547000
+362,Hyundai,Creta,2015,93177 km,WB-12,Manual,SUV,571000
+6769,Honda,City,2016,66638 km,UP-32,Manual,Sedan,565500
+7519,Renault,Kwid,2017,30879 km,MH-03,Automatic,HatchBack,364000
+12,Honda,Brio,2012,42375 km,GJ-05,Manual,HatchBack,312000
+1905,Maruti,Vitara Brezza,2019,77461 km,TN-74,Manual,SUV,803000
+5175,Maruti,Alto K10,2012,42619 km,KL-40,Manual,HatchBack,248000
+6810,Ford,Ecosport,2018,71070 km,GJ-06,Automatic,SUV,812000
+4099,Hyundai,Santro Xing,2014,65042 km,DL-8C,Manual,HatchBack,225000
+7811,Tata,TIAGO NRG,2019,84133 km,MH-12,Manual,HatchBack,499000
+6124,Toyota,YARIS,2021,74599 km,DL-1C,Automatic,Sedan,817000
+1208,Maruti,Swift Dzire,2014,35946 km,HR-36,Manual,Sedan,423000
+2962,Maruti,Swift,2018,66434 km,HR-36,Manual,HatchBack,654000
+5201,Mahindra,XUV500,2016,64061 km,KA-01,Manual,Lux_SUV,1217000
+1890,Hyundai,i10,2014,45798 km,KA-19,Manual,HatchBack,333000
+3691,Honda,City,2018,51414 km,MH-47,Manual,Sedan,580000
+6064,Maruti,Alto,2020,18650 km,GJ-05,Manual,HatchBack,381000
+1440,Renault,Duster,2021,28035 km,MH-14,Manual,SUV,1129000
+1047,Maruti,Swift,2018,27785 km,HR-26,Manual,HatchBack,652000
+3259,Hyundai,Elite i20,2016,95931 km,TS-07,Manual,HatchBack,572000
+7642,Hyundai,Elite i20,2017,29937 km,DL-7C,Manual,HatchBack,582000
+479,Hyundai,Elite i20,2016,44230 km,WB-06,Manual,HatchBack,437000
+2936,Renault,Kwid,2019,32692 km,DL-8C,Automatic,HatchBack,388000
+3181,Hyundai,ALCAZAR,2021,26541 km,GJ-05,Automatic,SUV,1939000
+1639,Maruti,Wagon R 1.0,2012,61195 km,BR-31,Manual,HatchBack,254000
+2129,Hyundai,Eon,2017,90153 km,KA-04,Manual,HatchBack,295000
+6168,Honda,City,2014,71552 km,WB-08,Manual,Sedan,449000
+4496,Volkswagen,Polo,2017,50734 km,TS-07,Manual,HatchBack,648000
+4463,Hyundai,Xcent,2018,68177 km,GJ-06,Manual,Sedan,796000
+4085,Honda,WR-V,2018,27043 km,TS-36,Manual,SUV,679000
+3940,Hyundai,NEW SANTRO,2022,13673 km,TS-08,Manual,HatchBack,691000
+4834,Hyundai,i10,2013,66444 km,GJ-27,Manual,HatchBack,291000
+5482,Hyundai,Grand i10,2015,70107 km,MH-12,Manual,HatchBack,388000
+2516,Tata,ALTROZ,2021,33411 km,UP-14,Manual,HatchBack,842000
+4598,Toyota,Glanza,2019,39014 km,TS-08,Automatic,HatchBack,805000
+1537,Maruti,Alto,2019,63515 km,RJ-05,Manual,HatchBack,357000
+6068,Hyundai,VENUE,2021,10389 km,KA-02,Manual,SUV,1119000
+7484,Hyundai,Grand i10,2014,38490 km,MH-02,Manual,HatchBack,369000
+7397,Ford,New Figo,2020,21619 km,TN-23,Manual,HatchBack,633000
+3087,Hyundai,Santro Xing,2013,37987 km,DL-12,Manual,HatchBack,232000
+4009,Skoda,Rapid,2020,47239 km,MH-43,Manual,Sedan,744000
+1695,Renault,Kiger,2021,19706 km,RJ-18,Manual,HatchBack,786000
+909,Volkswagen,Polo,2018,27132 km,DL-10,Manual,HatchBack,612000
+3237,Maruti,Baleno,2019,46430 km,KL-07,Manual,HatchBack,693000
+5451,Maruti,Swift,2012,106944 km,,Manual,HatchBack,319000
+7668,Honda,City,2016,70547 km,GJ-03,Automatic,Sedan,706000
+5654,Maruti,Swift,2019,31653 km,HR-87,Manual,HatchBack,526000
+4247,Maruti,Ciaz,2018,37678 km,DL-7C,Automatic,Sedan,760000
+4063,Maruti,IGNIS,2020,36231 km,KA-04,Manual,HatchBack,600000
+4082,Hyundai,NEW SANTRO,2021,18055 km,TN-12,Manual,HatchBack,513000
+4428,Maruti,IGNIS,2019,72225 km,UP-65,Manual,HatchBack,510000
+0,Maruti,S PRESSO,2022,3878 km,HR-98,Manual,HatchBack,514000
+1512,Renault,Kwid,2020,46710 km,MH-14,Automatic,HatchBack,531000
+3946,Maruti,Swift,2015,25610 km,MH-40,Manual,HatchBack,523000
+3472,Renault,Kwid,2016,44487 km,KA-53,Manual,HatchBack,303000
+6041,Hyundai,i20,2014,65518 km,UP-14,Manual,HatchBack,414000
+2470,Hyundai,Elite i20,2014,47140 km,TS-09,Manual,HatchBack,591000
+2643,Maruti,Swift Dzire,2019,67441 km,HR-81,Manual,Sedan,616000
+7147,Hyundai,Creta,2016,101807 km,GJ-10,Automatic,SUV,895000
+3786,Maruti,Ciaz,2019,82948 km,WB-02,Manual,Sedan,576000
+2650,Honda,City,2014,3812 km,TN-10,Manual,Sedan,727000
+5273,Hyundai,Creta,2018,63888 km,TS-08,Manual,SUV,844000
+2471,Maruti,Baleno,2018,60684 km,MH-03,Manual,HatchBack,591000
+6414,Hyundai,Elite i20,2015,102887 km,,Manual,HatchBack,601000
+7430,Maruti,Alto,2022,13095 km,TN-11,Manual,HatchBack,432000
+7590,Maruti,Alto,2020,53508 km,WB-12,Manual,HatchBack,327000
+2545,Maruti,Ciaz,2018,34935 km,TN-73,Manual,Sedan,708000
+4698,Maruti,Wagon R 1.0,2014,72113 km,MH-49,Manual,HatchBack,330250
+4534,Renault,Kiger,2021,45459 km,HR-76,Manual,HatchBack,737000
+639,Hyundai,Elite i20,2016,35690 km,DL-9C,Manual,HatchBack,535000
+1241,Hyundai,Creta,2018,106506 km,,Manual,SUV,907000
+1110,Hyundai,NEW I20,2020,12122 km,TN-07,Manual,HatchBack,808000
+5668,Maruti,Alto K10,2016,102185 km,,Manual,HatchBack,300000
+7576,Maruti,Baleno,2017,98974 km,GJ-01,Manual,HatchBack,526000
+7791,Maruti,New Wagon-R,2019,46925 km,GJ-10,Manual,HatchBack,524000
+1456,Honda,Amaze,2019,43774 km,GJ-23,Manual,Sedan,604000
+1133,Mahindra,XUV500,2014,107080 km,MH-46,Manual,Lux_SUV,561000
+2463,Honda,City,2021,19497 km,KA-50,Manual,Sedan,1250000
+6828,Hyundai,Eon,2017,79812 km,KL-37,Manual,HatchBack,236000
+7080,Ford,Ecosport,2017,85389 km,GJ-01,Manual,SUV,632000
+7950,Hyundai,Grand i10,2015,58769 km,KA-41,Manual,HatchBack,505000
+6960,Honda,City,2011,40516 km,MH-48,Automatic,Sedan,705000
+2158,Honda,WR-V,2017,87581 km,DL-3C,Manual,SUV,613000
+3701,Maruti,Swift,2013,69748 km,KA-09,Manual,HatchBack,448000
+3535,Renault,Kiger,2021,36390 km,TN-23,Manual,HatchBack,889000
+3660,Maruti,Ritz,2012,124401 km,,Manual,HatchBack,201000
+5605,Hyundai,Creta,2015,55392 km,MH-03,Automatic,SUV,792000
+783,Maruti,Wagon R 1.0,2012,87108 km,DL-9C,Manual,HatchBack,252000
+2139,Volkswagen,Polo,2019,58031 km,MH-12,Manual,HatchBack,639000
+6484,Hyundai,Elite i20,2019,43803 km,TS-08,Manual,HatchBack,682000
+7554,Maruti,Baleno,2019,29008 km,UP-16,Automatic,HatchBack,762000
+552,Hyundai,Eon,2016,74129 km,KA-51,Manual,HatchBack,313000
+6031,Maruti,Baleno,2015,52288 km,HR-51,Manual,HatchBack,397000
+996,Hyundai,GRAND I10 NIOS,2021,8455 km,MH-02,Manual,HatchBack,710000
+6495,Honda,Brio,2014,62217 km,MH-12,Manual,HatchBack,296000
+7016,Maruti,Alto,2021,18471 km,UP-16,Manual,HatchBack,433000
+3146,Maruti,Ciaz,2015,99137 km,KA-02,Manual,Sedan,370000
+5400,Hyundai,i20,2013,59723 km,KA-03,Manual,HatchBack,455000
+4411,Maruti,Dzire,2019,57268 km,KA-03,Manual,Sedan,801000
+343,Hyundai,Elite i20,2015,94121 km,TS-08,Manual,HatchBack,549000
+142,Maruti,Dzire,2017,71321 km,HR-26,Manual,Sedan,701000
+5710,Hyundai,Xcent,2014,43727 km,MH-12,Manual,Sedan,486000
+4701,Honda,Jazz,2017,35233 km,TN-14,Automatic,HatchBack,613000
+2980,Hyundai,i20,2011,83121 km,TN-22,Manual,HatchBack,294000
+4815,Maruti,Alto K10,2017,74155 km,PB-08,Manual,HatchBack,341000
+6438,Maruti,Baleno,2021,17039 km,MH-12,Manual,HatchBack,758000
+364,Renault,Kwid,2020,10916 km,KA-51,Automatic,HatchBack,560000
+6971,Hyundai,Grand i10,2016,42434 km,TS-07,Manual,HatchBack,504000
+4525,Maruti,Swift,2012,97529 km,UP-16,Manual,HatchBack,247000
+2497,Datsun,Go Plus,2018,27977 km,GJ-01,Manual,HatchBack,334000
+5127,Maruti,Swift,2016,53917 km,TN-02,Manual,HatchBack,625000
+4985,Hyundai,VENUE,2020,68413 km,KA-29,Automatic,SUV,1050000

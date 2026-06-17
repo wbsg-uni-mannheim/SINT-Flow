@@ -1,0 +1,76 @@
+{
+    "integrated_schema_by_entity": {
+        "Character": {
+            "attributes": [
+                "character",
+                "description",
+                "Actor_id",
+                "Work_id",
+                "creator"
+            ],
+            "foreign_keys": {
+                "Work_id": {"Work": "Work_id"},
+                "Actor_id": {"Actor": "Actor_id"}
+            }
+        },
+        "Actor": {
+            "attributes": [
+                "Actor_id",
+                "actor",
+                "actor_description",
+                "actor_place_of_birth",
+                "actor_date_of_birth",
+                "actor_sex_or_gender"
+            ],
+            "foreign_keys": {}
+        },
+        "Work": {
+            "attributes": [
+                "Work_id",
+                "work",
+                "work_description",
+                "type",
+                "genre",
+                "publication_date"
+            ],
+            "foreign_keys": {}
+        }
+    },
+    "integrated_schema_by_table": {
+        "Character": {
+            "attributes": [
+                "character",
+                "description",
+                "Actor_id",
+                "Work_id",
+                "creator"
+            ],
+            "foreign_keys": {
+                "Work_id": {"Work": "Work_id"},
+                "Actor_id": {"Actor": "Actor_id"}
+            }
+        },
+        "Actor": {
+            "attributes": [
+                "Actor_id",
+                "actor",
+                "actor_description",
+                "actor_place_of_birth",
+                "actor_date_of_birth",
+                "actor_sex_or_gender"
+            ],
+            "foreign_keys": {}
+        },
+        "Work": {
+            "attributes": [
+                "Work_id",
+                "work",
+                "work_description",
+                "type",
+                "genre",
+                "publication_date"
+            ],
+            "foreign_keys": {}
+        }
+    }
+}

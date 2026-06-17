@@ -1,0 +1,117 @@
+{
+    "1009ipopayments": {
+        "true_combinations": 154,
+        "predicted_combinations": 156,
+        "true_positives": 146,
+        "false_positives": 10,
+        "false_negatives": 8,
+        "precision": 0.9358974358974359,
+        "recall": 0.948051948051948,
+        "f1_score": 0.9419354838709677
+    },
+    "25ksep11": {
+        "true_combinations": 446,
+        "predicted_combinations": 446,
+        "true_positives": 425,
+        "false_positives": 21,
+        "false_negatives": 21,
+        "precision": 0.952914798206278,
+        "recall": 0.952914798206278,
+        "f1_score": 0.952914798206278
+    },
+    "500spend": {
+        "true_combinations": 115,
+        "predicted_combinations": 96,
+        "true_positives": 96,
+        "false_positives": 0,
+        "false_negatives": 19,
+        "precision": 1.0,
+        "recall": 0.8347826086956521,
+        "f1_score": 0.909952606635071
+    },
+    "afdr-clienteles": {
+        "true_combinations": 1198,
+        "predicted_combinations": 1246,
+        "true_positives": 1198,
+        "false_positives": 48,
+        "false_negatives": 0,
+        "precision": 0.9614767255216693,
+        "recall": 1.0,
+        "f1_score": 0.9803600654664485
+    },
+    "amo-ame": {
+        "true_combinations": 182,
+        "predicted_combinations": 215,
+        "true_positives": 160,
+        "false_positives": 55,
+        "false_negatives": 22,
+        "precision": 0.7441860465116279,
+        "recall": 0.8791208791208791,
+        "f1_score": 0.8060453400503779
+    },
+    "chicago_parks": {
+        "true_combinations": 119,
+        "predicted_combinations": 175,
+        "true_positives": 116,
+        "false_positives": 59,
+        "false_negatives": 3,
+        "precision": 0.6628571428571428,
+        "recall": 0.9747899159663865,
+        "f1_score": 0.7891156462585034
+    },
+    "cihr": {
+        "true_combinations": 762,
+        "predicted_combinations": 762,
+        "true_positives": 762,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0
+    },
+    "DCMS_NHM_NHM": {
+        "true_combinations": 166,
+        "predicted_combinations": 153,
+        "true_positives": 153,
+        "false_positives": 0,
+        "false_negatives": 13,
+        "precision": 1.0,
+        "recall": 0.9216867469879518,
+        "f1_score": 0.9592476489028213
+    },
+    "oranogram-junior": {
+        "true_combinations": 616,
+        "predicted_combinations": 635,
+        "true_positives": 567,
+        "false_positives": 68,
+        "false_negatives": 49,
+        "precision": 0.8929133858267716,
+        "recall": 0.9204545454545454,
+        "f1_score": 0.9064748201438849
+    },
+    "school_report": {
+        "true_combinations": 521,
+        "predicted_combinations": 577,
+        "true_positives": 511,
+        "false_positives": 66,
+        "false_negatives": 10,
+        "precision": 0.8856152512998267,
+        "recall": 0.980806142034549,
+        "f1_score": 0.930783242258652
+    },
+    "stockport_contracts": {
+        "true_combinations": 1286,
+        "predicted_combinations": 1305,
+        "true_positives": 1266,
+        "false_positives": 39,
+        "false_negatives": 20,
+        "precision": 0.9701149425287356,
+        "recall": 0.9844479004665629,
+        "f1_score": 0.9772288691624855
+    },
+    "average_results": {
+        "average_f1": 0.9230962291777719,
+        "average_precision": 0.9096341571499535,
+        "average_recall": 0.9451868622713412
+    }
+}

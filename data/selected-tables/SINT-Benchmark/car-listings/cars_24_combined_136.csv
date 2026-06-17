@@ -1,0 +1,238 @@
+listing_id,brand_name,car_model,year_built,fuel_cat,location_code,trans_type,vehicle_type,sale_price,mileage
+561,Renault,Kwid,2020.0,P,HR-29,Manual,HatchBack,390000,44904000 mtrs
+2063,Renault,Kwid,2019.0,P,DL-12,Manual,HatchBack,444000,12153000 mtrs
+5169,Hyundai,i20,2012.0,D,KA-04,Manual,HatchBack,380000,111571000 mtrs
+4889,Tata,TIGOR,2018.0,P,CH-01,Manual,Sedan,931000,36546000 mtrs
+5304,Tata,NEXON,2021.0,P,GJ-05,Automatic,SUV,1113000,42539000 mtrs
+2027,Honda,Jazz,2021.0,P,MH-14,Manual,HatchBack,860000,7171000 mtrs
+7843,Renault,TRIBER,2022.0,P,TN-05,Manual,SUV,761000,26457000 mtrs
+2254,Hyundai,Eon,2018.0,P,MP-05,Manual,HatchBack,306000,57485000 mtrs
+1147,Hyundai,i10,2010.0,P,MH-12,Manual,HatchBack,204000,77326000 mtrs
+3714,Ford,FREESTYLE,2018.0,P,KA-51,Manual,SUV,550000,62700000 mtrs
+5680,Tata,Tiago,2018.0,P,UP-16,Manual,HatchBack,428000,33563000 mtrs
+7756,Tata,PUNCH,2022.0,P,TN-10,Manual,SUV,810000,3348000 mtrs
+3002,Tata,Tiago,2019.0,P,HR-26,Automatic,HatchBack,505650,53799000 mtrs
+3605,Renault,Kwid,2020.0,P,HR-29,Automatic,HatchBack,486000,22475000 mtrs
+6368,Honda,City,2016.0,P,MH-46,Manual,Sedan,579000,55353000 mtrs
+1403,Hyundai,Creta,2015.0,D,CH-01,Manual,SUV,683000,82997000 mtrs
+3760,Hyundai,Elite i20,2016.0,P,DL-1C,Manual,HatchBack,566000,37871000 mtrs
+4334,Skoda,Rapid,2015.0,P,MP-09,Automatic,Sedan,669000,36379000 mtrs
+1636,Hyundai,Creta,2016.0,P,KA-03,Manual,SUV,878000,67621000 mtrs
+4120,Volkswagen,Polo,2014.0,D,KA-53,Manual,HatchBack,649000,100761000 mtrs
+2624,Hyundai,Verna,2018.0,P,MH-12,Manual,Sedan,409000,98769000 mtrs
+1103,Mahindra,Scorpio,2018.0,D,BR-01,Manual,SUV,1002000,63305000 mtrs
+7953,Hyundai,Grand i10,2018.0,P,KA-04,Manual,HatchBack,547000,34780000 mtrs
+7829,Toyota,Etios,2011.0,P,KA-05,Automatic,Sedan,1589000,6817000 mtrs
+3078,Honda,City,2013.0,P,WB-02,Manual,Sedan,467000,79513000 mtrs
+2665,Renault,Kwid,2020.0,P,KL-21,Manual,HatchBack,405000,19253000 mtrs
+1934,Hyundai,Grand i10,2015.0,P,KA-05,Manual,HatchBack,512000,54592000 mtrs
+626,Hyundai,i10,2010.0,P,MH-01,Manual,HatchBack,174000,91194000 mtrs
+443,Toyota,Corolla Altis,2017.0,C,GJ-01,Automatic,Lux_sedan,944000,96186000 mtrs
+2605,Hyundai,Grand i10,2018.0,P,,Manual,HatchBack,505000,100624000 mtrs
+6026,Honda,Amaze,2013.0,D,AP-29,Manual,Sedan,394000,87589000 mtrs
+7691,Toyota,Corolla Altis,2010.0,P,MH-02,Manual,Lux_sedan,233600,85954000 mtrs
+1823,Hyundai,Elite i20,2015.0,P,KA-05,Manual,HatchBack,658000,59470000 mtrs
+1961,Hyundai,NEW SANTRO,2020.0,C,MH-12,Manual,HatchBack,573000,38751000 mtrs
+4097,Hyundai,Elite i20,2014.0,P,GJ-01,Manual,HatchBack,544000,47704000 mtrs
+1423,Toyota,Etios Liva,2011.0,P,WB-06,Manual,HatchBack,203000,78075000 mtrs
+6003,Hyundai,Elite i20,2018.0,P,DL-4C,Manual,HatchBack,546000,40826000 mtrs
+5301,Hyundai,Creta,2017.0,P,KA-04,Manual,SUV,983000,20134000 mtrs
+495,Honda,Amaze,2014.0,P,TS-09,Manual,Sedan,417000,52597000 mtrs
+1581,Honda,WR-V,2019.0,D,TS-16,Manual,SUV,755000,45978000 mtrs
+3196,Tata,ALTROZ,2021.0,D,MH-03,Manual,HatchBack,891000,43444000 mtrs
+20,Ford,Ecosport,2019.0,P,TN-19,Manual,SUV,836000,50078000 mtrs
+5494,Hyundai,Grand i10,2014.0,C,GJ-01,Manual,HatchBack,373000,118152000 mtrs
+610,Tata,NEXON,2021.0,P,TN-73,Automatic,SUV,1143000,13767000 mtrs
+5805,Hyundai,i20,2014.0,P,KA-53,Manual,HatchBack,550000,39078000 mtrs
+1442,Hyundai,VENUE,2019.0,P,KA-53,Manual,SUV,988000,12234000 mtrs
+7415,KIA,SELTOS,2020.0,P,PB-08,Manual,SUV,1442000,21965000 mtrs
+6597,Honda,Jazz,2016.0,P,KA-51,Manual,HatchBack,595000,47077000 mtrs
+5350,Hyundai,i10,2015.0,P,DL-8C,Manual,HatchBack,297000,21899000 mtrs
+7247,Renault,Kwid,2021.0,P,DL-8C,Manual,HatchBack,458000,11812000 mtrs
+1555,Ford,Ecosport,2017.0,P,DL-10,Manual,SUV,699000,14241000 mtrs
+393,Honda,Brio,2015.0,P,MP-09,Manual,HatchBack,373000,41595000 mtrs
+3190,Hyundai,Grand i10,2017.0,P,MH-02,Automatic,HatchBack,545000,27924000 mtrs
+2202,KIA,SELTOS,2020.0,P,TS-08,Manual,SUV,1339000,42372000 mtrs
+7767,Hyundai,Grand i10,2016.0,P,UP-14,Manual,HatchBack,446000,79736000 mtrs
+5124,Tata,TIGOR,2021.0,P,BR-02,Manual,Sedan,530000,73424000 mtrs
+6474,Honda,WR-V,2017.0,D,KA-25,Manual,SUV,748000,71832000 mtrs
+6062,Renault,Kwid,2017.0,P,KA-05,Manual,HatchBack,376000,24810000 mtrs
+3837,Hyundai,Creta,2015.0,P,DL-8C,Manual,SUV,706000,76888000 mtrs
+887,Toyota,Corolla Altis,2017.0,P,CH-01,Manual,Lux_sedan,982000,49543000 mtrs
+7335,Hyundai,Creta,2019.0,P,DL-4C,Automatic,SUV,1121000,20269000 mtrs
+3463,Renault,Kwid,2021.0,P,MH-12,Manual,HatchBack,499000,4730000 mtrs
+2290,Honda,WR-V,2021.0,D,TN-13,Manual,SUV,1026000,71880000 mtrs
+5249,Toyota,YARIS,2021.0,P,GJ-01,Automatic,Sedan,916000,35877000 mtrs
+4852,Tata,NEXON,2019.0,P,DL-3C,Manual,SUV,716000,54264000 mtrs
+5572,Hyundai,NEW SANTRO,2020.0,P,TS-07,Automatic,HatchBack,593000,35383000 mtrs
+2218,Hyundai,Elite i20,2017.0,P,GJ-27,Manual,HatchBack,658000,41497000 mtrs
+1501,Tata,Tiago,2022.0,C,MH-14,Manual,HatchBack,712500,13934000 mtrs
+5296,Nissan,MAGNITE,2021.0,P,TS-08,Manual,SUV,568000,40592000 mtrs
+3507,Hyundai,Verna,2017.0,P,MH-03,Manual,Sedan,778000,59476000 mtrs
+658,Hyundai,Verna,2013.0,P,KA-53,Manual,Sedan,556000,45232000 mtrs
+6516,Hyundai,i10,2014.0,P,TN-14,Manual,HatchBack,335000,60541000 mtrs
+7803,Honda,City,2016.0,P,MH-04,Manual,Sedan,324000,62548000 mtrs
+317,Hyundai,Grand i10,2015.0,P,MP-04,Manual,HatchBack,429000,88880000 mtrs
+488,Hyundai,Elite i20,2018.0,P,TN-85,Manual,HatchBack,559000,91609000 mtrs
+4659,Hyundai,Elite i20,2017.0,P,DL-8C,Manual,HatchBack,553350,24418000 mtrs
+7208,Hyundai,Creta,2020.0,P,KA-04,Automatic,SUV,1855000,12975000 mtrs
+7206,Hyundai,i10,2011.0,P,KL-07,Manual,HatchBack,208000,85669000 mtrs
+3329,Mahindra,XUV500,2017.0,D,GJ-18,Automatic,Lux_SUV,1066000,111649000 mtrs
+7099,Datsun,Redi Go,2018.0,P,KL-33,Automatic,HatchBack,353000,11737000 mtrs
+7477,Honda,City,2020.0,P,KA-30,Manual,Sedan,781000,53295000 mtrs
+7302,Hyundai,Grand i10,2017.0,P,MH-14,Manual,HatchBack,524000,40108000 mtrs
+6985,Renault,Kiger,2021.0,P,DL-10,Manual,HatchBack,725000,33025000 mtrs
+549,Toyota,Corolla Altis,2014.0,P,MH-12,Automatic,Lux_sedan,807000,65829000 mtrs
+1974,Hyundai,NEW SANTRO,2018.0,P,KA-05,Automatic,HatchBack,499000,76855000 mtrs
+1758,Hyundai,Verna,2017.0,D,MH-04,Manual,Sedan,1409000,48612000 mtrs
+4473,Datsun,Redi Go,2018.0,P,KL-07,Manual,HatchBack,220000,67478000 mtrs
+151,Datsun,Redi Go,2018.0,P,KA-04,Manual,HatchBack,262000,30732000 mtrs
+1918,Datsun,Redi Go,2018.0,P,HR-51,Automatic,HatchBack,388000,37399000 mtrs
+592,Hyundai,Verna,2012.0,P,AP-09,Manual,Sedan,447000,44784000 mtrs
+8011,Toyota,YARIS,2018.0,P,KA-03,Manual,Sedan,534000,73393000 mtrs
+5516,Renault,TRIBER,2022.0,P,GJ-02,Manual,SUV,682000,23227000 mtrs
+6619,Hyundai,VENUE,2021.0,P,BR-01,Automatic,SUV,1114000,42346000 mtrs
+5171,Hyundai,Grand i10,2015.0,P,KA-05,Automatic,HatchBack,573000,52912000 mtrs
+4453,Hyundai,NEW SANTRO,2019.0,P,TS-16,Automatic,HatchBack,469000,90122000 mtrs
+2485,Hyundai,Elite i20,2017.0,P,TS-10,Automatic,HatchBack,687000,32289000 mtrs
+5622,Toyota,Corolla Altis,2012.0,P,DL-3C,Automatic,Lux_sedan,496000,63140000 mtrs
+3632,Tata,ALTROZ,2021.0,D,TN-99,Manual,HatchBack,935000,23190000 mtrs
+7179,Datsun,Go Plus,2021.0,P,UP-32,Manual,HatchBack,541000,10512000 mtrs
+4953,Hyundai,GRAND I10 NIOS,2020.0,P,PB-65,Manual,HatchBack,573000,33659000 mtrs
+7203,Hyundai,Grand i10,2015.0,C,GJ-01,Manual,HatchBack,458000,75409000 mtrs
+1920,Renault,Kwid,2018.0,P,TS-29,Manual,HatchBack,373000,96475000 mtrs
+6454,Ford,Ecosport,2017.0,D,MP-09,Manual,SUV,637000,93866000 mtrs
+7636,Renault,Kwid,2016.0,P,,Manual,HatchBack,268000,101471000 mtrs
+6429,Hyundai,Elite i20,2019.0,P,MP-04,Manual,HatchBack,539000,21786000 mtrs
+5131,Ford,Ecosport,2016.0,D,HR-30,Manual,SUV,485000,97711000 mtrs
+7920,Hyundai,GRAND I10 NIOS,2021.0,C,MP-09,Manual,HatchBack,706000,25042000 mtrs
+5953,Hyundai,Grand i10,2019.0,P,MH-34,Manual,HatchBack,495000,14653000 mtrs
+4770,KIA,SELTOS,2020.0,D,DL-8C,Manual,SUV,1150000,57218000 mtrs
+6738,Hyundai,AURA,2021.0,P,HR-03,Manual,Sedan,653000,9781000 mtrs
+7161,Hyundai,i20,2013.0,P,MH-14,Manual,HatchBack,418000,72256000 mtrs
+3022,Volkswagen,Ameo,2016.0,P,KA-05,Manual,Sedan,494000,69657000 mtrs
+6032,Skoda,Rapid,2021.0,P,KA-04,Manual,Sedan,871000,7129000 mtrs
+6139,Hyundai,Elite i20,2016.0,P,KA-53,Manual,HatchBack,740000,33655000 mtrs
+4611,Hyundai,Grand i10,2018.0,C,DL-8C,Manual,HatchBack,476000,24039000 mtrs
+4062,Hyundai,VENUE,2020.0,D,HR-52,Manual,SUV,803000,40734000 mtrs
+6360,Hyundai,NEW SANTRO,2019.0,P,KL-55,Manual,HatchBack,393000,31991000 mtrs
+4773,Volkswagen,Polo,2011.0,P,,Manual,HatchBack,279000,101582000 mtrs
+6977,Toyota,Glanza,2019.0,P,HR-05,Automatic,HatchBack,787000,93670000 mtrs
+4333,Tata,Tiago,2018.0,P,GJ-01,Automatic,HatchBack,512000,58648000 mtrs
+6584,Hyundai,Grand i10,2018.0,P,KA-09,Manual,HatchBack,618000,26136000 mtrs
+64,Toyota,URBAN CRUISER,2021.0,P,BR-01,Automatic,SUV,1010000,37618000 mtrs
+974,Volkswagen,Vento,2017.0,P,GJ-01,Manual,Sedan,563000,44446000 mtrs
+576,Honda,BR-V,2017.0,P,TS-07,Automatic,SUV,798000,83623000 mtrs
+3741,Datsun,Go,2014.0,P,WB-24,Manual,HatchBack,179000,62884000 mtrs
+7108,Hyundai,Elite i20,2017.0,P,TS-07,Manual,HatchBack,681000,37369000 mtrs
+6572,Honda,Amaze,2019.0,P,TS-07,Automatic,Sedan,760000,19624000 mtrs
+5900,Hyundai,Elite i20,2016.0,P,KA-04,Manual,HatchBack,591000,77631000 mtrs
+6938,Hyundai,Grand i10,2019.0,P,GJ-01,Manual,HatchBack,518000,70001000 mtrs
+1606,Ford,Ecosport,2014.0,D,MH-03,Manual,SUV,495000,76517000 mtrs
+6141,Renault,Kwid,2018.0,P,KL-39,Manual,HatchBack,373000,20207000 mtrs
+2695,Honda,City,2016.0,P,TS-08,Manual,Sedan,653000,87335000 mtrs
+6507,Tata,ALTROZ,2021.0,P,KA-28,Manual,HatchBack,811000,24479000 mtrs
+5506,Hyundai,Grand i10,2018.0,D,MH-05,Manual,HatchBack,569000,40757000 mtrs
+2835,Hyundai,Grand i10,2016.0,P,DL-1C,Automatic,HatchBack,497000,23573000 mtrs
+4546,Hyundai,NEW I20,2021.0,P,TN-10,Manual,HatchBack,753000,73768000 mtrs
+1969,Mahindra,XUV500,2018.0,D,HR-26,Manual,Lux_SUV,1086000,83294000 mtrs
+3277,Honda,City,2016.0,P,GJ-23,Manual,Sedan,757000,86290000 mtrs
+1443,Skoda,Rapid,2020.0,P,DL-10,Automatic,Sedan,891750,55601000 mtrs
+3971,Hyundai,Creta,2017.0,P,TN-10,Automatic,SUV,941000,43503000 mtrs
+4013,Hyundai,Xcent,2017.0,P,DL-6C,Manual,Sedan,393000,63055000 mtrs
+4287,Hyundai,Elite i20,2017.0,P,MH-06,Automatic,HatchBack,680000,70855000 mtrs
+784,Hyundai,Elite i20,2016.0,P,KA-53,Manual,HatchBack,658000,57459000 mtrs
+4665,Hyundai,i10,2012.0,P,DL-4C,Manual,HatchBack,252000,17962000 mtrs
+3967,Nissan,MAGNITE,2021.0,P,HR-30,Manual,SUV,673000,37014000 mtrs
+7660,Ford,Ecosport,2016.0,D,UP-16,Manual,SUV,473000,96841000 mtrs
+3681,Tata,PUNCH,2022.0,P,GJ-01,Automatic,SUV,866250,8001000 mtrs
+4580,Mahindra,XUV500,2017.0,D,PB-65,Automatic,Lux_SUV,870000,108691000 mtrs
+2741,Honda,Amaze,2014.0,P,TN-31,Automatic,Sedan,673000,17960000 mtrs
+1001,Hyundai,Grand i10,2016.0,P,KA-51,Manual,HatchBack,413000,87447000 mtrs
+1163,Volkswagen,TAIGUN,2022.0,P,KA-55,Manual,SUV,1554000,16255000 mtrs
+995,Hyundai,Grand i10,2017.0,P,DL-10,Automatic,HatchBack,508000,64826000 mtrs
+5418,Hyundai,Grand i10,2018.0,P,,Manual,HatchBack,453000,112488000 mtrs
+4382,Ford,FREESTYLE,2019.0,P,DL-10,Manual,SUV,583000,17523000 mtrs
+8014,Tata,TIGOR,2022.0,P,MH-02,Manual,Sedan,392000,82009000 mtrs
+3961,Honda,Amaze,2015.0,P,DL-10,Manual,Sedan,644000,43587000 mtrs
+3033,Tata,Tiago,2018.0,P,TN-22,Manual,HatchBack,477000,28169000 mtrs
+7679,Hyundai,NEW I20,2022.0,P,HR-16,Manual,HatchBack,721000,17325000 mtrs
+1605,Hyundai,i20,2012.0,P,AP-28,Manual,HatchBack,460000,91703000 mtrs
+925,Toyota,Etios,2011.0,P,MP-09,Manual,Sedan,287000,46849000 mtrs
+7540,Volkswagen,Vento,2019.0,P,GJ-01,Automatic,Sedan,1263000,4332000 mtrs
+4567,Hyundai,NEW SANTRO,2019.0,P,TN-05,Automatic,HatchBack,535000,33688000 mtrs
+180,Hyundai,Elite i20,2017.0,P,MH-02,Manual,HatchBack,561000,29201000 mtrs
+3364,Honda,City,2014.0,P,PB-10,Manual,Sedan,649000,85845000 mtrs
+6407,Hyundai,Grand i10,2018.0,P,TN-58,Automatic,HatchBack,568000,57036000 mtrs
+4449,Honda,City,2010.0,P,KA-03,Manual,Sedan,423000,83758000 mtrs
+7379,Ford,Ecosport,2017.0,P,MH-05,Manual,SUV,552000,93995000 mtrs
+4680,Mahindra,TUV300,2017.0,D,TN-10,Manual,SUV,610000,94015000 mtrs
+6406,Hyundai,Elite i20,2016.0,P,DL-8C,Manual,HatchBack,558000,59397000 mtrs
+1381,Hyundai,NEW SANTRO,2019.0,P,GJ-01,Automatic,HatchBack,550000,49705000 mtrs
+2958,Hyundai,Elite i20,2017.0,P,DL-12,Manual,HatchBack,528000,82374000 mtrs
+2773,Volkswagen,Polo,2015.0,P,TS-13,Manual,HatchBack,423000,47618000 mtrs
+5992,Hyundai,Creta,2019.0,C,DL-1C,Automatic,SUV,1171000,40044000 mtrs
+6142,Hyundai,Elite i20,2018.0,P,KA-53,Manual,HatchBack,751000,36043000 mtrs
+5918,Hyundai,i20,2011.0,P,,Manual,HatchBack,243000,106094000 mtrs
+1328,Honda,Jazz,2019.0,P,MH-02,Automatic,HatchBack,684000,60129000 mtrs
+3705,Hyundai,i20,2010.0,P,DL-1C,Manual,HatchBack,262000,61302000 mtrs
+3700,Ford,New Figo,2019.0,P,MH-12,Automatic,HatchBack,669000,43159000 mtrs
+7848,Renault,Kwid,2016.0,P,RJ-14,Manual,HatchBack,281000,43040000 mtrs
+6329,Hyundai,AURA,2020.0,D,MH-48,Manual,Sedan,462000,54942000 mtrs
+3218,Hyundai,i20,2013.0,P,TN-01,Manual,HatchBack,348000,56022000 mtrs
+638,Hyundai,Grand i10,2015.0,P,KA-53,Manual,HatchBack,502000,25617000 mtrs
+5437,Hyundai,Grand i10,2015.0,P,WB-02,Manual,HatchBack,342000,91656000 mtrs
+510,Hyundai,Eon,2013.0,P,AP-28,Manual,HatchBack,233000,89559000 mtrs
+2934,Tata,Tiago,2020.0,P,BR-01,Manual,HatchBack,475000,52112000 mtrs
+5708,Honda,Brio,2012.0,P,,Manual,HatchBack,255000,107156000 mtrs
+2945,Hyundai,Elite i20,2018.0,P,HR-16,Manual,HatchBack,574000,46184000 mtrs
+3692,Renault,Kwid,2019.0,P,WB-26,Manual,HatchBack,378000,40481000 mtrs
+3091,Ford,Ecosport,2016.0,P,KA-05,Automatic,SUV,737000,39441000 mtrs
+5385,Tata,NEXON,2021.0,P,TS-04,Automatic,SUV,1034000,26086000 mtrs
+2785,Honda,CRV,2014.0,P,MH-02,Automatic,Lux_SUV,922000,61741000 mtrs
+3823,Datsun,Go Plus,2017.0,P,MH-43,Manual,HatchBack,335000,6596000 mtrs
+6605,Hyundai,Eon,2018.0,P,MH-46,Manual,HatchBack,374000,26726000 mtrs
+6850,Mahindra,XUV 3OO,2020.0,P,DL-12,Manual,SUV,877000,10344000 mtrs
+2366,Hyundai,i10,2012.0,P,KA-50,Automatic,HatchBack,398000,31474000 mtrs
+1780,Hyundai,Grand i10,2015.0,P,TS-08,Manual,HatchBack,475000,60817000 mtrs
+7053,Hyundai,i20,2012.0,P,GJ-06,Manual,HatchBack,343000,70600000 mtrs
+367,Tata,Tiago,2019.0,P,RJ-45,Manual,HatchBack,531000,68766000 mtrs
+744,Hyundai,NEW I20,2021.0,P,MH-14,Automatic,HatchBack,797000,35529000 mtrs
+6160,Toyota,Innova,2015.0,D,PB-08,Manual,SUV,802000,104654000 mtrs
+1217,Hyundai,Eon,2015.0,P,PB-10,Manual,HatchBack,234000,59332000 mtrs
+4808,Tata,Tiago,2018.0,P,MH-01,Manual,HatchBack,429000,45826000 mtrs
+749,Hyundai,Creta,2015.0,P,MH-47,Manual,SUV,773000,65655000 mtrs
+4303,Tata,TIGOR,2018.0,D,TS-09,Manual,Sedan,623000,89624000 mtrs
+4508,Hyundai,i20,2012.0,C,MH-03,Manual,HatchBack,330000,107982000 mtrs
+425,Hyundai,i20,2010.0,P,DL-3C,Manual,HatchBack,163000,67473000 mtrs
+7460,Hyundai,Grand i10,2019.0,C,GJ-01,Manual,HatchBack,524000,108945000 mtrs
+1622,Hyundai,AURA,2020.0,P,TS-11,Automatic,Sedan,825000,98983000 mtrs
+5423,Toyota,Etios,2011.0,P,,Manual,Sedan,235000,115500000 mtrs
+5275,Hyundai,Eon,2017.0,P,RJ-14,Manual,HatchBack,287650,50894000 mtrs
+2580,Hyundai,i20,2010.0,P,MH-02,Manual,HatchBack,207000,41235000 mtrs
+122,KIA,SONET,2021.0,P,PB-91,Manual,SUV,1141000,22542000 mtrs
+3553,Toyota,Glanza,2020.0,P,UP-78,Manual,HatchBack,663000,20580000 mtrs
+2413,Hyundai,Verna,2013.0,D,AP-28,Manual,Sedan,413000,45517000 mtrs
+7708,Honda,City,2018.0,P,MH-01,Manual,Sedan,497000,69542000 mtrs
+1002,Hyundai,Elite i20,2014.0,P,DL-7C,Manual,HatchBack,441000,29018000 mtrs
+5627,Hyundai,Verna,2013.0,D,MH-14,Manual,Sedan,683000,74281000 mtrs
+30,Renault,Kwid,2022.0,P,KA-02,Manual,HatchBack,572000,6587000 mtrs
+822,Toyota,Etios Liva,2013.0,D,HR-30,Manual,HatchBack,308000,106211000 mtrs
+6450,Hyundai,NEW SANTRO,2018.0,P,KA-20,Manual,HatchBack,478000,55467000 mtrs
+4700,Hyundai,i20,2013.0,P,DL-3C,Manual,HatchBack,320000,74669000 mtrs
+8005,Honda,City,2015.0,P,KA-02,Automatic,Sedan,721000,23212000 mtrs
+7841,Hyundai,Elite i20,2018.0,P,UP-32,Manual,HatchBack,598000,48340000 mtrs
+4537,Tata,Tiago,2021.0,P,GJ-03,Manual,HatchBack,598000,45146000 mtrs
+7331,Hyundai,Eon,2018.0,P,TS-13,Manual,HatchBack,304000,71503000 mtrs
+1875,Honda,City,2015.0,P,KA-12,Manual,Sedan,520000,96488000 mtrs
+4796,Hyundai,Elite i20,2019.0,P,GJ-27,Manual,HatchBack,613000,42787000 mtrs
+7087,Honda,WR-V,2017.0,P,TN-14,Manual,SUV,763000,43841000 mtrs
+3922,Hyundai,Elite i20,2016.0,P,DL-7C,Manual,HatchBack,569000,40108000 mtrs
+2403,Honda,City,2017.0,P,RJ-40,Automatic,Sedan,746000,74573000 mtrs
+4246,Renault,Kwid,2016.0,P,TN-91,Manual,HatchBack,350000,65840000 mtrs
+7284,Renault,Kwid,2020.0,P,TS-08,Manual,HatchBack,470000,22660000 mtrs
+201,Honda,Brio,2014.0,P,UP-32,Manual,HatchBack,286000,70683000 mtrs
+2430,Hyundai,VENUE,2021.0,P,GJ-22,Manual,SUV,991000,13342000 mtrs
+619,Hyundai,Creta,2018.0,D,HR-26,Automatic,SUV,1106000,38650000 mtrs
+937,Hyundai,Elite i20,2017.0,P,TS-07,Manual,HatchBack,663000,49229000 mtrs
+1911,Hyundai,Grand i10,2017.0,P,UP-32,Automatic,HatchBack,542000,36405000 mtrs

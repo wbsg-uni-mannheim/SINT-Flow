@@ -1,0 +1,354 @@
+VolcanoID,V_Name,Country,Region,Subregion,Latitude,Longitude,PEI,H_active,VEI_Holoce,class
+232060,Dacht-i-Navar Group,Afghanistan,Middle East and Indian Ocean,Middle East (western),33.95,67.92,5,0,No confirmed eruptions,U-NHHR
+264230,Lewotolo,Indonesia,Indonesia,Lesser Sunda Islands,-8.272,123.505,4,1,3,
+213050,Kars Plateau,Turkey,Mediterranean and W Asia,Turkey,40.75,43.25,7,0,No confirmed eruptions,U-NHHR
+341023,"Isabel, Isla",Mexico,M?xico and Central America,M?xico,21.848,-105.886,1,0,No confirmed eruptions,U-NHHR
+231050,"Ithnayn, Harrat",Saudi Arabia,Middle East and Indian Ocean,Middle East (southern),26.58,40.2,3,0,No confirmed eruptions,U-NHHR
+312160,Trident,United States,Alaska,Alaska Peninsula,58.236,-155.1,1,1,3,
+300130,Karymsky,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,54.05,159.45,2,1,6,
+285083,Tenchozan,Japan,"Japan, Taiwan, Marianas",Hokkaido,44.044,145.086,1,0,No confirmed eruptions,U-NHHR
+283290,Osore-yama,Japan,"Japan, Taiwan, Marianas",Honshu,41.276,141.124,5,1,Unknown VEI,U-HHR
+283190,Zao,Japan,"Japan, Taiwan, Marianas",Honshu,38.141,140.443,5,1,4,
+345050,Barva,Costa Rica,M?xico and Central America,Costa Rica,10.135,-84.1,5,0,4,U-HR
+370030,Lj?sufj?ll,Iceland,Iceland and Arctic Ocean,Iceland (western),64.87,-22.23,2,0,3,
+241060,Reporoa,New Zealand,New Zealand to Fiji,New Zealand,-38.42,176.33,3,0,Unknown VEI,U-HR
+258001,Eastern Gemini Seamount,France,Melanesia and Australia,Pacific Ocean (southwestern),-20.98,170.28,1,1,1,U-HHR
+300530,Leutongey,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,57.3,159.83,2,0,No confirmed eruptions,U-NHHR
+390140,Protector Shoal,United Kingdom,Antarctica,Antarctica and South Sandwich Islands,-55.92,-28.08,1,1,0,U-HHR
+341007,San Borja Volcanic Field,Mexico,M?xico and Central America,M?xico,28.5,-113.75,2,0,No confirmed eruptions,U-NHHR
+284060,Aoga-shima,Japan,"Japan, Taiwan, Marianas","Izu, Volcano, and Mariana Islands",32.454,139.762,2,1,4,
+221250,Tullu Moje,Ethiopia,Africa and Red Sea,Africa (northeastern) and Red Sea,8.158,39.13,5,1,Unknown VEI,U-HHR
+264040,Tambora,Indonesia,Indonesia,Lesser Sunda Islands,-8.25,118.0,4,1,7,
+222164,Ngozi,Tanzania,Africa and Red Sea,Africa (eastern),-8.97,33.57,7,0,5,U-HR
+224020,Manengouba,Cameroon,Africa and Red Sea,Africa (western),5.03,9.83,5,0,No confirmed eruptions,U-NHHR
+312120,Kialagvik,United States,Alaska,Alaska Peninsula,57.203,-156.745,1,0,No confirmed eruptions,U-NHHR
+315060,Tlevak Strait-Suemez Is.,United States,Alaska,Alaska (eastern),55.25,-133.3,2,0,No confirmed eruptions,U-NHHR
+360101,"Watt, Morne",Dominica,West Indies,West Indies,15.307,-61.305,5,1,2,U-HHR
+300056,Otdelniy,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,52.22,157.428,2,0,No confirmed eruptions,U-NHHR
+224011,Tombel Graben,Cameroon,Africa and Red Sea,Africa (western),4.75,9.67,6,0,No confirmed eruptions,U-NHHR
+213002,Hasan Dagi,Turkey,Mediterranean and W Asia,Turkey,38.13,34.17,4,0,No confirmed eruptions,U-NHHR
+274050,Unnamed,Philippines,Philippines and SE Asia,North of Luzon,20.33,121.75,2,1,0,U-HHR
+332090,Unnamed,United States,Hawaii and Pacific Ocean,Hawaiian Islands,23.58,-163.83,1,1,0,U-HHR
+306010,Xianjindao,North Korea,Kamchatka and Mainland Asia,Korea,41.33,128.0,4,0,No confirmed eruptions,U-NHHR
+300580,Shishel,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,57.45,160.37,2,0,No confirmed eruptions,U-NHHR
+221102,Mallahle,Ethiopia-Eritrea,Africa and Red Sea,Africa (northeastern) and Red Sea,13.27,41.65,2,0,No confirmed eruptions,U-NHHR
+300230,Kizimen,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,55.13,160.32,2,1,5,U-HHR
+285060,Daisetsu,Japan,"Japan, Taiwan, Marianas",Hokkaido,43.661,142.858,3,1,Unknown VEI,U-HHR
+290200,Ketoi,Russia,Kuril Islands,Kuril Islands,47.35,152.475,2,1,2,U-HHR
+261050,"Telong, Bur ni",Indonesia,Indonesia,Sumatra,4.769,96.821,5,1,2,
+263351,Baluran,Indonesia,Indonesia,Java,-7.85,114.37,5,0,No confirmed eruptions,U-NHHR
+382100,Furnas,Portugal,Atlantic Ocean,Azores,37.77,-25.32,3,1,5,
+282022,Akuseki-jima,Japan,"Japan, Taiwan, Marianas",Ryukyu Islands and Kyushu,29.461,129.597,2,0,No confirmed eruptions,U-NHHR
+268030,Ibu,Indonesia,Indonesia,Halmahera,1.488,127.63,4,1,2,
+284190,Guguan,United States,"Japan, Taiwan, Marianas","Izu, Volcano, and Mariana Islands",17.307,145.845,1,1,2,U-HHR
+284211,NW Rota-1,United States,"Japan, Taiwan, Marianas","Izu, Volcano, and Mariana Islands",14.601,144.775,2,1,0,U-HHR
+273020,Pocdol Mountains,Philippines,Philippines and SE Asia,Luzon,13.05,123.958,6,0,No confirmed eruptions,U-NHHR
+382040,Graciosa,Portugal,Atlantic Ocean,Azores,39.02,-27.97,3,0,No confirmed eruptions,U-NHHR
+390130,Zavodovski,United Kingdom,Antarctica,Antarctica and South Sandwich Islands,-56.3,-27.57,1,1,2,U-HHR
+257060,Epi,Vanuatu,Melanesia and Australia,Vanuatu,-16.68,168.37,2,1,3,
+384010,Fogo,Cape Verde,Atlantic Ocean,Cape Verde Islands,14.95,-24.35,4,1,2,
+357040,Planch?n-Peteroa,Chile,South America,Central Chile and Argentina,-35.24,-70.57,2,1,4,
+221220,Bishoftu Volcanic Field,Ethiopia,Africa and Red Sea,Africa (northeastern) and Red Sea,8.78,38.98,7,0,No confirmed eruptions,U-NHHR
+281050,Zengyu,Taiwan,"Japan, Taiwan, Marianas",Taiwan,26.18,122.458,1,0,No confirmed eruptions,U-NHHR
+253060,Dawson Strait Group,Papua New Guinea,Melanesia and Australia,New Guinea and D'Entrecasteaux Islands,-9.62,150.88,3,0,Unknown VEI,U-HR
+360100,"Trois Pitons, Morne",Dominica,West Indies,West Indies,15.37,-61.33,5,0,Unknown VEI,U-HR
+355021,Tambo Quemado,Bolivia,South America,"Northern Chile, Bolivia & Argentina",-18.62,-68.75,2,0,No confirmed eruptions,U-NHHR
+300150,Bolshoi Semiachik,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,54.32,160.02,2,0,Unknown VEI,U-HR
+213001,Karapinar Field,Turkey,Mediterranean and W Asia,Turkey,37.67,33.65,5,0,No confirmed eruptions,U-NHHR
+223002,Kyatwa,Uganda,Africa and Red Sea,Africa (central),0.45,30.25,6,0,No confirmed eruptions,U-NHHR
+264050,Sangeang Api,Indonesia,Indonesia,Lesser Sunda Islands,-8.2,119.07,3,1,3,
+390010,Buckle Island,Antarctica,Antarctica,Antarctica and South Sandwich Islands,-66.78,163.25,1,1,2,U-HHR
+300450,Alney-Chashakondzha,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,56.7,159.65,2,1,3,U-HHR
+264220,Iliboleng,Indonesia,Indonesia,Lesser Sunda Islands,-8.342,123.258,5,1,2,
+300671,Spokoiny,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,58.13,160.82,2,0,Unknown VEI,U-HR
+355012,Parinacota,Chile-Bolivia,South America,"Northern Chile, Bolivia & Argentina",-18.17,-69.15,2,0,0,U-HR
+274030,Babuyan Claro,Philippines,Philippines and SE Asia,North of Luzon,19.523,121.94,2,1,4,
+342060,Atitl?n,Guatemala,M?xico and Central America,Guatemala,14.583,-91.186,6,1,3,
+232070,Vakak Group,Afghanistan,Middle East and Indian Ocean,Middle East (western),34.25,67.97,5,0,No confirmed eruptions,U-NHHR
+266020,Ambang,Indonesia,Indonesia,Sulawesi,0.75,124.42,5,1,Unknown VEI,U-HHR
+385030,Unnamed,Undersea Features,Atlantic Ocean,Atlantic Ocean (central),-0.72,-20.53,1,0,No confirmed eruptions,U-NHHR
+311380,Roundtop,United States,Alaska,Aleutian Islands,54.8,-163.589,2,0,5,U-HR
+261160,Talang,Indonesia,Indonesia,Sumatra,-0.978,100.679,5,1,2,
+290340,Fuss Peak,Russia,Kuril Islands,Kuril Islands,50.27,155.25,2,1,3,U-HHR
+265020,Nieuwerkerk,Indonesia,Indonesia,Banda Sea,-6.6,124.675,2,0,No confirmed eruptions,U-NHHR
+261230,Dempo,Indonesia,Indonesia,Sumatra,-4.03,103.13,4,1,2,
+221107,Borawli,Ethiopia,Africa and Red Sea,Africa (northeastern) and Red Sea,13.3,40.98,2,0,No confirmed eruptions,U-NHHR
+221300,Chiracha,Ethiopia,Africa and Red Sea,Africa (northeastern) and Red Sea,6.65,38.12,5,0,No confirmed eruptions,U-NHHR
+256010,Tinakula,Solomon Islands,Melanesia and Australia,Santa Cruz Islands,-10.38,165.8,2,1,3,
+357024,Risco Plateado,Argentina,South America,Central Chile and Argentina,-34.93,-70.0,2,0,No confirmed eruptions,U-NHHR
+325010,Yellowstone,United States,Canada and Western USA,USA (Wyoming),44.43,-110.67,2,0,Unknown VEI,U-HR
+390030,Deception Island,Antarctica,Antarctica,Antarctica and South Sandwich Islands,-62.97,-60.65,1,1,3,
+354040,Tutupaca,Peru,South America,Per?,-17.025,-70.358,2,0,No confirmed eruptions,U-NHHR
+283280,Hakkoda Group,Japan,"Japan, Taiwan, Marianas",Honshu,40.656,140.881,4,1,3,
+275080,Popa,Burma (Myanmar),Philippines and SE Asia,Southeast Asia,20.92,95.25,5,0,Unknown VEI,U-HR
+221111,Ma Alalta,Ethiopia,Africa and Red Sea,Africa (northeastern) and Red Sea,13.02,40.2,4,0,No confirmed eruptions,U-NHHR
+372020,Eyjafjallaj?kull,Iceland,Iceland and Arctic Ocean,Iceland (southern),63.63,-19.62,2,1,4,U-HHR
+390080,Bristol Island,United Kingdom,Antarctica,Antarctica and South Sandwich Islands,-59.03,-26.58,1,1,3,
+300001,Mashkovtsev,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,51.1,156.72,2,0,No confirmed eruptions,U-NHHR
+290270,Ekarma,Russia,Kuril Islands,Kuril Islands,48.958,153.93,1,1,2,U-HHR
+360010,Saba,Netherlands,West Indies,West Indies,17.63,-63.23,2,1,Unknown VEI,U-HHR
+353090,Santiago,Ecuador,South America,Gal?pagos Islands,-0.22,-90.77,2,1,0,U-HHR
+331011,Cobb Segment,Undersea Features,Hawaii and Pacific Ocean,Pacific Ocean (northern),46.88,-129.33,1,0,Unknown VEI,U-HR
+352004,Imbabura,Ecuador,South America,Ecuador,0.258,-78.183,6,0,Unknown VEI,U-HR
+357041,Infiernillo,Argentina,South America,Central Chile and Argentina,-35.142,-69.83,2,0,Unknown VEI,U-HR
+357050,Descabezado Grande,Chile,South America,Central Chile and Argentina,-35.58,-70.75,2,1,3,U-HHR
+255070,Savo,Solomon Islands,Melanesia and Australia,Bougainville and Solomon Islands,-9.13,159.82,3,1,3,U-HHR
+212051,Yali,Greece,Mediterranean and W Asia,Greece,36.671,27.14,2,0,No confirmed eruptions,U-NHHR
+390013,"Pleiades, The",Antarctica,Antarctica,Antarctica and South Sandwich Islands,-72.67,165.5,1,0,Unknown VEI,U-HR
+241021,Mayor Island,New Zealand,New Zealand to Fiji,New Zealand,-37.28,176.25,2,0,5,U-HR
+264110,Iya,Indonesia,Indonesia,Lesser Sunda Islands,-8.897,121.645,5,1,3,
+320160,Silverthrone,Canada,Canada and Western USA,Canada,51.43,-126.3,2,0,No confirmed eruptions,U-NHHR
+382001,Flores,Portugal,Atlantic Ocean,Azores,39.462,-31.216,3,0,Unknown VEI,U-HR
+283240,Iwate,Japan,"Japan, Taiwan, Marianas",Honshu,39.85,141.004,5,1,3,U-HHR
+243090,Late,Tonga,New Zealand to Fiji,Tonga Islands,-18.806,-174.65,2,1,2,U-HHR
+271020,Matutum,Philippines,Philippines and SE Asia,Mindanao,6.37,125.07,5,0,Unknown VEI,U-HR
+306020,Ch'uga-ryong,North Korea-South Korea,Kamchatka and Mainland Asia,Korea,38.33,127.33,5,0,No confirmed eruptions,U-NHHR
+302040,Vitim Plateau,Russia,Kamchatka and Mainland Asia,Russia (southeastern),53.7,113.3,2,0,No confirmed eruptions,U-NHHR
+356020,Robinson Crusoe,Chile,South America,Pacific Ocean (Chilean Islands),-33.658,-78.85,1,1,1,U-HHR
+300690,Snegovoy,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,58.2,160.97,2,0,No confirmed eruptions,U-NHHR
+290161,Milne,Russia,Kuril Islands,Kuril Islands,46.82,151.78,2,0,No confirmed eruptions,U-NHHR
+373070,Fremrinamur,Iceland,Iceland and Arctic Ocean,Iceland (northeastern),65.43,-16.65,2,0,0,U-HR
+221191,Beru,Ethiopia,Africa and Red Sea,Africa (northeastern) and Red Sea,8.95,39.75,5,0,No confirmed eruptions,U-NHHR
+373050,Kverkfj?ll,Iceland,Iceland and Arctic Ocean,Iceland (northeastern),64.65,-16.72,2,1,1,
+232001,Sahand,Iran,Middle East and Indian Ocean,Middle East (eastern),37.75,46.43,4,0,No confirmed eruptions,U-NHHR
+234070,Marion Island,South Africa,Middle East and Indian Ocean,Indian Ocean (southern),-46.9,37.75,1,1,1,U-HHR
+357065,Resago,Chile,South America,Central Chile and Argentina,-36.45,-70.92,2,0,No confirmed eruptions,U-NHHR
+290061,Unnamed,Japan - administered by Russia,Kuril Islands,Kuril Islands,45.03,147.208,2,0,No confirmed eruptions,U-NHHR
+284101,Unnamed,Japan,"Japan, Taiwan, Marianas","Izu, Volcano, and Mariana Islands",26.13,144.48,1,0,No confirmed eruptions,U-NHHR
+266040,Sempu,Indonesia,Indonesia,Sulawesi,1.13,124.758,6,0,No confirmed eruptions,U-NHHR
+311250,Uliaga,United States,Alaska,Aleutian Islands,53.065,-169.77,1,0,No confirmed eruptions,U-NHHR
+241010,Kaikohe-Bay of Islands,New Zealand,New Zealand to Fiji,New Zealand,-35.3,173.9,4,0,Unknown VEI,U-HR
+382002,Corvo,Portugal,Atlantic Ocean,Azores,39.699,-31.111,2,0,No confirmed eruptions,U-NHHR
+345040,Po?s,Costa Rica,M?xico and Central America,Costa Rica,10.2,-84.233,5,1,2,
+390011,Young Island,Antarctica,Antarctica,Antarctica and South Sandwich Islands,-66.42,162.47,1,0,No confirmed eruptions,U-NHHR
+273070,Taal,Philippines,Philippines and SE Asia,Luzon,14.002,120.993,7,1,6,
+300551,Kinenin,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,57.35,160.97,2,0,4,U-HR
+212030,M?los,Greece,Mediterranean and W Asia,Greece,36.699,24.439,3,0,1,U-HR
+211031,Palinuro,Italy,Mediterranean and W Asia,Italy,39.48,14.83,2,0,Unknown VEI,U-HR
+252140,Rabaul,Papua New Guinea,Melanesia and Australia,New Britain,-4.271,152.203,5,1,6,
+263180,Slamet,Indonesia,Indonesia,Java,-7.242,109.208,6,1,2,
+282090,Kirishimayama,Japan,"Japan, Taiwan, Marianas",Ryukyu Islands and Kyushu,31.934,130.862,4,1,4,
+263220,Sumbing,Indonesia,Indonesia,Java,-7.384,110.07,7,1,1,U-HHR
+355040,Irruputuncu,Chile-Bolivia,South America,"Northern Chile, Bolivia & Argentina",-20.73,-68.55,2,1,2,U-HHR
+243001,Unnamed,Undersea Features,New Zealand to Fiji,Tonga Islands,-24.8,-177.02,1,0,No confirmed eruptions,U-NHHR
+283180,Azuma,Japan,"Japan, Taiwan, Marianas",Honshu,37.732,140.248,4,1,3,
+344101,Granada,Nicaragua,M?xico and Central America,Nicaragua,11.92,-85.98,6,0,No confirmed eruptions,U-NHHR
+225007,Haruj,Libya,Africa and Red Sea,Africa (northern),27.25,17.5,2,0,No confirmed eruptions,U-NHHR
+315021,Gordon,United States,Alaska,Alaska (eastern),62.13,-143.08,2,0,No confirmed eruptions,U-NHHR
+333010,Teahitia,France,Hawaii and Pacific Ocean,Pacific Ocean (central),-17.57,-148.85,2,1,0,
+383040,Gran Canaria,Spain,Atlantic Ocean,Canary Islands,28.0,-15.58,4,0,Unknown VEI,U-HR
+264071,Ranakah,Indonesia,Indonesia,Lesser Sunda Islands,-8.62,120.52,5,1,3,U-HHR
+341011,"Tortuga, Isla",Mexico,M?xico and Central America,M?xico,27.43,-111.88,2,0,No confirmed eruptions,U-NHHR
+255030,Loloru,Papua New Guinea,Melanesia and Australia,Bougainville and Solomon Islands,-6.52,155.62,2,0,Unknown VEI,U-HR
+390040,Bridgeman Island,Antarctica,Antarctica,Antarctica and South Sandwich Islands,-62.05,-56.75,1,0,No confirmed eruptions,U-NHHR
+251011,Boisa,Papua New Guinea,Melanesia and Australia,Northeast of New Guinea,-3.994,144.963,2,0,No confirmed eruptions,U-NHHR
+352030,Antisana,Ecuador,South America,Ecuador,-0.481,-78.141,4,1,2,U-HHR
+357062,San Pedro-Pellado,Chile,South America,Central Chile and Argentina,-35.989,-70.849,2,0,No confirmed eruptions,U-NHHR
+351012,"Bravo, Cerro",Colombia,South America,Colombia,5.092,-75.3,4,1,4,
+284133,Fukujin,Japan,"Japan, Taiwan, Marianas","Izu, Volcano, and Mariana Islands",21.93,143.47,1,1,1,U-HHR
+352022,Chacana,Ecuador,South America,Ecuador,-0.375,-78.25,5,1,0,U-HHR
+221120,Kurub,Ethiopia,Africa and Red Sea,Africa (northeastern) and Red Sea,11.88,41.208,2,0,No confirmed eruptions,U-NHHR
+343140,"Zacate Grande, Isla",Honduras,M?xico and Central America,El Salvador and Honduras,13.33,-87.63,4,0,No confirmed eruptions,U-NHHR
+300410,Kekurny,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,56.4,158.85,2,0,No confirmed eruptions,U-NHHR
+252060,Garua Harbour,Papua New Guinea,Melanesia and Australia,New Britain,-5.3,150.07,4,0,No confirmed eruptions,U-NHHR
+267010,Ruang,Indonesia,Indonesia,Sangihe Islands,2.3,125.37,2,1,4,
+311130,Kasatochi,United States,Alaska,Aleutian Islands,52.177,-175.508,2,1,4,U-HHR
+345034,Platanar,Costa Rica,M?xico and Central America,Costa Rica,10.3,-84.366,5,0,No confirmed eruptions,U-NHHR
+311340,Westdahl,United States,Alaska,Aleutian Islands,54.518,-164.65,2,1,4,
+261150,Tandikat,Indonesia,Indonesia,Sumatra,-0.433,100.317,5,1,1,U-HHR
+214100,Tskhouk-Karckar,Armenia-Azerbaijan,Mediterranean and W Asia,Western Asia,39.73,46.02,3,0,Unknown VEI,U-HR
+225060,Bayuda Volcanic Field,Sudan,Africa and Red Sea,Africa (northern),18.33,32.75,2,0,Unknown VEI,U-HR
+223010,May-ya-moto,DR Congo,Africa and Red Sea,Africa (central),-0.93,29.33,5,0,No confirmed eruptions,U-NHHR
+332060,Haleakala,United States,Hawaii and Pacific Ocean,Hawaiian Islands,20.708,-156.25,4,1,Unknown VEI,U-HHR
+371020,Reykjanes,Iceland,Iceland and Arctic Ocean,Iceland (southwestern),63.88,-22.5,4,1,4,
+275050,Bas Dong Nai,Vietnam,Philippines and SE Asia,Southeast Asia,10.8,107.2,7,0,No confirmed eruptions,U-NHHR
+221103,Sork Ale,Ethiopia-Eritrea,Africa and Red Sea,Africa (northeastern) and Red Sea,13.18,41.725,2,0,No confirmed eruptions,U-NHHR
+290370,Vernadskii Ridge,Russia,Kuril Islands,Kuril Islands,50.55,155.97,2,0,No confirmed eruptions,U-NHHR
+284201,East Diamante,United States,"Japan, Taiwan, Marianas","Izu, Volcano, and Mariana Islands",15.93,145.67,2,0,No confirmed eruptions,U-NHHR
+282080,Sakurajima,Japan,"Japan, Taiwan, Marianas",Ryukyu Islands and Kyushu,31.593,130.657,6,1,6,
+300051,Ozernoy,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,51.88,157.38,2,0,No confirmed eruptions,U-NHHR
+300600,Alngey,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,57.7,160.4,2,0,No confirmed eruptions,U-NHHR
+300042,Belenkaya,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,51.75,157.27,2,0,No confirmed eruptions,U-NHHR
+221127,Manda Gargori,Ethiopia,Africa and Red Sea,Africa (northeastern) and Red Sea,11.75,41.48,3,0,No confirmed eruptions,U-NHHR
+273088,Ambalatungan Group,Philippines,Philippines and SE Asia,Luzon,17.32,121.1,4,0,No confirmed eruptions,U-NHHR
+253020,Musa River,Papua New Guinea,Melanesia and Australia,New Guinea and D'Entrecasteaux Islands,-9.308,148.13,2,0,No confirmed eruptions,U-NHHR
+222060,Menengai,Kenya,Africa and Red Sea,Africa (eastern),-0.2,36.07,6,0,6,U-HR
+284130,Fukutoku-Okanoba,Japan,"Japan, Taiwan, Marianas","Izu, Volcano, and Mariana Islands",24.28,141.485,2,1,3,
+221171,Hertali,Ethiopia,Africa and Red Sea,Africa (northeastern) and Red Sea,9.78,40.33,3,0,No confirmed eruptions,U-NHHR
+263250,Merapi,Indonesia,Indonesia,Java,-7.542,110.442,7,1,4,
+371051,Hr?mundartindur,Iceland,Iceland and Arctic Ocean,Iceland (southwestern),64.073,-21.202,3,0,No confirmed eruptions,U-NHHR
+300021,Yavinsky,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,51.57,156.6,2,0,Unknown VEI,U-HR
+242022,Giggenbach,New Zealand,New Zealand to Fiji,Kermadec Islands,-30.036,-178.712,1,0,No confirmed eruptions,U-NHHR
+257110,Aneityum,Vanuatu,Melanesia and Australia,Vanuatu,-20.2,169.78,2,0,No confirmed eruptions,U-NHHR
+302030,Udokan Plateau,Russia,Kamchatka and Mainland Asia,Russia (southeastern),56.28,117.77,2,0,Unknown VEI,U-HR
+300053,Khodutka,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,52.063,157.703,2,0,5,U-HR
+284220,Forecast Seamount,United States,"Japan, Taiwan, Marianas","Izu, Volcano, and Mariana Islands",13.4,143.92,2,0,No confirmed eruptions,U-NHHR
+283031,Kita Yatsuga-take,Japan,"Japan, Taiwan, Marianas",Honshu,36.1,138.3,5,0,Unknown VEI,U-HR
+358053,Puyuhuapi,Chile,South America,Southern Chile and Argentina,-44.3,-72.53,2,0,No confirmed eruptions,U-NHHR
+261101,Imun,Indonesia,Indonesia,Sumatra,2.158,98.93,5,0,No confirmed eruptions,U-NHHR
+263321,Lurus,Indonesia,Indonesia,Java,-7.73,113.58,6,0,No confirmed eruptions,U-NHHR
+222055,Ol Kokwe,Kenya,Africa and Red Sea,Africa (eastern),0.62,36.075,4,0,No confirmed eruptions,U-NHHR
+357092,"Mari?aqui, Laguna",Chile,South America,Central Chile and Argentina,-38.27,-71.1,2,0,No confirmed eruptions,U-NHHR
+221292,Tepi,Ethiopia,Africa and Red Sea,Africa (northeastern) and Red Sea,7.42,35.43,5,0,No confirmed eruptions,U-NHHR
+357152,"Pantoja, Cerro",Chile-Argentina,South America,Central Chile and Argentina,-40.77,-71.95,2,0,No confirmed eruptions,U-NHHR
+273083,Pinatubo,Philippines,Philippines and SE Asia,Luzon,15.13,120.35,5,1,6,U-HHR
+354007,"Chachani, Nevado",Peru,South America,Per?,-16.191,-71.53,4,0,No confirmed eruptions,U-NHHR
+343081,Usulut?n,El Salvador,M?xico and Central America,El Salvador and Honduras,13.419,-88.471,6,0,No confirmed eruptions,U-NHHR
+263290,Arjuno-Welirang,Indonesia,Indonesia,Java,-7.725,112.58,6,1,2,U-HHR
+390100,Candlemas Island,United Kingdom,Antarctica,Antarctica and South Sandwich Islands,-57.08,-26.67,1,1,2,U-HHR
+355095,Colachi,Chile,South America,"Northern Chile, Bolivia & Argentina",-23.236,-67.645,2,0,No confirmed eruptions,U-NHHR
+300330,Kozyrevsky,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,55.58,158.38,2,0,No confirmed eruptions,U-NHHR
+355131,"Solo, El",Chile-Argentina,South America,"Northern Chile, Bolivia & Argentina",-27.108,-68.72,2,0,No confirmed eruptions,U-NHHR
+221293,Hobicha Caldera(s),Ethiopia,Africa and Red Sea,Africa (northeastern) and Red Sea,6.78,37.83,7,0,No confirmed eruptions,U-NHHR
+231060,"Khaybar, Harrat",Saudi Arabia,Middle East and Indian Ocean,Middle East (southern),25.0,39.92,4,0,2,U-HR
+222020,South Island,Kenya,Africa and Red Sea,Africa (eastern),2.63,36.6,2,1,1,U-HHR
+221122,Manda-Inakir,Ethiopia-Djibouti,Africa and Red Sea,Africa (northeastern) and Red Sea,12.38,42.2,2,1,2,U-HHR
+300221,Vysoky,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,55.07,160.77,2,0,0,U-HR
+311010,Buldir,United States,Alaska,Aleutian Islands,52.35,175.911,1,0,No confirmed eruptions,U-NHHR
+221221,Unnamed,Ethiopia,Africa and Red Sea,Africa (northeastern) and Red Sea,8.62,38.95,7,0,No confirmed eruptions,U-NHHR
+273060,San Pablo Volcanic Field,Philippines,Philippines and SE Asia,Luzon,14.12,121.3,7,0,Unknown VEI,U-HR
+311161,Korovin,United States,Alaska,Aleutian Islands,52.381,-174.154,2,1,3,
+222080,"Eburru, Ol Doinyo",Kenya,Africa and Red Sea,Africa (eastern),-0.65,36.22,5,0,No confirmed eruptions,U-NHHR
+360020,"Quill, The",Netherlands,West Indies,West Indies,17.478,-62.96,2,0,4,U-HR
+300010,Kambalny,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,51.3,156.87,2,0,Unknown VEI,U-HR
+232002,Sabalan,Iran,Middle East and Indian Ocean,Middle East (eastern),38.25,47.92,3,0,No confirmed eruptions,U-NHHR
+221101,Nabro,Eritrea,Africa and Red Sea,Africa (northeastern) and Red Sea,13.37,41.7,2,1,4,U-HHR
+384030,Sao Vicente,Cape Verde,Atlantic Ocean,Cape Verde Islands,16.85,-24.97,5,0,No confirmed eruptions,U-NHHR
+320090,Iskut-Unuk River Cones,Canada,Canada and Western USA,Canada,56.58,-130.55,2,1,Unknown VEI,U-HHR
+390021,Royal Society Range,Antarctica,Antarctica,Antarctica and South Sandwich Islands,-78.25,163.33,1,0,No confirmed eruptions,U-NHHR
+334100,Unnamed,Undersea Features,Hawaii and Pacific Ocean,Pacific Ocean (eastern),-8.27,-107.95,1,1,0,U-HHR
+274010,Camiguin de Babuyanes,Philippines,Philippines and SE Asia,North of Luzon,18.83,121.86,2,1,2,U-HHR
+243080,Home Reef,Tonga,New Zealand to Fiji,Tonga Islands,-18.992,-174.775,2,1,3,U-HHR
+266010,Colo [Una Una],Indonesia,Indonesia,Sulawesi,-0.17,121.608,2,1,4,U-HHR
+223030,Nyiragongo,DR Congo,Africa and Red Sea,Africa (central),-1.52,29.25,5,1,2,
+300420,Eggella,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,56.57,158.52,2,0,No confirmed eruptions,U-NHHR
+344133,"Lajas, Las",Nicaragua,M?xico and Central America,Nicaragua,12.3,-85.73,4,0,No confirmed eruptions,U-NHHR
+353050,"Negra, Sierra",Ecuador,South America,Gal?pagos Islands,-0.83,-91.17,2,1,3,
+355060,Ollag?e,Chile-Bolivia,South America,"Northern Chile, Bolivia & Argentina",-21.3,-68.18,2,0,No confirmed eruptions,U-NHHR
+284061,Myojin Knoll,Japan,"Japan, Taiwan, Marianas","Izu, Volcano, and Mariana Islands",32.1,139.85,2,0,No confirmed eruptions,U-NHHR
+343052,Guazapa,El Salvador,M?xico and Central America,El Salvador and Honduras,13.9,-89.12,6,0,No confirmed eruptions,U-NHHR
+221020,Zubair Group,Yemen,Africa and Red Sea,Africa (northeastern) and Red Sea,15.05,42.18,2,1,2,U-HHR
+263090,Tangkubanparahu,Indonesia,Indonesia,Java,-6.77,107.6,7,1,2,
+342160,Suchit?n,Guatemala,M?xico and Central America,Guatemala,14.4,-89.78,5,0,No confirmed eruptions,U-NHHR
+314060,Imuruk Lake,United States,Alaska,Alaska (western),65.6,-163.92,1,0,Unknown VEI,U-HR
+285062,Shikaribetsu Group,Japan,"Japan, Taiwan, Marianas",Hokkaido,43.312,143.096,3,0,No confirmed eruptions,U-NHHR
+265050,Teon,Indonesia,Indonesia,Banda Sea,-6.92,129.125,2,1,4,
+261070,Sibayak,Indonesia,Indonesia,Sumatra,3.23,98.52,5,1,Unknown VEI,U-HHR
+357112,Caburgua-Huelemolle,Chile,South America,Central Chile and Argentina,-39.25,-71.7,3,0,Unknown VEI,U-HR
+271090,Paco,Philippines,Philippines and SE Asia,Mindanao,9.593,125.52,5,0,No confirmed eruptions,U-NHHR
+382010,Fayal,Portugal,Atlantic Ocean,Azores,38.6,-28.73,4,1,2,U-HHR
+320031,Tuya Volcanic Field,Canada,Canada and Western USA,Canada,59.37,-130.58,2,0,No confirmed eruptions,U-NHHR
+261090,Toba,Indonesia,Indonesia,Sumatra,2.58,98.83,6,0,No confirmed eruptions,U-NHHR
+273086,Santo Tomas,Philippines,Philippines and SE Asia,Luzon,16.33,120.55,6,0,No confirmed eruptions,U-NHHR
+241061,Maroa,New Zealand,New Zealand to Fiji,New Zealand,-38.42,176.08,2,0,Unknown VEI,U-HR
+224002,San Carlos,Equatorial Guinea,Africa and Red Sea,Africa (western),3.35,8.52,2,0,No confirmed eruptions,U-NHHR
+300273,Cherpuk Group,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,55.55,157.47,2,0,Unknown VEI,U-HR
+352060,Quilotoa,Ecuador,South America,Ecuador,-0.85,-78.9,5,0,6,U-HR
+353120,San Crist?bal,Ecuador,South America,Gal?pagos Islands,-0.88,-89.5,3,0,No confirmed eruptions,U-NHHR
+355061,"Azufre, Cerro del",Chile,South America,"Northern Chile, Bolivia & Argentina",-21.787,-68.237,2,0,No confirmed eruptions,U-NHHR
+371070,Prestahnukur,Iceland,Iceland and Arctic Ocean,Iceland (southwestern),64.6,-20.58,2,0,0,U-HR
+300250,Bezymianny,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,55.978,160.587,2,1,5,
+300270,Shiveluch,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,56.653,161.36,2,1,5,
+275070,Veteran,Vietnam,Philippines and SE Asia,Southeast Asia,9.83,109.05,2,0,No confirmed eruptions,U-NHHR
+264070,Poco Leok,Indonesia,Indonesia,Lesser Sunda Islands,-8.68,120.48,5,0,No confirmed eruptions,U-NHHR
+352090,Sangay,Ecuador,South America,Ecuador,-2.002,-78.341,3,1,3,
+357122,Lan?n,Chile-Argentina,South America,Central Chile and Argentina,-39.633,-71.5,2,0,0,U-HR
+253010,Lamington,Papua New Guinea,Melanesia and Australia,New Guinea and D'Entrecasteaux Islands,-8.95,148.15,3,1,4,U-HHR
+283220,Chokai,Japan,"Japan, Taiwan, Marianas",Honshu,39.096,140.052,4,1,2,
+373080,Krafla,Iceland,Iceland and Arctic Ocean,Iceland (northeastern),65.73,-16.78,2,1,4,
+214020,Kasbek,Georgia,Mediterranean and W Asia,Western Asia,42.7,44.5,3,0,Unknown VEI,U-HR
+223050,Visoke,DR Congo-Rwanda,Africa and Red Sea,Africa (central),-1.47,29.492,6,1,1,U-HHR
+252150,Tavui,Papua New Guinea,Melanesia and Australia,New Britain,-4.12,152.2,5,0,5,U-HR
+271071,Malindang,Philippines,Philippines and SE Asia,Mindanao,8.22,123.63,5,0,No confirmed eruptions,U-NHHR
+284210,Esmeralda Bank,United States,"Japan, Taiwan, Marianas","Izu, Volcano, and Mariana Islands",15.0,145.25,2,0,No confirmed eruptions,U-NHHR
+320120,Milbanke Sound Group,Canada,Canada and Western USA,Canada,52.5,-128.73,2,0,No confirmed eruptions,U-NHHR
+300650,Nylgimelkin,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,57.97,160.65,2,0,Unknown VEI,U-HR
+233001,"Grille, La",Comoros,Middle East and Indian Ocean,Indian Ocean (western),-11.47,43.33,6,0,No confirmed eruptions,U-NHHR
+342040,Almolonga,Guatemala,M?xico and Central America,Guatemala,14.82,-91.48,7,1,3,U-HHR
+268020,Tobaru,Indonesia,Indonesia,Halmahera,1.63,127.67,3,0,No confirmed eruptions,U-NHHR
+300272,Khangar,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,54.75,157.38,2,1,6,U-HHR
+275100,Singu Plateau,Burma (Myanmar),Philippines and SE Asia,Southeast Asia,22.7,95.98,6,0,No confirmed eruptions,U-NHHR
+273030,Mayon,Philippines,Philippines and SE Asia,Luzon,13.257,123.685,6,1,4,
+323050,Silver Lake,United States,Canada and Western USA,USA (California),40.731,-121.841,2,0,No confirmed eruptions,U-NHHR
+382050,Terceira,Portugal,Atlantic Ocean,Azores,38.73,-27.32,4,1,3,U-HHR
+290211,Srednii,Russia,Kuril Islands,Kuril Islands,47.6,152.92,2,0,No confirmed eruptions,U-NHHR
+264010,Batur,Indonesia,Indonesia,Lesser Sunda Islands,-8.242,115.375,7,1,2,
+300054,Piratkovsky,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,52.113,157.849,2,0,No confirmed eruptions,U-NHHR
+357064,"Blancas, Lomas",Chile,South America,Central Chile and Argentina,-36.286,-71.009,2,0,No confirmed eruptions,U-NHHR
+257001,Motlav,Vanuatu,Melanesia and Australia,Vanuatu,-13.67,167.67,2,0,No confirmed eruptions,U-NHHR
+290210,Ushishur,Russia,Kuril Islands,Kuril Islands,47.52,152.8,2,1,4,U-HHR
+230030,Golan Heights,Syria,Middle East and Indian Ocean,Middle East (eastern),33.1,35.97,7,0,No confirmed eruptions,U-NHHR
+312090,Aniakchak,United States,Alaska,Alaska Peninsula,56.88,-158.17,2,1,6,U-HHR
+224001,Sao Tome,Sao Tome and Principe,Africa and Red Sea,Africa (western),0.2,6.58,4,0,No confirmed eruptions,U-NHHR
+360110,"Plat Pays, Morne",Dominica,West Indies,West Indies,15.255,-61.341,5,0,Unknown VEI,U-HR
+290170,Goriaschaia Sopka,Russia,Kuril Islands,Kuril Islands,46.83,151.75,2,1,3,
+371090,Hofsj?kull,Iceland,Iceland and Arctic Ocean,Iceland (southwestern),64.78,-18.92,2,0,No confirmed eruptions,U-NHHR
+225008,Wau-en-Namus,Libya,Africa and Red Sea,Africa (northern),25.05,17.55,2,0,No confirmed eruptions,U-NHHR
+320080,Hoodoo Mountain,Canada,Canada and Western USA,Canada,56.78,-131.28,2,0,0,U-HR
+283130,Akagi,Japan,"Japan, Taiwan, Marianas",Honshu,36.557,139.196,5,0,No confirmed eruptions,U-NHHR
+300085,Unnamed,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,52.92,158.52,5,0,No confirmed eruptions,U-NHHR
+300082,Tolmachev Dol,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,52.63,157.58,2,0,4,U-HR
+390023,Andrus,Antarctica,Antarctica,Antarctica and South Sandwich Islands,-75.8,-132.33,1,0,No confirmed eruptions,U-NHHR
+358059,Arenales,Chile,South America,Southern Chile and Argentina,-47.2,-73.48,2,1,1,U-HHR
+382081,Picos Volcanic System,Portugal,Atlantic Ocean,Azores,37.78,-25.67,6,1,2,U-HHR
+232080,Tor Zawar,Pakistan,Middle East and Indian Ocean,Middle East (western),30.479,67.492,1,1,0,U-HHR
+355109,Socompa,Chile-Argentina,South America,"Northern Chile, Bolivia & Argentina",-24.4,-68.25,2,0,Unknown VEI,U-HR
+233020,"Fournaise, Piton de la",France,Middle East and Indian Ocean,Indian Ocean (western),-21.231,55.713,5,1,5,
+355130,"Ojos del Salado, Nevados",Chile-Argentina,South America,"Northern Chile, Bolivia & Argentina",-27.12,-68.55,2,0,Unknown VEI,U-HR
+343002,"Sing?il, Cerro",El Salvador,M?xico and Central America,El Salvador and Honduras,14.05,-89.65,6,0,No confirmed eruptions,U-NHHR
+231150,Unnamed,Yemen,Middle East and Indian Ocean,Middle East (southern),12.25,45.0,2,0,No confirmed eruptions,U-NHHR
+352002,Chachimbiro,Ecuador,South America,Ecuador,0.468,-78.287,4,0,Unknown VEI,U-HR
+257081,North Vate,Vanuatu,Melanesia and Australia,Vanuatu,-17.47,168.353,3,0,No confirmed eruptions,U-NHHR
+268060,Gamalama,Indonesia,Indonesia,Halmahera,0.8,127.33,6,1,3,
+252120,Ulawun,Papua New Guinea,Melanesia and Australia,New Britain,-5.05,151.33,2,1,4,
+225002,Tin Zaouatene Volcanic Field,Mali,Africa and Red Sea,Africa (northern),19.83,2.83,2,0,No confirmed eruptions,U-NHHR
+231100,"Marha, Jabal el-",Yemen,Middle East and Indian Ocean,Middle East (southern),15.245,44.236,6,0,No confirmed eruptions,U-NHHR
+232050,Taftan,Iran,Middle East and Indian Ocean,Middle East (western),28.6,61.13,2,0,No confirmed eruptions,U-NHHR
+285061,Nipesotsu-Maruyama,Japan,"Japan, Taiwan, Marianas",Hokkaido,43.453,143.036,3,1,2,U-HHR
+324040,Hell's Half Acre,United States,Canada and Western USA,USA (Idaho),43.5,-112.45,2,0,0,U-HR
+342030,Santa Mar?a,Guatemala,M?xico and Central America,Guatemala,14.756,-91.552,6,1,6,
+265040,Wurlali,Indonesia,Indonesia,Banda Sea,-7.125,128.675,2,1,2,U-HHR
+311370,Isanotski,United States,Alaska,Aleutian Islands,54.765,-163.723,2,0,No confirmed eruptions,U-NHHR
+300380,Geodesistoy,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,56.33,158.67,2,0,No confirmed eruptions,U-NHHR
+252030,Garove,Papua New Guinea,Melanesia and Australia,New Britain,-4.692,149.5,3,0,No confirmed eruptions,U-NHHR
+353030,Darwin,Ecuador,South America,Gal?pagos Islands,-0.18,-91.28,2,1,2,U-HHR
+383030,Tenerife,Spain,Atlantic Ocean,Canary Islands,28.271,-16.641,4,1,4,
+213030,Tend?rek Dagi,Turkey,Mediterranean and W Asia,Turkey,39.37,43.87,4,1,Unknown VEI,U-HHR
+282110,Asosan,Japan,"Japan, Taiwan, Marianas",Ryukyu Islands and Kyushu,32.884,131.104,5,1,3,
+300660,Snezhniy,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,58.02,160.8,2,0,No confirmed eruptions,U-NHHR
+331030,Cleft Segment,Undersea Features,Hawaii and Pacific Ocean,Pacific Ocean (northern),44.83,-130.3,1,1,0,U-HHR
+233015,Ankaratra Field,Madagascar,Middle East and Indian Ocean,Indian Ocean (western),-19.4,47.2,6,0,No confirmed eruptions,U-NHHR
+390031,Penguin Island,Antarctica,Antarctica,Antarctica and South Sandwich Islands,-62.1,-57.93,1,1,Unknown VEI,U-HHR
+283100,Myoko,Japan,"Japan, Taiwan, Marianas",Honshu,36.888,138.12,5,0,5,U-HR
+300640,Bely,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,57.88,160.53,2,0,No confirmed eruptions,U-NHHR
+300680,Ostry,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,58.18,160.82,2,0,Unknown VEI,U-HR
+323100,Clear Lake,United States,Canada and Western USA,USA (California),38.97,-122.77,5,0,No confirmed eruptions,U-NHHR
+331031,North Gorda Ridge,United States,Hawaii and Pacific Ocean,Pacific Ocean (northern),42.67,-126.78,1,1,0,U-HHR
+300041,Kell,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,51.65,157.35,2,0,No confirmed eruptions,U-NHHR
+354031,Ticsani,Peru,South America,Per?,-16.755,-70.595,2,1,Unknown VEI,U-HHR
+285080,Kutcharo,Japan,"Japan, Taiwan, Marianas",Hokkaido,43.608,144.443,4,0,Unknown VEI,U-HR
+355011,Taapaca,Chile,South America,"Northern Chile, Bolivia & Argentina",-18.1,-69.5,2,0,Unknown VEI,U-HR
+264180,Lewotobi,Indonesia,Indonesia,Lesser Sunda Islands,-8.542,122.775,5,1,3,
+281010,Unnamed,Taiwan,"Japan, Taiwan, Marianas",Taiwan,20.93,134.75,1,0,No confirmed eruptions,U-NHHR
+264150,Paluweh,Indonesia,Indonesia,Lesser Sunda Islands,-8.32,121.708,2,1,3,
+323190,Lavic Lake,United States,Canada and Western USA,USA (California),34.75,-116.625,3,0,No confirmed eruptions,U-NHHR
+290390,Alaid,Russia,Kuril Islands,Kuril Islands,50.858,155.55,2,1,4,
+311310,Makushin,United States,Alaska,Aleutian Islands,53.891,-166.923,2,1,5,
+300271,Piip,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,55.42,167.33,2,0,Unknown VEI,U-HR
+327040,Markagunt Plateau,United States,Canada and Western USA,USA (Utah),37.58,-112.67,2,0,Unknown VEI,U-HR
+221030,Jalua,Eritrea,Africa and Red Sea,Africa (northeastern) and Red Sea,15.042,39.82,4,0,No confirmed eruptions,U-NHHR
+335030,Unnamed,Undersea Features,Hawaii and Pacific Ocean,Pacific Ocean (southern),-55.97,-143.17,1,0,No confirmed eruptions,U-NHHR
+221291,Bilate River Field,Ethiopia,Africa and Red Sea,Africa (northeastern) and Red Sea,7.07,38.1,7,0,No confirmed eruptions,U-NHHR
+261111,Lubukraya,Indonesia,Indonesia,Sumatra,1.478,99.209,4,0,No confirmed eruptions,U-NHHR
+358050,Corcovado,Chile,South America,Southern Chile and Argentina,-43.18,-72.8,2,0,Unknown VEI,U-HR
+255053,Coleman Seamount,Solomon Islands,Melanesia and Australia,Bougainville and Solomon Islands,-8.83,157.17,2,0,No confirmed eruptions,U-NHHR
+385020,Unnamed,Undersea Features,Atlantic Ocean,Atlantic Ocean (central),4.2,-21.45,1,0,No confirmed eruptions,U-NHHR
+273010,Bulusan,Philippines,Philippines and SE Asia,Luzon,12.77,124.05,5,1,3,
+303010,Taryatu-Chulutu,Mongolia,Kamchatka and Mainland Asia,Mongolia,48.17,99.7,3,0,Unknown VEI,U-HR
+283120,Kusatsu-Shirane,Japan,"Japan, Taiwan, Marianas",Honshu,36.62,138.535,5,1,4,
+273087,Patoc,Philippines,Philippines and SE Asia,Luzon,17.147,120.98,5,0,No confirmed eruptions,U-NHHR
+283271,Towada,Japan,"Japan, Taiwan, Marianas",Honshu,40.47,140.92,4,0,5,
+300125,Akademia Nauk,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,53.98,159.45,2,1,3,U-HHR
+272070,Mahagnao,Philippines,Philippines and SE Asia,Central Philippines,10.896,124.87,3,0,No confirmed eruptions,U-NHHR
+300055,Ostanets,Russia,Kamchatka and Mainland Asia,Kamchatka Peninsula,52.146,157.322,2,0,No confirmed eruptions,U-NHHR
+252050,Bola,Papua New Guinea,Melanesia and Australia,New Britain,-5.15,150.03,2,0,No confirmed eruptions,U-NHHR

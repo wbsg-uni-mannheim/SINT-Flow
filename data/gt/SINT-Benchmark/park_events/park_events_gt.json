@@ -1,0 +1,198 @@
+{
+    "schema_by_entity": {
+        "Chicago_Park_District__Movies_in_the_Parks_2014.csv": {
+            "Event": {
+                "attributes": ["EventName", "MovieName", "ParkName", "Phone", "StartDate", "EndDate", "EventUrl"],
+                "table_group": "Event"
+            },
+            "Movie": {
+                "attributes": ["MovieName", "MovieClosedCaption", "MovieRating"],
+                "table_group": "Movie"
+            },
+            "Location": {
+                "attributes": ["ParkName", "ZipCode", "ParkUrl", "Location 1", "Community"],
+                "table_group": "Location"
+            }
+        },
+        "Chicago_Park_District__Movies_in_the_Parks_2015.csv": {
+            "Event": {
+                "attributes": ["EventName", "MovieName", "ParkName", "Phone", "StartDate", "EndDate", "ContactName", "ContactEmail", "EventUrl"],
+                "table_group": "Event"
+            },
+            "Movie": {
+                "attributes": ["MovieName", "MovieClosedCaption", "MovieRating"],
+                "table_group": "Movie"
+            },
+            "Location": {
+                "attributes": ["ParkName", "ZipCode", "ParkUrl", "Community", "Location 1"],
+                "table_group": "Location"
+            }
+        },
+        "Chicago_Park_District__Movies_in_the_Parks_2016.csv": {
+            "Event": {
+                "attributes": ["EventName", "MovieName", "Location", "Phone", "ContactName", "ContactEmail"],
+                "table_group": "Event"
+            },
+            "Movie": {
+                "attributes": ["MovieName", "MovieClosedCaption", "MovieRating"],
+                "table_group": "Movie"
+            },
+            "Location": {
+                "attributes": ["Location", "Zipcode", "Location 1"],
+                "table_group": "Location"
+            }
+        },
+        "Chicago_Park_District__Movies_in_the_Parks_2017.csv": {
+            "Event": {
+                "attributes": ["MovieName", "ParkName", "Location", "Underwriter", "Phone", "MovieRating"],
+                "table_group": "Event"
+            }
+        },
+        "Chicago_Park_District__Movies_in_the_Parks_2018.csv": {
+            "Event": {
+                "attributes": ["MovieName", "ParkName", "Location", "Underwriter", "Phone", "MovieRating"],
+                "table_group": "Event"
+            }
+        },
+        "Chicago_Park_District__Movies_in_the_Parks_2019.csv": {
+            "Event": {
+                "attributes": ["MovieName", "ParkName", "Location", "Underwriter", "Phone", "Rating"],
+                "table_group": "Event"
+            }
+        }
+    },
+    "schema_by_normalization": {
+        "Chicago_Park_District__Movies_in_the_Parks_2014.csv": {
+            "Event": {
+                "attributes": ["EventName", "MovieName", "ParkName", "Phone", "StartDate", "EndDate", "EventUrl"],
+                "foreign_keys": {"MovieName": {"Movie": "MovieName"}, "ParkName": {"Location": "ParkName"}},
+                "primary_key": ["EventName", "MovieName", "StartDate"],
+                "table_group": "Event"
+            },
+            "Movie": {
+                "attributes": ["MovieName", "MovieClosedCaption", "MovieRating"],
+                "foreign_keys": {},
+                "primary_key": ["MovieName"],
+                "table_group": "Movie"
+            },
+            "Location": {
+                "attributes": ["ParkName", "ZipCode", "ParkUrl", "Location 1", "Community"],
+                "foreign_keys": {},
+                "primary_key": ["ParkName"],
+                "table_group": "Location"
+            }
+        },
+        "Chicago_Park_District__Movies_in_the_Parks_2015.csv": {
+            "Event": {
+                "attributes": ["EventName", "MovieName", "ParkName", "Phone", "StartDate", "EndDate", "ContactName", "EventUrl"],
+                "foreign_keys": {"MovieName": {"Movie": "MovieName"}, "ParkName": {"Location": "ParkName"}},
+                "primary_key": ["EventName", "MovieName", "StartDate"],
+                "table_group": "Event"
+            },
+            "Contact": {
+                "attributes": ["ContactName", "ContactEmail"],
+                "foreign_keys": {},
+                "primary_key": ["ContactName"],
+                "table_group": "Contact"
+            },
+            "Movie": {
+                "attributes": ["MovieName", "MovieClosedCaption", "MovieRating"],
+                "foreign_keys": {},
+                "primary_key": ["MovieName"],
+                "table_group": "Movie"
+            },
+            "Location": {
+                "attributes": ["ParkName", "ZipCode", "ParkUrl", "Community", "Location 1"],
+                "foreign_keys": {},
+                "primary_key": ["ParkName"],
+                "table_group": "Location"
+            }
+        },
+        "Chicago_Park_District__Movies_in_the_Parks_2016.csv": {
+            "Event": {
+                "attributes": ["EventName", "MovieName", "Location", "Phone", "ContactName"],
+                "foreign_keys": {"MovieName": {"Movie": "MovieName"}, "Location": {"Location": "Location"}, "ContactName": {"Contact": "ContactName"}},
+                "primary_key": ["EventName", "MovieName"],
+                "table_group": "Event"
+            },
+            "Contact": {
+                "attributes": ["ContactName", "ContactEmail"],
+                "foreign_keys": {},
+                "primary_key": ["ContactName"],
+                "table_group": "Contact"
+            },
+            "Movie": {
+                "attributes": ["MovieName", "MovieClosedCaption", "MovieRating"],
+                "foreign_keys": {},
+                "primary_key": ["MovieName"],
+                "table_group": "Movie"
+            },
+            "Location": {
+                "attributes": ["Location", "Zipcode", "Location 1"],
+                "foreign_keys": {},
+                "primary_key": ["Location"],
+                "table_group": "Location"
+            }
+        },
+        "Chicago_Park_District__Movies_in_the_Parks_2017.csv": {
+            "Event": {
+                "attributes": ["MovieName", "ParkName", "Underwriter", "Phone"],
+                "foreign_keys": {"MovieName": {"Movie": "MovieName"}, "ParkName": {"Location": "ParkName"}},
+                "primary_key": ["MovieName", "ParkName"],
+                "table_group": "Event"
+            },
+            "Movie": {
+                "attributes": ["MovieName", "MovieRating"],
+                "foreign_keys": {},
+                "primary_key": ["MovieName"],
+                "table_group": "Movie"
+            },
+            "Location": {
+                "attributes": ["ParkName", "Location"],
+                "foreign_keys": {},
+                "primary_key": ["ParkName"],
+                "table_group": "Location"
+            }
+        },
+        "Chicago_Park_District__Movies_in_the_Parks_2018.csv": {
+            "Event": {
+                "attributes": ["MovieName", "ParkName", "Underwriter", "Phone"],
+                "foreign_keys": {"MovieName": {"Movie": "MovieName"}, "ParkName": {"Location": "ParkName"}},
+                "primary_key": ["MovieName", "ParkName"],
+                "table_group": "Event"
+            },
+            "Movie": {
+                "attributes": ["MovieName", "MovieRating"],
+                "foreign_keys": {},
+                "primary_key": ["MovieName"],
+                "table_group": "Movie"
+            },
+            "Location": {
+                "attributes": ["ParkName", "Location"],
+                "foreign_keys": {},
+                "primary_key": ["ParkName"],
+                "table_group": "Location"
+            }
+        },
+        "Chicago_Park_District__Movies_in_the_Parks_2019.csv": {
+            "Event": {
+                "attributes": ["MovieName", "ParkName", "Underwriter", "Phone"],
+                "foreign_keys": {"MovieName": {"Movie": "MovieName"}, "ParkName": {"Location": "ParkName"}},
+                "primary_key": ["MovieName", "ParkName"],
+                "table_group": "Event"
+            },
+            "Movie": {
+                "attributes": ["MovieName", "Rating"],
+                "foreign_keys": {},
+                "primary_key": ["MovieName"],
+                "table_group": "Movie"
+            },
+            "Location": {
+                "attributes": ["ParkName", "Location"],
+                "foreign_keys": {},
+                "primary_key": ["ParkName"],
+                "table_group": "Location"
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+Caracteristique,Valeur,Nbmenages,Nbadultes,Nbenfants,Nbprestataires,Prestationtotaleversee,Prestationsdebase,AllocCTE,Allocmixte,AllocSS,PrestbaseHeberges
+Programme,Programme d'aide sociale,150499,163690.0,65991,229681.0,110986632.1,97113,51524,1862,0,0
+Programme,Programme de solidaritÃÂ© sociale,125265,131919.0,8151,140070.0,127954511.3,0,0,0,122886,2379
+Situation familiale,Personnes seules,225571,225571.0,0,225571.0,191832352.9,75187,35352,0,112653,2379
+Situation familiale,Couples sans enfants,9411,18822.0,0,18822.0,11188076.11,2101,1078,1322,4910,0
+Situation familiale,Familles monoparentales,30019,30019.0,50293,80312.0,23749455.76,12736,13734,0,3549,0
+Situation familiale,Couples avec enfants,10434,20868.0,23849,44717.0,12086836.65,6835,1315,540,1744,0
+Situation familiale,Conjoint d'ÃÂ©tudiant,329,329.0,0,329.0,84422.08,254,45,0,30,0
+Type de rÃÂ©sidence,Locataire,119565,132974.0,48173,181147.0,102333161.5,45304,27010,1166,46085,0
+Type de rÃÂ©sidence,Locataire HLM ou coopÃÂ©rative,33894,37106.0,16172,53278.0,29804568.04,8732,8216,294,16652,0
+Type de rÃÂ©sidence,Chambreur ou pensionnaire,107041,108659.0,7371,116030.0,94683074.29,38325,13638,213,54865,0
+Type de rÃÂ©sidence,Temporairement sans adresse,3193,3202.0,16,3218.0,2549948.11,2026,402,1,764,0
+Type de rÃÂ©sidence,PropriÃÂ©tÃÂ©,8723,10320.0,2410,12730.0,7452255.878,1757,2258,188,4520,0
+Type de rÃÂ©sidence,En hÃÂ©bergement,3348,3348.0,0,3348.0,2118135.67,969,0,0,0,2379
+RÃÂ©gion,01 - Bas-Saint-Laurent,6681,7155.0,1102,8257.0,5997232.739,1580,1201,38,3857,5
+RÃÂ©gion,02 - Saguenay - Lac-St-Jean,9361,9892.0,1640,11532.0,8202164.219,2900,1832,50,4577,2
+RÃÂ©gion,03 - Capitale-Nationale,17823,18652.0,3236,21888.0,15333219.81,5461,3265,80,9005,12
+RÃÂ©gion,04 - Mauricie,12903,13678.0,3111,16789.0,11046827.75,4622,2504,79,5689,9
+RÃÂ©gion,05 - Estrie,11855,12688.0,2893,15581.0,10546718.96,3789,2143,61,5846,16
+RÃÂ©gion,06 - ÃÂle-de-MontrÃÂ©al,86654,95215.0,30537,125752.0,74614812.76,38810,16647,743,30437,17
+RÃÂ©gion,07 - Outaouais,13315,14208.0,4231,18439.0,11438269.75,4882,2718,74,5641,0
+RÃÂ©gion,08 - Abitibi-TÃÂ©miscamingue,4207,4455.0,874,5329.0,3668738.899,1244,798,14,2150,1
+RÃÂ©gion,09 - CÃÂ´te-Nord,2330,2440.0,442,2882.0,2016748.57,735,445,9,1141,0
+RÃÂ©gion,10 - Nord-du-QuÃÂ©bec,1040,1100.0,406,1506.0,827194.4999,533,184,2,320,1
+RÃÂ©gion,11 - GaspÃÂ©sie - ÃÂles-de-la-Madeleine,3750,4080.0,658,4738.0,3427862.13,881,701,45,2121,2
+RÃÂ©gion,12 - ChaudiÃÂ¨res-Appalaches,8893,9364.0,1544,10908.0,7876828.449,2321,1443,50,5073,6
+RÃÂ©gion,13 - Laval,9564,10478.0,2828,13306.0,8571751.559,2995,2009,176,4383,1
+RÃÂ©gion,14 - LanaudiÃÂ¨re,14223,15133.0,3832,18965.0,12155732.81,4760,3060,98,6293,12
+RÃÂ©gion,15 - Laurentides,16777,17739.0,4024,21763.0,14389521.51,5457,3592,102,7619,7
+RÃÂ©gion,16 - MontÃÂ©rÃÂ©gie,39939,42295.0,10714,53009.0,34798023.25,13139,7390,209,19186,15
+RÃÂ©gion,17 - Centre-du-QuÃÂ©bec,8607,9117.0,2043,11160.0,7497773.089,2997,1589,32,3978,11
+RÃÂ©gion,99 - Central,7842,7920.0,27,7947.0,6531722.71,7,3,0,5570,2262
+ClientÃÂ¨le supplÃÂ©mentÃÂ©e,Allocations_aide_emploi,4115,4239.0,3484,7723.0,3066965.82,3384,200,7,521,3
+ClientÃÂ¨le supplÃÂ©mentÃÂ©e,Allocations_soutien,2839,2839.0,325,3164.0,2919636.87,773,19,0,2043,4
+ClientÃÂ¨le supplÃÂ©mentÃÂ©e,Revenus_travail,12240,12305.0,5569,17874.0,8747902.697,5793,3027,193,3222,5
+ClientÃÂ¨le supplÃÂ©mentÃÂ©e,Prestations_assurance_emploi,755,758.0,173,931.0,418410.2499,345,236,9,165,0
+ClientÃÂ¨le supplÃÂ©mentÃÂ©e,Contribution_parentale,400,400.0,0,400.0,179300.43,309,91,0,0,0
+ClientÃÂ¨le supplÃÂ©mentÃÂ©e,Pension_alimentaire,8172,8178.0,13662,21840.0,5532749.067,3207,3506,26,1432,1
+ClientÃÂ¨le supplÃÂ©mentÃÂ©e,RRQ_invalidite,12210,12233.0,574,12807.0,4798226.776,0,0,0,12202,8
+ClientÃÂ¨le supplÃÂ©mentÃÂ©e,RRQ_retraite,33615,34251.0,1433,35684.0,27723462.23,38,16156,792,16347,282
+ClientÃÂ¨le supplÃÂ©mentÃÂ©e,Alternative_jeunesse,0,,0,,0.0,0,0,0,0,0
+ClientÃÂ¨le supplÃÂ©mentÃÂ©e,Revenus_autres,12329,12147.0,1877,14024.0,9745561.497,1721,1799,143,8649,17
+ClientÃÂ¨le supplÃÂ©mentÃÂ©e,Total_distinct,79338,80736.0,24326,105062.0,58714466.64,14542,22734,981,40762,319

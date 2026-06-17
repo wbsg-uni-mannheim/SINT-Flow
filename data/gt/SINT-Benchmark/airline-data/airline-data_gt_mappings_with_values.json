@@ -1,0 +1,2433 @@
+{
+    "column_mappings": {
+        "Airline Dataset Updated - v2_9.csv": {
+            "Passenger ID": "Passenger ID",
+            "First Name": "First Name",
+            "Last Name": "Last Name",
+            "Gender": "Gender",
+            "Age": "Age",
+            "Nationality": "Nationality",
+            "Airport Name": "Airport Name",
+            "Airport Country Code": "Airport Country Code",
+            "Country Name": "Country Name",
+            "Airport Continent": "Airport Continent",
+            "Continents": "Continents",
+            "Departure Date": "Departure Date",
+            "Arrival Airport": "Arrival Airport",
+            "Pilot Name": "Pilot Name",
+            "Flight Status": "Flight Status"
+        },
+        "Airline Dataset Updated - v2_14.csv": {
+            "Passenger ID": "Passenger ID",
+            "GivenName": "First Name",
+            "Surname": "Last Name",
+            "Sex": "Gender",
+            "Age": "Age",
+            "Citizenship": "Nationality",
+            "OriginAirportName": "Airport Name",
+            "OriginCountryISO2": "Airport Country Code",
+            "OriginCountry": "Country Name",
+            "OriginContinentCode": "Airport Continent",
+            "OriginContinent": "Continents",
+            "DepartDate": "Departure Date",
+            "DestAirportCode": "Arrival Airport",
+            "Captain": "Pilot Name",
+            "Status": "Flight Status"
+        },
+        "Airline Dataset Updated - v2_16.csv": {
+            "Passenger ID": "Passenger ID",
+            "FirstNm": "First Name",
+            "LastNm": "Last Name",
+            "Gender": "Gender",
+            "Age": "Age",
+            "Nationality": "Nationality",
+            "DepAirport": "Airport Name",
+            "DepCtryCode": "Airport Country Code",
+            "DepCountryName": "Country Name",
+            "DepContCode": "Airport Continent",
+            "DepContinentName": "Continents",
+            "FlightDate": "Departure Date",
+            "ArrAirport": "Arrival Airport",
+            "PilotInCommand": "Pilot Name",
+            "FlightState": "Flight Status"
+        },
+        "Airline Dataset Updated - v2_18.csv": {
+            "Passenger ID": "Passenger ID",
+            "FName": "First Name",
+            "LName": "Last Name",
+            "Gender": "Gender",
+            "Age": "Age",
+            "Nationality": "Nationality",
+            "AirportName": "Airport Name",
+            "CountryCode": "Airport Country Code",
+            "Country": "Country Name",
+            "ContinentCode": "Airport Continent",
+            "Continent": "Continents",
+            "DepartureDt": "Departure Date",
+            "ArrivalAirportCode": "Arrival Airport",
+            "FlightPilot": "Pilot Name",
+            "StatusFlag": "Flight Status"
+        },
+        "Airline Dataset Updated - v2_126.csv": {
+            "Passenger ID": "Passenger ID",
+            "Fname": "First Name",
+            "FamilyName": "Last Name",
+            "Gender": "Gender",
+            "AgeYrs": "Age",
+            "Nationality": "Nationality",
+            "Airport": "Airport Name",
+            "ISO2": "Airport Country Code",
+            "CountryName": "Country Name",
+            "ContCode": "Airport Continent",
+            "ContinentName": "Continents",
+            "DepDate": "Departure Date",
+            "ArrAirport": "Arrival Airport",
+            "Pilot": "Pilot Name",
+            "FlightStatus": "Flight Status"
+        },
+        "airports.csv": {
+            "AirportName": "Airport Name",
+            "IATA": "IATA_Code",
+            "ICAO": "Identifier",
+            "City_Name": "MunicipalityName",
+            "Country_CodeA2": "Airport Country Code",
+            "Country_CodeA3": "Country_CodeA3",
+            "Country_Name": "Country Name",
+            "GeoPointLat": "Latitude",
+            "GeoPointLong": "Longitude"
+        },
+        "data_182.csv": {
+            "Airport_ID": "Airport_ID",
+            "SiteCode": "Identifier",
+            "AerodromeClass": "Type",
+            "FacilityName": "Airport Name",
+            "LatitudeDeg": "Latitude",
+            "LongitudeDeg": "Longitude",
+            "FieldElevationFt": "Elevation_Ft",
+            "ContCode": "Airport Continent",
+            "ISO2Country": "Airport Country Code",
+            "ISORegionCode": "ISO_Region",
+            "Locality": "MunicipalityName",
+            "IATA": "IATA_Code"
+        },
+        "data_233.csv": {
+            "Airport_ID": "Airport_ID",
+            "AirportCode": "Identifier",
+            "LocationType": "Type",
+            "OfficialName": "Airport Name",
+            "Lat": "Latitude",
+            "Lng": "Longitude",
+            "ElevationFeet": "Elevation_Ft",
+            "Continent": "Airport Continent",
+            "CountryCode": "Airport Country Code",
+            "RegionCode": "ISO_Region",
+            "MunicipalityName": "MunicipalityName",
+            "IATA_Code": "IATA_Code"
+        },
+        "airports _174.csv": {
+            "id": "Airport_ID",
+            "facility_ident": "Identifier",
+            "facility_type": "Type",
+            "site_name": "Airport Name",
+            "lat_deg": "Latitude",
+            "lon_deg": "Longitude",
+            "elev_ft_msl": "Elevation_Ft",
+            "continent_code": "Airport Continent",
+            "country_iso2": "Airport Country Code",
+            "admin_region_iso": "ISO_Region",
+            "local_municipality": "MunicipalityName",
+            "iata": "IATA_Code"
+        },
+        "airports _233.csv": {
+            "id": "Airport_ID",
+            "location_ident": "Identifier",
+            "facility_category": "Type",
+            "facility_name": "Airport Name",
+            "latitude_dd": "Latitude",
+            "longitude_dd": "Longitude",
+            "elevation_ft_agl": "Elevation_Ft",
+            "continent_abbrev": "Airport Continent",
+            "iso2_country": "Airport Country Code",
+            "iso_region_code": "ISO_Region",
+            "nearest_municipality": "MunicipalityName",
+            "iata_airport_code": "IATA_Code"
+        }
+    },
+    "integrated_schema_by_entity": {
+        "Passenger": {
+            "attributes": [
+                "First Name",
+                "Gender",
+                "Passenger ID",
+                "Last Name",
+                "Age",
+                "Nationality"
+            ],
+            "column_mappings_by_table": {
+                "Airline Dataset Updated - v2_9.csv": {
+                    "Passenger ID": "Passenger ID",
+                    "First Name": "First Name",
+                    "Last Name": "Last Name",
+                    "Gender": "Gender",
+                    "Age": "Age",
+                    "Nationality": "Nationality"
+                },
+                "Airline Dataset Updated - v2_14.csv": {
+                    "Passenger ID": "Passenger ID",
+                    "GivenName": "First Name",
+                    "Surname": "Last Name",
+                    "Sex": "Gender",
+                    "Age": "Age",
+                    "Citizenship": "Nationality"
+                },
+                "Airline Dataset Updated - v2_16.csv": {
+                    "Passenger ID": "Passenger ID",
+                    "FirstNm": "First Name",
+                    "LastNm": "Last Name",
+                    "Gender": "Gender",
+                    "Age": "Age",
+                    "Nationality": "Nationality"
+                },
+                "Airline Dataset Updated - v2_18.csv": {
+                    "Passenger ID": "Passenger ID",
+                    "FName": "First Name",
+                    "LName": "Last Name",
+                    "Gender": "Gender",
+                    "Age": "Age",
+                    "Nationality": "Nationality"
+                },
+                "Airline Dataset Updated - v2_126.csv": {
+                    "Passenger ID": "Passenger ID",
+                    "Fname": "First Name",
+                    "FamilyName": "Last Name",
+                    "Gender": "Gender",
+                    "AgeYrs": "Age",
+                    "Nationality": "Nationality"
+                }
+            },
+            "attributes_with_values": {
+                "Passenger ID": [
+                    "wh2bC0",
+                    "VK3hRv",
+                    "6ahwIo",
+                    "uCHzBI",
+                    "SLul8z",
+                    "W4hvoX",
+                    "MMDLAz",
+                    "N8Nu9V",
+                    "j3abEF",
+                    "f1fMce",
+                    "EymuGs",
+                    "wFaryc",
+                    "aIPaHU",
+                    "cHtQKq",
+                    "1jkGEv"
+                ],
+                "First Name": [
+                    "Floris",
+                    "Oralle",
+                    "Rebeka",
+                    "Jasen",
+                    "Rob",
+                    "Niel",
+                    "Josiah",
+                    "Danny",
+                    "Fania",
+                    "Ernestus",
+                    "Terry",
+                    "Ernie",
+                    "Addison",
+                    "Dorelle",
+                    "Byrle"
+                ],
+                "Last Name": [
+                    "Lauritsen",
+                    "Coleshill",
+                    "Bulled",
+                    "Greenhouse",
+                    "Jouaneton",
+                    "Wauchope",
+                    "Kearsley",
+                    "Arden",
+                    "Minette",
+                    "Beloe",
+                    "MacVicar",
+                    "Desaur",
+                    "Tremathick",
+                    "Yes",
+                    "Wintle"
+                ],
+                "Gender": [
+                    "Female",
+                    "Female",
+                    "Female",
+                    "Male",
+                    "Male",
+                    "Female",
+                    "Male",
+                    "Female",
+                    "Male",
+                    "Male",
+                    "Female",
+                    "Male",
+                    "Male",
+                    "Male",
+                    "Male"
+                ],
+                "Age": [
+                    18,
+                    89,
+                    68,
+                    73,
+                    72,
+                    32,
+                    20,
+                    32,
+                    75,
+                    39,
+                    50,
+                    12,
+                    35,
+                    19,
+                    37
+                ],
+                "Nationality": [
+                    "Nigeria",
+                    "China",
+                    "Czech Republic",
+                    "Poland",
+                    "China",
+                    "Portugal",
+                    "Albania",
+                    "China",
+                    "Belarus",
+                    "Latvia",
+                    "Russia",
+                    "France",
+                    "Sri Lanka",
+                    "Indonesia",
+                    "Colombia"
+                ]
+            },
+            "grouped_attributes": {
+                "Passenger ID": {
+                    "Airline Dataset Updated - v2_9.csv": "Passenger ID",
+                    "Airline Dataset Updated - v2_14.csv": "Passenger ID",
+                    "Airline Dataset Updated - v2_16.csv": "Passenger ID",
+                    "Airline Dataset Updated - v2_18.csv": "Passenger ID",
+                    "Airline Dataset Updated - v2_126.csv": "Passenger ID"
+                },
+                "First Name": {
+                    "Airline Dataset Updated - v2_9.csv": "First Name",
+                    "Airline Dataset Updated - v2_14.csv": "GivenName",
+                    "Airline Dataset Updated - v2_16.csv": "FirstNm",
+                    "Airline Dataset Updated - v2_18.csv": "FName",
+                    "Airline Dataset Updated - v2_126.csv": "Fname"
+                },
+                "Last Name": {
+                    "Airline Dataset Updated - v2_9.csv": "Last Name",
+                    "Airline Dataset Updated - v2_14.csv": "Surname",
+                    "Airline Dataset Updated - v2_16.csv": "LastNm",
+                    "Airline Dataset Updated - v2_18.csv": "LName",
+                    "Airline Dataset Updated - v2_126.csv": "FamilyName"
+                },
+                "Gender": {
+                    "Airline Dataset Updated - v2_9.csv": "Gender",
+                    "Airline Dataset Updated - v2_14.csv": "Sex",
+                    "Airline Dataset Updated - v2_16.csv": "Gender",
+                    "Airline Dataset Updated - v2_18.csv": "Gender",
+                    "Airline Dataset Updated - v2_126.csv": "Gender"
+                },
+                "Age": {
+                    "Airline Dataset Updated - v2_9.csv": "Age",
+                    "Airline Dataset Updated - v2_14.csv": "Age",
+                    "Airline Dataset Updated - v2_16.csv": "Age",
+                    "Airline Dataset Updated - v2_18.csv": "Age",
+                    "Airline Dataset Updated - v2_126.csv": "AgeYrs"
+                },
+                "Nationality": {
+                    "Airline Dataset Updated - v2_9.csv": "Nationality",
+                    "Airline Dataset Updated - v2_14.csv": "Citizenship",
+                    "Airline Dataset Updated - v2_16.csv": "Nationality",
+                    "Airline Dataset Updated - v2_18.csv": "Nationality",
+                    "Airline Dataset Updated - v2_126.csv": "Nationality"
+                }
+            },
+            "schema_matching": {
+                "Airline Dataset Updated - v2_9.csv": {
+                    "Airline Dataset Updated - v2_14.csv": {
+                        "Passenger ID": "Passenger ID",
+                        "First Name": "GivenName",
+                        "Last Name": "Surname",
+                        "Gender": "Sex",
+                        "Age": "Age",
+                        "Nationality": "Citizenship"
+                    },
+                    "Airline Dataset Updated - v2_16.csv": {
+                        "Passenger ID": "Passenger ID",
+                        "First Name": "FirstNm",
+                        "Last Name": "LastNm",
+                        "Gender": "Gender",
+                        "Age": "Age",
+                        "Nationality": "Nationality"
+                    },
+                    "Airline Dataset Updated - v2_18.csv": {
+                        "Passenger ID": "Passenger ID",
+                        "First Name": "FName",
+                        "Last Name": "LName",
+                        "Gender": "Gender",
+                        "Age": "Age",
+                        "Nationality": "Nationality"
+                    },
+                    "Airline Dataset Updated - v2_126.csv": {
+                        "Passenger ID": "Passenger ID",
+                        "First Name": "Fname",
+                        "Last Name": "FamilyName",
+                        "Gender": "Gender",
+                        "Age": "AgeYrs",
+                        "Nationality": "Nationality"
+                    }
+                },
+                "Airline Dataset Updated - v2_14.csv": {
+                    "Airline Dataset Updated - v2_16.csv": {
+                        "Passenger ID": "Passenger ID",
+                        "GivenName": "FirstNm",
+                        "Surname": "LastNm",
+                        "Sex": "Gender",
+                        "Age": "Age",
+                        "Citizenship": "Nationality"
+                    },
+                    "Airline Dataset Updated - v2_18.csv": {
+                        "Passenger ID": "Passenger ID",
+                        "GivenName": "FName",
+                        "Surname": "LName",
+                        "Sex": "Gender",
+                        "Age": "Age",
+                        "Citizenship": "Nationality"
+                    },
+                    "Airline Dataset Updated - v2_126.csv": {
+                        "Passenger ID": "Passenger ID",
+                        "GivenName": "Fname",
+                        "Surname": "FamilyName",
+                        "Sex": "Gender",
+                        "Age": "AgeYrs",
+                        "Citizenship": "Nationality"
+                    }
+                },
+                "Airline Dataset Updated - v2_16.csv": {
+                    "Airline Dataset Updated - v2_18.csv": {
+                        "Passenger ID": "Passenger ID",
+                        "FirstNm": "FName",
+                        "LastNm": "LName",
+                        "Gender": "Gender",
+                        "Age": "Age",
+                        "Nationality": "Nationality"
+                    },
+                    "Airline Dataset Updated - v2_126.csv": {
+                        "Passenger ID": "Passenger ID",
+                        "FirstNm": "Fname",
+                        "LastNm": "FamilyName",
+                        "Gender": "Gender",
+                        "Age": "AgeYrs",
+                        "Nationality": "Nationality"
+                    }
+                },
+                "Airline Dataset Updated - v2_18.csv": {
+                    "Airline Dataset Updated - v2_126.csv": {
+                        "Passenger ID": "Passenger ID",
+                        "FName": "Fname",
+                        "LName": "FamilyName",
+                        "Gender": "Gender",
+                        "Age": "AgeYrs",
+                        "Nationality": "Nationality"
+                    }
+                }
+            }
+        },
+        "Airport": {
+            "attributes": [
+                "Airport Continent",
+                "Country_CodeA3",
+                "IATA_Code",
+                "Identifier",
+                "Longitude",
+                "MunicipalityName",
+                "ISO_Region",
+                "Continents",
+                "Airport Country Code",
+                "Latitude",
+                "Country Name",
+                "Airport Name",
+                "Airport_ID",
+                "Type",
+                "Elevation_Ft"
+            ],
+            "column_mappings_by_table": {
+                "Airline Dataset Updated - v2_9.csv": {
+                    "Airport Name": "Airport Name",
+                    "Airport Country Code": "Airport Country Code",
+                    "Country Name": "Country Name",
+                    "Airport Continent": "Airport Continent",
+                    "Continents": "Continents"
+                },
+                "Airline Dataset Updated - v2_14.csv": {
+                    "OriginAirportName": "Airport Name",
+                    "OriginCountryISO2": "Airport Country Code",
+                    "OriginCountry": "Country Name",
+                    "OriginContinentCode": "Airport Continent",
+                    "OriginContinent": "Continents"
+                },
+                "Airline Dataset Updated - v2_16.csv": {
+                    "DepAirport": "Airport Name",
+                    "DepCtryCode": "Airport Country Code",
+                    "DepCountryName": "Country Name",
+                    "DepContCode": "Airport Continent",
+                    "DepContinentName": "Continents"
+                },
+                "Airline Dataset Updated - v2_18.csv": {
+                    "AirportName": "Airport Name",
+                    "CountryCode": "Airport Country Code",
+                    "Country": "Country Name",
+                    "ContinentCode": "Airport Continent",
+                    "Continent": "Continents"
+                },
+                "Airline Dataset Updated - v2_126.csv": {
+                    "Airport": "Airport Name",
+                    "ISO2": "Airport Country Code",
+                    "CountryName": "Country Name",
+                    "ContCode": "Airport Continent",
+                    "ContinentName": "Continents"
+                },
+                "airports.csv": {
+                    "AirportName": "Airport Name",
+                    "IATA": "IATA_Code",
+                    "ICAO": "Identifier",
+                    "City_Name": "MunicipalityName",
+                    "Country_CodeA2": "Airport Country Code",
+                    "Country_CodeA3": "Country_CodeA3",
+                    "Country_Name": "Country Name",
+                    "GeoPointLat": "Latitude",
+                    "GeoPointLong": "Longitude"
+                },
+                "data_182.csv": {
+                    "Airport_ID": "Airport_ID",
+                    "SiteCode": "Identifier",
+                    "AerodromeClass": "Type",
+                    "FacilityName": "Airport Name",
+                    "LatitudeDeg": "Latitude",
+                    "LongitudeDeg": "Longitude",
+                    "FieldElevationFt": "Elevation_Ft",
+                    "ContCode": "Airport Continent",
+                    "ISO2Country": "Airport Country Code",
+                    "ISORegionCode": "ISO_Region",
+                    "Locality": "MunicipalityName",
+                    "IATA": "IATA_Code"
+                },
+                "data_233.csv": {
+                    "Airport_ID": "Airport_ID",
+                    "AirportCode": "Identifier",
+                    "LocationType": "Type",
+                    "OfficialName": "Airport Name",
+                    "Lat": "Latitude",
+                    "Lng": "Longitude",
+                    "ElevationFeet": "Elevation_Ft",
+                    "Continent": "Airport Continent",
+                    "CountryCode": "Airport Country Code",
+                    "RegionCode": "ISO_Region",
+                    "MunicipalityName": "MunicipalityName",
+                    "IATA_Code": "IATA_Code"
+                },
+                "airports _174.csv": {
+                    "id": "Airport_ID",
+                    "facility_ident": "Identifier",
+                    "facility_type": "Type",
+                    "site_name": "Airport Name",
+                    "lat_deg": "Latitude",
+                    "lon_deg": "Longitude",
+                    "elev_ft_msl": "Elevation_Ft",
+                    "continent_code": "Airport Continent",
+                    "country_iso2": "Airport Country Code",
+                    "admin_region_iso": "ISO_Region",
+                    "local_municipality": "MunicipalityName",
+                    "iata": "IATA_Code"
+                },
+                "airports _233.csv": {
+                    "id": "Airport_ID",
+                    "location_ident": "Identifier",
+                    "facility_category": "Type",
+                    "facility_name": "Airport Name",
+                    "latitude_dd": "Latitude",
+                    "longitude_dd": "Longitude",
+                    "elevation_ft_agl": "Elevation_Ft",
+                    "continent_abbrev": "Airport Continent",
+                    "iso2_country": "Airport Country Code",
+                    "iso_region_code": "ISO_Region",
+                    "nearest_municipality": "MunicipalityName",
+                    "iata_airport_code": "IATA_Code"
+                }
+            },
+            "attributes_with_values": {
+                "Airport Name": [
+                    "Rewa Airport, Chorhata, REWA",
+                    "Cap Manuel Ni\u00f1o International Airport",
+                    "Opapimiskan Lake Airport",
+                    "Sultan Bantilan Airport",
+                    "Muanda Airport",
+                    "Spartanburg Downtown Memorial Airport",
+                    "Miami University Airport",
+                    "West End Airport",
+                    "Elenak Airport",
+                    "Songea Airport",
+                    "Inyokern Airport",
+                    "Kuujjuaq Airport",
+                    "Pilanesberg Intl",
+                    "Clovis Muni",
+                    "Cannon Afb",
+                    "Corn Island",
+                    "Petawawa Airport",
+                    "RAF Benson",
+                    "UNFICYP OP32 Heliport",
+                    "Laoag International Airport",
+                    "Cadete 56-147 Santana Airport",
+                    "Nipsan Airstrip",
+                    "Ailuk Airport",
+                    "Comando do 8\u00ba Distrito Naval Heliport",
+                    "Davie Medical Center Helipad",
+                    "Balesa Airport",
+                    "Kamenka Air Base",
+                    "Candle 2 Airport",
+                    "Ondwa Airport",
+                    "Akagi Heliport"
+                ],
+                "Airport Country Code": [
+                    "IN",
+                    "PA",
+                    "CA",
+                    "ID",
+                    "CD",
+                    "US",
+                    "US",
+                    "BS",
+                    "MH",
+                    "TZ",
+                    "US",
+                    "CA",
+                    "ID",
+                    "MH",
+                    "BR",
+                    "NI",
+                    "CA",
+                    "GB",
+                    "ZA",
+                    "US",
+                    "US",
+                    "CY",
+                    "PH",
+                    "BR",
+                    "US",
+                    "KE",
+                    "RU",
+                    "US",
+                    "IN",
+                    "JP"
+                ],
+                "Country Name": [
+                    "India",
+                    "Panama",
+                    "Canada",
+                    "Indonesia",
+                    "Congo, The Democratic Republic of the",
+                    "United States",
+                    "United States",
+                    "Bahamas",
+                    "Marshall Islands",
+                    "Tanzania, United Republic of",
+                    "United States",
+                    "Canada",
+                    "Nicaragua",
+                    "Canada",
+                    "United Kingdom",
+                    "South Africa",
+                    "United States of America",
+                    "United States of America"
+                ],
+                "Airport Continent": [
+                    "AS",
+                    "NAM",
+                    "NAM",
+                    "AS",
+                    "AF",
+                    "NAM",
+                    "NAM",
+                    "NAM",
+                    "OC",
+                    "AF",
+                    "NAM",
+                    "NAM",
+                    "NAM",
+                    "NAM",
+                    "EU",
+                    "AS",
+                    "AS",
+                    "SA",
+                    "AS",
+                    "OC",
+                    "SA",
+                    "AF",
+                    "EU",
+                    "EU",
+                    "AS",
+                    "AS",
+                    "OC"
+                ],
+                "Continents": [
+                    "Asia",
+                    "North America",
+                    "North America",
+                    "Asia",
+                    "Africa",
+                    "North America",
+                    "North America",
+                    "North America",
+                    "Oceania",
+                    "Africa",
+                    "North America",
+                    "North America",
+                    "North America",
+                    "North America",
+                    "Europe"
+                ],
+                "IATA_Code": [
+                    "NTY",
+                    "CVN",
+                    "CVS",
+                    "LAO",
+                    "QID",
+                    "WBM",
+                    "AIM",
+                    "MUQ",
+                    "MJE",
+                    "RHR",
+                    "SSS",
+                    "EGP",
+                    "CDL",
+                    "PCD",
+                    "YCM"
+                ],
+                "Identifier": [
+                    "FAPN",
+                    "KCVN",
+                    "KCVS",
+                    "CY-0020",
+                    "RPLI",
+                    "SJEA",
+                    "ID-0110",
+                    "MH-AIM",
+                    "SDMI",
+                    "76FA",
+                    "KE-6013",
+                    "RU-0326",
+                    "AK75",
+                    "VA1H",
+                    "JP-3208"
+                ],
+                "MunicipalityName": [
+                    "Sun City",
+                    "Clovis, New Mexico",
+                    "Clovis, New Mexico",
+                    "Astromeritis",
+                    "Laoag City",
+                    "Palmeir\u00f3polis",
+                    "Nipsan",
+                    "Ailuk Island",
+                    "S\u00e3o Paulo",
+                    "Davie",
+                    "Balesa",
+                    "Kamenka",
+                    "Candle",
+                    "Shingu",
+                    "Goldfield"
+                ],
+                "Country_CodeA3": [
+                    "ZAF",
+                    "USA",
+                    "USA"
+                ],
+                "Latitude": [
+                    -25.333822,
+                    34.425139,
+                    34.382775,
+                    35.156876,
+                    18.17810059,
+                    -12.850863,
+                    -4.1141,
+                    10.21679974,
+                    -23.593708,
+                    26.077222,
+                    3.646972,
+                    53.205,
+                    65.907699585,
+                    25.14150047302246,
+                    33.77864
+                ],
+                "Longitude": [
+                    27.173358,
+                    -103.079278,
+                    -103.322147,
+                    33.02405,
+                    120.5319977,
+                    -48.226832,
+                    139.6438,
+                    169.9830017,
+                    -46.646335,
+                    -80.250833,
+                    37.350861,
+                    44.065,
+                    -161.925994873,
+                    74.61150360107422,
+                    135.85215
+                ],
+                "Airport_ID": [
+                    347292,
+                    5688,
+                    36499,
+                    310838,
+                    35201,
+                    35627,
+                    347727,
+                    42542,
+                    46154,
+                    16169,
+                    3289,
+                    508689
+                ],
+                "Type": [
+                    "heliport",
+                    "medium_airport",
+                    "small_airport",
+                    "small_airport",
+                    "small_airport",
+                    "heliport",
+                    "heliport",
+                    "small_airport",
+                    "closed",
+                    "small_airport",
+                    "small_airport",
+                    "heliport"
+                ],
+                "Elevation_Ft": [
+                    25.0,
+                    985.0,
+                    6100.0,
+                    6000.0,
+                    2580.0,
+                    3200.0,
+                    67.0,
+                    2000.0,
+                    975.0,
+                    15.0,
+                    1450.0,
+                    134.0
+                ],
+                "ISO_Region": [
+                    "CY-02",
+                    "PH-ILN",
+                    "BR-TO",
+                    "ID-PA",
+                    "MH-ALK",
+                    "BR-SP",
+                    "US-FL",
+                    "KE-400",
+                    "RU-PNZ",
+                    "US-AK",
+                    "IN-RJ",
+                    "JP-30"
+                ]
+            },
+            "grouped_attributes": {
+                "Airport Name": {
+                    "Airline Dataset Updated - v2_9.csv": "Airport Name",
+                    "Airline Dataset Updated - v2_14.csv": "OriginAirportName",
+                    "Airline Dataset Updated - v2_16.csv": "DepAirport",
+                    "Airline Dataset Updated - v2_18.csv": "AirportName",
+                    "Airline Dataset Updated - v2_126.csv": "Airport",
+                    "airports.csv": "AirportName",
+                    "data_182.csv": "FacilityName",
+                    "data_233.csv": "OfficialName",
+                    "airports _174.csv": "site_name",
+                    "airports _233.csv": "facility_name"
+                },
+                "Airport Country Code": {
+                    "Airline Dataset Updated - v2_9.csv": "Airport Country Code",
+                    "Airline Dataset Updated - v2_14.csv": "OriginCountryISO2",
+                    "Airline Dataset Updated - v2_16.csv": "DepCtryCode",
+                    "Airline Dataset Updated - v2_18.csv": "CountryCode",
+                    "Airline Dataset Updated - v2_126.csv": "ISO2",
+                    "airports.csv": "Country_CodeA2",
+                    "data_182.csv": "ISO2Country",
+                    "data_233.csv": "CountryCode",
+                    "airports _174.csv": "country_iso2",
+                    "airports _233.csv": "iso2_country"
+                },
+                "Country Name": {
+                    "Airline Dataset Updated - v2_9.csv": "Country Name",
+                    "Airline Dataset Updated - v2_14.csv": "OriginCountry",
+                    "Airline Dataset Updated - v2_16.csv": "DepCountryName",
+                    "Airline Dataset Updated - v2_18.csv": "Country",
+                    "Airline Dataset Updated - v2_126.csv": "CountryName",
+                    "airports.csv": "Country_Name"
+                },
+                "Airport Continent": {
+                    "Airline Dataset Updated - v2_9.csv": "Airport Continent",
+                    "Airline Dataset Updated - v2_14.csv": "OriginContinentCode",
+                    "Airline Dataset Updated - v2_16.csv": "DepContCode",
+                    "Airline Dataset Updated - v2_18.csv": "ContinentCode",
+                    "Airline Dataset Updated - v2_126.csv": "ContCode",
+                    "data_182.csv": "ContCode",
+                    "data_233.csv": "Continent",
+                    "airports _174.csv": "continent_code",
+                    "airports _233.csv": "continent_abbrev"
+                },
+                "Continents": {
+                    "Airline Dataset Updated - v2_9.csv": "Continents",
+                    "Airline Dataset Updated - v2_14.csv": "OriginContinent",
+                    "Airline Dataset Updated - v2_16.csv": "DepContinentName",
+                    "Airline Dataset Updated - v2_18.csv": "Continent",
+                    "Airline Dataset Updated - v2_126.csv": "ContinentName"
+                },
+                "IATA_Code": {
+                    "airports.csv": "IATA",
+                    "data_182.csv": "IATA",
+                    "data_233.csv": "IATA_Code",
+                    "airports _174.csv": "iata",
+                    "airports _233.csv": "iata_airport_code"
+                },
+                "Identifier": {
+                    "airports.csv": "ICAO",
+                    "data_182.csv": "SiteCode",
+                    "data_233.csv": "AirportCode",
+                    "airports _174.csv": "facility_ident",
+                    "airports _233.csv": "location_ident"
+                },
+                "MunicipalityName": {
+                    "airports.csv": "City_Name",
+                    "data_182.csv": "Locality",
+                    "data_233.csv": "MunicipalityName",
+                    "airports _174.csv": "local_municipality",
+                    "airports _233.csv": "nearest_municipality"
+                },
+                "Country_CodeA3": {
+                    "airports.csv": "Country_CodeA3"
+                },
+                "Latitude": {
+                    "airports.csv": "GeoPointLat",
+                    "data_182.csv": "LatitudeDeg",
+                    "data_233.csv": "Lat",
+                    "airports _174.csv": "lat_deg",
+                    "airports _233.csv": "latitude_dd"
+                },
+                "Longitude": {
+                    "airports.csv": "GeoPointLong",
+                    "data_182.csv": "LongitudeDeg",
+                    "data_233.csv": "Lng",
+                    "airports _174.csv": "lon_deg",
+                    "airports _233.csv": "longitude_dd"
+                },
+                "Airport_ID": {
+                    "data_182.csv": "Airport_ID",
+                    "data_233.csv": "Airport_ID",
+                    "airports _174.csv": "id",
+                    "airports _233.csv": "id"
+                },
+                "Type": {
+                    "data_182.csv": "AerodromeClass",
+                    "data_233.csv": "LocationType",
+                    "airports _174.csv": "facility_type",
+                    "airports _233.csv": "facility_category"
+                },
+                "Elevation_Ft": {
+                    "data_182.csv": "FieldElevationFt",
+                    "data_233.csv": "ElevationFeet",
+                    "airports _174.csv": "elev_ft_msl",
+                    "airports _233.csv": "elevation_ft_agl"
+                },
+                "ISO_Region": {
+                    "data_182.csv": "ISORegionCode",
+                    "data_233.csv": "RegionCode",
+                    "airports _174.csv": "admin_region_iso",
+                    "airports _233.csv": "iso_region_code"
+                }
+            },
+            "schema_matching": {
+                "Airline Dataset Updated - v2_9.csv": {
+                    "Airline Dataset Updated - v2_14.csv": {
+                        "Airport Name": "OriginAirportName",
+                        "Airport Country Code": "OriginCountryISO2",
+                        "Country Name": "OriginCountry",
+                        "Airport Continent": "OriginContinentCode",
+                        "Continents": "OriginContinent"
+                    },
+                    "Airline Dataset Updated - v2_16.csv": {
+                        "Airport Name": "DepAirport",
+                        "Airport Country Code": "DepCtryCode",
+                        "Country Name": "DepCountryName",
+                        "Airport Continent": "DepContCode",
+                        "Continents": "DepContinentName"
+                    },
+                    "Airline Dataset Updated - v2_18.csv": {
+                        "Airport Name": "AirportName",
+                        "Airport Country Code": "CountryCode",
+                        "Country Name": "Country",
+                        "Airport Continent": "ContinentCode",
+                        "Continents": "Continent"
+                    },
+                    "Airline Dataset Updated - v2_126.csv": {
+                        "Airport Name": "Airport",
+                        "Airport Country Code": "ISO2",
+                        "Country Name": "CountryName",
+                        "Airport Continent": "ContCode",
+                        "Continents": "ContinentName"
+                    },
+                    "airports.csv": {
+                        "Airport Name": "AirportName",
+                        "Airport Country Code": "Country_CodeA2",
+                        "Country Name": "Country_Name"
+                    },
+                    "data_182.csv": {
+                        "Airport Name": "FacilityName",
+                        "Airport Country Code": "ISO2Country",
+                        "Airport Continent": "ContCode"
+                    },
+                    "data_233.csv": {
+                        "Airport Name": "OfficialName",
+                        "Airport Country Code": "CountryCode",
+                        "Airport Continent": "Continent"
+                    },
+                    "airports _174.csv": {
+                        "Airport Name": "site_name",
+                        "Airport Country Code": "country_iso2",
+                        "Airport Continent": "continent_code"
+                    },
+                    "airports _233.csv": {
+                        "Airport Name": "facility_name",
+                        "Airport Country Code": "iso2_country",
+                        "Airport Continent": "continent_abbrev"
+                    }
+                },
+                "Airline Dataset Updated - v2_14.csv": {
+                    "Airline Dataset Updated - v2_16.csv": {
+                        "OriginAirportName": "DepAirport",
+                        "OriginCountryISO2": "DepCtryCode",
+                        "OriginCountry": "DepCountryName",
+                        "OriginContinentCode": "DepContCode",
+                        "OriginContinent": "DepContinentName"
+                    },
+                    "Airline Dataset Updated - v2_18.csv": {
+                        "OriginAirportName": "AirportName",
+                        "OriginCountryISO2": "CountryCode",
+                        "OriginCountry": "Country",
+                        "OriginContinentCode": "ContinentCode",
+                        "OriginContinent": "Continent"
+                    },
+                    "Airline Dataset Updated - v2_126.csv": {
+                        "OriginAirportName": "Airport",
+                        "OriginCountryISO2": "ISO2",
+                        "OriginCountry": "CountryName",
+                        "OriginContinentCode": "ContCode",
+                        "OriginContinent": "ContinentName"
+                    },
+                    "airports.csv": {
+                        "OriginAirportName": "AirportName",
+                        "OriginCountryISO2": "Country_CodeA2",
+                        "OriginCountry": "Country_Name"
+                    },
+                    "data_182.csv": {
+                        "OriginAirportName": "FacilityName",
+                        "OriginCountryISO2": "ISO2Country",
+                        "OriginContinentCode": "ContCode"
+                    },
+                    "data_233.csv": {
+                        "OriginAirportName": "OfficialName",
+                        "OriginCountryISO2": "CountryCode",
+                        "OriginContinentCode": "Continent"
+                    },
+                    "airports _174.csv": {
+                        "OriginAirportName": "site_name",
+                        "OriginCountryISO2": "country_iso2",
+                        "OriginContinentCode": "continent_code"
+                    },
+                    "airports _233.csv": {
+                        "OriginAirportName": "facility_name",
+                        "OriginCountryISO2": "iso2_country",
+                        "OriginContinentCode": "continent_abbrev"
+                    }
+                },
+                "Airline Dataset Updated - v2_16.csv": {
+                    "Airline Dataset Updated - v2_18.csv": {
+                        "DepAirport": "AirportName",
+                        "DepCtryCode": "CountryCode",
+                        "DepCountryName": "Country",
+                        "DepContCode": "ContinentCode",
+                        "DepContinentName": "Continent"
+                    },
+                    "Airline Dataset Updated - v2_126.csv": {
+                        "DepAirport": "Airport",
+                        "DepCtryCode": "ISO2",
+                        "DepCountryName": "CountryName",
+                        "DepContCode": "ContCode",
+                        "DepContinentName": "ContinentName"
+                    },
+                    "airports.csv": {
+                        "DepAirport": "AirportName",
+                        "DepCtryCode": "Country_CodeA2",
+                        "DepCountryName": "Country_Name"
+                    },
+                    "data_182.csv": {
+                        "DepAirport": "FacilityName",
+                        "DepCtryCode": "ISO2Country",
+                        "DepContCode": "ContCode"
+                    },
+                    "data_233.csv": {
+                        "DepAirport": "OfficialName",
+                        "DepCtryCode": "CountryCode",
+                        "DepContCode": "Continent"
+                    },
+                    "airports _174.csv": {
+                        "DepAirport": "site_name",
+                        "DepCtryCode": "country_iso2",
+                        "DepContCode": "continent_code"
+                    },
+                    "airports _233.csv": {
+                        "DepAirport": "facility_name",
+                        "DepCtryCode": "iso2_country",
+                        "DepContCode": "continent_abbrev"
+                    }
+                },
+                "Airline Dataset Updated - v2_18.csv": {
+                    "Airline Dataset Updated - v2_126.csv": {
+                        "AirportName": "Airport",
+                        "CountryCode": "ISO2",
+                        "Country": "CountryName",
+                        "ContinentCode": "ContCode",
+                        "Continent": "ContinentName"
+                    },
+                    "airports.csv": {
+                        "AirportName": "AirportName",
+                        "CountryCode": "Country_CodeA2",
+                        "Country": "Country_Name"
+                    },
+                    "data_182.csv": {
+                        "AirportName": "FacilityName",
+                        "CountryCode": "ISO2Country",
+                        "ContinentCode": "ContCode"
+                    },
+                    "data_233.csv": {
+                        "AirportName": "OfficialName",
+                        "CountryCode": "CountryCode",
+                        "ContinentCode": "Continent"
+                    },
+                    "airports _174.csv": {
+                        "AirportName": "site_name",
+                        "CountryCode": "country_iso2",
+                        "ContinentCode": "continent_code"
+                    },
+                    "airports _233.csv": {
+                        "AirportName": "facility_name",
+                        "CountryCode": "iso2_country",
+                        "ContinentCode": "continent_abbrev"
+                    }
+                },
+                "Airline Dataset Updated - v2_126.csv": {
+                    "airports.csv": {
+                        "Airport": "AirportName",
+                        "ISO2": "Country_CodeA2",
+                        "CountryName": "Country_Name"
+                    },
+                    "data_182.csv": {
+                        "Airport": "FacilityName",
+                        "ISO2": "ISO2Country",
+                        "ContCode": "ContCode"
+                    },
+                    "data_233.csv": {
+                        "Airport": "OfficialName",
+                        "ISO2": "CountryCode",
+                        "ContCode": "Continent"
+                    },
+                    "airports _174.csv": {
+                        "Airport": "site_name",
+                        "ISO2": "country_iso2",
+                        "ContCode": "continent_code"
+                    },
+                    "airports _233.csv": {
+                        "Airport": "facility_name",
+                        "ISO2": "iso2_country",
+                        "ContCode": "continent_abbrev"
+                    }
+                },
+                "airports.csv": {
+                    "data_182.csv": {
+                        "AirportName": "FacilityName",
+                        "IATA": "IATA",
+                        "ICAO": "SiteCode",
+                        "City_Name": "Locality",
+                        "Country_CodeA2": "ISO2Country",
+                        "GeoPointLat": "LatitudeDeg",
+                        "GeoPointLong": "LongitudeDeg"
+                    },
+                    "data_233.csv": {
+                        "AirportName": "OfficialName",
+                        "IATA": "IATA_Code",
+                        "ICAO": "AirportCode",
+                        "City_Name": "MunicipalityName",
+                        "Country_CodeA2": "CountryCode",
+                        "GeoPointLat": "Lat",
+                        "GeoPointLong": "Lng"
+                    },
+                    "airports _174.csv": {
+                        "AirportName": "site_name",
+                        "IATA": "iata",
+                        "ICAO": "facility_ident",
+                        "City_Name": "local_municipality",
+                        "Country_CodeA2": "country_iso2",
+                        "GeoPointLat": "lat_deg",
+                        "GeoPointLong": "lon_deg"
+                    },
+                    "airports _233.csv": {
+                        "AirportName": "facility_name",
+                        "IATA": "iata_airport_code",
+                        "ICAO": "location_ident",
+                        "City_Name": "nearest_municipality",
+                        "Country_CodeA2": "iso2_country",
+                        "GeoPointLat": "latitude_dd",
+                        "GeoPointLong": "longitude_dd"
+                    }
+                },
+                "data_182.csv": {
+                    "data_233.csv": {
+                        "Airport_ID": "Airport_ID",
+                        "SiteCode": "AirportCode",
+                        "AerodromeClass": "LocationType",
+                        "FacilityName": "OfficialName",
+                        "LatitudeDeg": "Lat",
+                        "LongitudeDeg": "Lng",
+                        "FieldElevationFt": "ElevationFeet",
+                        "ContCode": "Continent",
+                        "ISO2Country": "CountryCode",
+                        "ISORegionCode": "RegionCode",
+                        "Locality": "MunicipalityName",
+                        "IATA": "IATA_Code"
+                    },
+                    "airports _174.csv": {
+                        "Airport_ID": "id",
+                        "SiteCode": "facility_ident",
+                        "AerodromeClass": "facility_type",
+                        "FacilityName": "site_name",
+                        "LatitudeDeg": "lat_deg",
+                        "LongitudeDeg": "lon_deg",
+                        "FieldElevationFt": "elev_ft_msl",
+                        "ContCode": "continent_code",
+                        "ISO2Country": "country_iso2",
+                        "ISORegionCode": "admin_region_iso",
+                        "Locality": "local_municipality",
+                        "IATA": "iata"
+                    },
+                    "airports _233.csv": {
+                        "Airport_ID": "id",
+                        "SiteCode": "location_ident",
+                        "AerodromeClass": "facility_category",
+                        "FacilityName": "facility_name",
+                        "LatitudeDeg": "latitude_dd",
+                        "LongitudeDeg": "longitude_dd",
+                        "FieldElevationFt": "elevation_ft_agl",
+                        "ContCode": "continent_abbrev",
+                        "ISO2Country": "iso2_country",
+                        "ISORegionCode": "iso_region_code",
+                        "Locality": "nearest_municipality",
+                        "IATA": "iata_airport_code"
+                    }
+                },
+                "data_233.csv": {
+                    "airports _174.csv": {
+                        "Airport_ID": "id",
+                        "AirportCode": "facility_ident",
+                        "LocationType": "facility_type",
+                        "OfficialName": "site_name",
+                        "Lat": "lat_deg",
+                        "Lng": "lon_deg",
+                        "ElevationFeet": "elev_ft_msl",
+                        "Continent": "continent_code",
+                        "CountryCode": "country_iso2",
+                        "RegionCode": "admin_region_iso",
+                        "MunicipalityName": "local_municipality",
+                        "IATA_Code": "iata"
+                    },
+                    "airports _233.csv": {
+                        "Airport_ID": "id",
+                        "AirportCode": "location_ident",
+                        "LocationType": "facility_category",
+                        "OfficialName": "facility_name",
+                        "Lat": "latitude_dd",
+                        "Lng": "longitude_dd",
+                        "ElevationFeet": "elevation_ft_agl",
+                        "Continent": "continent_abbrev",
+                        "CountryCode": "iso2_country",
+                        "RegionCode": "iso_region_code",
+                        "MunicipalityName": "nearest_municipality",
+                        "IATA_Code": "iata_airport_code"
+                    }
+                },
+                "airports _174.csv": {
+                    "airports _233.csv": {
+                        "id": "id",
+                        "facility_ident": "location_ident",
+                        "facility_type": "facility_category",
+                        "site_name": "facility_name",
+                        "lat_deg": "latitude_dd",
+                        "lon_deg": "longitude_dd",
+                        "elev_ft_msl": "elevation_ft_agl",
+                        "continent_code": "continent_abbrev",
+                        "country_iso2": "iso2_country",
+                        "admin_region_iso": "iso_region_code",
+                        "local_municipality": "nearest_municipality",
+                        "iata": "iata_airport_code"
+                    }
+                }
+            }
+        },
+        "Flight": {
+            "attributes": [
+                "Flight Status",
+                "Departure Date",
+                "Arrival Airport",
+                "Airport Name",
+                "Pilot Name"
+            ],
+            "column_mappings_by_table": {
+                "Airline Dataset Updated - v2_9.csv": {
+                    "Airport Name": "Airport Name",
+                    "Departure Date": "Departure Date",
+                    "Arrival Airport": "Arrival Airport",
+                    "Pilot Name": "Pilot Name",
+                    "Flight Status": "Flight Status"
+                },
+                "Airline Dataset Updated - v2_14.csv": {
+                    "OriginAirportName": "Airport Name",
+                    "DepartDate": "Departure Date",
+                    "DestAirportCode": "Arrival Airport",
+                    "Captain": "Pilot Name",
+                    "Status": "Flight Status"
+                },
+                "Airline Dataset Updated - v2_16.csv": {
+                    "DepAirport": "Airport Name",
+                    "FlightDate": "Departure Date",
+                    "ArrAirport": "Arrival Airport",
+                    "PilotInCommand": "Pilot Name",
+                    "FlightState": "Flight Status"
+                },
+                "Airline Dataset Updated - v2_18.csv": {
+                    "AirportName": "Airport Name",
+                    "DepartureDt": "Departure Date",
+                    "ArrivalAirportCode": "Arrival Airport",
+                    "FlightPilot": "Pilot Name",
+                    "StatusFlag": "Flight Status"
+                },
+                "Airline Dataset Updated - v2_126.csv": {
+                    "Airport": "Airport Name",
+                    "DepDate": "Departure Date",
+                    "ArrAirport": "Arrival Airport",
+                    "Pilot": "Pilot Name",
+                    "FlightStatus": "Flight Status"
+                }
+            },
+            "attributes_with_values": {
+                "Airport Name": [
+                    "Rewa Airport, Chorhata, REWA",
+                    "Cap Manuel Ni\u00f1o International Airport",
+                    "Opapimiskan Lake Airport",
+                    "Sultan Bantilan Airport",
+                    "Muanda Airport",
+                    "Spartanburg Downtown Memorial Airport",
+                    "Miami University Airport",
+                    "West End Airport",
+                    "Elenak Airport",
+                    "Songea Airport",
+                    "Inyokern Airport",
+                    "Kuujjuaq Airport",
+                    "Corn Island",
+                    "Petawawa Airport",
+                    "RAF Benson"
+                ],
+                "Departure Date": [
+                    "12/25/2022",
+                    "03-06-2022",
+                    "1/19/2022",
+                    "5/29/2022",
+                    "12/20/2022",
+                    "11/16/2022",
+                    "6/13/2022",
+                    "12/24/2022",
+                    "04-02-2022",
+                    "09-10-2022",
+                    "7/30/2022",
+                    "12/20/2022",
+                    "11/13/2022",
+                    "01-08-2022",
+                    "11/21/2022"
+                ],
+                "Arrival Airport": [
+                    "REW",
+                    "CHX",
+                    "YBS",
+                    "TLI",
+                    "MNB",
+                    "SPA",
+                    "OXD",
+                    "WTD",
+                    "EAL",
+                    "RNI",
+                    "YWA",
+                    "BEX",
+                    "SGX",
+                    "IYK",
+                    "YVP"
+                ],
+                "Pilot Name": [
+                    "Felic Dunridge",
+                    "Base McLellan",
+                    "Kristofor Chisolm",
+                    "Maryl Stitwell",
+                    "Elmo Braund",
+                    "Lori Boshell",
+                    "Gabriell Doyle",
+                    "Brantley Gaw",
+                    "Merrilee Batchelar",
+                    "Marie Karleman",
+                    "Gizela Impey",
+                    "Aurelie Edward",
+                    "Alyce Sander",
+                    "Massimiliano Whyberd",
+                    "Christal Hillen"
+                ],
+                "Flight Status": [
+                    "Cancelled",
+                    "Delayed",
+                    "On Time",
+                    "Cancelled",
+                    "On Time",
+                    "Delayed",
+                    "Delayed",
+                    "Cancelled",
+                    "On Time",
+                    "Delayed",
+                    "Cancelled",
+                    "Cancelled",
+                    "Delayed",
+                    "On Time",
+                    "Cancelled"
+                ]
+            },
+            "grouped_attributes": {
+                "Airport Name": {
+                    "Airline Dataset Updated - v2_9.csv": "Airport Name",
+                    "Airline Dataset Updated - v2_14.csv": "OriginAirportName",
+                    "Airline Dataset Updated - v2_16.csv": "DepAirport",
+                    "Airline Dataset Updated - v2_18.csv": "AirportName",
+                    "Airline Dataset Updated - v2_126.csv": "Airport"
+                },
+                "Departure Date": {
+                    "Airline Dataset Updated - v2_9.csv": "Departure Date",
+                    "Airline Dataset Updated - v2_14.csv": "DepartDate",
+                    "Airline Dataset Updated - v2_16.csv": "FlightDate",
+                    "Airline Dataset Updated - v2_18.csv": "DepartureDt",
+                    "Airline Dataset Updated - v2_126.csv": "DepDate"
+                },
+                "Arrival Airport": {
+                    "Airline Dataset Updated - v2_9.csv": "Arrival Airport",
+                    "Airline Dataset Updated - v2_14.csv": "DestAirportCode",
+                    "Airline Dataset Updated - v2_16.csv": "ArrAirport",
+                    "Airline Dataset Updated - v2_18.csv": "ArrivalAirportCode",
+                    "Airline Dataset Updated - v2_126.csv": "ArrAirport"
+                },
+                "Pilot Name": {
+                    "Airline Dataset Updated - v2_9.csv": "Pilot Name",
+                    "Airline Dataset Updated - v2_14.csv": "Captain",
+                    "Airline Dataset Updated - v2_16.csv": "PilotInCommand",
+                    "Airline Dataset Updated - v2_18.csv": "FlightPilot",
+                    "Airline Dataset Updated - v2_126.csv": "Pilot"
+                },
+                "Flight Status": {
+                    "Airline Dataset Updated - v2_9.csv": "Flight Status",
+                    "Airline Dataset Updated - v2_14.csv": "Status",
+                    "Airline Dataset Updated - v2_16.csv": "FlightState",
+                    "Airline Dataset Updated - v2_18.csv": "StatusFlag",
+                    "Airline Dataset Updated - v2_126.csv": "FlightStatus"
+                }
+            },
+            "schema_matching": {
+                "Airline Dataset Updated - v2_9.csv": {
+                    "Airline Dataset Updated - v2_14.csv": {
+                        "Airport Name": "OriginAirportName",
+                        "Departure Date": "DepartDate",
+                        "Arrival Airport": "DestAirportCode",
+                        "Pilot Name": "Captain",
+                        "Flight Status": "Status"
+                    },
+                    "Airline Dataset Updated - v2_16.csv": {
+                        "Airport Name": "DepAirport",
+                        "Departure Date": "FlightDate",
+                        "Arrival Airport": "ArrAirport",
+                        "Pilot Name": "PilotInCommand",
+                        "Flight Status": "FlightState"
+                    },
+                    "Airline Dataset Updated - v2_18.csv": {
+                        "Airport Name": "AirportName",
+                        "Departure Date": "DepartureDt",
+                        "Arrival Airport": "ArrivalAirportCode",
+                        "Pilot Name": "FlightPilot",
+                        "Flight Status": "StatusFlag"
+                    },
+                    "Airline Dataset Updated - v2_126.csv": {
+                        "Airport Name": "Airport",
+                        "Departure Date": "DepDate",
+                        "Arrival Airport": "ArrAirport",
+                        "Pilot Name": "Pilot",
+                        "Flight Status": "FlightStatus"
+                    }
+                },
+                "Airline Dataset Updated - v2_14.csv": {
+                    "Airline Dataset Updated - v2_16.csv": {
+                        "OriginAirportName": "DepAirport",
+                        "DepartDate": "FlightDate",
+                        "DestAirportCode": "ArrAirport",
+                        "Captain": "PilotInCommand",
+                        "Status": "FlightState"
+                    },
+                    "Airline Dataset Updated - v2_18.csv": {
+                        "OriginAirportName": "AirportName",
+                        "DepartDate": "DepartureDt",
+                        "DestAirportCode": "ArrivalAirportCode",
+                        "Captain": "FlightPilot",
+                        "Status": "StatusFlag"
+                    },
+                    "Airline Dataset Updated - v2_126.csv": {
+                        "OriginAirportName": "Airport",
+                        "DepartDate": "DepDate",
+                        "DestAirportCode": "ArrAirport",
+                        "Captain": "Pilot",
+                        "Status": "FlightStatus"
+                    }
+                },
+                "Airline Dataset Updated - v2_16.csv": {
+                    "Airline Dataset Updated - v2_18.csv": {
+                        "DepAirport": "AirportName",
+                        "FlightDate": "DepartureDt",
+                        "ArrAirport": "ArrivalAirportCode",
+                        "PilotInCommand": "FlightPilot",
+                        "FlightState": "StatusFlag"
+                    },
+                    "Airline Dataset Updated - v2_126.csv": {
+                        "DepAirport": "Airport",
+                        "FlightDate": "DepDate",
+                        "ArrAirport": "ArrAirport",
+                        "PilotInCommand": "Pilot",
+                        "FlightState": "FlightStatus"
+                    }
+                },
+                "Airline Dataset Updated - v2_18.csv": {
+                    "Airline Dataset Updated - v2_126.csv": {
+                        "AirportName": "Airport",
+                        "DepartureDt": "DepDate",
+                        "ArrivalAirportCode": "ArrAirport",
+                        "FlightPilot": "Pilot",
+                        "StatusFlag": "FlightStatus"
+                    }
+                }
+            }
+        }
+    },
+    "integrated_schema_by_table": {},
+    "grouped_attributes": {
+        "Passenger ID": [
+            {
+                "Airline Dataset Updated - v2_9.csv": "Passenger ID"
+            },
+            {
+                "Airline Dataset Updated - v2_14.csv": "Passenger ID"
+            },
+            {
+                "Airline Dataset Updated - v2_16.csv": "Passenger ID"
+            },
+            {
+                "Airline Dataset Updated - v2_18.csv": "Passenger ID"
+            },
+            {
+                "Airline Dataset Updated - v2_126.csv": "Passenger ID"
+            }
+        ],
+        "First Name": [
+            {
+                "Airline Dataset Updated - v2_9.csv": "First Name"
+            },
+            {
+                "Airline Dataset Updated - v2_14.csv": "GivenName"
+            },
+            {
+                "Airline Dataset Updated - v2_16.csv": "FirstNm"
+            },
+            {
+                "Airline Dataset Updated - v2_18.csv": "FName"
+            },
+            {
+                "Airline Dataset Updated - v2_126.csv": "Fname"
+            }
+        ],
+        "Last Name": [
+            {
+                "Airline Dataset Updated - v2_9.csv": "Last Name"
+            },
+            {
+                "Airline Dataset Updated - v2_14.csv": "Surname"
+            },
+            {
+                "Airline Dataset Updated - v2_16.csv": "LastNm"
+            },
+            {
+                "Airline Dataset Updated - v2_18.csv": "LName"
+            },
+            {
+                "Airline Dataset Updated - v2_126.csv": "FamilyName"
+            }
+        ],
+        "Gender": [
+            {
+                "Airline Dataset Updated - v2_9.csv": "Gender"
+            },
+            {
+                "Airline Dataset Updated - v2_14.csv": "Sex"
+            },
+            {
+                "Airline Dataset Updated - v2_16.csv": "Gender"
+            },
+            {
+                "Airline Dataset Updated - v2_18.csv": "Gender"
+            },
+            {
+                "Airline Dataset Updated - v2_126.csv": "Gender"
+            }
+        ],
+        "Age": [
+            {
+                "Airline Dataset Updated - v2_9.csv": "Age"
+            },
+            {
+                "Airline Dataset Updated - v2_14.csv": "Age"
+            },
+            {
+                "Airline Dataset Updated - v2_16.csv": "Age"
+            },
+            {
+                "Airline Dataset Updated - v2_18.csv": "Age"
+            },
+            {
+                "Airline Dataset Updated - v2_126.csv": "AgeYrs"
+            }
+        ],
+        "Nationality": [
+            {
+                "Airline Dataset Updated - v2_9.csv": "Nationality"
+            },
+            {
+                "Airline Dataset Updated - v2_14.csv": "Citizenship"
+            },
+            {
+                "Airline Dataset Updated - v2_16.csv": "Nationality"
+            },
+            {
+                "Airline Dataset Updated - v2_18.csv": "Nationality"
+            },
+            {
+                "Airline Dataset Updated - v2_126.csv": "Nationality"
+            }
+        ],
+        "Airport Name": [
+            {
+                "Airline Dataset Updated - v2_9.csv": "Airport Name"
+            },
+            {
+                "Airline Dataset Updated - v2_14.csv": "OriginAirportName"
+            },
+            {
+                "Airline Dataset Updated - v2_16.csv": "DepAirport"
+            },
+            {
+                "Airline Dataset Updated - v2_18.csv": "AirportName"
+            },
+            {
+                "Airline Dataset Updated - v2_126.csv": "Airport"
+            },
+            {
+                "airports.csv": "AirportName"
+            },
+            {
+                "data_182.csv": "FacilityName"
+            },
+            {
+                "data_233.csv": "OfficialName"
+            },
+            {
+                "airports _174.csv": "site_name"
+            },
+            {
+                "airports _233.csv": "facility_name"
+            }
+        ],
+        "Airport Country Code": [
+            {
+                "Airline Dataset Updated - v2_9.csv": "Airport Country Code"
+            },
+            {
+                "Airline Dataset Updated - v2_14.csv": "OriginCountryISO2"
+            },
+            {
+                "Airline Dataset Updated - v2_16.csv": "DepCtryCode"
+            },
+            {
+                "Airline Dataset Updated - v2_18.csv": "CountryCode"
+            },
+            {
+                "Airline Dataset Updated - v2_126.csv": "ISO2"
+            },
+            {
+                "airports.csv": "Country_CodeA2"
+            },
+            {
+                "data_182.csv": "ISO2Country"
+            },
+            {
+                "data_233.csv": "CountryCode"
+            },
+            {
+                "airports _174.csv": "country_iso2"
+            },
+            {
+                "airports _233.csv": "iso2_country"
+            }
+        ],
+        "Country Name": [
+            {
+                "Airline Dataset Updated - v2_9.csv": "Country Name"
+            },
+            {
+                "Airline Dataset Updated - v2_14.csv": "OriginCountry"
+            },
+            {
+                "Airline Dataset Updated - v2_16.csv": "DepCountryName"
+            },
+            {
+                "Airline Dataset Updated - v2_18.csv": "Country"
+            },
+            {
+                "Airline Dataset Updated - v2_126.csv": "CountryName"
+            },
+            {
+                "airports.csv": "Country_Name"
+            }
+        ],
+        "Airport Continent": [
+            {
+                "Airline Dataset Updated - v2_9.csv": "Airport Continent"
+            },
+            {
+                "Airline Dataset Updated - v2_14.csv": "OriginContinentCode"
+            },
+            {
+                "Airline Dataset Updated - v2_16.csv": "DepContCode"
+            },
+            {
+                "Airline Dataset Updated - v2_18.csv": "ContinentCode"
+            },
+            {
+                "Airline Dataset Updated - v2_126.csv": "ContCode"
+            },
+            {
+                "data_182.csv": "ContCode"
+            },
+            {
+                "data_233.csv": "Continent"
+            },
+            {
+                "airports _174.csv": "continent_code"
+            },
+            {
+                "airports _233.csv": "continent_abbrev"
+            }
+        ],
+        "Continents": [
+            {
+                "Airline Dataset Updated - v2_9.csv": "Continents"
+            },
+            {
+                "Airline Dataset Updated - v2_14.csv": "OriginContinent"
+            },
+            {
+                "Airline Dataset Updated - v2_16.csv": "DepContinentName"
+            },
+            {
+                "Airline Dataset Updated - v2_18.csv": "Continent"
+            },
+            {
+                "Airline Dataset Updated - v2_126.csv": "ContinentName"
+            }
+        ],
+        "Departure Date": [
+            {
+                "Airline Dataset Updated - v2_9.csv": "Departure Date"
+            },
+            {
+                "Airline Dataset Updated - v2_14.csv": "DepartDate"
+            },
+            {
+                "Airline Dataset Updated - v2_16.csv": "FlightDate"
+            },
+            {
+                "Airline Dataset Updated - v2_18.csv": "DepartureDt"
+            },
+            {
+                "Airline Dataset Updated - v2_126.csv": "DepDate"
+            }
+        ],
+        "Arrival Airport": [
+            {
+                "Airline Dataset Updated - v2_9.csv": "Arrival Airport"
+            },
+            {
+                "Airline Dataset Updated - v2_14.csv": "DestAirportCode"
+            },
+            {
+                "Airline Dataset Updated - v2_16.csv": "ArrAirport"
+            },
+            {
+                "Airline Dataset Updated - v2_18.csv": "ArrivalAirportCode"
+            },
+            {
+                "Airline Dataset Updated - v2_126.csv": "ArrAirport"
+            }
+        ],
+        "Pilot Name": [
+            {
+                "Airline Dataset Updated - v2_9.csv": "Pilot Name"
+            },
+            {
+                "Airline Dataset Updated - v2_14.csv": "Captain"
+            },
+            {
+                "Airline Dataset Updated - v2_16.csv": "PilotInCommand"
+            },
+            {
+                "Airline Dataset Updated - v2_18.csv": "FlightPilot"
+            },
+            {
+                "Airline Dataset Updated - v2_126.csv": "Pilot"
+            }
+        ],
+        "Flight Status": [
+            {
+                "Airline Dataset Updated - v2_9.csv": "Flight Status"
+            },
+            {
+                "Airline Dataset Updated - v2_14.csv": "Status"
+            },
+            {
+                "Airline Dataset Updated - v2_16.csv": "FlightState"
+            },
+            {
+                "Airline Dataset Updated - v2_18.csv": "StatusFlag"
+            },
+            {
+                "Airline Dataset Updated - v2_126.csv": "FlightStatus"
+            }
+        ],
+        "IATA_Code": [
+            {
+                "airports.csv": "IATA"
+            },
+            {
+                "data_182.csv": "IATA"
+            },
+            {
+                "data_233.csv": "IATA_Code"
+            },
+            {
+                "airports _174.csv": "iata"
+            },
+            {
+                "airports _233.csv": "iata_airport_code"
+            }
+        ],
+        "Identifier": [
+            {
+                "airports.csv": "ICAO"
+            },
+            {
+                "data_182.csv": "SiteCode"
+            },
+            {
+                "data_233.csv": "AirportCode"
+            },
+            {
+                "airports _174.csv": "facility_ident"
+            },
+            {
+                "airports _233.csv": "location_ident"
+            }
+        ],
+        "MunicipalityName": [
+            {
+                "airports.csv": "City_Name"
+            },
+            {
+                "data_182.csv": "Locality"
+            },
+            {
+                "data_233.csv": "MunicipalityName"
+            },
+            {
+                "airports _174.csv": "local_municipality"
+            },
+            {
+                "airports _233.csv": "nearest_municipality"
+            }
+        ],
+        "Country_CodeA3": [
+            {
+                "airports.csv": "Country_CodeA3"
+            }
+        ],
+        "Latitude": [
+            {
+                "airports.csv": "GeoPointLat"
+            },
+            {
+                "data_182.csv": "LatitudeDeg"
+            },
+            {
+                "data_233.csv": "Lat"
+            },
+            {
+                "airports _174.csv": "lat_deg"
+            },
+            {
+                "airports _233.csv": "latitude_dd"
+            }
+        ],
+        "Longitude": [
+            {
+                "airports.csv": "GeoPointLong"
+            },
+            {
+                "data_182.csv": "LongitudeDeg"
+            },
+            {
+                "data_233.csv": "Lng"
+            },
+            {
+                "airports _174.csv": "lon_deg"
+            },
+            {
+                "airports _233.csv": "longitude_dd"
+            }
+        ],
+        "Airport_ID": [
+            {
+                "data_182.csv": "Airport_ID"
+            },
+            {
+                "data_233.csv": "Airport_ID"
+            },
+            {
+                "airports _174.csv": "id"
+            },
+            {
+                "airports _233.csv": "id"
+            }
+        ],
+        "Type": [
+            {
+                "data_182.csv": "AerodromeClass"
+            },
+            {
+                "data_233.csv": "LocationType"
+            },
+            {
+                "airports _174.csv": "facility_type"
+            },
+            {
+                "airports _233.csv": "facility_category"
+            }
+        ],
+        "Elevation_Ft": [
+            {
+                "data_182.csv": "FieldElevationFt"
+            },
+            {
+                "data_233.csv": "ElevationFeet"
+            },
+            {
+                "airports _174.csv": "elev_ft_msl"
+            },
+            {
+                "airports _233.csv": "elevation_ft_agl"
+            }
+        ],
+        "ISO_Region": [
+            {
+                "data_182.csv": "ISORegionCode"
+            },
+            {
+                "data_233.csv": "RegionCode"
+            },
+            {
+                "airports _174.csv": "admin_region_iso"
+            },
+            {
+                "airports _233.csv": "iso_region_code"
+            }
+        ]
+    },
+    "schema_matching": {
+        "Airline Dataset Updated - v2_9.csv": {
+            "Airline Dataset Updated - v2_14.csv": {
+                "Passenger ID": "Passenger ID",
+                "First Name": "GivenName",
+                "Last Name": "Surname",
+                "Gender": "Sex",
+                "Age": "Age",
+                "Nationality": "Citizenship",
+                "Airport Name": "OriginAirportName",
+                "Airport Country Code": "OriginCountryISO2",
+                "Country Name": "OriginCountry",
+                "Airport Continent": "OriginContinentCode",
+                "Continents": "OriginContinent",
+                "Departure Date": "DepartDate",
+                "Arrival Airport": "DestAirportCode",
+                "Pilot Name": "Captain",
+                "Flight Status": "Status"
+            },
+            "Airline Dataset Updated - v2_16.csv": {
+                "Passenger ID": "Passenger ID",
+                "First Name": "FirstNm",
+                "Last Name": "LastNm",
+                "Gender": "Gender",
+                "Age": "Age",
+                "Nationality": "Nationality",
+                "Airport Name": "DepAirport",
+                "Airport Country Code": "DepCtryCode",
+                "Country Name": "DepCountryName",
+                "Airport Continent": "DepContCode",
+                "Continents": "DepContinentName",
+                "Departure Date": "FlightDate",
+                "Arrival Airport": "ArrAirport",
+                "Pilot Name": "PilotInCommand",
+                "Flight Status": "FlightState"
+            },
+            "Airline Dataset Updated - v2_18.csv": {
+                "Passenger ID": "Passenger ID",
+                "First Name": "FName",
+                "Last Name": "LName",
+                "Gender": "Gender",
+                "Age": "Age",
+                "Nationality": "Nationality",
+                "Airport Name": "AirportName",
+                "Airport Country Code": "CountryCode",
+                "Country Name": "Country",
+                "Airport Continent": "ContinentCode",
+                "Continents": "Continent",
+                "Departure Date": "DepartureDt",
+                "Arrival Airport": "ArrivalAirportCode",
+                "Pilot Name": "FlightPilot",
+                "Flight Status": "StatusFlag"
+            },
+            "Airline Dataset Updated - v2_126.csv": {
+                "Passenger ID": "Passenger ID",
+                "First Name": "Fname",
+                "Last Name": "FamilyName",
+                "Gender": "Gender",
+                "Age": "AgeYrs",
+                "Nationality": "Nationality",
+                "Airport Name": "Airport",
+                "Airport Country Code": "ISO2",
+                "Country Name": "CountryName",
+                "Airport Continent": "ContCode",
+                "Continents": "ContinentName",
+                "Departure Date": "DepDate",
+                "Arrival Airport": "ArrAirport",
+                "Pilot Name": "Pilot",
+                "Flight Status": "FlightStatus"
+            },
+            "airports.csv": {
+                "Airport Name": "AirportName",
+                "Airport Country Code": "Country_CodeA2",
+                "Country Name": "Country_Name"
+            },
+            "data_182.csv": {
+                "Airport Name": "FacilityName",
+                "Airport Country Code": "ISO2Country",
+                "Airport Continent": "ContCode"
+            },
+            "data_233.csv": {
+                "Airport Name": "OfficialName",
+                "Airport Country Code": "CountryCode",
+                "Airport Continent": "Continent"
+            },
+            "airports _174.csv": {
+                "Airport Name": "site_name",
+                "Airport Country Code": "country_iso2",
+                "Airport Continent": "continent_code"
+            },
+            "airports _233.csv": {
+                "Airport Name": "facility_name",
+                "Airport Country Code": "iso2_country",
+                "Airport Continent": "continent_abbrev"
+            }
+        },
+        "Airline Dataset Updated - v2_14.csv": {
+            "Airline Dataset Updated - v2_16.csv": {
+                "Passenger ID": "Passenger ID",
+                "GivenName": "FirstNm",
+                "Surname": "LastNm",
+                "Sex": "Gender",
+                "Age": "Age",
+                "Citizenship": "Nationality",
+                "OriginAirportName": "DepAirport",
+                "OriginCountryISO2": "DepCtryCode",
+                "OriginCountry": "DepCountryName",
+                "OriginContinentCode": "DepContCode",
+                "OriginContinent": "DepContinentName",
+                "DepartDate": "FlightDate",
+                "DestAirportCode": "ArrAirport",
+                "Captain": "PilotInCommand",
+                "Status": "FlightState"
+            },
+            "Airline Dataset Updated - v2_18.csv": {
+                "Passenger ID": "Passenger ID",
+                "GivenName": "FName",
+                "Surname": "LName",
+                "Sex": "Gender",
+                "Age": "Age",
+                "Citizenship": "Nationality",
+                "OriginAirportName": "AirportName",
+                "OriginCountryISO2": "CountryCode",
+                "OriginCountry": "Country",
+                "OriginContinentCode": "ContinentCode",
+                "OriginContinent": "Continent",
+                "DepartDate": "DepartureDt",
+                "DestAirportCode": "ArrivalAirportCode",
+                "Captain": "FlightPilot",
+                "Status": "StatusFlag"
+            },
+            "Airline Dataset Updated - v2_126.csv": {
+                "Passenger ID": "Passenger ID",
+                "GivenName": "Fname",
+                "Surname": "FamilyName",
+                "Sex": "Gender",
+                "Age": "AgeYrs",
+                "Citizenship": "Nationality",
+                "OriginAirportName": "Airport",
+                "OriginCountryISO2": "ISO2",
+                "OriginCountry": "CountryName",
+                "OriginContinentCode": "ContCode",
+                "OriginContinent": "ContinentName",
+                "DepartDate": "DepDate",
+                "DestAirportCode": "ArrAirport",
+                "Captain": "Pilot",
+                "Status": "FlightStatus"
+            },
+            "airports.csv": {
+                "OriginAirportName": "AirportName",
+                "OriginCountryISO2": "Country_CodeA2",
+                "OriginCountry": "Country_Name"
+            },
+            "data_182.csv": {
+                "OriginAirportName": "FacilityName",
+                "OriginCountryISO2": "ISO2Country",
+                "OriginContinentCode": "ContCode"
+            },
+            "data_233.csv": {
+                "OriginAirportName": "OfficialName",
+                "OriginCountryISO2": "CountryCode",
+                "OriginContinentCode": "Continent"
+            },
+            "airports _174.csv": {
+                "OriginAirportName": "site_name",
+                "OriginCountryISO2": "country_iso2",
+                "OriginContinentCode": "continent_code"
+            },
+            "airports _233.csv": {
+                "OriginAirportName": "facility_name",
+                "OriginCountryISO2": "iso2_country",
+                "OriginContinentCode": "continent_abbrev"
+            }
+        },
+        "Airline Dataset Updated - v2_16.csv": {
+            "Airline Dataset Updated - v2_18.csv": {
+                "Passenger ID": "Passenger ID",
+                "FirstNm": "FName",
+                "LastNm": "LName",
+                "Gender": "Gender",
+                "Age": "Age",
+                "Nationality": "Nationality",
+                "DepAirport": "AirportName",
+                "DepCtryCode": "CountryCode",
+                "DepCountryName": "Country",
+                "DepContCode": "ContinentCode",
+                "DepContinentName": "Continent",
+                "FlightDate": "DepartureDt",
+                "ArrAirport": "ArrivalAirportCode",
+                "PilotInCommand": "FlightPilot",
+                "FlightState": "StatusFlag"
+            },
+            "Airline Dataset Updated - v2_126.csv": {
+                "Passenger ID": "Passenger ID",
+                "FirstNm": "Fname",
+                "LastNm": "FamilyName",
+                "Gender": "Gender",
+                "Age": "AgeYrs",
+                "Nationality": "Nationality",
+                "DepAirport": "Airport",
+                "DepCtryCode": "ISO2",
+                "DepCountryName": "CountryName",
+                "DepContCode": "ContCode",
+                "DepContinentName": "ContinentName",
+                "FlightDate": "DepDate",
+                "ArrAirport": "ArrAirport",
+                "PilotInCommand": "Pilot",
+                "FlightState": "FlightStatus"
+            },
+            "airports.csv": {
+                "DepAirport": "AirportName",
+                "DepCtryCode": "Country_CodeA2",
+                "DepCountryName": "Country_Name"
+            },
+            "data_182.csv": {
+                "DepAirport": "FacilityName",
+                "DepCtryCode": "ISO2Country",
+                "DepContCode": "ContCode"
+            },
+            "data_233.csv": {
+                "DepAirport": "OfficialName",
+                "DepCtryCode": "CountryCode",
+                "DepContCode": "Continent"
+            },
+            "airports _174.csv": {
+                "DepAirport": "site_name",
+                "DepCtryCode": "country_iso2",
+                "DepContCode": "continent_code"
+            },
+            "airports _233.csv": {
+                "DepAirport": "facility_name",
+                "DepCtryCode": "iso2_country",
+                "DepContCode": "continent_abbrev"
+            }
+        },
+        "Airline Dataset Updated - v2_18.csv": {
+            "Airline Dataset Updated - v2_126.csv": {
+                "Passenger ID": "Passenger ID",
+                "FName": "Fname",
+                "LName": "FamilyName",
+                "Gender": "Gender",
+                "Age": "AgeYrs",
+                "Nationality": "Nationality",
+                "AirportName": "Airport",
+                "CountryCode": "ISO2",
+                "Country": "CountryName",
+                "ContinentCode": "ContCode",
+                "Continent": "ContinentName",
+                "DepartureDt": "DepDate",
+                "ArrivalAirportCode": "ArrAirport",
+                "FlightPilot": "Pilot",
+                "StatusFlag": "FlightStatus"
+            },
+            "airports.csv": {
+                "AirportName": "AirportName",
+                "CountryCode": "Country_CodeA2",
+                "Country": "Country_Name"
+            },
+            "data_182.csv": {
+                "AirportName": "FacilityName",
+                "CountryCode": "ISO2Country",
+                "ContinentCode": "ContCode"
+            },
+            "data_233.csv": {
+                "AirportName": "OfficialName",
+                "CountryCode": "CountryCode",
+                "ContinentCode": "Continent"
+            },
+            "airports _174.csv": {
+                "AirportName": "site_name",
+                "CountryCode": "country_iso2",
+                "ContinentCode": "continent_code"
+            },
+            "airports _233.csv": {
+                "AirportName": "facility_name",
+                "CountryCode": "iso2_country",
+                "ContinentCode": "continent_abbrev"
+            }
+        },
+        "Airline Dataset Updated - v2_126.csv": {
+            "airports.csv": {
+                "Airport": "AirportName",
+                "ISO2": "Country_CodeA2",
+                "CountryName": "Country_Name"
+            },
+            "data_182.csv": {
+                "Airport": "FacilityName",
+                "ISO2": "ISO2Country",
+                "ContCode": "ContCode"
+            },
+            "data_233.csv": {
+                "Airport": "OfficialName",
+                "ISO2": "CountryCode",
+                "ContCode": "Continent"
+            },
+            "airports _174.csv": {
+                "Airport": "site_name",
+                "ISO2": "country_iso2",
+                "ContCode": "continent_code"
+            },
+            "airports _233.csv": {
+                "Airport": "facility_name",
+                "ISO2": "iso2_country",
+                "ContCode": "continent_abbrev"
+            }
+        },
+        "airports.csv": {
+            "data_182.csv": {
+                "AirportName": "FacilityName",
+                "IATA": "IATA",
+                "ICAO": "SiteCode",
+                "City_Name": "Locality",
+                "Country_CodeA2": "ISO2Country",
+                "GeoPointLat": "LatitudeDeg",
+                "GeoPointLong": "LongitudeDeg"
+            },
+            "data_233.csv": {
+                "AirportName": "OfficialName",
+                "IATA": "IATA_Code",
+                "ICAO": "AirportCode",
+                "City_Name": "MunicipalityName",
+                "Country_CodeA2": "CountryCode",
+                "GeoPointLat": "Lat",
+                "GeoPointLong": "Lng"
+            },
+            "airports _174.csv": {
+                "AirportName": "site_name",
+                "IATA": "iata",
+                "ICAO": "facility_ident",
+                "City_Name": "local_municipality",
+                "Country_CodeA2": "country_iso2",
+                "GeoPointLat": "lat_deg",
+                "GeoPointLong": "lon_deg"
+            },
+            "airports _233.csv": {
+                "AirportName": "facility_name",
+                "IATA": "iata_airport_code",
+                "ICAO": "location_ident",
+                "City_Name": "nearest_municipality",
+                "Country_CodeA2": "iso2_country",
+                "GeoPointLat": "latitude_dd",
+                "GeoPointLong": "longitude_dd"
+            }
+        },
+        "data_182.csv": {
+            "data_233.csv": {
+                "Airport_ID": "Airport_ID",
+                "SiteCode": "AirportCode",
+                "AerodromeClass": "LocationType",
+                "FacilityName": "OfficialName",
+                "LatitudeDeg": "Lat",
+                "LongitudeDeg": "Lng",
+                "FieldElevationFt": "ElevationFeet",
+                "ContCode": "Continent",
+                "ISO2Country": "CountryCode",
+                "ISORegionCode": "RegionCode",
+                "Locality": "MunicipalityName",
+                "IATA": "IATA_Code"
+            },
+            "airports _174.csv": {
+                "Airport_ID": "id",
+                "SiteCode": "facility_ident",
+                "AerodromeClass": "facility_type",
+                "FacilityName": "site_name",
+                "LatitudeDeg": "lat_deg",
+                "LongitudeDeg": "lon_deg",
+                "FieldElevationFt": "elev_ft_msl",
+                "ContCode": "continent_code",
+                "ISO2Country": "country_iso2",
+                "ISORegionCode": "admin_region_iso",
+                "Locality": "local_municipality",
+                "IATA": "iata"
+            },
+            "airports _233.csv": {
+                "Airport_ID": "id",
+                "SiteCode": "location_ident",
+                "AerodromeClass": "facility_category",
+                "FacilityName": "facility_name",
+                "LatitudeDeg": "latitude_dd",
+                "LongitudeDeg": "longitude_dd",
+                "FieldElevationFt": "elevation_ft_agl",
+                "ContCode": "continent_abbrev",
+                "ISO2Country": "iso2_country",
+                "ISORegionCode": "iso_region_code",
+                "Locality": "nearest_municipality",
+                "IATA": "iata_airport_code"
+            }
+        },
+        "data_233.csv": {
+            "airports _174.csv": {
+                "Airport_ID": "id",
+                "AirportCode": "facility_ident",
+                "LocationType": "facility_type",
+                "OfficialName": "site_name",
+                "Lat": "lat_deg",
+                "Lng": "lon_deg",
+                "ElevationFeet": "elev_ft_msl",
+                "Continent": "continent_code",
+                "CountryCode": "country_iso2",
+                "RegionCode": "admin_region_iso",
+                "MunicipalityName": "local_municipality",
+                "IATA_Code": "iata"
+            },
+            "airports _233.csv": {
+                "Airport_ID": "id",
+                "AirportCode": "location_ident",
+                "LocationType": "facility_category",
+                "OfficialName": "facility_name",
+                "Lat": "latitude_dd",
+                "Lng": "longitude_dd",
+                "ElevationFeet": "elevation_ft_agl",
+                "Continent": "continent_abbrev",
+                "CountryCode": "iso2_country",
+                "RegionCode": "iso_region_code",
+                "MunicipalityName": "nearest_municipality",
+                "IATA_Code": "iata_airport_code"
+            }
+        },
+        "airports _174.csv": {
+            "airports _233.csv": {
+                "id": "id",
+                "facility_ident": "location_ident",
+                "facility_type": "facility_category",
+                "site_name": "facility_name",
+                "lat_deg": "latitude_dd",
+                "lon_deg": "longitude_dd",
+                "elev_ft_msl": "elevation_ft_agl",
+                "continent_code": "continent_abbrev",
+                "country_iso2": "iso2_country",
+                "admin_region_iso": "iso_region_code",
+                "local_municipality": "nearest_municipality",
+                "iata": "iata_airport_code"
+            }
+        },
+        "airports _233.csv": {}
+    }
+}

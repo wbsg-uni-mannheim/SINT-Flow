@@ -1,0 +1,51 @@
+{
+    "integrated_schema_by_entity": {
+        "Car_Listing": {
+            "attributes": [
+                "listing_id",
+                "Car_Name",
+                "Make",
+                "Year",
+                "Distance",
+                "Owner",
+                "Fuel_Type",
+                "Location",
+                "Transmission",
+                "Type",
+                "Selling_Price",
+                "Present_Price",
+                "Seller_Type",
+                "Engine Capacity(CC)"
+            ],
+            "foreign_keys": {}
+        }
+    },
+    "integrated_schema_by_table": {
+        "Car_Listing": {
+            "attributes": [
+                "listing_id",
+                "Car_id",
+                "Year",
+                "Distance",
+                "Owner",
+                "Fuel_Type",
+                "Location",
+                "Transmission",
+                "Selling_Price",
+                "Present_Price",
+                "Seller_Type"
+            ],
+            "foreign_keys": {
+                "Car_id": {"Car": "Car_id"}
+            }
+        },
+        "Car": {
+            "attributes": [
+                "Car_id",
+                "Car_Name",
+                "Type"
+            ],
+            "foreign_keys": {}
+        }
+    }
+}

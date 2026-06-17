@@ -1,0 +1,318 @@
+{
+    "Qwen/Qwen3.6-27B_long-prompt-updated-4_False_schema_matching_phase->schema_integration_phase->detect_tables_phase->final_integration_phase": {
+        "detect_tables_phase_entity": {
+            "recall": 0.9052300000000001,
+            "f1": 0.8215399999999999,
+            "precision": 0.8015000000000001
+        },
+        "detect_tables_phase_attributes": {
+            "recall": 0.7614599999999999,
+            "f1": 0.77935,
+            "precision": 0.7995500000000001
+        },
+        "schema_matching_phase_removed": {
+            "recall": 0.9501899999999999,
+            "f1": 0.95401,
+            "precision": 0.95856
+        },
+        "grouping_phase": {},
+        "schema_integration_phase": {
+            "recall": 0.9320700000000001,
+            "f1": 0.9320700000000001,
+            "precision": 0.9320700000000001
+        },
+        "final_integration_entity": {
+            "recall": 0.88889,
+            "f1": 0.85334,
+            "precision": 0.8916700000000001
+        },
+        "final_integration_attributes": {
+            "recall": 0.69578,
+            "f1": 0.7201899999999999,
+            "precision": 0.7525100000000001
+        },
+        "final_integration_mappings": {
+            "recall": 0.6816199999999999,
+            "f1": 0.70771,
+            "precision": 0.7394700000000001
+        }
+    },
+    "Qwen/Qwen3.6-27B_long-prompt-updated-4_True_detect_tables_phase->grouping_phase->schema_integration_phase->final_integration_phase": {
+        "detect_tables_phase_entity": {
+            "recall": 0.8895900000000001,
+            "f1": 0.8946400000000001,
+            "precision": 0.9183499999999999
+        },
+        "detect_tables_phase_attributes": {
+            "recall": 0.83334,
+            "f1": 0.84907,
+            "precision": 0.86615
+        },
+        "schema_matching_phase_removed": {},
+        "grouping_phase": {
+            "recall": 0.85344,
+            "f1": 0.8570399999999999,
+            "precision": 0.8791800000000001
+        },
+        "schema_integration_phase": {
+            "recall": 0.7503599999999999,
+            "f1": 0.76478,
+            "precision": 0.7804
+        },
+        "final_integration_entity": {
+            "recall": 1.0,
+            "f1": 0.9333400000000001,
+            "precision": 0.9
+        },
+        "final_integration_attributes": {
+            "recall": 0.87072,
+            "f1": 0.75777,
+            "precision": 0.69445
+        },
+        "final_integration_mappings": {
+            "recall": 0.72375,
+            "f1": 0.7583300000000001,
+            "precision": 0.80417
+        }
+    },
+    "Qwen/Qwen3.6-27B_long-prompt-updated-4_True_detect_tables_phase->schema_matching_phase->grouping_phase->schema_integration_phase->final_integration_phase": {
+        "detect_tables_phase_entity": {
+            "recall": 0.88676,
+            "f1": 0.91056,
+            "precision": 0.9541899999999999
+        },
+        "detect_tables_phase_attributes": {
+            "recall": 0.87396,
+            "f1": 0.8899000000000001,
+            "precision": 0.90718
+        },
+        "schema_matching_phase_removed": {
+            "recall": 0.94207,
+            "f1": 0.9417199999999999,
+            "precision": 0.9422
+        },
+        "grouping_phase": {
+            "recall": 0.82162,
+            "f1": 0.8418300000000001,
+            "precision": 0.88139
+        },
+        "schema_integration_phase": {
+            "recall": 0.7521799999999998,
+            "f1": 0.7668,
+            "precision": 0.78266
+        },
+        "final_integration_entity": {
+            "recall": 0.93333,
+            "f1": 0.8833400000000001,
+            "precision": 0.9
+        },
+        "final_integration_attributes": {
+            "recall": 0.80467,
+            "f1": 0.79927,
+            "precision": 0.82061
+        },
+        "final_integration_mappings": {
+            "recall": 0.70281,
+            "f1": 0.7105899999999999,
+            "precision": 0.72544
+        }
+    },
+    "Qwen/Qwen3.6-27B_long-prompt-updated-4_True_schema_matching_phase->schema_integration_phase->detect_tables_phase->final_integration_phase": {
+        "detect_tables_phase_entity": {
+            "recall": 0.975,
+            "f1": 0.9023899999999999,
+            "precision": 0.8528100000000001
+        },
+        "detect_tables_phase_attributes": {
+            "recall": 0.8325099999999999,
+            "f1": 0.8495100000000001,
+            "precision": 0.8691700000000001
+        },
+        "schema_matching_phase_removed": {
+            "recall": 0.9479000000000001,
+            "f1": 0.95346,
+            "precision": 0.95957
+        },
+        "grouping_phase": {},
+        "schema_integration_phase": {
+            "recall": 0.9334,
+            "f1": 0.9334,
+            "precision": 0.9334
+        },
+        "final_integration_entity": {
+            "recall": 0.96667,
+            "f1": 0.96571,
+            "precision": 0.975
+        },
+        "final_integration_attributes": {
+            "recall": 0.81342,
+            "f1": 0.8483600000000001,
+            "precision": 0.8922000000000001
+        },
+        "final_integration_mappings": {
+            "recall": 0.8070499999999999,
+            "f1": 0.83489,
+            "precision": 0.86782
+        }
+    },
+    "gpt-5.2-2025-12-11_long-prompt-updated-4_False_detect_tables_phase->schema_matching_phase->grouping_phase->schema_integration_phase->final_integration_phase": {
+        "detect_tables_phase_entity": {
+            "recall": 0.8905899999999999,
+            "f1": 0.9335400000000001,
+            "precision": 0.9872099999999999
+        },
+        "detect_tables_phase_attributes": {
+            "recall": 0.8972199999999999,
+            "f1": 0.9061199999999999,
+            "precision": 0.9154300000000001
+        },
+        "schema_matching_phase_removed": {
+            "recall": 0.95418,
+            "f1": 0.96036,
+            "precision": 0.9675800000000001
+        },
+        "grouping_phase": {
+            "recall": 0.8620099999999999,
+            "f1": 0.90159,
+            "precision": 0.9506500000000001
+        },
+        "schema_integration_phase": {
+            "recall": 0.84573,
+            "f1": 0.85444,
+            "precision": 0.8636000000000001
+        },
+        "final_integration_entity": {
+            "recall": 0.9777799999999999,
+            "f1": 0.97381,
+            "precision": 0.9833400000000001
+        },
+        "final_integration_attributes": {
+            "recall": 0.8396100000000001,
+            "f1": 0.85152,
+            "precision": 0.86717
+        },
+        "final_integration_mappings": {
+            "recall": 0.78761,
+            "f1": 0.81326,
+            "precision": 0.8442999999999999
+        }
+    },
+    "gpt-5.2-2025-12-11_long-prompt-updated-4_True_detect_tables_phase->grouping_phase->schema_integration_phase->final_integration_phase": {
+        "detect_tables_phase_entity": {
+            "recall": 0.9167799999999999,
+            "f1": 0.94948,
+            "precision": 0.9909100000000001
+        },
+        "detect_tables_phase_attributes": {
+            "recall": 0.9104899999999999,
+            "f1": 0.92264,
+            "precision": 0.9356899999999999
+        },
+        "schema_matching_phase_removed": {},
+        "grouping_phase": {
+            "recall": 0.83979,
+            "f1": 0.86628,
+            "precision": 0.89978
+        },
+        "schema_integration_phase": {
+            "recall": 0.77931,
+            "f1": 0.78913,
+            "precision": 0.79963
+        },
+        "final_integration_entity": {
+            "recall": 1.0,
+            "f1": 0.9380900000000001,
+            "precision": 0.9
+        },
+        "final_integration_attributes": {
+            "recall": 0.92028,
+            "f1": 0.7910199999999998,
+            "precision": 0.7083200000000001
+        },
+        "final_integration_mappings": {
+            "recall": 0.73314,
+            "f1": 0.7569299999999999,
+            "precision": 0.78598
+        }
+    },
+    "gpt-5.2-2025-12-11_long-prompt-updated-4_True_detect_tables_phase->schema_matching_phase->grouping_phase->schema_integration_phase->final_integration_phase": {
+        "detect_tables_phase_entity": {
+            "recall": 0.90351,
+            "f1": 0.9412900000000001,
+            "precision": 0.9850300000000001
+        },
+        "detect_tables_phase_attributes": {
+            "recall": 0.9069,
+            "f1": 0.9153300000000002,
+            "precision": 0.92409
+        },
+        "schema_matching_phase_removed": {
+            "recall": 0.9466300000000001,
+            "f1": 0.94946,
+            "precision": 0.9528399999999998
+        },
+        "grouping_phase": {
+            "recall": 0.8599500000000001,
+            "f1": 0.89399,
+            "precision": 0.9332900000000001
+        },
+        "schema_integration_phase": {
+            "recall": 0.8431999999999998,
+            "f1": 0.85078,
+            "precision": 0.8586199999999999
+        },
+        "final_integration_entity": {
+            "recall": 1.0,
+            "f1": 0.9550000000000001,
+            "precision": 0.92667
+        },
+        "final_integration_attributes": {
+            "recall": 0.87485,
+            "f1": 0.86745,
+            "precision": 0.86873
+        },
+        "final_integration_mappings": {
+            "recall": 0.8204699999999999,
+            "f1": 0.84001,
+            "precision": 0.8642100000000001
+        }
+    },
+    "gpt-5.2-2025-12-11_long-prompt-updated-4_True_schema_matching_phase->schema_integration_phase->detect_tables_phase->final_integration_phase": {
+        "detect_tables_phase_entity": {
+            "recall": 0.9118999999999999,
+            "f1": 0.9033899999999999,
+            "precision": 0.9270400000000001
+        },
+        "detect_tables_phase_attributes": {
+            "recall": 0.8635400000000001,
+            "f1": 0.8781099999999998,
+            "precision": 0.8947499999999999
+        },
+        "schema_matching_phase_removed": {
+            "recall": 0.95609,
+            "f1": 0.96273,
+            "precision": 0.97044
+        },
+        "grouping_phase": {},
+        "schema_integration_phase": {
+            "recall": 0.9424699999999999,
+            "f1": 0.9424699999999999,
+            "precision": 0.9424699999999999
+        },
+        "final_integration_entity": {
+            "recall": 0.88333,
+            "f1": 0.9166700000000001,
+            "precision": 1.0
+        },
+        "final_integration_attributes": {
+            "recall": 0.80798,
+            "f1": 0.8177199999999999,
+            "precision": 0.83116
+        },
+        "final_integration_mappings": {
+            "recall": 0.7942400000000001,
+            "f1": 0.8085600000000002,
+            "precision": 0.82652
+        }
+    }
+}

@@ -1,0 +1,416 @@
+{
+    "schema_by_entity": {
+        "goby_205.csv": {
+            "Event": {
+                "attributes": ["showName", "type", "sMoreInfo", "sSynopsis", "closes", "more", "opens", "sTicketPhone", "sTicketPrice", "theater"],
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["theater", "sTheaterAddress", "sTheaterCity", "sTheaterState", "sTheaterZip"],
+                "table_group": "Venue"
+            }
+        },
+        "goby_6409.csv": {
+            "Event": {
+                "attributes": ["showName", "type", "sSynopsis", "sTicketPrice", "sTicketPhone", "theater", "more", "opens", "close", "sMoreInfo"],
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["theater", "sTheaterCity", "sTheaterAddress", "sTheaterState", "sTheaterZip"],
+                "table_group": "Venue"
+            }
+        },
+        "goby_7096.csv": {
+            "Event": {
+                "attributes": ["showName", "type", "sTicketPhone", "more", "sMoreInfo", "endDate", "startDate", "sTicketPrice", "theater", "sSynopsis"],
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["theater", "sTheaterCity", "sTheaterAddress", "sTheaterState", "sTheaterZip"],
+                "table_group": "Venue"
+            }
+        },
+        "goby_11193.csv": {
+            "Event": {
+                "attributes": ["showName", "type", "sTicketPrice", "close", "opens", "theater", "more", "sMoreInfo", "fullDates", "sSynopsis", "sTicketPhone"],
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["theater", "sTheaterCity", "sTheaterAddress", "sTheaterState", "sTheaterZip"],
+                "table_group": "Venue"
+            }
+        },
+        "goby_2279.csv": {
+            "Event": {
+                "attributes": ["title", "ages", "artists", "eventDescription", "date", "venue", "eventImage", "ticketPrice", "moreInfo", "showTime", "doorTime", "website", "phone"],
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["venue", "region", "address", "state", "zip"],
+                "table_group": "Venue"
+            }
+        },
+        "goby_5073.csv": {
+            "Event": {
+                "attributes": ["name", "subCategory", "picture", "showTime", "cost", "moreDetailURL", "showDates", "venue", "eventURL", "description", "shortDescription", "phone"],
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["venue", "zip", "state", "city", "address", "location", "locationName"],
+                "table_group": "Venue"
+            }
+        },
+        "goby_8831.csv": {
+            "Event": {
+                "attributes": ["name", "subCategory", "venue", "cost", "moreDetailURL", "showTime", "description", "picture", "eventURL", "phone"],
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["venue", "state", "city", "address", "location", "zip", "locationName"],
+                "table_group": "Venue"
+            }
+        },
+        "goby_8940.csv": {
+            "Event": {
+                "attributes": ["name", "subCategory", "venue", "showDates", "cost", "showTime", "description", "picture", "eventURL", "moreDetailURL", "phone"],
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["venue", "state", "city", "address", "location", "zip", "locationName"],
+                "table_group": "Venue"
+            }
+        },
+        "goby_9397.csv": {
+            "Event": {
+                "attributes": ["name", "endDate", "description", "email", "businessURL", "startDate", "picture", "moreDetailURL", "venue", "admission"],
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["venue", "state", "longitude", "streetAddress", "city", "latitude", "zipCode"],
+                "table_group": "Venue"
+            }
+        },
+        "goby_6306.csv": {
+            "Event": {
+                "attributes": ["to", "description", "venue", "type", "image", "website", "title", "ticketPhone", "moreInfoLink", "from", "times", "tickets"],
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["venue", "city", "address", "state", "zipcode"],
+                "table_group": "Venue"
+            }
+        },
+        "goby_696.csv": {
+            "Event": {
+                "attributes": ["admission", "category", "date", "description", "moreInfoLink", "phone", "photo", "time", "title", "url", "venue"],
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["venue", "city", "state", "street", "zipcode"],
+                "table_group": "Venue"
+            }
+        },
+        "goby_1381.csv": {
+            "Event": {
+                "attributes": ["address", "admission", "category", "date", "description", "name", "time", "website"],
+                "table_group": "Event"
+            }
+        },
+        "goby_1450.csv": {
+            "Event": {
+                "attributes": ["city", "dateFrom", "details", "eventName", "image", "length", "moreInfo", "price", "state", "webSite"],
+                "table_group": "Event"
+            }
+        },
+        "goby_2238.csv": {
+            "Event": {
+                "attributes": ["description", "endDate", "endTime", "moreInfoLink", "startDate", "title", "venueID"],
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["venue", "venueAddress", "venueCity", "venueCountry", "venueID", "venueState", "venueZip", "latitude", "longitud"],
+                "table_group": "Venue"
+            }
+        },
+        "goby_2461.csv": {
+            "Event": {
+                "attributes": ["category", "date", "description", "image", "moreInfo", "name", "time", "venue"],
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["city", "lat", "lon", "state", "venue", "zip"],
+                "table_group": "Venue"
+            }
+        }
+    },
+    "schema_by_normalization": {
+        "goby_205.csv": {
+            "Event": {
+                "attributes": ["showName", "type"],
+                "primary_key": ["showName"],
+                "foreign_keys": {},
+                "table_group": "Event"
+            },
+            "EventScreening": {
+                "attributes": ["sMoreInfo", "sSynopsis", "closes", "more", "opens", "sTicketPhone", "sTicketPrice", "showName", "theater"],
+                "primary_key": ["showName", "theater"],
+                "foreign_keys": {
+                    "showName": {"Event": "showName"},
+                    "theater": {"Venue": "theater"}
+                },
+                "table_group": "EventScreening"
+            },
+            "Venue": {
+                "attributes": ["sTheaterAddress", "sTheaterCity", "sTheaterState", "sTheaterZip", "theater"],
+                "primary_key": ["theater"],
+                "foreign_keys": {},
+                "table_group": "Venue"
+            }
+        },
+        "goby_6409.csv": {
+            "Event": {
+                "attributes": ["showName", "type"],
+                "primary_key": ["showName"],
+                "foreign_keys": {},
+                "table_group": "Event"
+            },
+            "EventScreening": {
+                "attributes": ["sSynopsis", "sTicketPrice", "sTicketPhone", "showName", "theater", "more", "opens", "close", "sMoreInfo"],
+                "foreign_keys": {
+                    "showName": {"Event": "showName"},
+                    "theater": {"Venue": "theater"}
+                },
+                "primary_key": ["showName", "theater", "sTicketPrice"],
+                "table_group": "EventScreening"
+            },
+            "Venue": {
+                "attributes": ["sTheaterCity", "sTheaterAddress", "sTheaterState", "sTheaterZip", "theater"],
+                "primary_key": ["theater"],
+                "foreign_keys": {},
+                "table_group": "Venue"
+            }
+        },
+        "goby_7096.csv": {
+            "Event": {
+                "attributes": ["showName", "type"],
+                "primary_key": ["showName"],
+                "foreign_keys": {},
+                "table_group": "Event"
+            },
+            "EventScreening": {
+                "attributes": ["sTicketPhone", "more", "sMoreInfo", "endDate", "startDate", "sTicketPrice", "theater", "showName", "sSynopsis"],
+                "foreign_keys": {
+                    "showName": {"Event": "showName"},
+                    "theater": {"Venue": "theater"}
+                },
+                "primary_key": ["showName", "theater", "startDate"],
+                "table_group": "EventScreening"
+            },
+            "Venue": {
+                "attributes": ["sTheaterCity", "sTheaterAddress", "sTheaterState", "sTheaterZip", "theater"],
+                "primary_key": ["theater"],
+                "foreign_keys": {},
+                "table_group": "Venue"
+            }
+        },
+        "goby_11193.csv": {
+            "Event": {
+                "attributes": ["showName", "type"],
+                "primary_key": ["showName"],
+                "foreign_keys": {},
+                "table_group": "Event"
+            },
+            "EventScreening": {
+                "attributes": ["sTicketPrice", "close", "opens", "theater", "more", "sMoreInfo", "showName", "fullDates", "sSynopsis", "sTicketPhone"],
+                "foreign_keys": {
+                    "showName": {"Event": "showName"},
+                    "theater": {"Venue": "theater"}
+                },
+                "primary_key": ["showName", "theater"],
+                "table_group": "EventScreening"
+            },
+            "Venue": {
+                "attributes": ["sTheaterCity", "sTheaterAddress", "sTheaterState", "sTheaterZip", "theater"],
+                "primary_key": ["theater"],
+                "foreign_keys": {},
+                "table_group": "Venue"
+            }
+        },
+        "goby_2279.csv": {
+            "Event": {
+                "attributes": ["title", "ages"],
+                "foreign_keys": {},
+                "primary_key": ["title"],
+                "table_group": "Event"
+            },
+            "EventScreening": {
+                "attributes": ["eventDescription", "date", "venue", "eventImage", "title", "ticketPrice", "moreInfo", "showTime", "doorTime", "website", "phone"],
+                "foreign_keys": {
+                    "title": {"Event": "title"},
+                    "venue": {"Venue": "venue"}
+                },
+                "table_group": "EventScreening"
+            },
+            "Venue": {
+                "attributes": ["region", "address", "state", "zip", "venue"],
+                "primary_key": ["venue"],
+                "foreign_keys": {},
+                "table_group": "Venue"
+            },
+            "Artist": {
+                "attributes": ["title", "artists"],
+                "primary_key": ["artists"],
+                "foreign_keys": {"title": {"Event": "title"}},
+                "table_group": "Artist"
+            }
+        },
+        "goby_5073.csv": {
+            "Event": {
+                "attributes": ["name", "subCategory"],
+                "foreign_keys": {},
+                "primary_key": ["name"],
+                "table_group": "Event"
+            },
+            "EventScreening": {
+                "attributes": ["picture", "showTime", "cost", "moreDetailURL", "showDates", "venue", "name", "eventURL", "description", "shortDescription", "phone"],
+                "foreign_keys": {
+                    "name": {"Event": "name"},
+                    "venue": {"Venue": "venue"}
+                },
+                "primary_key": ["name", "showDates"],
+                "table_group": "EventScreening"
+            },
+            "Venue": {
+                "attributes": ["venue", "zip", "state", "city", "address", "location", "locationName"],
+                "primary_key": ["venue"],
+                "foreign_keys": {},
+                "table_group": "Venue"
+            }
+        },
+        "goby_8831.csv": {
+            "Event": {
+                "attributes": ["name", "subCategory"],
+                "foreign_keys": {},
+                "primary_key": ["name"],
+                "table_group": "Event"
+            },
+            "EventScreening": {
+                "attributes": ["name", "venue", "cost", "moreDetailURL", "showTime", "description", "picture", "eventURL", "phone"],
+                "foreign_keys": {
+                    "name": {"Event": "name"},
+                    "venue": {"Venue": "venue"}
+                },
+                "primary_key": ["name", "showDates"],
+                "table_group": "EventScreening"
+            },
+            "Venue": {
+                "attributes": ["venue", "state", "city", "address", "location", "zip", "locationName"],
+                "primary_key": ["venue"],
+                "foreign_keys": {},
+                "table_group": "Venue"
+            }
+        },
+        "goby_8940.csv": {
+            "Event": {
+                "attributes": ["name", "subCategory"],
+                "foreign_keys": {},
+                "primary_key": ["name"],
+                "table_group": "Event"
+            },
+            "EventScreening": {
+                "attributes": ["name", "venue", "showDates", "cost", "showTime", "description", "picture", "eventURL", "moreDetailURL", "phone"],
+                "foreign_keys": {
+                    "name": {"Event": "name"},
+                    "venue": {"Venue": "venue"}
+                },
+                "primary_key": ["name", "showDates", "showTime"],
+                "table_group": "EventScreening"
+            },
+            "Venue": {
+                "attributes": ["venue", "state", "city", "address", "location", "zip", "locationName"],
+                "primary_key": ["venue"],
+                "foreign_keys": {},
+                "table_group": "Venue"
+            }
+        },
+        "goby_9397.csv": {
+            "EventScreening": {
+                "attributes": ["name", "endDate", "description", "email", "businessURL", "startDate", "picture", "moreDetailURL", "venue", "admission"],
+                "primary_key": ["name"],
+                "foreign_keys": {"venue": {"Venue": "venue"}},
+                "table_group": "EventScreening"
+            },
+            "Venue": {
+                "attributes": ["venue", "state", "longitude", "streetAddress", "city", "latitude", "zipCode"],
+                "primary_key": ["venue"],
+                "foreign_keys": {},
+                "table_group": "Venue"
+            }
+        },
+        "goby_6306.csv": {
+            "EventScreening": {
+                "attributes": ["title", "venue", "type"],
+                "primary_key": ["title", "venue"],
+                "foreign_keys": {
+                    "title": {"Event": "title"},
+                    "venue": {"Venue": "venue"}
+                },
+                "table_group": "EventScreening"
+            },
+            "Event": {
+                "attributes": ["to", "description", "venue", "image", "email", "website", "title", "ticketPhone", "moreInfoLink", "from", "times", "tickets"],
+                "primary_key": ["title"],
+                "foreign_keys": {},
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["venue", "city", "address", "state", "zipcode"],
+                "primary_key": ["venue"],
+                "foreign_keys": {},
+                "table_group": "Venue"
+            }
+        },
+        "goby_696.csv": {
+            "Event": {
+                "attributes": ["admission", "category", "date", "description", "moreInfoLink", "phone", "photo", "time", "title", "url", "venue"],
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["venue", "city", "state", "street", "zipcode"],
+                "table_group": "Venue"
+            }
+        },
+        "goby_1381.csv": {
+            "Event": {
+                "attributes": ["address", "admission", "category", "date", "description", "name", "time", "website"],
+                "table_group": "Event"
+            }
+        },
+        "goby_1450.csv": {
+            "Event": {
+                "attributes": ["city", "dateFrom", "details", "eventName", "image", "length", "moreInfo", "price", "state", "webSite"],
+                "table_group": "Event"
+            }
+        },
+        "goby_2238.csv": {
+            "Event": {
+                "attributes": ["description", "endDate", "endTime", "moreInfoLink", "startDate", "title", "venueID"],
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["venue", "venueAddress", "venueCity", "venueCountry", "venueID", "venueState", "venueZip", "latitude", "longitud"],
+                "table_group": "Venue"
+            }
+        },
+        "goby_2461.csv": {
+            "Event": {
+                "attributes": ["category", "date", "description", "image", "moreInfo", "name", "time", "venue"],
+                "table_group": "Event"
+            },
+            "Venue": {
+                "attributes": ["city", "lat", "lon", "state", "venue", "zip"],
+                "table_group": "Venue"
+            }
+        }
+    }
+}

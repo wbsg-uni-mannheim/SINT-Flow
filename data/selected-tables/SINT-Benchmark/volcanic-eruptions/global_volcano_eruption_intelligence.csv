@@ -1,0 +1,899 @@
+noaa_event_id,volcano_name,country,latitude,longitude,elevation_m,volcano_type,deaths_total,eruption_status,vei,country_region,era,vei_category,tectonic_region,eruption_agent_decoded,vei_risk_tier,eruption_day,eruption_month,eruption_year
+5238,Macauley,New Zealand,-30.21,-178.475,238,Caldera,,Holocene,6.0,Oceania,Prehistoric/Ancient,Colossal,Ring of Fire – Pacific,,Extreme,,,-4360
+4468,Kikai,Japan,30.793,130.305,704,Caldera,,Historical,7.0,Asia,Prehistoric/Ancient,Super-Colossal,Japan Arc,Phreatic / Phreatomagmatic,Catastrophic,,,-4350
+5237,Masaya,Nicaragua,11.984,-86.169,594,Caldera,,Historical,6.0,Americas,Prehistoric/Ancient,Colossal,Ring of Fire – Pacific,,Extreme,,,-4050
+5230,Witori,Papua New Guinea,-5.575,150.516,724,Caldera,,Historical,6.0,Oceania,Prehistoric/Ancient,Colossal,Ring of Fire – Pacific,Tsunami Generated,Extreme,,,-4000
+5236,Taal,Philippines,14.011,120.998,311,Stratovolcano,,Historical,6.0,Asia,Prehistoric/Ancient,Colossal,Philippine Arc,,Extreme,,,-3580
+5228,Pinatubo,Philippines,15.13,120.35,1486,Stratovolcano,,Historical,6.0,Asia,Prehistoric/Ancient,Colossal,Philippine Arc,,Extreme,,,-3550
+6646,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,,Historical,5.0,Europe,Prehistoric/Ancient,Paroxysmal,Mediterranean Volcanic Belt,"P,T",Very High,,,-2420
+5205,Long Island,Papua New Guinea,-5.358,147.12,1280,Complex volcano,,Historical,6.0,Oceania,Prehistoric/Ancient,Colossal,Intraplate / Other,,Extreme,,,-2040
+5235,Black Peak,United States,56.552,-158.785,1032,Stratovolcano,,Radiocarbon,6.0,Americas,Prehistoric/Ancient,Colossal,Ring of Fire – Pacific,,Extreme,,,-1900
+5234,"Hudson, Cerro",Chile,-45.9,-72.97,1905,Stratovolcano,,Historical,6.0,Americas,Prehistoric/Ancient,Colossal,Ring of Fire – Pacific,,Extreme,,,-1890
+5233,St. Helens,United States,46.2,-122.18,2549,Stratovolcano,,Historical,6.0,Americas,Prehistoric/Ancient,Colossal,Ring of Fire – Pacific,,Extreme,,,-1860
+5232,Veniaminof,United States,56.17,-159.38,2507,Stratovolcano,,Historical,6.0,Americas,Prehistoric/Ancient,Colossal,Ring of Fire – Pacific,,Extreme,,,-1750
+4645,Aniakchak,United States,56.88,-158.17,1341,Caldera,,Historical,6.0,Americas,Prehistoric/Ancient,Colossal,Ring of Fire – Pacific,,Extreme,,,-1645
+1351,Santorini,Greece,36.404,25.396,367,Shield volcano,,Historical,7.0,Europe,Prehistoric/Ancient,Super-Colossal,Mediterranean Volcanic Belt,Waves / Surges,Catastrophic,,,-1610
+5024,Redoubt,United States,60.485,-152.742,3108,Stratovolcano,,Historical,,Americas,Prehistoric/Ancient,Unknown,Ring of Fire – Pacific,,Unknown,,,-1550
+5231,Taupo,New Zealand,-38.781,175.893,760,Caldera,,Radiocarbon,6.0,Oceania,Prehistoric/Ancient,Colossal,Ring of Fire – Pacific,,Extreme,,,-1460
+5229,Witori,Papua New Guinea,-5.575,150.516,724,Caldera,,Historical,6.0,Oceania,Prehistoric/Ancient,Colossal,Ring of Fire – Pacific,,Extreme,,,-1370
+5227,Pinatubo,Philippines,15.13,120.35,1486,Stratovolcano,,Historical,6.0,Asia,Prehistoric/Ancient,Colossal,Philippine Arc,,Extreme,,,-1050
+6628,Tungurahua,Ecuador,-1.467,-78.442,5023,Stratovolcano,,Historical,5.0,Americas,Prehistoric/Ancient,Paroxysmal,Ring of Fire – Pacific,,Very High,,,-1010
+6627,Cotopaxi,Ecuador,-0.677,-78.436,5911,Stratovolcano,,Historical,4.0,Americas,Prehistoric/Ancient,Cataclysmic,Ring of Fire – Pacific,Mudflow / Lahar,High,,,-455
+5226,Raoul Island,New Zealand,-29.27,-177.92,516,Stratovolcano,,Historical,6.0,Oceania,Prehistoric/Ancient,Colossal,Ring of Fire – Pacific,,Extreme,,,-250
+5324,Santorini,Greece,36.404,25.396,367,Shield volcano,,Historical,3.0,Europe,Prehistoric/Ancient,Severe,Mediterranean Volcanic Belt,,Moderate,,,-197
+41,Etna,Italy,37.748,14.999,3357,Stratovolcano,40.0,Historical,,Europe,Prehistoric/Ancient,Unknown,Mediterranean Volcanic Belt,,Unknown,,,-141
+5225,Okmok,United States,53.43,-168.13,1073,Shield volcano,,Historical,6.0,Americas,Prehistoric/Ancient,Colossal,Ring of Fire – Pacific,,Extreme,,,-100
+5224,Apoyeque,Nicaragua,12.242,-86.342,518,Pyroclastic shield,,Radiocarbon,6.0,Americas,Prehistoric/Ancient,Colossal,Ring of Fire – Pacific,,Extreme,,,-50
+4904,Santorini,Greece,36.404,25.396,367,Shield volcano,,Historical,3.0,Europe,Classical Antiquity,Severe,Mediterranean Volcanic Belt,,Moderate,01,01,0046
+5212,Ambrym,Vanuatu,-16.25,168.12,1334,Pyroclastic shield,,Historical,6.0,Oceania,Classical Antiquity,Colossal,Ring of Fire – Pacific,,Extreme,01,01,0050
+5204,Churchill,United States,61.38,-141.75,5005,Stratovolcano,,Radiocarbon,6.0,Americas,Classical Antiquity,Colossal,Ring of Fire – Pacific,,Extreme,01,01,0060
+1348,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,2100.0,Historical,5.0,Europe,Classical Antiquity,Paroxysmal,Mediterranean Volcanic Belt,"P,T",Very High,25,08,0079
+4968,"Arhab, Harra of",Yemen,15.603,44.098,3100,Volcanic field,,Historical,,Asia,Classical Antiquity,Unknown,East African Rift,,Unknown,01,01,0200
+1904,Taupo,New Zealand,-38.781,175.893,760,Caldera,,Radiocarbon,6.0,Oceania,Classical Antiquity,Colossal,Ring of Fire – Pacific,,Extreme,01,01,0233
+5211,Ksudach,Russia,51.844,157.572,1079,Stratovolcano,,Historical,6.0,Europe,Classical Antiquity,Colossal,Ring of Fire – Pacific,,Extreme,01,01,0240
+5025,Augustine,United States,59.363,-153.435,1218,Lava dome,,Historical,,Americas,Classical Antiquity,Unknown,Ring of Fire – Pacific,,Unknown,01,01,0350
+2069,St. Andrew Strait,Papua New Guinea,-2.38,147.35,270,Complex volcano,,Historical,,Oceania,Classical Antiquity,Unknown,Intraplate / Other,,Unknown,01,01,0350
+4562,Krakatau,Indonesia,-6.101,105.423,285,Caldera,,Historical,,Asia,Classical Antiquity,Unknown,Sunda Arc – Indonesia,Waves / Surges,Unknown,01,01,0416
+3665,Ilopango,El Salvador,13.672,-89.053,450,Caldera,30000.0,Historical,6.0,Americas,Classical Antiquity,Colossal,Ring of Fire – Pacific,,Extreme,01,01,0450
+4967,"Arhab, Harra of",Yemen,15.603,44.098,3100,Volcanic field,,Historical,,Asia,Early Medieval,Unknown,East African Rift,,Unknown,01,01,0500
+4497,San Salvador,El Salvador,13.734,-89.294,1893,Stratovolcano,,Historical,,Americas,Early Medieval,Unknown,Ring of Fire – Pacific,,Unknown,01,01,0590
+1352,"Uwayrid, Harrat",Saudi Arabia,27.08,37.25,1920,Volcanic field,,Anthropology,2.0,Asia,Early Medieval,Explosive,Intraplate / Other,Tsunami Generated,Low,01,01,0640
+7404,Dakataua,Papua New Guinea,-5.046,150.1,408,Caldera,,Anthropology,6.0,Oceania,Early Medieval,Colossal,Ring of Fire – Pacific,,Extreme,01,01,0653
+2177,Rabaul,Papua New Guinea,-4.246,152.194,688,Pyroclastic shield,,Historical,6.0,Oceania,Early Medieval,Colossal,Ring of Fire – Pacific,,Extreme,01,01,0683
+5210,Witori,Papua New Guinea,-5.575,150.516,724,Caldera,,Historical,6.0,Oceania,Early Medieval,Colossal,Ring of Fire – Pacific,,Extreme,01,01,0710
+843,Aira,Japan,31.577,130.659,1117,Stratovolcano,80.0,Historical,4.0,Asia,Early Medieval,Cataclysmic,Japan Arc,"T,L",High,01,01,0764
+844,Aira,Japan,31.577,130.659,1117,Stratovolcano,,Historical,3.0,Asia,Early Medieval,Severe,Japan Arc,,Moderate,20,07,0766
+8,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,,Historical,3.0,Europe,Early Medieval,Severe,Mediterranean Volcanic Belt,,Moderate,01,01,0787
+3297,Churchill,United States,61.38,-141.75,5005,Stratovolcano,,Radiocarbon,6.0,Americas,Early Medieval,Colossal,Ring of Fire – Pacific,,Extreme,01,01,0847
+5144,Katla,Iceland,63.633,-19.083,1490,Subglacial volcano,,Historical,4.0,Europe,Early Medieval,Cataclysmic,Mid-Atlantic Ridge – Iceland,,High,01,01,0920
+5208,Ceboruco,Mexico,21.125,-104.508,2280,Stratovolcano,,Historical,6.0,Americas,Early Medieval,Colossal,Ring of Fire – Pacific,,Extreme,01,01,0930
+5146,Katla,Iceland,63.633,-19.083,1490,Subglacial volcano,,Historical,4.0,Europe,Early Medieval,Cataclysmic,Mid-Atlantic Ridge – Iceland,,High,01,01,0934
+5207,Changbaishan,North Korea,41.98,128.08,2744,Stratovolcano,,Historical,7.0,Asia,Early Medieval,Super-Colossal,Japan Arc,,Catastrophic,01,01,0946
+5147,Katla,Iceland,63.633,-19.083,1490,Subglacial volcano,,Historical,,Europe,Early Medieval,Unknown,Mid-Atlantic Ridge – Iceland,,Unknown,01,01,0950
+4845,Santorini,Greece,36.404,25.396,367,Shield volcano,,Historical,,Europe,Late Medieval,Unknown,Mediterranean Volcanic Belt,,Unknown,01,01,1050
+4241,Hekla,Iceland,63.983,-19.666,1490,Stratovolcano,,Historical,5.0,Europe,Late Medieval,Paroxysmal,Mid-Atlantic Ridge – Iceland,,Very High,15,10,1104
+5149,Krysuvik-Trolladyngja,Iceland,63.917,-22.067,360,Crater rows,,Historical,1.0,Europe,Late Medieval,Gentle,Mid-Atlantic Ridge – Iceland,,Minimal,01,01,1151
+4242,Hekla,Iceland,63.983,-19.666,1490,Stratovolcano,,Historical,4.0,Europe,Late Medieval,Cataclysmic,Mid-Atlantic Ridge – Iceland,,High,19,01,1158
+1,Etna,Italy,37.748,14.999,3357,Stratovolcano,16000.0,Historical,,Europe,Late Medieval,Unknown,Mediterranean Volcanic Belt,"S,W",Unknown,04,02,1169
+4846,Etna,Italy,37.748,14.999,3357,Stratovolcano,,Historical,,Europe,Late Medieval,Unknown,Mediterranean Volcanic Belt,,Unknown,11,02,1169
+4224,Katla,Iceland,63.633,-19.083,1490,Subglacial volcano,,Historical,3.0,Europe,Late Medieval,Severe,Mid-Atlantic Ridge – Iceland,,Moderate,01,01,1177
+4243,Hekla,Iceland,63.983,-19.666,1490,Stratovolcano,,Historical,2.0,Europe,Late Medieval,Explosive,Mid-Atlantic Ridge – Iceland,,Low,04,12,1206
+4966,Fentale,Ethiopia,8.985,39.906,2007,Stratovolcano,,Historical,,Africa,Late Medieval,Unknown,East African Rift,,Unknown,01,01,1250
+4225,Katla,Iceland,63.633,-19.083,1490,Subglacial volcano,,Historical,3.0,Europe,Late Medieval,Severe,Mid-Atlantic Ridge – Iceland,Fumarolic Activity,Moderate,01,01,1262
+5206,Quilotoa,Ecuador,-0.859,-78.904,3914,Caldera,,Radiocarbon,6.0,Americas,Late Medieval,Colossal,Ring of Fire – Pacific,,Extreme,01,01,1280
+4244,Hekla,Iceland,63.983,-19.666,1490,Stratovolcano,600.0,Historical,4.0,Europe,Late Medieval,Cataclysmic,Mid-Atlantic Ridge – Iceland,,High,11,07,1300
+10,Ischia,Italy,40.73,13.897,789,Complex volcano,,Historical,,Europe,Late Medieval,Unknown,Mediterranean Volcanic Belt,,Unknown,01,01,1302
+4226,Katla,Iceland,63.633,-19.083,1490,Subglacial volcano,,Historical,4.0,Europe,Late Medieval,Cataclysmic,Mid-Atlantic Ridge – Iceland,Fumarolic Activity,High,18,01,1311
+116,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,,Historical,3.0,Asia,Late Medieval,Severe,Sunda Arc – Indonesia,,Moderate,01,01,1311
+5844,Etna,Italy,37.748,14.999,3357,Stratovolcano,,Historical,3.0,Europe,Late Medieval,Severe,Mediterranean Volcanic Belt,,Moderate,28,06,1329
+2,Etna,Italy,37.748,14.999,3357,Stratovolcano,,Historical,3.0,Europe,Late Medieval,Severe,Mediterranean Volcanic Belt,Inundation / Lahar,Moderate,15,07,1329
+949,Asosan,Japan,32.885,131.085,1592,Caldera,,Historical,2.0,Asia,Late Medieval,Explosive,Japan Arc,,Low,01,12,1331
+117,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,,Historical,3.0,Asia,Late Medieval,Severe,Sunda Arc – Indonesia,Mudflow / Lahar,Moderate,01,01,1334
+4245,Hekla,Iceland,63.983,-19.666,1490,Stratovolcano,,Historical,3.0,Europe,Late Medieval,Severe,Mid-Atlantic Ridge – Iceland,,Moderate,19,05,1341
+4227,Katla,Iceland,63.633,-19.083,1490,Subglacial volcano,,Historical,4.0,Europe,Late Medieval,Cataclysmic,Mid-Atlantic Ridge – Iceland,,High,01,01,1357
+4326,Oraefajokull,Iceland,64.0,-16.65,2010,Stratovolcano,220.0,Historical,5.0,Europe,Late Medieval,Paroxysmal,Mid-Atlantic Ridge – Iceland,"T,F",Very High,05,06,1362
+6585,"Chichon, El",Mexico,17.36,-93.23,1150,Tuff cone,,Historical,5.0,Americas,Late Medieval,Paroxysmal,Ring of Fire – Pacific,Mudflow / Lahar,Very High,01,01,1375
+118,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,,Historical,3.0,Asia,Late Medieval,Severe,Sunda Arc – Indonesia,,Moderate,01,01,1376
+119,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,,Historical,3.0,Asia,Late Medieval,Severe,Sunda Arc – Indonesia,,Moderate,01,01,1385
+4246,Hekla,Iceland,63.983,-19.666,1490,Stratovolcano,,Historical,3.0,Europe,Late Medieval,Severe,Mid-Atlantic Ridge – Iceland,,Moderate,01,12,1389
+1203,Nasudake,Japan,37.125,139.963,1915,Stratovolcano,180.0,Historical,3.0,Asia,Late Medieval,Severe,Japan Arc,,Moderate,05,03,1410
+4449,Kuwae,Vanuatu,-16.83,168.523,-2,Caldera,,Historical,,Oceania,Late Medieval,Unknown,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,Unknown,01,01,1430
+846,Aira,Japan,31.577,130.659,1117,Stratovolcano,,Historical,5.0,Asia,Late Medieval,Paroxysmal,Japan Arc,Phreatic / Phreatomagmatic,Very High,03,11,1471
+5150,Bardarbunga,Iceland,64.633,-17.516,2000,Stratovolcano,,Historical,6.0,Europe,Late Medieval,Colossal,Mid-Atlantic Ridge – Iceland,,Extreme,01,02,1477
+960,Asosan,Japan,32.885,131.085,1592,Caldera,1.0,Historical,2.0,Asia,Late Medieval,Explosive,Japan Arc,,Low,01,01,1485
+5148,Katla,Iceland,63.633,-19.083,1490,Subglacial volcano,,Historical,4.0,Europe,Early Modern,Cataclysmic,Mid-Atlantic Ridge – Iceland,,High,01,01,1500
+4248,Hekla,Iceland,63.983,-19.666,1490,Stratovolcano,1.0,Historical,4.0,Europe,Early Modern,Cataclysmic,Mid-Atlantic Ridge – Iceland,Tsunami Generated,High,25,07,1510
+6644,Hekla,Iceland,63.983,-19.666,1490,Stratovolcano,,Historical,4.0,Europe,Early Modern,Cataclysmic,Mid-Atlantic Ridge – Iceland,Inundation / Lahar,High,15,10,1510
+14,Etna,Italy,37.748,14.999,3357,Stratovolcano,1.0,Historical,3.0,Europe,Early Modern,Severe,Mediterranean Volcanic Belt,Tsunami Generated,Moderate,26,03,1536
+36,Campi Flegrei,Italy,40.827,14.139,458,Caldera,24.0,Historical,3.0,Europe,Early Modern,Severe,Mediterranean Volcanic Belt,Tsunami Generated,Moderate,29,09,1538
+4583,Augustine,United States,59.363,-153.435,1218,Lava dome,,Historical,4.0,Americas,Early Modern,Cataclysmic,Ring of Fire – Pacific,,High,01,01,1540
+7579,Agua,Guatemala,14.465,-90.743,3760,Stratovolcano,1300.0,Holocene,,Americas,Early Modern,Unknown,Ring of Fire – Pacific,Mudflow / Lahar,Unknown,11,09,1541
+594,Dukono,Indonesia,1.699,127.878,1273,Complex volcano,,Historical,3.0,Asia,Early Modern,Severe,Sunda Arc – Indonesia,,Moderate,01,11,1550
+663,Kie Besi,Indonesia,0.32,127.4,1357,Stratovolcano,,Historical,3.0,Asia,Early Modern,Severe,Sunda Arc – Indonesia,,Moderate,01,01,1550
+4460,Gamkonora,Indonesia,1.38,127.53,1635,Stratovolcano,,Historical,3.0,Asia,Early Modern,Severe,Sunda Arc – Indonesia,,Moderate,31,12,1564
+3580,Pacaya,Guatemala,14.382,-90.601,2569,Complex volcano,,Historical,3.0,Americas,Early Modern,Severe,Ring of Fire – Pacific,,Moderate,01,08,1565
+904,Kirishimayama,Japan,31.934,130.862,1700,Shield volcano,,Historical,3.0,Asia,Early Modern,Severe,Japan Arc,,Moderate,31,10,1566
+2227,Savo,Solomon Is.,-9.13,159.82,485,Stratovolcano,1001.0,Historical,3.0,Oceania,Early Modern,Severe,Ring of Fire – Pacific,"P,T,M",Moderate,01,01,1568
+4498,Mombacho,Nicaragua,11.826,-85.968,1344,Stratovolcano,400.0,Holocene,,Americas,Early Modern,Unknown,Ring of Fire – Pacific,Ash / Tephra,Unknown,01,01,1570
+745,Taal,Philippines,14.011,120.998,311,Stratovolcano,,Historical,3.0,Asia,Early Modern,Severe,Philippine Arc,Lava Flow,Moderate,01,01,1572
+3473,Colima,Mexico,19.514,-103.62,3850,Stratovolcano,,Historical,3.0,Americas,Early Modern,Severe,Ring of Fire – Pacific,,Moderate,01,01,1576
+4345,Sao Jorge,Portugal,38.65,-28.08,1053,Fissure vent,10.0,Historical,3.0,Europe,Early Modern,Severe,Intraplate / Other,Phreatic / Phreatomagmatic,Moderate,01,05,1580
+4229,Katla,Iceland,63.633,-19.083,1490,Subglacial volcano,,Historical,4.0,Europe,Early Modern,Cataclysmic,Mid-Atlantic Ridge – Iceland,,High,11,08,1580
+6984,Billy Mitchell,Papua New Guinea,-6.09,155.225,1544,Pyroclastic shield,,Radiocarbon,6.0,Oceania,Early Modern,Colossal,Ring of Fire – Pacific,,Extreme,01,01,1580
+3543,Fuego,Guatemala,14.473,-90.88,3763,Stratovolcano,,Historical,4.0,Americas,Early Modern,Cataclysmic,Ring of Fire – Pacific,,High,26,12,1581
+126,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,10000.0,Historical,5.0,Asia,Early Modern,Paroxysmal,Sunda Arc – Indonesia,,Very High,01,01,1586
+61,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,,Historical,4.0,Asia,Early Modern,Cataclysmic,Sunda Arc – Indonesia,,High,01,01,1587
+6584,Colima,Mexico,19.514,-103.62,3850,Stratovolcano,,Historical,3.0,Americas,Early Modern,Severe,Ring of Fire – Pacific,Inundation / Lahar,Moderate,15,01,1590
+294,Raung,Indonesia,-8.119,114.056,3260,Stratovolcano,,Historical,5.0,Asia,Early Modern,Paroxysmal,Sunda Arc – Indonesia,,Very High,01,01,1593
+3830,"Ruiz, Nevado del",Colombia,4.892,-75.324,5279,Stratovolcano,636.0,Historical,4.0,Americas,Early Modern,Cataclysmic,Ring of Fire – Pacific,Mudflow / Lahar,High,12,03,1595
+1106,Asamayama,Japan,36.406,138.523,2568,Complex volcano,,Historical,2.0,Asia,Early Modern,Explosive,Japan Arc,Tsunami Generated,Low,01,05,1596
+4249,Hekla,Iceland,63.983,-19.666,1490,Stratovolcano,,Historical,4.0,Europe,Early Modern,Cataclysmic,Mid-Atlantic Ridge – Iceland,,High,03,01,1597
+295,Raung,Indonesia,-8.119,114.056,3260,Stratovolcano,,Historical,3.0,Asia,Early Modern,Severe,Sunda Arc – Indonesia,Tsunami Generated,Moderate,01,01,1597
+4480,Asamayama,Japan,36.406,138.523,2568,Complex volcano,800.0,Historical,2.0,Asia,Early Modern,Explosive,Japan Arc,Tsunami Generated,Low,13,05,1598
+472,Banda Api,Pacific Ocean,-4.523,129.881,596,Caldera,,Historical,3.0,Oceania,Early Modern,Severe,Sunda Arc – Indonesia,,Moderate,01,01,1598
+4052,Huaynaputina,Peru,-16.614,-70.854,4679,Stratovolcano,1500.0,Historical,6.0,Americas,Early Modern,Colossal,Ring of Fire – Pacific,,Extreme,19,02,1600
+2589,Hachijojima,Japan,33.137,139.766,854,Stratovolcano,,Historical,2.0,Asia,Early Modern,Explosive,Japan Arc,,Low,23,01,1606
+607,Gamalama,Indonesia,0.81,127.332,1714,Stratovolcano,,Historical,3.0,Asia,Early Modern,Severe,Sunda Arc – Indonesia,,Moderate,18,07,1608
+4466,Tengchong,China,25.23,98.5,2865,Pyroclastic cone,,Historical,,Asia,Early Modern,Unknown,Intraplate / Other,E,Unknown,01,01,1609
+474,Banda Api,Pacific Ocean,-4.523,129.881,596,Caldera,,Historical,3.0,Oceania,Early Modern,Severe,Sunda Arc – Indonesia,,Moderate,01,03,1615
+3546,Fuego,Guatemala,14.473,-90.88,3763,Stratovolcano,,Historical,3.0,Americas,Early Modern,Severe,Ring of Fire – Pacific,,Moderate,01,01,1617
+4231,Katla,Iceland,63.633,-19.083,1490,Subglacial volcano,,Historical,5.0,Europe,Early Modern,Paroxysmal,Mid-Atlantic Ridge – Iceland,,Very High,02,09,1625
+4511,Grimsvotn,Iceland,64.416,-17.316,1719,Caldera,4.0,Historical,2.0,Europe,Early Modern,Explosive,Mid-Atlantic Ridge – Iceland,Fumarolic Activity,Low,01,01,1629
+4362,Furnas,Portugal,37.77,-25.32,805,Stratovolcano,200.0,Historical,4.0,Europe,Early Modern,Cataclysmic,Intraplate / Other,"M,T",High,03,09,1630
+43,Dama Ali,Ethiopia,11.28,41.63,1068,Shield volcano,50.0,Historical,,Africa,Early Modern,Unknown,East African Rift,Submarine Eruption,Unknown,14,02,1631
+1349,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,4000.0,Historical,5.0,Europe,Early Modern,Paroxysmal,Mediterranean Volcanic Belt,"P,E,M",Very High,16,12,1631
+4250,Hekla,Iceland,63.983,-19.666,1490,Stratovolcano,,Historical,3.0,Europe,Early Modern,Severe,Mid-Atlantic Ridge – Iceland,,Moderate,15,05,1636
+296,Raung,Indonesia,-8.119,114.056,3260,Stratovolcano,1001.0,Historical,4.0,Asia,Early Modern,Cataclysmic,Sunda Arc – Indonesia,Mudflow / Lahar,High,01,01,1638
+2676,Hokkaido-Komagatake,Japan,42.063,140.677,1131,Stratovolcano,700.0,Historical,5.0,Asia,Early Modern,Paroxysmal,Japan Arc,Waves / Surges,Very High,31,07,1640
+3959,Tungurahua,Ecuador,-1.467,-78.442,5023,Stratovolcano,5000.0,Historical,3.0,Americas,Early Modern,Severe,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,Moderate,01,01,1640
+664,Kie Besi,Indonesia,0.32,127.4,1357,Stratovolcano,,Historical,4.0,Asia,Early Modern,Cataclysmic,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,High,19,07,1646
+1356,Santorini,Greece,36.404,25.396,367,Shield volcano,120.0,Historical,4.0,Europe,Early Modern,Cataclysmic,Mediterranean Volcanic Belt,"G,W,T",High,26,09,1650
+3662,San Salvador,El Salvador,13.734,-89.294,1893,Stratovolcano,,Historical,3.0,Americas,Early Modern,Severe,Ring of Fire – Pacific,Submarine Eruption,Moderate,30,09,1659
+457,Teon,Pacific Ocean,-6.976,129.144,728,Stratovolcano,,Historical,4.0,Oceania,Early Modern,Cataclysmic,Sunda Arc – Indonesia,,High,11,11,1659
+458,Teon,Pacific Ocean,-6.976,129.144,728,Stratovolcano,3.0,Historical,4.0,Oceania,Early Modern,Cataclysmic,Sunda Arc – Indonesia,"G,T",High,01,02,1660
+3900,Guagua Pichincha,Ecuador,-0.171,-78.598,4784,Stratovolcano,,Historical,4.0,Americas,Early Modern,Cataclysmic,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,High,27,10,1660
+4232,Katla,Iceland,63.633,-19.083,1490,Subglacial volcano,,Historical,4.0,Europe,Early Modern,Cataclysmic,Mid-Atlantic Ridge – Iceland,,High,03,11,1660
+1357,Long Island,Papua New Guinea,-5.358,147.12,1280,Complex volcano,2000.0,Historical,6.0,Oceania,Early Modern,Colossal,Intraplate / Other,"T,P,W,I",Extreme,01,01,1660
+2693,Toya,Japan,42.544,140.839,733,Stratovolcano,5.0,Historical,5.0,Asia,Early Modern,Paroxysmal,Japan Arc,"T,P",Very High,16,08,1663
+4476,Unzendake,Japan,32.761,130.299,1483,Complex volcano,30.0,Historical,2.0,Asia,Early Modern,Explosive,Japan Arc,Mudflow / Lahar,Low,15,04,1664
+4467,Io-Torishima,Japan,27.881,128.223,212,Complex volcano,,Historical,,Asia,Early Modern,Unknown,Japan Arc,Ash / Tephra,Unknown,01,01,1664
+1350,Etna,Italy,37.748,14.999,3357,Stratovolcano,,Historical,3.0,Europe,Early Modern,Severe,Mediterranean Volcanic Belt,,Moderate,11,03,1669
+6246,Etna,Italy,37.748,14.999,3357,Stratovolcano,2.0,Historical,3.0,Europe,Early Modern,Severe,Mediterranean Volcanic Belt,Lava Flow,Moderate,19,03,1669
+4447,Ambae,Vanuatu,-15.389,167.835,1496,Shield volcano,,Historical,2.0,Oceania,Early Modern,Explosive,Ring of Fire – Pacific,Lava Flow,Low,01,01,1670
+4339,Fayal,Portugal,38.576,-28.713,1041,Stratovolcano,3.0,Historical,2.0,Europe,Early Modern,Explosive,Intraplate / Other,,Low,24,04,1672
+64,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,3000.0,Historical,3.0,Asia,Early Modern,Severe,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Moderate,04,08,1672
+599,Gamkonora,Indonesia,1.38,127.53,1635,Stratovolcano,,Historical,5.0,Asia,Early Modern,Paroxysmal,Sunda Arc – Indonesia,Waves / Surges,Very High,20,05,1673
+4367,La Palma,Spain,28.57,-17.83,2426,Stratovolcano,1.0,Historical,2.0,Europe,Early Modern,Explosive,Canary Islands – Atlantic Hot Spot,Gas / SO₂ Emissions,Low,22,11,1677
+4969,Zukur,Yemen,14.02,42.75,624,Shield volcano,,Holocene,,Asia,Early Modern,Unknown,East African Rift,,Unknown,21,09,1679
+23,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,4.0,Historical,3.0,Europe,Early Modern,Severe,Mediterranean Volcanic Belt,,Moderate,12,08,1682
+4275,Grimsvotn,Iceland,64.416,-17.316,1719,Caldera,1.0,Historical,2.0,Europe,Early Modern,Explosive,Mid-Atlantic Ridge – Iceland,Fumarolic Activity,Low,01,12,1684
+4847,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,,Historical,3.0,Europe,Early Modern,Severe,Mediterranean Volcanic Belt,Waves / Surges,Moderate,03,02,1690
+2505,Guntur,Indonesia,-7.143,107.841,2251,Complex volcano,,Historical,3.0,Asia,Early Modern,Severe,Sunda Arc – Indonesia,,Moderate,01,01,1690
+466,Serua,Pacific Ocean,-6.312,130.017,608,Stratovolcano,,Historical,4.0,Oceania,Early Modern,Cataclysmic,Sunda Arc – Indonesia,Lava Flow,High,04,06,1692
+4724,Etna,Italy,37.748,14.999,3357,Stratovolcano,,Historical,,Europe,Early Modern,Unknown,Mediterranean Volcanic Belt,,Unknown,09,01,1693
+4251,Hekla,Iceland,63.983,-19.666,1490,Stratovolcano,,Historical,4.0,Europe,Early Modern,Cataclysmic,Mid-Atlantic Ridge – Iceland,,High,13,02,1693
+477,Banda Api,Pacific Ocean,-4.523,129.881,596,Caldera,,Historical,3.0,Oceania,Early Modern,Severe,Sunda Arc – Indonesia,,Moderate,20,11,1694
+1380,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,,Historical,3.0,Europe,Early Modern,Severe,Mediterranean Volcanic Belt,,Moderate,01,05,1698
+2527,Ciremai,Indonesia,-6.895,108.408,3039,Stratovolcano,,Historical,3.0,Asia,Early Modern,Severe,Sunda Arc – Indonesia,,Moderate,01,01,1698
+4503,Cotopaxi,Ecuador,-0.677,-78.436,5911,Stratovolcano,,Historical,3.0,Americas,Early Modern,Severe,Ring of Fire – Pacific,Mudflow / Lahar,Moderate,01,01,1698
+4374,Tenerife,Spain,28.271,-16.641,3715,Stratovolcano,,Historical,2.0,Europe,Early Modern,Explosive,Canary Islands – Atlantic Hot Spot,,Low,05,05,1706
+4848,Santorini,Greece,36.404,25.396,367,Shield volcano,,Historical,3.0,Europe,Early Modern,Severe,Mediterranean Volcanic Belt,,Moderate,01,05,1707
+1065,Fujisan,Japan,35.361,138.728,3776,Stratovolcano,,Historical,4.0,Asia,Early Modern,Cataclysmic,Japan Arc,,High,16,12,1707
+578,Awu,Indonesia,3.689,125.447,1318,Stratovolcano,3000.0,Historical,3.0,Asia,Early Modern,Severe,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Moderate,11,12,1711
+5151,Bardarbunga,Iceland,64.633,-17.516,2000,Stratovolcano,,Historical,2.0,Europe,Early Modern,Explosive,Mid-Atlantic Ridge – Iceland,,Low,15,01,1712
+4849,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,,Historical,,Europe,Early Modern,Unknown,Mediterranean Volcanic Belt,,Unknown,30,06,1714
+128,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,,Historical,2.0,Asia,Early Modern,Explosive,Sunda Arc – Indonesia,Mudflow / Lahar,Low,20,07,1716
+752,Taal,Philippines,14.011,120.998,311,Stratovolcano,,Historical,4.0,Asia,Early Modern,Cataclysmic,Philippine Arc,,High,24,09,1716
+5152,Bardarbunga,Iceland,64.633,-17.516,2000,Stratovolcano,,Historical,2.0,Europe,Early Modern,Explosive,Mid-Atlantic Ridge – Iceland,,Low,05,10,1716
+915,Kirishimayama,Japan,31.934,130.862,1700,Shield volcano,1.0,Historical,3.0,Asia,Early Modern,Severe,Japan Arc,,Moderate,09,11,1716
+916,Kirishimayama,Japan,31.934,130.862,1700,Shield volcano,1.0,Historical,3.0,Asia,Early Modern,Severe,Japan Arc,,Moderate,07,02,1717
+5153,Bardarbunga,Iceland,64.633,-17.516,2000,Stratovolcano,,Historical,3.0,Europe,Early Modern,Severe,Mid-Atlantic Ridge – Iceland,,Moderate,04,08,1717
+3551,Fuego,Guatemala,14.473,-90.88,3763,Stratovolcano,,Historical,4.0,Americas,Early Modern,Cataclysmic,Ring of Fire – Pacific,Submarine Eruption,High,27,08,1717
+4342,Pico,Portugal,38.47,-28.4,2351,Stratovolcano,2.0,Historical,2.0,Europe,Early Modern,Explosive,Intraplate / Other,,Low,01,02,1718
+4233,Katla,Iceland,63.633,-19.083,1490,Subglacial volcano,,Historical,5.0,Europe,Early Modern,Paroxysmal,Mid-Atlantic Ridge – Iceland,,Very High,11,05,1721
+1133,Asamayama,Japan,36.406,138.523,2568,Complex volcano,15.0,Historical,1.0,Asia,Early Modern,Gentle,Japan Arc,Tsunami Generated,Minimal,22,06,1721
+5154,Bardarbunga,Iceland,64.633,-17.516,2000,Stratovolcano,,Historical,1.0,Europe,Early Modern,Gentle,Mid-Atlantic Ridge – Iceland,,Minimal,01,02,1726
+4327,Oraefajokull,Iceland,64.0,-16.65,2010,Stratovolcano,3.0,Historical,4.0,Europe,Early Modern,Cataclysmic,Mid-Atlantic Ridge – Iceland,Fumarolic Activity,High,03,08,1727
+5155,Bardarbunga,Iceland,64.633,-17.516,2000,Stratovolcano,,Historical,1.0,Europe,Early Modern,Gentle,Mid-Atlantic Ridge – Iceland,,Minimal,01,02,1729
+4316,Krafla,Iceland,65.715,-16.728,800,Caldera,,Historical,2.0,Europe,Early Modern,Explosive,Mid-Atlantic Ridge – Iceland,,Low,30,06,1729
+4377,Lanzarote,Spain,29.03,-13.63,670,Fissure vent,,Historical,2.0,Europe,Early Modern,Explosive,Canary Islands – Atlantic Hot Spot,,Low,01,09,1730
+297,Raung,Indonesia,-8.119,114.056,3260,Stratovolcano,,Historical,3.0,Asia,Early Modern,Severe,Sunda Arc – Indonesia,"M,T",Moderate,01,01,1730
+4490,Tseax River Cone,Canada,55.111,-128.899,612,Pyroclastic cone,,Radiocarbon,,Americas,Early Modern,Unknown,Ring of Fire – Pacific,Gas / SO₂ Emissions,Unknown,01,01,1730
+17,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,2.0,Historical,3.0,Europe,Early Modern,Severe,Mediterranean Volcanic Belt,Tsunami Generated,Moderate,20,05,1737
+2673,Oshima-Oshima,Japan,41.51,139.367,732,Stratovolcano,2000.0,Historical,4.0,Asia,Early Modern,Cataclysmic,Japan Arc,"W,S",High,23,08,1741
+3918,Cotopaxi,Ecuador,-0.677,-78.436,5911,Stratovolcano,,Historical,3.0,Americas,Early Modern,Severe,Ring of Fire – Pacific,Mudflow / Lahar,Moderate,15,06,1742
+3919,Cotopaxi,Ecuador,-0.677,-78.436,5911,Stratovolcano,,Historical,3.0,Americas,Early Modern,Severe,Ring of Fire – Pacific,Mudflow / Lahar,Moderate,09,12,1742
+753,Taal,Philippines,14.011,120.998,311,Stratovolcano,,Historical,3.0,Asia,Early Modern,Severe,Philippine Arc,,Moderate,11,08,1749
+5145,Grimsvotn,Iceland,64.416,-17.316,1719,Caldera,,Historical,2.0,Europe,Early Modern,Explosive,Mid-Atlantic Ridge – Iceland,,Low,15,10,1753
+754,Taal,Philippines,14.011,120.998,311,Stratovolcano,12.0,Historical,4.0,Asia,Early Modern,Cataclysmic,Philippine Arc,"W,T",High,28,11,1754
+4234,Katla,Iceland,63.633,-19.083,1490,Subglacial volcano,2.0,Historical,4.0,Europe,Early Modern,Cataclysmic,Mid-Atlantic Ridge – Iceland,E,High,17,10,1755
+4512,Sao Jorge,Portugal,38.65,-28.08,1053,Fissure vent,1053.0,Historical,0.0,Europe,Early Modern,Non-Explosive,Intraplate / Other,Submarine Eruption,Minimal,09,07,1757
+665,Kie Besi,Indonesia,0.32,127.4,1357,Stratovolcano,2000.0,Historical,4.0,Asia,Early Modern,Cataclysmic,Sunda Arc – Indonesia,Mudflow / Lahar,High,01,01,1760
+4489,Klyuchevskoy,Russia,56.056,160.642,4754,Stratovolcano,,Historical,2.0,Europe,Early Modern,Explosive,Ring of Fire – Pacific,,Low,01,01,1762
+4252,Hekla,Iceland,63.983,-19.666,1490,Stratovolcano,,Historical,4.0,Europe,Early Modern,Cataclysmic,Mid-Atlantic Ridge – Iceland,,High,05,04,1766
+704,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,49.0,Historical,3.0,Asia,Early Modern,Severe,Philippine Arc,Mudflow / Lahar,Moderate,20,07,1766
+3927,Cotopaxi,Ecuador,-0.677,-78.436,5911,Stratovolcano,,Historical,4.0,Americas,Early Modern,Cataclysmic,Ring of Fire – Pacific,Mudflow / Lahar,High,04,04,1768
+7542,Dempo,Indonesia,-4.016,103.121,3142,Stratovolcano,,Historical,,Asia,Early Modern,Unknown,Sunda Arc – Indonesia,,Unknown,01,01,1770
+617,Gamalama,Indonesia,0.81,127.332,1714,Stratovolcano,35.0,Historical,3.0,Asia,Early Modern,Severe,Sunda Arc – Indonesia,Tsunami Generated,Moderate,09,05,1772
+4453,Papandayan,Indonesia,-7.32,107.73,2665,Stratovolcano,2957.0,Historical,3.0,Asia,Early Modern,Severe,Sunda Arc – Indonesia,Ash / Tephra,Moderate,12,08,1772
+618,Gamalama,Indonesia,0.81,127.332,1714,Stratovolcano,,Historical,2.0,Asia,Early Modern,Explosive,Sunda Arc – Indonesia,Inundation / Lahar,Low,02,02,1773
+619,Gamalama,Indonesia,0.81,127.332,1714,Stratovolcano,1300.0,Historical,3.0,Asia,Early Modern,Severe,Sunda Arc – Indonesia,"P,I",Moderate,01,01,1775
+4520,Lokon-Empung,Indonesia,1.358,124.792,1580,Stratovolcano,,Historical,3.0,Asia,Early Modern,Severe,Sunda Arc – Indonesia,,Moderate,01,01,1775
+2813,Raikoke,Russia,48.292,153.25,551,Stratovolcano,15.0,Historical,4.0,Europe,Early Modern,Cataclysmic,Ring of Fire – Pacific,Tsunami Generated,High,01,01,1778
+9,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,,Historical,3.0,Europe,Early Modern,Severe,Mediterranean Volcanic Belt,,Moderate,08,08,1779
+858,Aira,Japan,31.577,130.659,1117,Stratovolcano,153.0,Historical,4.0,Asia,Early Modern,Cataclysmic,Japan Arc,"T,W,I",High,08,11,1779
+4469,Aira,Japan,31.577,130.659,1117,Stratovolcano,,Historical,4.0,Asia,Early Modern,Cataclysmic,Japan Arc,Fumarolic Activity,High,09,02,1780
+2591,Aogashima,Japan,32.458,139.759,423,Stratovolcano,7.0,Historical,3.0,Asia,Early Modern,Severe,Japan Arc,,Moderate,27,07,1780
+4523,Aira,Japan,31.577,130.659,1117,Stratovolcano,,Historical,4.0,Asia,Early Modern,Cataclysmic,Japan Arc,,High,09,09,1780
+5904,Aira,Japan,31.577,130.659,1117,Stratovolcano,,Historical,,Asia,Early Modern,Unknown,Japan Arc,,Unknown,31,10,1780
+859,Aira,Japan,31.577,130.659,1117,Stratovolcano,38.0,Historical,4.0,Asia,Early Modern,Cataclysmic,Japan Arc,Waves / Surges,High,11,04,1781
+7549,Aogashima,Japan,32.458,139.759,423,Stratovolcano,7.0,Historical,3.0,Asia,Early Modern,Severe,Japan Arc,Tsunami Generated,Moderate,10,04,1783
+1145,Asamayama,Japan,36.406,138.523,2568,Complex volcano,1491.0,Historical,4.0,Asia,Early Modern,Cataclysmic,Japan Arc,"F,P,I",High,05,08,1783
+4280,Grimsvotn,Iceland,64.416,-17.316,1719,Caldera,9350.0,Historical,4.0,Europe,Early Modern,Cataclysmic,Mid-Atlantic Ridge – Iceland,Inundation / Lahar,High,01,04,1784
+5804,Coropuna,Peru,-15.52,-72.65,6377,Stratovolcano,,Historical,,Americas,Early Modern,Unknown,Ring of Fire – Pacific,,Unknown,01,07,1784
+6570,Hualalai,United States,19.692,-155.87,2523,Shield volcano,,Historical,0.0,Americas,Early Modern,Non-Explosive,Ring of Fire – Pacific,Lava Flow,Minimal,01,01,1784
+2592,Aogashima,Japan,32.458,139.759,423,Stratovolcano,135.0,Historical,3.0,Asia,Early Modern,Severe,Japan Arc,,Moderate,18,04,1785
+4456,Dieng Volcanic Complex,Indonesia,-7.2,109.879,2565,Complex volcano,38.0,Historical,2.0,Asia,Early Modern,Explosive,Sunda Arc – Indonesia,Ash / Tephra,Low,01,01,1786
+4486,Izu-Oshima,Japan,34.724,139.394,746,Stratovolcano,,Historical,2.0,Asia,Early Modern,Explosive,Japan Arc,Tsunami Generated,Low,01,01,1789
+3343,Kilauea,United States,19.421,-155.287,1222,Shield volcano,5405.0,Historical,4.0,Americas,Early Modern,Cataclysmic,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,High,01,11,1790
+932,Unzendake,Japan,32.761,130.299,1483,Complex volcano,15000.0,Historical,2.0,Asia,Early Modern,Explosive,Japan Arc,"W,A",Low,21,05,1792
+1345,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,400.0,Historical,3.0,Europe,Early Modern,Severe,Mediterranean Volcanic Belt,"M,L,T,G",Moderate,15,06,1794
+7535,Aira,Japan,31.577,130.659,1117,Stratovolcano,,Historical,2.0,Asia,Early Modern,Explosive,Japan Arc,"T,W",Low,01,01,1797
+4454,Guntur,Indonesia,-7.143,107.841,2251,Complex volcano,,Historical,,Asia,Industrial Age,Unknown,Sunda Arc – Indonesia,Mudflow / Lahar,Unknown,08,10,1800
+706,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,,Historical,2.0,Asia,Industrial Age,Explosive,Philippine Arc,,Low,30,10,1800
+4492,Hualalai,United States,19.692,-155.87,2523,Shield volcano,2.0,Historical,0.0,Americas,Industrial Age,Non-Explosive,Ring of Fire – Pacific,Lava Flow,Minimal,01,01,1800
+1355,Kyejo,Tanzania,-9.229,33.792,2176,Stratovolcano,,Historical,2.0,Africa,Industrial Age,Explosive,East African Rift,Lava Flow,Low,01,01,1800
+3304,St. Helens,United States,46.2,-122.18,2549,Stratovolcano,,Historical,5.0,Americas,Industrial Age,Paroxysmal,Ring of Fire – Pacific,Inundation / Lahar,Very High,01,01,1800
+1246,Chokaisan,Japan,39.099,140.049,2236,Stratovolcano,8.0,Historical,2.0,Asia,Industrial Age,Explosive,Japan Arc,Tsunami Generated,Low,14,08,1801
+1146,Asamayama,Japan,36.406,138.523,2568,Complex volcano,,Historical,2.0,Asia,Industrial Age,Explosive,Japan Arc,,Low,04,07,1803
+1147,Asamayama,Japan,36.406,138.523,2568,Complex volcano,,Historical,2.0,Asia,Industrial Age,Explosive,Japan Arc,Tsunami Generated,Low,07,11,1803
+4488,Shikotsu,Japan,42.688,141.38,1320,Caldera,,Historical,3.0,Asia,Industrial Age,Severe,Japan Arc,,Moderate,01,01,1804
+24,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,4.0,Historical,2.0,Europe,Industrial Age,Explosive,Mediterranean Volcanic Belt,,Low,11,08,1805
+4346,Sao Jorge,Portugal,38.65,-28.08,1053,Fissure vent,9.0,Historical,1.0,Europe,Industrial Age,Gentle,Intraplate / Other,Lava Flow,Minimal,01,05,1808
+4197,Soufriere St. Vincent,St. Vincent & the Grenadines,13.33,-61.18,1220,Stratovolcano,56.0,Historical,4.0,Americas,Industrial Age,Cataclysmic,Ring of Fire – Pacific,"T, M",High,27,04,1812
+580,Awu,Indonesia,3.689,125.447,1318,Stratovolcano,953.0,Historical,3.0,Asia,Industrial Age,Severe,Sunda Arc – Indonesia,"P,M",Moderate,06,08,1812
+1405,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,,Historical,2.0,Europe,Industrial Age,Explosive,Mediterranean Volcanic Belt,,Low,01,05,1813
+707,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,1200.0,Historical,4.0,Asia,Industrial Age,Cataclysmic,Philippine Arc,"P,M,E",High,01,02,1814
+367,Tambora,Indonesia,-8.25,118.0,2850,Stratovolcano,60000.0,Historical,7.0,Asia,Industrial Age,Super-Colossal,Sunda Arc – Indonesia,"P,W,A,I",Catastrophic,10,04,1815
+4478,Asosan,Japan,32.885,131.085,1592,Caldera,1.0,Historical,2.0,Asia,Industrial Age,Explosive,Japan Arc,Tsunami Generated,Low,05,07,1816
+333,Ijen,Indonesia,-8.058,114.242,2769,Stratovolcano,,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,Mudflow / Lahar,Low,24,01,1817
+298,Raung,Indonesia,-8.119,114.056,3260,Stratovolcano,,Historical,4.0,Asia,Industrial Age,Cataclysmic,Sunda Arc – Indonesia,,High,01,01,1817
+3477,Colima,Mexico,19.514,-103.62,3850,Stratovolcano,,Historical,4.0,Americas,Industrial Age,Cataclysmic,Ring of Fire – Pacific,,High,05,02,1818
+4582,Asuncion,United States,19.671,145.406,857,Stratovolcano,,Historical,,Americas,Industrial Age,Unknown,Intraplate / Other,,Unknown,01,01,1819
+5044,Westdahl,United States,54.516,-164.65,1563,Stratovolcano,,Historical,2.0,Americas,Industrial Age,Explosive,Ring of Fire – Pacific,,Low,01,03,1820
+482,Banda Api,Pacific Ocean,-4.523,129.881,596,Caldera,,Historical,2.0,Oceania,Industrial Age,Explosive,Sunda Arc – Indonesia,,Low,11,06,1820
+2695,Toya,Japan,42.544,140.839,733,Stratovolcano,50.0,Historical,4.0,Asia,Industrial Age,Cataclysmic,Japan Arc,Phreatic / Phreatomagmatic,High,09,03,1822
+2521,Galunggung,Indonesia,-7.25,108.058,2168,Stratovolcano,4011.0,Historical,5.0,Asia,Industrial Age,Paroxysmal,Sunda Arc – Indonesia,"P,M",Very High,08,10,1822
+69,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,100.0,Historical,3.0,Asia,Industrial Age,Severe,Sunda Arc – Indonesia,,Moderate,27,12,1822
+3344,Kilauea,United States,19.421,-155.287,1222,Shield volcano,,Historical,0.0,Americas,Industrial Age,Non-Explosive,Ring of Fire – Pacific,Lava Flow,Minimal,01,02,1823
+3164,Shishaldin,United States,54.756,-163.97,2857,Stratovolcano,,Historical,3.0,Americas,Industrial Age,Severe,Ring of Fire – Pacific,,Moderate,21,03,1825
+4444,Balbi,Papua New Guinea,-5.916,155.001,2715,Stratovolcano,,Holocene,,Oceania,Industrial Age,Unknown,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,Unknown,01,01,1825
+2571,Dieng Volcanic Complex,Indonesia,-7.2,109.879,2565,Complex volcano,,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,,Low,11,10,1826
+132,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,,Historical,4.0,Asia,Industrial Age,Cataclysmic,Sunda Arc – Indonesia,Mudflow / Lahar,High,13,10,1826
+990,Asosan,Japan,32.885,131.085,1592,Caldera,,Historical,2.0,Asia,Industrial Age,Explosive,Japan Arc,Tsunami Generated,Low,01,10,1826
+2882,Avachinsky,Russia,53.256,158.836,2717,Stratovolcano,,Historical,2.0,Europe,Industrial Age,Explosive,Ring of Fire – Pacific,,Low,27,06,1827
+4515,Avachinsky,Russia,53.256,158.836,2717,Stratovolcano,,Historical,2.0,Europe,Industrial Age,Explosive,Ring of Fire – Pacific,,Low,09,08,1827
+4455,Guntur,Indonesia,-7.143,107.841,2251,Complex volcano,,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,,Low,01,01,1829
+6,Etna,Italy,37.748,14.999,3357,Stratovolcano,,Historical,2.0,Europe,Industrial Age,Explosive,Mediterranean Volcanic Belt,Lava Flow,Low,01,11,1832
+71,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,32.0,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,,Low,25,12,1832
+4451,Kaba,Indonesia,-3.522,102.615,1940,Stratovolcano,126.0,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,Mudflow / Lahar,Low,24,11,1833
+3688,Cosiguina,Nicaragua,12.98,-87.57,872,Stratovolcano,,Historical,5.0,Americas,Industrial Age,Paroxysmal,Ring of Fire – Pacific,"G,I",Very High,20,01,1835
+5605,Banda Api,Pacific Ocean,-4.523,129.881,596,Caldera,,Historical,,Oceania,Industrial Age,Unknown,Sunda Arc – Indonesia,,Unknown,01,11,1835
+4905,Peuet Sague,Indonesia,4.903,96.289,2785,Complex volcano,,Historical,,Asia,Industrial Age,Unknown,Sunda Arc – Indonesia,,Unknown,01,09,1837
+627,Gamalama,Indonesia,0.81,127.332,1714,Stratovolcano,4.0,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,Tsunami Generated,Low,26,02,1838
+4078,Unnamed,Chile,-33.62,-76.83,-642,Submarine volcano,,Uncertain,2.0,Americas,Industrial Age,Explosive,Ring of Fire – Pacific,,Low,12,02,1839
+629,Gamalama,Indonesia,0.81,127.332,1714,Stratovolcano,,Historical,3.0,Asia,Industrial Age,Severe,Sunda Arc – Indonesia,,Moderate,02,02,1840
+3347,Kilauea,United States,19.421,-155.287,1222,Shield volcano,,Historical,0.0,Americas,Industrial Age,Non-Explosive,Ring of Fire – Pacific,,Minimal,30,05,1840
+6265,Ararat,Turkey,39.7,44.3,5165,Stratovolcano,1900.0,Holocene,3.0,Asia,Industrial Age,Severe,Mediterranean Volcanic Belt,Phreatic / Phreatomagmatic,Moderate,02,07,1840
+4445,Savo,Solomon Is.,-9.13,159.82,485,Stratovolcano,100.0,Historical,3.0,Oceania,Industrial Age,Severe,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,Moderate,01,01,1840
+4446,Tinakula,Solomon Is.,-10.386,165.804,796,Stratovolcano,,Historical,3.0,Oceania,Industrial Age,Severe,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,Moderate,01,01,1840
+821,Kuchinoerabujima,Japan,30.443,130.217,657,Stratovolcano,,Historical,2.0,Asia,Industrial Age,Explosive,Japan Arc,Tsunami Generated,Low,01,04,1841
+4172,Liamuiga,St. Kitts & Nevis,17.37,-62.8,1156,Stratovolcano,,Radiocarbon,0.0,Americas,Industrial Age,Non-Explosive,Ring of Fire – Pacific,,Minimal,08,02,1843
+4187,Soufriere Guadeloupe,Guadeloupe,16.044,-61.664,1467,Stratovolcano,,Historical,,Americas,Industrial Age,Unknown,Ring of Fire – Pacific,,Unknown,17,02,1843
+261,Lamongan,Indonesia,-7.981,113.341,1641,Stratovolcano,4.0,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,,Low,01,08,1843
+44,Etna,Italy,37.748,14.999,3357,Stratovolcano,59.0,Historical,2.0,Europe,Industrial Age,Explosive,Mediterranean Volcanic Belt,Lava Flow,Low,25,11,1843
+489,Soputan,Indonesia,1.112,124.737,1785,Stratovolcano,118.0,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,,Low,08,02,1845
+3833,"Ruiz, Nevado del",Colombia,4.892,-75.324,5279,Stratovolcano,1000.0,Historical,3.0,Americas,Industrial Age,Severe,Ring of Fire – Pacific,Mudflow / Lahar,Moderate,19,02,1845
+4253,Hekla,Iceland,63.983,-19.666,1490,Stratovolcano,,Historical,4.0,Europe,Industrial Age,Cataclysmic,Mid-Atlantic Ridge – Iceland,,High,02,09,1845
+6268,Taupo,New Zealand,-38.781,175.893,760,Caldera,63.0,Radiocarbon,,Oceania,Industrial Age,Unknown,Ring of Fire – Pacific,Mudflow / Lahar,Unknown,07,05,1846
+2496,Tangkuban Parahu,Indonesia,-6.77,107.6,2084,Stratovolcano,,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,,Low,27,05,1846
+4487,Esan,Japan,41.805,141.166,618,Stratovolcano,,Historical,1.0,Asia,Industrial Age,Gentle,Japan Arc,Mudflow / Lahar,Minimal,18,11,1846
+4383,Fogo,Cape Verde,14.95,-24.35,2829,Stratovolcano,,Historical,2.0,Africa,Industrial Age,Explosive,Intraplate / Other,Submarine Eruption,Low,09,04,1847
+2572,Dieng Volcanic Complex,Indonesia,-7.2,109.879,2565,Complex volcano,,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,,Low,04,12,1847
+133,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,22.0,Historical,3.0,Asia,Industrial Age,Severe,Sunda Arc – Indonesia,Mudflow / Lahar,Moderate,16,05,1848
+5,Rabaul,Papua New Guinea,-4.246,152.194,688,Pyroclastic shield,,Historical,2.0,Oceania,Industrial Age,Explosive,Ring of Fire – Pacific,Tsunami Generated,Low,01,01,1850
+37,Niuafo'ou,Tonga,-15.6,-175.63,260,Shield volcano,25.0,Historical,0.0,Oceania,Industrial Age,Non-Explosive,Ring of Fire – Pacific,Lava Flow,Minimal,24,06,1853
+712,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,34.0,Historical,3.0,Asia,Industrial Age,Severe,Philippine Arc,Phreatic / Phreatomagmatic,Moderate,13,07,1853
+787,Unnamed,Taiwan,24.0,121.83,0,Submarine volcano,,Historical,2.0,Asia,Industrial Age,Explosive,Intraplate / Other,,Low,29,10,1853
+3060,Sheveluch,Russia,56.653,161.36,3283,Stratovolcano,,Historical,5.0,Europe,Industrial Age,Paroxysmal,Ring of Fire – Pacific,,Very High,18,02,1854
+994,Asosan,Japan,32.885,131.085,1592,Caldera,3.0,Historical,2.0,Asia,Industrial Age,Explosive,Japan Arc,,Low,01,02,1854
+2840,Alaid,Russia,50.861,155.565,2285,Stratovolcano,,Historical,3.0,Europe,Industrial Age,Severe,Ring of Fire – Pacific,,Moderate,27,06,1854
+581,Awu,Indonesia,3.689,125.447,1318,Stratovolcano,2806.0,Historical,3.0,Asia,Industrial Age,Severe,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Moderate,02,03,1856
+5884,Shishaldin,United States,54.756,-163.97,2857,Stratovolcano,,Historical,,Americas,Industrial Age,Unknown,Ring of Fire – Pacific,,Unknown,26,07,1856
+2679,Hokkaido-Komagatake,Japan,42.063,140.677,1131,Stratovolcano,25.0,Historical,4.0,Asia,Industrial Age,Cataclysmic,Japan Arc,"P,T",High,25,09,1856
+4906,Umboi,Papua New Guinea,-5.592,147.892,1335,Complex volcano,,Holocene,,Oceania,Industrial Age,Unknown,Intraplate / Other,,Unknown,17,04,1857
+714,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,,Historical,2.0,Asia,Industrial Age,Explosive,Philippine Arc,Phreatic / Phreatomagmatic,Low,01,01,1858
+6484,Midagahara,Japan,36.571,137.59,2621,Stratovolcano,,Historical,,Asia,Industrial Age,Unknown,Japan Arc,Mudflow / Lahar,Unknown,23,04,1858
+6485,Midagahara,Japan,36.571,137.59,2621,Stratovolcano,,Historical,,Asia,Industrial Age,Unknown,Japan Arc,Mudflow / Lahar,Unknown,03,07,1858
+159,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,,Low,01,04,1860
+3559,Fuego,Guatemala,14.473,-90.88,3763,Stratovolcano,,Historical,2.0,Americas,Industrial Age,Explosive,Ring of Fire – Pacific,,Low,18,08,1860
+6645,Grimsvotn,Iceland,64.416,-17.316,1719,Caldera,1.0,Historical,,Europe,Industrial Age,Unknown,Mid-Atlantic Ridge – Iceland,Mudflow / Lahar,Unknown,01,01,1860
+1342,Dubbi,Eritrea,13.579,41.809,1625,Stratovolcano,106.0,Historical,3.0,Africa,Industrial Age,Severe,East African Rift,Phreatic / Phreatomagmatic,Moderate,07,05,1861
+4283,Grimsvotn,Iceland,64.416,-17.316,1719,Caldera,,Historical,2.0,Europe,Industrial Age,Explosive,Mid-Atlantic Ridge – Iceland,,Low,01,05,1861
+666,Kie Besi,Indonesia,0.32,127.4,1357,Stratovolcano,326.0,Historical,4.0,Asia,Industrial Age,Cataclysmic,Sunda Arc – Indonesia,"P,I",High,29,12,1861
+5624,Yasur,Vanuatu,-19.532,169.447,361,Stratovolcano,,Historical,,Oceania,Industrial Age,Unknown,Ring of Fire – Pacific,,Unknown,17,08,1863
+135,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,54.0,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,Mudflow / Lahar,Low,04,01,1864
+1650,Santorini,Greece,36.404,25.396,367,Shield volcano,1.0,Historical,2.0,Europe,Industrial Age,Explosive,Mediterranean Volcanic Belt,Tsunami Generated,Low,20,02,1866
+2065,Ofu-Olosega,United States,-14.175,-169.618,639,Shield volcano,,Historical,2.0,Americas,Industrial Age,Explosive,Ring of Fire – Pacific,,Low,12,09,1866
+1232,Zaozan [Zaosan],Japan,38.144,140.44,1841,Complex volcano,3.0,Historical,2.0,Asia,Industrial Age,Explosive,Japan Arc,Mudflow / Lahar,Low,21,10,1867
+3423,Mauna Loa,United States,19.475,-155.608,4170,Shield volcano,77.0,Historical,2.0,Americas,Industrial Age,Explosive,Ring of Fire – Pacific,"W,M",Low,03,04,1868
+4907,Etna,Italy,37.748,14.999,3357,Stratovolcano,,Historical,,Europe,Industrial Age,Unknown,Mediterranean Volcanic Belt,,Unknown,05,09,1868
+410,Lewotobi,Indonesia,-8.542,122.775,1703,Stratovolcano,2.0,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,,Low,07,07,1869
+269,Lamongan,Indonesia,-7.981,113.341,1641,Stratovolcano,8.0,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,"T,A",Low,01,08,1869
+530,Ruang,Indonesia,2.3,125.37,725,Stratovolcano,,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,,Low,01,08,1870
+4448,Ambae,Vanuatu,-15.389,167.835,1496,Shield volcano,100.0,Historical,2.0,Oceania,Industrial Age,Explosive,Ring of Fire – Pacific,Mudflow / Lahar,Low,01,01,1870
+439,Iliwerung,Indonesia,-8.532,123.573,583,Complex volcano,,Historical,3.0,Asia,Industrial Age,Severe,Sunda Arc – Indonesia,,Moderate,01,01,1870
+533,Ruang,Indonesia,2.3,125.37,725,Stratovolcano,400.0,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,Waves / Surges,Low,03,03,1871
+679,Camiguin,Philippines,9.203,124.673,1552,Stratovolcano,,Historical,2.0,Asia,Industrial Age,Explosive,Philippine Arc,,Low,30,04,1871
+643,Gamalama,Indonesia,0.81,127.332,1714,Stratovolcano,1.0,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,Tsunami Generated,Low,07,08,1871
+716,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,3.0,Historical,3.0,Asia,Industrial Age,Severe,Philippine Arc,Phreatic / Phreatomagmatic,Moderate,08,12,1871
+81,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,30.0,Historical,4.0,Asia,Industrial Age,Cataclysmic,Sunda Arc – Indonesia,Tsunami Generated,High,15,04,1872
+6328,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,170.0,Historical,4.0,Asia,Industrial Age,Cataclysmic,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,High,17,04,1872
+29,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,9.0,Historical,3.0,Europe,Industrial Age,Severe,Mediterranean Volcanic Belt,"L,G",Moderate,24,04,1872
+82,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,200.0,Historical,4.0,Asia,Industrial Age,Cataclysmic,Sunda Arc – Indonesia,"P,T",High,03,11,1872
+995,Asosan,Japan,32.885,131.085,1592,Caldera,4.0,Historical,3.0,Asia,Industrial Age,Severe,Japan Arc,Tsunami Generated,Moderate,01,12,1872
+2818,Sinarka,Russia,48.873,154.182,911,Stratovolcano,,Historical,4.0,Europe,Industrial Age,Cataclysmic,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,High,01,01,1872
+677,Ragang,Philippines,7.691,124.507,2790,Stratovolcano,,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,,Low,16,01,1873
+6244,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,9.0,Historical,,Europe,Industrial Age,Unknown,Mediterranean Volcanic Belt,"G,T",Unknown,01,01,1873
+2582,Miyakejima,Japan,34.094,139.526,775,Stratovolcano,1.0,Historical,3.0,Asia,Industrial Age,Severe,Japan Arc,Tsunami Generated,Moderate,03,07,1874
+756,Taal,Philippines,14.011,120.998,311,Stratovolcano,,Historical,2.0,Asia,Industrial Age,Explosive,Philippine Arc,,Low,19,07,1874
+136,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,,Historical,,Asia,Industrial Age,Unknown,Sunda Arc – Indonesia,Mudflow / Lahar,Unknown,29,01,1875
+4305,Askja,Iceland,65.033,-16.783,1080,Stratovolcano,,Historical,5.0,Europe,Industrial Age,Paroxysmal,Mid-Atlantic Ridge – Iceland,,Very High,29,03,1875
+6427,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,1500.0,Historical,,Asia,Industrial Age,Unknown,Philippine Arc,Mudflow / Lahar,Unknown,01,01,1875
+3432,Mauna Loa,United States,19.475,-155.608,4170,Shield volcano,,Historical,0.0,Americas,Industrial Age,Non-Explosive,Ring of Fire – Pacific,,Minimal,14,02,1877
+3944,Cotopaxi,Ecuador,-0.677,-78.436,5911,Stratovolcano,340.0,Historical,4.0,Americas,Industrial Age,Cataclysmic,Ring of Fire – Pacific,Mudflow / Lahar,High,25,06,1877
+4513,Yasur,Vanuatu,-19.532,169.447,361,Stratovolcano,,Historical,3.0,Oceania,Industrial Age,Severe,Ring of Fire – Pacific,,Moderate,10,01,1878
+16,Rabaul,Papua New Guinea,-4.246,152.194,688,Pyroclastic shield,1.0,Historical,3.0,Oceania,Industrial Age,Severe,Ring of Fire – Pacific,Tsunami Generated,Moderate,04,02,1878
+5664,Yasur,Vanuatu,-19.532,169.447,361,Stratovolcano,,Historical,,Oceania,Industrial Age,Unknown,Ring of Fire – Pacific,,Unknown,11,02,1878
+4522,Okmok,United States,53.43,-168.13,1073,Shield volcano,,Historical,2.0,Americas,Industrial Age,Explosive,Ring of Fire – Pacific,,Low,29,08,1878
+1440,Stromboli,Italy,38.789,15.213,924,Stratovolcano,,Historical,2.0,Europe,Industrial Age,Explosive,Mediterranean Volcanic Belt,,Low,04,02,1879
+3,Karthala,Comoros,-11.75,43.38,2361,Shield volcano,,Historical,2.0,Africa,Industrial Age,Explosive,East African Rift,Lava Flow,Low,01,03,1883
+2429,Krakatau,Indonesia,-6.101,105.423,285,Caldera,36417.0,Historical,6.0,Asia,Industrial Age,Colossal,Sunda Arc – Indonesia,"W,P,I",Extreme,27,08,1883
+3268,Augustine,United States,59.363,-153.435,1218,Lava dome,8.0,Historical,4.0,Americas,Industrial Age,Cataclysmic,Ring of Fire – Pacific,,High,06,10,1883
+5264,Krakatau,Indonesia,-6.101,105.423,285,Caldera,,Historical,,Asia,Industrial Age,Unknown,Sunda Arc – Indonesia,,Unknown,10,10,1883
+2190,Bagana,Papua New Guinea,-6.137,155.196,1855,Lava cone,,Historical,3.0,Oceania,Industrial Age,Severe,Ring of Fire – Pacific,Tsunami Generated,Moderate,01,12,1883
+5285,Krakatau,Indonesia,-6.101,105.423,285,Caldera,,Historical,,Asia,Industrial Age,Unknown,Sunda Arc – Indonesia,,Unknown,01,02,1884
+167,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,74.0,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,Ash / Tephra,Low,18,04,1885
+3846,Purace,Colombia,2.32,-76.4,4650,Stratovolcano,,Historical,3.0,Americas,Industrial Age,Severe,Ring of Fire – Pacific,,Moderate,25,05,1885
+3965,Tungurahua,Ecuador,-1.467,-78.442,5023,Stratovolcano,2.0,Historical,4.0,Americas,Industrial Age,Cataclysmic,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,High,11,01,1886
+1343,Okataina,New Zealand,-38.157,176.507,1111,Lava dome,153.0,Historical,5.0,Oceania,Industrial Age,Paroxysmal,Ring of Fire – Pacific,Tsunami Generated,Very High,10,06,1886
+33,Niuafo'ou,Tonga,-15.6,-175.63,260,Shield volcano,,Historical,4.0,Oceania,Industrial Age,Cataclysmic,Ring of Fire – Pacific,,High,31,08,1886
+724,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,15.0,Historical,3.0,Asia,Industrial Age,Severe,Philippine Arc,Tsunami Generated,Moderate,09,03,1887
+4,Ritter Island,Papua New Guinea,-5.519,148.115,75,Stratovolcano,,Historical,2.0,Oceania,Industrial Age,Explosive,Intraplate / Other,Waves / Surges,Low,13,03,1888
+1211,Bandaisan,Japan,37.601,140.072,1816,Stratovolcano,461.0,Historical,4.0,Asia,Industrial Age,Cataclysmic,Japan Arc,"A,P",High,15,07,1888
+569,Banua Wuhu,Indonesia,3.138,125.491,-5,Submarine volcano,,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,,Low,06,09,1889
+669,Kie Besi,Indonesia,0.32,127.4,1357,Stratovolcano,,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,,Low,29,06,1890
+4443,Victory,Papua New Guinea,-9.2,149.072,1832,Stratovolcano,,Historical,2.0,Oceania,Industrial Age,Explosive,Intraplate / Other,Phreatic / Phreatomagmatic,Low,01,01,1890
+4450,Sorikmarapi,Indonesia,0.686,99.539,2145,Stratovolcano,180.0,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,Mudflow / Lahar,Low,21,05,1892
+584,Awu,Indonesia,3.689,125.447,1318,Stratovolcano,1532.0,Historical,3.0,Asia,Industrial Age,Severe,Sunda Arc – Indonesia,"P,M",Moderate,07,06,1892
+6664,Tofua,Tonga,-19.75,-175.07,515,Caldera,,Historical,2.0,Oceania,Industrial Age,Explosive,Ring of Fire – Pacific,,Low,30,08,1892
+6125,Calbuco,Chile,-41.33,-72.618,1974,Stratovolcano,,Historical,4.0,Americas,Industrial Age,Cataclysmic,Ring of Fire – Pacific,,High,07,01,1893
+1215,Azumayama,Japan,37.735,140.244,1949,Stratovolcano,2.0,Historical,2.0,Asia,Industrial Age,Explosive,Japan Arc,Tsunami Generated,Low,07,06,1893
+2250,Ambrym,Vanuatu,-16.25,168.12,1334,Pyroclastic shield,10.0,Historical,3.0,Oceania,Industrial Age,Severe,Ring of Fire – Pacific,"T,L",Moderate,01,10,1894
+176,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,80.0,Historical,2.0,Asia,Industrial Age,Explosive,Sunda Arc – Indonesia,Mudflow / Lahar,Low,22,05,1895
+35,Karkar,Papua New Guinea,-4.647,145.976,1839,Stratovolcano,21.0,Historical,2.0,Oceania,Industrial Age,Explosive,Intraplate / Other,"I,M",Low,17,06,1895
+4472,Kirishimayama,Japan,31.934,130.862,1700,Shield volcano,4.0,Historical,2.0,Asia,Industrial Age,Explosive,Japan Arc,Tsunami Generated,Low,16,10,1895
+1353,Dakataua,Papua New Guinea,-5.046,150.1,408,Caldera,,Anthropology,2.0,Oceania,Industrial Age,Explosive,Ring of Fire – Pacific,?,Low,01,01,1895
+4473,Kirishimayama,Japan,31.934,130.862,1700,Shield volcano,1.0,Historical,2.0,Asia,Industrial Age,Explosive,Japan Arc,Tsunami Generated,Low,15,03,1896
+6684,Tinakula,Solomon Is.,-10.386,165.804,796,Stratovolcano,,Historical,2.0,Oceania,Industrial Age,Explosive,Ring of Fire – Pacific,Waves / Surges,Low,26,03,1897
+730,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,350.0,Historical,3.0,Asia,Industrial Age,Severe,Philippine Arc,"P,T,M",Moderate,23,05,1897
+3855,Dona Juana,Colombia,1.5,-76.936,4137,Stratovolcano,55.0,Historical,4.0,Americas,Industrial Age,Cataclysmic,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,High,13,11,1899
+19,Manam,Papua New Guinea,-4.08,145.037,1807,Stratovolcano,2.0,Historical,2.0,Oceania,Industrial Age,Explosive,Intraplate / Other,,Low,01,01,1899
+1158,Asamayama,Japan,36.406,138.523,2568,Complex volcano,25.0,Historical,2.0,Asia,Early 20th Century,Explosive,Japan Arc,,Low,22,01,1900
+4474,Kirishimayama,Japan,31.934,130.862,1700,Shield volcano,2.0,Historical,2.0,Asia,Early 20th Century,Explosive,Japan Arc,,Low,16,02,1900
+1213,Adatarayama,Japan,37.647,140.281,1728,Stratovolcano,72.0,Historical,2.0,Asia,Early 20th Century,Explosive,Japan Arc,Tsunami Generated,Low,17,07,1900
+4965,Bora-Bericha-Tullu Moye,Ethiopia,8.211,39.081,2345,Pumice cone,,Anthropology,,Africa,Early 20th Century,Unknown,East African Rift,,Unknown,01,01,1900
+137,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,,Historical,3.0,Asia,Early 20th Century,Severe,Sunda Arc – Indonesia,,Moderate,22,05,1901
+5064,East Epi,Vanuatu,-16.68,168.389,833,Stratovolcano,,Historical,,Oceania,Early 20th Century,Unknown,Ring of Fire – Pacific,Waves / Surges,Unknown,09,08,1901
+4707,Pelee,Martinique,14.809,-61.166,1372,Stratovolcano,23.0,Historical,4.0,Americas,Early 20th Century,Cataclysmic,Ring of Fire – Pacific,"W,M",High,05,05,1902
+4199,Soufriere St. Vincent,St. Vincent & the Grenadines,13.33,-61.18,1220,Stratovolcano,1680.0,Historical,4.0,Americas,Early 20th Century,Cataclysmic,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,High,07,05,1902
+4193,Pelee,Martinique,14.809,-61.166,1372,Stratovolcano,28000.0,Historical,4.0,Americas,Early 20th Century,Cataclysmic,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,High,08,05,1902
+4805,Pelee,Martinique,14.809,-61.166,1372,Stratovolcano,,Historical,4.0,Americas,Early 20th Century,Cataclysmic,Ring of Fire – Pacific,,High,20,05,1902
+7564,Pelee,Martinique,14.809,-61.166,1372,Stratovolcano,,Historical,4.0,Americas,Early 20th Century,Cataclysmic,Ring of Fire – Pacific,"W,P",High,06,06,1902
+7565,Pelee,Martinique,14.809,-61.166,1372,Stratovolcano,,Historical,4.0,Americas,Early 20th Century,Cataclysmic,Ring of Fire – Pacific,"P,W",High,10,07,1902
+2608,Izu-Torishima,Japan,30.484,140.303,394,Stratovolcano,125.0,Historical,3.0,Asia,Early 20th Century,Severe,Japan Arc,,Moderate,07,08,1902
+4508,Pelee,Martinique,14.809,-61.166,1372,Stratovolcano,1500.0,Historical,4.0,Americas,Early 20th Century,Cataclysmic,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,High,30,08,1902
+3521,Santa Maria,Guatemala,14.757,-91.552,3745,Stratovolcano,10000.0,Historical,6.0,Americas,Early 20th Century,Colossal,Ring of Fire – Pacific,"T,G",Extreme,25,10,1902
+87,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,16.0,Historical,2.0,Asia,Early 20th Century,Explosive,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Low,01,12,1902
+27,Okataina,New Zealand,-38.157,176.507,1111,Lava dome,4.0,Historical,1.0,Oceania,Early 20th Century,Gentle,Ring of Fire – Pacific,Tsunami Generated,Minimal,30,08,1903
+6267,Karthala,Comoros,-11.75,43.38,2361,Shield volcano,17.0,Historical,,Africa,Early 20th Century,Unknown,East African Rift,Gas / SO₂ Emissions,Unknown,01,01,1903
+7581,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,16.0,Historical,2.0,Asia,Early 20th Century,Explosive,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Low,30,01,1904
+15,Karthala,Comoros,-11.75,43.38,2361,Shield volcano,1.0,Historical,2.0,Africa,Early 20th Century,Explosive,East African Rift,Lava Flow,Low,25,02,1904
+12,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,1.0,Historical,2.0,Europe,Early 20th Century,Explosive,Mediterranean Volcanic Belt,Tsunami Generated,Low,10,03,1905
+2068,Savaii,Samoa,-13.612,-172.525,1858,Shield volcano,,Historical,2.0,Oceania,Early 20th Century,Explosive,Ring of Fire – Pacific,,Low,04,08,1905
+1344,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,350.0,Historical,3.0,Europe,Early 20th Century,Severe,Mediterranean Volcanic Belt,"T,L",Moderate,04,04,1906
+7529,Savaii,Samoa,-13.612,-172.525,1858,Shield volcano,,Historical,2.0,Oceania,Early 20th Century,Explosive,Ring of Fire – Pacific,Waves / Surges,Low,28,11,1906
+7530,Savaii,Samoa,-13.612,-172.525,1858,Shield volcano,,Historical,2.0,Oceania,Early 20th Century,Explosive,Ring of Fire – Pacific,Waves / Surges,Low,08,06,1907
+7531,Savaii,Samoa,-13.612,-172.525,1858,Shield volcano,,Historical,2.0,Oceania,Early 20th Century,Explosive,Ring of Fire – Pacific,Waves / Surges,Low,19,06,1907
+7532,Savaii,Samoa,-13.612,-172.525,1858,Shield volcano,,Historical,2.0,Oceania,Early 20th Century,Explosive,Ring of Fire – Pacific,Waves / Surges,Low,27,06,1907
+7533,Savaii,Samoa,-13.612,-172.525,1858,Shield volcano,,Historical,2.0,Oceania,Early 20th Century,Explosive,Ring of Fire – Pacific,Waves / Surges,Low,09,07,1907
+7534,Savaii,Samoa,-13.612,-172.525,1858,Shield volcano,,Historical,2.0,Oceania,Early 20th Century,Explosive,Ring of Fire – Pacific,Waves / Surges,Low,25,07,1907
+2029,Unnamed,Tonga,-21.338,-175.65,-68,Submarine volcano,,Historical,0.0,Oceania,Early 20th Century,Non-Explosive,Ring of Fire – Pacific,,Minimal,01,07,1907
+11,Alayta,Ethiopia,12.888,40.573,1496,Shield volcano,,Historical,2.0,Africa,Early 20th Century,Explosive,East African Rift,,Low,04,08,1907
+411,Lewotobi,Indonesia,-8.542,122.775,1703,Stratovolcano,1.0,Historical,2.0,Asia,Early 20th Century,Explosive,Sunda Arc – Indonesia,,Low,28,09,1907
+4984,Savaii,Samoa,-13.612,-172.525,1858,Shield volcano,,Historical,,Oceania,Early 20th Century,Unknown,Ring of Fire – Pacific,,Unknown,06,10,1907
+1713,Cameroon,Cameroon,4.203,9.17,4095,Stratovolcano,,Historical,2.0,Africa,Early 20th Century,Explosive,Intraplate / Other,,Low,28,04,1909
+191,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,221.0,Historical,2.0,Asia,Early 20th Century,Explosive,Sunda Arc – Indonesia,Mudflow / Lahar,Low,29,08,1909
+6269,Taupo,New Zealand,-38.781,175.893,760,Caldera,1.0,Radiocarbon,,Oceania,Early 20th Century,Unknown,Ring of Fire – Pacific,Mudflow / Lahar,Unknown,20,03,1910
+2696,Toya,Japan,42.544,140.839,733,Stratovolcano,1.0,Historical,2.0,Asia,Early 20th Century,Explosive,Japan Arc,Mudflow / Lahar,Low,25,07,1910
+761,Taal,Philippines,14.011,120.998,311,Stratovolcano,1335.0,Historical,3.0,Asia,Early 20th Century,Severe,Philippine Arc,"P,W",Moderate,30,01,1911
+4481,Asamayama,Japan,36.406,138.523,2568,Complex volcano,1.0,Historical,2.0,Asia,Early 20th Century,Explosive,Japan Arc,Tsunami Generated,Low,08,05,1911
+4482,Asamayama,Japan,36.406,138.523,2568,Complex volcano,2.0,Historical,2.0,Asia,Early 20th Century,Explosive,Japan Arc,Tsunami Generated,Low,15,08,1911
+4807,Piparo,Trinidad,10.0,-61.0,140,Mud volcano,,Historical,,Americas,Early 20th Century,Unknown,Ring of Fire – Pacific,,Unknown,03,11,1911
+193,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,,Historical,3.0,Asia,Early 20th Century,Severe,Sunda Arc – Indonesia,,Moderate,08,11,1911
+3248,Novarupta,United States,58.266,-155.159,841,Caldera,2.0,Historical,6.0,Americas,Early 20th Century,Colossal,Ring of Fire – Pacific,Tsunami Generated,Extreme,06,09,1912
+34,Nyamulagira,"Congo, DRC",-1.408,29.2,3058,Shield volcano,20.0,Historical,3.0,Sub-Saharan Africa,Early 20th Century,Severe,East African Rift,Lava Flow,Moderate,03,12,1912
+3479,Colima,Mexico,19.514,-103.62,3850,Stratovolcano,13.0,Historical,4.0,Americas,Early 20th Century,Cataclysmic,Ring of Fire – Pacific,"P,M",High,20,01,1913
+585,Awu,Indonesia,3.689,125.447,1318,Stratovolcano,138.0,Historical,2.0,Asia,Early 20th Century,Explosive,Sunda Arc – Indonesia,,Low,14,03,1913
+6504,Asamayama,Japan,36.406,138.523,2568,Complex volcano,1.0,Historical,1.0,Asia,Early 20th Century,Gentle,Japan Arc,Tsunami Generated,Minimal,29,05,1913
+195,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,,Historical,2.0,Asia,Early 20th Century,Explosive,Sunda Arc – Indonesia,,Low,23,06,1913
+2251,Ambrym,Vanuatu,-16.25,168.12,1334,Pyroclastic shield,21.0,Historical,3.0,Oceania,Early 20th Century,Severe,Ring of Fire – Pacific,Tsunami Generated,Moderate,06,12,1913
+867,Aira,Japan,31.577,130.659,1117,Stratovolcano,63.0,Historical,4.0,Asia,Early 20th Century,Cataclysmic,Japan Arc,"I,S,A,T",High,12,01,1914
+32,Whakaari/White Island,New Zealand,-37.52,177.18,294,Stratovolcano,11.0,Historical,,Oceania,Early 20th Century,Unknown,Ring of Fire – Pacific,Ash / Tephra,Unknown,10,09,1914
+6304,Ambae,Vanuatu,-15.389,167.835,1496,Shield volcano,100.0,Historical,,Oceania,Early 20th Century,Unknown,Ring of Fire – Pacific,Lava Flow,Unknown,01,01,1914
+1354,Witori,Papua New Guinea,-5.575,150.516,724,Caldera,,Historical,3.0,Oceania,Early 20th Century,Severe,Ring of Fire – Pacific,Inundation / Lahar,Moderate,01,01,1914
+2594,Myojinsho,Japan,31.888,139.918,11,Submarine volcano,,Historical,0.0,Asia,Early 20th Century,Non-Explosive,Japan Arc,Waves / Surges,Minimal,19,06,1915
+3966,Tungurahua,Ecuador,-1.467,-78.442,5023,Stratovolcano,,Historical,4.0,Americas,Early 20th Century,Cataclysmic,Ring of Fire – Pacific,,High,03,03,1916
+4743,Stromboli,Italy,38.789,15.213,924,Stratovolcano,,Historical,3.0,Europe,Early 20th Century,Severe,Mediterranean Volcanic Belt,,Moderate,03,07,1916
+1666,"Lengai, Ol Doinyo",Tanzania,-2.764,35.914,2962,Stratovolcano,,Historical,3.0,Africa,Early 20th Century,Severe,East African Rift,,Moderate,01,01,1917
+18,Okataina,New Zealand,-38.157,176.507,1111,Lava dome,2.0,Historical,1.0,Oceania,Early 20th Century,Gentle,Ring of Fire – Pacific,Tsunami Generated,Minimal,01,04,1917
+4160,Calbuco,Chile,-41.33,-72.618,1974,Stratovolcano,,Historical,3.0,Americas,Early 20th Century,Severe,Ring of Fire – Pacific,,Moderate,01,04,1917
+3664,San Salvador,El Salvador,13.734,-89.294,1893,Stratovolcano,325.0,Historical,3.0,Americas,Early 20th Century,Severe,Ring of Fire – Pacific,"S,L",Moderate,07,06,1917
+4784,Banua Wuhu,Indonesia,3.138,125.491,-5,Submarine volcano,,Historical,3.0,Asia,Early 20th Century,Severe,Sunda Arc – Indonesia,,Moderate,18,07,1918
+4238,Katla,Iceland,63.633,-19.083,1490,Subglacial volcano,,Historical,4.0,Europe,Early 20th Century,Cataclysmic,Mid-Atlantic Ridge – Iceland,,High,12,10,1918
+5544,Popocatepetl,Mexico,19.023,-98.622,5393,Stratovolcano,,Historical,1.0,Americas,Early 20th Century,Gentle,Ring of Fire – Pacific,Ash / Tephra,Minimal,19,02,1919
+4864,Banua Wuhu,Indonesia,3.138,125.491,-5,Submarine volcano,,Historical,3.0,Asia,Early 20th Century,Severe,Sunda Arc – Indonesia,,Moderate,03,04,1919
+138,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,5110.0,Historical,4.0,Asia,Early 20th Century,Cataclysmic,Sunda Arc – Indonesia,Mudflow / Lahar,High,19,05,1919
+25,Stromboli,Italy,38.789,15.213,924,Stratovolcano,4.0,Historical,3.0,Europe,Early 20th Century,Severe,Mediterranean Volcanic Belt,Tsunami Generated,Moderate,22,05,1919
+6509,Nasudake,Japan,37.125,139.963,1915,Stratovolcano,2.0,Historical,,Asia,Early 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,06,07,1919
+3443,Mauna Loa,United States,19.475,-155.608,4170,Shield volcano,,Historical,0.0,Americas,Early 20th Century,Non-Explosive,Ring of Fire – Pacific,,Minimal,29,09,1919
+92,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,35.0,Historical,2.0,Asia,Early 20th Century,Explosive,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Low,25,07,1920
+3651,Izalco,El Salvador,13.813,-89.633,1950,Stratovolcano,,Historical,3.0,Americas,Early 20th Century,Severe,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,Moderate,29,10,1920
+6510,Nasudake,Japan,37.125,139.963,1915,Stratovolcano,1.0,Historical,,Asia,Early 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,26,11,1921
+7444,"Cendres, Ile des",Vietnam,10.158,109.014,-20,Submarine volcanoes,,Historical,2.0,Asia,Early 20th Century,Explosive,Intraplate / Other,Lava Flow,Low,02,03,1923
+6325,Tangkuban Parahu,Indonesia,-6.77,107.6,2084,Stratovolcano,3.0,Historical,,Asia,Early 20th Century,Unknown,Sunda Arc – Indonesia,Gas / SO₂ Emissions,Unknown,01,06,1923
+4475,Kirishimayama,Japan,31.934,130.862,1700,Shield volcano,1.0,Historical,2.0,Asia,Early 20th Century,Explosive,Japan Arc,,Low,01,07,1923
+3372,Kilauea,United States,19.421,-155.287,1222,Shield volcano,1.0,Historical,2.0,Americas,Early 20th Century,Explosive,Ring of Fire – Pacific,Tsunami Generated,Low,10,05,1924
+2504,Papandayan,Indonesia,-7.32,107.73,2665,Stratovolcano,1.0,Historical,1.0,Asia,Early 20th Century,Gentle,Sunda Arc – Indonesia,Gas / SO₂ Emissions,Minimal,18,12,1924
+42,Santorini,Greece,36.404,25.396,367,Shield volcano,48.0,Historical,2.0,Europe,Early 20th Century,Explosive,Mediterranean Volcanic Belt,Submarine Eruption,Low,23,01,1926
+2740,Tokachidake,Japan,43.418,142.686,2077,Stratovolcano,144.0,Historical,3.0,Asia,Early 20th Century,Severe,Japan Arc,"M,T",Moderate,24,05,1926
+7544,Tokachidake,Japan,43.418,142.686,2077,Stratovolcano,,Historical,3.0,Asia,Early 20th Century,Severe,Japan Arc,,Moderate,08,09,1926
+5565,Esjufjoll,Iceland,64.25,-16.583,1620,Stratovolcano,1.0,Historical,1.0,Europe,Early 20th Century,Gentle,Mid-Atlantic Ridge – Iceland,Mudflow / Lahar,Minimal,05,09,1927
+732,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,,Historical,3.0,Asia,Early 20th Century,Severe,Philippine Arc,Phreatic / Phreatomagmatic,Moderate,01,01,1928
+2431,Krakatau,Indonesia,-6.101,105.423,285,Caldera,,Historical,2.0,Asia,Early 20th Century,Explosive,Sunda Arc – Indonesia,,Low,26,03,1928
+2573,Dieng Volcanic Complex,Indonesia,-7.2,109.879,2565,Complex volcano,40.0,Historical,2.0,Asia,Early 20th Century,Explosive,Sunda Arc – Indonesia,Tsunami Generated,Low,13,05,1928
+394,Paluweh,Indonesia,-8.32,121.708,875,Stratovolcano,226.0,Historical,3.0,Asia,Early 20th Century,Severe,Sunda Arc – Indonesia,"W,T",Moderate,04,08,1928
+28,Etna,Italy,37.748,14.999,3357,Stratovolcano,5.0,Historical,1.0,Europe,Early 20th Century,Gentle,Mediterranean Volcanic Belt,Lava Flow,Minimal,08,11,1928
+4161,Calbuco,Chile,-41.33,-72.618,1974,Stratovolcano,,Historical,3.0,Americas,Early 20th Century,Severe,Ring of Fire – Pacific,,Moderate,06,01,1929
+2686,Hokkaido-Komagatake,Japan,42.063,140.677,1131,Stratovolcano,2.0,Historical,4.0,Asia,Early 20th Century,Cataclysmic,Japan Arc,Tsunami Generated,High,17,06,1929
+1581,Etna,Italy,37.748,14.999,3357,Stratovolcano,2.0,Historical,1.0,Europe,Early 20th Century,Gentle,Mediterranean Volcanic Belt,Tsunami Generated,Minimal,02,08,1929
+3523,Santa Maria,Guatemala,14.757,-91.552,3745,Stratovolcano,200.0,Historical,3.0,Americas,Early 20th Century,Severe,Ring of Fire – Pacific,"P,M",Moderate,02,11,1929
+2433,Krakatau,Indonesia,-6.101,105.423,285,Caldera,,Historical,2.0,Asia,Early 20th Century,Explosive,Sunda Arc – Indonesia,,Low,17,03,1930
+4483,Asamayama,Japan,36.406,138.523,2568,Complex volcano,6.0,Historical,3.0,Asia,Early 20th Century,Severe,Japan Arc,Tsunami Generated,Moderate,20,08,1930
+26,Stromboli,Italy,38.789,15.213,924,Stratovolcano,6.0,Historical,3.0,Europe,Early 20th Century,Severe,Mediterranean Volcanic Belt,"P,W,T",Moderate,11,09,1930
+94,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,1369.0,Historical,3.0,Asia,Early 20th Century,Severe,Sunda Arc – Indonesia,"P,M",Moderate,18,12,1930
+4484,Asamayama,Japan,36.406,138.523,2568,Complex volcano,3.0,Historical,3.0,Asia,Early 20th Century,Severe,Japan Arc,,Moderate,20,08,1931
+3562,Fuego,Guatemala,14.473,-90.88,3763,Stratovolcano,,Historical,4.0,Americas,Early 20th Century,Cataclysmic,Ring of Fire – Pacific,,High,21,01,1932
+6329,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,,Historical,,Asia,Early 20th Century,Unknown,Sunda Arc – Indonesia,Mudflow / Lahar,Unknown,01,02,1932
+1190,Kusatsu-Shiranesan,Japan,36.618,138.528,2165,Stratovolcano,2.0,Historical,3.0,Asia,Early 20th Century,Severe,Japan Arc,Mudflow / Lahar,Moderate,01,10,1932
+2822,Kharimkotan,Russia,49.12,154.508,1145,Stratovolcano,2.0,Historical,5.0,Europe,Early 20th Century,Paroxysmal,Ring of Fire – Pacific,Waves / Surges,Very High,08,01,1933
+6468,Hakoneyama,Japan,35.233,139.021,1438,Complex volcano,1.0,Radiocarbon,,Asia,Early 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,10,05,1933
+823,Kuchinoerabujima,Japan,30.443,130.217,657,Stratovolcano,8.0,Historical,4.0,Asia,Early 20th Century,Cataclysmic,Japan Arc,Tsunami Generated,High,24,12,1933
+697,Bulusan,Philippines,12.769,124.056,1535,Stratovolcano,9.0,Historical,2.0,Asia,Early 20th Century,Explosive,Philippine Arc,,Low,25,12,1933
+6568,Hood,United States,45.374,-121.695,3426,Stratovolcano,1.0,Historical,,Americas,Early 20th Century,Unknown,Ring of Fire – Pacific,Gas / SO₂ Emissions,Unknown,01,01,1934
+1163,Asamayama,Japan,36.406,138.523,2568,Complex volcano,2.0,Historical,3.0,Asia,Early 20th Century,Severe,Japan Arc,"P,T",Moderate,29,07,1936
+7526,Dona Juana,Colombia,1.5,-76.936,4137,Stratovolcano,18.0,Historical,,Americas,Early 20th Century,Unknown,Ring of Fire – Pacific,"A,F",Unknown,14,08,1936
+4505,Llaima,Chile,-38.692,-71.729,3125,Stratovolcano,3.0,Historical,2.0,Americas,Early 20th Century,Explosive,Ring of Fire – Pacific,Fumarolic Activity,Low,09,02,1937
+1346,Rabaul,Papua New Guinea,-4.246,152.194,688,Pyroclastic shield,507.0,Historical,4.0,Oceania,Early 20th Century,Cataclysmic,Ring of Fire – Pacific,"P,T,W,I",High,29,05,1937
+1682,Nyamulagira,"Congo, DRC",-1.408,29.2,3058,Shield volcano,,Historical,1.0,Sub-Saharan Africa,Early 20th Century,Gentle,East African Rift,,Minimal,28,01,1938
+6511,Bandaisan,Japan,37.601,140.072,1816,Stratovolcano,2.0,Historical,,Asia,Early 20th Century,Unknown,Japan Arc,Mudflow / Lahar,Unknown,09,05,1938
+733,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,,Historical,2.0,Asia,Early 20th Century,Explosive,Philippine Arc,,Low,05,06,1938
+6505,Asamayama,Japan,36.406,138.523,2568,Complex volcano,,Historical,1.0,Asia,Early 20th Century,Gentle,Japan Arc,Tsunami Generated,Minimal,16,07,1938
+7224,Kick 'em Jenny,Netherlands,12.3,-61.64,-185,Submarine volcano,,Historical,1.0,Europe,Early 20th Century,Gentle,Ring of Fire – Pacific,Tsunami Generated,Minimal,24,07,1939
+2609,Izu-Torishima,Japan,30.484,140.303,394,Stratovolcano,2.0,Historical,2.0,Asia,Early 20th Century,Explosive,Japan Arc,,Low,17,08,1939
+2574,Dieng Volcanic Complex,Indonesia,-7.2,109.879,2565,Complex volcano,10.0,Historical,1.0,Asia,Early 20th Century,Gentle,Sunda Arc – Indonesia,Tsunami Generated,Minimal,13,10,1939
+552,Karangetang,Indonesia,2.781,125.407,1797,Stratovolcano,1.0,Historical,2.0,Asia,Early 20th Century,Explosive,Sunda Arc – Indonesia,,Low,20,06,1940
+2583,Miyakejima,Japan,34.094,139.526,775,Stratovolcano,11.0,Historical,2.0,Asia,Early 20th Century,Explosive,Japan Arc,Lava Flow,Low,12,07,1940
+1668,"Lengai, Ol Doinyo",Tanzania,-2.764,35.914,2962,Stratovolcano,,Historical,2.0,Africa,Early 20th Century,Explosive,East African Rift,,Low,24,07,1940
+4485,Asamayama,Japan,36.406,138.523,2568,Complex volcano,1.0,Historical,2.0,Asia,Early 20th Century,Explosive,Japan Arc,Tsunami Generated,Low,13,07,1941
+196,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,,Historical,2.0,Asia,Early 20th Century,Explosive,Sunda Arc – Indonesia,,Low,21,09,1941
+4493,Michoacan-Guanajuato,Mexico,19.85,-101.75,3860,Cinder cone,103.0,Historical,4.0,Americas,Early 20th Century,Cataclysmic,Ring of Fire – Pacific,"E,I",High,20,02,1943
+4033,"Azul, Cerro",Ecuador,-0.92,-91.408,1640,Shield volcano,1.0,Historical,3.0,Americas,Early 20th Century,Severe,Ring of Fire – Pacific,Tsunami Generated,Moderate,13,04,1943
+39,Vesuvius,Italy,40.821,14.426,1281,Complex volcano,27.0,Historical,3.0,Europe,Early 20th Century,Severe,Mediterranean Volcanic Belt,"T,L,I",Moderate,27,03,1944
+3105,Cleveland,United States,52.825,-169.944,1730,Stratovolcano,1.0,Historical,3.0,Americas,Early 20th Century,Severe,Ring of Fire – Pacific,Tsunami Generated,Moderate,10,06,1944
+7546,Toya,Japan,42.544,140.839,733,Stratovolcano,1.0,Historical,,Asia,Early 20th Century,Unknown,Japan Arc,Phreatic / Phreatomagmatic,Unknown,11,07,1944
+1476,Stromboli,Italy,38.789,15.213,924,Stratovolcano,,Historical,2.0,Europe,Early 20th Century,Explosive,Mediterranean Volcanic Belt,Waves / Surges,Low,20,08,1944
+6547,Toya,Japan,42.544,140.839,733,Stratovolcano,1.0,Historical,2.0,Asia,Early 20th Century,Explosive,Japan Arc,Gas / SO₂ Emissions,Low,26,08,1944
+45,Dieng Volcanic Complex,Indonesia,-7.2,109.879,2565,Complex volcano,117.0,Historical,2.0,Asia,Early 20th Century,Explosive,Sunda Arc – Indonesia,Tsunami Generated,Low,04,12,1944
+2697,Toya,Japan,42.544,140.839,733,Stratovolcano,1.0,Historical,2.0,Asia,Early 20th Century,Explosive,Japan Arc,Tsunami Generated,Low,28,12,1944
+874,Aira,Japan,31.577,130.659,1117,Stratovolcano,1.0,Historical,2.0,Asia,Early 20th Century,Explosive,Japan Arc,,Low,01,01,1946
+198,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,6.0,Historical,2.0,Asia,Early 20th Century,Explosive,Sunda Arc – Indonesia,Fumarolic Activity,Low,01,02,1946
+199,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,,Historical,2.0,Asia,Early 20th Century,Explosive,Sunda Arc – Indonesia,,Low,29,10,1946
+7044,Sarychev Peak,Russia,48.092,153.2,1496,Stratovolcano,,Historical,4.0,Europe,Early 20th Century,Cataclysmic,Ring of Fire – Pacific,,High,13,11,1946
+735,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,,Historical,2.0,Asia,Early 20th Century,Explosive,Philippine Arc,,Low,07,01,1947
+1166,Asamayama,Japan,36.406,138.523,2568,Complex volcano,11.0,Historical,2.0,Asia,Early 20th Century,Explosive,Japan Arc,,Low,14,08,1947
+6508,Akagisan,Japan,36.56,139.193,1828,Stratovolcano,699.0,Historical,,Asia,Early 20th Century,Unknown,Japan Arc,Mudflow / Lahar,Unknown,16,09,1947
+4510,Hekla,Iceland,63.983,-19.666,1490,Stratovolcano,1.0,Historical,4.0,Europe,Early 20th Century,Cataclysmic,Mid-Atlantic Ridge – Iceland,Lava Flow,High,02,11,1947
+441,Iliwerung,Indonesia,-8.532,123.573,583,Complex volcano,,Historical,2.0,Asia,Early 20th Century,Explosive,Sunda Arc – Indonesia,,Low,07,04,1948
+4139,Villarrica,Chile,-39.42,-71.93,2847,Stratovolcano,54.0,Historical,3.0,Americas,Early 20th Century,Severe,Ring of Fire – Pacific,Mudflow / Lahar,Moderate,01,01,1949
+3851,Purace,Colombia,2.32,-76.4,4650,Stratovolcano,17.0,Historical,2.0,Americas,Early 20th Century,Explosive,Ring of Fire – Pacific,Tsunami Generated,Low,26,05,1949
+6425,Camiguin,Philippines,9.203,124.673,1552,Stratovolcano,2.0,Historical,3.0,Asia,Early 20th Century,Severe,Philippine Arc,Phreatic / Phreatomagmatic,Moderate,01,06,1949
+200,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,6.0,Historical,1.0,Asia,Late 20th Century,Gentle,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Minimal,28,08,1950
+680,Camiguin,Philippines,9.203,124.673,1552,Stratovolcano,68.0,Historical,3.0,Asia,Late 20th Century,Severe,Philippine Arc,Phreatic / Phreatomagmatic,Moderate,15,09,1950
+1168,Asamayama,Japan,36.406,138.523,2568,Complex volcano,1.0,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,Tsunami Generated,Low,23,09,1950
+2188,Lamington,Papua New Guinea,-8.95,148.15,1680,Stratovolcano,2942.0,Historical,4.0,Oceania,Late 20th Century,Cataclysmic,Intraplate / Other,Phreatic / Phreatomagmatic,High,21,01,1951
+4824,Cosiguina,Nicaragua,12.98,-87.57,872,Stratovolcano,,Historical,,Americas,Late 20th Century,Unknown,Ring of Fire – Pacific,,Unknown,03,08,1951
+140,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,7.0,Historical,4.0,Asia,Late 20th Century,Cataclysmic,Sunda Arc – Indonesia,,High,31,08,1951
+6469,Hakoneyama,Japan,35.233,139.021,1438,Complex volcano,2.0,Radiocarbon,,Asia,Late 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,05,11,1951
+6426,Camiguin,Philippines,9.203,124.673,1552,Stratovolcano,500.0,Historical,3.0,Asia,Late 20th Century,Severe,Philippine Arc,Phreatic / Phreatomagmatic,Moderate,04,12,1951
+2208,Kavachi,Solomon Is.,-8.991,157.979,-20,Submarine volcano,,Historical,2.0,Oceania,Late 20th Century,Explosive,Ring of Fire – Pacific,,Low,01,01,1951
+6470,Hakoneyama,Japan,35.233,139.021,1438,Complex volcano,1.0,Radiocarbon,,Asia,Late 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,27,03,1952
+4850,Myojinsho,Japan,31.888,139.918,11,Submarine volcano,,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,,Low,16,09,1952
+7574,Myojinsho,Japan,31.888,139.918,11,Submarine volcano,,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,,Low,17,09,1952
+4851,Myojinsho,Japan,31.888,139.918,11,Submarine volcano,,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,,Low,23,09,1952
+4852,Myojinsho,Japan,31.888,139.918,11,Submarine volcano,31.0,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,Phreatic / Phreatomagmatic,Low,24,09,1952
+4853,Myojinsho,Japan,31.888,139.918,11,Submarine volcano,,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,,Low,26,09,1952
+4465,Ambalatungan Group,Philippines,17.32,121.1,2329,Compound volcano,12.0,Fumarolic,1.0,Asia,Late 20th Century,Gentle,Philippine Arc,,Minimal,01,01,1952
+4518,Myojinsho,Japan,31.888,139.918,11,Submarine volcano,,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,,Low,11,03,1953
+6044,Myojinsho,Japan,31.888,139.918,11,Submarine volcano,,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,,Low,25,03,1953
+1012,Asosan,Japan,32.885,131.085,1592,Caldera,6.0,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,Tsunami Generated,Low,27,04,1953
+2071,St. Andrew Strait,Papua New Guinea,-2.38,147.35,270,Complex volcano,,Historical,0.0,Oceania,Late 20th Century,Non-Explosive,Intraplate / Other,,Minimal,27,06,1953
+450,Sirung,Indonesia,-8.497,124.131,1347,Complex volcano,5.0,Historical,0.0,Asia,Late 20th Century,Non-Explosive,Sunda Arc – Indonesia,,Minimal,01,06,1953
+6471,Hakoneyama,Japan,35.233,139.021,1438,Complex volcano,10.0,Radiocarbon,,Asia,Late 20th Century,Unknown,Japan Arc,Ash / Tephra,Unknown,26,07,1953
+1315,Izu-Oshima,Japan,34.724,139.394,746,Stratovolcano,1.0,Historical,1.0,Asia,Late 20th Century,Gentle,Japan Arc,,Minimal,05,10,1953
+6270,Ruapehu,New Zealand,-39.28,175.57,2797,Stratovolcano,151.0,Historical,,Oceania,Late 20th Century,Unknown,Ring of Fire – Pacific,Mudflow / Lahar,Unknown,24,12,1953
+100,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,64.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Low,18,01,1954
+4844,Stromboli,Italy,38.789,15.213,924,Stratovolcano,,Historical,,Europe,Late 20th Century,Unknown,Mediterranean Volcanic Belt,Waves / Surges,Unknown,01,02,1954
+6486,Midagahara,Japan,36.571,137.59,2621,Stratovolcano,1.0,Historical,,Asia,Late 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,21,07,1954
+38,Bam,Papua New Guinea,-3.613,144.818,685,Stratovolcano,25.0,Historical,2.0,Oceania,Late 20th Century,Explosive,Sunda Arc – Indonesia,Inundation / Lahar,Low,03,08,1954
+4461,Camiguin,Philippines,9.203,124.673,1552,Stratovolcano,2.0,Historical,,Asia,Late 20th Century,Unknown,Philippine Arc,Mudflow / Lahar,Unknown,01,01,1954
+4150,Carran-Los Venados,Chile,-40.35,-72.07,1114,Pyroclastic cone,2.0,Historical,4.0,Americas,Late 20th Century,Cataclysmic,Ring of Fire – Pacific,Gas / SO₂ Emissions,High,26,07,1955
+878,Aira,Japan,31.577,130.659,1117,Stratovolcano,,Historical,3.0,Asia,Late 20th Century,Severe,Japan Arc,,Moderate,13,10,1955
+2952,Bezymianny,Russia,55.972,160.595,2882,Stratovolcano,,Historical,5.0,Europe,Late 20th Century,Paroxysmal,Ring of Fire – Pacific,,Very High,30,03,1956
+3117,Vsevidof,United States,53.13,-168.693,2149,Stratovolcano,,Historical,2.0,Americas,Late 20th Century,Explosive,Ring of Fire – Pacific,,Low,11,03,1957
+6445,Unzendake,Japan,32.761,130.299,1483,Complex volcano,13.0,Historical,,Asia,Late 20th Century,Unknown,Japan Arc,Mudflow / Lahar,Unknown,01,07,1957
+1318,Izu-Oshima,Japan,34.724,139.394,746,Stratovolcano,1.0,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,Tsunami Generated,Low,13,10,1957
+1019,Asosan,Japan,32.885,131.085,1592,Caldera,12.0,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,Tsunami Generated,Low,01,10,1957
+525,Mahawu,Indonesia,1.352,124.865,1299,Stratovolcano,1.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,Mudflow / Lahar,Low,12,07,1958
+6549,Taisetsuzan,Japan,43.664,142.854,2291,Stratovolcano,2.0,Tephrochronology,,Asia,Late 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,21,07,1958
+5644,Kuwae,Vanuatu,-16.83,168.523,-2,Caldera,,Historical,2.0,Oceania,Late 20th Century,Explosive,Ring of Fire – Pacific,,Low,07,10,1958
+4153,Puyehue-Cordon Caulle,Chile,-40.59,-72.117,2236,Stratovolcano,,Holocene,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,,Moderate,25,05,1960
+6124,Calbuco,Chile,-41.33,-72.618,1974,Stratovolcano,,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,,Moderate,25,01,1961
+6487,Midagahara,Japan,36.571,137.59,2621,Stratovolcano,1.0,Historical,,Asia,Late 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,23,04,1961
+104,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,6.0,Historical,3.0,Asia,Late 20th Century,Severe,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Moderate,08,05,1961
+6550,Taisetsuzan,Japan,43.664,142.854,2291,Stratovolcano,2.0,Tephrochronology,,Asia,Late 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,18,06,1961
+1176,Asamayama,Japan,36.406,138.523,2568,Complex volcano,1.0,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,Tsunami Generated,Low,18,08,1961
+2746,Tokachidake,Japan,43.418,142.686,2077,Stratovolcano,5.0,Historical,3.0,Asia,Late 20th Century,Severe,Japan Arc,Tsunami Generated,Moderate,29,06,1962
+6344,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,2.0,Historical,,Asia,Late 20th Century,Unknown,Sunda Arc – Indonesia,Mudflow / Lahar,Unknown,01,10,1962
+657,Gamalama,Indonesia,0.81,127.332,1714,Stratovolcano,5.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,,Low,31,12,1962
+6607,Irazu,Costa Rica,9.979,-83.852,3436,Stratovolcano,15.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,Tsunami Generated,Moderate,17,03,1963
+351,Agung,Indonesia,-8.343,115.508,2997,Stratovolcano,1028.0,Historical,5.0,Asia,Late 20th Century,Paroxysmal,Sunda Arc – Indonesia,"P,T,M,A",Very High,18,03,1963
+201,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,1.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,Tsunami Generated,Low,05,05,1963
+353,Agung,Indonesia,-8.343,115.508,2997,Stratovolcano,120.0,Historical,3.0,Asia,Late 20th Century,Severe,Sunda Arc – Indonesia,,Moderate,16,05,1963
+4506,Villarrica,Chile,-39.42,-71.93,2847,Stratovolcano,,Historical,2.0,Americas,Late 20th Century,Explosive,Ring of Fire – Pacific,Mudflow / Lahar,Low,21,05,1963
+345,Batur,Indonesia,-8.24,115.378,1711,Caldera,2.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,,Low,05,09,1963
+3569,Fuego,Guatemala,14.473,-90.88,3763,Stratovolcano,7.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,Mudflow / Lahar,Moderate,28,09,1963
+3821,Irazu,Costa Rica,9.979,-83.852,3436,Stratovolcano,40.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,"M,T",Moderate,10,12,1963
+395,Paluweh,Indonesia,-8.32,121.708,875,Stratovolcano,1.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,,Low,01,01,1964
+4140,Villarrica,Chile,-39.42,-71.93,2847,Stratovolcano,25.0,Historical,2.0,Americas,Late 20th Century,Explosive,Ring of Fire – Pacific,Mudflow / Lahar,Low,03,03,1964
+4457,Dieng Volcanic Complex,Indonesia,-7.2,109.879,2565,Complex volcano,114.0,Historical,1.0,Asia,Late 20th Century,Gentle,Sunda Arc – Indonesia,,Minimal,13,12,1964
+762,Taal,Philippines,14.011,120.998,311,Stratovolcano,355.0,Historical,4.0,Asia,Late 20th Century,Cataclysmic,Philippine Arc,"P,W",High,28,09,1965
+4205,Kick 'em Jenny,Netherlands,12.3,-61.64,-185,Submarine volcano,,Historical,0.0,Europe,Late 20th Century,Non-Explosive,Ring of Fire – Pacific,,Minimal,24,10,1965
+2234,Tinakula,Solomon Is.,-10.386,165.804,796,Stratovolcano,,Historical,3.0,Oceania,Late 20th Century,Severe,Ring of Fire – Pacific,,Moderate,13,01,1966
+141,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,215.0,Historical,4.0,Asia,Late 20th Century,Cataclysmic,Sunda Arc – Indonesia,"M,M,P",High,26,04,1966
+589,Awu,Indonesia,3.689,125.447,1318,Stratovolcano,39.0,Historical,4.0,Asia,Late 20th Century,Cataclysmic,Sunda Arc – Indonesia,"P,M,I",High,12,08,1966
+1671,"Lengai, Ol Doinyo",Tanzania,-2.764,35.914,2962,Stratovolcano,,Historical,4.0,Africa,Late 20th Century,Cataclysmic,East African Rift,,High,14,08,1966
+3766,Rincon de la Vieja,Costa Rica,10.83,-85.324,1916,Complex volcano,,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,"P,T,G",Moderate,06,11,1966
+1672,"Lengai, Ol Doinyo",Tanzania,-2.764,35.914,2962,Stratovolcano,,Historical,3.0,Africa,Late 20th Century,Severe,East African Rift,,Moderate,08,07,1967
+202,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,3.0,Historical,3.0,Asia,Late 20th Century,Severe,Sunda Arc – Indonesia,Mudflow / Lahar,Moderate,31,08,1967
+7548,Midagahara,Japan,36.571,137.59,2621,Stratovolcano,2.0,Historical,,Asia,Late 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,04,11,1967
+4412,Deception Island,Antarctica,-62.957,-60.637,602,Caldera,,Historical,3.0,Antarctic,Late 20th Century,Severe,Antarctica,,Moderate,04,12,1967
+736,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,6.0,Historical,3.0,Asia,Late 20th Century,Severe,Philippine Arc,"M,P",Moderate,21,04,1968
+4499,Arenal,Costa Rica,10.463,-84.703,1670,Stratovolcano,80.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,"P,T",Moderate,29,07,1968
+105,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,3.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Low,07,01,1969
+389,Iya,Indonesia,-8.891,121.641,618,Stratovolcano,2.0,Historical,3.0,Asia,Late 20th Century,Severe,Sunda Arc – Indonesia,"T,M",Moderate,28,01,1969
+777,Didicas,Philippines,19.077,122.202,228,Compound volcano,3.0,Historical,2.0,Asia,Late 20th Century,Explosive,Philippine Arc,Waves / Surges,Low,21,03,1969
+6525,Naruko,Japan,38.729,140.734,470,Caldera,1.0,Historical,,Asia,Late 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,26,08,1969
+21,Campi Flegrei,Italy,40.827,14.139,458,Caldera,3.0,Historical,,Europe,Late 20th Century,Unknown,Mediterranean Volcanic Belt,Submarine Eruption,Unknown,02,03,1970
+4254,Hekla,Iceland,63.983,-19.666,1490,Stratovolcano,,Historical,3.0,Europe,Late 20th Century,Severe,Mid-Atlantic Ridge – Iceland,,Moderate,05,05,1970
+4507,"Hudson, Cerro",Chile,-45.9,-72.97,1905,Stratovolcano,3.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,Mudflow / Lahar,Moderate,12,08,1971
+2235,Tinakula,Solomon Is.,-10.386,165.804,796,Stratovolcano,,Historical,2.0,Oceania,Late 20th Century,Explosive,Ring of Fire – Pacific,,Low,06,09,1971
+3573,Fuego,Guatemala,14.473,-90.88,3763,Stratovolcano,10.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,"M,T",Moderate,14,09,1971
+4371,La Palma,Spain,28.57,-17.83,2426,Stratovolcano,,Historical,2.0,Europe,Late 20th Century,Explosive,Canary Islands – Atlantic Hot Spot,,Low,28,10,1971
+4141,Villarrica,Chile,-39.42,-71.93,2847,Stratovolcano,15.0,Historical,2.0,Americas,Late 20th Century,Explosive,Ring of Fire – Pacific,Mudflow / Lahar,Low,29,10,1971
+6506,Kusatsu-Shiranesan,Japan,36.618,138.528,2165,Stratovolcano,6.0,Historical,,Asia,Late 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,27,12,1971
+22,"Fournaise, Piton de la",Reunion,-21.244,55.708,2632,Shield volcano,3.0,Historical,2.0,Sub-Saharan Africa,Late 20th Century,Explosive,Intraplate / Other,Inundation / Lahar,Low,01,08,1972
+6472,Hakoneyama,Japan,35.233,139.021,1438,Complex volcano,2.0,Radiocarbon,,Asia,Late 20th Century,Unknown,Japan Arc,,Unknown,02,10,1972
+4704,Ritter Island,Papua New Guinea,-5.519,148.115,75,Stratovolcano,,Historical,1.0,Oceania,Late 20th Century,Gentle,Intraplate / Other,,Minimal,09,10,1972
+4509,Vestmannaeyjar,Iceland,63.416,-20.266,283,Submarine volcano,1.0,Historical,3.0,Europe,Late 20th Century,Severe,Mid-Atlantic Ridge – Iceland,Gas / SO₂ Emissions,Moderate,27,01,1973
+397,Paluweh,Indonesia,-8.32,121.708,875,Stratovolcano,,Historical,3.0,Asia,Late 20th Century,Severe,Sunda Arc – Indonesia,,Moderate,01,01,1973
+6224,"Hudson, Cerro",Chile,-45.9,-72.97,1905,Stratovolcano,2.0,Historical,,Americas,Late 20th Century,Unknown,Ring of Fire – Pacific,Mudflow / Lahar,Unknown,05,04,1973
+445,Iliwerung,Indonesia,-8.532,123.573,583,Complex volcano,2.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,Waves / Surges,Low,01,12,1973
+561,Karangetang,Indonesia,2.781,125.407,1797,Stratovolcano,4.0,Historical,3.0,Asia,Late 20th Century,Severe,Sunda Arc – Indonesia,Ash / Tephra,Moderate,11,02,1974
+4470,Aira,Japan,31.577,130.659,1117,Stratovolcano,3.0,Historical,3.0,Asia,Late 20th Century,Severe,Japan Arc,Mudflow / Lahar,Moderate,17,06,1974
+1100,Niigata-Yakeyama,Japan,36.921,138.036,2400,Lava dome,3.0,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,Tsunami Generated,Low,28,07,1974
+4471,Aira,Japan,31.577,130.659,1117,Stratovolcano,5.0,Historical,3.0,Asia,Late 20th Century,Severe,Japan Arc,Mudflow / Lahar,Moderate,09,08,1974
+3574,Fuego,Guatemala,14.473,-90.88,3763,Stratovolcano,,Historical,4.0,Americas,Late 20th Century,Cataclysmic,Ring of Fire – Pacific,"T,M",High,10,10,1974
+4683,Ritter Island,Papua New Guinea,-5.519,148.115,75,Stratovolcano,,Historical,1.0,Oceania,Late 20th Century,Gentle,Intraplate / Other,,Minimal,17,10,1974
+6345,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,9.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,Mudflow / Lahar,Low,22,10,1974
+2367,Marapi,Indonesia,-0.38,100.474,2885,Complex volcano,80.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,Mudflow / Lahar,Low,01,01,1975
+4500,Arenal,Costa Rica,10.463,-84.703,1670,Stratovolcano,2.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,,Moderate,17,06,1975
+3407,Kilauea,United States,19.421,-155.287,1222,Shield volcano,2.0,Historical,0.0,Americas,Late 20th Century,Non-Explosive,Ring of Fire – Pacific,Waves / Surges,Minimal,29,11,1975
+6507,Kusatsu-Shiranesan,Japan,36.618,138.528,2165,Stratovolcano,3.0,Historical,,Asia,Late 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,03,08,1976
+4504,Sangay,Ecuador,-2.005,-78.341,5286,Stratovolcano,2.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,Tsunami Generated,Moderate,12,08,1976
+205,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,119.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,Mudflow / Lahar,Low,31,08,1976
+562,Karangetang,Indonesia,2.781,125.407,1797,Stratovolcano,1.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,"P,L",Low,15,09,1976
+6346,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,29.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,Mudflow / Lahar,Low,25,11,1976
+7,Nyiragongo,"Congo, DRC",-1.52,29.25,3470,Stratovolcano,,Historical,1.0,Sub-Saharan Africa,Late 20th Century,Gentle,East African Rift,Lava Flow,Minimal,10,01,1977
+1731,Karthala,Comoros,-11.75,43.38,2361,Shield volcano,1.0,Historical,1.0,Africa,Late 20th Century,Gentle,East African Rift,Lava Flow,Minimal,05,04,1977
+4319,Krafla,Iceland,65.715,-16.728,800,Caldera,,Historical,1.0,Europe,Late 20th Century,Gentle,Mid-Atlantic Ridge – Iceland,,Minimal,27,04,1977
+3046,Klyuchevskoy,Russia,56.056,160.642,4754,Stratovolcano,1.0,Historical,3.0,Europe,Late 20th Century,Severe,Ring of Fire – Pacific,Tsunami Generated,Moderate,02,08,1977
+6548,Toya,Japan,42.544,140.839,733,Stratovolcano,3.0,Historical,3.0,Asia,Late 20th Century,Severe,Japan Arc,Inundation / Lahar,Moderate,07,08,1977
+698,Bulusan,Philippines,12.769,124.056,1535,Stratovolcano,,Historical,2.0,Asia,Late 20th Century,Explosive,Philippine Arc,,Low,29,07,1978
+4495,Santa Maria,Guatemala,14.757,-91.552,3745,Stratovolcano,1.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,Mudflow / Lahar,Moderate,02,09,1978
+204,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,12.0,Historical,3.0,Asia,Late 20th Century,Severe,Sunda Arc – Indonesia,Mudflow / Lahar,Moderate,19,09,1978
+2699,Toya,Japan,42.544,140.839,733,Stratovolcano,3.0,Historical,3.0,Asia,Late 20th Century,Severe,Japan Arc,Mudflow / Lahar,Moderate,24,10,1978
+7580,Dieng Volcanic Complex,Indonesia,-7.2,109.879,2565,Complex volcano,3.0,Historical,,Asia,Late 20th Century,Unknown,Sunda Arc – Indonesia,Inundation / Lahar,Unknown,01,01,1978
+6326,Tangkuban Parahu,Indonesia,-6.77,107.6,2084,Stratovolcano,3.0,Historical,,Asia,Late 20th Century,Unknown,Sunda Arc – Indonesia,Inundation / Lahar,Unknown,01,01,1978
+49,Dieng Volcanic Complex,Indonesia,-7.2,109.879,2565,Complex volcano,149.0,Historical,1.0,Asia,Late 20th Century,Gentle,Sunda Arc – Indonesia,Gas / SO₂ Emissions,Minimal,20,02,1979
+20,Karkar,Papua New Guinea,-4.647,145.976,1839,Stratovolcano,2.0,Historical,2.0,Oceania,Late 20th Century,Explosive,Intraplate / Other,Phreatic / Phreatomagmatic,Low,08,03,1979
+4202,Soufriere St. Vincent,St. Vincent & the Grenadines,13.33,-61.18,1220,Stratovolcano,2.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,"T,P",Moderate,13,04,1979
+7578,Marapi,Indonesia,-0.38,100.474,2885,Complex volcano,80.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,Mudflow / Lahar,Low,30,04,1979
+4603,Iliwerung,Indonesia,-8.532,123.573,583,Complex volcano,1239.0,Historical,,Asia,Late 20th Century,Unknown,Sunda Arc – Indonesia,Waves / Surges,Unknown,18,07,1979
+4479,Asosan,Japan,32.885,131.085,1592,Caldera,3.0,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,Tsunami Generated,Low,06,09,1979
+30,Etna,Italy,37.748,14.999,3357,Stratovolcano,9.0,Historical,3.0,Europe,Late 20th Century,Severe,Mediterranean Volcanic Belt,Tsunami Generated,Moderate,12,09,1979
+3314,St. Helens,United States,46.2,-122.18,2549,Stratovolcano,61.0,Historical,5.0,Americas,Late 20th Century,Paroxysmal,Ring of Fire – Pacific,"P,M,T",Very High,18,05,1980
+4255,Hekla,Iceland,63.983,-19.666,1490,Stratovolcano,,Historical,3.0,Europe,Late 20th Century,Severe,Mid-Atlantic Ridge – Iceland,,Moderate,17,08,1980
+6569,Hood,United States,45.374,-121.695,3426,Stratovolcano,1.0,Historical,,Americas,Late 20th Century,Unknown,Ring of Fire – Pacific,Mudflow / Lahar,Unknown,25,12,1980
+5489,Etna,Italy,37.748,14.999,3357,Stratovolcano,,Historical,2.0,Europe,Late 20th Century,Explosive,Mediterranean Volcanic Belt,,Low,17,03,1981
+206,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,1.0,Historical,3.0,Asia,Late 20th Century,Severe,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Moderate,29,03,1981
+2844,Alaid,Russia,50.861,155.565,2285,Stratovolcano,,Historical,2.0,Europe,Late 20th Century,Explosive,Ring of Fire – Pacific,,Low,27,04,1981
+6366,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,372.0,Historical,3.0,Asia,Late 20th Century,Severe,Sunda Arc – Indonesia,Mudflow / Lahar,Moderate,14,05,1981
+5545,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,200.0,Historical,,Asia,Late 20th Century,Unknown,Philippine Arc,Mudflow / Lahar,Unknown,30,06,1981
+398,Paluweh,Indonesia,-8.32,121.708,875,Stratovolcano,,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Low,05,09,1981
+7525,Krakatau,Indonesia,-6.101,105.423,285,Caldera,,Historical,1.0,Asia,Late 20th Century,Gentle,Sunda Arc – Indonesia,"A,T,W",Minimal,20,10,1981
+6565,Vilyuchinsky,Russia,52.7,158.28,2173,Stratovolcano,,Tephrochronology,,Europe,Late 20th Century,Unknown,Ring of Fire – Pacific,Ash / Tephra,Unknown,01,01,1981
+3518,"Chichon, El",Mexico,17.36,-93.23,1150,Tuff cone,1879.0,Historical,5.0,Americas,Late 20th Century,Paroxysmal,Ring of Fire – Pacific,"P,T,M,S",Very High,29,03,1982
+3519,"Chichon, El",Mexico,17.36,-93.23,1150,Tuff cone,33.0,Historical,5.0,Americas,Late 20th Century,Paroxysmal,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,Very High,04,04,1982
+2524,Galunggung,Indonesia,-7.25,108.058,2168,Stratovolcano,68.0,Historical,4.0,Asia,Late 20th Century,Cataclysmic,Sunda Arc – Indonesia,"I,T",High,17,05,1982
+4494,"Chichon, El",Mexico,17.36,-93.23,1150,Tuff cone,1.0,Historical,5.0,Americas,Late 20th Century,Paroxysmal,Ring of Fire – Pacific,Mudflow / Lahar,Very High,27,05,1982
+3050,Klyuchevskoy,Russia,56.056,160.642,4754,Stratovolcano,1.0,Historical,2.0,Europe,Late 20th Century,Explosive,Ring of Fire – Pacific,Tsunami Generated,Low,08,03,1983
+488,Colo,Indonesia,-0.162,121.601,404,Stratovolcano,,Historical,4.0,Asia,Late 20th Century,Cataclysmic,Sunda Arc – Indonesia,,High,23,07,1983
+447,Iliwerung,Indonesia,-8.532,123.573,583,Complex volcano,,Historical,1.0,Asia,Late 20th Century,Gentle,Sunda Arc – Indonesia,Waves / Surges,Minimal,17,08,1983
+2585,Miyakejima,Japan,34.094,139.526,775,Stratovolcano,,Historical,3.0,Asia,Late 20th Century,Severe,Japan Arc,"L,T",Moderate,03,10,1983
+7538,Sumisujima,Japan,31.44,140.051,136,Submarine volcano,,Historical,,Asia,Late 20th Century,Unknown,Japan Arc,"W,S",Unknown,13,06,1984
+40,Oku Volcanic Field,Cameroon,6.25,10.5,3011,Maar,37.0,Radiocarbon,,Africa,Late 20th Century,Unknown,Intraplate / Other,Gas / SO₂ Emissions,Unknown,15,08,1984
+739,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,1.0,Historical,3.0,Asia,Late 20th Century,Severe,Philippine Arc,Mudflow / Lahar,Moderate,09,09,1984
+6473,Ontakesan,Japan,35.893,137.48,3067,Complex volcano,29.0,Historical,,Asia,Late 20th Century,Unknown,Japan Arc,Ash / Tephra,Unknown,14,09,1984
+6264,Etna,Italy,37.748,14.999,3357,Stratovolcano,1.0,Historical,3.0,Europe,Late 20th Century,Severe,Mediterranean Volcanic Belt,Submarine Eruption,Moderate,16,10,1984
+203,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,70.0,Historical,3.0,Asia,Late 20th Century,Severe,Sunda Arc – Indonesia,Ash / Tephra,Moderate,10,05,1985
+3835,"Ruiz, Nevado del",Colombia,4.892,-75.324,5279,Stratovolcano,23080.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,Mudflow / Lahar,Moderate,13,11,1985
+1628,Etna,Italy,37.748,14.999,3357,Stratovolcano,1.0,Historical,1.0,Europe,Late 20th Century,Gentle,Mediterranean Volcanic Belt,Submarine Eruption,Minimal,19,12,1985
+6544,Akita-Yakeyama,Japan,39.964,140.757,1366,Complex volcano,1.0,Historical,,Asia,Late 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,08,05,1986
+13,Stromboli,Italy,38.789,15.213,924,Stratovolcano,1.0,Historical,2.0,Europe,Late 20th Century,Explosive,Mediterranean Volcanic Belt,Tsunami Generated,Low,24,07,1986
+1719,Oku Volcanic Field,Cameroon,6.25,10.5,3011,Maar,1700.0,Radiocarbon,3.0,Africa,Late 20th Century,Severe,Intraplate / Other,Gas / SO₂ Emissions,Moderate,21,08,1986
+1332,Izu-Oshima,Japan,34.724,139.394,746,Stratovolcano,1.0,Historical,3.0,Asia,Late 20th Century,Severe,Japan Arc,Inundation / Lahar,Moderate,15,11,1986
+111,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,1.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,Mudflow / Lahar,Low,31,12,1986
+5528,Pacaya,Guatemala,14.382,-90.601,2569,Complex volcano,,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,,Moderate,25,01,1987
+31,Etna,Italy,37.748,14.999,3357,Stratovolcano,2.0,Historical,2.0,Europe,Late 20th Century,Explosive,Mediterranean Volcanic Belt,Tsunami Generated,Low,17,04,1987
+4663,Sirung,Indonesia,-8.497,124.131,1347,Complex volcano,125.0,Historical,,Asia,Late 20th Century,Unknown,Sunda Arc – Indonesia,,Unknown,01,12,1987
+486,Banda Api,Pacific Ocean,-4.523,129.881,596,Caldera,4.0,Historical,3.0,Oceania,Late 20th Century,Severe,Sunda Arc – Indonesia,"T,L",Moderate,09,05,1988
+4501,Arenal,Costa Rica,10.463,-84.703,1670,Stratovolcano,1.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,Tsunami Generated,Moderate,06,07,1988
+6367,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,1.0,Historical,3.0,Asia,Late 20th Century,Severe,Sunda Arc – Indonesia,Tsunami Generated,Moderate,30,07,1988
+4118,Lonquimay,Chile,-38.379,-71.586,2832,Stratovolcano,1.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,Tsunami Generated,Moderate,25,12,1988
+6545,Akita-Yakeyama,Japan,39.964,140.757,1366,Complex volcano,3.0,Historical,,Asia,Late 20th Century,Unknown,Japan Arc,Inundation / Lahar,Unknown,01,01,1988
+6446,Asosan,Japan,32.885,131.085,1592,Caldera,1.0,Historical,,Asia,Late 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,12,02,1989
+6444,Kirishimayama,Japan,31.934,130.862,1700,Shield volcano,2.0,Historical,,Asia,Late 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,26,08,1989
+3067,Sheveluch,Russia,56.653,161.36,3283,Stratovolcano,,Historical,3.0,Europe,Late 20th Century,Severe,Ring of Fire – Pacific,,Moderate,02,02,1990
+144,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,35.0,Historical,4.0,Asia,Late 20th Century,Cataclysmic,Sunda Arc – Indonesia,"T,P",High,10,02,1990
+6447,Asosan,Japan,32.885,131.085,1592,Caldera,1.0,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,Gas / SO₂ Emissions,Low,26,03,1990
+6464,Asosan,Japan,32.885,131.085,1592,Caldera,1.0,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,Gas / SO₂ Emissions,Low,18,04,1990
+4439,Coropuna,Peru,-15.52,-72.65,6377,Stratovolcano,,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,,Moderate,29,05,1990
+6284,Rabaul,Papua New Guinea,-4.246,152.194,688,Pyroclastic shield,6.0,Historical,,Oceania,Late 20th Century,Unknown,Ring of Fire – Pacific,Gas / SO₂ Emissions,Unknown,24,06,1990
+4496,Santa Maria,Guatemala,14.757,-91.552,3745,Stratovolcano,4.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,Tsunami Generated,Moderate,19,07,1990
+6465,Asosan,Japan,32.885,131.085,1592,Caldera,1.0,Historical,2.0,Asia,Late 20th Century,Explosive,Japan Arc,Gas / SO₂ Emissions,Low,19,10,1990
+6266,Nyiragongo,"Congo, DRC",-1.52,29.25,3470,Stratovolcano,1.0,Historical,,Sub-Saharan Africa,Late 20th Century,Unknown,East African Rift,Submarine Eruption,Unknown,21,11,1990
+6364,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,4.0,Historical,,Asia,Late 20th Century,Unknown,Sunda Arc – Indonesia,Mudflow / Lahar,Unknown,25,11,1990
+933,Unzendake,Japan,32.761,130.299,1483,Complex volcano,43.0,Historical,1.0,Asia,Late 20th Century,Gentle,Japan Arc,Phreatic / Phreatomagmatic,Minimal,03,06,1991
+4428,Pinatubo,Philippines,15.13,120.35,1486,Stratovolcano,800.0,Historical,6.0,Asia,Late 20th Century,Colossal,Philippine Arc,"P,M,I",Extreme,15,06,1991
+6564,Mutnovsky,Russia,52.449,158.196,2288,Complex volcano,1.0,Historical,,Europe,Late 20th Century,Unknown,Ring of Fire – Pacific,Inundation / Lahar,Unknown,01,06,1991
+5005,Karthala,Comoros,-11.75,43.38,2361,Shield volcano,,Historical,2.0,Africa,Late 20th Century,Explosive,East African Rift,,Low,03,07,1991
+4442,"Hudson, Cerro",Chile,-45.9,-72.97,1905,Stratovolcano,,Historical,5.0,Americas,Late 20th Century,Paroxysmal,Ring of Fire – Pacific,,Very High,08,08,1991
+4458,Lokon-Empung,Indonesia,1.358,124.792,1580,Stratovolcano,1.0,Historical,1.0,Asia,Late 20th Century,Gentle,Sunda Arc – Indonesia,"T,P",Minimal,24,10,1991
+5488,Etna,Italy,37.748,14.999,3357,Stratovolcano,,Historical,2.0,Europe,Late 20th Century,Explosive,Mediterranean Volcanic Belt,,Low,14,12,1991
+6409,Karangetang,Indonesia,2.781,125.407,1797,Stratovolcano,2.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,Mudflow / Lahar,Low,21,01,1992
+6327,Dieng Volcanic Complex,Indonesia,-7.2,109.879,2565,Complex volcano,1.0,Historical,,Asia,Late 20th Century,Unknown,Sunda Arc – Indonesia,Gas / SO₂ Emissions,Unknown,18,03,1992
+3726,"Negro, Cerro",Nicaragua,12.506,-86.702,728,Cinder cone,11.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,"T,I",Moderate,10,04,1992
+4459,Karangetang,Indonesia,2.781,125.407,1797,Stratovolcano,6.0,Historical,1.0,Asia,Late 20th Century,Gentle,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Minimal,11,05,1992
+2372,Marapi,Indonesia,-0.38,100.474,2885,Complex volcano,1.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,Tsunami Generated,Low,05,07,1992
+4464,Pinatubo,Philippines,15.13,120.35,1486,Stratovolcano,6.0,Historical,1.0,Asia,Late 20th Century,Gentle,Philippine Arc,Mudflow / Lahar,Minimal,12,07,1992
+3294,Spurr,United States,61.299,-152.251,3374,Stratovolcano,1.0,Historical,4.0,Americas,Late 20th Century,Cataclysmic,Ring of Fire – Pacific,Inundation / Lahar,High,17,09,1992
+6368,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,3.0,Historical,3.0,Asia,Late 20th Century,Severe,Sunda Arc – Indonesia,Tsunami Generated,Moderate,01,01,1992
+4502,Galeras,Colombia,1.22,-77.37,4276,Complex volcano,9.0,Historical,2.0,Americas,Late 20th Century,Explosive,Ring of Fire – Pacific,Tsunami Generated,Low,14,01,1993
+6408,Wurlali,Indonesia,-7.125,128.675,868,Stratovolcano,1.0,Historical,,Asia,Late 20th Century,Unknown,Sunda Arc – Indonesia,Mudflow / Lahar,Unknown,21,01,1993
+4462,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,75.0,Historical,2.0,Asia,Late 20th Century,Explosive,Philippine Arc,Phreatic / Phreatomagmatic,Low,02,02,1993
+6626,Guagua Pichincha,Ecuador,-0.171,-78.598,4784,Stratovolcano,2.0,Historical,1.0,Americas,Late 20th Century,Gentle,Ring of Fire – Pacific,Tsunami Generated,Minimal,12,03,1993
+4491,Kilauea,United States,19.421,-155.287,1222,Shield volcano,1.0,Historical,,Americas,Late 20th Century,Unknown,Ring of Fire – Pacific,Ash / Tephra,Unknown,19,04,1993
+4452,Krakatau,Indonesia,-6.101,105.423,285,Caldera,1.0,Historical,1.0,Asia,Late 20th Century,Gentle,Sunda Arc – Indonesia,Tsunami Generated,Minimal,13,06,1993
+4477,Unzendake,Japan,32.761,130.299,1483,Complex volcano,1.0,Historical,1.0,Asia,Late 20th Century,Gentle,Japan Arc,Phreatic / Phreatomagmatic,Minimal,23,06,1993
+6428,Pinatubo,Philippines,15.13,120.35,1486,Stratovolcano,4.0,Historical,1.0,Asia,Late 20th Century,Gentle,Philippine Arc,Mudflow / Lahar,Minimal,26,06,1993
+6429,Pinatubo,Philippines,15.13,120.35,1486,Stratovolcano,14.0,Historical,,Asia,Late 20th Century,Unknown,Philippine Arc,Mudflow / Lahar,Unknown,04,10,1993
+2308,Yasur,Vanuatu,-19.532,169.447,361,Stratovolcano,1.0,Historical,3.0,Oceania,Late 20th Century,Severe,Ring of Fire – Pacific,Tsunami Generated,Moderate,15,01,1994
+6369,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,6.0,Historical,3.0,Asia,Late 20th Century,Severe,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Moderate,03,02,1994
+6466,Asosan,Japan,32.885,131.085,1592,Caldera,1.0,Historical,1.0,Asia,Late 20th Century,Gentle,Japan Arc,Gas / SO₂ Emissions,Minimal,29,05,1994
+6624,"Huila, Nevado del",Colombia,2.93,-76.03,5364,Stratovolcano,650.0,Historical,,Americas,Late 20th Century,Unknown,Ring of Fire – Pacific,Mudflow / Lahar,Unknown,06,06,1994
+7572,Kilauea,United States,19.421,-155.287,1222,Shield volcano,,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,Waves / Surges,Moderate,08,07,1994
+7573,Rabaul,Papua New Guinea,-4.246,152.194,688,Pyroclastic shield,,Historical,,Oceania,Late 20th Century,Unknown,Ring of Fire – Pacific,"W,S",Unknown,18,09,1994
+2180,Rabaul,Papua New Guinea,-4.246,152.194,688,Pyroclastic shield,5.0,Historical,3.0,Oceania,Late 20th Century,Severe,Ring of Fire – Pacific,"T,W,E",Moderate,19,09,1994
+6384,Rinjani,Indonesia,-8.42,116.47,3726,Stratovolcano,31.0,Historical,3.0,Asia,Late 20th Century,Severe,Sunda Arc – Indonesia,Mudflow / Lahar,Moderate,03,11,1994
+112,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,66.0,Historical,3.0,Asia,Late 20th Century,Severe,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Moderate,22,11,1994
+6305,Yasur,Vanuatu,-19.532,169.447,361,Stratovolcano,2.0,Historical,3.0,Oceania,Late 20th Century,Severe,Ring of Fire – Pacific,Tsunami Generated,Moderate,04,02,1995
+6474,Yakedake,Japan,36.227,137.587,2455,Stratovolcano,4.0,Historical,1.0,Asia,Late 20th Century,Gentle,Japan Arc,Tsunami Generated,Minimal,11,02,1995
+4388,Fogo,Cape Verde,14.95,-24.35,2829,Stratovolcano,,Historical,2.0,Africa,Late 20th Century,Explosive,Intraplate / Other,,Low,02,04,1995
+3608,Pacaya,Guatemala,14.382,-90.601,2569,Complex volcano,1.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,Mudflow / Lahar,Moderate,07,04,1995
+6404,Kelimutu,Indonesia,-8.77,121.82,1639,Complex volcano,1.0,Historical,,Asia,Late 20th Century,Unknown,Sunda Arc – Indonesia,,Unknown,15,05,1995
+6424,Melebingoy,Philippines,6.113,124.892,1824,Stratovolcano,60.0,Historical,,Asia,Late 20th Century,Unknown,Sunda Arc – Indonesia,,Unknown,06,09,1995
+2921,Karymsky,Russia,54.049,159.443,1513,Stratovolcano,,Historical,2.0,Europe,Late 20th Century,Explosive,Ring of Fire – Pacific,,Low,02,01,1996
+3502,Popocatepetl,Mexico,19.023,-98.622,5393,Stratovolcano,5.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,,Moderate,30,04,1996
+693,Kanlaon,Philippines,10.41,123.13,2422,Stratovolcano,3.0,Historical,2.0,Asia,Late 20th Century,Explosive,Philippine Arc,Tsunami Generated,Low,10,08,1996
+7539,Sumisujima,Japan,31.44,140.051,136,Submarine volcano,,Historical,,Asia,Late 20th Century,Unknown,Japan Arc,"S,W",Unknown,04,09,1996
+3763,Maderas,Nicaragua,11.446,-85.515,1394,Stratovolcano,6.0,Holocene,,Americas,Late 20th Century,Unknown,Ring of Fire – Pacific,Mudflow / Lahar,Unknown,27,09,1996
+4291,Grimsvotn,Iceland,64.416,-17.316,1719,Caldera,,Historical,3.0,Europe,Late 20th Century,Severe,Mid-Atlantic Ridge – Iceland,,Moderate,30,09,1996
+2125,Manam,Papua New Guinea,-4.08,145.037,1807,Stratovolcano,13.0,Historical,3.0,Oceania,Late 20th Century,Severe,Intraplate / Other,Phreatic / Phreatomagmatic,Moderate,03,12,1996
+6347,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,6.0,Historical,2.0,Asia,Late 20th Century,Explosive,Sunda Arc – Indonesia,,Low,14,01,1997
+4744,Karangetang,Indonesia,2.781,125.407,1797,Stratovolcano,3.0,Historical,1.0,Asia,Late 20th Century,Gentle,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Minimal,17,04,1997
+5546,Soufriere Hills,Montserrat,16.72,-62.18,915,Stratovolcano,22.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,Moderate,25,06,1997
+6546,Hakkodasan,Japan,40.659,140.877,1585,Stratovolcano,3.0,Holocene,,Asia,Late 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,12,07,1997
+4175,Soufriere Hills,Montserrat,16.72,-62.18,915,Stratovolcano,2.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,,Moderate,01,08,1997
+6370,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,2.0,Historical,3.0,Asia,Late 20th Century,Severe,Sunda Arc – Indonesia,Tsunami Generated,Moderate,02,09,1997
+6524,Adatarayama,Japan,37.647,140.281,1728,Stratovolcano,4.0,Historical,,Asia,Late 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,15,09,1997
+6467,Asosan,Japan,32.885,131.085,1592,Caldera,2.0,Historical,,Asia,Late 20th Century,Unknown,Japan Arc,Gas / SO₂ Emissions,Unknown,23,11,1997
+4808,Soufriere Hills,Montserrat,16.72,-62.18,915,Stratovolcano,,Historical,,Americas,Late 20th Century,Unknown,Ring of Fire – Pacific,,Unknown,26,12,1997
+5744,Kilauea,United States,19.421,-155.287,1222,Shield volcano,,Historical,,Americas,Late 20th Century,Unknown,Ring of Fire – Pacific,Lava Flow,Unknown,28,04,1998
+6365,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,10.0,Historical,,Asia,Late 20th Century,Unknown,Sunda Arc – Indonesia,Mudflow / Lahar,Unknown,01,07,1998
+6605,San Cristobal,Nicaragua,12.702,-87.004,1745,Stratovolcano,1620.0,Historical,,Americas,Late 20th Century,Unknown,Ring of Fire – Pacific,Mudflow / Lahar,Unknown,30,10,1998
+4708,Soufriere Hills,Montserrat,16.72,-62.18,915,Stratovolcano,,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,,Moderate,20,01,1999
+3578,Fuego,Guatemala,14.473,-90.88,3763,Stratovolcano,,Historical,2.0,Americas,Late 20th Century,Explosive,Ring of Fire – Pacific,,Low,21,05,1999
+5484,Sheveluch,Russia,56.653,161.36,3283,Stratovolcano,,Historical,4.0,Europe,Late 20th Century,Cataclysmic,Ring of Fire – Pacific,,High,15,08,1999
+3906,Guagua Pichincha,Ecuador,-0.171,-78.598,4784,Stratovolcano,2.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,Tsunami Generated,Moderate,05,10,1999
+3970,Tungurahua,Ecuador,-1.467,-78.442,5023,Stratovolcano,1.0,Historical,3.0,Americas,Late 20th Century,Severe,Ring of Fire – Pacific,Tsunami Generated,Moderate,16,10,1999
+5104,Miyakejima,Japan,34.094,139.526,775,Stratovolcano,1.0,Historical,2.0,Asia,21st Century,Explosive,Japan Arc,,Low,27,06,2000
+6371,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,2.0,Historical,3.0,Asia,21st Century,Severe,Sunda Arc – Indonesia,Tsunami Generated,Moderate,27,07,2000
+6606,Arenal,Costa Rica,10.463,-84.703,1670,Stratovolcano,2.0,Historical,3.0,Americas,21st Century,Severe,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,Moderate,23,08,2000
+5745,Kilauea,United States,19.421,-155.287,1222,Shield volcano,2.0,Historical,,Americas,21st Century,Unknown,Ring of Fire – Pacific,Gas / SO₂ Emissions,Unknown,03,11,2000
+6348,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,1.0,Historical,2.0,Asia,21st Century,Explosive,Sunda Arc – Indonesia,Ash / Tephra,Low,01,11,2000
+5485,Etna,Italy,37.748,14.999,3357,Stratovolcano,1.0,Historical,3.0,Europe,21st Century,Severe,Mediterranean Volcanic Belt,,Moderate,14,05,2001
+5486,Etna,Italy,37.748,14.999,3357,Stratovolcano,,Historical,2.0,Europe,21st Century,Explosive,Mediterranean Volcanic Belt,,Low,26,07,2001
+6349,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,2.0,Historical,2.0,Asia,21st Century,Explosive,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Low,05,08,2001
+6245,Stromboli,Italy,38.789,15.213,924,Stratovolcano,1.0,Historical,2.0,Europe,21st Century,Explosive,Mediterranean Volcanic Belt,Tsunami Generated,Low,20,10,2001
+5505,Karangetang,Indonesia,2.781,125.407,1797,Stratovolcano,,Historical,3.0,Asia,21st Century,Severe,Sunda Arc – Indonesia,Mudflow / Lahar,Moderate,03,01,2002
+4964,Nyiragongo,"Congo, DRC",-1.52,29.25,3470,Stratovolcano,100.0,Historical,1.0,Sub-Saharan Africa,21st Century,Gentle,East African Rift,Lava Flow,Minimal,17,01,2002
+5487,Etna,Italy,37.748,14.999,3357,Stratovolcano,,Historical,3.0,Europe,21st Century,Severe,Mediterranean Volcanic Belt,,Moderate,28,08,2002
+6625,Reventador,Ecuador,-0.077,-77.656,3562,Stratovolcano,,Historical,4.0,Americas,21st Century,Cataclysmic,Ring of Fire – Pacific,Inundation / Lahar,High,03,11,2002
+4703,Stromboli,Italy,38.789,15.213,924,Stratovolcano,,Historical,,Europe,21st Century,Unknown,Mediterranean Volcanic Belt,,Unknown,30,12,2002
+6372,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,3.0,Historical,3.0,Asia,21st Century,Severe,Sunda Arc – Indonesia,Tsunami Generated,Moderate,01,01,2002
+4542,Soufriere Hills,Montserrat,16.72,-62.18,915,Stratovolcano,,Historical,3.0,Americas,21st Century,Severe,Ring of Fire – Pacific,,Moderate,12,07,2003
+6405,Egon,Indonesia,-8.676,122.455,1661,Stratovolcano,1.0,Historical,1.0,Asia,21st Century,Gentle,Sunda Arc – Indonesia,Tsunami Generated,Minimal,29,01,2004
+5547,Tengger Caldera,Indonesia,-7.942,112.95,2329,Stratovolcano,,Historical,2.0,Asia,21st Century,Explosive,Sunda Arc – Indonesia,Tsunami Generated,Low,08,06,2004
+6184,Manam,Papua New Guinea,-4.08,145.037,1807,Stratovolcano,5.0,Historical,4.0,Oceania,21st Century,Cataclysmic,Intraplate / Other,Tsunami Generated,High,24,10,2004
+6185,Manam,Papua New Guinea,-4.08,145.037,1807,Stratovolcano,1.0,Historical,4.0,Oceania,21st Century,Cataclysmic,Intraplate / Other,Tsunami Generated,High,27,01,2005
+6604,Santa Ana,El Salvador,13.853,-89.63,2381,Stratovolcano,2.0,Historical,3.0,Americas,21st Century,Severe,Ring of Fire – Pacific,Ash / Tephra,Moderate,01,10,2005
+5004,Karthala,Comoros,-11.75,43.38,2361,Shield volcano,1.0,Historical,3.0,Africa,21st Century,Severe,East African Rift,Tsunami Generated,Moderate,25,11,2005
+7540,Sumisujima,Japan,31.44,140.051,136,Submarine volcano,,Historical,,Asia,21st Century,Unknown,Japan Arc,"S,W",Unknown,01,01,2006
+4521,Raoul Island,New Zealand,-29.27,-177.92,516,Stratovolcano,1.0,Historical,1.0,Oceania,21st Century,Gentle,Ring of Fire – Pacific,Tsunami Generated,Minimal,17,03,2006
+4623,Soufriere Hills,Montserrat,16.72,-62.18,915,Stratovolcano,,Historical,2.0,Americas,21st Century,Explosive,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,Low,20,05,2006
+5384,Bulusan,Philippines,12.769,124.056,1535,Stratovolcano,1.0,Historical,2.0,Asia,21st Century,Explosive,Philippine Arc,,Low,07,06,2006
+5305,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,2.0,Historical,1.0,Asia,21st Century,Gentle,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Minimal,14,06,2006
+5527,Tungurahua,Ecuador,-1.467,-78.442,5023,Stratovolcano,1.0,Historical,3.0,Americas,21st Century,Severe,Ring of Fire – Pacific,,Moderate,18,07,2006
+4643,Tungurahua,Ecuador,-1.467,-78.442,5023,Stratovolcano,6.0,Historical,3.0,Americas,21st Century,Severe,Ring of Fire – Pacific,Tsunami Generated,Moderate,17,08,2006
+5084,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,1266.0,Historical,1.0,Asia,21st Century,Gentle,Philippine Arc,Mudflow / Lahar,Minimal,30,11,2006
+6186,Manam,Papua New Guinea,-4.08,145.037,1807,Stratovolcano,4.0,Historical,4.0,Oceania,21st Century,Cataclysmic,Intraplate / Other,Mudflow / Lahar,High,01,03,2007
+4705,"Huila, Nevado del",Colombia,2.93,-76.03,5364,Stratovolcano,,Historical,,Americas,21st Century,Unknown,Ring of Fire – Pacific,,Unknown,18,04,2007
+7524,Ritter Island,Papua New Guinea,-5.519,148.115,75,Stratovolcano,,Historical,1.0,Oceania,21st Century,Gentle,Intraplate / Other,"A,W",Minimal,19,05,2007
+6324,Salak,Indonesia,-6.716,106.733,2218,Stratovolcano,6.0,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,Gas / SO₂ Emissions,Unknown,07,07,2007
+4764,"Tair, Jebel at",Yemen,15.55,41.83,244,Stratovolcano,7.0,Historical,3.0,Asia,21st Century,Severe,East African Rift,,Moderate,30,09,2007
+4884,Chaiten,Chile,-42.835,-72.651,1122,Caldera,1.0,Holocene,,Americas,21st Century,Unknown,Ring of Fire – Pacific,,Unknown,02,05,2008
+4924,Kasatochi,United States,52.177,-175.508,314,Stratovolcano,,Historical,3.0,Americas,21st Century,Severe,Ring of Fire – Pacific,,Moderate,08,08,2008
+5526,Tungurahua,Ecuador,-1.467,-78.442,5023,Stratovolcano,2.0,Historical,3.0,Americas,21st Century,Severe,Ring of Fire – Pacific,Mudflow / Lahar,Moderate,22,08,2008
+4944,"Huila, Nevado del",Colombia,2.93,-76.03,5364,Stratovolcano,10.0,Historical,,Americas,21st Century,Unknown,Ring of Fire – Pacific,,Unknown,20,11,2008
+5026,Redoubt,United States,60.485,-152.742,3108,Stratovolcano,,Historical,,Americas,21st Century,Unknown,Ring of Fire – Pacific,,Unknown,23,03,2009
+5584,Kilauea,United States,19.421,-155.287,1222,Shield volcano,,Historical,,Americas,21st Century,Unknown,Ring of Fire – Pacific,,Unknown,30,11,2009
+5704,Tungurahua,Ecuador,-1.467,-78.442,5023,Stratovolcano,,Historical,3.0,Americas,21st Century,Severe,Ring of Fire – Pacific,,Moderate,01,01,2010
+5124,Eyjafjallajokull,Iceland,63.633,-19.633,1651,Stratovolcano,2.0,Historical,2.0,Europe,21st Century,Explosive,Mid-Atlantic Ridge – Iceland,,Low,31,03,2010
+5164,Pacaya,Guatemala,14.382,-90.601,2569,Complex volcano,1.0,Historical,1.0,Americas,21st Century,Gentle,Ring of Fire – Pacific,Tsunami Generated,Minimal,27,05,2010
+5184,Zealandia Bank,United States,16.88,145.85,0,Stratovolcano,,Holocene,,Americas,21st Century,Unknown,Intraplate / Other,,Unknown,29,05,2010
+5424,Karangetang,Indonesia,2.781,125.407,1797,Stratovolcano,4.0,Historical,3.0,Asia,21st Century,Severe,Sunda Arc – Indonesia,,Moderate,06,08,2010
+5244,Sinabung,Indonesia,3.17,98.392,2460,Stratovolcano,2.0,Holocene,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,30,08,2010
+5304,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,367.0,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,26,10,2010
+5705,Tungurahua,Ecuador,-1.467,-78.442,5023,Stratovolcano,,Historical,3.0,Americas,21st Century,Severe,Ring of Fire – Pacific,,Moderate,01,11,2010
+5344,Tengger Caldera,Indonesia,-7.942,112.95,2329,Stratovolcano,,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,28,12,2010
+5525,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,1.0,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,Mudflow / Lahar,Unknown,03,01,2011
+5364,Kirishimayama,Japan,31.934,130.862,1700,Shield volcano,,Historical,,Asia,21st Century,Unknown,Japan Arc,,Unknown,28,01,2011
+5404,Bulusan,Philippines,12.769,124.056,1535,Stratovolcano,1.0,Historical,2.0,Asia,21st Century,Explosive,Philippine Arc,,Low,23,02,2011
+5504,Karangetang,Indonesia,2.781,125.407,1797,Stratovolcano,,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,18,03,2011
+5706,Tungurahua,Ecuador,-1.467,-78.442,5023,Stratovolcano,,Historical,4.0,Americas,21st Century,Cataclysmic,Ring of Fire – Pacific,,High,01,04,2011
+5444,Puyehue-Cordon Caulle,Chile,-40.59,-72.117,2236,Stratovolcano,,Holocene,4.0,Americas,21st Century,Cataclysmic,Ring of Fire – Pacific,,High,04,06,2011
+5524,Nabro,Eritrea,13.37,41.7,2218,Stratovolcano,31.0,Holocene,4.0,Africa,21st Century,Cataclysmic,East African Rift,,High,22,06,2011
+5564,Katla,Iceland,63.633,-19.083,1490,Subglacial volcano,,Historical,,Europe,21st Century,Unknown,Mid-Atlantic Ridge – Iceland,,Unknown,09,07,2011
+5464,Lokon-Empung,Indonesia,1.358,124.792,1580,Stratovolcano,1.0,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,17,07,2011
+5445,Gamalama,Indonesia,0.81,127.332,1714,Stratovolcano,4.0,Historical,3.0,Asia,21st Century,Severe,Sunda Arc – Indonesia,Mudflow / Lahar,Moderate,27,12,2011
+5585,Kilauea,United States,19.421,-155.287,1222,Shield volcano,,Historical,,Americas,21st Century,Unknown,Ring of Fire – Pacific,,Unknown,10,02,2012
+5746,Kilauea,United States,19.421,-155.287,1222,Shield volcano,,Historical,,Americas,21st Century,Unknown,Ring of Fire – Pacific,Lava Flow,Unknown,02,03,2012
+5724,Tolbachik,Russia,55.832,160.326,3611,Shield volcano,,Historical,,Europe,21st Century,Unknown,Ring of Fire – Pacific,,Unknown,12,12,2012
+5784,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,1.0,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,Mudflow / Lahar,Unknown,12,02,2013
+5824,Paluweh,Indonesia,-8.32,121.708,875,Stratovolcano,,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,01,02,2013
+5864,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,5.0,Historical,,Asia,21st Century,Unknown,Philippine Arc,,Unknown,07,05,2013
+5944,Paluweh,Indonesia,-8.32,121.708,875,Stratovolcano,5.0,Historical,3.0,Asia,21st Century,Severe,Sunda Arc – Indonesia,,Moderate,10,08,2013
+5964,Ubinas,Peru,-16.345,-70.897,5608,Stratovolcano,,Historical,,Americas,21st Century,Unknown,Ring of Fire – Pacific,,Unknown,01,09,2013
+5924,Aira,Japan,31.577,130.659,1117,Stratovolcano,,Historical,,Asia,21st Century,Unknown,Japan Arc,,Unknown,04,09,2013
+5984,Sinabung,Indonesia,3.17,98.392,2460,Stratovolcano,,Holocene,2.0,Asia,21st Century,Explosive,Sunda Arc – Indonesia,,Low,15,09,2013
+6845,Okataina,New Zealand,-38.157,176.507,1111,Lava dome,1.0,Historical,,Oceania,21st Century,Unknown,Ring of Fire – Pacific,Gas / SO₂ Emissions,Unknown,13,12,2013
+6004,Sinabung,Indonesia,3.17,98.392,2460,Stratovolcano,17.0,Holocene,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,01,02,2014
+6024,Kelud,Indonesia,-7.935,112.314,1730,Stratovolcano,7.0,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,13,02,2014
+6064,Ontakesan,Japan,35.893,137.48,3067,Complex volcano,55.0,Historical,3.0,Asia,21st Century,Severe,Japan Arc,,Moderate,27,09,2014
+6104,Kilauea,United States,19.421,-155.287,1222,Shield volcano,,Historical,,Americas,21st Century,Unknown,Ring of Fire – Pacific,,Unknown,10,11,2014
+6084,Fogo,Cape Verde,14.95,-24.35,2829,Stratovolcano,,Historical,,Africa,21st Century,Unknown,Intraplate / Other,Lava Flow,Unknown,23,11,2014
+6165,Gamalama,Indonesia,0.81,127.332,1714,Stratovolcano,1.0,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,18,12,2014
+6164,Sinabung,Indonesia,3.17,98.392,2460,Stratovolcano,,Holocene,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,20,02,2015
+6126,Calbuco,Chile,-41.33,-72.618,1974,Stratovolcano,,Historical,,Americas,21st Century,Unknown,Ring of Fire – Pacific,,Unknown,22,04,2015
+7537,Sumisujima,Japan,31.44,140.051,136,Submarine volcano,,Historical,,Asia,21st Century,Unknown,Japan Arc,"S,W",Unknown,02,05,2015
+6144,Karangetang,Indonesia,2.781,125.407,1797,Stratovolcano,,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,07,05,2015
+6187,Manam,Papua New Guinea,-4.08,145.037,1807,Stratovolcano,,Historical,2.0,Oceania,21st Century,Explosive,Intraplate / Other,,Low,31,07,2015
+6204,Sinabung,Indonesia,3.17,98.392,2460,Stratovolcano,1.0,Holocene,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,Mudflow / Lahar,Unknown,16,10,2015
+6844,Okataina,New Zealand,-38.157,176.507,1111,Lava dome,1.0,Historical,,Oceania,21st Century,Unknown,Ring of Fire – Pacific,Inundation / Lahar,Unknown,01,10,2015
+6566,Sinabung,Indonesia,3.17,98.392,2460,Stratovolcano,1.0,Holocene,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,09,05,2016
+6567,Sinabung,Indonesia,3.17,98.392,2460,Stratovolcano,7.0,Holocene,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,21,05,2016
+6724,Yellowstone,United States,44.43,-110.67,2805,Caldera,1.0,Tephrochronology,,Americas,21st Century,Unknown,Ring of Fire – Pacific,,Unknown,09,06,2016
+6704,Rinjani,Indonesia,-8.42,116.47,3726,Stratovolcano,,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,27,09,2016
+6744,Asosan,Japan,32.885,131.085,1592,Caldera,,Historical,,Asia,21st Century,Unknown,Japan Arc,Tsunami Generated,Unknown,08,10,2016
+6965,Etna,Italy,37.748,14.999,3357,Stratovolcano,,Historical,,Europe,21st Century,Unknown,Mediterranean Volcanic Belt,Phreatic / Phreatomagmatic,Unknown,15,03,2017
+6764,Sinabung,Indonesia,3.17,98.392,2460,Stratovolcano,,Holocene,2.0,Asia,21st Century,Explosive,Sunda Arc – Indonesia,Phreatic / Phreatomagmatic,Low,13,04,2017
+7084,Fuego,Guatemala,14.473,-90.88,3763,Stratovolcano,,Historical,2.0,Americas,21st Century,Explosive,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,Low,06,06,2017
+6784,Dieng Volcanic Complex,Indonesia,-7.2,109.879,2565,Complex volcano,8.0,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,01,07,2017
+6804,Campi Flegrei,Italy,40.827,14.139,458,Caldera,3.0,Historical,,Europe,21st Century,Unknown,Mediterranean Volcanic Belt,,Unknown,12,09,2017
+6824,Ambae,Vanuatu,-15.389,167.835,1496,Shield volcano,,Historical,,Oceania,21st Century,Unknown,Ring of Fire – Pacific,Tsunami Generated,Unknown,23,09,2017
+6884,Merapi,Indonesia,-7.54,110.446,2910,Stratovolcano,8.0,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,Ash / Tephra,Unknown,18,12,2017
+6964,Sinabung,Indonesia,3.17,98.392,2460,Stratovolcano,,Holocene,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,Tsunami Generated,Unknown,27,12,2017
+6904,Kadovar,Papua New Guinea,-3.608,144.588,365,Stratovolcano,,Holocene,2.0,Oceania,21st Century,Explosive,Sunda Arc – Indonesia,Tsunami Generated,Low,05,01,2018
+6944,Mayon,Philippines,13.257,123.685,2462,Stratovolcano,,Historical,2.0,Asia,21st Century,Explosive,Philippine Arc,"T,P",Low,13,01,2018
+6924,Kusatsu-Shiranesan,Japan,36.618,138.528,2165,Stratovolcano,1.0,Historical,1.0,Asia,21st Century,Gentle,Japan Arc,Tsunami Generated,Minimal,23,01,2018
+7004,Kilauea,United States,19.421,-155.287,1222,Shield volcano,1.0,Historical,1.0,Americas,21st Century,Gentle,Ring of Fire – Pacific,Gas / SO₂ Emissions,Minimal,01,02,2018
+7104,Kadovar,Papua New Guinea,-3.608,144.588,365,Stratovolcano,,Holocene,2.0,Oceania,21st Century,Explosive,Sunda Arc – Indonesia,Waves / Surges,Low,09,02,2018
+7124,Ijen,Indonesia,-8.058,114.242,2769,Stratovolcano,,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,Gas / SO₂ Emissions,Unknown,21,03,2018
+7144,Ambae,Vanuatu,-15.389,167.835,1496,Shield volcano,4.0,Historical,3.0,Oceania,21st Century,Severe,Ring of Fire – Pacific,"T,G,M",Moderate,30,03,2018
+6864,Kilauea,United States,19.421,-155.287,1222,Shield volcano,,Historical,1.0,Americas,21st Century,Gentle,Ring of Fire – Pacific,Lava Flow,Minimal,28,04,2018
+7541,Sumisujima,Japan,31.44,140.051,136,Submarine volcano,,Historical,,Asia,21st Century,Unknown,Japan Arc,"S,W",Unknown,06,05,2018
+7164,Fuego,Guatemala,14.473,-90.88,3763,Stratovolcano,201.0,Historical,2.0,Americas,21st Century,Explosive,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,Low,03,06,2018
+7184,Kilauea,United States,19.421,-155.287,1222,Shield volcano,,Historical,,Americas,21st Century,Unknown,Ring of Fire – Pacific,Tsunami Generated,Unknown,16,07,2018
+7204,Manam,Papua New Guinea,-4.08,145.037,1807,Stratovolcano,,Historical,4.0,Oceania,21st Century,Cataclysmic,Intraplate / Other,"L,T",High,25,08,2018
+7244,Ambrym,Vanuatu,-16.25,168.12,1334,Pyroclastic shield,,Historical,2.0,Oceania,21st Century,Explosive,Ring of Fire – Pacific,"S,T,G",Low,15,12,2018
+7264,Krakatau,Indonesia,-6.101,105.423,285,Caldera,437.0,Historical,3.0,Asia,21st Century,Severe,Sunda Arc – Indonesia,Waves / Surges,Moderate,22,12,2018
+7284,Etna,Italy,37.748,14.999,3357,Stratovolcano,,Historical,2.0,Europe,21st Century,Explosive,Mediterranean Volcanic Belt,Submarine Eruption,Low,26,12,2018
+7304,Manam,Papua New Guinea,-4.08,145.037,1807,Stratovolcano,,Historical,4.0,Oceania,21st Century,Cataclysmic,Intraplate / Other,Tsunami Generated,High,07,01,2019
+7575,Irazu,Costa Rica,9.979,-83.852,3436,Stratovolcano,,Historical,,Americas,21st Century,Unknown,Ring of Fire – Pacific,Waves / Surges,Unknown,02,05,2019
+7324,Sinabung,Indonesia,3.17,98.392,2460,Stratovolcano,,Holocene,4.0,Asia,21st Century,Cataclysmic,Sunda Arc – Indonesia,Tsunami Generated,High,07,05,2019
+7344,Ulawun,Papua New Guinea,-5.05,151.33,2334,Stratovolcano,,Historical,4.0,Oceania,21st Century,Cataclysmic,Ring of Fire – Pacific,"P,T",High,26,06,2019
+7345,Manam,Papua New Guinea,-4.08,145.037,1807,Stratovolcano,,Historical,4.0,Oceania,21st Century,Cataclysmic,Intraplate / Other,"A,P,T",High,28,06,2019
+7364,Stromboli,Italy,38.789,15.213,924,Stratovolcano,1.0,Historical,2.0,Europe,21st Century,Explosive,Mediterranean Volcanic Belt,"P,T,W",Low,03,07,2019
+7424,Stromboli,Italy,38.789,15.213,924,Stratovolcano,,Historical,2.0,Europe,21st Century,Explosive,Mediterranean Volcanic Belt,Waves / Surges,Low,28,08,2019
+7464,Whakaari/White Island,New Zealand,-37.52,177.18,294,Stratovolcano,22.0,Historical,2.0,Oceania,21st Century,Explosive,Ring of Fire – Pacific,Tsunami Generated,Low,09,12,2019
+7484,Taal,Philippines,14.011,120.998,311,Stratovolcano,39.0,Historical,4.0,Asia,21st Century,Cataclysmic,Philippine Arc,Tsunami Generated,High,12,01,2020
+7504,Ijen,Indonesia,-8.058,114.242,2769,Stratovolcano,1.0,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,"G,W, S",Unknown,29,05,2020
+7527,Sangay,Ecuador,-2.005,-78.341,5286,Stratovolcano,,Historical,2.0,Americas,21st Century,Explosive,Ring of Fire – Pacific,Tsunami Generated,Low,05,03,2021
+7543,Pacaya,Guatemala,14.382,-90.601,2569,Complex volcano,,Historical,1.0,Americas,21st Century,Gentle,Ring of Fire – Pacific,"L,T",Minimal,01,03,2021
+7528,Soufriere St. Vincent,St. Vincent & the Grenadines,13.33,-61.18,1220,Stratovolcano,,Historical,4.0,Americas,21st Century,Cataclysmic,Ring of Fire – Pacific,"T,W",High,09,04,2021
+7566,Stromboli,Italy,38.789,15.213,924,Stratovolcano,,Historical,2.0,Europe,21st Century,Explosive,Mediterranean Volcanic Belt,Waves / Surges,Low,19,05,2021
+7536,Nyiragongo,"Congo, DRC",-1.52,29.25,3470,Stratovolcano,32.0,Historical,2.0,Sub-Saharan Africa,21st Century,Explosive,East African Rift,"L,I,S",Low,22,05,2021
+7547,La Palma,Spain,28.57,-17.83,2426,Stratovolcano,1.0,Historical,3.0,Europe,21st Century,Severe,Canary Islands – Atlantic Hot Spot,Lava Flow,Moderate,19,09,2021
+7550,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,45.0,Historical,4.0,Asia,21st Century,Cataclysmic,Sunda Arc – Indonesia,Tsunami Generated,High,04,12,2021
+7551,Hunga Tonga-Hunga Ha'apai,Tonga,-20.553,-175.384,114,Submarine volcano,6.0,Historical,5.0,Oceania,21st Century,Paroxysmal,Ring of Fire – Pacific,Waves / Surges,Very High,15,01,2022
+7555,Popocatepetl,Mexico,19.023,-98.622,5393,Stratovolcano,1.0,Historical,2.0,Americas,21st Century,Explosive,Ring of Fire – Pacific,Phreatic / Phreatomagmatic,Low,22,06,2022
+7557,Stromboli,Italy,38.789,15.213,924,Stratovolcano,,Historical,2.0,Europe,21st Century,Explosive,Mediterranean Volcanic Belt,"P,W",Low,09,10,2022
+7559,Semeru,Indonesia,-8.108,112.922,3657,Stratovolcano,,Historical,4.0,Asia,21st Century,Cataclysmic,Sunda Arc – Indonesia,"T,M",High,04,12,2022
+7558,Stromboli,Italy,38.789,15.213,924,Stratovolcano,,Historical,2.0,Europe,21st Century,Explosive,Mediterranean Volcanic Belt,"P,W",Low,04,12,2022
+7562,East Epi,Vanuatu,-16.68,168.389,833,Stratovolcano,,Historical,,Oceania,21st Century,Unknown,Ring of Fire – Pacific,Waves / Surges,Unknown,31,01,2023
+7560,Bagana,Papua New Guinea,-6.137,155.196,1855,Lava cone,,Historical,2.0,Oceania,21st Century,Explosive,Ring of Fire – Pacific,"T,G",Low,07,07,2023
+7584,Sofugan,Japan,29.794,140.342,99,Submarine volcano,,Uncertain,,Asia,21st Century,Unknown,Japan Arc,"S,W",Unknown,08,10,2023
+7561,Marapi,Indonesia,-0.38,100.474,2885,Complex volcano,23.0,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,"P,T",Unknown,03,12,2023
+7563,Reykjanes,Iceland,63.817,-22.717,140,Crater rows,1.0,Historical,,Europe,21st Century,Unknown,Mid-Atlantic Ridge – Iceland,"S,L",Unknown,18,12,2023
+7567,Ruang,Indonesia,2.3,125.37,725,Stratovolcano,,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,16,04,2024
+7568,Ijen,Indonesia,-8.058,114.242,2769,Stratovolcano,1.0,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,,Unknown,20,04,2024
+7569,Marapi,Indonesia,-0.38,100.474,2885,Complex volcano,67.0,Historical,2.0,Asia,21st Century,Explosive,Sunda Arc – Indonesia,Mudflow / Lahar,Low,11,05,2024
+7570,Kanlaon,Philippines,10.41,123.13,2422,Stratovolcano,,Historical,3.0,Asia,21st Century,Severe,Philippine Arc,"M,G,T",Moderate,03,06,2024
+7585,Stromboli,Italy,38.789,15.213,924,Stratovolcano,,Historical,2.0,Europe,21st Century,Explosive,Mediterranean Volcanic Belt,,Low,04,07,2024
+7571,Sheveluch,Russia,56.653,161.36,3283,Stratovolcano,,Historical,4.0,Europe,21st Century,Cataclysmic,Ring of Fire – Pacific,,High,17,08,2024
+7576,Lewotobi,Indonesia,-8.542,122.775,1703,Stratovolcano,9.0,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,"T,P,L",Unknown,03,11,2024
+7577,Kanlaon,Philippines,10.41,123.13,2422,Stratovolcano,,Historical,2.0,Asia,21st Century,Explosive,Philippine Arc,"T,P",Low,09,12,2024
+7586,Lewotobi,Indonesia,-8.542,122.775,1703,Stratovolcano,1.0,Historical,,Asia,21st Century,Unknown,Sunda Arc – Indonesia,"T,P",Unknown,20,03,2025
+7582,Klyuchevskoy,Russia,56.056,160.642,4754,Stratovolcano,,Historical,,Europe,21st Century,Unknown,Ring of Fire – Pacific,,Unknown,29,07,2025
+7583,Hayli Gubbi,Ethiopia,13.51,40.722,493,Shield volcano,,Holocene,,Africa,21st Century,Unknown,East African Rift,Tsunami Generated,Unknown,23,11,2025

@@ -1,0 +1,1676 @@
+{
+    "column_mappings": {
+        "game_XboxOne_GameSales.csv": {
+            "Pos": "Rank",
+            "Game": "name",
+            "Platform": "platform",
+            "Year": "release_date",
+            "Genre": "genres",
+            "Publisher": "Publisher",
+            "North America": "NA_Sales",
+            "Europe": "EU_Sales",
+            "Japan": "JP_Sales",
+            "Rest of World": "Other_Sales",
+            "Global": "Global_Sales"
+        },
+        "Video_Games_Sales_as_at_22_Dec_2016_128.csv": {
+            "Name": "name",
+            "Platform": "platform",
+            "Genre": "genres",
+            "Rating": "rating",
+            "Year_of_Release": "release_date",
+            "Publisher": "Publisher",
+            "Developer": "developer",
+            "NA_Sales": "NA_Sales",
+            "EU_Sales": "EU_Sales",
+            "JP_Sales": "JP_Sales",
+            "Other_Sales": "Other_Sales",
+            "Global_Sales": "Global_Sales",
+            "Critic_Score": "Critic_Score",
+            "Critic_Count": "Critic_Count",
+            "User_Score": "User_Score",
+            "User_Count": "User_Count"
+        },
+        "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+            "game_title": "name",
+            "console_code": "platform",
+            "release_year": "release_date",
+            "category": "genres",
+            "pub_name": "Publisher",
+            "sales_na_m": "NA_Sales",
+            "sales_eu_m": "EU_Sales",
+            "sales_jp_m": "JP_Sales",
+            "sales_row_m": "Other_Sales",
+            "sales_world_m": "Global_Sales",
+            "metacritic_score": "Critic_Score",
+            "critic_reviews_n": "Critic_Count",
+            "player_score": "User_Score",
+            "player_ratings_n": "User_Count",
+            "dev_studio": "developer",
+            "esrb_rating": "rating"
+        },
+        "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+            "title": "name",
+            "platform": "platform",
+            "release_yr": "release_date",
+            "genre": "genres",
+            "publisher": "Publisher",
+            "na_units_m": "NA_Sales",
+            "eu_units_m": "EU_Sales",
+            "jp_units_m": "JP_Sales",
+            "other_units_m": "Other_Sales",
+            "total_units_m": "Global_Sales",
+            "crit_score": "Critic_Score",
+            "crit_reviews": "Critic_Count",
+            "user_score": "User_Score",
+            "user_ratings": "User_Count",
+            "developer": "developer",
+            "content_rating": "rating"
+        },
+        "vgsales (2)_126.csv": {
+            "Rank": "Rank",
+            "Name": "name",
+            "Platform": "platform",
+            "Year": "release_date",
+            "Genre": "genres",
+            "Publisher": "Publisher",
+            "NA_Sales": "NA_Sales",
+            "EU_Sales": "EU_Sales",
+            "JP_Sales": "JP_Sales",
+            "Other_Sales": "Other_Sales",
+            "Global_Sales": "Global_Sales"
+        },
+        "metacritic.csv": {
+            "name": "name",
+            "genres": "genres",
+            "rating": "rating",
+            "release_date": "release_date",
+            "developer": "developer",
+            "platform": "platform",
+            "number_of_players": "number_of_players",
+            "metascore": "Critic_Score",
+            "user_score": "User_Score"
+        }
+    },
+    "integrated_schema_by_entity": {
+        "Game": {
+            "attributes": [
+                "NA_Sales",
+                "Other_Sales",
+                "developer",
+                "genres",
+                "number_of_players",
+                "Publisher",
+                "JP_Sales",
+                "Critic_Score",
+                "Rank",
+                "Global_Sales",
+                "rating",
+                "platform",
+                "name",
+                "Critic_Count",
+                "User_Score",
+                "EU_Sales",
+                "release_date",
+                "User_Count"
+            ],
+            "column_mappings_by_table": {
+                "game_XboxOne_GameSales.csv": {
+                    "Pos": "Rank",
+                    "Game": "name",
+                    "Platform": "platform",
+                    "Year": "release_date",
+                    "Genre": "genres",
+                    "Publisher": "Publisher",
+                    "North America": "NA_Sales",
+                    "Europe": "EU_Sales",
+                    "Japan": "JP_Sales",
+                    "Rest of World": "Other_Sales",
+                    "Global": "Global_Sales"
+                },
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": {
+                    "Name": "name",
+                    "Platform": "platform",
+                    "Genre": "genres",
+                    "Rating": "rating",
+                    "Year_of_Release": "release_date",
+                    "Publisher": "Publisher",
+                    "Developer": "developer",
+                    "NA_Sales": "NA_Sales",
+                    "EU_Sales": "EU_Sales",
+                    "JP_Sales": "JP_Sales",
+                    "Other_Sales": "Other_Sales",
+                    "Global_Sales": "Global_Sales",
+                    "Critic_Score": "Critic_Score",
+                    "Critic_Count": "Critic_Count",
+                    "User_Score": "User_Score",
+                    "User_Count": "User_Count"
+                },
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                    "game_title": "name",
+                    "console_code": "platform",
+                    "release_year": "release_date",
+                    "category": "genres",
+                    "pub_name": "Publisher",
+                    "sales_na_m": "NA_Sales",
+                    "sales_eu_m": "EU_Sales",
+                    "sales_jp_m": "JP_Sales",
+                    "sales_row_m": "Other_Sales",
+                    "sales_world_m": "Global_Sales",
+                    "metacritic_score": "Critic_Score",
+                    "critic_reviews_n": "Critic_Count",
+                    "player_score": "User_Score",
+                    "player_ratings_n": "User_Count",
+                    "dev_studio": "developer",
+                    "esrb_rating": "rating"
+                },
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                    "title": "name",
+                    "platform": "platform",
+                    "release_yr": "release_date",
+                    "genre": "genres",
+                    "publisher": "Publisher",
+                    "na_units_m": "NA_Sales",
+                    "eu_units_m": "EU_Sales",
+                    "jp_units_m": "JP_Sales",
+                    "other_units_m": "Other_Sales",
+                    "total_units_m": "Global_Sales",
+                    "crit_score": "Critic_Score",
+                    "crit_reviews": "Critic_Count",
+                    "user_score": "User_Score",
+                    "user_ratings": "User_Count",
+                    "developer": "developer",
+                    "content_rating": "rating"
+                },
+                "vgsales (2)_126.csv": {
+                    "Rank": "Rank",
+                    "Name": "name",
+                    "Platform": "platform",
+                    "Year": "release_date",
+                    "Genre": "genres",
+                    "Publisher": "Publisher",
+                    "NA_Sales": "NA_Sales",
+                    "EU_Sales": "EU_Sales",
+                    "JP_Sales": "JP_Sales",
+                    "Other_Sales": "Other_Sales",
+                    "Global_Sales": "Global_Sales"
+                },
+                "metacritic.csv": {
+                    "name": "name",
+                    "genres": "genres",
+                    "rating": "rating",
+                    "release_date": "release_date",
+                    "developer": "developer",
+                    "platform": "platform",
+                    "number_of_players": "number_of_players",
+                    "metascore": "Critic_Score",
+                    "user_score": "User_Score"
+                }
+            },
+            "attributes_with_values": {
+                "Rank": [
+                    1,
+                    2,
+                    3,
+                    11449,
+                    12434,
+                    8500
+                ],
+                "name": [
+                    "Grand Theft Auto V",
+                    "Call of Duty: Black Ops 3",
+                    "Call of Duty: WWII",
+                    "Sonic Classic Collection",
+                    "Assault Suit Leynos",
+                    "Reel Fishing II",
+                    "The Italian Job",
+                    "Zero Escape: Zero Time Dilemma",
+                    "Kya: Dark Lineage",
+                    "Little League World Series Baseball 2009",
+                    "LEGO Marvel Super Heroes",
+                    "Final Fantasy XI: Rise of the Zilart",
+                    "WWE '13",
+                    "Fuse (Insomniac)",
+                    "Jissen Pachislot Hisshouhou! Hokuto no Ken DS",
+                    "Red Dead Redemption 2",
+                    "Grand Theft Auto IV",
+                    "SoulCalibur"
+                ],
+                "platform": [
+                    "XboxOne",
+                    "XboxOne",
+                    "XboxOne",
+                    "DS",
+                    "PS4",
+                    "PS",
+                    "XB",
+                    "3DS",
+                    "PS2",
+                    "Wii",
+                    "PC",
+                    "PS2",
+                    "Wii",
+                    "X360",
+                    "DS",
+                    "Xbox One",
+                    "Xbox 360",
+                    "Dreamcast"
+                ],
+                "release_date": [
+                    2014.0,
+                    2015.0,
+                    2017.0,
+                    2003.0,
+                    2016.0,
+                    2003.0,
+                    2010.0,
+                    2016.0,
+                    2000.0,
+                    2009.0,
+                    2013.0,
+                    2003.0,
+                    2012.0,
+                    2013.0,
+                    2005.0,
+                    "Oct 26, 2018",
+                    "Apr 29, 2008",
+                    "Sep  8, 1999"
+                ],
+                "genres": [
+                    "Action",
+                    "Shooter",
+                    "Shooter",
+                    "Platform",
+                    "Shooter",
+                    "Sports",
+                    "Racing",
+                    "Adventure",
+                    "Adventure",
+                    "Sports",
+                    "Action",
+                    "Role-Playing",
+                    "Action",
+                    "Shooter",
+                    "Misc",
+                    "Action Adventure,Open-World",
+                    "Action Adventure,Modern,Modern,Open-World",
+                    "Action,Fighting,3D"
+                ],
+                "Publisher": [
+                    "Rockstar Games",
+                    "Activision",
+                    "Activision",
+                    "Sega",
+                    "Rising Star Games",
+                    "Victor Interactive",
+                    "Eidos Interactive",
+                    "Aksys Games",
+                    "Atari",
+                    "Activision",
+                    "Warner Bros. Interactive Entertainment",
+                    "Square Enix",
+                    "THQ",
+                    "Electronic Arts",
+                    "Sega"
+                ],
+                "NA_Sales": [
+                    4.7,
+                    4.63,
+                    3.75,
+                    0.92,
+                    0.02,
+                    0.1,
+                    0.06,
+                    0.04,
+                    0.08,
+                    0.14,
+                    0.04,
+                    0.0,
+                    0.11,
+                    0.09,
+                    0.0
+                ],
+                "EU_Sales": [
+                    3.25,
+                    2.04,
+                    1.91,
+                    0.73,
+                    0.0,
+                    0.07,
+                    0.02,
+                    0.0,
+                    0.06,
+                    0.0,
+                    0.12,
+                    0.0,
+                    0.02,
+                    0.03,
+                    0.0
+                ],
+                "JP_Sales": [
+                    0.01,
+                    0.02,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.01,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.13,
+                    0.0,
+                    0.0,
+                    0.04
+                ],
+                "Other_Sales": [
+                    0.76,
+                    0.68,
+                    0.57,
+                    0.17,
+                    0.0,
+                    0.01,
+                    0.0,
+                    0.01,
+                    0.02,
+                    0.01,
+                    0.01,
+                    0.0,
+                    0.01,
+                    0.01,
+                    0.0
+                ],
+                "Global_Sales": [
+                    8.72,
+                    7.37,
+                    6.23,
+                    1.83,
+                    0.02,
+                    0.18,
+                    0.08,
+                    0.06,
+                    0.16,
+                    0.15,
+                    0.17,
+                    0.13,
+                    0.15,
+                    0.13,
+                    0.04
+                ],
+                "rating": [
+                    "E",
+                    "E10+",
+                    "E10+",
+                    "E",
+                    "E10+",
+                    "T",
+                    "T",
+                    "M",
+                    "E10+",
+                    "M",
+                    "M",
+                    "T"
+                ],
+                "developer": [
+                    "Creative Assembly",
+                    "Dracue",
+                    "SCEA",
+                    "Now Production",
+                    "TT Games",
+                    "Bungie Software, Bungie",
+                    "THQ",
+                    "Trion Worlds",
+                    "Twelve Games",
+                    "Rockstar Games",
+                    "Rockstar North",
+                    "Namco"
+                ],
+                "Critic_Score": [
+                    70.0,
+                    67.0,
+                    66.0,
+                    78.0,
+                    75.0,
+                    63.0,
+                    74.0,
+                    64.0,
+                    31.0,
+                    97.0,
+                    98.0,
+                    98.0
+                ],
+                "Critic_Count": [
+                    24.0,
+                    8.0,
+                    14.0,
+                    7.0,
+                    11.0,
+                    64.0,
+                    4.0,
+                    40.0,
+                    7.0
+                ],
+                "User_Score": [
+                    7.5,
+                    8.1,
+                    8.7,
+                    8.1,
+                    5.5,
+                    6.9,
+                    6.0,
+                    6.5,
+                    7.2,
+                    8.3,
+                    8.0,
+                    8.4
+                ],
+                "User_Count": [
+                    28.0,
+                    23.0,
+                    69.0,
+                    124.0,
+                    1735.0,
+                    223.0,
+                    9.0,
+                    661.0,
+                    406.0
+                ],
+                "number_of_players": [
+                    "Up to 32",
+                    "1 Player",
+                    "1-2"
+                ]
+            },
+            "grouped_attributes": {
+                "Rank": {
+                    "game_XboxOne_GameSales.csv": "Pos",
+                    "vgsales (2)_126.csv": "Rank"
+                },
+                "name": {
+                    "game_XboxOne_GameSales.csv": "Game",
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Name",
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "game_title",
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "title",
+                    "vgsales (2)_126.csv": "Name",
+                    "metacritic.csv": "name"
+                },
+                "platform": {
+                    "game_XboxOne_GameSales.csv": "Platform",
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Platform",
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "console_code",
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "platform",
+                    "vgsales (2)_126.csv": "Platform",
+                    "metacritic.csv": "platform"
+                },
+                "release_date": {
+                    "game_XboxOne_GameSales.csv": "Year",
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Year_of_Release",
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "release_year",
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "release_yr",
+                    "vgsales (2)_126.csv": "Year",
+                    "metacritic.csv": "release_date"
+                },
+                "genres": {
+                    "game_XboxOne_GameSales.csv": "Genre",
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Genre",
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "category",
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "genre",
+                    "vgsales (2)_126.csv": "Genre",
+                    "metacritic.csv": "genres"
+                },
+                "Publisher": {
+                    "game_XboxOne_GameSales.csv": "Publisher",
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Publisher",
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "pub_name",
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "publisher",
+                    "vgsales (2)_126.csv": "Publisher"
+                },
+                "NA_Sales": {
+                    "game_XboxOne_GameSales.csv": "North America",
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "NA_Sales",
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "sales_na_m",
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "na_units_m",
+                    "vgsales (2)_126.csv": "NA_Sales"
+                },
+                "EU_Sales": {
+                    "game_XboxOne_GameSales.csv": "Europe",
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "EU_Sales",
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "sales_eu_m",
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "eu_units_m",
+                    "vgsales (2)_126.csv": "EU_Sales"
+                },
+                "JP_Sales": {
+                    "game_XboxOne_GameSales.csv": "Japan",
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "JP_Sales",
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "sales_jp_m",
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "jp_units_m",
+                    "vgsales (2)_126.csv": "JP_Sales"
+                },
+                "Other_Sales": {
+                    "game_XboxOne_GameSales.csv": "Rest of World",
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Other_Sales",
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "sales_row_m",
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "other_units_m",
+                    "vgsales (2)_126.csv": "Other_Sales"
+                },
+                "Global_Sales": {
+                    "game_XboxOne_GameSales.csv": "Global",
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Global_Sales",
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "sales_world_m",
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "total_units_m",
+                    "vgsales (2)_126.csv": "Global_Sales"
+                },
+                "rating": {
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Rating",
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "esrb_rating",
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "content_rating",
+                    "metacritic.csv": "rating"
+                },
+                "developer": {
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Developer",
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "dev_studio",
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "developer",
+                    "metacritic.csv": "developer"
+                },
+                "Critic_Score": {
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Critic_Score",
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "metacritic_score",
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "crit_score",
+                    "metacritic.csv": "metascore"
+                },
+                "Critic_Count": {
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Critic_Count",
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "critic_reviews_n",
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "crit_reviews"
+                },
+                "User_Score": {
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "User_Score",
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "player_score",
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "user_score",
+                    "metacritic.csv": "user_score"
+                },
+                "User_Count": {
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "User_Count",
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "player_ratings_n",
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "user_ratings"
+                },
+                "number_of_players": {
+                    "metacritic.csv": "number_of_players"
+                }
+            },
+            "schema_matching": {
+                "game_XboxOne_GameSales.csv": {
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": {
+                        "Game": "Name",
+                        "Platform": "Platform",
+                        "Year": "Year_of_Release",
+                        "Genre": "Genre",
+                        "Publisher": "Publisher",
+                        "North America": "NA_Sales",
+                        "Europe": "EU_Sales",
+                        "Japan": "JP_Sales",
+                        "Rest of World": "Other_Sales",
+                        "Global": "Global_Sales"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                        "Game": "game_title",
+                        "Platform": "console_code",
+                        "Year": "release_year",
+                        "Genre": "category",
+                        "Publisher": "pub_name",
+                        "North America": "sales_na_m",
+                        "Europe": "sales_eu_m",
+                        "Japan": "sales_jp_m",
+                        "Rest of World": "sales_row_m",
+                        "Global": "sales_world_m"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                        "Game": "title",
+                        "Platform": "platform",
+                        "Year": "release_yr",
+                        "Genre": "genre",
+                        "Publisher": "publisher",
+                        "North America": "na_units_m",
+                        "Europe": "eu_units_m",
+                        "Japan": "jp_units_m",
+                        "Rest of World": "other_units_m",
+                        "Global": "total_units_m"
+                    },
+                    "vgsales (2)_126.csv": {
+                        "Pos": "Rank",
+                        "Game": "Name",
+                        "Platform": "Platform",
+                        "Year": "Year",
+                        "Genre": "Genre",
+                        "Publisher": "Publisher",
+                        "North America": "NA_Sales",
+                        "Europe": "EU_Sales",
+                        "Japan": "JP_Sales",
+                        "Rest of World": "Other_Sales",
+                        "Global": "Global_Sales"
+                    },
+                    "metacritic.csv": {
+                        "Game": "name",
+                        "Platform": "platform",
+                        "Year": "release_date",
+                        "Genre": "genres"
+                    }
+                },
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": {
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                        "Name": "game_title",
+                        "Platform": "console_code",
+                        "Genre": "category",
+                        "Rating": "esrb_rating",
+                        "Year_of_Release": "release_year",
+                        "Publisher": "pub_name",
+                        "Developer": "dev_studio",
+                        "NA_Sales": "sales_na_m",
+                        "EU_Sales": "sales_eu_m",
+                        "JP_Sales": "sales_jp_m",
+                        "Other_Sales": "sales_row_m",
+                        "Global_Sales": "sales_world_m",
+                        "Critic_Score": "metacritic_score",
+                        "Critic_Count": "critic_reviews_n",
+                        "User_Score": "player_score",
+                        "User_Count": "player_ratings_n"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                        "Name": "title",
+                        "Platform": "platform",
+                        "Genre": "genre",
+                        "Rating": "content_rating",
+                        "Year_of_Release": "release_yr",
+                        "Publisher": "publisher",
+                        "Developer": "developer",
+                        "NA_Sales": "na_units_m",
+                        "EU_Sales": "eu_units_m",
+                        "JP_Sales": "jp_units_m",
+                        "Other_Sales": "other_units_m",
+                        "Global_Sales": "total_units_m",
+                        "Critic_Score": "crit_score",
+                        "Critic_Count": "crit_reviews",
+                        "User_Score": "user_score",
+                        "User_Count": "user_ratings"
+                    },
+                    "vgsales (2)_126.csv": {
+                        "Name": "Name",
+                        "Platform": "Platform",
+                        "Genre": "Genre",
+                        "Year_of_Release": "Year",
+                        "Publisher": "Publisher",
+                        "NA_Sales": "NA_Sales",
+                        "EU_Sales": "EU_Sales",
+                        "JP_Sales": "JP_Sales",
+                        "Other_Sales": "Other_Sales",
+                        "Global_Sales": "Global_Sales"
+                    },
+                    "metacritic.csv": {
+                        "Name": "name",
+                        "Platform": "platform",
+                        "Genre": "genres",
+                        "Rating": "rating",
+                        "Year_of_Release": "release_date",
+                        "Developer": "developer",
+                        "Critic_Score": "metascore",
+                        "User_Score": "user_score"
+                    }
+                },
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                        "game_title": "title",
+                        "console_code": "platform",
+                        "release_year": "release_yr",
+                        "category": "genre",
+                        "pub_name": "publisher",
+                        "sales_na_m": "na_units_m",
+                        "sales_eu_m": "eu_units_m",
+                        "sales_jp_m": "jp_units_m",
+                        "sales_row_m": "other_units_m",
+                        "sales_world_m": "total_units_m",
+                        "metacritic_score": "crit_score",
+                        "critic_reviews_n": "crit_reviews",
+                        "player_score": "user_score",
+                        "player_ratings_n": "user_ratings",
+                        "dev_studio": "developer",
+                        "esrb_rating": "content_rating"
+                    },
+                    "vgsales (2)_126.csv": {
+                        "game_title": "Name",
+                        "console_code": "Platform",
+                        "release_year": "Year",
+                        "category": "Genre",
+                        "pub_name": "Publisher",
+                        "sales_na_m": "NA_Sales",
+                        "sales_eu_m": "EU_Sales",
+                        "sales_jp_m": "JP_Sales",
+                        "sales_row_m": "Other_Sales",
+                        "sales_world_m": "Global_Sales"
+                    },
+                    "metacritic.csv": {
+                        "game_title": "name",
+                        "console_code": "platform",
+                        "release_year": "release_date",
+                        "category": "genres",
+                        "metacritic_score": "metascore",
+                        "player_score": "user_score",
+                        "dev_studio": "developer",
+                        "esrb_rating": "rating"
+                    }
+                },
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                    "vgsales (2)_126.csv": {
+                        "title": "Name",
+                        "platform": "Platform",
+                        "release_yr": "Year",
+                        "genre": "Genre",
+                        "publisher": "Publisher",
+                        "na_units_m": "NA_Sales",
+                        "eu_units_m": "EU_Sales",
+                        "jp_units_m": "JP_Sales",
+                        "other_units_m": "Other_Sales",
+                        "total_units_m": "Global_Sales"
+                    },
+                    "metacritic.csv": {
+                        "title": "name",
+                        "platform": "platform",
+                        "release_yr": "release_date",
+                        "genre": "genres",
+                        "crit_score": "metascore",
+                        "user_score": "user_score",
+                        "developer": "developer",
+                        "content_rating": "rating"
+                    }
+                },
+                "vgsales (2)_126.csv": {
+                    "metacritic.csv": {
+                        "Name": "name",
+                        "Platform": "platform",
+                        "Year": "release_date",
+                        "Genre": "genres"
+                    }
+                }
+            }
+        }
+    },
+    "integrated_schema_by_table": {
+        "Game": {
+            "attributes": [
+                "rating",
+                "name",
+                "genres"
+            ],
+            "foreign_keys": {},
+            "column_mappings_by_table": {
+                "game_XboxOne_GameSales.csv": {
+                    "Game": "name",
+                    "Genre": "genres"
+                },
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": {
+                    "Name": "name",
+                    "Genre": "genres",
+                    "Rating": "rating"
+                },
+                "vgsales (2)_126.csv": {
+                    "Name": "name",
+                    "Genre": "genres"
+                },
+                "metacritic.csv": {
+                    "name": "name",
+                    "rating": "rating"
+                },
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                    "Name": "name",
+                    "Genre": "genres",
+                    "Rating": "rating"
+                },
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                    "Name": "name",
+                    "Genre": "genres",
+                    "Rating": "rating"
+                }
+            },
+            "schema_matching": {
+                "game_XboxOne_GameSales.csv": {
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": {
+                        "Game": "Name",
+                        "Genre": "Genre"
+                    },
+                    "vgsales (2)_126.csv": {
+                        "Game": "Name",
+                        "Genre": "Genre"
+                    },
+                    "metacritic.csv": {
+                        "Game": "name"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                        "Game": "Name",
+                        "Genre": "Genre"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                        "Game": "Name",
+                        "Genre": "Genre"
+                    }
+                },
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": {
+                    "vgsales (2)_126.csv": {
+                        "Name": "Name",
+                        "Genre": "Genre"
+                    },
+                    "metacritic.csv": {
+                        "Name": "name",
+                        "Rating": "rating"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                        "Name": "Name",
+                        "Genre": "Genre",
+                        "Rating": "Rating"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                        "Name": "Name",
+                        "Genre": "Genre",
+                        "Rating": "Rating"
+                    }
+                },
+                "vgsales (2)_126.csv": {
+                    "metacritic.csv": {
+                        "Name": "name"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                        "Name": "Name",
+                        "Genre": "Genre"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                        "Name": "Name",
+                        "Genre": "Genre"
+                    }
+                },
+                "metacritic.csv": {
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                        "name": "Name",
+                        "rating": "Rating"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                        "name": "Name",
+                        "rating": "Rating"
+                    }
+                },
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                        "Name": "Name",
+                        "Genre": "Genre",
+                        "Rating": "Rating"
+                    }
+                }
+            }
+        },
+        "GameRelease": {
+            "attributes": [
+                "NA_Sales",
+                "Other_Sales",
+                "developer",
+                "number_of_players",
+                "Publisher",
+                "JP_Sales",
+                "Critic_Score",
+                "Rank",
+                "Global_Sales",
+                "User_Score",
+                "platform",
+                "name",
+                "Critic_Count",
+                "EU_Sales",
+                "release_date",
+                "User_Count"
+            ],
+            "foreign_keys": {
+                "name": {
+                    "Game": "name"
+                }
+            },
+            "column_mappings_by_table": {
+                "game_XboxOne_GameSales.csv": {
+                    "Pos": "Rank",
+                    "Game": "name",
+                    "Platform": "platform",
+                    "Year": "release_date",
+                    "Publisher": "Publisher",
+                    "North America": "NA_Sales",
+                    "Europe": "EU_Sales",
+                    "Japan": "JP_Sales",
+                    "Rest of World": "Other_Sales",
+                    "Global": "Global_Sales"
+                },
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": {
+                    "Name": "name",
+                    "Platform": "platform",
+                    "Year_of_Release": "release_date",
+                    "Publisher": "Publisher",
+                    "Developer": "developer",
+                    "NA_Sales": "NA_Sales",
+                    "EU_Sales": "EU_Sales",
+                    "JP_Sales": "JP_Sales",
+                    "Other_Sales": "Other_Sales",
+                    "Global_Sales": "Global_Sales",
+                    "Critic_Score": "Critic_Score",
+                    "Critic_Count": "Critic_Count",
+                    "User_Score": "User_Score",
+                    "User_Count": "User_Count"
+                },
+                "vgsales (2)_126.csv": {
+                    "Rank": "Rank",
+                    "Name": "name",
+                    "Platform": "platform",
+                    "Year": "release_date",
+                    "Publisher": "Publisher",
+                    "NA_Sales": "NA_Sales",
+                    "EU_Sales": "EU_Sales",
+                    "JP_Sales": "JP_Sales",
+                    "Other_Sales": "Other_Sales",
+                    "Global_Sales": "Global_Sales"
+                },
+                "metacritic.csv": {
+                    "name": "name",
+                    "release_date": "release_date",
+                    "developer": "developer",
+                    "platform": "platform",
+                    "number_of_players": "number_of_players",
+                    "metascore": "Critic_Score",
+                    "user_score": "User_Score"
+                },
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                    "Name": "name",
+                    "Platform": "platform",
+                    "Year_of_Release": "release_date",
+                    "Publisher": "Publisher",
+                    "Developer": "developer",
+                    "NA_Sales": "NA_Sales",
+                    "EU_Sales": "EU_Sales",
+                    "JP_Sales": "JP_Sales",
+                    "Other_Sales": "Other_Sales",
+                    "Global_Sales": "Global_Sales",
+                    "Critic_Score": "Critic_Score",
+                    "Critic_Count": "Critic_Count",
+                    "User_Score": "User_Score",
+                    "User_Count": "User_Count"
+                },
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                    "Name": "name",
+                    "Platform": "platform",
+                    "Year_of_Release": "release_date",
+                    "Publisher": "Publisher",
+                    "Developer": "developer",
+                    "NA_Sales": "NA_Sales",
+                    "EU_Sales": "EU_Sales",
+                    "JP_Sales": "JP_Sales",
+                    "Other_Sales": "Other_Sales",
+                    "Global_Sales": "Global_Sales",
+                    "Critic_Score": "Critic_Score",
+                    "Critic_Count": "Critic_Count",
+                    "User_Score": "User_Score",
+                    "User_Count": "User_Count"
+                }
+            },
+            "schema_matching": {
+                "game_XboxOne_GameSales.csv": {
+                    "Video_Games_Sales_as_at_22_Dec_2016_128.csv": {
+                        "Game": "Name",
+                        "Platform": "Platform",
+                        "Year": "Year_of_Release",
+                        "Publisher": "Publisher",
+                        "North America": "NA_Sales",
+                        "Europe": "EU_Sales",
+                        "Japan": "JP_Sales",
+                        "Rest of World": "Other_Sales",
+                        "Global": "Global_Sales"
+                    },
+                    "vgsales (2)_126.csv": {
+                        "Pos": "Rank",
+                        "Game": "Name",
+                        "Platform": "Platform",
+                        "Year": "Year",
+                        "Publisher": "Publisher",
+                        "North America": "NA_Sales",
+                        "Europe": "EU_Sales",
+                        "Japan": "JP_Sales",
+                        "Rest of World": "Other_Sales",
+                        "Global": "Global_Sales"
+                    },
+                    "metacritic.csv": {
+                        "Game": "name",
+                        "Platform": "platform",
+                        "Year": "release_date"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                        "Game": "Name",
+                        "Platform": "Platform",
+                        "Year": "Year_of_Release",
+                        "Publisher": "Publisher",
+                        "North America": "NA_Sales",
+                        "Europe": "EU_Sales",
+                        "Japan": "JP_Sales",
+                        "Rest of World": "Other_Sales",
+                        "Global": "Global_Sales"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                        "Game": "Name",
+                        "Platform": "Platform",
+                        "Year": "Year_of_Release",
+                        "Publisher": "Publisher",
+                        "North America": "NA_Sales",
+                        "Europe": "EU_Sales",
+                        "Japan": "JP_Sales",
+                        "Rest of World": "Other_Sales",
+                        "Global": "Global_Sales"
+                    }
+                },
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": {
+                    "vgsales (2)_126.csv": {
+                        "Name": "Name",
+                        "Platform": "Platform",
+                        "Year_of_Release": "Year",
+                        "Publisher": "Publisher",
+                        "NA_Sales": "NA_Sales",
+                        "EU_Sales": "EU_Sales",
+                        "JP_Sales": "JP_Sales",
+                        "Other_Sales": "Other_Sales",
+                        "Global_Sales": "Global_Sales"
+                    },
+                    "metacritic.csv": {
+                        "Name": "name",
+                        "Platform": "platform",
+                        "Year_of_Release": "release_date",
+                        "Developer": "developer",
+                        "Critic_Score": "metascore",
+                        "User_Score": "user_score"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                        "Name": "Name",
+                        "Platform": "Platform",
+                        "Year_of_Release": "Year_of_Release",
+                        "Publisher": "Publisher",
+                        "Developer": "Developer",
+                        "NA_Sales": "NA_Sales",
+                        "EU_Sales": "EU_Sales",
+                        "JP_Sales": "JP_Sales",
+                        "Other_Sales": "Other_Sales",
+                        "Global_Sales": "Global_Sales",
+                        "Critic_Score": "Critic_Score",
+                        "Critic_Count": "Critic_Count",
+                        "User_Score": "User_Score",
+                        "User_Count": "User_Count"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                        "Name": "Name",
+                        "Platform": "Platform",
+                        "Year_of_Release": "Year_of_Release",
+                        "Publisher": "Publisher",
+                        "Developer": "Developer",
+                        "NA_Sales": "NA_Sales",
+                        "EU_Sales": "EU_Sales",
+                        "JP_Sales": "JP_Sales",
+                        "Other_Sales": "Other_Sales",
+                        "Global_Sales": "Global_Sales",
+                        "Critic_Score": "Critic_Score",
+                        "Critic_Count": "Critic_Count",
+                        "User_Score": "User_Score",
+                        "User_Count": "User_Count"
+                    }
+                },
+                "vgsales (2)_126.csv": {
+                    "metacritic.csv": {
+                        "Name": "name",
+                        "Platform": "platform",
+                        "Year": "release_date"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                        "Name": "Name",
+                        "Platform": "Platform",
+                        "Year": "Year_of_Release",
+                        "Publisher": "Publisher",
+                        "NA_Sales": "NA_Sales",
+                        "EU_Sales": "EU_Sales",
+                        "JP_Sales": "JP_Sales",
+                        "Other_Sales": "Other_Sales",
+                        "Global_Sales": "Global_Sales"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                        "Name": "Name",
+                        "Platform": "Platform",
+                        "Year": "Year_of_Release",
+                        "Publisher": "Publisher",
+                        "NA_Sales": "NA_Sales",
+                        "EU_Sales": "EU_Sales",
+                        "JP_Sales": "JP_Sales",
+                        "Other_Sales": "Other_Sales",
+                        "Global_Sales": "Global_Sales"
+                    }
+                },
+                "metacritic.csv": {
+                    "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                        "name": "Name",
+                        "release_date": "Year_of_Release",
+                        "developer": "Developer",
+                        "platform": "Platform",
+                        "metascore": "Critic_Score",
+                        "user_score": "User_Score"
+                    },
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                        "name": "Name",
+                        "release_date": "Year_of_Release",
+                        "developer": "Developer",
+                        "platform": "Platform",
+                        "metascore": "Critic_Score",
+                        "user_score": "User_Score"
+                    }
+                },
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                    "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                        "Name": "Name",
+                        "Platform": "Platform",
+                        "Year_of_Release": "Year_of_Release",
+                        "Publisher": "Publisher",
+                        "Developer": "Developer",
+                        "NA_Sales": "NA_Sales",
+                        "EU_Sales": "EU_Sales",
+                        "JP_Sales": "JP_Sales",
+                        "Other_Sales": "Other_Sales",
+                        "Global_Sales": "Global_Sales",
+                        "Critic_Score": "Critic_Score",
+                        "Critic_Count": "Critic_Count",
+                        "User_Score": "User_Score",
+                        "User_Count": "User_Count"
+                    }
+                }
+            }
+        },
+        "Genres": {
+            "attributes": [
+                "name",
+                "genres"
+            ],
+            "foreign_keys": {
+                "name": {
+                    "Game": "name"
+                }
+            },
+            "column_mappings_by_table": {
+                "metacritic.csv": {
+                    "name": "name",
+                    "genres": "genres"
+                }
+            },
+            "schema_matching": {}
+        }
+    },
+    "grouped_attributes": {
+        "Rank": [
+            {
+                "game_XboxOne_GameSales.csv": "Pos"
+            },
+            {
+                "vgsales (2)_126.csv": "Rank"
+            }
+        ],
+        "name": [
+            {
+                "game_XboxOne_GameSales.csv": "Game"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Name"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "game_title"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "title"
+            },
+            {
+                "vgsales (2)_126.csv": "Name"
+            },
+            {
+                "metacritic.csv": "name"
+            }
+        ],
+        "platform": [
+            {
+                "game_XboxOne_GameSales.csv": "Platform"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Platform"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "console_code"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "platform"
+            },
+            {
+                "vgsales (2)_126.csv": "Platform"
+            },
+            {
+                "metacritic.csv": "platform"
+            }
+        ],
+        "release_date": [
+            {
+                "game_XboxOne_GameSales.csv": "Year"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Year_of_Release"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "release_year"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "release_yr"
+            },
+            {
+                "vgsales (2)_126.csv": "Year"
+            },
+            {
+                "metacritic.csv": "release_date"
+            }
+        ],
+        "genres": [
+            {
+                "game_XboxOne_GameSales.csv": "Genre"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Genre"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "category"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "genre"
+            },
+            {
+                "vgsales (2)_126.csv": "Genre"
+            },
+            {
+                "metacritic.csv": "genres"
+            }
+        ],
+        "Publisher": [
+            {
+                "game_XboxOne_GameSales.csv": "Publisher"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Publisher"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "pub_name"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "publisher"
+            },
+            {
+                "vgsales (2)_126.csv": "Publisher"
+            }
+        ],
+        "NA_Sales": [
+            {
+                "game_XboxOne_GameSales.csv": "North America"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "NA_Sales"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "sales_na_m"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "na_units_m"
+            },
+            {
+                "vgsales (2)_126.csv": "NA_Sales"
+            }
+        ],
+        "EU_Sales": [
+            {
+                "game_XboxOne_GameSales.csv": "Europe"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "EU_Sales"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "sales_eu_m"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "eu_units_m"
+            },
+            {
+                "vgsales (2)_126.csv": "EU_Sales"
+            }
+        ],
+        "JP_Sales": [
+            {
+                "game_XboxOne_GameSales.csv": "Japan"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "JP_Sales"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "sales_jp_m"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "jp_units_m"
+            },
+            {
+                "vgsales (2)_126.csv": "JP_Sales"
+            }
+        ],
+        "Other_Sales": [
+            {
+                "game_XboxOne_GameSales.csv": "Rest of World"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Other_Sales"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "sales_row_m"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "other_units_m"
+            },
+            {
+                "vgsales (2)_126.csv": "Other_Sales"
+            }
+        ],
+        "Global_Sales": [
+            {
+                "game_XboxOne_GameSales.csv": "Global"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Global_Sales"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "sales_world_m"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "total_units_m"
+            },
+            {
+                "vgsales (2)_126.csv": "Global_Sales"
+            }
+        ],
+        "rating": [
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Rating"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "esrb_rating"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "content_rating"
+            },
+            {
+                "metacritic.csv": "rating"
+            }
+        ],
+        "developer": [
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Developer"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "dev_studio"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "developer"
+            },
+            {
+                "metacritic.csv": "developer"
+            }
+        ],
+        "Critic_Score": [
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Critic_Score"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "metacritic_score"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "crit_score"
+            },
+            {
+                "metacritic.csv": "metascore"
+            }
+        ],
+        "Critic_Count": [
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "Critic_Count"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "critic_reviews_n"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "crit_reviews"
+            }
+        ],
+        "User_Score": [
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "User_Score"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "player_score"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "user_score"
+            },
+            {
+                "metacritic.csv": "user_score"
+            }
+        ],
+        "User_Count": [
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_128.csv": "User_Count"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_137.csv": "player_ratings_n"
+            },
+            {
+                "Video_Games_Sales_as_at_22_Dec_2016_138.csv": "user_ratings"
+            }
+        ],
+        "number_of_players": [
+            {
+                "metacritic.csv": "number_of_players"
+            }
+        ]
+    },
+    "schema_matching": {
+        "game_XboxOne_GameSales.csv": {
+            "Video_Games_Sales_as_at_22_Dec_2016_128.csv": {
+                "Game": "Name",
+                "Platform": "Platform",
+                "Year": "Year_of_Release",
+                "Genre": "Genre",
+                "Publisher": "Publisher",
+                "North America": "NA_Sales",
+                "Europe": "EU_Sales",
+                "Japan": "JP_Sales",
+                "Rest of World": "Other_Sales",
+                "Global": "Global_Sales"
+            },
+            "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                "Game": "game_title",
+                "Platform": "console_code",
+                "Year": "release_year",
+                "Genre": "category",
+                "Publisher": "pub_name",
+                "North America": "sales_na_m",
+                "Europe": "sales_eu_m",
+                "Japan": "sales_jp_m",
+                "Rest of World": "sales_row_m",
+                "Global": "sales_world_m"
+            },
+            "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                "Game": "title",
+                "Platform": "platform",
+                "Year": "release_yr",
+                "Genre": "genre",
+                "Publisher": "publisher",
+                "North America": "na_units_m",
+                "Europe": "eu_units_m",
+                "Japan": "jp_units_m",
+                "Rest of World": "other_units_m",
+                "Global": "total_units_m"
+            },
+            "vgsales (2)_126.csv": {
+                "Pos": "Rank",
+                "Game": "Name",
+                "Platform": "Platform",
+                "Year": "Year",
+                "Genre": "Genre",
+                "Publisher": "Publisher",
+                "North America": "NA_Sales",
+                "Europe": "EU_Sales",
+                "Japan": "JP_Sales",
+                "Rest of World": "Other_Sales",
+                "Global": "Global_Sales"
+            },
+            "metacritic.csv": {
+                "Game": "name",
+                "Platform": "platform",
+                "Year": "release_date",
+                "Genre": "genres"
+            }
+        },
+        "Video_Games_Sales_as_at_22_Dec_2016_128.csv": {
+            "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+                "Name": "game_title",
+                "Platform": "console_code",
+                "Genre": "category",
+                "Rating": "esrb_rating",
+                "Year_of_Release": "release_year",
+                "Publisher": "pub_name",
+                "Developer": "dev_studio",
+                "NA_Sales": "sales_na_m",
+                "EU_Sales": "sales_eu_m",
+                "JP_Sales": "sales_jp_m",
+                "Other_Sales": "sales_row_m",
+                "Global_Sales": "sales_world_m",
+                "Critic_Score": "metacritic_score",
+                "Critic_Count": "critic_reviews_n",
+                "User_Score": "player_score",
+                "User_Count": "player_ratings_n"
+            },
+            "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                "Name": "title",
+                "Platform": "platform",
+                "Genre": "genre",
+                "Rating": "content_rating",
+                "Year_of_Release": "release_yr",
+                "Publisher": "publisher",
+                "Developer": "developer",
+                "NA_Sales": "na_units_m",
+                "EU_Sales": "eu_units_m",
+                "JP_Sales": "jp_units_m",
+                "Other_Sales": "other_units_m",
+                "Global_Sales": "total_units_m",
+                "Critic_Score": "crit_score",
+                "Critic_Count": "crit_reviews",
+                "User_Score": "user_score",
+                "User_Count": "user_ratings"
+            },
+            "vgsales (2)_126.csv": {
+                "Name": "Name",
+                "Platform": "Platform",
+                "Genre": "Genre",
+                "Year_of_Release": "Year",
+                "Publisher": "Publisher",
+                "NA_Sales": "NA_Sales",
+                "EU_Sales": "EU_Sales",
+                "JP_Sales": "JP_Sales",
+                "Other_Sales": "Other_Sales",
+                "Global_Sales": "Global_Sales"
+            },
+            "metacritic.csv": {
+                "Name": "name",
+                "Platform": "platform",
+                "Genre": "genres",
+                "Rating": "rating",
+                "Year_of_Release": "release_date",
+                "Developer": "developer",
+                "Critic_Score": "metascore",
+                "User_Score": "user_score"
+            }
+        },
+        "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+            "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+                "game_title": "title",
+                "console_code": "platform",
+                "release_year": "release_yr",
+                "category": "genre",
+                "pub_name": "publisher",
+                "sales_na_m": "na_units_m",
+                "sales_eu_m": "eu_units_m",
+                "sales_jp_m": "jp_units_m",
+                "sales_row_m": "other_units_m",
+                "sales_world_m": "total_units_m",
+                "metacritic_score": "crit_score",
+                "critic_reviews_n": "crit_reviews",
+                "player_score": "user_score",
+                "player_ratings_n": "user_ratings",
+                "dev_studio": "developer",
+                "esrb_rating": "content_rating"
+            },
+            "vgsales (2)_126.csv": {
+                "game_title": "Name",
+                "console_code": "Platform",
+                "release_year": "Year",
+                "category": "Genre",
+                "pub_name": "Publisher",
+                "sales_na_m": "NA_Sales",
+                "sales_eu_m": "EU_Sales",
+                "sales_jp_m": "JP_Sales",
+                "sales_row_m": "Other_Sales",
+                "sales_world_m": "Global_Sales"
+            },
+            "metacritic.csv": {
+                "game_title": "name",
+                "console_code": "platform",
+                "release_year": "release_date",
+                "category": "genres",
+                "metacritic_score": "metascore",
+                "player_score": "user_score",
+                "dev_studio": "developer",
+                "esrb_rating": "rating"
+            }
+        },
+        "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+            "vgsales (2)_126.csv": {
+                "title": "Name",
+                "platform": "Platform",
+                "release_yr": "Year",
+                "genre": "Genre",
+                "publisher": "Publisher",
+                "na_units_m": "NA_Sales",
+                "eu_units_m": "EU_Sales",
+                "jp_units_m": "JP_Sales",
+                "other_units_m": "Other_Sales",
+                "total_units_m": "Global_Sales"
+            },
+            "metacritic.csv": {
+                "title": "name",
+                "platform": "platform",
+                "release_yr": "release_date",
+                "genre": "genres",
+                "crit_score": "metascore",
+                "user_score": "user_score",
+                "developer": "developer",
+                "content_rating": "rating"
+            }
+        },
+        "vgsales (2)_126.csv": {
+            "metacritic.csv": {
+                "Name": "name",
+                "Platform": "platform",
+                "Year": "release_date",
+                "Genre": "genres"
+            }
+        },
+        "metacritic.csv": {}
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "integrated_schema_by_entity": {
+        "Volcano": {
+            "attributes": [
+                "VolcanoID",
+                "volcano_name",
+                "Primary Volcano Type",
+                "PEI",
+                "class",
+                "H_active",
+                "Latitude",
+                "Longitude",
+                "Tectonic Setting",
+                "Dominant Rock Type",
+                "tectonic_region",
+                "Elevation (m)",
+                "Country",
+                "Region",
+                "Subregion"
+            ],
+            "foreign_keys": {}
+        },
+        "Eruption": {
+            "attributes": [
+                "vei_category",
+                "era",
+                "eruption_agent_decoded",
+                "Tsunami",
+                "vei_risk_tier",
+                "eruption_number",
+                "eruption_category",
+                "start_year",
+                "start_month",
+                "start_day",
+                "evidence_method_dating",
+                "end_year",
+                "end_month",
+                "deaths_total",
+                "end_day",
+                "VolcanoID",
+                "area_of_activity",
+                "vei"
+            ],
+            "foreign_keys": {
+                "VolcanoID": {"Volcano": "VolcanoID"}
+            }
+        }
+    },
+    "integrated_schema_by_table": {
+        "Volcano": {
+            "attributes": [
+                "VolcanoID",
+                "volcano_name",
+                "Primary Volcano Type",
+                "PEI",
+                "class",
+                "H_active",
+                "Latitude",
+                "Longitude",
+                "Tectonic Setting",
+                "Dominant Rock Type",
+                "Elevation (m)",
+                "Country",
+                "Location_id"
+            ],
+            "foreign_keys": {
+                "Location_id": {"Location": "Location_id"}
+            }
+        },
+        "Eruption": {
+            "attributes": [
+                "eruption_number",
+                "eruption_category",
+                "start_year",
+                "start_month",
+                "start_day",
+                "evidence_method_dating",
+                "end_year",
+                "end_month",
+                "end_day",
+                "VolcanoID",
+                "area_of_activity",
+                "vei"
+            ],
+            "foreign_keys": {
+                "VolcanoID": {"Volcano": "VolcanoID"}
+            }
+        },
+        "Location": {
+            "attributes": [
+                "Location_id",
+                "Region",
+                "Subregion"
+            ],
+            "foreign_keys": {}
+        }
+    }
+}

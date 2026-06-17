@@ -1,0 +1,602 @@
+{
+    "schema_by_entity": {
+        "wikidbs_paintings-collection_subset_1.csv": {
+            "Artist": {
+                "attributes": [
+                    "ArtistName",
+                    "ArtistDescription",
+                    "Birthplace",
+                    "Birthdate",
+                    "LanguagesSpoken",
+                    "Gender"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "ArtworkTitle",
+                    "ArtworkDescription",
+                    "ArtistName",
+                    "ArtworkImage",
+                    "ArtworkType",
+                    "CreationDate",
+                    "ArtworkHeight",
+                    "ArtworkWidthCm",
+                    "CurrentLocation",
+                    "ArtworkGenre"
+                ],
+                "table_group": "Artwork"
+            }
+        },
+        "wikidbs_paintings-collection_subset_2.csv": {
+            "Artist": {
+                "attributes": [
+                    "creator_name",
+                    "creator_bio",
+                    "place_of_birth",
+                    "date_of_birth",
+                    "sex"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "title",
+                    "work_summary",
+                    "creator_name",
+                    "holding_collection",
+                    "image_file",
+                    "work_category",
+                    "medium",
+                    "height_cm",
+                    "width_cm",
+                    "museum_location"
+                ],
+                "table_group": "Artwork"
+            }
+        },
+        "wikidbs_paintings-collection_subset_3.csv": {
+            "Artist": {
+                "attributes": [
+                    "artist_full_name",
+                    "artist_profile",
+                    "birthplace"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "artwork_name",
+                    "artwork_notes",
+                    "artist_full_name",
+                    "collection_owner",
+                    "artwork_image_path",
+                    "artwork_format",
+                    "date_created",
+                    "materials",
+                    "display_venue",
+                    "genre"
+                ],
+                "table_group": "Artwork"
+            }
+        },
+        "wikidbs_paintings-collection_subset_4.csv": {
+            "Artist": {
+                "attributes": [
+                    "artist_name",
+                    "artist_bio",
+                    "place_of_birth",
+                    "languages"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "title",
+                    "description",
+                    "artist_name",
+                    "collection_name",
+                    "image_filename",
+                    "creation_date",
+                    "height_cm",
+                    "current_gallery",
+                    "art_genre"
+                ],
+                "table_group": "Artwork"
+            }
+        },
+        "artists_works_in_museum_1.csv": {
+            "Artist": {
+                "attributes": [
+                    "artist_name",
+                    "artist_nationality",
+                    "movement",
+                    "birth_year",
+                    "death_year"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "artwork_title",
+                    "genre_tag",
+                    "width_in",
+                    "height_in",
+                    "artist_name",
+                    "institution"
+                ],
+                "table_group": "Artwork"
+            },
+            "Location": {
+                "attributes": [
+                    "institution",
+                    "street_address",
+                    "locality",
+                    "region",
+                    "zip_code",
+                    "nation",
+                    "contact_phone",
+                    "website"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "artists_works_in_museum_2.csv": {
+            "Artist": {
+                "attributes": [
+                    "artist_fullname",
+                    "artist_origin",
+                    "art_movement",
+                    "born_year",
+                    "died_year"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "piece_title",
+                    "work_genre",
+                    "width_inches",
+                    "height_inches",
+                    "artist_fullname",
+                    "museum"
+                ],
+                "table_group": "Artwork"
+            },
+            "Location": {
+                "attributes": [
+                    "museum",
+                    "addr_line1",
+                    "state_province",
+                    "postal_code",
+                    "country_name",
+                    "museum_phone",
+                    "museum_url"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "artists_works_in_museum_3.csv": {
+            "Artist": {
+                "attributes": [
+                    "creator_name",
+                    "origin_nationality",
+                    "style_school",
+                    "yob",
+                    "yod"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "work_title",
+                    "creator_name",
+                    "holding_gallery"
+                ],
+                "table_group": "Artwork"
+            },
+            "Location": {
+                "attributes": [
+                    "holding_gallery",
+                    "street_addr",
+                    "municipality",
+                    "admin_area",
+                    "postcode",
+                    "country",
+                    "tel"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "artists_works_1.csv": {
+            "Artist": {
+                "attributes": [
+                    "artist_full_name",
+                    "national_origin",
+                    "artist_movement",
+                    "year_born",
+                    "year_died"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "title",
+                    "work_school",
+                    "w_in",
+                    "h_in",
+                    "artist_full_name"
+                ],
+                "table_group": "Artwork"
+            }
+        },
+        "artists_works_2.csv": {
+            "Artist": {
+                "attributes": [
+                    "creator_full_name",
+                    "creator_nationality",
+                    "artist_movement_style",
+                    "creator_birth_year",
+                    "creator_death_year"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "painting_name",
+                    "work_category",
+                    "w_inch",
+                    "h_inch",
+                    "creator_full_name"
+                ],
+                "table_group": "Artwork"
+            }
+        },
+        "artists_works_3.csv": {
+            "Artist": {
+                "attributes": [
+                    "artist_full",
+                    "artist_country",
+                    "artist_school",
+                    "artist_birth",
+                    "artist_death"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "work_name",
+                    "work_style_tag",
+                    "img_w_in",
+                    "img_h_in",
+                    "artist_full"
+                ],
+                "table_group": "Artwork"
+            }
+        },
+        "artists_works_4.csv": {
+            "Artist": {
+                "attributes": [
+                    "artist_full_name",
+                    "artist_nation",
+                    "artist_school",
+                    "artist_birth_yr",
+                    "artist_death_yr"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "painting_title",
+                    "work_period",
+                    "artist_full_name"
+                ],
+                "table_group": "Artwork"
+            }
+        }
+    },
+    "schema_by_normalization": {
+        "wikidbs_paintings-collection_subset_1.csv": {
+            "Artist": {
+                "attributes": [
+                    "ArtistName",
+                    "ArtistDescription",
+                    "Birthplace",
+                    "Birthdate",
+                    "LanguagesSpoken",
+                    "Gender"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "ArtworkTitle",
+                    "ArtworkDescription",
+                    "ArtistName",
+                    "ArtworkImage",
+                    "ArtworkType",
+                    "CreationDate",
+                    "ArtworkHeight",
+                    "ArtworkWidthCm",
+                    "CurrentLocation",
+                    "ArtworkGenre"
+                ],
+                "table_group": "Artwork"
+            }
+        },
+        "wikidbs_paintings-collection_subset_2.csv": {
+            "Artist": {
+                "attributes": [
+                    "creator_name",
+                    "creator_bio",
+                    "place_of_birth",
+                    "date_of_birth",
+                    "sex"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "title",
+                    "work_summary",
+                    "creator_name",
+                    "holding_collection",
+                    "image_file",
+                    "work_category",
+                    "medium",
+                    "height_cm",
+                    "width_cm",
+                    "museum_location"
+                ],
+                "table_group": "Artwork"
+            }
+        },
+        "wikidbs_paintings-collection_subset_3.csv": {
+            "Artist": {
+                "attributes": [
+                    "artist_full_name",
+                    "artist_profile",
+                    "birthplace"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "artwork_name",
+                    "artwork_notes",
+                    "artist_full_name",
+                    "collection_owner",
+                    "artwork_image_path",
+                    "artwork_format",
+                    "date_created",
+                    "materials",
+                    "display_venue",
+                    "genre"
+                ],
+                "table_group": "Artwork"
+            }
+        },
+        "wikidbs_paintings-collection_subset_4.csv": {
+            "Artist": {
+                "attributes": [
+                    "artist_name",
+                    "artist_bio",
+                    "place_of_birth",
+                    "languages"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "title",
+                    "description",
+                    "artist_name",
+                    "collection_name",
+                    "image_filename",
+                    "creation_date",
+                    "height_cm",
+                    "current_gallery",
+                    "art_genre"
+                ],
+                "table_group": "Artwork"
+            }
+        },
+        "artists_works_in_museum_1.csv": {
+            "Artist": {
+                "attributes": [
+                    "full_name",
+                    "nationality",
+                    "artist_style",
+                    "birth",
+                    "death"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "name",
+                    "work_style",
+                    "width_i",
+                    "height_i",
+                    "full_name",
+                    "museum_name"
+                ],
+                "table_group": "Artwork"
+            },
+            "Location": {
+                "attributes": [
+                    "museum_name",
+                    "address",
+                    "city",
+                    "state",
+                    "postal",
+                    "country",
+                    "phone",
+                    "url"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "artists_works_in_museum_2.csv": {
+            "Artist": {
+                "attributes": [
+                    "full_name",
+                    "nationality",
+                    "artist_style",
+                    "birth",
+                    "death"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "name",
+                    "work_style",
+                    "width_i",
+                    "height_i",
+                    "full_name",
+                    "museum_name"
+                ],
+                "table_group": "Artwork"
+            },
+            "Location": {
+                "attributes": [
+                    "museum_name",
+                    "address",
+                    "city",
+                    "state",
+                    "postal",
+                    "country",
+                    "phone",
+                    "url"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "artists_works_in_museum_3.csv": {
+            "Artist": {
+                "attributes": [
+                    "full_name",
+                    "nationality",
+                    "artist_style",
+                    "birth",
+                    "death"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "name",
+                    "full_name",
+                    "museum_name"
+                ],
+                "table_group": "Artwork"
+            },
+            "Location": {
+                "attributes": [
+                    "museum_name",
+                    "address",
+                    "city",
+                    "state",
+                    "postal",
+                    "country",
+                    "phone",
+                    "url"
+                ],
+                "table_group": "Location"
+            }
+        },
+        "artists_works_1.csv": {
+            "Artist": {
+                "attributes": [
+                    "full_name",
+                    "nationality",
+                    "artist_style",
+                    "birth",
+                    "death"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "name",
+                    "work_style",
+                    "width_i",
+                    "height_i",
+                    "full_name",
+                    "museum_name"
+                ],
+                "table_group": "Artwork"
+            }
+        },
+        "artists_works_2.csv": {
+            "Artist": {
+                "attributes": [
+                    "full_name",
+                    "nationality",
+                    "artist_style",
+                    "birth",
+                    "death"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "name",
+                    "work_style",
+                    "width_i",
+                    "height_i",
+                    "full_name",
+                    "museum_name"
+                ],
+                "table_group": "Artwork"
+            }
+        },
+        "artists_works_3.csv": {
+            "Artist": {
+                "attributes": [
+                    "full_name",
+                    "nationality",
+                    "artist_style",
+                    "birth",
+                    "death"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "name",
+                    "work_style",
+                    "width_i",
+                    "height_i",
+                    "full_name",
+                    "museum_name"
+                ],
+                "table_group": "Artwork"
+            }
+        },
+        "artists_works_4.csv": {
+            "Artist": {
+                "attributes": [
+                    "full_name",
+                    "nationality",
+                    "artist_style",
+                    "birth",
+                    "death"
+                ],
+                "table_group": "Artist"
+            },
+            "Artwork": {
+                "attributes": [
+                    "name",
+                    "work_style",
+                    "width_i",
+                    "height_i",
+                    "full_name",
+                    "museum_name"
+                ],
+                "table_group": "Artwork"
+            }
+        }
+    }
+}

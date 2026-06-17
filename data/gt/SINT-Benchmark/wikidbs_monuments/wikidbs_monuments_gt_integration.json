@@ -1,0 +1,66 @@
+{
+    "integrated_schema_by_entity": {
+        "Monument": {
+            "attributes": [
+                "Northing (Location/Map Coordinates)",
+                "MonumentDescription",
+                "Asset ID (Identifier)",
+                "MonumentName",
+                "Longitude",
+                "Monument Material (Monument Details)",
+                "HeritageDesignation",
+                "RecordType",
+                "LocationName",
+                "Latitude",
+                "StreetAddress",
+                "MonumentType",
+                "Easting (Location/Map Coordinates)",
+                "Location_id"
+            ],
+            "foreign_keys": {
+                "Location_id": {"Location": "Location_id"}
+            }
+        },
+        "Location": {
+            "attributes": [
+                "Location_id",
+                "LocationDescription",
+                "PostalCode",
+                "LocationType",
+                "LocationName",
+                "CountryName",
+                "TimeZone"
+            ],
+            "foreign_keys": {}
+        }
+    },
+    "integrated_schema_by_table": {
+        "Monument": {
+            "attributes": [
+                "MonumentName",
+                "MonumentDescription",
+                "Latitude",
+                "Longitude",
+                "Location_id",
+                "MonumentType",
+                "HeritageDesignation",
+                "StreetAddress"
+            ],
+            "foreign_keys": {
+                "Location_id": {"Location": "Location_id"}
+            }
+        },
+        "Location": {
+            "attributes": [
+                "Location_id",
+                "LocationName",
+                "LocationDescription",
+                "CountryName",
+                "TimeZone",
+                "PostalCode",
+                "LocationType"
+            ],
+            "foreign_keys": {}
+        }
+    }
+}

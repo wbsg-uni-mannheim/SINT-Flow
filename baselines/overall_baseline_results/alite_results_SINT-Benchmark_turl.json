@@ -1,0 +1,42 @@
+{
+    "average_precision": 0.7838676383423827,
+    "average_recall": 0.5779283594074067,
+    "average_f_measure": 0.627718448743986,
+    "total_time": 384.6602968929801,
+    "final_precision": {
+        "volcanic-eruptions": 0.8052325581395349,
+        "car-listings": 0.9431818181818182,
+        "goby_selected": 0.8278301886792453,
+        "airline-data": 0.6691729323308271,
+        "wikidbs_horror-film-character": 0.9855072463768116,
+        "wikidbs_monuments": 0.8870967741935484,
+        "park_events": 0.937007874015748,
+        "wikidbs_research-articles": 0.8092105263157895,
+        "games": 0.3388888888888889,
+        "wikidbs_paintings-collection": 0.6355475763016158
+    },
+    "final_recall": {
+        "volcanic-eruptions": 0.554,
+        "car-listings": 0.36971046770601335,
+        "goby_selected": 0.2621359223300971,
+        "airline-data": 0.5842450765864332,
+        "wikidbs_horror-film-character": 0.7816091954022989,
+        "wikidbs_monuments": 0.49107142857142855,
+        "park_events": 0.7933333333333333,
+        "wikidbs_research-articles": 0.41460674157303373,
+        "games": 0.7956521739130434,
+        "wikidbs_paintings-collection": 0.7329192546583851
+    },
+    "final_f_measure": {
+        "volcanic-eruptions": 0.6563981042654029,
+        "car-listings": 0.5312,
+        "goby_selected": 0.39818491208167894,
+        "airline-data": 0.6238317757009346,
+        "wikidbs_horror-film-character": 0.8717948717948718,
+        "wikidbs_monuments": 0.632183908045977,
+        "park_events": 0.8592057761732852,
+        "wikidbs_research-articles": 0.5482912332838039,
+        "games": 0.4753246753246753,
+        "wikidbs_paintings-collection": 0.6807692307692308
+    }
+}

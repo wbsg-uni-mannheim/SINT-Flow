@@ -1,0 +1,651 @@
+{
+    "column_mappings": {
+        "eruptions_125_125.csv": {
+            "volcano_number": "VolcanoID",
+            "volcano_name": "volcano_name",
+            "eruption_number": "eruption_number",
+            "area_of_activity": "area_of_activity",
+            "vei": "vei",
+            "latitude": "Latitude",
+            "longitude": "Longitude",
+            "eruption_category": "eruption_category",
+            "start_year": "start_year",
+            "start_month": "start_month",
+            "start_day": "start_day",
+            "evidence_method_dating": "evidence_method_dating",
+            "end_year": "end_year",
+            "end_month": "end_month",
+            "end_day": "end_day"
+        },
+        "eruptions_128_127.csv": {
+            "volcano_number": "VolcanoID",
+            "volcano_name": "volcano_name",
+            "eruption_number": "eruption_number",
+            "area_of_activity": "area_of_activity",
+            "vei": "vei",
+            "latitude": "Latitude",
+            "longitude": "Longitude",
+            "ystart": "start_year",
+            "mstart": "start_month",
+            "dstart": "start_day",
+            "evidence_method_dating": "evidence_method_dating",
+            "yend": "end_year",
+            "mend": "end_month",
+            "dend": "end_day"
+        },
+        "eruptions_131_125.csv": {
+            "volcano_number": "VolcanoID",
+            "volcano_name": "volcano_name",
+            "eruption_number": "eruption_number",
+            "area_of_activity": "area_of_activity",
+            "vei": "vei",
+            "latitude": "Latitude",
+            "longitude": "Longitude",
+            "eruption_category": "eruption_category",
+            "start_year": "start_year",
+            "start_month": "start_month",
+            "start_day": "start_day",
+            "end_year": "end_year",
+            "end_month": "end_month",
+            "end_day": "end_day"
+        },
+        "eruptions_132_126.csv": {
+            "volcano_number": "VolcanoID",
+            "volcano_name": "volcano_name",
+            "eruption_number": "eruption_number",
+            "area_of_activity": "area_of_activity",
+            "vei": "vei",
+            "lt": "Latitude",
+            "l": "Longitude",
+            "start_yr": "start_year",
+            "startmth": "start_month",
+            "start_day": "start_day",
+            "end_yr": "end_year",
+            "endmth": "end_month",
+            "end_day": "end_day"
+        },
+        "eruptions_133_126.csv": {
+            "volcano_number": "VolcanoID",
+            "volcano_name": "volcano_name",
+            "eruption_number": "eruption_number",
+            "area_of_activity": "area_of_activity",
+            "vei": "vei",
+            "latitude": "Latitude",
+            "longitude": "Longitude",
+            "category": "eruption_category",
+            "start_year": "start_year",
+            "start_month": "start_month",
+            "start_day": "start_day",
+            "method": "evidence_method_dating",
+            "end_year": "end_year",
+            "end_month": "end_month",
+            "end_day": "end_day"
+        },
+        "Volcano Eruptions_125.csv": {
+            "Volcano Number": "VolcanoID",
+            "Volcano Name": "volcano_name",
+            "Primary Volcano Type": "Primary Volcano Type",
+            "Activity Evidence": "eruption_category",
+            "Last Known Eruption": "start_year",
+            "Latitude": "Latitude",
+            "Longitude": "Longitude",
+            "Elevation (m)": "Elevation (m)",
+            "Dominant Rock Type": "Dominant Rock Type",
+            "Tectonic Setting": "Tectonic Setting",
+            "Country": "Country",
+            "Region": "Region",
+            "Subregion": "Subregion"
+        },
+        "Volcano Eruptions_127.csv": {
+            "Volcano Number": "VolcanoID",
+            "Volcano Name": "volcano_name",
+            "Primary Volcano Type": "Primary Volcano Type",
+            "Activity Evidence": "eruption_category",
+            "Last Known Eruption": "start_year",
+            "Latitude": "Latitude",
+            "Longitude": "Longitude",
+            "Elevation (m)": "Elevation (m)",
+            "Dominant Rock Type": "Dominant Rock Type",
+            "Tectonic Setting": "Tectonic Setting",
+            "Country": "Country",
+            "Region": "Region",
+            "Subregion": "Subregion"
+        },
+        "volcano_126.csv": {
+            "VolcanoID": "VolcanoID",
+            "V_Name": "volcano_name",
+            "Latitude": "Latitude",
+            "Longitude": "Longitude",
+            "PEI": "PEI",
+            "H_active": "H_active",
+            "VEI_Holoce": "vei",
+            "class": "class",
+            "Country": "Country",
+            "Region": "Region",
+            "Subregion": "Subregion"
+        },
+        "global_volcano_eruption_intelligence.csv": {
+            "volcano_name": "volcano_name",
+            "latitude": "Latitude",
+            "longitude": "Longitude",
+            "country": "Country",
+            "elevation_m": "Elevation (m)",
+            "volcano_type": "Primary Volcano Type",
+            "country_region": "Region",
+            "tectonic_region": "tectonic_region",
+            "noaa_event_id": "eruption_number",
+            "deaths_total": "deaths_total",
+            "eruption_status": "evidence_method_dating",
+            "vei": "vei",
+            "eruption_day": "start_day",
+            "eruption_month": "start_month",
+            "eruption_year": "start_year",
+            "era": "era",
+            "vei_category": "vei_category",
+            "eruption_agent_decoded": "eruption_agent_decoded",
+            "vei_risk_tier": "vei_risk_tier"
+        },
+        "Indonesia_major_eruption.csv": {
+            "eruption_day": "start_day",
+            "eruption_month": "start_month",
+            "eruption_year": "start_year",
+            "cessation_day": "end_day",
+            "cessation_month": "end_month",
+            "cessation_year": "end_year",
+            "Volcano": "volcano_name",
+            "VEI": "vei",
+            "Characteristic": "eruption_agent_decoded",
+            "Tsunami": "Tsunami",
+            "Fatality": "deaths_total"
+        }
+    },
+    "integrated_schema_by_entity": {
+        "Volcano": {
+            "attributes": [
+                "eruption_category",
+                "Latitude",
+                "VolcanoID",
+                "volcano_name",
+                "Elevation (m)",
+                "Country",
+                "Tectonic Setting",
+                "vei",
+                "class",
+                "Subregion",
+                "tectonic_region",
+                "Primary Volcano Type",
+                "Region",
+                "Dominant Rock Type",
+                "Longitude",
+                "start_year",
+                "PEI",
+                "H_active"
+            ],
+            "column_mappings_by_table": {
+                "eruptions_125_125.csv": {
+                    "volcano_number": "VolcanoID",
+                    "volcano_name": "volcano_name",
+                    "latitude": "Latitude",
+                    "longitude": "Longitude"
+                },
+                "eruptions_128_127.csv": {
+                    "volcano_number": "VolcanoID",
+                    "volcano_name": "volcano_name",
+                    "latitude": "Latitude",
+                    "longitude": "Longitude"
+                },
+                "eruptions_131_125.csv": {
+                    "volcano_number": "VolcanoID",
+                    "volcano_name": "volcano_name",
+                    "latitude": "Latitude",
+                    "longitude": "Longitude"
+                },
+                "eruptions_132_126.csv": {
+                    "volcano_number": "VolcanoID",
+                    "volcano_name": "volcano_name",
+                    "lt": "Latitude",
+                    "l": "Longitude"
+                },
+                "eruptions_133_126.csv": {
+                    "volcano_number": "VolcanoID",
+                    "volcano_name": "volcano_name",
+                    "latitude": "Latitude",
+                    "longitude": "Longitude"
+                },
+                "Volcano Eruptions_125.csv": {
+                    "Volcano Number": "VolcanoID",
+                    "Volcano Name": "volcano_name",
+                    "Primary Volcano Type": "Primary Volcano Type",
+                    "Activity Evidence": "eruption_category",
+                    "Last Known Eruption": "start_year",
+                    "Latitude": "Latitude",
+                    "Longitude": "Longitude",
+                    "Elevation (m)": "Elevation (m)",
+                    "Dominant Rock Type": "Dominant Rock Type",
+                    "Tectonic Setting": "Tectonic Setting",
+                    "Country": "Country",
+                    "Region": "Region",
+                    "Subregion": "Subregion"
+                },
+                "Volcano Eruptions_127.csv": {
+                    "Volcano Number": "VolcanoID",
+                    "Volcano Name": "volcano_name",
+                    "Primary Volcano Type": "Primary Volcano Type",
+                    "Activity Evidence": "eruption_category",
+                    "Last Known Eruption": "start_year",
+                    "Latitude": "Latitude",
+                    "Longitude": "Longitude",
+                    "Elevation (m)": "Elevation (m)",
+                    "Dominant Rock Type": "Dominant Rock Type",
+                    "Tectonic Setting": "Tectonic Setting",
+                    "Country": "Country",
+                    "Region": "Region",
+                    "Subregion": "Subregion"
+                },
+                "volcano_126.csv": {
+                    "VolcanoID": "VolcanoID",
+                    "V_Name": "volcano_name",
+                    "Latitude": "Latitude",
+                    "Longitude": "Longitude",
+                    "PEI": "PEI",
+                    "H_active": "H_active",
+                    "VEI_Holoce": "vei",
+                    "class": "class",
+                    "Country": "Country",
+                    "Region": "Region",
+                    "Subregion": "Subregion"
+                },
+                "global_volcano_eruption_intelligence.csv": {
+                    "volcano_name": "volcano_name",
+                    "latitude": "Latitude",
+                    "longitude": "Longitude",
+                    "country": "Country",
+                    "elevation_m": "Elevation (m)",
+                    "volcano_type": "Primary Volcano Type",
+                    "country_region": "Region",
+                    "tectonic_region": "tectonic_region"
+                }
+            }
+        },
+        "Eruption": {
+            "attributes": [
+                "volcano_name",
+                "vei",
+                "vei_risk_tier",
+                "deaths_total",
+                "vei_category",
+                "start_day",
+                "eruption_category",
+                "end_month",
+                "end_year",
+                "start_year",
+                "end_day",
+                "eruption_number",
+                "eruption_agent_decoded",
+                "area_of_activity",
+                "evidence_method_dating",
+                "VolcanoID",
+                "start_month",
+                "era",
+                "Tsunami"
+            ],
+            "column_mappings_by_table": {
+                "eruptions_125_125.csv": {
+                    "volcano_number": "VolcanoID",
+                    "eruption_number": "eruption_number",
+                    "area_of_activity": "area_of_activity",
+                    "vei": "vei",
+                    "eruption_category": "eruption_category",
+                    "start_year": "start_year",
+                    "start_month": "start_month",
+                    "start_day": "start_day",
+                    "evidence_method_dating": "evidence_method_dating",
+                    "end_year": "end_year",
+                    "end_month": "end_month",
+                    "end_day": "end_day"
+                },
+                "eruptions_128_127.csv": {
+                    "volcano_number": "VolcanoID",
+                    "eruption_number": "eruption_number",
+                    "area_of_activity": "area_of_activity",
+                    "vei": "vei",
+                    "ystart": "start_year",
+                    "mstart": "start_month",
+                    "dstart": "start_day",
+                    "evidence_method_dating": "evidence_method_dating",
+                    "yend": "end_year",
+                    "mend": "end_month",
+                    "dend": "end_day"
+                },
+                "eruptions_131_125.csv": {
+                    "volcano_number": "VolcanoID",
+                    "eruption_number": "eruption_number",
+                    "area_of_activity": "area_of_activity",
+                    "vei": "vei",
+                    "eruption_category": "eruption_category",
+                    "start_year": "start_year",
+                    "start_month": "start_month",
+                    "start_day": "start_day",
+                    "end_year": "end_year",
+                    "end_month": "end_month",
+                    "end_day": "end_day"
+                },
+                "eruptions_132_126.csv": {
+                    "volcano_number": "VolcanoID",
+                    "eruption_number": "eruption_number",
+                    "area_of_activity": "area_of_activity",
+                    "vei": "vei",
+                    "start_yr": "start_year",
+                    "startmth": "start_month",
+                    "start_day": "start_day",
+                    "end_yr": "end_year",
+                    "endmth": "end_month",
+                    "end_day": "end_day"
+                },
+                "eruptions_133_126.csv": {
+                    "volcano_number": "VolcanoID",
+                    "eruption_number": "eruption_number",
+                    "area_of_activity": "area_of_activity",
+                    "vei": "vei",
+                    "category": "eruption_category",
+                    "start_year": "start_year",
+                    "start_month": "start_month",
+                    "start_day": "start_day",
+                    "method": "evidence_method_dating",
+                    "end_year": "end_year",
+                    "end_month": "end_month",
+                    "end_day": "end_day"
+                },
+                "global_volcano_eruption_intelligence.csv": {
+                    "volcano_name": "volcano_name",
+                    "noaa_event_id": "eruption_number",
+                    "deaths_total": "deaths_total",
+                    "eruption_status": "evidence_method_dating",
+                    "vei": "vei",
+                    "eruption_day": "start_day",
+                    "eruption_month": "start_month",
+                    "eruption_year": "start_year",
+                    "era": "era",
+                    "vei_category": "vei_category",
+                    "eruption_agent_decoded": "eruption_agent_decoded",
+                    "vei_risk_tier": "vei_risk_tier"
+                },
+                "Indonesia_major_eruption.csv": {
+                    "eruption_day": "start_day",
+                    "eruption_month": "start_month",
+                    "eruption_year": "start_year",
+                    "cessation_day": "end_day",
+                    "cessation_month": "end_month",
+                    "cessation_year": "end_year",
+                    "Volcano": "volcano_name",
+                    "VEI": "vei",
+                    "Characteristic": "eruption_agent_decoded",
+                    "Tsunami": "Tsunami",
+                    "Fatality": "deaths_total"
+                }
+            }
+        }
+    },
+    "integrated_schema_by_table": {
+        "Volcano": {
+            "attributes": [
+                "eruption_category",
+                "Latitude",
+                "VolcanoID",
+                "volcano_name",
+                "Elevation (m)",
+                "Country",
+                "Tectonic Setting",
+                "vei",
+                "class",
+                "Subregion",
+                "tectonic_region",
+                "Primary Volcano Type",
+                "Region",
+                "Dominant Rock Type",
+                "Longitude",
+                "start_year",
+                "PEI",
+                "H_active"
+            ],
+            "foreign_keys": {
+                "Subregion": {
+                    "Location": "Subregion"
+                }
+            },
+            "column_mappings_by_table": {
+                "eruptions_125_125.csv": {
+                    "volcano_number": "VolcanoID",
+                    "volcano_name": "volcano_name",
+                    "latitude": "Latitude",
+                    "longitude": "Longitude"
+                },
+                "eruptions_128_127.csv": {
+                    "volcano_number": "VolcanoID",
+                    "volcano_name": "volcano_name",
+                    "latitude": "Latitude",
+                    "longitude": "Longitude"
+                },
+                "eruptions_131_125.csv": {
+                    "volcano_number": "VolcanoID",
+                    "volcano_name": "volcano_name",
+                    "latitude": "Latitude",
+                    "longitude": "Longitude"
+                },
+                "eruptions_132_126.csv": {
+                    "volcano_number": "VolcanoID",
+                    "volcano_name": "volcano_name",
+                    "latitude": "Latitude",
+                    "longitude": "Longitude"
+                },
+                "eruptions_133_126.csv": {
+                    "volcano_number": "VolcanoID",
+                    "volcano_name": "volcano_name",
+                    "latitude": "Latitude",
+                    "longitude": "Longitude"
+                },
+                "Volcano Eruptions_125.csv": {
+                    "Volcano Number": "VolcanoID",
+                    "Volcano Name": "volcano_name",
+                    "Primary Volcano Type": "Primary Volcano Type",
+                    "Latitude": "Latitude",
+                    "Longitude": "Longitude",
+                    "Elevation (m)": "Elevation (m)",
+                    "Dominant Rock Type": "Dominant Rock Type",
+                    "Tectonic Setting": "Tectonic Setting",
+                    "Activity Evidence": "eruption_category",
+                    "Last Known Eruption": "start_year",
+                    "Country": "Country",
+                    "Subregion": "Subregion"
+                },
+                "Volcano Eruptions_127.csv": {
+                    "Volcano Number": "VolcanoID",
+                    "Volcano Name": "volcano_name",
+                    "Primary Volcano Type": "Primary Volcano Type",
+                    "Latitude": "Latitude",
+                    "Longitude": "Longitude",
+                    "Elevation (m)": "Elevation (m)",
+                    "Dominant Rock Type": "Dominant Rock Type",
+                    "Tectonic Setting": "Tectonic Setting",
+                    "Activity Evidence": "eruption_category",
+                    "Last Known Eruption": "start_year",
+                    "Country": "Country",
+                    "Subregion": "Subregion"
+                },
+                "volcano_126.csv": {
+                    "VolcanoID": "VolcanoID",
+                    "V_Name": "volcano_name",
+                    "Latitude": "Latitude",
+                    "Longitude": "Longitude",
+                    "PEI": "PEI",
+                    "H_active": "H_active",
+                    "VEI_Holoce": "vei",
+                    "class": "class",
+                    "Country": "Country",
+                    "Subregion": "Subregion"
+                },
+                "global_volcano_eruption_intelligence.csv": {
+                    "volcano_name": "volcano_name",
+                    "latitude": "Latitude",
+                    "longitude": "Longitude",
+                    "country": "Country",
+                    "elevation_m": "Elevation (m)",
+                    "volcano_type": "Primary Volcano Type",
+                    "country_region": "Region",
+                    "tectonic_region": "tectonic_region"
+                }
+            }
+        },
+        "Eruption": {
+            "attributes": [
+                "volcano_name",
+                "vei",
+                "vei_risk_tier",
+                "deaths_total",
+                "vei_category",
+                "start_day",
+                "eruption_category",
+                "end_month",
+                "end_year",
+                "start_year",
+                "end_day",
+                "eruption_number",
+                "eruption_agent_decoded",
+                "area_of_activity",
+                "evidence_method_dating",
+                "VolcanoID",
+                "start_month",
+                "era",
+                "Tsunami"
+            ],
+            "column_mappings_by_table": {
+                "eruptions_125_125.csv": {
+                    "volcano_number": "VolcanoID",
+                    "eruption_number": "eruption_number",
+                    "eruption_category": "eruption_category",
+                    "area_of_activity": "area_of_activity",
+                    "vei": "vei",
+                    "start_year": "start_year",
+                    "start_month": "start_month",
+                    "start_day": "start_day",
+                    "evidence_method_dating": "evidence_method_dating",
+                    "end_year": "end_year",
+                    "end_month": "end_month",
+                    "end_day": "end_day"
+                },
+                "eruptions_128_127.csv": {
+                    "volcano_number": "VolcanoID",
+                    "eruption_number": "eruption_number",
+                    "eruption_category": "eruption_category",
+                    "area_of_activity": "area_of_activity",
+                    "vei": "vei",
+                    "start_year": "start_year",
+                    "start_month": "start_month",
+                    "start_day": "start_day",
+                    "evidence_method_dating": "evidence_method_dating",
+                    "end_year": "end_year",
+                    "end_month": "end_month",
+                    "end_day": "end_day"
+                },
+                "eruptions_131_125.csv": {
+                    "volcano_number": "VolcanoID",
+                    "eruption_number": "eruption_number",
+                    "eruption_category": "eruption_category",
+                    "area_of_activity": "area_of_activity",
+                    "vei": "vei",
+                    "start_year": "start_year",
+                    "start_month": "start_month",
+                    "start_day": "start_day",
+                    "evidence_method_dating": "evidence_method_dating",
+                    "end_year": "end_year",
+                    "end_month": "end_month",
+                    "end_day": "end_day"
+                },
+                "eruptions_132_126.csv": {
+                    "volcano_number": "VolcanoID",
+                    "eruption_number": "eruption_number",
+                    "eruption_category": "eruption_category",
+                    "area_of_activity": "area_of_activity",
+                    "vei": "vei",
+                    "start_year": "start_year",
+                    "start_month": "start_month",
+                    "start_day": "start_day",
+                    "evidence_method_dating": "evidence_method_dating",
+                    "end_year": "end_year",
+                    "end_month": "end_month",
+                    "end_day": "end_day"
+                },
+                "eruptions_133_126.csv": {
+                    "volcano_number": "VolcanoID",
+                    "eruption_number": "eruption_number",
+                    "eruption_category": "eruption_category",
+                    "area_of_activity": "area_of_activity",
+                    "vei": "vei",
+                    "start_year": "start_year",
+                    "start_month": "start_month",
+                    "start_day": "start_day",
+                    "evidence_method_dating": "evidence_method_dating",
+                    "end_year": "end_year",
+                    "end_month": "end_month",
+                    "end_day": "end_day"
+                },
+                "Volcano Eruptions_125.csv": {},
+                "Volcano Eruptions_127.csv": {},
+                "volcano_126.csv": {},
+                "global_volcano_eruption_intelligence.csv": {
+                    "volcano_name": "volcano_name",
+                    "noaa_event_id": "eruption_number",
+                    "deaths_total": "deaths_total",
+                    "eruption_status": "evidence_method_dating",
+                    "vei": "vei",
+                    "eruption_day": "start_day",
+                    "eruption_month": "start_month",
+                    "eruption_year": "start_year",
+                    "era": "era",
+                    "vei_category": "vei_category",
+                    "eruption_agent_decoded": "eruption_agent_decoded",
+                    "vei_risk_tier": "vei_risk_tier"
+                },
+                "Indonesia_major_eruption.csv": {
+                    "eruption_day": "start_day",
+                    "eruption_month": "start_month",
+                    "eruption_year": "start_year",
+                    "cessation_day": "end_day",
+                    "cessation_month": "end_month",
+                    "cessation_year": "end_year",
+                    "Volcano": "volcano_name",
+                    "VEI": "vei",
+                    "Characteristic": "eruption_agent_decoded",
+                    "Tsunami": "Tsunami",
+                    "Fatality": "deaths_total"
+                }
+            }
+        },
+        "Location": {
+            "attributes": [
+                "Region",
+                "Subregion"
+            ],
+            "foreign_keys": {},
+            "column_mappings_by_table": {
+                "eruptions_125_125.csv": {},
+                "eruptions_128_127.csv": {},
+                "eruptions_131_125.csv": {},
+                "eruptions_132_126.csv": {},
+                "eruptions_133_126.csv": {},
+                "Volcano Eruptions_125.csv": {
+                    "Region": "Region",
+                    "Subregion": "Subregion"
+                },
+                "Volcano Eruptions_127.csv": {
+                    "Region": "Region",
+                    "Subregion": "Subregion"
+                },
+                "volcano_126.csv": {
+                    "Region": "Region",
+                    "Subregion": "Subregion"
+                }
+            }
+        }
+    }
+}

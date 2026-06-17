@@ -1,0 +1,19 @@
+{
+    "matchers_evaluation": {
+        "Coma": {
+            "overall_F1": 0.6225680933852141,
+            "overall_precision": 0.5298013245033113,
+            "overall_recall": 0.7547169811320755
+        },
+        "Coma-instances-schema": {
+            "overall_F1": 0.8810572687224669,
+            "overall_precision": 0.8264462809917356,
+            "overall_recall": 0.9433962264150944
+        },
+        "Coma-instances": {
+            "overall_F1": 0.8899521531100479,
+            "overall_precision": 0.9029126213592233,
+            "overall_recall": 0.8773584905660378
+        }
+    }
+}

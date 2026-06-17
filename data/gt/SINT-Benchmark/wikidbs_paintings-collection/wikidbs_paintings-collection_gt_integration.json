@@ -1,0 +1,114 @@
+{
+    "integrated_schema_by_entity": {
+        "Artist": {
+            "attributes": [
+                "Artist_id",
+                "death",
+                "Birthdate",
+                "ArtistDescription",
+                "nationality",
+                "Birthplace",
+                "artist_style",
+                "Gender",
+                "ArtistName",
+                "LanguagesSpoken"
+            ],
+            "foreign_keys": {}
+        },
+        "Artwork": {
+            "attributes": [
+                "Artist_id",
+                "ArtworkWidthCm",
+                "CurrentLocation",
+                "ArtworkGenre",
+                "ArtworkDescription",
+                "ArtworkImage",
+                "CreationDate",
+                "work_style",
+                "ArtworkHeight",
+                "ArtworkType",
+                "ArtworkTitle",
+                "Location_id",
+                "MaterialUsed"
+            ],
+            "foreign_keys": {
+                "Artist_id": {
+                    "Artist": "Artist_id"
+                },
+                "Location_id": {
+                    "Location": "Location_id"
+                }
+            }
+        },
+        "Location": {
+            "attributes": [
+                "Location_id",
+                "address",
+                "CurrentLocation",
+                "postal",
+                "url",
+                "country",
+                "state",
+                "city",
+                "phone"
+            ],
+            "foreign_keys": {}
+        }
+    },
+    "integrated_schema_by_table": {
+        "Artist": {
+            "attributes": [
+                "Artist_id",
+                "death",
+                "Birthdate",
+                "ArtistDescription",
+                "nationality",
+                "Birthplace",
+                "artist_style",
+                "Gender",
+                "ArtistName",
+                "LanguagesSpoken"
+            ],
+            "foreign_keys": {}
+        },
+        "Artwork": {
+            "attributes": [
+                "Artist_id",
+                "ArtworkWidthCm",
+                "CurrentLocation",
+                "ArtworkGenre",
+                "ArtworkDescription",
+                "ArtworkImage",
+                "CreationDate",
+                "work_style",
+                "ArtworkHeight",
+                "ArtworkType",
+                "ArtworkTitle",
+                "Location_id",
+                "MaterialUsed"
+            ],
+            "foreign_keys": {
+                "Artist_id": {
+                    "Artist": "Artist_id"
+                },
+                "Location_id": {
+                    "Location": "Location_id"
+                }
+            }
+        },
+        "Location": {
+            "attributes": [
+                "Location_id",
+                "address",
+                "CurrentLocation",
+                "postal",
+                "url",
+                "country",
+                "state",
+                "city",
+                "phone"
+            ],
+            "foreign_keys": {}
+        }
+    }
+}

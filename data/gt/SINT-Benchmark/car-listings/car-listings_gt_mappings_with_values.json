@@ -1,0 +1,2666 @@
+{
+    "column_mappings": {
+        "cardata.csv": {
+            "Model": "Car_Name",
+            "Year": "Year",
+            "Selling_Price": "Selling_Price",
+            "Present_Price": "Present_Price",
+            "Kms_Driven": "Distance",
+            "Fuel_Type": "Fuel_Type",
+            "Seller_Type": "Seller_Type",
+            "Transmission": "Transmission",
+            "Owner": "Owner"
+        },
+        "cars_24_combined_128.csv": {
+            "listing_id": "listing_id",
+            "make": "Make",
+            "model_name": "Car_Name",
+            "yr": "Year",
+            "odometer_km": "Distance",
+            "rto_code": "Location",
+            "transmission": "Transmission",
+            "body_style": "Type",
+            "asking_price_inr": "Selling_Price"
+        },
+        "cars_24_combined_133.csv": {
+            "listing_id": "listing_id",
+            "manufacturer": "Make",
+            "variant": "Car_Name",
+            "mfg_year": "Year",
+            "km_run": "Distance",
+            "fuel_type": "Fuel_Type",
+            "reg_code": "Location",
+            "gearbox": "Transmission",
+            "vehicle_class": "Type",
+            "price_inr": "Selling_Price"
+        },
+        "cars_24_combined_136.csv": {
+            "listing_id": "listing_id",
+            "brand_name": "Make",
+            "car_model": "Car_Name",
+            "year_built": "Year",
+            "mileage": "Distance",
+            "fuel_cat": "Fuel_Type",
+            "location_code": "Location",
+            "trans_type": "Transmission",
+            "vehicle_type": "Type",
+            "sale_price": "Selling_Price"
+        },
+        "cars_24_combined_137.csv": {
+            "listing_id": "listing_id",
+            "automaker": "Make",
+            "model": "Car_Name",
+            "year": "Year",
+            "kms_driven": "Distance",
+            "owner_count": "Owner",
+            "fuel": "Fuel_Type",
+            "plate_code": "Location",
+            "trans": "Transmission",
+            "segment": "Type",
+            "price": "Selling_Price"
+        },
+        "cars_24_combined_139.csv": {
+            "listing_id": "listing_id",
+            "marque": "Make",
+            "nameplate": "Car_Name",
+            "year_reg": "Year",
+            "run_km": "Distance",
+            "owner_num": "Owner",
+            "fuel_mode": "Fuel_Type",
+            "rto_region": "Location",
+            "shift_type": "Transmission",
+            "body_type": "Type",
+            "price_amt": "Selling_Price"
+        },
+        "cars_24_combined_142.csv": {
+            "listing_id": "listing_id",
+            "make_name": "Make",
+            "trim": "Car_Name",
+            "model_year": "Year",
+            "distance_km": "Distance",
+            "owner_index": "Owner",
+            "fuel_class": "Fuel_Type",
+            "registration_zone": "Location",
+            "listed_price": "Selling_Price"
+        },
+        "cars_24_combined_144.csv": {
+            "listing_id": "listing_id",
+            "oem": "Make",
+            "model_line": "Car_Name",
+            "year_made": "Year",
+            "driven_total": "Distance",
+            "fuel_used": "Fuel_Type",
+            "registration_code": "Location",
+            "transmission_mode": "Transmission",
+            "listed_price_inr": "Selling_Price"
+        },
+        "PakWheelsDataSet_165.csv": {
+            "id": "listing_id",
+            "maker": "Make",
+            "full_title": "Car_Name",
+            "gear_type": "Transmission",
+            "fuel_grade": "Fuel_Type",
+            "engine_cc": "Engine Capacity(CC)",
+            "odo_m": "Distance",
+            "year": "Year",
+            "list_price": "Selling_Price"
+        },
+        "PakWheelsDataSet_177.csv": {
+            "id": "listing_id",
+            "make": "Make",
+            "vehicle_name": "Car_Name",
+            "fuel_type": "Fuel_Type",
+            "displacement_cc": "Engine Capacity(CC)",
+            "mileage_km": "Distance",
+            "year": "Year",
+            "price_pkr": "Selling_Price"
+        }
+    },
+    "integrated_schema_by_entity": {
+        "Car_Listing": {
+            "attributes": [
+                "Make",
+                "Location",
+                "Fuel_Type",
+                "Engine Capacity(CC)",
+                "Present_Price",
+                "listing_id",
+                "Car_Name",
+                "Owner",
+                "Distance",
+                "Transmission",
+                "Type",
+                "Seller_Type",
+                "Selling_Price",
+                "Year"
+            ],
+            "column_mappings_by_table": {
+                "cardata.csv": {
+                    "Model": "Car_Name",
+                    "Year": "Year",
+                    "Selling_Price": "Selling_Price",
+                    "Present_Price": "Present_Price",
+                    "Kms_Driven": "Distance",
+                    "Fuel_Type": "Fuel_Type",
+                    "Seller_Type": "Seller_Type",
+                    "Transmission": "Transmission",
+                    "Owner": "Owner"
+                },
+                "cars_24_combined_128.csv": {
+                    "listing_id": "listing_id",
+                    "make": "Make",
+                    "model_name": "Car_Name",
+                    "yr": "Year",
+                    "odometer_km": "Distance",
+                    "rto_code": "Location",
+                    "transmission": "Transmission",
+                    "body_style": "Type",
+                    "asking_price_inr": "Selling_Price"
+                },
+                "cars_24_combined_133.csv": {
+                    "listing_id": "listing_id",
+                    "manufacturer": "Make",
+                    "variant": "Car_Name",
+                    "mfg_year": "Year",
+                    "km_run": "Distance",
+                    "fuel_type": "Fuel_Type",
+                    "reg_code": "Location",
+                    "gearbox": "Transmission",
+                    "vehicle_class": "Type",
+                    "price_inr": "Selling_Price"
+                },
+                "cars_24_combined_136.csv": {
+                    "listing_id": "listing_id",
+                    "brand_name": "Make",
+                    "car_model": "Car_Name",
+                    "year_built": "Year",
+                    "mileage": "Distance",
+                    "fuel_cat": "Fuel_Type",
+                    "location_code": "Location",
+                    "trans_type": "Transmission",
+                    "vehicle_type": "Type",
+                    "sale_price": "Selling_Price"
+                },
+                "cars_24_combined_137.csv": {
+                    "listing_id": "listing_id",
+                    "automaker": "Make",
+                    "model": "Car_Name",
+                    "year": "Year",
+                    "kms_driven": "Distance",
+                    "owner_count": "Owner",
+                    "fuel": "Fuel_Type",
+                    "plate_code": "Location",
+                    "trans": "Transmission",
+                    "segment": "Type",
+                    "price": "Selling_Price"
+                },
+                "cars_24_combined_139.csv": {
+                    "listing_id": "listing_id",
+                    "marque": "Make",
+                    "nameplate": "Car_Name",
+                    "year_reg": "Year",
+                    "run_km": "Distance",
+                    "owner_num": "Owner",
+                    "fuel_mode": "Fuel_Type",
+                    "rto_region": "Location",
+                    "shift_type": "Transmission",
+                    "body_type": "Type",
+                    "price_amt": "Selling_Price"
+                },
+                "cars_24_combined_142.csv": {
+                    "listing_id": "listing_id",
+                    "make_name": "Make",
+                    "trim": "Car_Name",
+                    "model_year": "Year",
+                    "distance_km": "Distance",
+                    "owner_index": "Owner",
+                    "fuel_class": "Fuel_Type",
+                    "registration_zone": "Location",
+                    "listed_price": "Selling_Price"
+                },
+                "cars_24_combined_144.csv": {
+                    "listing_id": "listing_id",
+                    "oem": "Make",
+                    "model_line": "Car_Name",
+                    "year_made": "Year",
+                    "driven_total": "Distance",
+                    "fuel_used": "Fuel_Type",
+                    "registration_code": "Location",
+                    "transmission_mode": "Transmission",
+                    "listed_price_inr": "Selling_Price"
+                },
+                "PakWheelsDataSet_165.csv": {
+                    "id": "listing_id",
+                    "maker": "Make",
+                    "full_title": "Car_Name",
+                    "gear_type": "Transmission",
+                    "fuel_grade": "Fuel_Type",
+                    "engine_cc": "Engine Capacity(CC)",
+                    "odo_m": "Distance",
+                    "year": "Year",
+                    "list_price": "Selling_Price"
+                },
+                "PakWheelsDataSet_177.csv": {
+                    "id": "listing_id",
+                    "make": "Make",
+                    "vehicle_name": "Car_Name",
+                    "fuel_type": "Fuel_Type",
+                    "displacement_cc": "Engine Capacity(CC)",
+                    "mileage_km": "Distance",
+                    "year": "Year",
+                    "price_pkr": "Selling_Price"
+                }
+            },
+            "attributes_with_values": {
+                "Car_Name": [
+                    "ritz",
+                    "sx4",
+                    "ciaz",
+                    "WR-V",
+                    "Elite i20",
+                    "Dzire",
+                    "Ritz",
+                    "Swift",
+                    "Alto 800",
+                    "Kwid",
+                    "Kwid",
+                    "i20",
+                    "Swift",
+                    "City",
+                    "i20 Active",
+                    "Grand i10",
+                    "Rapid",
+                    "New Wagon-R",
+                    "Wagon R 1.0",
+                    "Ciaz",
+                    "Swift Dzire",
+                    "TRIBER",
+                    "Thar",
+                    "Dzire",
+                    "Mira   L ",
+                    "Swift   DLX 1.3 ",
+                    "Wagon R   FX Limited ",
+                    "Pleo   F SPECIAL ",
+                    "Clipper   E ",
+                    "Mehran   VX (CNG) "
+                ],
+                "Year": [
+                    2014,
+                    2013,
+                    2017,
+                    2017,
+                    2018,
+                    2021,
+                    2014.0,
+                    2018.0,
+                    2018.0,
+                    2020.0,
+                    2019.0,
+                    2012.0,
+                    2016.0,
+                    2016.0,
+                    2018.0,
+                    2015,
+                    2016,
+                    2015,
+                    2014,
+                    2016,
+                    2012,
+                    2017.0,
+                    2018.0,
+                    2021.0,
+                    2014.0,
+                    2018.0,
+                    2013.0,
+                    2022.0,
+                    2022.0,
+                    2018.0
+                ],
+                "Selling_Price": [
+                    3.35,
+                    4.75,
+                    7.25,
+                    704000,
+                    692000,
+                    705000,
+                    386000,
+                    675000,
+                    306000,
+                    390000,
+                    444000,
+                    380000,
+                    528000,
+                    764000,
+                    736000,
+                    535000,
+                    598000,
+                    611000,
+                    373000,
+                    1194000,
+                    967000,
+                    659000,
+                    1503000,
+                    641000,
+                    1750000.0,
+                    1678000.0,
+                    1350000.0,
+                    1200000.0,
+                    2190000.0,
+                    580000.0
+                ],
+                "Present_Price": [
+                    5.59,
+                    9.54,
+                    9.85
+                ],
+                "Distance": [
+                    27000,
+                    43000,
+                    6900,
+                    "81348 km",
+                    "97017 km",
+                    "13324 km",
+                    94611,
+                    63025,
+                    62659,
+                    "44904000 mtrs",
+                    "12153000 mtrs",
+                    "111571000 mtrs",
+                    39115,
+                    34796,
+                    71817,
+                    23376,
+                    33510,
+                    35724,
+                    "kms 30580",
+                    "kms 30440",
+                    "kms 71493",
+                    "m 1675000",
+                    "m 24853000",
+                    "m 76303000",
+                    71000000,
+                    68000000,
+                    121000000,
+                    50000,
+                    16000,
+                    16
+                ],
+                "Fuel_Type": [
+                    "Petrol",
+                    "Diesel",
+                    "Petrol",
+                    "PETROL",
+                    "PETROL",
+                    "PETROL",
+                    "Petrol",
+                    "Petrol",
+                    "CNG",
+                    "P",
+                    "P",
+                    "D",
+                    "PETROL",
+                    "PETROL",
+                    "PETROL",
+                    "P",
+                    "P",
+                    "C",
+                    "PETROL",
+                    "PETROL",
+                    "DIESEL",
+                    "PETROL",
+                    "PETROL",
+                    "PETROL",
+                    "P",
+                    "P",
+                    "P"
+                ],
+                "Seller_Type": [
+                    "Dealer",
+                    "Dealer",
+                    "Dealer"
+                ],
+                "Transmission": [
+                    "Manual",
+                    "Manual",
+                    "Manual",
+                    "Manual",
+                    "Manual",
+                    "Manual",
+                    "M",
+                    "A",
+                    "M",
+                    "Manual",
+                    "Manual",
+                    "Manual",
+                    "Manual",
+                    "Automatic",
+                    "Manual",
+                    "M",
+                    "M",
+                    "M",
+                    "Manual",
+                    "Manual",
+                    "Manual",
+                    "Automatic",
+                    "Manual",
+                    "Automatic"
+                ],
+                "Owner": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    "Owner 1",
+                    "Owner 1",
+                    "Owner 1",
+                    1,
+                    2,
+                    2
+                ],
+                "listing_id": [
+                    535,
+                    5287,
+                    1587,
+                    5941,
+                    4594,
+                    1153,
+                    561,
+                    2063,
+                    5169,
+                    7680,
+                    5973,
+                    6565,
+                    121,
+                    5233,
+                    4733,
+                    1124,
+                    1376,
+                    5053,
+                    1431,
+                    7428,
+                    6131,
+                    49807,
+                    5441,
+                    23459,
+                    66481,
+                    14656,
+                    76430
+                ],
+                "Make": [
+                    "Honda",
+                    "Hyundai",
+                    "Maruti",
+                    "Subaru",
+                    "Nissan",
+                    "Suzuki",
+                    "Maruti",
+                    "Maruti",
+                    "Maruti",
+                    "Renault",
+                    "Renault",
+                    "Hyundai",
+                    "Maruti",
+                    "Honda",
+                    "Hyundai",
+                    "Hyundai",
+                    "Skoda",
+                    "Maruti",
+                    "Maruti",
+                    "Maruti",
+                    "Maruti",
+                    "Renault",
+                    "Mahindra",
+                    "Maruti",
+                    "Daihatsu",
+                    "Suzuki",
+                    "Suzuki"
+                ],
+                "Location": [
+                    "TN-05",
+                    "TS-13",
+                    "TN-58",
+                    "TS-07",
+                    "KA-01",
+                    "TS-07",
+                    "HR-29",
+                    "DL-12",
+                    "KA-04",
+                    "KL-01",
+                    "MH-14",
+                    "TS-08",
+                    "MH-05",
+                    "MP-09",
+                    "HR-26",
+                    "MH03",
+                    "TN14",
+                    "TS08",
+                    "GJ-27",
+                    "PB-27",
+                    "KA-02"
+                ],
+                "Type": [
+                    "SUV",
+                    "HatchBack",
+                    "Sedan",
+                    "HatchBack",
+                    "HatchBack",
+                    "HatchBack",
+                    "HatchBack",
+                    "HatchBack",
+                    "HatchBack",
+                    "HatchBack",
+                    "Sedan",
+                    "HatchBack",
+                    "HatchBack",
+                    "Sedan",
+                    "HatchBack"
+                ],
+                "Engine Capacity(CC)": [
+                    660.0,
+                    1300.0,
+                    660.0,
+                    660.0,
+                    660.0,
+                    800.0
+                ]
+            },
+            "grouped_attributes": {
+                "Car_Name": {
+                    "cardata.csv": "Model",
+                    "cars_24_combined_128.csv": "model_name",
+                    "cars_24_combined_133.csv": "variant",
+                    "cars_24_combined_136.csv": "car_model",
+                    "cars_24_combined_137.csv": "model",
+                    "cars_24_combined_139.csv": "nameplate",
+                    "cars_24_combined_142.csv": "trim",
+                    "cars_24_combined_144.csv": "model_line",
+                    "PakWheelsDataSet_165.csv": "full_title",
+                    "PakWheelsDataSet_177.csv": "vehicle_name"
+                },
+                "Year": {
+                    "cardata.csv": "Year",
+                    "cars_24_combined_128.csv": "yr",
+                    "cars_24_combined_133.csv": "mfg_year",
+                    "cars_24_combined_136.csv": "year_built",
+                    "cars_24_combined_137.csv": "year",
+                    "cars_24_combined_139.csv": "year_reg",
+                    "cars_24_combined_142.csv": "model_year",
+                    "cars_24_combined_144.csv": "year_made",
+                    "PakWheelsDataSet_165.csv": "year",
+                    "PakWheelsDataSet_177.csv": "year"
+                },
+                "Selling_Price": {
+                    "cardata.csv": "Selling_Price",
+                    "cars_24_combined_128.csv": "asking_price_inr",
+                    "cars_24_combined_133.csv": "price_inr",
+                    "cars_24_combined_136.csv": "sale_price",
+                    "cars_24_combined_137.csv": "price",
+                    "cars_24_combined_139.csv": "price_amt",
+                    "cars_24_combined_142.csv": "listed_price",
+                    "cars_24_combined_144.csv": "listed_price_inr",
+                    "PakWheelsDataSet_165.csv": "list_price",
+                    "PakWheelsDataSet_177.csv": "price_pkr"
+                },
+                "Present_Price": {
+                    "cardata.csv": "Present_Price"
+                },
+                "Distance": {
+                    "cardata.csv": "Kms_Driven",
+                    "cars_24_combined_128.csv": "odometer_km",
+                    "cars_24_combined_133.csv": "km_run",
+                    "cars_24_combined_136.csv": "mileage",
+                    "cars_24_combined_137.csv": "kms_driven",
+                    "cars_24_combined_139.csv": "run_km",
+                    "cars_24_combined_142.csv": "distance_km",
+                    "cars_24_combined_144.csv": "driven_total",
+                    "PakWheelsDataSet_165.csv": "odo_m",
+                    "PakWheelsDataSet_177.csv": "mileage_km"
+                },
+                "Fuel_Type": {
+                    "cardata.csv": "Fuel_Type",
+                    "cars_24_combined_133.csv": "fuel_type",
+                    "cars_24_combined_136.csv": "fuel_cat",
+                    "cars_24_combined_137.csv": "fuel",
+                    "cars_24_combined_139.csv": "fuel_mode",
+                    "cars_24_combined_142.csv": "fuel_class",
+                    "cars_24_combined_144.csv": "fuel_used",
+                    "PakWheelsDataSet_165.csv": "fuel_grade",
+                    "PakWheelsDataSet_177.csv": "fuel_type"
+                },
+                "Seller_Type": {
+                    "cardata.csv": "Seller_Type"
+                },
+                "Transmission": {
+                    "cardata.csv": "Transmission",
+                    "cars_24_combined_128.csv": "transmission",
+                    "cars_24_combined_133.csv": "gearbox",
+                    "cars_24_combined_136.csv": "trans_type",
+                    "cars_24_combined_137.csv": "trans",
+                    "cars_24_combined_139.csv": "shift_type",
+                    "cars_24_combined_144.csv": "transmission_mode",
+                    "PakWheelsDataSet_165.csv": "gear_type"
+                },
+                "Owner": {
+                    "cardata.csv": "Owner",
+                    "cars_24_combined_137.csv": "owner_count",
+                    "cars_24_combined_139.csv": "owner_num",
+                    "cars_24_combined_142.csv": "owner_index"
+                },
+                "listing_id": {
+                    "cars_24_combined_128.csv": "listing_id",
+                    "cars_24_combined_133.csv": "listing_id",
+                    "cars_24_combined_136.csv": "listing_id",
+                    "cars_24_combined_137.csv": "listing_id",
+                    "cars_24_combined_139.csv": "listing_id",
+                    "cars_24_combined_142.csv": "listing_id",
+                    "cars_24_combined_144.csv": "listing_id",
+                    "PakWheelsDataSet_165.csv": "id",
+                    "PakWheelsDataSet_177.csv": "id"
+                },
+                "Make": {
+                    "cars_24_combined_128.csv": "make",
+                    "cars_24_combined_133.csv": "manufacturer",
+                    "cars_24_combined_136.csv": "brand_name",
+                    "cars_24_combined_137.csv": "automaker",
+                    "cars_24_combined_139.csv": "marque",
+                    "cars_24_combined_142.csv": "make_name",
+                    "cars_24_combined_144.csv": "oem",
+                    "PakWheelsDataSet_165.csv": "maker",
+                    "PakWheelsDataSet_177.csv": "make"
+                },
+                "Location": {
+                    "cars_24_combined_128.csv": "rto_code",
+                    "cars_24_combined_133.csv": "reg_code",
+                    "cars_24_combined_136.csv": "location_code",
+                    "cars_24_combined_137.csv": "plate_code",
+                    "cars_24_combined_139.csv": "rto_region",
+                    "cars_24_combined_142.csv": "registration_zone",
+                    "cars_24_combined_144.csv": "registration_code"
+                },
+                "Type": {
+                    "cars_24_combined_128.csv": "body_style",
+                    "cars_24_combined_133.csv": "vehicle_class",
+                    "cars_24_combined_136.csv": "vehicle_type",
+                    "cars_24_combined_137.csv": "segment",
+                    "cars_24_combined_139.csv": "body_type"
+                },
+                "Engine Capacity(CC)": {
+                    "PakWheelsDataSet_165.csv": "engine_cc",
+                    "PakWheelsDataSet_177.csv": "displacement_cc"
+                }
+            },
+            "schema_matching": {
+                "cardata.csv": {
+                    "cars_24_combined_128.csv": {
+                        "Model": "model_name",
+                        "Year": "yr",
+                        "Selling_Price": "asking_price_inr",
+                        "Kms_Driven": "odometer_km",
+                        "Transmission": "transmission"
+                    },
+                    "cars_24_combined_133.csv": {
+                        "Model": "variant",
+                        "Year": "mfg_year",
+                        "Selling_Price": "price_inr",
+                        "Kms_Driven": "km_run",
+                        "Fuel_Type": "fuel_type",
+                        "Transmission": "gearbox"
+                    },
+                    "cars_24_combined_136.csv": {
+                        "Model": "car_model",
+                        "Year": "year_built",
+                        "Selling_Price": "sale_price",
+                        "Kms_Driven": "mileage",
+                        "Fuel_Type": "fuel_cat",
+                        "Transmission": "trans_type"
+                    },
+                    "cars_24_combined_137.csv": {
+                        "Model": "model",
+                        "Year": "year",
+                        "Selling_Price": "price",
+                        "Kms_Driven": "kms_driven",
+                        "Fuel_Type": "fuel",
+                        "Transmission": "trans",
+                        "Owner": "owner_count"
+                    },
+                    "cars_24_combined_139.csv": {
+                        "Model": "nameplate",
+                        "Year": "year_reg",
+                        "Selling_Price": "price_amt",
+                        "Kms_Driven": "run_km",
+                        "Fuel_Type": "fuel_mode",
+                        "Transmission": "shift_type",
+                        "Owner": "owner_num"
+                    },
+                    "cars_24_combined_142.csv": {
+                        "Model": "trim",
+                        "Year": "model_year",
+                        "Selling_Price": "listed_price",
+                        "Kms_Driven": "distance_km",
+                        "Fuel_Type": "fuel_class",
+                        "Owner": "owner_index"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "Model": "model_line",
+                        "Year": "year_made",
+                        "Selling_Price": "listed_price_inr",
+                        "Kms_Driven": "driven_total",
+                        "Fuel_Type": "fuel_used",
+                        "Transmission": "transmission_mode"
+                    },
+                    "PakWheelsDataSet_165.csv": {
+                        "Model": "full_title",
+                        "Year": "year",
+                        "Selling_Price": "list_price",
+                        "Kms_Driven": "odo_m",
+                        "Fuel_Type": "fuel_grade",
+                        "Transmission": "gear_type"
+                    },
+                    "PakWheelsDataSet_177.csv": {
+                        "Model": "vehicle_name",
+                        "Year": "year",
+                        "Selling_Price": "price_pkr",
+                        "Kms_Driven": "mileage_km",
+                        "Fuel_Type": "fuel_type"
+                    }
+                },
+                "cars_24_combined_128.csv": {
+                    "cars_24_combined_133.csv": {
+                        "listing_id": "listing_id",
+                        "make": "manufacturer",
+                        "model_name": "variant",
+                        "yr": "mfg_year",
+                        "odometer_km": "km_run",
+                        "rto_code": "reg_code",
+                        "transmission": "gearbox",
+                        "body_style": "vehicle_class",
+                        "asking_price_inr": "price_inr"
+                    },
+                    "cars_24_combined_136.csv": {
+                        "listing_id": "listing_id",
+                        "make": "brand_name",
+                        "model_name": "car_model",
+                        "yr": "year_built",
+                        "odometer_km": "mileage",
+                        "rto_code": "location_code",
+                        "transmission": "trans_type",
+                        "body_style": "vehicle_type",
+                        "asking_price_inr": "sale_price"
+                    },
+                    "cars_24_combined_137.csv": {
+                        "listing_id": "listing_id",
+                        "make": "automaker",
+                        "model_name": "model",
+                        "yr": "year",
+                        "odometer_km": "kms_driven",
+                        "rto_code": "plate_code",
+                        "transmission": "trans",
+                        "body_style": "segment",
+                        "asking_price_inr": "price"
+                    },
+                    "cars_24_combined_139.csv": {
+                        "listing_id": "listing_id",
+                        "make": "marque",
+                        "model_name": "nameplate",
+                        "yr": "year_reg",
+                        "odometer_km": "run_km",
+                        "rto_code": "rto_region",
+                        "transmission": "shift_type",
+                        "body_style": "body_type",
+                        "asking_price_inr": "price_amt"
+                    },
+                    "cars_24_combined_142.csv": {
+                        "listing_id": "listing_id",
+                        "make": "make_name",
+                        "model_name": "trim",
+                        "yr": "model_year",
+                        "odometer_km": "distance_km",
+                        "rto_code": "registration_zone",
+                        "asking_price_inr": "listed_price"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "listing_id": "listing_id",
+                        "make": "oem",
+                        "model_name": "model_line",
+                        "yr": "year_made",
+                        "odometer_km": "driven_total",
+                        "rto_code": "registration_code",
+                        "transmission": "transmission_mode",
+                        "asking_price_inr": "listed_price_inr"
+                    },
+                    "PakWheelsDataSet_165.csv": {
+                        "listing_id": "id",
+                        "make": "maker",
+                        "model_name": "full_title",
+                        "yr": "year",
+                        "odometer_km": "odo_m",
+                        "transmission": "gear_type",
+                        "asking_price_inr": "list_price"
+                    },
+                    "PakWheelsDataSet_177.csv": {
+                        "listing_id": "id",
+                        "make": "make",
+                        "model_name": "vehicle_name",
+                        "yr": "year",
+                        "odometer_km": "mileage_km",
+                        "asking_price_inr": "price_pkr"
+                    }
+                },
+                "cars_24_combined_133.csv": {
+                    "cars_24_combined_136.csv": {
+                        "listing_id": "listing_id",
+                        "manufacturer": "brand_name",
+                        "variant": "car_model",
+                        "mfg_year": "year_built",
+                        "km_run": "mileage",
+                        "fuel_type": "fuel_cat",
+                        "reg_code": "location_code",
+                        "gearbox": "trans_type",
+                        "vehicle_class": "vehicle_type",
+                        "price_inr": "sale_price"
+                    },
+                    "cars_24_combined_137.csv": {
+                        "listing_id": "listing_id",
+                        "manufacturer": "automaker",
+                        "variant": "model",
+                        "mfg_year": "year",
+                        "km_run": "kms_driven",
+                        "fuel_type": "fuel",
+                        "reg_code": "plate_code",
+                        "gearbox": "trans",
+                        "vehicle_class": "segment",
+                        "price_inr": "price"
+                    },
+                    "cars_24_combined_139.csv": {
+                        "listing_id": "listing_id",
+                        "manufacturer": "marque",
+                        "variant": "nameplate",
+                        "mfg_year": "year_reg",
+                        "km_run": "run_km",
+                        "fuel_type": "fuel_mode",
+                        "reg_code": "rto_region",
+                        "gearbox": "shift_type",
+                        "vehicle_class": "body_type",
+                        "price_inr": "price_amt"
+                    },
+                    "cars_24_combined_142.csv": {
+                        "listing_id": "listing_id",
+                        "manufacturer": "make_name",
+                        "variant": "trim",
+                        "mfg_year": "model_year",
+                        "km_run": "distance_km",
+                        "fuel_type": "fuel_class",
+                        "reg_code": "registration_zone",
+                        "price_inr": "listed_price"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "listing_id": "listing_id",
+                        "manufacturer": "oem",
+                        "variant": "model_line",
+                        "mfg_year": "year_made",
+                        "km_run": "driven_total",
+                        "fuel_type": "fuel_used",
+                        "reg_code": "registration_code",
+                        "gearbox": "transmission_mode",
+                        "price_inr": "listed_price_inr"
+                    },
+                    "PakWheelsDataSet_165.csv": {
+                        "listing_id": "id",
+                        "manufacturer": "maker",
+                        "variant": "full_title",
+                        "mfg_year": "year",
+                        "km_run": "odo_m",
+                        "fuel_type": "fuel_grade",
+                        "gearbox": "gear_type",
+                        "price_inr": "list_price"
+                    },
+                    "PakWheelsDataSet_177.csv": {
+                        "listing_id": "id",
+                        "manufacturer": "make",
+                        "variant": "vehicle_name",
+                        "mfg_year": "year",
+                        "km_run": "mileage_km",
+                        "fuel_type": "fuel_type",
+                        "price_inr": "price_pkr"
+                    }
+                },
+                "cars_24_combined_136.csv": {
+                    "cars_24_combined_137.csv": {
+                        "listing_id": "listing_id",
+                        "brand_name": "automaker",
+                        "car_model": "model",
+                        "year_built": "year",
+                        "mileage": "kms_driven",
+                        "fuel_cat": "fuel",
+                        "location_code": "plate_code",
+                        "trans_type": "trans",
+                        "vehicle_type": "segment",
+                        "sale_price": "price"
+                    },
+                    "cars_24_combined_139.csv": {
+                        "listing_id": "listing_id",
+                        "brand_name": "marque",
+                        "car_model": "nameplate",
+                        "year_built": "year_reg",
+                        "mileage": "run_km",
+                        "fuel_cat": "fuel_mode",
+                        "location_code": "rto_region",
+                        "trans_type": "shift_type",
+                        "vehicle_type": "body_type",
+                        "sale_price": "price_amt"
+                    },
+                    "cars_24_combined_142.csv": {
+                        "listing_id": "listing_id",
+                        "brand_name": "make_name",
+                        "car_model": "trim",
+                        "year_built": "model_year",
+                        "mileage": "distance_km",
+                        "fuel_cat": "fuel_class",
+                        "location_code": "registration_zone",
+                        "sale_price": "listed_price"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "listing_id": "listing_id",
+                        "brand_name": "oem",
+                        "car_model": "model_line",
+                        "year_built": "year_made",
+                        "mileage": "driven_total",
+                        "fuel_cat": "fuel_used",
+                        "location_code": "registration_code",
+                        "trans_type": "transmission_mode",
+                        "sale_price": "listed_price_inr"
+                    },
+                    "PakWheelsDataSet_165.csv": {
+                        "listing_id": "id",
+                        "brand_name": "maker",
+                        "car_model": "full_title",
+                        "year_built": "year",
+                        "mileage": "odo_m",
+                        "fuel_cat": "fuel_grade",
+                        "trans_type": "gear_type",
+                        "sale_price": "list_price"
+                    },
+                    "PakWheelsDataSet_177.csv": {
+                        "listing_id": "id",
+                        "brand_name": "make",
+                        "car_model": "vehicle_name",
+                        "year_built": "year",
+                        "mileage": "mileage_km",
+                        "fuel_cat": "fuel_type",
+                        "sale_price": "price_pkr"
+                    }
+                },
+                "cars_24_combined_137.csv": {
+                    "cars_24_combined_139.csv": {
+                        "listing_id": "listing_id",
+                        "automaker": "marque",
+                        "model": "nameplate",
+                        "year": "year_reg",
+                        "kms_driven": "run_km",
+                        "owner_count": "owner_num",
+                        "fuel": "fuel_mode",
+                        "plate_code": "rto_region",
+                        "trans": "shift_type",
+                        "segment": "body_type",
+                        "price": "price_amt"
+                    },
+                    "cars_24_combined_142.csv": {
+                        "listing_id": "listing_id",
+                        "automaker": "make_name",
+                        "model": "trim",
+                        "year": "model_year",
+                        "kms_driven": "distance_km",
+                        "owner_count": "owner_index",
+                        "fuel": "fuel_class",
+                        "plate_code": "registration_zone",
+                        "price": "listed_price"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "listing_id": "listing_id",
+                        "automaker": "oem",
+                        "model": "model_line",
+                        "year": "year_made",
+                        "kms_driven": "driven_total",
+                        "fuel": "fuel_used",
+                        "plate_code": "registration_code",
+                        "trans": "transmission_mode",
+                        "price": "listed_price_inr"
+                    },
+                    "PakWheelsDataSet_165.csv": {
+                        "listing_id": "id",
+                        "automaker": "maker",
+                        "model": "full_title",
+                        "year": "year",
+                        "kms_driven": "odo_m",
+                        "fuel": "fuel_grade",
+                        "trans": "gear_type",
+                        "price": "list_price"
+                    },
+                    "PakWheelsDataSet_177.csv": {
+                        "listing_id": "id",
+                        "automaker": "make",
+                        "model": "vehicle_name",
+                        "year": "year",
+                        "kms_driven": "mileage_km",
+                        "fuel": "fuel_type",
+                        "price": "price_pkr"
+                    }
+                },
+                "cars_24_combined_139.csv": {
+                    "cars_24_combined_142.csv": {
+                        "listing_id": "listing_id",
+                        "marque": "make_name",
+                        "nameplate": "trim",
+                        "year_reg": "model_year",
+                        "run_km": "distance_km",
+                        "owner_num": "owner_index",
+                        "fuel_mode": "fuel_class",
+                        "rto_region": "registration_zone",
+                        "price_amt": "listed_price"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "listing_id": "listing_id",
+                        "marque": "oem",
+                        "nameplate": "model_line",
+                        "year_reg": "year_made",
+                        "run_km": "driven_total",
+                        "fuel_mode": "fuel_used",
+                        "rto_region": "registration_code",
+                        "shift_type": "transmission_mode",
+                        "price_amt": "listed_price_inr"
+                    },
+                    "PakWheelsDataSet_165.csv": {
+                        "listing_id": "id",
+                        "marque": "maker",
+                        "nameplate": "full_title",
+                        "year_reg": "year",
+                        "run_km": "odo_m",
+                        "fuel_mode": "fuel_grade",
+                        "shift_type": "gear_type",
+                        "price_amt": "list_price"
+                    },
+                    "PakWheelsDataSet_177.csv": {
+                        "listing_id": "id",
+                        "marque": "make",
+                        "nameplate": "vehicle_name",
+                        "year_reg": "year",
+                        "run_km": "mileage_km",
+                        "fuel_mode": "fuel_type",
+                        "price_amt": "price_pkr"
+                    }
+                },
+                "cars_24_combined_142.csv": {
+                    "cars_24_combined_144.csv": {
+                        "listing_id": "listing_id",
+                        "make_name": "oem",
+                        "trim": "model_line",
+                        "model_year": "year_made",
+                        "distance_km": "driven_total",
+                        "fuel_class": "fuel_used",
+                        "registration_zone": "registration_code",
+                        "listed_price": "listed_price_inr"
+                    },
+                    "PakWheelsDataSet_165.csv": {
+                        "listing_id": "id",
+                        "make_name": "maker",
+                        "trim": "full_title",
+                        "model_year": "year",
+                        "distance_km": "odo_m",
+                        "fuel_class": "fuel_grade",
+                        "listed_price": "list_price"
+                    },
+                    "PakWheelsDataSet_177.csv": {
+                        "listing_id": "id",
+                        "make_name": "make",
+                        "trim": "vehicle_name",
+                        "model_year": "year",
+                        "distance_km": "mileage_km",
+                        "fuel_class": "fuel_type",
+                        "listed_price": "price_pkr"
+                    }
+                },
+                "cars_24_combined_144.csv": {
+                    "PakWheelsDataSet_165.csv": {
+                        "listing_id": "id",
+                        "oem": "maker",
+                        "model_line": "full_title",
+                        "year_made": "year",
+                        "driven_total": "odo_m",
+                        "fuel_used": "fuel_grade",
+                        "transmission_mode": "gear_type",
+                        "listed_price_inr": "list_price"
+                    },
+                    "PakWheelsDataSet_177.csv": {
+                        "listing_id": "id",
+                        "oem": "make",
+                        "model_line": "vehicle_name",
+                        "year_made": "year",
+                        "driven_total": "mileage_km",
+                        "fuel_used": "fuel_type",
+                        "listed_price_inr": "price_pkr"
+                    }
+                },
+                "PakWheelsDataSet_165.csv": {
+                    "PakWheelsDataSet_177.csv": {
+                        "id": "id",
+                        "maker": "make",
+                        "full_title": "vehicle_name",
+                        "fuel_grade": "fuel_type",
+                        "engine_cc": "displacement_cc",
+                        "odo_m": "mileage_km",
+                        "year": "year",
+                        "list_price": "price_pkr"
+                    }
+                }
+            }
+        }
+    },
+    "integrated_schema_by_table": {
+        "Car_Listing": {
+            "attributes": [
+                "Fuel_Type",
+                "Present_Price",
+                "listing_id",
+                "Car_Name",
+                "Owner",
+                "Distance",
+                "Transmission",
+                "Seller_Type",
+                "Selling_Price",
+                "Year"
+            ],
+            "column_mappings_by_table": {
+                "cardata.csv": {
+                    "Model": "Car_Name",
+                    "Year": "Year",
+                    "Selling_Price": "Selling_Price",
+                    "Present_Price": "Present_Price",
+                    "Kms_Driven": "Distance",
+                    "Fuel_Type": "Fuel_Type",
+                    "Seller_Type": "Seller_Type",
+                    "Transmission": "Transmission",
+                    "Owner": "Owner"
+                },
+                "cars_24_combined_128.csv": {
+                    "listing_id": "listing_id",
+                    "Car Name": "Car_Name",
+                    "Year": "Year",
+                    "Distance": "Distance",
+                    "Owner": "Owner",
+                    "Fuel": "Fuel_Type",
+                    "Location": "Location",
+                    "Drive": "Transmission",
+                    "Price": "Selling_Price"
+                },
+                "cars_24_combined_133.csv": {
+                    "listing_id": "listing_id",
+                    "Car Name": "Car_Name",
+                    "Year": "Year",
+                    "Distance": "Distance",
+                    "Owner": "Owner",
+                    "Fuel": "Fuel_Type",
+                    "Location": "Location",
+                    "Drive": "Transmission",
+                    "Price": "Selling_Price"
+                },
+                "cars_24_combined_136.csv": {
+                    "listing_id": "listing_id",
+                    "Car Name": "Car_Name",
+                    "Year": "Year",
+                    "Distance": "Distance",
+                    "Owner": "Owner",
+                    "Fuel": "Fuel_Type",
+                    "Location": "Location",
+                    "Drive": "Transmission",
+                    "Price": "Selling_Price"
+                },
+                "cars_24_combined_137.csv": {
+                    "listing_id": "listing_id",
+                    "Car Name": "Car_Name",
+                    "Year": "Year",
+                    "Distance": "Distance",
+                    "Owner": "Owner",
+                    "Fuel": "Fuel_Type",
+                    "Location": "Location",
+                    "Drive": "Transmission",
+                    "Price": "Selling_Price"
+                },
+                "cars_24_combined_139.csv": {
+                    "listing_id": "listing_id",
+                    "Car Name": "Car_Name",
+                    "Year": "Year",
+                    "Distance": "Distance",
+                    "Owner": "Owner",
+                    "Fuel": "Fuel_Type",
+                    "Location": "Location",
+                    "Drive": "Transmission",
+                    "Price": "Selling_Price"
+                },
+                "cars_24_combined_142.csv": {
+                    "listing_id": "listing_id",
+                    "Car Name": "Car_Name",
+                    "Year": "Year",
+                    "Distance": "Distance",
+                    "Owner": "Owner",
+                    "Fuel": "Fuel_Type",
+                    "Location": "Location",
+                    "Drive": "Transmission",
+                    "Price": "Selling_Price"
+                },
+                "cars_24_combined_144.csv": {
+                    "listing_id": "listing_id",
+                    "Car Name": "Car_Name",
+                    "Year": "Year",
+                    "Distance": "Distance",
+                    "Owner": "Owner",
+                    "Fuel": "Fuel_Type",
+                    "Location": "Location",
+                    "Drive": "Transmission",
+                    "Price": "Selling_Price"
+                },
+                "PakWheelsDataSet_165.csv": {
+                    "id": "listing_id",
+                    "Make": "Make",
+                    "Name": "Car_Name",
+                    "Transmission": "Transmission",
+                    "Engine Type": "Fuel_Type",
+                    "Engine Capacity(CC)": "Engine Capacity(CC)",
+                    "Mileage(kms)": "Distance",
+                    "Year": "Year",
+                    "Price": "Selling_Price"
+                },
+                "PakWheelsDataSet_177.csv": {
+                    "id": "listing_id",
+                    "Make": "Make",
+                    "Name": "Car_Name",
+                    "Transmission": "Transmission",
+                    "Engine Type": "Fuel_Type",
+                    "Engine Capacity(CC)": "Engine Capacity(CC)",
+                    "Mileage(kms)": "Distance",
+                    "Year": "Year",
+                    "Price": "Selling_Price"
+                }
+            },
+            "schema_matching": {
+                "cardata.csv": {
+                    "cars_24_combined_128.csv": {
+                        "Model": "Car Name",
+                        "Year": "Year",
+                        "Selling_Price": "Price",
+                        "Kms_Driven": "Distance",
+                        "Fuel_Type": "Fuel",
+                        "Transmission": "Drive",
+                        "Owner": "Owner"
+                    },
+                    "cars_24_combined_133.csv": {
+                        "Model": "Car Name",
+                        "Year": "Year",
+                        "Selling_Price": "Price",
+                        "Kms_Driven": "Distance",
+                        "Fuel_Type": "Fuel",
+                        "Transmission": "Drive",
+                        "Owner": "Owner"
+                    },
+                    "cars_24_combined_136.csv": {
+                        "Model": "Car Name",
+                        "Year": "Year",
+                        "Selling_Price": "Price",
+                        "Kms_Driven": "Distance",
+                        "Fuel_Type": "Fuel",
+                        "Transmission": "Drive",
+                        "Owner": "Owner"
+                    },
+                    "cars_24_combined_137.csv": {
+                        "Model": "Car Name",
+                        "Year": "Year",
+                        "Selling_Price": "Price",
+                        "Kms_Driven": "Distance",
+                        "Fuel_Type": "Fuel",
+                        "Transmission": "Drive",
+                        "Owner": "Owner"
+                    },
+                    "cars_24_combined_139.csv": {
+                        "Model": "Car Name",
+                        "Year": "Year",
+                        "Selling_Price": "Price",
+                        "Kms_Driven": "Distance",
+                        "Fuel_Type": "Fuel",
+                        "Transmission": "Drive",
+                        "Owner": "Owner"
+                    },
+                    "cars_24_combined_142.csv": {
+                        "Model": "Car Name",
+                        "Year": "Year",
+                        "Selling_Price": "Price",
+                        "Kms_Driven": "Distance",
+                        "Fuel_Type": "Fuel",
+                        "Transmission": "Drive",
+                        "Owner": "Owner"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "Model": "Car Name",
+                        "Year": "Year",
+                        "Selling_Price": "Price",
+                        "Kms_Driven": "Distance",
+                        "Fuel_Type": "Fuel",
+                        "Transmission": "Drive",
+                        "Owner": "Owner"
+                    },
+                    "PakWheelsDataSet_165.csv": {
+                        "Model": "Name",
+                        "Year": "Year",
+                        "Selling_Price": "Price",
+                        "Kms_Driven": "Mileage(kms)",
+                        "Fuel_Type": "Engine Type",
+                        "Transmission": "Transmission"
+                    },
+                    "PakWheelsDataSet_177.csv": {
+                        "Model": "Name",
+                        "Year": "Year",
+                        "Selling_Price": "Price",
+                        "Kms_Driven": "Mileage(kms)",
+                        "Fuel_Type": "Engine Type",
+                        "Transmission": "Transmission"
+                    }
+                },
+                "cars_24_combined_128.csv": {
+                    "cars_24_combined_133.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "cars_24_combined_136.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "cars_24_combined_137.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "cars_24_combined_139.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "cars_24_combined_142.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "PakWheelsDataSet_165.csv": {
+                        "listing_id": "id",
+                        "Car Name": "Name",
+                        "Year": "Year",
+                        "Distance": "Mileage(kms)",
+                        "Fuel": "Engine Type",
+                        "Drive": "Transmission",
+                        "Price": "Price"
+                    },
+                    "PakWheelsDataSet_177.csv": {
+                        "listing_id": "id",
+                        "Car Name": "Name",
+                        "Year": "Year",
+                        "Distance": "Mileage(kms)",
+                        "Fuel": "Engine Type",
+                        "Drive": "Transmission",
+                        "Price": "Price"
+                    }
+                },
+                "cars_24_combined_133.csv": {
+                    "cars_24_combined_136.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "cars_24_combined_137.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "cars_24_combined_139.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "cars_24_combined_142.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "PakWheelsDataSet_165.csv": {
+                        "listing_id": "id",
+                        "Car Name": "Name",
+                        "Year": "Year",
+                        "Distance": "Mileage(kms)",
+                        "Fuel": "Engine Type",
+                        "Drive": "Transmission",
+                        "Price": "Price"
+                    },
+                    "PakWheelsDataSet_177.csv": {
+                        "listing_id": "id",
+                        "Car Name": "Name",
+                        "Year": "Year",
+                        "Distance": "Mileage(kms)",
+                        "Fuel": "Engine Type",
+                        "Drive": "Transmission",
+                        "Price": "Price"
+                    }
+                },
+                "cars_24_combined_136.csv": {
+                    "cars_24_combined_137.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "cars_24_combined_139.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "cars_24_combined_142.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "PakWheelsDataSet_165.csv": {
+                        "listing_id": "id",
+                        "Car Name": "Name",
+                        "Year": "Year",
+                        "Distance": "Mileage(kms)",
+                        "Fuel": "Engine Type",
+                        "Drive": "Transmission",
+                        "Price": "Price"
+                    },
+                    "PakWheelsDataSet_177.csv": {
+                        "listing_id": "id",
+                        "Car Name": "Name",
+                        "Year": "Year",
+                        "Distance": "Mileage(kms)",
+                        "Fuel": "Engine Type",
+                        "Drive": "Transmission",
+                        "Price": "Price"
+                    }
+                },
+                "cars_24_combined_137.csv": {
+                    "cars_24_combined_139.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "cars_24_combined_142.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "PakWheelsDataSet_165.csv": {
+                        "listing_id": "id",
+                        "Car Name": "Name",
+                        "Year": "Year",
+                        "Distance": "Mileage(kms)",
+                        "Fuel": "Engine Type",
+                        "Drive": "Transmission",
+                        "Price": "Price"
+                    },
+                    "PakWheelsDataSet_177.csv": {
+                        "listing_id": "id",
+                        "Car Name": "Name",
+                        "Year": "Year",
+                        "Distance": "Mileage(kms)",
+                        "Fuel": "Engine Type",
+                        "Drive": "Transmission",
+                        "Price": "Price"
+                    }
+                },
+                "cars_24_combined_139.csv": {
+                    "cars_24_combined_142.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "PakWheelsDataSet_165.csv": {
+                        "listing_id": "id",
+                        "Car Name": "Name",
+                        "Year": "Year",
+                        "Distance": "Mileage(kms)",
+                        "Fuel": "Engine Type",
+                        "Drive": "Transmission",
+                        "Price": "Price"
+                    },
+                    "PakWheelsDataSet_177.csv": {
+                        "listing_id": "id",
+                        "Car Name": "Name",
+                        "Year": "Year",
+                        "Distance": "Mileage(kms)",
+                        "Fuel": "Engine Type",
+                        "Drive": "Transmission",
+                        "Price": "Price"
+                    }
+                },
+                "cars_24_combined_142.csv": {
+                    "cars_24_combined_144.csv": {
+                        "listing_id": "listing_id",
+                        "Car Name": "Car Name",
+                        "Year": "Year",
+                        "Distance": "Distance",
+                        "Owner": "Owner",
+                        "Fuel": "Fuel",
+                        "Location": "Location",
+                        "Drive": "Drive",
+                        "Price": "Price"
+                    },
+                    "PakWheelsDataSet_165.csv": {
+                        "listing_id": "id",
+                        "Car Name": "Name",
+                        "Year": "Year",
+                        "Distance": "Mileage(kms)",
+                        "Fuel": "Engine Type",
+                        "Drive": "Transmission",
+                        "Price": "Price"
+                    },
+                    "PakWheelsDataSet_177.csv": {
+                        "listing_id": "id",
+                        "Car Name": "Name",
+                        "Year": "Year",
+                        "Distance": "Mileage(kms)",
+                        "Fuel": "Engine Type",
+                        "Drive": "Transmission",
+                        "Price": "Price"
+                    }
+                },
+                "cars_24_combined_144.csv": {
+                    "PakWheelsDataSet_165.csv": {
+                        "listing_id": "id",
+                        "Car Name": "Name",
+                        "Year": "Year",
+                        "Distance": "Mileage(kms)",
+                        "Fuel": "Engine Type",
+                        "Drive": "Transmission",
+                        "Price": "Price"
+                    },
+                    "PakWheelsDataSet_177.csv": {
+                        "listing_id": "id",
+                        "Car Name": "Name",
+                        "Year": "Year",
+                        "Distance": "Mileage(kms)",
+                        "Fuel": "Engine Type",
+                        "Drive": "Transmission",
+                        "Price": "Price"
+                    }
+                },
+                "PakWheelsDataSet_165.csv": {
+                    "PakWheelsDataSet_177.csv": {
+                        "id": "id",
+                        "Make": "Make",
+                        "Name": "Name",
+                        "Transmission": "Transmission",
+                        "Engine Type": "Engine Type",
+                        "Engine Capacity(CC)": "Engine Capacity(CC)",
+                        "Mileage(kms)": "Mileage(kms)",
+                        "Year": "Year",
+                        "Price": "Price"
+                    }
+                }
+            }
+        },
+        "Car": {
+            "attributes": [],
+            "column_mappings_by_table": {
+                "cars_24_combined_128.csv": {
+                    "Car Name": "Car_Name",
+                    "Type": "Type"
+                },
+                "cars_24_combined_133.csv": {
+                    "Car Name": "Car_Name",
+                    "Type": "Type"
+                },
+                "cars_24_combined_136.csv": {
+                    "Car Name": "Car_Name",
+                    "Type": "Type"
+                },
+                "cars_24_combined_137.csv": {
+                    "Car Name": "Car_Name",
+                    "Type": "Type"
+                },
+                "cars_24_combined_139.csv": {
+                    "Car Name": "Car_Name",
+                    "Type": "Type"
+                },
+                "cars_24_combined_142.csv": {
+                    "Car Name": "Car_Name",
+                    "Type": "Type"
+                },
+                "cars_24_combined_144.csv": {
+                    "Car Name": "Car_Name",
+                    "Type": "Type"
+                }
+            },
+            "schema_matching": {
+                "cars_24_combined_128.csv": {
+                    "cars_24_combined_133.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    },
+                    "cars_24_combined_136.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    },
+                    "cars_24_combined_137.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    },
+                    "cars_24_combined_139.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    },
+                    "cars_24_combined_142.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    }
+                },
+                "cars_24_combined_133.csv": {
+                    "cars_24_combined_136.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    },
+                    "cars_24_combined_137.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    },
+                    "cars_24_combined_139.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    },
+                    "cars_24_combined_142.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    }
+                },
+                "cars_24_combined_136.csv": {
+                    "cars_24_combined_137.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    },
+                    "cars_24_combined_139.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    },
+                    "cars_24_combined_142.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    }
+                },
+                "cars_24_combined_137.csv": {
+                    "cars_24_combined_139.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    },
+                    "cars_24_combined_142.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    }
+                },
+                "cars_24_combined_139.csv": {
+                    "cars_24_combined_142.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    },
+                    "cars_24_combined_144.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    }
+                },
+                "cars_24_combined_142.csv": {
+                    "cars_24_combined_144.csv": {
+                        "Car Name": "Car Name",
+                        "Type": "Type"
+                    }
+                }
+            }
+        }
+    },
+    "grouped_attributes": {
+        "Car_Name": [
+            {
+                "cardata.csv": "Model"
+            },
+            {
+                "cars_24_combined_128.csv": "model_name"
+            },
+            {
+                "cars_24_combined_133.csv": "variant"
+            },
+            {
+                "cars_24_combined_136.csv": "car_model"
+            },
+            {
+                "cars_24_combined_137.csv": "model"
+            },
+            {
+                "cars_24_combined_139.csv": "nameplate"
+            },
+            {
+                "cars_24_combined_142.csv": "trim"
+            },
+            {
+                "cars_24_combined_144.csv": "model_line"
+            },
+            {
+                "PakWheelsDataSet_165.csv": "full_title"
+            },
+            {
+                "PakWheelsDataSet_177.csv": "vehicle_name"
+            }
+        ],
+        "Year": [
+            {
+                "cardata.csv": "Year"
+            },
+            {
+                "cars_24_combined_128.csv": "yr"
+            },
+            {
+                "cars_24_combined_133.csv": "mfg_year"
+            },
+            {
+                "cars_24_combined_136.csv": "year_built"
+            },
+            {
+                "cars_24_combined_137.csv": "year"
+            },
+            {
+                "cars_24_combined_139.csv": "year_reg"
+            },
+            {
+                "cars_24_combined_142.csv": "model_year"
+            },
+            {
+                "cars_24_combined_144.csv": "year_made"
+            },
+            {
+                "PakWheelsDataSet_165.csv": "year"
+            },
+            {
+                "PakWheelsDataSet_177.csv": "year"
+            }
+        ],
+        "Selling_Price": [
+            {
+                "cardata.csv": "Selling_Price"
+            },
+            {
+                "cars_24_combined_128.csv": "asking_price_inr"
+            },
+            {
+                "cars_24_combined_133.csv": "price_inr"
+            },
+            {
+                "cars_24_combined_136.csv": "sale_price"
+            },
+            {
+                "cars_24_combined_137.csv": "price"
+            },
+            {
+                "cars_24_combined_139.csv": "price_amt"
+            },
+            {
+                "cars_24_combined_142.csv": "listed_price"
+            },
+            {
+                "cars_24_combined_144.csv": "listed_price_inr"
+            },
+            {
+                "PakWheelsDataSet_165.csv": "list_price"
+            },
+            {
+                "PakWheelsDataSet_177.csv": "price_pkr"
+            }
+        ],
+        "Present_Price": [
+            {
+                "cardata.csv": "Present_Price"
+            }
+        ],
+        "Distance": [
+            {
+                "cardata.csv": "Kms_Driven"
+            },
+            {
+                "cars_24_combined_128.csv": "odometer_km"
+            },
+            {
+                "cars_24_combined_133.csv": "km_run"
+            },
+            {
+                "cars_24_combined_136.csv": "mileage"
+            },
+            {
+                "cars_24_combined_137.csv": "kms_driven"
+            },
+            {
+                "cars_24_combined_139.csv": "run_km"
+            },
+            {
+                "cars_24_combined_142.csv": "distance_km"
+            },
+            {
+                "cars_24_combined_144.csv": "driven_total"
+            },
+            {
+                "PakWheelsDataSet_165.csv": "odo_m"
+            },
+            {
+                "PakWheelsDataSet_177.csv": "mileage_km"
+            }
+        ],
+        "Fuel_Type": [
+            {
+                "cardata.csv": "Fuel_Type"
+            },
+            {
+                "cars_24_combined_133.csv": "fuel_type"
+            },
+            {
+                "cars_24_combined_136.csv": "fuel_cat"
+            },
+            {
+                "cars_24_combined_137.csv": "fuel"
+            },
+            {
+                "cars_24_combined_139.csv": "fuel_mode"
+            },
+            {
+                "cars_24_combined_142.csv": "fuel_class"
+            },
+            {
+                "cars_24_combined_144.csv": "fuel_used"
+            },
+            {
+                "PakWheelsDataSet_165.csv": "fuel_grade"
+            },
+            {
+                "PakWheelsDataSet_177.csv": "fuel_type"
+            }
+        ],
+        "Seller_Type": [
+            {
+                "cardata.csv": "Seller_Type"
+            }
+        ],
+        "Transmission": [
+            {
+                "cardata.csv": "Transmission"
+            },
+            {
+                "cars_24_combined_128.csv": "transmission"
+            },
+            {
+                "cars_24_combined_133.csv": "gearbox"
+            },
+            {
+                "cars_24_combined_136.csv": "trans_type"
+            },
+            {
+                "cars_24_combined_137.csv": "trans"
+            },
+            {
+                "cars_24_combined_139.csv": "shift_type"
+            },
+            {
+                "cars_24_combined_144.csv": "transmission_mode"
+            },
+            {
+                "PakWheelsDataSet_165.csv": "gear_type"
+            }
+        ],
+        "Owner": [
+            {
+                "cardata.csv": "Owner"
+            },
+            {
+                "cars_24_combined_137.csv": "owner_count"
+            },
+            {
+                "cars_24_combined_139.csv": "owner_num"
+            },
+            {
+                "cars_24_combined_142.csv": "owner_index"
+            }
+        ],
+        "listing_id": [
+            {
+                "cars_24_combined_128.csv": "listing_id"
+            },
+            {
+                "cars_24_combined_133.csv": "listing_id"
+            },
+            {
+                "cars_24_combined_136.csv": "listing_id"
+            },
+            {
+                "cars_24_combined_137.csv": "listing_id"
+            },
+            {
+                "cars_24_combined_139.csv": "listing_id"
+            },
+            {
+                "cars_24_combined_142.csv": "listing_id"
+            },
+            {
+                "cars_24_combined_144.csv": "listing_id"
+            },
+            {
+                "PakWheelsDataSet_165.csv": "id"
+            },
+            {
+                "PakWheelsDataSet_177.csv": "id"
+            }
+        ],
+        "Make": [
+            {
+                "cars_24_combined_128.csv": "make"
+            },
+            {
+                "cars_24_combined_133.csv": "manufacturer"
+            },
+            {
+                "cars_24_combined_136.csv": "brand_name"
+            },
+            {
+                "cars_24_combined_137.csv": "automaker"
+            },
+            {
+                "cars_24_combined_139.csv": "marque"
+            },
+            {
+                "cars_24_combined_142.csv": "make_name"
+            },
+            {
+                "cars_24_combined_144.csv": "oem"
+            },
+            {
+                "PakWheelsDataSet_165.csv": "maker"
+            },
+            {
+                "PakWheelsDataSet_177.csv": "make"
+            }
+        ],
+        "Location": [
+            {
+                "cars_24_combined_128.csv": "rto_code"
+            },
+            {
+                "cars_24_combined_133.csv": "reg_code"
+            },
+            {
+                "cars_24_combined_136.csv": "location_code"
+            },
+            {
+                "cars_24_combined_137.csv": "plate_code"
+            },
+            {
+                "cars_24_combined_139.csv": "rto_region"
+            },
+            {
+                "cars_24_combined_142.csv": "registration_zone"
+            },
+            {
+                "cars_24_combined_144.csv": "registration_code"
+            }
+        ],
+        "Type": [
+            {
+                "cars_24_combined_128.csv": "body_style"
+            },
+            {
+                "cars_24_combined_133.csv": "vehicle_class"
+            },
+            {
+                "cars_24_combined_136.csv": "vehicle_type"
+            },
+            {
+                "cars_24_combined_137.csv": "segment"
+            },
+            {
+                "cars_24_combined_139.csv": "body_type"
+            }
+        ],
+        "Engine Capacity(CC)": [
+            {
+                "PakWheelsDataSet_165.csv": "engine_cc"
+            },
+            {
+                "PakWheelsDataSet_177.csv": "displacement_cc"
+            }
+        ]
+    },
+    "schema_matching": {
+        "cardata.csv": {
+            "cars_24_combined_128.csv": {
+                "Model": "model_name",
+                "Year": "yr",
+                "Selling_Price": "asking_price_inr",
+                "Kms_Driven": "odometer_km",
+                "Transmission": "transmission"
+            },
+            "cars_24_combined_133.csv": {
+                "Model": "variant",
+                "Year": "mfg_year",
+                "Selling_Price": "price_inr",
+                "Kms_Driven": "km_run",
+                "Fuel_Type": "fuel_type",
+                "Transmission": "gearbox"
+            },
+            "cars_24_combined_136.csv": {
+                "Model": "car_model",
+                "Year": "year_built",
+                "Selling_Price": "sale_price",
+                "Kms_Driven": "mileage",
+                "Fuel_Type": "fuel_cat",
+                "Transmission": "trans_type"
+            },
+            "cars_24_combined_137.csv": {
+                "Model": "model",
+                "Year": "year",
+                "Selling_Price": "price",
+                "Kms_Driven": "kms_driven",
+                "Fuel_Type": "fuel",
+                "Transmission": "trans",
+                "Owner": "owner_count"
+            },
+            "cars_24_combined_139.csv": {
+                "Model": "nameplate",
+                "Year": "year_reg",
+                "Selling_Price": "price_amt",
+                "Kms_Driven": "run_km",
+                "Fuel_Type": "fuel_mode",
+                "Transmission": "shift_type",
+                "Owner": "owner_num"
+            },
+            "cars_24_combined_142.csv": {
+                "Model": "trim",
+                "Year": "model_year",
+                "Selling_Price": "listed_price",
+                "Kms_Driven": "distance_km",
+                "Fuel_Type": "fuel_class",
+                "Owner": "owner_index"
+            },
+            "cars_24_combined_144.csv": {
+                "Model": "model_line",
+                "Year": "year_made",
+                "Selling_Price": "listed_price_inr",
+                "Kms_Driven": "driven_total",
+                "Fuel_Type": "fuel_used",
+                "Transmission": "transmission_mode"
+            },
+            "PakWheelsDataSet_165.csv": {
+                "Model": "full_title",
+                "Year": "year",
+                "Selling_Price": "list_price",
+                "Kms_Driven": "odo_m",
+                "Fuel_Type": "fuel_grade",
+                "Transmission": "gear_type"
+            },
+            "PakWheelsDataSet_177.csv": {
+                "Model": "vehicle_name",
+                "Year": "year",
+                "Selling_Price": "price_pkr",
+                "Kms_Driven": "mileage_km",
+                "Fuel_Type": "fuel_type"
+            }
+        },
+        "cars_24_combined_128.csv": {
+            "cars_24_combined_133.csv": {
+                "listing_id": "listing_id",
+                "make": "manufacturer",
+                "model_name": "variant",
+                "yr": "mfg_year",
+                "odometer_km": "km_run",
+                "rto_code": "reg_code",
+                "transmission": "gearbox",
+                "body_style": "vehicle_class",
+                "asking_price_inr": "price_inr"
+            },
+            "cars_24_combined_136.csv": {
+                "listing_id": "listing_id",
+                "make": "brand_name",
+                "model_name": "car_model",
+                "yr": "year_built",
+                "odometer_km": "mileage",
+                "rto_code": "location_code",
+                "transmission": "trans_type",
+                "body_style": "vehicle_type",
+                "asking_price_inr": "sale_price"
+            },
+            "cars_24_combined_137.csv": {
+                "listing_id": "listing_id",
+                "make": "automaker",
+                "model_name": "model",
+                "yr": "year",
+                "odometer_km": "kms_driven",
+                "rto_code": "plate_code",
+                "transmission": "trans",
+                "body_style": "segment",
+                "asking_price_inr": "price"
+            },
+            "cars_24_combined_139.csv": {
+                "listing_id": "listing_id",
+                "make": "marque",
+                "model_name": "nameplate",
+                "yr": "year_reg",
+                "odometer_km": "run_km",
+                "rto_code": "rto_region",
+                "transmission": "shift_type",
+                "body_style": "body_type",
+                "asking_price_inr": "price_amt"
+            },
+            "cars_24_combined_142.csv": {
+                "listing_id": "listing_id",
+                "make": "make_name",
+                "model_name": "trim",
+                "yr": "model_year",
+                "odometer_km": "distance_km",
+                "rto_code": "registration_zone",
+                "asking_price_inr": "listed_price"
+            },
+            "cars_24_combined_144.csv": {
+                "listing_id": "listing_id",
+                "make": "oem",
+                "model_name": "model_line",
+                "yr": "year_made",
+                "odometer_km": "driven_total",
+                "rto_code": "registration_code",
+                "transmission": "transmission_mode",
+                "asking_price_inr": "listed_price_inr"
+            },
+            "PakWheelsDataSet_165.csv": {
+                "listing_id": "id",
+                "make": "maker",
+                "model_name": "full_title",
+                "yr": "year",
+                "odometer_km": "odo_m",
+                "transmission": "gear_type",
+                "asking_price_inr": "list_price"
+            },
+            "PakWheelsDataSet_177.csv": {
+                "listing_id": "id",
+                "make": "make",
+                "model_name": "vehicle_name",
+                "yr": "year",
+                "odometer_km": "mileage_km",
+                "asking_price_inr": "price_pkr"
+            }
+        },
+        "cars_24_combined_133.csv": {
+            "cars_24_combined_136.csv": {
+                "listing_id": "listing_id",
+                "manufacturer": "brand_name",
+                "variant": "car_model",
+                "mfg_year": "year_built",
+                "km_run": "mileage",
+                "fuel_type": "fuel_cat",
+                "reg_code": "location_code",
+                "gearbox": "trans_type",
+                "vehicle_class": "vehicle_type",
+                "price_inr": "sale_price"
+            },
+            "cars_24_combined_137.csv": {
+                "listing_id": "listing_id",
+                "manufacturer": "automaker",
+                "variant": "model",
+                "mfg_year": "year",
+                "km_run": "kms_driven",
+                "fuel_type": "fuel",
+                "reg_code": "plate_code",
+                "gearbox": "trans",
+                "vehicle_class": "segment",
+                "price_inr": "price"
+            },
+            "cars_24_combined_139.csv": {
+                "listing_id": "listing_id",
+                "manufacturer": "marque",
+                "variant": "nameplate",
+                "mfg_year": "year_reg",
+                "km_run": "run_km",
+                "fuel_type": "fuel_mode",
+                "reg_code": "rto_region",
+                "gearbox": "shift_type",
+                "vehicle_class": "body_type",
+                "price_inr": "price_amt"
+            },
+            "cars_24_combined_142.csv": {
+                "listing_id": "listing_id",
+                "manufacturer": "make_name",
+                "variant": "trim",
+                "mfg_year": "model_year",
+                "km_run": "distance_km",
+                "fuel_type": "fuel_class",
+                "reg_code": "registration_zone",
+                "price_inr": "listed_price"
+            },
+            "cars_24_combined_144.csv": {
+                "listing_id": "listing_id",
+                "manufacturer": "oem",
+                "variant": "model_line",
+                "mfg_year": "year_made",
+                "km_run": "driven_total",
+                "fuel_type": "fuel_used",
+                "reg_code": "registration_code",
+                "gearbox": "transmission_mode",
+                "price_inr": "listed_price_inr"
+            },
+            "PakWheelsDataSet_165.csv": {
+                "listing_id": "id",
+                "manufacturer": "maker",
+                "variant": "full_title",
+                "mfg_year": "year",
+                "km_run": "odo_m",
+                "fuel_type": "fuel_grade",
+                "gearbox": "gear_type",
+                "price_inr": "list_price"
+            },
+            "PakWheelsDataSet_177.csv": {
+                "listing_id": "id",
+                "manufacturer": "make",
+                "variant": "vehicle_name",
+                "mfg_year": "year",
+                "km_run": "mileage_km",
+                "fuel_type": "fuel_type",
+                "price_inr": "price_pkr"
+            }
+        },
+        "cars_24_combined_136.csv": {
+            "cars_24_combined_137.csv": {
+                "listing_id": "listing_id",
+                "brand_name": "automaker",
+                "car_model": "model",
+                "year_built": "year",
+                "mileage": "kms_driven",
+                "fuel_cat": "fuel",
+                "location_code": "plate_code",
+                "trans_type": "trans",
+                "vehicle_type": "segment",
+                "sale_price": "price"
+            },
+            "cars_24_combined_139.csv": {
+                "listing_id": "listing_id",
+                "brand_name": "marque",
+                "car_model": "nameplate",
+                "year_built": "year_reg",
+                "mileage": "run_km",
+                "fuel_cat": "fuel_mode",
+                "location_code": "rto_region",
+                "trans_type": "shift_type",
+                "vehicle_type": "body_type",
+                "sale_price": "price_amt"
+            },
+            "cars_24_combined_142.csv": {
+                "listing_id": "listing_id",
+                "brand_name": "make_name",
+                "car_model": "trim",
+                "year_built": "model_year",
+                "mileage": "distance_km",
+                "fuel_cat": "fuel_class",
+                "location_code": "registration_zone",
+                "sale_price": "listed_price"
+            },
+            "cars_24_combined_144.csv": {
+                "listing_id": "listing_id",
+                "brand_name": "oem",
+                "car_model": "model_line",
+                "year_built": "year_made",
+                "mileage": "driven_total",
+                "fuel_cat": "fuel_used",
+                "location_code": "registration_code",
+                "trans_type": "transmission_mode",
+                "sale_price": "listed_price_inr"
+            },
+            "PakWheelsDataSet_165.csv": {
+                "listing_id": "id",
+                "brand_name": "maker",
+                "car_model": "full_title",
+                "year_built": "year",
+                "mileage": "odo_m",
+                "fuel_cat": "fuel_grade",
+                "trans_type": "gear_type",
+                "sale_price": "list_price"
+            },
+            "PakWheelsDataSet_177.csv": {
+                "listing_id": "id",
+                "brand_name": "make",
+                "car_model": "vehicle_name",
+                "year_built": "year",
+                "mileage": "mileage_km",
+                "fuel_cat": "fuel_type",
+                "sale_price": "price_pkr"
+            }
+        },
+        "cars_24_combined_137.csv": {
+            "cars_24_combined_139.csv": {
+                "listing_id": "listing_id",
+                "automaker": "marque",
+                "model": "nameplate",
+                "year": "year_reg",
+                "kms_driven": "run_km",
+                "owner_count": "owner_num",
+                "fuel": "fuel_mode",
+                "plate_code": "rto_region",
+                "trans": "shift_type",
+                "segment": "body_type",
+                "price": "price_amt"
+            },
+            "cars_24_combined_142.csv": {
+                "listing_id": "listing_id",
+                "automaker": "make_name",
+                "model": "trim",
+                "year": "model_year",
+                "kms_driven": "distance_km",
+                "owner_count": "owner_index",
+                "fuel": "fuel_class",
+                "plate_code": "registration_zone",
+                "price": "listed_price"
+            },
+            "cars_24_combined_144.csv": {
+                "listing_id": "listing_id",
+                "automaker": "oem",
+                "model": "model_line",
+                "year": "year_made",
+                "kms_driven": "driven_total",
+                "fuel": "fuel_used",
+                "plate_code": "registration_code",
+                "trans": "transmission_mode",
+                "price": "listed_price_inr"
+            },
+            "PakWheelsDataSet_165.csv": {
+                "listing_id": "id",
+                "automaker": "maker",
+                "model": "full_title",
+                "year": "year",
+                "kms_driven": "odo_m",
+                "fuel": "fuel_grade",
+                "trans": "gear_type",
+                "price": "list_price"
+            },
+            "PakWheelsDataSet_177.csv": {
+                "listing_id": "id",
+                "automaker": "make",
+                "model": "vehicle_name",
+                "year": "year",
+                "kms_driven": "mileage_km",
+                "fuel": "fuel_type",
+                "price": "price_pkr"
+            }
+        },
+        "cars_24_combined_139.csv": {
+            "cars_24_combined_142.csv": {
+                "listing_id": "listing_id",
+                "marque": "make_name",
+                "nameplate": "trim",
+                "year_reg": "model_year",
+                "run_km": "distance_km",
+                "owner_num": "owner_index",
+                "fuel_mode": "fuel_class",
+                "rto_region": "registration_zone",
+                "price_amt": "listed_price"
+            },
+            "cars_24_combined_144.csv": {
+                "listing_id": "listing_id",
+                "marque": "oem",
+                "nameplate": "model_line",
+                "year_reg": "year_made",
+                "run_km": "driven_total",
+                "fuel_mode": "fuel_used",
+                "rto_region": "registration_code",
+                "shift_type": "transmission_mode",
+                "price_amt": "listed_price_inr"
+            },
+            "PakWheelsDataSet_165.csv": {
+                "listing_id": "id",
+                "marque": "maker",
+                "nameplate": "full_title",
+                "year_reg": "year",
+                "run_km": "odo_m",
+                "fuel_mode": "fuel_grade",
+                "shift_type": "gear_type",
+                "price_amt": "list_price"
+            },
+            "PakWheelsDataSet_177.csv": {
+                "listing_id": "id",
+                "marque": "make",
+                "nameplate": "vehicle_name",
+                "year_reg": "year",
+                "run_km": "mileage_km",
+                "fuel_mode": "fuel_type",
+                "price_amt": "price_pkr"
+            }
+        },
+        "cars_24_combined_142.csv": {
+            "cars_24_combined_144.csv": {
+                "listing_id": "listing_id",
+                "make_name": "oem",
+                "trim": "model_line",
+                "model_year": "year_made",
+                "distance_km": "driven_total",
+                "fuel_class": "fuel_used",
+                "registration_zone": "registration_code",
+                "listed_price": "listed_price_inr"
+            },
+            "PakWheelsDataSet_165.csv": {
+                "listing_id": "id",
+                "make_name": "maker",
+                "trim": "full_title",
+                "model_year": "year",
+                "distance_km": "odo_m",
+                "fuel_class": "fuel_grade",
+                "listed_price": "list_price"
+            },
+            "PakWheelsDataSet_177.csv": {
+                "listing_id": "id",
+                "make_name": "make",
+                "trim": "vehicle_name",
+                "model_year": "year",
+                "distance_km": "mileage_km",
+                "fuel_class": "fuel_type",
+                "listed_price": "price_pkr"
+            }
+        },
+        "cars_24_combined_144.csv": {
+            "PakWheelsDataSet_165.csv": {
+                "listing_id": "id",
+                "oem": "maker",
+                "model_line": "full_title",
+                "year_made": "year",
+                "driven_total": "odo_m",
+                "fuel_used": "fuel_grade",
+                "transmission_mode": "gear_type",
+                "listed_price_inr": "list_price"
+            },
+            "PakWheelsDataSet_177.csv": {
+                "listing_id": "id",
+                "oem": "make",
+                "model_line": "vehicle_name",
+                "year_made": "year",
+                "driven_total": "mileage_km",
+                "fuel_used": "fuel_type",
+                "listed_price_inr": "price_pkr"
+            }
+        },
+        "PakWheelsDataSet_165.csv": {
+            "PakWheelsDataSet_177.csv": {
+                "id": "id",
+                "maker": "make",
+                "full_title": "vehicle_name",
+                "fuel_grade": "fuel_type",
+                "engine_cc": "displacement_cc",
+                "odo_m": "mileage_km",
+                "year": "year",
+                "list_price": "price_pkr"
+            }
+        },
+        "PakWheelsDataSet_177.csv": {}
+    }
+}

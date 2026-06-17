@@ -1,0 +1,387 @@
+volcano_number,volcano_name,eruption_number,eruption_category,area_of_activity,vei,start_year,start_month,start_day,end_year,end_month,end_day,latitude,longitude
+373070,Fremrinamar,12922,Discredited Eruption,,,1823.0,0.0,0.0,,,,65.416,-16.666
+271011,Parker,16694,Confirmed Eruption,,5.0,1640.0,12.0,26.0,1641.0,1.0,4.0,6.113,124.892
+266030,Soputan,13460,Confirmed Eruption,,2.0,1890.0,0.0,0.0,,,,1.112,124.737
+344100,Masaya,11031,Confirmed Eruption,Santiago,1.0,1989.0,2.0,20.0,1989.0,11.0,16.0,11.985,-86.165
+261030,Peuet Sague,15394,Confirmed Eruption,,1.0,1999.0,3.0,9.0,1999.0,4.0,30.0,4.903,96.289
+213020,Nemrut Dagi,13527,Confirmed Eruption,East flank (Lake Van),,1650.0,10.0,27.0,,,,38.654,42.229
+273010,Bulusan,16764,Confirmed Eruption,,2.0,1978.0,7.0,29.0,1978.0,8.0,14.0,12.769,124.056
+352021,Atacazo,11451,Confirmed Eruption,Arenal II dome,4.0,-3490.0,0.0,0.0,,,,-0.353,-78.617
+251020,Manam,14894,Confirmed Eruption,South Crater,,1700.0,4.0,2.0,,,,-4.08,145.037
+284070,Myojinsho,18309,Confirmed Eruption,Volcano Uncertain,0.0,1869.0,5.0,6.0,,,,31.888,139.918
+357150,Puyehue-Cordon Caulle,12216,Confirmed Eruption,CordÃÂ³n Caulle,1.0,1990.0,7.0,2.0,,,,-40.59,-72.117
+357120,Villarrica,12173,Confirmed Eruption,,1.0,1995.0,4.0,15.0,1995.0,6.0,2.0,-39.42,-71.93
+283220,Chokaisan,18022,Uncertain Eruption,,,948.0,12.0,31.0,,,,39.099,140.049
+355100,Lascar,11852,Confirmed Eruption,,2.0,1883.0,0.0,0.0,1885.0,0.0,0.0,-23.37,-67.73
+282060,Kikai,16991,Confirmed Eruption,Iwo-dake,,1030.0,0.0,0.0,,,,30.793,130.305
+267030,Banua Wuhu,16548,Confirmed Eruption,,2.0,1904.0,4.0,17.0,1904.0,4.0,18.0,3.138,125.491
+357120,Villarrica,21061,Confirmed Eruption,,2.0,1417.0,,,,,,-39.42,-71.93
+282060,Kikai,17000,Confirmed Eruption,Iwo-dake,1.0,2000.0,10.0,16.0,2001.0,12.0,16.0,30.793,130.305
+372030,Katla,12636,Confirmed Eruption,,,-1160.0,0.0,0.0,,,,63.633,-19.083
+344040,Telica,10922,Confirmed Eruption,,2.0,1948.0,6.0,0.0,1949.0,11.0,0.0,12.606,-86.84
+263310,Tengger Caldera,13528,Confirmed Eruption,Bromo,2.0,1950.0,5.0,27.0,1950.0,8.0,16.0,-7.942,112.95
+311190,Amukta,19788,Confirmed Eruption,,1.0,1987.0,9.0,4.0,,,,52.5,-171.252
+300250,Bezymianny,19360,Confirmed Eruption,,3.0,1981.0,6.0,12.0,1983.0,5.0,22.0,55.972,160.595
+214090,Porak,13914,Confirmed Eruption,,,-4510.0,0.0,0.0,,,,40.028,45.74
+283030,Fujisan,17410,Confirmed Eruption,,,-1300.0,0.0,0.0,,,,35.361,138.728
+264030,Rinjani,20843,Confirmed Eruption,Samalas,7.0,1257.0,7.0,1.0,,,,-8.42,116.47
+332010,Kilauea,20735,Confirmed Eruption,SW rift zone,0.0,-2850.0,0.0,0.0,,,,19.421,-155.287
+256010,Tinakula,22239,Confirmed Eruption,,3.0,2017.0,10.0,21.0,2017.0,10.0,26.0,-10.386,165.804
+283110,Asamayama,17696,Confirmed Eruption,,2.0,1598.0,5.0,13.0,,,,36.406,138.523
+283090,Niigata-Yakeyama,17548,Confirmed Eruption,,1.0,1987.0,4.0,25.0,,,,36.921,138.036
+268060,Gamalama,16646,Uncertain Eruption,,1.0,1864.0,6.0,4.0,1864.0,6.0,25.0,0.8,127.33
+357120,Villarrica,21048,Confirmed Eruption,,2.0,1503.0,,,,,,-39.42,-71.93
+267010,Ruang,16481,Confirmed Eruption,,3.0,1870.0,8.0,27.0,1870.0,8.0,28.0,2.3,125.37
+264250,Iliwerung,16338,Confirmed Eruption,Iliwerung,2.0,1910.0,0.0,0.0,,,,-8.53,123.57
+312070,Veniaminof,20166,Confirmed Eruption,Western intracaldera cone,3.0,1956.0,3.0,16.0,1956.0,5.0,23.0,56.17,-159.38
+300120,Zhupanovsky,19136,Confirmed Eruption,"Middle crater, east crater",2.0,1956.0,12.0,27.0,1957.0,6.0,16.0,53.589,159.15
+211050,Vulcano,13447,Confirmed Eruption,,,-150.0,0.0,0.0,,,,38.404,14.962
+243060,Tofua,14745,Confirmed Eruption,,0.0,1792.0,0.0,0.0,,,,-19.75,-175.07
+343030,Izalco,10803,Confirmed Eruption,,2.0,1885.0,0.0,0.0,,,,13.813,-89.633
+241080,Tongariro,14566,Confirmed Eruption,Ngauruhoe,2.0,1910.0,10.0,0.0,1911.0,1.0,0.0,-39.157,175.632
+284010,Izu-Oshima,18183,Confirmed Eruption,"Summit, S flank",4.0,1421.0,5.0,14.0,,,,34.724,139.394
+243100,Fonualei,14783,Confirmed Eruption,,,1957.0,6.0,16.0,,,,-18.023,-174.317
+241080,Tongariro,14564,Confirmed Eruption,Ngauruhoe,2.0,1909.0,3.0,0.0,1909.0,7.0,0.0,-39.157,175.632
+241030,Taranaki,14454,Confirmed Eruption,,,1550.0,0.0,0.0,,,,-39.3,174.07
+213020,Nemrut Dagi,13537,Confirmed Eruption,,,-657.0,0.0,0.0,,,,38.654,42.229
+352080,Tungurahua,11614,Confirmed Eruption,,3.0,-50.0,0.0,0.0,,,,-1.467,-78.442
+251030,Karkar,14937,Confirmed Eruption,,,-870.0,0.0,0.0,,,,-4.649,145.964
+300190,Krasheninnikov,19220,Confirmed Eruption,Southern cone summit and flank,4.0,-6000.0,0.0,0.0,,,,54.596,160.27
+285070,Akan,18693,Confirmed Eruption,Me-Akan (Ponmachineshiri),1.0,1958.0,2.0,23.0,1958.0,2.0,23.0,43.384,144.013
+273030,Mayon,16794,Confirmed Eruption,,4.0,1897.0,5.0,23.0,1897.0,7.0,23.0,13.257,123.685
+261140,Marapi,15461,Confirmed Eruption,,1.0,1958.0,6.0,23.0,1958.0,6.0,23.0,-0.38,100.474
+344020,San Cristobal,10875,Confirmed Eruption,,3.0,1528.0,0.0,0.0,,,,12.702,-87.004
+263320,Lamongan,16074,Confirmed Eruption,,2.0,1843.0,8.0,0.0,1844.0,9.0,0.0,-7.981,113.341
+357120,Villarrica,21062,Confirmed Eruption,,2.0,1413.0,,,,,,-39.42,-71.93
+332010,Kilauea,20733,Confirmed Eruption,SW rift zone,0.0,-4650.0,0.0,0.0,,,,19.421,-155.287
+282060,Kikai,16980,Confirmed Eruption,Kikai caldera,7.0,-4350.0,0.0,0.0,,,,30.793,130.305
+376010,Jan Mayen,12971,Confirmed Eruption,"Beerenberg (NE flank, Skrukkelia)",1.0,1973.0,1.0,15.0,,,,71.082,-8.155
+300160,Taunshits,17643,Confirmed Eruption,,,-5800.0,0.0,0.0,,,,54.528,159.804
+352050,Cotopaxi,11561,Confirmed Eruption,,2.0,1854.0,4.0,3.0,,,,-0.677,-78.436
+233020,"Fournaise, Piton de la",14254,Confirmed Eruption,,2.0,1802.0,12.0,0.0,,,,-21.244,55.708
+241080,Tongariro,13559,Confirmed Eruption,NE flank (upper Te Mari Crater),2.0,1886.0,6.0,0.0,,,,-39.157,175.632
+257040,Ambrym,15283,Confirmed Eruption,"Benbow, Marum",2.0,1981.0,2.0,20.0,1981.0,9.0,30.0,-16.25,168.12
+256010,Tinakula,15208,Uncertain Eruption,,1.0,2002.0,11.0,16.0,,,,-10.386,165.804
+223020,Nyamuragira,14048,Uncertain Eruption,Summit caldera,1.0,1906.0,0.0,0.0,,,,-1.408,29.2
+332040,Hualalai,10245,Confirmed Eruption,NW rift zone (Luamakami),0.0,-400.0,0.0,0.0,,,,19.692,-155.87
+357070,"Chillan, Nevados de",11972,Confirmed Eruption,NW flank of Cerro Blanco (Santa Gertrudis),3.0,1864.0,11.0,30.0,1865.0,2.0,3.0,-36.868,-71.378
+211071,Pantelleria,13863,Uncertain Eruption,South of Pantelleria,,1891.0,12.0,0.0,,,,36.77,12.02
+251020,Manam,14899,Confirmed Eruption,,2.0,1887.0,6.0,0.0,1895.0,0.0,0.0,-4.08,145.037
+283170,Adatarayama,17911,Confirmed Eruption,Numanotaira,2.0,1899.0,8.0,24.0,1899.0,11.0,12.0,37.647,140.281
+266030,Soputan,16303,Confirmed Eruption,,2.0,1785.0,12.0,31.0,,,,1.112,124.737
+211060,Etna,13639,Uncertain Eruption,,,1044.0,0.0,0.0,,,,37.748,14.999
+282110,Asosan,17293,Confirmed Eruption,Naka-dake,2.0,1907.0,12.0,12.0,,,,32.884,131.104
+257060,Epi,15094,Uncertain Eruption,Epi A and Epi B,0.0,1974.0,11.0,16.0,1974.0,11.0,16.0,-16.68,168.37
+357120,Villarrica,21058,Confirmed Eruption,,2.0,1454.0,,,,,,-39.42,-71.93
+282110,Asosan,17324,Uncertain Eruption,Naka-dake,,1952.0,7.0,2.0,,,,32.884,131.104
+268060,Gamalama,16608,Confirmed Eruption,,2.0,1686.0,9.0,0.0,1686.0,10.0,13.0,0.8,127.33
+345060,Irazu,11222,Confirmed Eruption,,2.0,1924.0,3.0,0.0,1924.0,4.0,0.0,9.979,-83.852
+344120,Concepcion,11060,Confirmed Eruption,,2.0,1957.0,3.0,27.0,1957.0,7.0,16.0,11.538,-85.622
+263340,Raung,16150,Confirmed Eruption,,2.0,1991.0,9.0,10.0,1991.0,11.0,12.0,-8.119,114.056
+255020,Bagana,15133,Confirmed Eruption,,2.0,1962.0,2.0,15.0,1963.0,7.0,2.0,-6.137,155.196
+353010,Fernandina,11676,Confirmed Eruption,South caldera rim,2.0,2005.0,5.0,13.0,2005.0,5.0,29.0,-0.37,-91.55
+312160,Trident,20226,Confirmed Eruption,SW flank (1100 m),3.0,1953.0,2.0,15.0,1954.0,10.0,5.0,58.236,-155.1
+345060,Irazu,11203,Confirmed Eruption,,2.0,1775.0,0.0,0.0,,,,9.979,-83.852
+251010,Bam,14882,Discredited Eruption,,,1941.0,0.0,0.0,1942.0,0.0,0.0,-3.613,144.818
+342080,Acatenango,10652,Confirmed Eruption,,,1450.0,0.0,0.0,,,,14.501,-90.876
+300260,Klyuchevskoy,19446,Confirmed Eruption,Summit and SE flank (1500 m),2.0,1956.0,1.0,16.0,1956.0,8.0,2.0,56.056,160.642
+243050,Fonuafo'ou,14742,Confirmed Eruption,,2.0,1936.0,6.0,0.0,,,,-20.32,-175.42
+372030,Katla,19935,Confirmed Eruption,,,820.0,0.0,0.0,,,,63.633,-19.083
+266100,Lokon-Empung,16457,Confirmed Eruption,Tompaluan,2.0,1986.0,3.0,22.0,1987.0,5.0,13.0,1.358,124.792
+300060,Mutnovsky,18967,Confirmed Eruption,,2.0,1927.0,1.0,0.0,1927.0,2.0,0.0,52.449,158.196
+282080,Aira,17062,Confirmed Eruption,NE flank (offshore),2.0,1782.0,1.0,18.0,,,,31.593,130.657
+284180,Alamagan,18526,Confirmed Eruption,,4.0,870.0,0.0,0.0,,,,17.6,145.83
+322160,Crater Lake,20612,Confirmed Eruption,Wizard Island and Merriam Cone,,-5250.0,0.0,0.0,,,,42.93,-122.12
+332060,Haleakala,10264,Confirmed Eruption,East rift zone,,-5860.0,0.0,0.0,,,,20.708,-156.25
+257050,Lopevi,15311,Confirmed Eruption,,1.0,1976.0,5.0,1.0,1976.0,9.0,5.0,-16.507,168.346
+223030,Nyiragongo,14101,Confirmed Eruption,"North, south, and west flanks",1.0,1977.0,1.0,10.0,1977.0,1.0,10.0,-1.52,29.25
+211030,Ischia,13378,Confirmed Eruption,Ischia Porto (Spiaggia dei Pescatori),,-200.0,0.0,0.0,,,,40.73,13.897
+300260,Klyuchevskoy,20786,Confirmed Eruption,,1.0,2013.0,8.0,15.0,2013.0,12.0,20.0,56.056,160.642
+223020,Nyamuragira,14066,Confirmed Eruption,North flank (Gakararanga),2.0,1967.0,4.0,23.0,1967.0,5.0,9.0,-1.408,29.2
+283230,Akita-Komagatake,18043,Confirmed Eruption,,,-1450.0,0.0,0.0,,,,39.761,140.799
+263180,Slamet,15759,Confirmed Eruption,,2.0,1951.0,6.0,26.0,1952.0,1.0,1.0,-7.242,109.208
+332010,Kilauea,10116,Confirmed Eruption,East rift zone (near Mauna Ulu),0.0,1980.0,3.0,11.0,1980.0,3.0,11.0,19.421,-155.287
+311240,Cleveland,19817,Confirmed Eruption,,2.0,2005.0,3.0,13.0,2005.0,11.0,27.0,52.825,-169.944
+300060,Mutnovsky,18955,Confirmed Eruption,,2.0,1300.0,0.0,0.0,,,,52.449,158.196
+282080,Aira,17043,Confirmed Eruption,,,-2050.0,0.0,0.0,,,,31.593,130.657
+382070,Don Joao de Castro Bank,19964,Confirmed Eruption,,3.0,1720.0,12.0,8.0,1720.0,12.0,26.0,38.23,-26.63
+311120,Great Sitkin,19731,Uncertain Eruption,,,1829.0,0.0,0.0,,,,52.076,-176.13
+341100,"Orizaba, Pico de",10572,Uncertain Eruption,,2.0,1187.0,0.0,0.0,,,,19.03,-97.27
+263280,Kelut,15936,Confirmed Eruption,,2.0,1752.0,5.0,1.0,,,,-7.93,112.308
+342060,Atitlan,10647,Uncertain Eruption,,2.0,1856.0,0.0,0.0,,,,14.583,-91.186
+284100,Kaitoku Seamount,18374,Confirmed Eruption,Higashi-Kaitokuba,0.0,1984.0,3.0,8.0,1984.0,3.0,26.0,26.127,141.102
+382080,Sete Cidades,13022,Confirmed Eruption,Volcano Uncertain: submarine vent off Sao Miguel,0.0,1861.0,0.0,0.0,,,,37.87,-25.78
+345033,Arenal,11126,Confirmed Eruption,,4.0,750.0,0.0,0.0,,,,10.463,-84.703
+211060,Etna,13769,Confirmed Eruption,"South flank (2300-1900 m, Mt. Ricco)",2.0,1910.0,3.0,23.0,1910.0,4.0,18.0,37.748,14.999
+241100,Ruapehu,14649,Confirmed Eruption,,1.0,1981.0,10.0,25.0,1982.0,4.0,12.0,-39.28,175.57
+372030,Katla,12606,Confirmed Eruption,,,-3370.0,0.0,0.0,,,,63.633,-19.083
+282080,Aira,17046,Confirmed Eruption,,3.0,716.0,0.0,0.0,718.0,0.0,0.0,31.593,130.657
+211020,Vesuvius,13357,Confirmed Eruption,Summit and upper SE flank,2.0,1864.0,2.0,10.0,1868.0,11.0,26.0,40.821,14.426
+284050,Hachijojima,18286,Confirmed Eruption,Nishi-yama,5.0,-4650.0,0.0,0.0,,,,33.137,139.766
+233010,Karthala,14186,Confirmed Eruption,NW flank (Diboini Plateau fissures),2.0,1859.0,0.0,0.0,,,,-11.75,43.38
+242030,Raoul Island,14686,Confirmed Eruption,Denham caldera,6.0,-250.0,0.0,0.0,,,,-29.27,-177.92
+311320,Akutan,20010,Confirmed Eruption,,,1896.0,0.0,0.0,,,,54.134,-165.986
+354020,Ubinas,11630,Confirmed Eruption,,2.0,1907.0,0.0,0.0,,,,-16.355,-70.903
+261140,Marapi,15427,Confirmed Eruption,,2.0,1863.0,5.0,23.0,,,,-0.38,100.474
+300090,Koryaksky,19040,Confirmed Eruption,South and SW flanks,,-1550.0,0.0,0.0,,,,53.321,158.712
+360030,Liamuiga,12338,Confirmed Eruption,,,60.0,0.0,0.0,,,,17.37,-62.8
+357120,Villarrica,12156,Confirmed Eruption,,2.0,1948.0,4.0,10.0,,,,-39.42,-71.93
+311340,Westdahl,20043,Confirmed Eruption,,2.0,1964.0,3.0,10.0,1964.0,4.0,16.0,54.516,-164.65
+300270,Sheveluch,19528,Confirmed Eruption,,3.0,-4900.0,0.0,0.0,,,,56.653,161.36
+312090,Aniakchak,22139,Confirmed Eruption,NW caldera floor (Half Cone),,1280.0,,,,,,56.88,-158.17
+233020,"Fournaise, Piton de la",14308,Confirmed Eruption,NE flank (above Piton de Crac),2.0,1901.0,7.0,4.0,1901.0,7.0,6.0,-21.244,55.708
+267020,Karangetang,16541,Confirmed Eruption,,1.0,2006.0,7.0,3.0,2007.0,10.0,16.0,2.781,125.407
+263250,Merapi,15845,Confirmed Eruption,,,1440.0,0.0,0.0,,,,-7.54,110.446
+300250,Bezymianny,19345,Confirmed Eruption,,1.0,1963.0,5.0,16.0,1963.0,9.0,16.0,55.972,160.595
+241080,Tongariro,13555,Confirmed Eruption,Ngauruhoe (NW sub-crater),2.0,1878.0,9.0,1.0,,,,-39.157,175.632
+320150,Wells Gray-Clearwater,20444,Confirmed Eruption,Kostal Cone,,1550.0,0.0,0.0,,,,52.33,-120.57
+285082,Rausudake,18719,Confirmed Eruption,,3.0,1800.0,0.0,0.0,,,,44.076,145.122
+358040,Michinmahuida,12176,Confirmed Eruption,,2.0,1742.0,0.0,0.0,,,,-42.799,-72.445
+256010,Tinakula,15210,Confirmed Eruption,,1.0,2008.0,9.0,19.0,2008.0,11.0,29.0,-10.386,165.804
+322010,Hood,20575,Uncertain Eruption,,,1869.0,0.0,0.0,,,,45.374,-121.695
+354020,Ubinas,11789,Confirmed Eruption,,2.0,1869.0,10.0,0.0,,,,-16.355,-70.903
+300240,Tolbachik,19278,Confirmed Eruption,"SW flank (Sosed, Malenky)",,-100.0,0.0,0.0,,,,55.832,160.326
+312030,Pavlof,20124,Confirmed Eruption,,2.0,1901.0,0.0,0.0,,,,55.417,-161.894
+332040,Hualalai,10250,Confirmed Eruption,"NW rift zone (Puu Alauawa, Nahaha)",0.0,1150.0,0.0,0.0,,,,19.692,-155.87
+343020,Santa Ana,19900,Confirmed Eruption,,3.0,1874.0,0.0,0.0,,,,13.853,-89.63
+290360,Chikurachki,18856,Confirmed Eruption,,2.0,2003.0,4.0,17.0,2003.0,7.0,3.0,50.324,155.461
+282060,Kikai,16982,Confirmed Eruption,Old Iwo-dake,,-2450.0,0.0,0.0,,,,30.793,130.305
+373030,Bardarbunga,20955,Confirmed Eruption,Holuhraun,0.0,2014.0,8.0,29.0,2015.0,2.0,27.0,64.633,-17.516
+372070,Hekla,12700,Confirmed Eruption,VatnafjÃÂ¶ll (Grasleysisfjallahraun),,-4150.0,0.0,0.0,,,,63.983,-19.666
+264110,Iya,15524,Confirmed Eruption,,2.0,1953.0,9.0,4.0,1953.0,9.0,5.0,-8.891,121.641
+283160,Bandaisan,17893,Confirmed Eruption,Numanotaira,,-550.0,0.0,0.0,,,,37.601,140.072
+283190,Zaozan [Zaosan],17968,Confirmed Eruption,Okama,2.0,1804.0,5.0,0.0,,,,38.144,140.44
+372030,Katla,12622,Confirmed Eruption,,,-2000.0,0.0,0.0,,,,63.633,-19.083
+360120,Pelee,12407,Confirmed Eruption,,4.0,-590.0,0.0,0.0,,,,14.809,-61.165
+300130,Karymsky,19163,Confirmed Eruption,,2.0,1921.0,9.0,0.0,,,,54.049,159.443
+285040,Shikotsu,18625,Uncertain Eruption,Tarumai,1.0,1947.0,10.0,15.0,1947.0,10.0,15.0,42.688,141.38
+300130,Karymsky,19168,Confirmed Eruption,,2.0,1933.0,9.0,0.0,1933.0,10.0,0.0,54.049,159.443
+283110,Asamayama,17760,Confirmed Eruption,,2.0,1899.0,3.0,11.0,,,,36.406,138.523
+357140,Carran-Los Venados,12188,Confirmed Eruption,CarrÃÂ¡n Maar,4.0,1955.0,7.0,27.0,1955.0,11.0,12.0,-40.35,-72.07
+282110,Asosan,17258,Uncertain Eruption,Naka-dake,2.0,1671.0,0.0,0.0,,,,32.884,131.104
+600000,Unknown Source,13251,Confirmed Eruption,"(GISP2, 116 ppb sulfate)",,-7148.0,0.0,0.0,,,,0.0,0.0
+383030,Tenerife,13096,Confirmed Eruption,NW rift zone (Los Hornitos),,90.0,0.0,0.0,,,,28.271,-16.641
+332060,Haleakala,10282,Confirmed Eruption,SW rift zone (~2400 m),,-290.0,0.0,0.0,,,,20.708,-156.25
+255060,Kavachi,15160,Confirmed Eruption,,2.0,1969.0,10.0,28.0,1970.0,2.0,6.0,-8.991,157.979
+284010,Izu-Oshima,18232,Uncertain Eruption,Mihara-yama,,1961.0,7.0,2.0,,,,34.724,139.394
+372070,Hekla,12739,Confirmed Eruption,,4.0,1510.0,7.0,25.0,,,,63.983,-19.666
+351012,"Bravo, Cerro",11261,Confirmed Eruption,,4.0,-730.0,0.0,0.0,,,,5.091,-75.293
+257030,Ambae,15237,Confirmed Eruption,Lake Voui,2.0,2005.0,11.0,27.0,2006.0,2.0,16.0,-15.389,167.835
+271080,Camiguin,16720,Discredited Eruption,,,1902.0,7.0,27.0,,,,9.203,124.673
+285080,Kussharo,18721,Confirmed Eruption,Atosanupuri,,-3550.0,0.0,0.0,,,,43.615,144.427
+360120,Pelee,12401,Confirmed Eruption,,4.0,-2430.0,0.0,0.0,,,,14.809,-61.165
+355100,Lascar,11872,Confirmed Eruption,,2.0,1996.0,10.0,18.0,1996.0,10.0,18.0,-23.37,-67.73
+241080,Tongariro,14599,Confirmed Eruption,Ngauruhoe,2.0,1968.0,8.0,18.0,,,,-39.157,175.632
+300010,Kambalny,22198,Confirmed Eruption,,3.0,2017.0,3.0,24.0,2017.0,4.0,10.0,51.306,156.875
+272070,Mahagnao,16751,Uncertain Eruption,,,1895.0,0.0,0.0,,,,10.882,124.888
+223030,Nyiragongo,14092,Confirmed Eruption,,1.0,1901.0,0.0,0.0,,,,-1.52,29.25
+241080,Tongariro,14577,Confirmed Eruption,Ngauruhoe,2.0,1928.0,3.0,3.0,,,,-39.157,175.632
+357122,Lanin,12086,Confirmed Eruption,,,560.0,0.0,0.0,,,,-39.637,-71.502
+358057,"Hudson, Cerro",12292,Confirmed Eruption,,,-790.0,0.0,0.0,,,,-45.9,-72.97
+322060,Belknap,20586,Confirmed Eruption,Little Belknap,0.0,-1030.0,0.0,0.0,,,,44.285,-121.841
+345050,Barva,11194,Confirmed Eruption,,4.0,-6050.0,0.0,0.0,,,,10.135,-84.1
+211020,Vesuvius,10047,Confirmed Eruption,,4.0,-880.0,0.0,0.0,,,,40.821,14.426
+351080,Galeras,11368,Uncertain Eruption,,2.0,1947.0,7.0,15.0,,,,1.22,-77.37
+300121,Veer,19108,Discredited Eruption,,,1856.0,0.0,0.0,,,,53.75,158.45
+373010,Grimsvotn,12756,Confirmed Eruption,Laki (Botnahraun),0.0,-4550.0,0.0,0.0,,,,64.416,-17.316
+332010,Kilauea,20738,Confirmed Eruption,SW rift zone,0.0,-1650.0,0.0,0.0,,,,19.421,-155.287
+353010,Fernandina,11665,Confirmed Eruption,ESE flank (600 m),2.0,1968.0,5.0,21.0,1968.0,5.0,23.0,-0.37,-91.55
+313030,Redoubt,20383,Uncertain Eruption,,,1819.0,0.0,0.0,,,,60.485,-152.742
+252120,Ulawun,15065,Confirmed Eruption,,2.0,2001.0,8.0,28.0,2001.0,8.0,28.0,-5.05,151.33
+233020,"Fournaise, Piton de la",14345,Uncertain Eruption,,2.0,1949.0,10.0,0.0,,,,-21.244,55.708
+241070,Taupo,14551,Confirmed Eruption,Ouaha Hills,2.0,-800.0,0.0,0.0,,,,-38.82,176.0
+283240,Iwatesan,18063,Uncertain Eruption,,2.0,1687.0,4.0,14.0,1687.0,7.0,0.0,39.853,141.001
+283020,Hakoneyama,17382,Confirmed Eruption,NW side of Kami-yama (Kanmuriga-take),,-1400.0,0.0,0.0,,,,35.233,139.021
+300100,Avachinsky,19086,Confirmed Eruption,,4.0,1827.0,6.0,27.0,1827.0,6.0,29.0,53.256,158.836
+271040,Makaturing,16702,Uncertain Eruption,,,1856.0,0.0,0.0,,,,7.644,124.317
+258020,Hunter Island,15366,Confirmed Eruption,East side,,1895.0,11.0,24.0,,,,-22.4,172.05
+282110,Asosan,17225,Confirmed Eruption,Naka-dake,2.0,1387.0,6.0,19.0,,,,32.884,131.104
+332020,Mauna Loa,10135,Confirmed Eruption,SW rift zone,0.0,-3250.0,0.0,0.0,,,,19.475,-155.608
+241080,Tongariro,14563,Confirmed Eruption,Ngauruhoe,2.0,1907.0,11.0,0.0,,,,-39.157,175.632
+233020,"Fournaise, Piton de la",14269,Confirmed Eruption,Cratere Faujas,0.0,1830.0,10.0,0.0,,,,-21.244,55.708
+264030,Rinjani,16217,Confirmed Eruption,Gunung Barujari (Segara Munjar),2.0,1915.0,11.0,4.0,,,,-8.42,116.47
+311310,Makushin,19984,Confirmed Eruption,,2.0,1926.0,12.0,30.0,,,,53.891,-166.923
+284110,Kita-Ioto,18382,Uncertain Eruption,Funka-Asane,0.0,1982.0,6.0,16.0,1982.0,6.0,16.0,25.424,141.284
+358057,"Hudson, Cerro",12289,Confirmed Eruption,,,-3890.0,0.0,0.0,,,,-45.9,-72.97
+284010,Izu-Oshima,18217,Uncertain Eruption,Mihara-yama,,1934.0,9.0,0.0,,,,34.724,139.394
+285070,Akan,18683,Confirmed Eruption,Me-Akan,,1550.0,0.0,0.0,,,,43.384,144.013
+358060,Lautaro,12322,Confirmed Eruption,,2.0,1979.0,3.0,8.0,,,,-49.019,-73.504
+312070,Veniaminof,20159,Uncertain Eruption,Western intracaldera cone,2.0,1852.0,0.0,0.0,,,,56.17,-159.38
+284133,Fukujin,18433,Uncertain Eruption,,0.0,1958.0,8.0,16.0,1958.0,9.0,16.0,21.93,143.47
+264030,Rinjani,16226,Confirmed Eruption,Summit and NE flank of Barujari,2.0,2004.0,10.0,1.0,2004.0,10.0,5.0,-8.42,116.47
+283110,Asamayama,17810,Confirmed Eruption,,2.0,2004.0,9.0,1.0,2004.0,12.0,9.0,36.406,138.523
+300140,Maly Semyachik,19191,Confirmed Eruption,Ceno-Semiachik,,-5850.0,0.0,0.0,,,,54.135,159.674
+373010,Grimsvotn,12830,Confirmed Eruption,8 km N of Svartibunki,1.0,1938.0,5.0,0.0,,,,64.416,-17.316
+283080,Midagahara,17530,Confirmed Eruption,Jigoku-dani,2.0,1839.0,6.0,10.0,,,,36.571,137.59
+211060,Etna,13641,Confirmed Eruption,,2.0,1157.0,0.0,0.0,,,,37.748,14.999
+241050,Okataina,14511,Confirmed Eruption,Waimangu (NW of Fairy Crater),1.0,1906.0,2.0,21.0,1906.0,2.0,21.0,-38.12,176.5
+211060,Etna,13730,Confirmed Eruption,Central Crater,2.0,1803.0,1.0,1.0,1819.0,0.0,0.0,37.748,14.999
+300040,Zheltovsky,18915,Confirmed Eruption,,5.0,-7050.0,0.0,0.0,,,,51.577,157.328
+283090,Niigata-Yakeyama,17542,Confirmed Eruption,"NE-SW fissures, both sides of summit",2.0,1949.0,2.0,5.0,1949.0,9.0,13.0,36.921,138.036
+256010,Tinakula,15198,Confirmed Eruption,,3.0,1951.0,10.0,23.0,1951.0,11.0,27.0,-10.386,165.804
+284130,Fukutoku-Oka-no-Ba,18454,Uncertain Eruption,,0.0,1958.0,7.0,1.0,1958.0,10.0,1.0,24.285,141.481
+357040,Planchon-Peteroa,11927,Confirmed Eruption,,3.0,900.0,0.0,0.0,,,,-35.223,-70.568
+372030,Katla,12628,Confirmed Eruption,,,-1670.0,0.0,0.0,,,,63.633,-19.083
+382040,Graciosa,20967,Confirmed Eruption,San Tamao,,-1950.0,,,,,,39.02,-27.97
+285070,Akan,18707,Confirmed Eruption,Me-Akan (Ponmachineshiri),1.0,2008.0,11.0,18.0,2008.0,11.0,28.0,43.384,144.013
+241040,Whakaari/White Island,14467,Uncertain Eruption,,2.0,1908.0,11.0,28.0,1908.0,12.0,6.0,-37.52,177.18
+341040,Colima,10468,Uncertain Eruption,,1.0,1973.0,1.0,30.0,,,,19.514,-103.62
+285040,Shikotsu,17605,Confirmed Eruption,Tarumai,2.0,1919.0,5.0,4.0,1919.0,5.0,4.0,42.688,141.38
+263250,Merapi,15836,Discredited Eruption,,,1006.0,0.0,0.0,,,,-7.54,110.446
+221290,Corbetti Caldera,13958,Discredited Eruption,,,1957.0,7.0,2.0,1964.0,7.0,2.0,7.193,38.39
+282060,Kikai,16985,Confirmed Eruption,Iwo-dake,,-280.0,0.0,0.0,,,,30.793,130.305
+245010,Taveuni,14830,Confirmed Eruption,,2.0,-680.0,0.0,0.0,,,,-16.82,-179.97
+357021,Maipo,11912,Uncertain Eruption,,2.0,1908.0,0.0,0.0,,,,-34.164,-69.832
+268060,Gamalama,16602,Uncertain Eruption,,2.0,1643.0,6.0,15.0,,,,0.8,127.33
+284010,Izu-Oshima,18243,Confirmed Eruption,Mihara-yama,2.0,1987.0,11.0,16.0,1988.0,1.0,27.0,34.724,139.394
+243060,Tofua,14751,Uncertain Eruption,Northern part of caldera,0.0,1993.0,4.0,29.0,,,,-19.75,-175.07
+373082,Heidarspordar,12924,Confirmed Eruption,"Ludent, Namafjall-Krofluhals",,-7850.0,0.0,0.0,,,,65.583,-16.817
+283190,Zaozan [Zaosan],17948,Confirmed Eruption,Goshiki-dake area,4.0,300.0,0.0,0.0,,,,38.144,140.44
+357120,Villarrica,12127,Confirmed Eruption,,2.0,1859.0,5.0,19.0,1860.0,4.0,12.0,-39.42,-71.93
+242021,Macauley,14682,Uncertain Eruption,"""Brimstone Island,"" W of Macauley Island",0.0,1825.0,9.0,6.0,,,,-30.21,-178.475
+267020,Karangetang,16543,Confirmed Eruption,,2.0,2008.0,11.0,29.0,2010.0,3.0,24.0,2.781,125.407
+311340,Westdahl,20042,Confirmed Eruption,Pogromni or (more likely) Westdahl,2.0,1827.0,0.0,0.0,1830.0,0.0,0.0,54.516,-164.65
+251030,Karkar,14949,Uncertain Eruption,,1.0,1980.0,1.0,7.0,1980.0,1.0,17.0,-4.649,145.964
+283180,Azumayama,17931,Confirmed Eruption,Issaikyo (near Oana),1.0,1895.0,3.0,8.0,1895.0,9.0,13.0,37.735,140.244
+345060,Irazu,11205,Confirmed Eruption,,2.0,1822.0,5.0,7.0,,,,9.979,-83.852
+264150,Paluweh,16267,Confirmed Eruption,Rokatenda (1928 crater),2.0,1963.0,12.0,31.0,1966.0,3.0,16.0,-8.32,121.708
+282110,Asosan,17219,Confirmed Eruption,Naka-dake,2.0,1343.0,0.0,0.0,,,,32.884,131.104
+311120,Great Sitkin,19728,Uncertain Eruption,,,1784.0,0.0,0.0,,,,52.076,-176.13
+233020,"Fournaise, Piton de la",14277,Confirmed Eruption,,0.0,1849.0,0.0,0.0,,,,-21.244,55.708
+357120,Villarrica,12119,Confirmed Eruption,,1.0,1790.0,1.0,0.0,1801.0,0.0,0.0,-39.42,-71.93
+311320,Akutan,19996,Confirmed Eruption,,,550.0,0.0,0.0,,,,54.134,-165.986
+324030,Wapi Lava Field,20694,Confirmed Eruption,"Kings Bowl Rift, Wapi Lava Field",2.0,-300.0,0.0,0.0,,,,42.88,-113.22
+282090,Kirishimayama,17148,Confirmed Eruption,Ohachi,2.0,1896.0,12.0,21.0,,,,31.934,130.862
+300260,Klyuchevskoy,19476,Confirmed Eruption,,2.0,1999.0,2.0,5.0,1999.0,7.0,12.0,56.056,160.642
+242030,Raoul Island,14691,Confirmed Eruption,Pukekohu Crater,3.0,700.0,0.0,0.0,,,,-29.27,-177.92
+261140,Marapi,15428,Confirmed Eruption,,2.0,1871.0,4.0,24.0,,,,-0.38,100.474
+343100,San Miguel,10842,Uncertain Eruption,,2.0,1854.0,0.0,0.0,,,,13.434,-88.269
+263250,Merapi,15838,Confirmed Eruption,,,1090.0,0.0,0.0,,,,-7.54,110.446
+252070,Krummel-Garbuna-Welcker,15006,Confirmed Eruption,Garbuna and Welcker,2.0,150.0,0.0,0.0,,,,-5.416,150.027
+300070,Gorely,19010,Confirmed Eruption,,3.0,1030.0,0.0,0.0,,,,52.559,158.03
+263320,Lamongan,16094,Confirmed Eruption,,2.0,1888.0,9.0,0.0,1888.0,10.0,6.0,-7.981,113.341
+355020,Guallatiri,11821,Confirmed Eruption,,2.0,1960.0,12.0,2.0,,,,-18.42,-69.092
+242050,Monowai,14719,Confirmed Eruption,,0.0,2002.0,11.0,1.0,2002.0,11.0,24.0,-25.887,-177.188
+382030,San Jorge,12996,Confirmed Eruption,,0.0,1907.0,0.0,0.0,,,,38.65,-28.08
+352080,Tungurahua,11636,Confirmed Eruption,,2.0,1857.0,9.0,10.0,,,,-1.467,-78.442
+372070,Hekla,12713,Confirmed Eruption,VatnafjÃÂ¶ll,,-1650.0,0.0,0.0,,,,63.983,-19.666
+313030,Redoubt,20387,Confirmed Eruption,North end of summit crater (2300 m),3.0,1966.0,1.0,24.0,1966.0,2.0,20.0,60.485,-152.742
+284190,Guguan,18532,Discredited Eruption,,,1901.0,0.0,0.0,,,,17.307,145.845
+344040,Telica,10939,Confirmed Eruption,,1.0,2006.0,8.0,4.0,2006.0,8.0,6.0,12.606,-86.84
+268060,Gamalama,16672,Confirmed Eruption,,2.0,1993.0,5.0,6.0,1993.0,5.0,21.0,0.8,127.33
+600000,Unknown Source,13242,Confirmed Eruption,(Byrd Station 1968),,-7953.0,0.0,0.0,,,,0.0,0.0
+390027,Takahe,19972,Confirmed Eruption,,,-7050.0,0.0,0.0,,,,-76.28,-112.08
+284110,Kita-Ioto,18379,Confirmed Eruption,Funka-Asane,2.0,1930.0,0.0,0.0,1945.0,0.0,0.0,25.424,141.284
+273070,Taal,16843,Confirmed Eruption,,2.0,1808.0,2.0,0.0,1808.0,4.0,0.0,14.002,120.993
+600000,Unknown Source,13263,Confirmed Eruption,"(GISP2, 115 ppb sulfate)",,-5995.0,0.0,0.0,,,,0.0,0.0
+263250,Merapi,15883,Confirmed Eruption,,2.0,1888.0,8.0,18.0,1888.0,12.0,20.0,-7.54,110.446
+321010,Baker,20466,Uncertain Eruption,Sherman Crater,,1884.0,0.0,0.0,,,,48.777,-121.813
+283120,Kusatsu-Shiranesan,17839,Confirmed Eruption,,1.0,1941.0,1.0,19.0,1941.0,1.0,19.0,36.618,138.528
+283190,Zaozan [Zaosan],17976,Confirmed Eruption,Okama,2.0,1867.0,10.0,21.0,,,,38.144,140.44
+351080,Galeras,11376,Confirmed Eruption,El Pinta vent,1.0,2002.0,6.0,7.0,2002.0,6.0,7.0,1.22,-77.37
+265090,Banda Api,16395,Confirmed Eruption,,3.0,1586.0,4.0,17.0,,,,-4.523,129.881
+256010,Tinakula,15187,Confirmed Eruption,,3.0,1595.0,9.0,7.0,1595.0,9.0,14.0,-10.386,165.804
+263250,Merapi,15904,Confirmed Eruption,,2.0,1933.0,10.0,1.0,1935.0,4.0,0.0,-7.54,110.446
+241080,Tongariro,14597,Confirmed Eruption,Ngauruhoe,2.0,1959.0,6.0,1.0,,,,-39.157,175.632
+232050,Taftan,14164,Uncertain Eruption,,,1902.0,1.0,0.0,,,,28.6,61.13
+352050,Cotopaxi,11574,Confirmed Eruption,,3.0,1869.0,7.0,0.0,1869.0,8.0,0.0,-0.677,-78.436
+352050,Cotopaxi,11566,Confirmed Eruption,,2.0,1857.0,0.0,0.0,,,,-0.677,-78.436
+283110,Asamayama,17669,Confirmed Eruption,,,-7200.0,0.0,0.0,,,,36.406,138.523
+273030,Mayon,16784,Confirmed Eruption,,1.0,1876.0,11.0,26.0,1876.0,11.0,26.0,13.257,123.685
+283150,Nasudake,17871,Confirmed Eruption,Chausu-dake,2.0,-2000.0,0.0,0.0,,,,37.125,139.963
+263250,Merapi,15890,Confirmed Eruption,,1.0,1902.0,2.0,3.0,1902.0,2.0,3.0,-7.54,110.446
+353060,"Azul, Cerro",11720,Confirmed Eruption,Summit and SE flank,1.0,2008.0,5.0,29.0,2008.0,6.0,17.0,-0.92,-91.408
+285070,Akan,18702,Confirmed Eruption,Me-Akan (Ponmachineshiri crater no. 4),1.0,1996.0,11.0,21.0,1996.0,11.0,21.0,43.384,144.013
+282120,Kujusan,17353,Confirmed Eruption,Sensui-zan,,-7180.0,0.0,0.0,,,,33.086,131.249
+311370,Isanotski,20104,Uncertain Eruption,,2.0,1830.0,11.0,0.0,,,,54.765,-163.723
+245010,Taveuni,14842,Confirmed Eruption,"South Taveuni (Tavuyaga, Ngatutu, Ngatavo)",2.0,520.0,0.0,0.0,,,,-16.82,-179.97
+285070,Akan,18681,Confirmed Eruption,Me-Akan (Ponmachineshiri),,950.0,0.0,0.0,,,,43.384,144.013
+343030,Izalco,10816,Confirmed Eruption,,2.0,1931.0,3.0,31.0,,,,13.813,-89.633
+312070,Veniaminof,20165,Confirmed Eruption,Western intracaldera cone,2.0,1944.0,3.0,28.0,,,,56.17,-159.38
+324020,Craters of the Moon,20690,Confirmed Eruption,Vermillion Chasm to Minidoka-Larkspur,0.0,-1680.0,0.0,0.0,,,,43.42,-113.5
+233020,"Fournaise, Piton de la",14338,Confirmed Eruption,"Bory, rim of Dolomieu",2.0,1942.0,10.0,5.0,1942.0,10.0,25.0,-21.244,55.708
+371030,Krysuvik,19929,Confirmed Eruption,TradarfjÃÂ¶ll,1.0,1340.0,0.0,0.0,,,,63.883,-22.083
+372030,Katla,12592,Confirmed Eruption,,,-4370.0,0.0,0.0,,,,63.633,-19.083
+283110,Asamayama,17676,Confirmed Eruption,,4.0,350.0,11.0,15.0,,,,36.406,138.523
+313030,Redoubt,20366,Confirmed Eruption,,,190.0,0.0,0.0,,,,60.485,-152.742
+357090,Copahue,12008,Confirmed Eruption,Agrio Crater,2.0,1992.0,7.0,22.0,1993.0,7.0,2.0,-37.856,-71.183
+283230,Akita-Komagatake,18050,Confirmed Eruption,,2.0,1890.0,12.0,0.0,1891.0,1.0,0.0,39.761,140.799
+300123,Bakening,19115,Confirmed Eruption,NE flank (Novo-Bakening),2.0,-7550.0,0.0,0.0,,,,53.905,158.07
+357120,Villarrica,12104,Uncertain Eruption,,,1640.0,2.0,3.0,,,,-39.42,-71.93
+372030,Katla,12661,Confirmed Eruption,,,540.0,0.0,0.0,,,,63.633,-19.083
+264050,Sangeang Api,16251,Confirmed Eruption,Doro Api,3.0,1985.0,7.0,30.0,1988.0,2.0,16.0,-8.2,119.07
+353060,"Azul, Cerro",11725,Confirmed Eruption,,,1951.0,7.0,2.0,,,,-0.92,-91.408
+300130,Karymsky,19178,Confirmed Eruption,,2.0,1953.0,7.0,2.0,,,,54.049,159.443
+283070,Yakedake,17514,Confirmed Eruption,"Summit (Inkyo-ko), NW flank (Kurodani)",2.0,1924.0,11.0,16.0,1926.0,1.0,27.0,36.227,137.587
+283220,Chokaisan,18030,Uncertain Eruption,,2.0,1764.0,0.0,0.0,,,,39.099,140.049
+211030,Ischia,13383,Confirmed Eruption,,,80.0,0.0,0.0,,,,40.73,13.897
+262000,Krakatau,15600,Confirmed Eruption,Anak Krakatau,2.0,1949.0,5.0,12.0,,,,-6.102,105.423
+257040,Ambrym,15297,Confirmed Eruption,Benbow and Marum,2.0,2008.0,5.0,23.0,2018.0,12.0,17.0,-16.25,168.12
+300130,Karymsky,19187,Confirmed Eruption,Summit and upper south flank,3.0,2001.0,11.0,15.0,2016.0,4.0,1.0,54.049,159.443
+311310,Makushin,19865,Confirmed Eruption,,5.0,-6100.0,0.0,0.0,,,,53.891,-166.923
+265050,Teon,16377,Confirmed Eruption,,3.0,1693.0,0.0,0.0,,,,-6.976,129.144
+345033,Arenal,11117,Confirmed Eruption,,4.0,-1250.0,0.0,0.0,,,,10.463,-84.703
+211060,Etna,13486,Confirmed Eruption,,,-4150.0,0.0,0.0,,,,37.748,14.999
+360060,Soufriere Guadeloupe,12357,Confirmed Eruption,,3.0,1340.0,0.0,0.0,,,,16.044,-61.664
+283240,Iwatesan,18056,Confirmed Eruption,Nishi-Iwate,,-5650.0,0.0,0.0,,,,39.853,141.001
+282080,Aira,17070,Confirmed Eruption,Minami-dake,2.0,1799.0,3.0,27.0,,,,31.593,130.657
+311320,Akutan,20023,Confirmed Eruption,,2.0,1973.0,3.0,16.0,1973.0,5.0,16.0,54.134,-165.986
+343020,Santa Ana,19897,Discredited Eruption,,,1650.0,0.0,0.0,,,,13.853,-89.63
+334021,Northern EPR at 16ÃÂ°N,10325,Confirmed Eruption,,0.0,-50.0,0.0,0.0,,,,15.83,-105.43
+344040,Telica,10935,Confirmed Eruption,,1.0,2001.0,1.0,17.0,2001.0,12.0,19.0,12.606,-86.84
+255020,Bagana,15115,Confirmed Eruption,,2.0,1865.0,0.0,0.0,1883.0,0.0,0.0,-6.137,155.196
+357150,Puyehue-Cordon Caulle,12196,Confirmed Eruption,,,-4230.0,0.0,0.0,,,,-40.59,-72.117
+211060,Etna,13646,Confirmed Eruption,,2.0,1194.0,0.0,0.0,,,,37.748,14.999
+372030,Katla,12676,Confirmed Eruption,,4.0,1860.0,5.0,8.0,1860.0,5.0,27.0,63.633,-19.083
+323080,Lassen Volcanic Center,20655,Confirmed Eruption,Cinder Cone,3.0,1666.0,0.0,0.0,,,,40.492,-121.508
+300250,Bezymianny,19325,Confirmed Eruption,Pra-Bezymianny,,-5050.0,0.0,0.0,,,,55.972,160.595
+332010,Kilauea,20742,Confirmed Eruption,East rift zone,0.0,-410.0,0.0,0.0,,,,19.421,-155.287
+242050,Monowai,14716,Confirmed Eruption,,0.0,1997.0,12.0,15.0,1998.0,2.0,4.0,-25.887,-177.188
+284010,Izu-Oshima,18156,Confirmed Eruption,,,-1050.0,0.0,0.0,,,,34.724,139.394
+211030,Ischia,13380,Confirmed Eruption,,,-6.0,0.0,0.0,,,,40.73,13.897
+332020,Mauna Loa,10202,Confirmed Eruption,Mokuaweoweo,0.0,1875.0,1.0,10.0,1875.0,2.0,9.0,19.475,-155.608
+241080,Tongariro,13560,Uncertain Eruption,SSE flank (Red Crater),1.0,1890.0,3.0,0.0,,,,-39.157,175.632
+261170,Kerinci,15517,Confirmed Eruption,,2.0,1967.0,11.0,2.0,,,,-1.697,101.264
+332000,Loihi,20731,Uncertain Eruption,,0.0,1986.0,9.0,20.0,1986.0,9.0,20.0,18.92,-155.27
+284090,Izu-Torishima,18368,Confirmed Eruption,"Komochi-yama, N & SW offshore flanks",3.0,1902.0,8.0,7.0,1902.0,8.0,24.0,30.484,140.303
+600000,Unknown Source,13252,Confirmed Eruption,"(GISP2, 236 ppb sulfate)",,-6955.0,0.0,0.0,,,,0.0,0.0
+357110,Llaima,12075,Confirmed Eruption,,2.0,2003.0,4.0,9.0,2003.0,4.0,16.0,-38.692,-71.729
+360120,Pelee,12402,Confirmed Eruption,,,-2360.0,0.0,0.0,,,,14.809,-61.165
+357090,Copahue,12006,Confirmed Eruption,,,1960.0,7.0,2.0,,,,-37.856,-71.183
+372050,Torfajokull,12681,Confirmed Eruption,Hrafntinnusker and Domadalshraun,,-5050.0,0.0,0.0,,,,63.892,-19.122
+233010,Karthala,14180,Confirmed Eruption,Summit caldera ?,,1833.0,0.0,0.0,,,,-11.75,43.38
+233020,"Fournaise, Piton de la",14278,Confirmed Eruption,,0.0,1850.0,11.0,3.0,1850.0,11.0,12.0,-21.244,55.708
+263310,Tengger Caldera,16050,Confirmed Eruption,Bromo,2.0,1922.0,2.0,5.0,1922.0,6.0,20.0,-7.942,112.95
+322060,Belknap,20588,Confirmed Eruption,Belknap Crater,2.0,480.0,0.0,0.0,,,,44.285,-121.841
+266030,Soputan,13593,Confirmed Eruption,NE flank (Aeseput),2.0,1923.0,11.0,27.0,1924.0,1.0,18.0,1.112,124.737
+344100,Masaya,11037,Confirmed Eruption,Santiago,1.0,2001.0,4.0,23.0,2001.0,4.0,25.0,11.985,-86.165
+355100,Lascar,11864,Confirmed Eruption,Western crater of east summit cone,3.0,1986.0,9.0,14.0,1986.0,9.0,16.0,-23.37,-67.73
+382100,Furnas,13037,Confirmed Eruption,N floor of younger caldera,5.0,80.0,0.0,0.0,,,,37.77,-25.32
+284130,Fukutoku-Oka-no-Ba,17591,Uncertain Eruption,,0.0,1962.0,7.0,1.0,1962.0,10.0,1.0,24.285,141.481
+263090,Tangkuban Parahu,15666,Confirmed Eruption,,,-8020.0,0.0,0.0,,,,-6.77,107.6
+221100,Dubbi,13938,Uncertain Eruption,,2.0,1863.0,0.0,0.0,,,,13.579,41.809
+283220,Chokaisan,18007,Uncertain Eruption,,,577.0,12.0,1.0,578.0,7.0,15.0,39.099,140.049
+345060,Irazu,11213,Uncertain Eruption,,2.0,1882.0,0.0,0.0,,,,9.979,-83.852
+211060,Etna,13825,Confirmed Eruption,SE flank (3100-2800 m and 2400-2100 m),2.0,1991.0,12.0,14.0,1993.0,3.0,30.0,37.748,14.999
+282070,Ata,17009,Confirmed Eruption,Kaimon,3.0,-1610.0,0.0,0.0,,,,31.22,130.57
+311110,Kanaga,19705,Confirmed Eruption,,,-1900.0,0.0,0.0,,,,51.923,-177.168
+357010,Tupungatito,11889,Uncertain Eruption,,2.0,1835.0,0.0,0.0,,,,-33.425,-69.797
+311360,Shishaldin,20937,Confirmed Eruption,,1.0,2014.0,1.0,28.0,2015.0,10.0,16.0,54.756,-163.97
+211060,Etna,13645,Discredited Eruption,,,1175.0,0.0,0.0,,,,37.748,14.999
+263310,Tengger Caldera,16049,Confirmed Eruption,Bromo,2.0,1921.0,6.0,0.0,1921.0,10.0,17.0,-7.942,112.95
+283110,Asamayama,17717,Confirmed Eruption,,2.0,1661.0,10.0,21.0,,,,36.406,138.523
+264050,Sangeang Api,16241,Confirmed Eruption,,2.0,1927.0,0.0,0.0,,,,-8.2,119.07
+373060,Askja,12906,Confirmed Eruption,Litladynga and Askja,0.0,-1250.0,0.0,0.0,,,,65.033,-16.783
+255060,Kavachi,15165,Confirmed Eruption,,1.0,1977.0,2.0,22.0,,,,-8.991,157.979
+386020,Bouvet,13148,Confirmed Eruption,,0.0,-50.0,0.0,0.0,,,,-54.408,3.351
+282110,Asosan,17328,Confirmed Eruption,Naka-dake,1.0,1955.0,7.0,25.0,1955.0,7.0,28.0,32.884,131.104
+344100,Masaya,11023,Confirmed Eruption,Santiago,1.0,1913.0,7.0,12.0,,,,11.985,-86.165
+251020,Manam,14912,Confirmed Eruption,,2.0,1925.0,0.0,0.0,,,,-4.08,145.037
+311070,Gareloi,19675,Confirmed Eruption,,2.0,1790.0,0.0,0.0,,,,51.79,-178.794
+284120,Ioto,18417,Confirmed Eruption,West side (Asodai),1.0,1982.0,11.0,28.0,1982.0,12.0,16.0,24.751,141.289
+243030,Unnamed,22185,Confirmed Eruption,,0.0,2017.0,1.0,23.0,2017.0,1.0,31.0,-20.852,-175.55
+312150,Mageik,20217,Confirmed Eruption,East Mageik,,-550.0,0.0,0.0,,,,58.195,-155.253
+211020,Vesuvius,13338,Confirmed Eruption,,3.0,1697.0,9.0,15.0,1698.0,7.0,0.0,40.821,14.426
+300080,Opala,19032,Confirmed Eruption,,,-1550.0,0.0,0.0,,,,52.543,157.339
+263250,Merapi,15866,Confirmed Eruption,,2.0,1791.0,0.0,0.0,,,,-7.54,110.446
+282110,Asosan,17289,Confirmed Eruption,Naka-dake,2.0,1894.0,3.0,6.0,1894.0,8.0,30.0,32.884,131.104

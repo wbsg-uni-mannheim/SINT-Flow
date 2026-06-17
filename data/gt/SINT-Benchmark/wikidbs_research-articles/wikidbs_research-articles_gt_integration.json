@@ -1,0 +1,75 @@
+{
+    "integrated_schema_by_entity": {
+        "Publication": {
+            "attributes": [
+                "ArticleDescription",
+                "ArticleType",
+                "ArticleTitle",
+                "JournalIssue",
+                "ArticlePages",
+                "JournalVolume",
+                "PublicationDate",
+                "CoAuthorName",
+                "Journal_id",
+                "ArticleDoi",
+                "PrimaryAuthor",
+                "CitedWorks",
+                "ResearchSubject",
+                "Abstract"
+            ],
+            "foreign_keys": {
+                "Journal_id": {"Journal": "Journal_id"}
+            }
+        },
+        "Journal": {
+            "attributes": [
+                "Journal_id",
+                "JournalName",
+                "JournalDescription",
+                "JournalType",
+                "PublisherName",
+                "JournalWebsite",
+                "InceptionDate",
+                "JournalCountry"
+            ],
+            "foreign_keys": {}
+        }
+    },
+    "integrated_schema_by_table": {
+        "Publication": {
+            "attributes": [
+                "ArticleDescription",
+                "ArticleType",
+                "ArticleTitle",
+                "JournalIssue",
+                "ArticlePages",
+                "JournalVolume",
+                "PublicationDate",
+                "CoAuthorName",
+                "Journal_id",
+                "ArticleDoi",
+                "PrimaryAuthor",
+                "CitedWorks",
+                "ResearchSubject",
+                "Abstract"
+
+            ],
+            "foreign_keys": {
+                "Journal_id": {"Journal": "Journal_id"}
+            }
+        },
+        "Journal": {
+            "attributes": [
+                "Journal_id",
+                "JournalName",
+                "JournalDescription",
+                "JournalType",
+                "PublisherName",
+                "JournalWebsite",
+                "InceptionDate",
+                "JournalCountry"
+            ],
+            "foreign_keys": {}
+        }
+    }
+}

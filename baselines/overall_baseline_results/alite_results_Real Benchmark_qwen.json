@@ -1,0 +1,45 @@
+{
+    "average_precision": 0.756326854720018,
+    "average_recall": 0.7500826077138552,
+    "average_f_measure": 0.7367956371775984,
+    "total_time": 716.1725333370268,
+    "final_precision": {
+        "25ksep11": 0.6566265060240963,
+        "amo-ame": 0.5188470066518847,
+        "school_report": 0.7225274725274725,
+        "stockport_contracts": 0.5265285497726124,
+        "cihr": 0.9596122778675282,
+        "500spend": 0.9433962264150944,
+        "1009ipopayments": 1.0,
+        "chicago_parks": 0.56353591160221,
+        "oranogram-junior": 0.6532438478747203,
+        "DCMS_NHM_NHM": 0.9302325581395349,
+        "afdr-clienteles": 0.8450450450450451
+    },
+    "final_recall": {
+        "25ksep11": 0.6869747899159664,
+        "amo-ame": 0.8327402135231317,
+        "school_report": 0.7634252539912917,
+        "stockport_contracts": 0.7226074895977809,
+        "cihr": 0.7795275590551181,
+        "500spend": 0.8695652173913043,
+        "1009ipopayments": 1.0,
+        "chicago_parks": 0.8571428571428571,
+        "oranogram-junior": 0.474025974025974,
+        "DCMS_NHM_NHM": 0.4819277108433735,
+        "afdr-clienteles": 0.7829716193656093
+    },
+    "final_f_measure": {
+        "25ksep11": 0.6714579055441479,
+        "amo-ame": 0.6393442622950819,
+        "school_report": 0.7424135497529993,
+        "stockport_contracts": 0.6091786027477346,
+        "cihr": 0.8602461984069515,
+        "500spend": 0.9049773755656109,
+        "1009ipopayments": 1.0,
+        "chicago_parks": 0.6799999999999999,
+        "oranogram-junior": 0.5493885230479775,
+        "DCMS_NHM_NHM": 0.6349206349206349,
+        "afdr-clienteles": 0.8128249566724437
+    }
+}

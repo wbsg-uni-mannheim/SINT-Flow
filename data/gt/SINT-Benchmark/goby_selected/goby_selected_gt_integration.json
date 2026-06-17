@@ -1,0 +1,106 @@
+{
+    "integrated_schema_by_entity": {
+        "Event": {
+            "attributes": [
+                "showTime",
+                "ticketPrice",
+                "doorTime",
+                "fullDates",
+                "description",
+                "venueID",
+                "artists",
+                "shortDescription",
+                "endDate",
+                "moreDetailURL",
+                "website",
+                "startDate",
+                "eventImage",
+                "type",
+                "endTime",
+                "name",
+                "phone",
+                "email",
+                "length",
+                "ages"
+            ],
+            "foreign_keys": {
+                "venueID": {"Venue": "venueID"}
+            }
+        },
+        "Venue": {
+            "attributes": [
+                "venueID",
+                "venue",
+                "state",
+                "locationName",
+                "longitude",
+                "latitude",
+                "location",
+                "zip",
+                "address",
+                "city",
+                "country"
+            ],
+            "foreign_keys": {}
+        }
+    },
+    "integrated_schema_by_table": {
+        "Event": {
+            "attributes": [
+                "Event_id",
+                "name",
+                "ages",
+                "type"
+            ],
+            "foreign_keys": {}
+        },
+        "EventScreening": {
+            "attributes": [
+                "Event_id",
+                "doorTime",
+                "moreDetailURL",
+                "startDate",
+                "shortDescription",
+                "website",
+                "showTime",
+                "ticketPrice",
+                "endDate",
+                "phone",
+                "eventImage",
+                "Venue_id",
+                "description",
+                "fullDates",
+                "email"
+
+            ],
+            "foreign_keys": {
+                "Event_id": {"Event": "Event_id"},
+                "Venue_id": {"Venue": "Venue_id"}
+            }
+        },
+        "Venue": {
+            "attributes": [
+                "city",
+                "zip",
+                "state",
+                "locationName",
+                "location",
+                "address",
+                "venue",
+                "Venue_id",
+                "longitude",
+                "latitude"
+            ],
+            "foreign_keys": {}
+        },
+        "Artist": {
+            "attributes": [
+                "Event_id",
+                "name"
+            ],
+            "foreign_keys": {
+                "Event_id": {"Event": "Event_id"}
+            }
+        }
+    }
+}

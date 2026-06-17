@@ -1,0 +1,712 @@
+{
+    "Real Benchmark": {
+        "1009ipopayments": {
+            "Coma": {
+                "true_combinations": 154,
+                "predicted_combinations": 151,
+                "true_positives": 80,
+                "false_positives": 71,
+                "false_negatives": 74,
+                "precision": 0.5298013245033113,
+                "recall": 0.5194805194805194,
+                "f1_score": 0.5245901639344263
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 154,
+                "predicted_combinations": 121,
+                "true_positives": 100,
+                "false_positives": 21,
+                "false_negatives": 54,
+                "precision": 0.8264462809917356,
+                "recall": 0.6493506493506493,
+                "f1_score": 0.7272727272727273
+            },
+            "Coma-instances": {
+                "true_combinations": 154,
+                "predicted_combinations": 103,
+                "true_positives": 93,
+                "false_positives": 10,
+                "false_negatives": 61,
+                "precision": 0.9029126213592233,
+                "recall": 0.6038961038961039,
+                "f1_score": 0.7237354085603113
+            }
+        },
+        "25ksep11": {
+            "Coma": {
+                "true_combinations": 446,
+                "predicted_combinations": 760,
+                "true_positives": 272,
+                "false_positives": 488,
+                "false_negatives": 174,
+                "precision": 0.35789473684210527,
+                "recall": 0.6098654708520179,
+                "f1_score": 0.45107794361525705
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 446,
+                "predicted_combinations": 443,
+                "true_positives": 362,
+                "false_positives": 81,
+                "false_negatives": 84,
+                "precision": 0.8171557562076749,
+                "recall": 0.8116591928251121,
+                "f1_score": 0.8143982002249719
+            },
+            "Coma-instances": {
+                "true_combinations": 446,
+                "predicted_combinations": 487,
+                "true_positives": 364,
+                "false_positives": 123,
+                "false_negatives": 82,
+                "precision": 0.7474332648870636,
+                "recall": 0.8161434977578476,
+                "f1_score": 0.7802786709539121
+            }
+        },
+        "500spend": {
+            "Coma": {
+                "true_combinations": 115,
+                "predicted_combinations": 101,
+                "true_positives": 57,
+                "false_positives": 44,
+                "false_negatives": 58,
+                "precision": 0.5643564356435643,
+                "recall": 0.4956521739130435,
+                "f1_score": 0.5277777777777778
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 115,
+                "predicted_combinations": 79,
+                "true_positives": 71,
+                "false_positives": 8,
+                "false_negatives": 44,
+                "precision": 0.8987341772151899,
+                "recall": 0.6173913043478261,
+                "f1_score": 0.7319587628865979
+            },
+            "Coma-instances": {
+                "true_combinations": 115,
+                "predicted_combinations": 78,
+                "true_positives": 77,
+                "false_positives": 1,
+                "false_negatives": 38,
+                "precision": 0.9871794871794872,
+                "recall": 0.6695652173913044,
+                "f1_score": 0.7979274611398963
+            }
+        },
+        "afdr-clienteles": {
+            "Coma": {
+                "true_combinations": 1198,
+                "predicted_combinations": 2652,
+                "true_positives": 895,
+                "false_positives": 1757,
+                "false_negatives": 303,
+                "precision": 0.33748114630467574,
+                "recall": 0.7470784641068448,
+                "f1_score": 0.4649350649350649
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 1198,
+                "predicted_combinations": 962,
+                "true_positives": 835,
+                "false_positives": 127,
+                "false_negatives": 363,
+                "precision": 0.867983367983368,
+                "recall": 0.6969949916527546,
+                "f1_score": 0.7731481481481481
+            },
+            "Coma-instances": {
+                "true_combinations": 1198,
+                "predicted_combinations": 291,
+                "true_positives": 237,
+                "false_positives": 54,
+                "false_negatives": 961,
+                "precision": 0.8144329896907216,
+                "recall": 0.19782971619365608,
+                "f1_score": 0.3183344526527871
+            }
+        },
+        "amo-ame": {
+            "Coma": {
+                "true_combinations": 182,
+                "predicted_combinations": 266,
+                "true_positives": 105,
+                "false_positives": 161,
+                "false_negatives": 77,
+                "precision": 0.39473684210526316,
+                "recall": 0.5769230769230769,
+                "f1_score": 0.46875
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 182,
+                "predicted_combinations": 172,
+                "true_positives": 122,
+                "false_positives": 50,
+                "false_negatives": 60,
+                "precision": 0.7093023255813954,
+                "recall": 0.6703296703296703,
+                "f1_score": 0.6892655367231638
+            },
+            "Coma-instances": {
+                "true_combinations": 182,
+                "predicted_combinations": 140,
+                "true_positives": 104,
+                "false_positives": 36,
+                "false_negatives": 78,
+                "precision": 0.7428571428571429,
+                "recall": 0.5714285714285714,
+                "f1_score": 0.6459627329192547
+            }
+        },
+        "chicago_parks": {
+            "Coma": {
+                "true_combinations": 119,
+                "predicted_combinations": 227,
+                "true_positives": 39,
+                "false_positives": 188,
+                "false_negatives": 80,
+                "precision": 0.17180616740088106,
+                "recall": 0.3277310924369748,
+                "f1_score": 0.2254335260115607
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 119,
+                "predicted_combinations": 114,
+                "true_positives": 41,
+                "false_positives": 73,
+                "false_negatives": 78,
+                "precision": 0.35964912280701755,
+                "recall": 0.3445378151260504,
+                "f1_score": 0.351931330472103
+            },
+            "Coma-instances": {
+                "true_combinations": 119,
+                "predicted_combinations": 103,
+                "true_positives": 54,
+                "false_positives": 49,
+                "false_negatives": 65,
+                "precision": 0.5242718446601942,
+                "recall": 0.453781512605042,
+                "f1_score": 0.4864864864864865
+            }
+        },
+        "cihr": {
+            "Coma": {
+                "true_combinations": 762,
+                "predicted_combinations": 912,
+                "true_positives": 485,
+                "false_positives": 427,
+                "false_negatives": 277,
+                "precision": 0.5317982456140351,
+                "recall": 0.636482939632546,
+                "f1_score": 0.5794504181600956
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 762,
+                "predicted_combinations": 668,
+                "true_positives": 599,
+                "false_positives": 69,
+                "false_negatives": 163,
+                "precision": 0.8967065868263473,
+                "recall": 0.7860892388451444,
+                "f1_score": 0.8377622377622378
+            },
+            "Coma-instances": {
+                "true_combinations": 762,
+                "predicted_combinations": 652,
+                "true_positives": 624,
+                "false_positives": 28,
+                "false_negatives": 138,
+                "precision": 0.9570552147239264,
+                "recall": 0.8188976377952756,
+                "f1_score": 0.8826025459688827
+            }
+        },
+        "DCMS_NHM_NHM": {
+            "Coma": {
+                "true_combinations": 166,
+                "predicted_combinations": 193,
+                "true_positives": 57,
+                "false_positives": 136,
+                "false_negatives": 109,
+                "precision": 0.29533678756476683,
+                "recall": 0.3433734939759036,
+                "f1_score": 0.31754874651810583
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 166,
+                "predicted_combinations": 110,
+                "true_positives": 96,
+                "false_positives": 14,
+                "false_negatives": 70,
+                "precision": 0.8727272727272727,
+                "recall": 0.5783132530120482,
+                "f1_score": 0.6956521739130435
+            },
+            "Coma-instances": {
+                "true_combinations": 166,
+                "predicted_combinations": 109,
+                "true_positives": 109,
+                "false_positives": 0,
+                "false_negatives": 57,
+                "precision": 1.0,
+                "recall": 0.6566265060240963,
+                "f1_score": 0.7927272727272727
+            }
+        },
+        "oranogram-junior": {
+            "Coma": {
+                "true_combinations": 616,
+                "predicted_combinations": 1003,
+                "true_positives": 320,
+                "false_positives": 683,
+                "false_negatives": 296,
+                "precision": 0.3190428713858425,
+                "recall": 0.5194805194805194,
+                "f1_score": 0.39530574428659665
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 616,
+                "predicted_combinations": 658,
+                "true_positives": 370,
+                "false_positives": 288,
+                "false_negatives": 246,
+                "precision": 0.5623100303951368,
+                "recall": 0.6006493506493507,
+                "f1_score": 0.5808477237048666
+            },
+            "Coma-instances": {
+                "true_combinations": 616,
+                "predicted_combinations": 267,
+                "true_positives": 201,
+                "false_positives": 66,
+                "false_negatives": 415,
+                "precision": 0.7528089887640449,
+                "recall": 0.3262987012987013,
+                "f1_score": 0.4552661381653454
+            }
+        },
+        "school_report": {
+            "Coma": {
+                "true_combinations": 521,
+                "predicted_combinations": 473,
+                "true_positives": 206,
+                "false_positives": 267,
+                "false_negatives": 315,
+                "precision": 0.4355179704016913,
+                "recall": 0.39539347408829173,
+                "f1_score": 0.41448692152917505
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 521,
+                "predicted_combinations": 516,
+                "true_positives": 261,
+                "false_positives": 255,
+                "false_negatives": 260,
+                "precision": 0.5058139534883721,
+                "recall": 0.5009596928982726,
+                "f1_score": 0.5033751205400193
+            },
+            "Coma-instances": {
+                "true_combinations": 521,
+                "predicted_combinations": 958,
+                "true_positives": 182,
+                "false_positives": 776,
+                "false_negatives": 339,
+                "precision": 0.18997912317327767,
+                "recall": 0.3493282149712092,
+                "f1_score": 0.24611223799864773
+            }
+        },
+        "stockport_contracts": {
+            "Coma": {
+                "true_combinations": 1286,
+                "predicted_combinations": 1701,
+                "true_positives": 723,
+                "false_positives": 978,
+                "false_negatives": 563,
+                "precision": 0.42504409171075835,
+                "recall": 0.562208398133748,
+                "f1_score": 0.4840977569467693
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 1286,
+                "predicted_combinations": 1183,
+                "true_positives": 986,
+                "false_positives": 197,
+                "false_negatives": 300,
+                "precision": 0.8334742180896028,
+                "recall": 0.7667185069984448,
+                "f1_score": 0.7987039287160794
+            },
+            "Coma-instances": {
+                "true_combinations": 1286,
+                "predicted_combinations": 1570,
+                "true_positives": 1039,
+                "false_positives": 531,
+                "false_negatives": 247,
+                "precision": 0.6617834394904458,
+                "recall": 0.8079315707620529,
+                "f1_score": 0.7275910364145658
+            }
+        },
+        "average_results": {
+            "Coma": {
+                "avg_precision": 0.39661969267971775,
+                "avg_recall": 0.5212426930021352,
+                "avg_f1_score": 0.4412230967013482
+            },
+            "Coma-instances": {
+                "avg_precision": 0.7527921924350479,
+                "avg_recall": 0.5701570227385329,
+                "avg_f1_score": 0.6233658585443057
+            },
+            "Coma-instances-schema": {
+                "avg_precision": 0.7409366447557377,
+                "avg_recall": 0.6384539696395749,
+                "avg_f1_score": 0.6822105354876326
+            }
+        }
+    },
+    "SINT-Benchmark": {
+        "airline-data": {
+            "Coma": {
+                "true_combinations": 457,
+                "predicted_combinations": 724,
+                "true_positives": 219,
+                "false_positives": 505,
+                "false_negatives": 238,
+                "precision": 0.30248618784530384,
+                "recall": 0.47921225382932164,
+                "f1_score": 0.37087214225232856
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 457,
+                "predicted_combinations": 561,
+                "true_positives": 259,
+                "false_positives": 302,
+                "false_negatives": 198,
+                "precision": 0.46167557932263814,
+                "recall": 0.5667396061269147,
+                "f1_score": 0.5088408644400786
+            },
+            "Coma-instances": {
+                "true_combinations": 457,
+                "predicted_combinations": 371,
+                "true_positives": 283,
+                "false_positives": 88,
+                "false_negatives": 174,
+                "precision": 0.7628032345013477,
+                "recall": 0.6192560175054704,
+                "f1_score": 0.6835748792270532
+            }
+        },
+        "car-listings": {
+            "Coma": {
+                "true_combinations": 449,
+                "predicted_combinations": 551,
+                "true_positives": 269,
+                "false_positives": 282,
+                "false_negatives": 180,
+                "precision": 0.4882032667876588,
+                "recall": 0.5991091314031181,
+                "f1_score": 0.538
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 449,
+                "predicted_combinations": 407,
+                "true_positives": 304,
+                "false_positives": 103,
+                "false_negatives": 145,
+                "precision": 0.7469287469287469,
+                "recall": 0.6770601336302895,
+                "f1_score": 0.7102803738317757
+            },
+            "Coma-instances": {
+                "true_combinations": 449,
+                "predicted_combinations": 255,
+                "true_positives": 216,
+                "false_positives": 39,
+                "false_negatives": 233,
+                "precision": 0.8470588235294118,
+                "recall": 0.48106904231625836,
+                "f1_score": 0.6136363636363636
+            }
+        },
+        "games": {
+            "Coma": {
+                "true_combinations": 230,
+                "predicted_combinations": 328,
+                "true_positives": 122,
+                "false_positives": 206,
+                "false_negatives": 108,
+                "precision": 0.3719512195121951,
+                "recall": 0.5304347826086957,
+                "f1_score": 0.43727598566308246
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 230,
+                "predicted_combinations": 223,
+                "true_positives": 143,
+                "false_positives": 80,
+                "false_negatives": 87,
+                "precision": 0.6412556053811659,
+                "recall": 0.6217391304347826,
+                "f1_score": 0.6313465783664459
+            },
+            "Coma-instances": {
+                "true_combinations": 230,
+                "predicted_combinations": 288,
+                "true_positives": 143,
+                "false_positives": 145,
+                "false_negatives": 87,
+                "precision": 0.4965277777777778,
+                "recall": 0.6217391304347826,
+                "f1_score": 0.5521235521235521
+            }
+        },
+        "goby_selected": {
+            "Coma": {
+                "true_combinations": 1339,
+                "predicted_combinations": 2633,
+                "true_positives": 839,
+                "false_positives": 1794,
+                "false_negatives": 500,
+                "precision": 0.3186479301177364,
+                "recall": 0.6265870052277819,
+                "f1_score": 0.42245720040281975
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 1339,
+                "predicted_combinations": 1710,
+                "true_positives": 898,
+                "false_positives": 812,
+                "false_negatives": 441,
+                "precision": 0.5251461988304094,
+                "recall": 0.6706497386109037,
+                "f1_score": 0.5890455887176124
+            },
+            "Coma-instances": {
+                "true_combinations": 1339,
+                "predicted_combinations": 1053,
+                "true_positives": 711,
+                "false_positives": 342,
+                "false_negatives": 628,
+                "precision": 0.6752136752136753,
+                "recall": 0.5309932785660941,
+                "f1_score": 0.5944816053511706
+            }
+        },
+        "park_events": {
+            "Coma": {
+                "true_combinations": 150,
+                "predicted_combinations": 144,
+                "true_positives": 89,
+                "false_positives": 55,
+                "false_negatives": 61,
+                "precision": 0.6180555555555556,
+                "recall": 0.5933333333333334,
+                "f1_score": 0.6054421768707483
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 150,
+                "predicted_combinations": 106,
+                "true_positives": 89,
+                "false_positives": 17,
+                "false_negatives": 61,
+                "precision": 0.839622641509434,
+                "recall": 0.5933333333333334,
+                "f1_score": 0.6953125
+            },
+            "Coma-instances": {
+                "true_combinations": 150,
+                "predicted_combinations": 91,
+                "true_positives": 89,
+                "false_positives": 2,
+                "false_negatives": 61,
+                "precision": 0.978021978021978,
+                "recall": 0.5933333333333334,
+                "f1_score": 0.7385892116182573
+            }
+        },
+        "volcanic-eruptions": {
+            "Coma": {
+                "true_combinations": 500,
+                "predicted_combinations": 825,
+                "true_positives": 287,
+                "false_positives": 538,
+                "false_negatives": 213,
+                "precision": 0.3478787878787879,
+                "recall": 0.574,
+                "f1_score": 0.4332075471698113
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 500,
+                "predicted_combinations": 571,
+                "true_positives": 303,
+                "false_positives": 268,
+                "false_negatives": 197,
+                "precision": 0.5306479859894921,
+                "recall": 0.606,
+                "f1_score": 0.5658263305322129
+            },
+            "Coma-instances": {
+                "true_combinations": 500,
+                "predicted_combinations": 532,
+                "true_positives": 300,
+                "false_positives": 232,
+                "false_negatives": 200,
+                "precision": 0.5639097744360902,
+                "recall": 0.6,
+                "f1_score": 0.5813953488372093
+            }
+        },
+        "wikidbs_horror-film-character": {
+            "Coma": {
+                "true_combinations": 87,
+                "predicted_combinations": 69,
+                "true_positives": 28,
+                "false_positives": 41,
+                "false_negatives": 59,
+                "precision": 0.4057971014492754,
+                "recall": 0.3218390804597701,
+                "f1_score": 0.358974358974359
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 87,
+                "predicted_combinations": 53,
+                "true_positives": 40,
+                "false_positives": 13,
+                "false_negatives": 47,
+                "precision": 0.7547169811320755,
+                "recall": 0.45977011494252873,
+                "f1_score": 0.5714285714285714
+            },
+            "Coma-instances": {
+                "true_combinations": 87,
+                "predicted_combinations": 46,
+                "true_positives": 45,
+                "false_positives": 1,
+                "false_negatives": 42,
+                "precision": 0.9782608695652174,
+                "recall": 0.5172413793103449,
+                "f1_score": 0.6766917293233082
+            }
+        },
+        "wikidbs_monuments": {
+            "Coma": {
+                "true_combinations": 224,
+                "predicted_combinations": 277,
+                "true_positives": 97,
+                "false_positives": 180,
+                "false_negatives": 127,
+                "precision": 0.35018050541516244,
+                "recall": 0.4330357142857143,
+                "f1_score": 0.3872255489021956
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 224,
+                "predicted_combinations": 238,
+                "true_positives": 119,
+                "false_positives": 119,
+                "false_negatives": 105,
+                "precision": 0.5,
+                "recall": 0.53125,
+                "f1_score": 0.5151515151515151
+            },
+            "Coma-instances": {
+                "true_combinations": 224,
+                "predicted_combinations": 174,
+                "true_positives": 131,
+                "false_positives": 43,
+                "false_negatives": 93,
+                "precision": 0.7528735632183908,
+                "recall": 0.5848214285714286,
+                "f1_score": 0.6582914572864321
+            }
+        },
+        "wikidbs_paintings-collection": {
+            "Coma": {
+                "true_combinations": 483,
+                "predicted_combinations": 890,
+                "true_positives": 227,
+                "false_positives": 663,
+                "false_negatives": 256,
+                "precision": 0.2550561797752809,
+                "recall": 0.4699792960662526,
+                "f1_score": 0.3306627822286963
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 483,
+                "predicted_combinations": 632,
+                "true_positives": 296,
+                "false_positives": 336,
+                "false_negatives": 187,
+                "precision": 0.46835443037974683,
+                "recall": 0.6128364389233955,
+                "f1_score": 0.5309417040358745
+            },
+            "Coma-instances": {
+                "true_combinations": 483,
+                "predicted_combinations": 408,
+                "true_positives": 307,
+                "false_positives": 101,
+                "false_negatives": 176,
+                "precision": 0.7524509803921569,
+                "recall": 0.6356107660455487,
+                "f1_score": 0.6891133557800224
+            }
+        },
+        "wikidbs_research-articles": {
+            "Coma": {
+                "true_combinations": 890,
+                "predicted_combinations": 1302,
+                "true_positives": 549,
+                "false_positives": 753,
+                "false_negatives": 341,
+                "precision": 0.4216589861751152,
+                "recall": 0.6168539325842697,
+                "f1_score": 0.5009124087591241
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 890,
+                "predicted_combinations": 902,
+                "true_positives": 643,
+                "false_positives": 259,
+                "false_negatives": 247,
+                "precision": 0.7128603104212861,
+                "recall": 0.7224719101123596,
+                "f1_score": 0.7176339285714286
+            },
+            "Coma-instances": {
+                "true_combinations": 890,
+                "predicted_combinations": 683,
+                "true_positives": 557,
+                "false_positives": 126,
+                "false_negatives": 333,
+                "precision": 0.8155197657393851,
+                "recall": 0.6258426966292134,
+                "f1_score": 0.7082008900190718
+            }
+        },
+        "average_results": {
+            "Coma": {
+                "avg_precision": 0.38799157205120716,
+                "avg_recall": 0.5244384529798257,
+                "avg_f1_score": 0.4385030151223165
+            },
+            "Coma-instances": {
+                "avg_precision": 0.7622640442395431,
+                "avg_recall": 0.5809907072712475,
+                "avg_f1_score": 0.6496098393202441
+            },
+            "Coma-instances-schema": {
+                "avg_precision": 0.6181208479894995,
+                "avg_recall": 0.6061850406114507,
+                "avg_f1_score": 0.6035807955075515
+            }
+        }
+    }
+}

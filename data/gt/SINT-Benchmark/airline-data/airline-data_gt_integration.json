@@ -1,0 +1,53 @@
+{
+    "integrated_schema_by_entity": {
+        "Passenger": {
+            "attributes": [
+                "Gender",
+                "Nationality",
+                "Age",
+                "Last Name",
+                "Passenger ID",
+                "First Name",
+                "Flight_ID"
+            ],
+            "foreign_keys": {
+                "Flight_ID": {"Flight": "Flight_ID"}
+            }
+        },
+        "Airport": {
+            "attributes": [
+                "IATA_Code",
+                "Identifier",
+                "Airport_ID",
+                "Latitude",
+                "Airport Country Code",
+                "Country_CodeA3",
+                "Airport Name",
+                "Country Name",
+                "ISO_Region",
+                "MunicipalityName",
+                "Longitude",
+                "Airport Continent",
+                "Elevation_Ft",
+                "Type",
+                "Continents"
+            ],
+            "foreign_keys": {}
+        },
+        "Flight": {
+            "attributes": [
+                "Arrival Airport",
+                "Pilot Name",
+                "Flight Status",
+                "Departure Date",
+                "Airport_ID",
+                "Flight_ID"
+            ],
+            "foreign_keys": {
+                "Airport_ID": {"Airport": "Airport_ID"}
+            }
+        }
+    },
+    "integrated_schema_by_table": {
+    }
+}

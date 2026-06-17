@@ -1,0 +1,90 @@
+{
+    "integrated_schema_by_entity": {
+        "Event": {
+            "attributes": [
+                "EventName",
+                "Movie_id",
+                "Location_id",
+                "Phone",
+                "StartDate",
+                "EndDate",
+                "EventUrl",
+                "ContactName",
+                "ContactEmail",
+                "Underwriter"
+            ],
+            "foreign_keys": {
+                "Movie_id": {"Movie": "Movie_id"},
+                "Location_id": {"Location": "Location_id"}
+            }
+        },
+        "Movie": {
+            "attributes": [
+                "Movie_id",
+                "MovieName",
+                "MovieClosedCaption",
+                "MovieRating"
+            ],
+            "foreign_keys": {}
+        },
+        "Location": {
+            "attributes": [
+                "Location_id",
+                "ParkName",
+                "ZipCode",
+                "ParkUrl",
+                "Community",
+                "Location"
+            ],
+            "foreign_keys": {}
+        }
+    },
+    "integrated_schema_by_table": {
+        "Event": {
+            "attributes": [
+                "EventName",
+                "Movie_id",
+                "Location_id",
+                "Phone",
+                "StartDate",
+                "EndDate",
+                "EventUrl",
+                "Contact_id",
+                "Underwriter"
+            ],
+            "foreign_keys": {
+                "Movie_id": {"Movie": "Movie_id"},
+                "Location_id": {"Location": "Location_id"},
+                "Contact_id": {"Contact": "Contact_id"}
+            }
+        },
+        "Contact": {
+            "attributes": [
+                "Contact_id",
+                "ContactName",
+                "ContactEmail"
+            ],
+            "foreign_keys": {}
+        },
+        "Movie": {
+            "attributes": [
+                "Movie_id",
+                "MovieName",
+                "MovieClosedCaption",
+                "MovieRating"
+            ],
+            "foreign_keys": {}
+        },
+        "Location": {
+            "attributes": [
+                "Location_id",
+                "Location",
+                "ZipCode",
+                "ParkUrl",
+                "Community",
+                "Location 1"
+            ],
+            "foreign_keys": {}
+        }
+    }
+}

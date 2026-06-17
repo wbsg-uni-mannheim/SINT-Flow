@@ -1,0 +1,153 @@
+volcano_number,volcano_name,eruption_number,area_of_activity,vei,ystart,mstart,dstart,evidence_method_dating,yend,mend,dend,latitude,longitude
+352020,Guagua Pichincha,11473,,2.0,1534.0,0.0,0.0,,,,,-0.171,-78.598
+241080,Tongariro,14556,Saddle Cone to Half Cone,5.0,-9650.0,0.0,0.0,Tephrochronology,,,,-39.157,175.632
+312030,Pavlof,20113,,2.0,1817.0,0.0,0.0,Historical Observations,,,,55.417,-161.894
+267040,Awu,16552,,3.0,1640.0,12.0,0.0,,1641.0,1.0,4.0,3.689,125.447
+341040,Colima,10429,,3.0,1771.0,0.0,0.0,Historical Observations,,,,19.514,-103.62
+345070,Turrialba,11241,,,1847.0,0.0,0.0,,,,,10.025,-83.767
+266030,Soputan,22105,,3.0,2016.0,1.0,2.0,Historical Observations,2016.0,2.0,7.0,1.112,124.737
+250030,Central Bismarck Sea,14860,,0.0,1972.0,1.0,8.0,Hydrophonic,1972.0,1.0,12.0,-3.03,147.78
+341021,Socorro,10370,Lower SW flank (near Bahia Braithwaite),,-3090.0,0.0,0.0,Radiocarbon (uncorrected),,,,18.78,-110.95
+285070,Akan,18687,Me-Akan,1.0,1927.0,4.0,0.0,,1927.0,5.0,0.0,43.384,144.013
+257040,Ambrym,15250,,2.0,1908.0,0.0,0.0,Historical Observations,,,,-16.25,168.12
+251050,Long Island,14957,Lake Wisdom,,1938.0,0.0,0.0,Historical Observations,,,,-5.358,147.12
+263200,Dieng Volcanic Complex,15769,,,1180.0,0.0,0.0,Radiocarbon (uncorrected),,,,-7.2,109.879
+321050,St. Helens,20518,,5.0,-2340.0,0.0,0.0,Radiocarbon (corrected),,,,46.2,-122.18
+342110,Pacaya,10761,MacKenney Crater and flank vents,3.0,1965.0,7.0,4.0,Historical Observations,1989.0,3.0,10.0,14.382,-90.601
+263340,Raung,16122,,2.0,1913.0,5.0,10.0,Historical Observations,1913.0,12.0,0.0,-8.119,114.056
+233020,"Fournaise, Piton de la",14330,,,1932.0,11.0,0.0,Historical Observations,1932.0,11.0,0.0,-21.244,55.708
+283070,Yakedake,17502,,2.0,1912.0,2.0,11.0,Historical Observations,1912.0,9.0,0.0,36.227,137.587
+300130,Karymsky,22265,,3.0,2018.0,4.0,28.0,Historical Observations,2018.0,9.0,30.0,54.049,159.443
+257020,Gaua,15229,Mt. Garat,1.0,1981.0,7.0,9.0,Historical Observations,1981.0,7.0,9.0,-14.27,167.5
+600000,Unknown Source,13240,"(GISP2, 97 ppb sulfate)",,-8026.0,0.0,0.0,Ice Core,,,,0.0,0.0
+357110,Llaima,12025,,2.0,1759.0,12.0,0.0,Historical Observations,,,,-38.692,-71.729
+266030,Soputan,13588,NE flank (Aeseput),2.0,1910.0,11.0,15.0,Historical Observations,,,,1.112,124.737
+372030,Katla,12633,,,-1280.0,0.0,0.0,Tephrochronology,,,,63.633,-19.083
+211060,Etna,13719,Central Crater,,1770.0,5.0,28.0,,,,,37.748,14.999
+355100,Lascar,11871,,2.0,1994.0,11.0,13.0,Historical Observations,1995.0,7.0,20.0,-23.37,-67.73
+332010,Kilauea,10089,Halemaumau and Kilauea caldera,0.0,1954.0,5.0,31.0,Historical Observations,1954.0,6.0,3.0,19.421,-155.287
+332020,Mauna Loa,10222,NE rift zone (2800 m) and Mokuaweoweo,0.0,1942.0,4.0,26.0,Historical Observations,1942.0,5.0,10.0,19.475,-155.608
+273030,Mayon,16802,,2.0,1947.0,1.0,8.0,Historical Observations,1947.0,2.0,0.0,13.257,123.685
+264050,Sangeang Api,20911,Summit crater,3.0,2014.0,5.0,30.0,Historical Observations,2015.0,11.0,5.0,-8.2,119.07
+211060,Etna,13501,"SE flank (700 m, Monte Gorna)",,-396.0,4.0,15.0,Historical Observations,,,,37.748,14.999
+357040,Planchon-Peteroa,11937,Peteroa,2.0,1878.0,0.0,0.0,Historical Observations,,,,-35.223,-70.568
+390020,Erebus,13157,,2.0,1911.0,10.0,0.0,Historical Observations,,,,-77.53,167.17
+258001,Eastern Gemini Seamount,15356,,1.0,1996.0,2.0,18.0,Historical Observations,1996.0,2.0,22.0,-20.98,170.28
+313030,Redoubt,20350,,,-600.0,0.0,0.0,Varve Count,,,,60.485,-152.742
+233010,Karthala,14175,,,1808.0,0.0,0.0,Historical Observations,,,,-11.75,43.38
+311060,Semisopochnoi,19672,Cerberus,,1873.0,0.0,0.0,Historical Observations,,,,51.93,179.58
+341090,Popocatepetl,10536,,1.0,1720.0,0.0,0.0,Historical Observations,,,,19.023,-98.622
+313030,Redoubt,20364,,,70.0,0.0,0.0,Varve Count,,,,60.485,-152.742
+390081,Montagu Island,13202,,1.0,1996.0,9.0,1.0,,,,,-58.445,-26.374
+334050,Northern EPR at 9.8ÃÂ°N,10336,East Pacific Rise (9.9 deg N),0.0,1600.0,0.0,0.0,Uranium-series,,,,9.83,-104.3
+351090,Azufral,11385,,4.0,-930.0,0.0,0.0,Radiocarbon (uncorrected),,,,1.08,-77.68
+283110,Asamayama,17796,,1.0,1950.0,9.0,23.0,Historical Observations,1951.0,6.0,17.0,36.406,138.523
+282080,Aira,17069,Minami-dake,2.0,1797.0,0.0,0.0,Historical Observations,,,,31.593,130.657
+300270,Sheveluch,19532,,3.0,-4250.0,0.0,0.0,Tephrochronology,,,,56.653,161.36
+341100,"Orizaba, Pico de",10566,,3.0,-1500.0,0.0,0.0,Radiocarbon (uncorrected),,,,19.03,-97.27
+252010,Langila,14991,"Crater 2, Crater 3",2.0,1962.0,3.0,16.0,Historical Observations,1963.0,8.0,11.0,-5.525,148.42
+263280,Kelut,15954,,2.0,1920.0,12.0,6.0,Historical Observations,1920.0,12.0,12.0,-7.93,112.308
+373010,Grimsvotn,12775,,,1369.0,0.0,0.0,Ice Core,,,,64.416,-17.316
+300190,Krasheninnikov,19245,Northern cone (Pauk) & SW of S cone,,1550.0,0.0,0.0,Tephrochronology,,,,54.596,160.27
+290030,Chachadake [Tiatia],18740,NNW and SSE flanks,4.0,1973.0,7.0,14.0,Historical Observations,1973.0,7.0,28.0,44.353,146.252
+284010,Izu-Oshima,18190,,,1634.0,0.0,0.0,Historical Observations,,,,34.724,139.394
+343050,San Salvador,10829,BoquerÃÂ³n summit and north flank,3.0,1917.0,6.0,7.0,Historical Observations,1917.0,11.0,0.0,13.734,-89.294
+357120,Villarrica,21032,,2.0,1600.0,,,Varve Count,,,,-39.42,-71.93
+373030,Bardarbunga,12863,,,1350.0,0.0,0.0,Ice Core,,,,64.633,-17.516
+225060,Bayuda Volcanic Field,14146,,,850.0,0.0,0.0,Radiocarbon (uncorrected),,,,18.33,32.75
+300270,Sheveluch,19508,,4.0,-7630.0,0.0,0.0,Tephrochronology,,,,56.653,161.36
+241100,Ruapehu,14615,,2.0,1903.0,0.0,0.0,Historical Observations,,,,-39.28,175.57
+332040,Hualalai,10249,SSE rift zone (3 km NE of Waha Pele),1.0,1050.0,0.0,0.0,Radiocarbon (uncorrected),,,,19.692,-155.87
+357120,Villarrica,12146,,2.0,1920.0,12.0,10.0,Historical Observations,1920.0,12.0,13.0,-39.42,-71.93
+358050,Corcovado,12302,,,-6030.0,0.0,0.0,Radiocarbon (uncorrected),,,,-43.189,-72.794
+233010,Karthala,14181,SE flank,0.0,1848.0,0.0,0.0,Historical Observations,,,,-11.75,43.38
+341091,"Malinche, La",10498,,,-6310.0,0.0,0.0,Radiocarbon (uncorrected),,,,19.231,-98.032
+222120,"Lengai, Ol Doinyo",14020,North Crater,3.0,1967.0,7.0,8.0,Historical Observations,1967.0,9.0,4.0,-2.764,35.914
+322070,Three Sisters,20591,NW of North Sister (Four-in-One Cone),2.0,40.0,0.0,0.0,Radiocarbon (corrected),,,,44.133,-121.767
+373010,Grimsvotn,12762,,,1010.0,0.0,0.0,Ice Core,,,,64.416,-17.316
+284080,Sumisujima,18337,,0.0,1975.0,8.0,13.0,,1975.0,9.0,26.0,31.44,140.051
+251010,Bam,14891,,2.0,1960.0,4.0,28.0,Historical Observations,1960.0,7.0,6.0,-3.613,144.818
+272050,CabalÃÂ­an,16750,,,1820.0,0.0,0.0,Radiocarbon (uncorrected),,,,10.285,125.218
+212040,Santorini,13887,"Georgios, Afroessa and Reka domes",2.0,1866.0,1.0,26.0,Historical Observations,1870.0,10.0,15.0,36.404,25.396
+283270,Iwakisan,18101,West summit lava dome,,-4050.0,0.0,0.0,Tephrochronology,,,,40.656,140.303
+245030,Nabukelevu,14852,West side of summit dome complex,,340.0,0.0,0.0,Radiocarbon (corrected),,,,-19.12,177.98
+242050,Monowai,14718,,0.0,2002.0,5.0,24.0,Hydrophonic,2002.0,5.0,24.0,-25.887,-177.188
+282080,Aira,17085,East flank of Minami-dake (750 m),1.0,1948.0,7.0,27.0,Historical Observations,1948.0,7.0,27.0,31.593,130.657
+300270,Sheveluch,19571,,3.0,1800.0,0.0,0.0,,,,,56.653,161.36
+211010,Campi Flegrei,10025,,,-2580.0,0.0,0.0,Radiocarbon (uncorrected),,,,40.827,14.139
+332010,Kilauea,20740,SW rift zone,0.0,-1550.0,0.0,0.0,Radiocarbon (uncorrected),,,,19.421,-155.287
+341100,"Orizaba, Pico de",10562,,3.0,-2780.0,0.0,0.0,Radiocarbon (uncorrected),,,,19.03,-97.27
+360050,Soufriere Hills,12343,Castle Peak,,1550.0,0.0,0.0,Radiocarbon (corrected),,,,16.72,-62.18
+214020,Kazbek,13543,,,-4000.0,0.0,0.0,Radiocarbon (uncorrected),,,,42.7,44.5
+265090,Banda Api,16416,,,1855.0,12.0,29.0,,1855.0,12.0,30.0,-4.523,129.881
+357060,"Azul, Cerro",11959,Quizapu,2.0,1949.0,4.0,15.0,Historical Observations,,,,-35.653,-70.761
+311360,Shishaldin,20063,,2.0,1838.0,0.0,0.0,Historical Observations,,,,54.756,-163.97
+285050,Tokachidake,18640,,,950.0,0.0,0.0,Radiocarbon (corrected),,,,43.418,142.686
+257090,Traitor's Head,15352,Four submarine vents N of Erromango,,1959.0,7.0,2.0,,,,,-18.754,169.238
+300120,Zhupanovsky,19128,,,-220.0,0.0,0.0,Radiocarbon (uncorrected),,,,53.589,159.15
+282020,Io-Torishima,16916,,1.0,1868.0,2.0,0.0,Historical Observations,1868.0,4.0,0.0,27.881,128.223
+360120,Pelee,12417,,4.0,450.0,0.0,0.0,Radiocarbon (uncorrected),,,,14.809,-61.165
+283180,Azumayama,17928,Issaikyo (west of Oana),1.0,1893.0,5.0,19.0,Historical Observations,1893.0,7.0,13.0,37.735,140.244
+373080,Krafla,12938,Kerlingarholar,0.0,250.0,0.0,0.0,Tephrochronology,,,,65.715,-16.728
+357120,Villarrica,12103,,2.0,1594.0,0.0,0.0,Historical Observations,,,,-39.42,-71.93
+211060,Etna,13762,"South flank (2045-1800 m), Mt. Silvestri",2.0,1892.0,7.0,9.0,Historical Observations,1892.0,12.0,29.0,37.748,14.999
+373010,Grimsvotn,12805,,,1730.0,0.0,0.0,Historical Observations,,,,64.416,-17.316
+600000,Unknown Source,13295,(Byrd Station 1968),,-171.0,0.0,0.0,Ice Core,,,,0.0,0.0
+344090,Momotombo,10990,,2.0,1736.0,0.0,0.0,Historical Observations,,,,12.423,-86.539
+354004,Andahua-Orcopampa,11737,Cerro TichsÃÂ³,,-2110.0,0.0,0.0,Radiocarbon (uncorrected),,,,-15.42,-72.33
+300270,Sheveluch,19524,,3.0,-6000.0,0.0,0.0,Tephrochronology,,,,56.653,161.36
+222052,Silali,13983,Upper east flank,,-7050.0,0.0,0.0,Ar/Ar,,,,1.15,36.23
+300260,Klyuchevskoy,19447,,1.0,1957.0,7.0,2.0,Historical Observations,,,,56.056,160.642
+341021,Socorro,10371,,2.0,1848.0,0.0,0.0,,,,,18.78,-110.95
+262000,Krakatau,15581,,4.0,535.0,,,Historical Observations,,,,-6.102,105.423
+372030,Katla,12675,Arcuate fissure in south part of caldera,3.0,1823.0,6.0,26.0,Historical Observations,1823.0,7.0,23.0,63.633,-19.083
+372030,Katla,19936,,,904.0,0.0,0.0,,,,,63.633,-19.083
+357110,Llaima,12026,,2.0,1822.0,0.0,0.0,Historical Observations,,,,-38.692,-71.729
+263090,Tangkuban Parahu,20822,Ratu Crater,2.0,2013.0,2.0,21.0,Historical Observations,2013.0,3.0,6.0,-6.77,107.6
+264270,Sirung,16362,,1.0,1965.0,5.0,7.0,Historical Observations,1965.0,5.0,18.0,-8.508,124.13
+241030,Taranaki,14436,Fanthams Peak,,-1130.0,0.0,0.0,Tephrochronology,,,,-39.3,174.07
+300270,Sheveluch,19585,,3.0,1990.0,1.0,10.0,Historical Observations,1995.0,2.0,16.0,56.653,161.36
+352090,Sangay,22259,Summit crater,1.0,2018.0,2.0,25.0,Historical Observations,2018.0,2.0,25.0,-2.005,-78.341
+282030,Suwanosejima,16930,O-take,2.0,1925.0,5.0,13.0,Historical Observations,,,,29.638,129.714
+282110,Asosan,17228,Naka-dake,2.0,1434.0,5.0,10.0,Historical Observations,1434.0,5.0,18.0,32.884,131.104
+265090,Banda Api,16406,,2.0,1762.0,0.0,0.0,Historical Observations,,,,-4.523,129.881
+261140,Marapi,15462,,1.0,1958.0,10.0,17.0,Historical Observations,1958.0,10.0,25.0,-0.38,100.474
+300190,Krasheninnikov,19237,Northern cone and southern cone flank,,-650.0,0.0,0.0,Radiocarbon (corrected),,,,54.596,160.27
+211060,Etna,13673,SE flank,,1579.0,9.0,9.0,Historical Observations,1580.0,0.0,0.0,37.748,14.999
+263340,Raung,16146,,3.0,1982.0,7.0,18.0,Historical Observations,1982.0,7.0,20.0,-8.119,114.056
+257050,Lopevi,15214,,,1933.0,0.0,0.0,Historical Observations,,,,-16.507,168.346
+257020,Gaua,15227,Mt. Garat,2.0,1977.0,4.0,13.0,Historical Observations,1977.0,4.0,13.0,-14.27,167.5
+241061,Maroa,14528,Orakeikorako,,-7050.0,0.0,0.0,Tephrochronology,,,,-38.42,176.08
+360120,Pelee,12426,,,1460.0,0.0,0.0,Radiocarbon (uncorrected),,,,14.809,-61.165
+357020,San Jose,11918,,2.0,1895.0,0.0,0.0,Historical Observations,1897.0,0.0,0.0,-33.789,-69.895
+345020,Rincon de la Vieja,11100,,2.0,1984.0,3.0,31.0,Historical Observations,1984.0,4.0,16.0,10.83,-85.324
+341110,San Martin,10596,,,1838.0,0.0,0.0,,,,,18.57,-95.2
+211020,Vesuvius,13355,Summit and SW flank (300-225 m),3.0,1855.0,12.0,19.0,Historical Observations,1861.0,12.0,31.0,40.821,14.426
+300040,Zheltovsky,18916,,,-6050.0,0.0,0.0,Tephrochronology,,,,51.577,157.328
+300260,Klyuchevskoy,19482,,2.0,2005.0,1.0,20.0,Historical Observations,2005.0,4.0,7.0,56.056,160.642
+390140,Protector Seamounts,13232,,0.0,1962.0,3.0,5.0,Historical Observations,,,,-55.912,-28.167
+282080,Aira,17072,Minami-dake,1.0,1899.0,9.0,24.0,,1899.0,9.0,25.0,31.593,130.657
+233020,"Fournaise, Piton de la",14239,,2.0,1772.0,11.0,18.0,Historical Observations,,,,-21.244,55.708
+313010,Augustine,20257,,,-120.0,0.0,0.0,Radiocarbon (corrected),,,,59.363,-153.43
+233020,"Fournaise, Piton de la",14378,North flank of Dolomieu (2490-2250 m),1.0,2000.0,2.0,14.0,Historical Observations,2000.0,3.0,4.0,-21.244,55.708
+352022,Chacana,11455,,,-1580.0,0.0,0.0,Radiocarbon (uncorrected),,,,-0.375,-78.25
+284100,Kaitoku Seamount,18373,West flank of Nishi-Kaitokuba,0.0,1543.0,0.0,0.0,Historical Observations,,,,26.127,141.102
+241030,Taranaki,14437,,,-590.0,0.0,0.0,Tephrochronology,,,,-39.3,174.07
+342060,Atitlan,10643,,2.0,1837.0,6.0,0.0,Historical Observations,,,,14.583,-91.186
+221170,Adwa,13949,,2.0,1828.0,0.0,0.0,,,,,10.07,40.84
+332060,Haleakala,10275,SW rift zone (~1600 m),,-1850.0,0.0,0.0,Radiocarbon (corrected),,,,20.708,-156.25
+282050,Kuchinoerabujima,16966,Shindake,2.0,1841.0,5.0,23.0,Historical Observations,1841.0,8.0,1.0,30.443,130.217
+352010,Reventador,11428,,2.0,1843.0,0.0,0.0,Historical Observations,,,,-0.077,-77.656
+344070,"Negro, Cerro",10950,,2.0,1929.0,2.0,10.0,Historical Observations,1929.0,3.0,0.0,12.506,-86.702
+300130,Karymsky,19139,,,-4150.0,0.0,0.0,Radiocarbon (corrected),,,,54.049,159.443
+211060,Etna,13498,,,-565.0,0.0,0.0,,,,,37.748,14.999
+373080,Krafla,12933,HvannstÃÂ³d,0.0,-3050.0,0.0,0.0,Radiocarbon (uncorrected),,,,65.715,-16.728
+352020,Guagua Pichincha,11466,,,-2090.0,0.0,0.0,Radiocarbon (corrected),,,,-0.171,-78.598
+357153,Antillanca Volcanic Complex,12190,,5.0,-960.0,0.0,0.0,Radiocarbon (corrected),,,,-40.783,-72.15
+344090,Momotombo,10983,,,-2550.0,0.0,0.0,Radiocarbon (uncorrected),,,,12.423,-86.539
+357110,Llaima,12035,,2.0,1877.0,1.0,16.0,Historical Observations,1877.0,6.0,24.0,-38.692,-71.729
+351030,"Tolima, Nevado del",11292,,4.0,-7800.0,0.0,0.0,Radiocarbon (uncorrected),,,,4.658,-75.33
+283050,Hakusan,17483,Midoriga-ike,2.0,1659.0,4.0,21.0,Historical Observations,1659.0,8.0,8.0,36.155,136.771
+245010,Taveuni,14844,,2.0,770.0,0.0,0.0,Tephrochronology,,,,-16.82,-179.97
+251010,Bam,14871,,,1884.0,0.0,0.0,,,,,-3.613,144.818
+290200,Ketoi,18795,Pallas Peak,2.0,1960.0,9.0,27.0,Historical Observations,,,,47.35,152.475

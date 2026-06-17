@@ -1,0 +1,376 @@
+{
+    "schema_by_entity": {
+        "game_XboxOne_GameSales.csv": {
+            "Game": {
+                "attributes": [
+                    "Pos",
+                    "Game",
+                    "Platform",
+                    "Year",
+                    "Genre",
+                    "Publisher",
+                    "North America",
+                    "Europe",
+                    "Japan",
+                    "Rest of World",
+                    "Global"
+                ],
+                "table_group": "Game"
+            }
+        },
+        "Video_Games_Sales_as_at_22_Dec_2016_128.csv": {
+            "Game": {
+                "attributes": [
+                    "Name",
+                    "Platform",
+                    "Genre",
+                    "Rating",
+                    "Year_of_Release",
+                    "Publisher",
+                    "Developer",
+                    "NA_Sales",
+                    "EU_Sales",
+                    "JP_Sales",
+                    "Other_Sales",
+                    "Global_Sales",
+                    "Critic_Score",
+                    "Critic_Count",
+                    "User_Score",
+                    "User_Count"
+                ],
+                "table_group": "Game"
+            }
+        },
+        "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+            "Game": {
+                "attributes": [
+                    "game_title",
+                    "console_code",
+                    "category",
+                    "esrb_rating",
+                    "release_year",
+                    "pub_name",
+                    "dev_studio",
+                    "sales_na_m",
+                    "sales_eu_m",
+                    "sales_jp_m",
+                    "sales_row_m",
+                    "sales_world_m",
+                    "metacritic_score",
+                    "critic_reviews_n",
+                    "player_score",
+                    "player_ratings_n"
+                ],
+                "table_group": "Game"
+            }
+        },
+        "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+            "Game": {
+                "attributes": [
+                    "title",
+                    "platform",
+                    "genre",
+                    "content_rating",
+                    "release_yr",
+                    "publisher",
+                    "developer",
+                    "na_units_m",
+                    "eu_units_m",
+                    "jp_units_m",
+                    "other_units_m",
+                    "total_units_m",
+                    "crit_score",
+                    "crit_reviews",
+                    "user_score",
+                    "user_ratings"
+                ],
+                "table_group": "Game"
+            }
+        },
+        "vgsales (2)_126.csv": {
+            "Game": {
+                "attributes": [
+                    "Rank",
+                    "Name",
+                    "Platform",
+                    "Year",
+                    "Genre",
+                    "Publisher",
+                    "NA_Sales",
+                    "EU_Sales",
+                    "JP_Sales",
+                    "Other_Sales",
+                    "Global_Sales"
+                ],
+                "table_group": "Game"
+            }
+        },
+        "metacritic.csv": {
+            "Game": {
+                "attributes": [
+                    "name",
+                    "genres",
+                    "rating",
+                    "release_date",
+                    "developer",
+                    "platform",
+                    "number_of_players",
+                    "metascore",
+                    "user_score"
+                ],
+                "table_group": "Game"
+            }
+        }
+    },
+    "schema_by_normalization": {
+        "game_XboxOne_GameSales.csv": {
+            "Game": {
+                "attributes": [
+                    "Game",
+                    "Genre"
+                ],
+                "foreign_keys": {},
+                "primary_key": [
+                    "Game"
+                ],
+                "table_group": "Game"
+            },
+            "GameRelease": {
+                "attributes": [
+                    "Pos",
+                    "Game",
+                    "Platform",
+                    "Year",
+                    "Publisher",
+                    "North America",
+                    "Europe",
+                    "Japan",
+                    "Rest of World",
+                    "Global"
+                ],
+                "foreign_keys": {
+                    "Game": {
+                        "Game": "Game"
+                    }
+                },
+                "primary_key": [
+                    "Game",
+                    "Platform"
+                ],
+                "table_group": "GameRelease"
+            }
+        },
+        "Video_Games_Sales_as_at_22_Dec_2016_128.csv": {
+            "Game": {
+                "attributes": [
+                    "Name",
+                    "Genre",
+                    "Rating"
+                ],
+                "foreign_keys": {},
+                "primary_key": [
+                    "Name"
+                ],
+                "table_group": "Game"
+            },
+            "GameRelease": {
+                "attributes": [
+                    "Name",
+                    "Platform",
+                    "Year_of_Release",
+                    "Publisher",
+                    "Developer",
+                    "NA_Sales",
+                    "EU_Sales",
+                    "JP_Sales",
+                    "Other_Sales",
+                    "Global_Sales",
+                    "Critic_Score",
+                    "Critic_Count",
+                    "User_Score",
+                    "User_Count"
+                ],
+                "foreign_keys": {
+                    "Name": {
+                        "Game": "Name"
+                    }
+                },
+                "primary_key": [
+                    "Name",
+                    "Platform"
+                ],
+                "table_group": "GameRelease"
+            }
+        },
+        "Video_Games_Sales_as_at_22_Dec_2016_137.csv": {
+            "Game": {
+                "attributes": [
+                    "Name",
+                    "Genre",
+                    "Rating"
+                ],
+                "foreign_keys": {},
+                "primary_key": [
+                    "Name"
+                ],
+                "table_group": "Game"
+            },
+            "GameRelease": {
+                "attributes": [
+                    "Name",
+                    "Platform",
+                    "Year_of_Release",
+                    "Publisher",
+                    "Developer",
+                    "NA_Sales",
+                    "EU_Sales",
+                    "JP_Sales",
+                    "Other_Sales",
+                    "Global_Sales",
+                    "Critic_Score",
+                    "Critic_Count",
+                    "User_Score",
+                    "User_Count"
+                ],
+                "foreign_keys": {
+                    "Name": {
+                        "Game": "Name"
+                    }
+                },
+                "primary_key": [
+                    "Name",
+                    "Platform"
+                ],
+                "table_group": "GameRelease"
+            }
+        },
+        "Video_Games_Sales_as_at_22_Dec_2016_138.csv": {
+            "Game": {
+                "attributes": [
+                    "Name",
+                    "Genre",
+                    "Rating"
+                ],
+                "foreign_keys": {},
+                "primary_key": [
+                    "Name"
+                ],
+                "table_group": "Game"
+            },
+            "GameRelease": {
+                "attributes": [
+                    "Name",
+                    "Platform",
+                    "Year_of_Release",
+                    "Publisher",
+                    "Developer",
+                    "NA_Sales",
+                    "EU_Sales",
+                    "JP_Sales",
+                    "Other_Sales",
+                    "Global_Sales",
+                    "Critic_Score",
+                    "Critic_Count",
+                    "User_Score",
+                    "User_Count"
+                ],
+                "foreign_keys": {
+                    "Name": {
+                        "Game": "Name"
+                    }
+                },
+                "primary_key": [
+                    "Name",
+                    "Platform"
+                ],
+                "table_group": "GameRelease"
+            }
+        },
+        "vgsales (2)_126.csv": {
+            "Game": {
+                "attributes": [
+                    "Name",
+                    "Genre"
+                ],
+                "foreign_keys": {},
+                "primary_key": [
+                    "Name"
+                ],
+                "table_group": "Game"
+            },
+            "GameRelease": {
+                "attributes": [
+                    "Rank",
+                    "Name",
+                    "Platform",
+                    "Year",
+                    "Publisher",
+                    "NA_Sales",
+                    "EU_Sales",
+                    "JP_Sales",
+                    "Other_Sales",
+                    "Global_Sales"
+                ],
+                "foreign_keys": {
+                    "Name": {
+                        "Game": "Name"
+                    }
+                },
+                "primary_key": [
+                    "Name",
+                    "Platform"
+                ],
+                "table_group": "GameRelease"
+            }
+        },
+        "metacritic.csv": {
+            "Game": {
+                "attributes": [
+                    "name",
+                    "rating"
+                ],
+                "foreign_keys": {},
+                "primary_key": [
+                    "name"
+                ],
+                "table_group": "Game"
+            },
+            "GameRelease": {
+                "attributes": [
+                    "name",
+                    "release_date",
+                    "developer",
+                    "platform",
+                    "number_of_players",
+                    "metascore",
+                    "user_score"
+                ],
+                "foreign_keys": {
+                    "name": {
+                        "Game": "name"
+                    }
+                },
+                "primary_key": [
+                    "name",
+                    "platform"
+                ],
+                "table_group": "GameRelease"
+            },
+            "Genres": {
+                "attributes": [
+                    "name",
+                    "genres"
+                ],
+                "foreign_keys": {
+                    "name": {
+                        "Game": "name"
+                    }
+                },
+                "primary_key": [
+                    "name"
+                ],
+                "table_group": "Genres"
+            }
+        }
+    }
+}

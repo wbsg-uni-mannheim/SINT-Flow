@@ -1,0 +1,65 @@
+{
+    "integrated_schema_by_entity": {
+        "Game": {
+            "attributes": [
+                "number_of_players",
+                "JP_Sales",
+                "name",
+                "rating",
+                "User_Count",
+                "developer",
+                "Critic_Score",
+                "Publisher",
+                "NA_Sales",
+                "platform",
+                "User_Score",
+                "Global_Sales",
+                "Critic_Count",
+                "Rank",
+                "release_date",
+                "EU_Sales",
+                "genres",
+                "Other_Sales"
+            ],
+            "foreign_keys": {}
+        }
+    },
+    "integrated_schema_by_table": {
+        "Game": {
+            "attributes": [
+                "Game_id",
+                "name",
+                "rating"
+            ],
+            "foreign_keys": {}
+        },
+        "GameRelease": {
+            "attributes": [
+                "JP_Sales",
+                "Game_id",
+                "User_Count",
+                "developer",
+                "Critic_Score",
+                "Publisher",
+                "NA_Sales",
+                "platform",
+                "User_Score",
+                "Global_Sales",
+                "Critic_Count",
+                "Rank",
+                "release_date",
+                "EU_Sales",
+                "number_of_players",
+                "Other_Sales"
+            ],
+            "foreign_keys": {"Game_id": {"Game": "Game_id"}}
+        },
+        "Genres": {
+            "attributes": [
+                "Game_id",
+                "genres"
+            ],
+            "foreign_keys": {"Game_id": {"Game": "Game_id"}}
+        }
+    }
+}
