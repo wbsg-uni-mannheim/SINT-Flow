@@ -2,68 +2,48 @@ import os
 import pandas as pd
 from valentine import valentine_match
 import pdb
-from valentine.algorithms import Coma, Cupid, JaccardDistanceMatcher, ComaPy
-from valentine.algorithms.jaccard_distance import StringDistanceFunction
-from sklearn.metrics import f1_score, precision_recall_fscore_support
+from valentine.algorithms import  ComaPy
 import tqdm
 import sienna
 
 # benchmark = "Real Benchmark"
 benchmark = "SINT-Benchmark"
 
-input_table_folder = f"alite-main/codes/align_utilities/Real Benchmark/" if benchmark == "Real Benchmark" else f"data/selected-tables/SINT-Benchmark/"
-
-# folders = [, "wikidbs_paintings-collection", "wikidbs_horror-film-character", "wikidbs_monuments", "volcanic-eruptions", "games", "goby_selected", "park_events", "car-listings", "airline-data"]
-folders = ["wikidbs_research-articles"] #"wikidbs_monuments""airline-data""car-listings""volcanic-eruptions"
-# folders = os.listdir(f"alite-main/codes/align_utilities/{benchmark}/")
+input_table_folder = f"../alite-main/codes/align_utilities/Real Benchmark/" if benchmark == "Real Benchmark" else f"../data/selected-tables/SINT-Benchmark/"
+folders = os.listdir(input_table_folder)
 
 
 for folder in folders:
-    gt = pd.read_csv(f"data/coma_input/{benchmark}/{folder}_gt_mappings.csv")
+    gt = pd.read_csv(f"../data/coma_input/{benchmark}/{folder}_gt_mappings.csv")
 
     matchers = {
         "Coma": ComaPy(use_instances=False),
         "Coma-instances-schema": ComaPy(use_instances=True, use_schema=True),
         "Coma-instances": ComaPy(use_instances=True, use_schema=False),
-        # "Coma-original": Coma(use_instances=True)
-        # "Cupid": Cupid(th_accept=0.5),
-        # "JaccardL": JaccardDistanceMatcher(distance_fun=StringDistanceFunction.Levenshtein)
     }
 
     matches = {
         "Coma": [],
         "Coma-instances-schema": [],
-        "Coma-instances": [],
-        # "Coma-original": []
-        # "Cupid": [],
-        # "JaccardL": []
+        "Coma-instances": []
     }
 
     matches_mapped = {
         "Coma": [],
         "Coma-instances-schema": [],
-        "Coma-instances": [],
-        # "Coma-original": []
-        # "Cupid": [],
-        # "JaccardL": []
+        "Coma-instances": []
     }
 
     matches_predictions = {
         "Coma": [],
         "Coma-instances-schema": [],
-        "Coma-instances": [],
-        # "Coma-original": []
-        # "Cupid": [],
-        # "JaccardL": []
+        "Coma-instances": []
     }
 
     matches_cm = {
         "Coma": {"tp": 0, "fp": 0, "fn": 0},
         "Coma-instances-schema": {"tp": 0, "fp": 0, "fn": 0},
-        "Coma-instances": {"tp": 0, "fp": 0, "fn": 0},
-        # "Coma-original": {"tp": 0, "fp": 0, "fn": 0}
-        # "Cupid": [],
-        # "JaccardL": []
+        "Coma-instances": {"tp": 0, "fp": 0, "fn": 0}
     }
 
     matchers_evaluation = {}
@@ -83,19 +63,15 @@ for folder in folders:
 
             for matcher in matchers:
                 try:
-                    # matches[matcher].append(valentine_match(df1[:500], df2[:500], matchers[matcher]))
                     found_matches = valentine_match(df1[:500], df2[:500], matchers[matcher])
                     matches[matcher].append(found_matches)
                 except Exception:
-                    # matches[matcher].append([])
                     print(f"Error for {matcher} in table pair {table_name}, {table_name_right}")
                 # Postprocess found matches to be in the same format as gt
                 # Replace table_1 and table_2 with actual table names
                 if found_matches:
                     matches_mapped[matcher].append([((match[0][0].replace("table_1", table_name), match[0][1]), (match[1][0].replace("table_2", table_name_right), match[1][1])) for match in found_matches])
                 
-
-            # pdb.set_trace() 
             for _, correspondences in gt_table[gt_table["table_name_right"]==table_name_right].iterrows():
                 for matcher in matchers:
                     if (('table_1', correspondences["column_name_left"]), ('table_2', correspondences["column_name_right"])) in matches[matcher][gt_nr]:
@@ -144,6 +120,6 @@ for folder in folders:
         "matchers_evaluation": matchers_evaluation
     }
 
-    sienna.save(output_file, f"coma_results/{benchmark}/{folder}_coma_results.json")
-    sienna.save(output_evaluation, f"coma_results/{benchmark}/{folder}_coma_evaluation.json")
+    sienna.save(output_file, f"coma_results_per_use_case/{benchmark}/{folder}_coma_results.json")
+    sienna.save(output_evaluation, f"coma_results_per_use_case/{benchmark}/{folder}_coma_evaluation.json")
 

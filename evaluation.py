@@ -1,7 +1,7 @@
 import csv
 import sienna
 from dataset_utils import load_ground_truth
-from utils import write_txt_file
+# from utils import write_txt_file
 import pandas as pd
 import collections
 import numpy as np

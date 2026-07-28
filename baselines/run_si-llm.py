@@ -1,3 +1,4 @@
+
 from unsloth import FastLanguageModel
 import pandas as pd
 import sienna
@@ -21,6 +22,7 @@ if __name__ == "__main__":
     # model_name = "gpt-5.2-2025-12-11"
     reasoning = "None"
     model_name = "Qwen/Qwen3.6-27B"
+    model_name_output = "Qwen" if "qwen" in model_name.lower() else "GPT-5.2"
     # model_type = "openai"
     model_type = "hf"
     
@@ -51,20 +53,8 @@ if __name__ == "__main__":
     # benchmark = "SINT-Benchmark"
     benchmark = "Real Benchmark"
     
-    attribute_renaming = """The following is a column, its belonging table and its most specific entity type. \
-Your task is to infer attribute name for the given column in the given table considering both column’s header, \
-context and table’s most specific type. An entity type is typically defined as a word or a short phrase representing \
-the overarching category or domain shared by the entities described in the table rows.   
 
-An attribute name should be a concise and semantically meaningful label that reflects not only the type of data\
-in the column but also its specific role in the table’s context. When multiple columns share similar value types,\
-attribute names should distinguish their roles by leveraging contextual cues from the table context \
-and its most specific entity type.
-
-Provide attribute name for the given column.
- 
-Please ONLY output the attribute name for the given column, with no additional text."""
-
+    # SI-LLM prompts from SI-LLM repository: https://github.com/PierreWoL/SILLM/
     table_attribute_renaming = """The following is a column, its belonging table and its most specific entity type. \
 Your task is to infer attribute name for the given column in the given table considering both column’s header, \
 context and table’s most specific type. An entity type is typically defined as a word or a short phrase representing \
@@ -117,40 +107,40 @@ Provide ONLY A VALID JSON format as output, with no additional text.
         "Contract"
     ]
     
-    # pdb.set_trace()
-    for fi, folder_name in tqdm.tqdm(enumerate(os.listdir(f"data/selected-tables/{benchmark}/")), total=len(os.listdir(f"data/selected-tables/{benchmark}/"))):
+    for fi, folder_name in tqdm.tqdm(enumerate(os.listdir(f"../data/selected-tables/{benchmark}/")), total=len(os.listdir(f"../data/selected-tables/{benchmark}/"))):
         res = {}
         gt_file_names, gt_file, gt_mappings, gt_final_integrated_schema = load_ground_truth(folder = folder_name, benchmark = benchmark)
-        table_most_specific_entity_type = table_most_specific_entity_types[fi]
+        if benchmark != "SINT-Benchmark":
+            table_most_specific_entity_type = table_most_specific_entity_types[fi]
+        
         for table_name in gt_file_names:
             res[table_name] = {}
-        #     if folder_name == 'airline-data':
-        #         table_most_specific_entity_type = "Flight" if "Flight" in gt_file["schema_by_entity"][table_name] else "Airport"
-        #     elif folder_name == 'car-listings':
-        #         table_most_specific_entity_type = "Car"
-        #     elif folder_name == 'games':
-        #         table_most_specific_entity_type = "Games"
-        #     elif folder_name == 'park_events' or folder_name == 'goby_selected':
-        #         table_most_specific_entity_type = "Event"
-        #     elif folder_name == 'wikidbs_horror-film-character':
-        #         table_most_specific_entity_type = "Movie Character"
-        #     elif folder_name == 'wikidbs_monuments':
-        #         table_most_specific_entity_type = "Monument"
-        #     elif folder_name == 'wikidbs_paintings-collection':
-        #         table_most_specific_entity_type = "Painting"
-        #     elif folder_name == 'wikidbs_research-articles':
-        #         table_most_specific_entity_type = "Article"
-        #     elif folder_name == 'volcanic-eruptions':
-        #         table_most_specific_entity_type = "Eruption" if "Eruption" in gt_file["schema_by_entity"][table_name] else "Volcano"
-        #     else:
-        #         raise ValueError(f"Unknown folder name: {folder_name}")
+            if benchmark == "SINT-Benchmark":
+                if folder_name == 'airline-data':
+                    table_most_specific_entity_type = "Flight" if "Flight" in gt_file["schema_by_entity"][table_name] else "Airport"
+                elif folder_name == 'car-listings':
+                    table_most_specific_entity_type = "Car"
+                elif folder_name == 'games':
+                    table_most_specific_entity_type = "Games"
+                elif folder_name == 'park_events' or folder_name == 'goby_selected':
+                    table_most_specific_entity_type = "Event"
+                elif folder_name == 'wikidbs_horror-film-character':
+                    table_most_specific_entity_type = "Movie Character"
+                elif folder_name == 'wikidbs_monuments':
+                    table_most_specific_entity_type = "Monument"
+                elif folder_name == 'wikidbs_paintings-collection':
+                    table_most_specific_entity_type = "Painting"
+                elif folder_name == 'wikidbs_research-articles':
+                    table_most_specific_entity_type = "Article"
+                elif folder_name == 'volcanic-eruptions':
+                    table_most_specific_entity_type = "Eruption" if "Eruption" in gt_file["schema_by_entity"][table_name] else "Volcano"
+                else:
+                    raise ValueError(f"Unknown folder name: {folder_name}")
 
-            df = pd.read_csv(f"data/selected-tables/{benchmark}/{folder_name}/{table_name}")
+            df = pd.read_csv(f"../data/selected-tables/{benchmark}/{folder_name}/{table_name}")
             for column in df.columns:
                 messages_list = messages_list = [
-                    # {"role": "system", "content": attribute_renaming},
                     {"role": "system", "content": table_attribute_renaming},
-                    # {"role": "user", "content": f"Header: {column}\nColumn Values: {df[column].tolist()[:5]}\nTable most specific entity type: {table_most_specific_entity_type}"},
                     {"role": "user", "content": f"Header: {column}\nColumn Values: {df[column].tolist()[:5]}\nTable most specific entity type: {table_most_specific_entity_type}\n{table_serialization(df, nr_rows=5)}"},
                 ]
                 response = llm_predict(messages_list, tokenizer, model, max_seq_length=2048, temperature=0.001, model_name=model_name)
@@ -177,45 +167,37 @@ Provide ONLY A VALID JSON format as output, with no additional text.
             attribute_groups.append(attributes_in_group)
 
         # Catch missing attributes that were not included in any group
-        # all_grouped_attributes = [attribute for group in parse_model_response(merging_response) for attribute in parse_model_response(merging_response)[group]]
-        # missing_attributes = [res[tab][col] for tab in res for col in res[tab] if res[tab][col] not in all_grouped_attributes]
+        all_grouped_attributes = [attribute for group in parse_model_response(merging_response) for attribute in parse_model_response(merging_response)[group]]
+        missing_attributes = [res[tab][col] for tab in res for col in res[tab] if res[tab][col] not in all_grouped_attributes]
 
-        # for col in missing_attributes:
-        #     messages_list = [
-        #         {"role": "system", "content": missing_attributes_refinement},
-        #         {"role": "user", "content": f"Existing attribute groups: {parse_model_response(merging_response)}\nMissing attributes to be assigned: {missing_attributes}"},
-        #     ]
-        #     refinement_response = llm_predict(messages_list, tokenizer, model, max_seq_length=2048, temperature=0.001, model_name=model_name)
+        for col in missing_attributes:
+            messages_list = [
+                {"role": "system", "content": missing_attributes_refinement},
+                {"role": "user", "content": f"Existing attribute groups: {parse_model_response(merging_response)}\nMissing attributes to be assigned: {missing_attributes}"},
+            ]
+            refinement_response = llm_predict(messages_list, tokenizer, model, max_seq_length=2048, temperature=0.001, model_name=model_name)
             
-        #     # Update attribute groups with the refinement response
-        #     for group in parse_model_response(refinement_response):
-        #         if group not in parse_model_response(merging_response):
-        #             parse_model_response(merging_response)[group] = []
-        #         for attribute in parse_model_response(refinement_response)[group]:
-        #             if attribute not in parse_model_response(merging_response)[group]:
-        #                 parse_model_response(merging_response)[group].append(attribute)
+            # Update attribute groups with the refinement response
+            for group in parse_model_response(refinement_response):
+                if group not in parse_model_response(merging_response):
+                    parse_model_response(merging_response)[group] = []
+                for attribute in parse_model_response(refinement_response)[group]:
+                    if attribute not in parse_model_response(merging_response)[group]:
+                        parse_model_response(merging_response)[group].append(attribute)
 
-        sienna.save({"column_renaming": res, "merging_response": parse_model_response(merging_response), "attribute_groups": attribute_groups}, f"si-llm/logs_{folder_name}_{benchmark}_Qwen-SI-LLM.json")
+        sienna.save({"column_renaming": res, "merging_response": parse_model_response(merging_response), "attribute_groups": attribute_groups}, f"si-llm_results_per_use_case/logs_{folder_name}_{benchmark}_{model_name_output}-SI-LLM.json")
 
 
     json_results = {}
     # Take the schema matching first runs and evaluate them as ALITE does
     # for file_name in os.listdir("evaluation_json/"):
-    for file_name in os.listdir("si-llm/"):
-        # if ".json" in file_name and "Qwen" in file_name and "Real Benchmark" in file_name:
-        # if ".json" in file_name and "Qwen" in file_name and "Real Benchmark" not in file_name:
-        # if ".json" in file_name and "Jellyfish" in file_name and "Real Benchmark" in file_name:
-        # if ".json" in file_name and "gpt-5.2" in file_name and "Real Benchmark" in file_name:
-        # if ".json" in file_name and "gpt-5.2" in file_name and "Real Benchmark" not in file_name:
-        # if ".json" in file_name and "Jellyfish" in file_name and "SINT-Benchmark" in file_name:
+    for file_name in os.listdir("si-llm_results_per_use_case/"):
         if benchmark in file_name:
-            log_file = sienna.load(f"si-llm/{file_name}")
-            use_case = file_name.split("logs_")[1].split(f"_{benchmark}_Qwen-SI-LLM")[0]
+            log_file = sienna.load(f"si-llm_results_per_use_case/{file_name}")
+            use_case = file_name.split("logs_")[1].split(f"_{benchmark}_{model_name_output}-SI-LLM")[0]
             print(use_case)
             # load ground truth
-            # gt_file_names, gt_file, gt_mappings, gt_final_integrated_schema = load_ground_truth(folder = folder_name, benchmark = "SINT-Benchmark")
-
-            gt_mappings = sienna.load(f"data/gt/{benchmark}/{use_case}/{use_case}_gt_mappings_with_values.json")
+            gt_mappings = sienna.load(f"../data/gt/{benchmark}/{use_case}/{use_case}_gt_mappings_with_values.json")
 
             # GT combinations
             true_combinations = set()
@@ -230,7 +212,6 @@ Provide ONLY A VALID JSON format as output, with no additional text.
             # Predicted combinations
             combinations = []
             for group in log_file["attribute_groups"]:
-            # for group in schema_evaluator.predictions["0"]["parameters"]["attribute_groups_with_no_removals"]["all"]:
                 for table, attributes in group.items():
                     for attribute in attributes:
                         # Inner loop
@@ -239,9 +220,6 @@ Provide ONLY A VALID JSON format as output, with no additional text.
                                 if tuple(sorted([f"{table}.{attribute}", f"{other_table}.{other_attribute}"])) not in combinations:
                                     combinations.append(tuple(sorted([f"{table}.{attribute}", f"{other_table}.{other_attribute}"])))
 
-            
-            # print("True combinations:", true_combinations)
-            # print("Predicted combinations:", combinations)
             
             tps = 0
             fps = 0
@@ -281,5 +259,4 @@ Provide ONLY A VALID JSON format as output, with no additional text.
         "average_precision": average_precision,
         "average_recall": average_recall
     }
-    sienna.save(json_results, f"results_like_alite_{benchmark}-Qwen-si-llm.json")
-    # sienna.save(json_results, "results_like_alite_Real Benchmark-Qwen-si-llm.json")
+    sienna.save(json_results, f"overall_baseline_results/results_{benchmark}-{model_name_output}-si-llm.json")

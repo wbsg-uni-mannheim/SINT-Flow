@@ -1,3 +1,5 @@
+# Original code from ALITE repository: https://github.com/northeastern-datalab/alite/tree/main/codes
+# Modified for SINT-Flow project to include column headers in addition to column values.
 from __future__ import absolute_import, division, print_function
 
 import argparse

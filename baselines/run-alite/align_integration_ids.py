@@ -1,3 +1,5 @@
+# Original code from ALITE repository: https://github.com/northeastern-datalab/alite/tree/main/codes
+# Modified for SINT-Flow project to include numerical column classification and different types of embeddings.
 # -*- coding: utf-8 -*-
 """
 Created on Sun Feb 20 16:43:11 2022
