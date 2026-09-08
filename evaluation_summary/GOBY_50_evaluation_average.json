@@ -1,0 +1,106 @@
+{
+    "gpt-5.2-2025-12-11_long-prompt-updated-4_['schema_matching_phase', 'schema_integration_phase', 'detect_tables_phase', 'final_integration_phase']_True": {
+        "detect_tables_phase_entity": {
+            "overall_recall": 1.0,
+            "overall_precision": 0.75,
+            "overall_f1": 0.8571428571428571,
+            "overall_completeness": 1.0,
+            "overall_minimality": 0.6666666666666667
+        },
+        "detect_tables_phase_attributes": {
+            "overall_recall": 0.7521663778162911,
+            "overall_precision": 0.8127340823970037,
+            "overall_f1": 0.7812781278127813,
+            "overall_completeness": 0.7521663778162911,
+            "overall_minimality": 0.8266897746967071
+        },
+        "schema_matching_phase": {
+            "overall_recall": 0.9472140762463344,
+            "overall_precision": 0.8968070337806571,
+            "overall_f1": 0.9213216068457333
+        },
+        "schema_matching_phase_removed": {
+            "overall_recall": 0.9258308895405669,
+            "overall_precision": 0.9077512878878639,
+            "overall_f1": 0.9167019539047849
+        },
+        "schema_integration_phase": {
+            "overall_recall": 0.76,
+            "overall_precision": 0.95,
+            "overall_f1": 0.8444444444444444,
+            "overall_completeness": 0.76,
+            "overall_minimality": 0.96
+        },
+        "final_integration_entity": {
+            "overall_recall": 1.0,
+            "overall_precision": 1.0,
+            "overall_f1": 1.0,
+            "overall_completeness": 1.0,
+            "overall_minimality": 1.0
+        },
+        "final_integration_attributes": {
+            "overall_recall": 0.7037037037037037,
+            "overall_precision": 0.8260869565217391,
+            "overall_f1": 0.76,
+            "overall_completeness": 0.7037037037037037,
+            "overall_minimality": 0.8518518518518519
+        },
+        "final_integration_mappings": {
+            "overall_recall": 0.7929936305732485,
+            "overall_precision": 0.7929936305732485,
+            "overall_f1": 0.7929936305732486
+        }
+    },
+    "Qwen/Qwen3.6-27B_long-prompt-updated-4_['schema_matching_phase', 'schema_integration_phase', 'detect_tables_phase', 'final_integration_phase']_True": {
+        "detect_tables_phase_entity": {
+            "overall_recall": 1.0,
+            "overall_precision": 0.75,
+            "overall_f1": 0.8571428571428571,
+            "overall_completeness": 1.0,
+            "overall_minimality": 0.6666666666666667
+        },
+        "detect_tables_phase_attributes": {
+            "overall_recall": 0.8474870017331022,
+            "overall_precision": 0.9157303370786517,
+            "overall_f1": 0.8802880288028803,
+            "overall_completeness": 0.8474870017331022,
+            "overall_minimality": 0.9220103986135182
+        },
+        "schema_matching_phase": {
+            "overall_recall": 0.9591886608015641,
+            "overall_precision": 0.8393926432848589,
+            "overall_f1": 0.895301094890511
+        },
+        "schema_matching_phase_removed": {
+            "overall_recall": 0.9279081133919843,
+            "overall_precision": 0.879138689511461,
+            "overall_f1": 0.9028652954464392
+        },
+        "schema_integration_phase": {
+            "overall_recall": 0.68,
+            "overall_precision": 1.0,
+            "overall_f1": 0.8095238095238095,
+            "overall_completeness": 0.68,
+            "overall_minimality": 1.0
+        },
+        "final_integration_entity": {
+            "overall_recall": 1.0,
+            "overall_precision": 1.0,
+            "overall_f1": 1.0,
+            "overall_completeness": 1.0,
+            "overall_minimality": 1.0
+        },
+        "final_integration_attributes": {
+            "overall_recall": 0.7037037037037037,
+            "overall_precision": 1.0,
+            "overall_f1": 0.8260869565217391,
+            "overall_completeness": 0.7037037037037037,
+            "overall_minimality": 1.0
+        },
+        "final_integration_mappings": {
+            "overall_recall": 0.8136942675159236,
+            "overall_precision": 0.8136942675159236,
+            "overall_f1": 0.8136942675159236
+        }
+    }
+}
