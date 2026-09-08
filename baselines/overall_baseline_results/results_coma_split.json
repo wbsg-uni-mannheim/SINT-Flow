@@ -1,0 +1,341 @@
+{
+    "SINT-Benchmark": {
+        "airline-data": {
+            "Coma": {
+                "true_combinations": 457,
+                "predicted_combinations": 1465,
+                "true_positives": 267,
+                "false_positives": 1198,
+                "false_negatives": 228,
+                "precision": 0.18225255972696247,
+                "recall": 0.5393939393939394,
+                "f1_score": 0.2724489795918367
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 457,
+                "predicted_combinations": 1212,
+                "true_positives": 305,
+                "false_positives": 907,
+                "false_negatives": 190,
+                "precision": 0.25165016501650167,
+                "recall": 0.6161616161616161,
+                "f1_score": 0.35735207967193905
+            },
+            "Coma-instances": {
+                "true_combinations": 457,
+                "predicted_combinations": 610,
+                "true_positives": 349,
+                "false_positives": 261,
+                "false_negatives": 163,
+                "precision": 0.5721311475409836,
+                "recall": 0.681640625,
+                "f1_score": 0.6221033868092691
+            }
+        },
+        "car-listings": {
+            "Coma": {
+                "true_combinations": 449,
+                "predicted_combinations": 551,
+                "true_positives": 269,
+                "false_positives": 282,
+                "false_negatives": 180,
+                "precision": 0.4882032667876588,
+                "recall": 0.5991091314031181,
+                "f1_score": 0.538
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 449,
+                "predicted_combinations": 407,
+                "true_positives": 304,
+                "false_positives": 103,
+                "false_negatives": 145,
+                "precision": 0.7469287469287469,
+                "recall": 0.6770601336302895,
+                "f1_score": 0.7102803738317757
+            },
+            "Coma-instances": {
+                "true_combinations": 449,
+                "predicted_combinations": 255,
+                "true_positives": 216,
+                "false_positives": 39,
+                "false_negatives": 233,
+                "precision": 0.8470588235294118,
+                "recall": 0.48106904231625836,
+                "f1_score": 0.6136363636363636
+            }
+        },
+        "games": {
+            "Coma": {
+                "true_combinations": 230,
+                "predicted_combinations": 328,
+                "true_positives": 122,
+                "false_positives": 206,
+                "false_negatives": 108,
+                "precision": 0.3719512195121951,
+                "recall": 0.5304347826086957,
+                "f1_score": 0.43727598566308246
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 230,
+                "predicted_combinations": 223,
+                "true_positives": 143,
+                "false_positives": 80,
+                "false_negatives": 87,
+                "precision": 0.6412556053811659,
+                "recall": 0.6217391304347826,
+                "f1_score": 0.6313465783664459
+            },
+            "Coma-instances": {
+                "true_combinations": 230,
+                "predicted_combinations": 288,
+                "true_positives": 143,
+                "false_positives": 145,
+                "false_negatives": 87,
+                "precision": 0.4965277777777778,
+                "recall": 0.6217391304347826,
+                "f1_score": 0.5521235521235521
+            }
+        },
+        "goby_selected": {
+            "Coma": {
+                "true_combinations": 1339,
+                "predicted_combinations": 4876,
+                "true_positives": 975,
+                "false_positives": 3901,
+                "false_negatives": 478,
+                "precision": 0.19995898277276455,
+                "recall": 0.6710254645560908,
+                "f1_score": 0.3081055458998262
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 1339,
+                "predicted_combinations": 3602,
+                "true_positives": 1044,
+                "false_positives": 2558,
+                "false_negatives": 413,
+                "precision": 0.2898389783453637,
+                "recall": 0.7165408373369938,
+                "f1_score": 0.41272978849575015
+            },
+            "Coma-instances": {
+                "true_combinations": 1339,
+                "predicted_combinations": 1577,
+                "true_positives": 885,
+                "false_positives": 692,
+                "false_negatives": 611,
+                "precision": 0.5611921369689283,
+                "recall": 0.5915775401069518,
+                "f1_score": 0.5759843800846078
+            }
+        },
+        "park_events": {
+            "Coma": {
+                "true_combinations": 150,
+                "predicted_combinations": 329,
+                "true_positives": 118,
+                "false_positives": 211,
+                "false_negatives": 59,
+                "precision": 0.3586626139817629,
+                "recall": 0.6666666666666666,
+                "f1_score": 0.466403162055336
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 150,
+                "predicted_combinations": 219,
+                "true_positives": 118,
+                "false_positives": 101,
+                "false_negatives": 59,
+                "precision": 0.5388127853881278,
+                "recall": 0.6666666666666666,
+                "f1_score": 0.5959595959595959
+            },
+            "Coma-instances": {
+                "true_combinations": 150,
+                "predicted_combinations": 163,
+                "true_positives": 125,
+                "false_positives": 38,
+                "false_negatives": 61,
+                "precision": 0.7668711656441718,
+                "recall": 0.6720430107526881,
+                "f1_score": 0.7163323782234957
+            }
+        },
+        "volcanic-eruptions": {
+            "Coma": {
+                "true_combinations": 500,
+                "predicted_combinations": 1356,
+                "true_positives": 341,
+                "false_positives": 1015,
+                "false_negatives": 212,
+                "precision": 0.25147492625368734,
+                "recall": 0.6166365280289331,
+                "f1_score": 0.35725510738606603
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 500,
+                "predicted_combinations": 901,
+                "true_positives": 357,
+                "false_positives": 544,
+                "false_negatives": 197,
+                "precision": 0.39622641509433965,
+                "recall": 0.644404332129964,
+                "f1_score": 0.49072164948453606
+            },
+            "Coma-instances": {
+                "true_combinations": 500,
+                "predicted_combinations": 688,
+                "true_positives": 354,
+                "false_positives": 334,
+                "false_negatives": 200,
+                "precision": 0.5145348837209303,
+                "recall": 0.6389891696750902,
+                "f1_score": 0.5700483091787439
+            }
+        },
+        "wikidbs_horror-film-character": {
+            "Coma": {
+                "true_combinations": 87,
+                "predicted_combinations": 226,
+                "true_positives": 53,
+                "false_positives": 173,
+                "false_negatives": 53,
+                "precision": 0.2345132743362832,
+                "recall": 0.5,
+                "f1_score": 0.3192771084337349
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 87,
+                "predicted_combinations": 178,
+                "true_positives": 65,
+                "false_positives": 113,
+                "false_negatives": 45,
+                "precision": 0.3651685393258427,
+                "recall": 0.5909090909090909,
+                "f1_score": 0.4513888888888889
+            },
+            "Coma-instances": {
+                "true_combinations": 87,
+                "predicted_combinations": 125,
+                "true_positives": 71,
+                "false_positives": 54,
+                "false_negatives": 41,
+                "precision": 0.568,
+                "recall": 0.6339285714285714,
+                "f1_score": 0.5991561181434599
+            }
+        },
+        "wikidbs_monuments": {
+            "Coma": {
+                "true_combinations": 224,
+                "predicted_combinations": 496,
+                "true_positives": 132,
+                "false_positives": 364,
+                "false_negatives": 115,
+                "precision": 0.2661290322580645,
+                "recall": 0.5344129554655871,
+                "f1_score": 0.3553162853297443
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 224,
+                "predicted_combinations": 427,
+                "true_positives": 167,
+                "false_positives": 260,
+                "false_negatives": 102,
+                "precision": 0.3911007025761124,
+                "recall": 0.620817843866171,
+                "f1_score": 0.47988505747126436
+            },
+            "Coma-instances": {
+                "true_combinations": 224,
+                "predicted_combinations": 273,
+                "true_positives": 178,
+                "false_positives": 95,
+                "false_negatives": 91,
+                "precision": 0.652014652014652,
+                "recall": 0.6617100371747212,
+                "f1_score": 0.6568265682656826
+            }
+        },
+        "wikidbs_paintings-collection": {
+            "Coma": {
+                "true_combinations": 483,
+                "predicted_combinations": 2215,
+                "true_positives": 402,
+                "false_positives": 1813,
+                "false_negatives": 232,
+                "precision": 0.18148984198645599,
+                "recall": 0.6340694006309149,
+                "f1_score": 0.28220428220428223
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 483,
+                "predicted_combinations": 1752,
+                "true_positives": 475,
+                "false_positives": 1277,
+                "false_negatives": 180,
+                "precision": 0.2711187214611872,
+                "recall": 0.7251908396946565,
+                "f1_score": 0.39468217698379726
+            },
+            "Coma-instances": {
+                "true_combinations": 483,
+                "predicted_combinations": 907,
+                "true_positives": 475,
+                "false_positives": 432,
+                "false_negatives": 174,
+                "precision": 0.523704520396913,
+                "recall": 0.7318952234206472,
+                "f1_score": 0.6105398457583547
+            }
+        },
+        "wikidbs_research-articles": {
+            "Coma": {
+                "true_combinations": 890,
+                "predicted_combinations": 1722,
+                "true_positives": 690,
+                "false_positives": 1032,
+                "false_negatives": 324,
+                "precision": 0.40069686411149824,
+                "recall": 0.6804733727810651,
+                "f1_score": 0.5043859649122807
+            },
+            "Coma-instances-schema": {
+                "true_combinations": 890,
+                "predicted_combinations": 1186,
+                "true_positives": 777,
+                "false_positives": 409,
+                "false_negatives": 237,
+                "precision": 0.6551433389544689,
+                "recall": 0.7662721893491125,
+                "f1_score": 0.7063636363636364
+            },
+            "Coma-instances": {
+                "true_combinations": 890,
+                "predicted_combinations": 946,
+                "true_positives": 680,
+                "false_positives": 266,
+                "false_negatives": 332,
+                "precision": 0.718816067653277,
+                "recall": 0.6719367588932806,
+                "f1_score": 0.6945863125638406
+            }
+        },
+        "average_results": {
+            "Coma": {
+                "avg_precision": 0.29353325817273335,
+                "avg_recall": 0.597222224153501,
+                "avg_f1_score": 0.384067242147619
+            },
+            "Coma-instances": {
+                "avg_precision": 0.6220851175247045,
+                "avg_recall": 0.6386529109202991,
+                "avg_f1_score": 0.621133721478737
+            },
+            "Coma-instances-schema": {
+                "avg_precision": 0.4547243998471857,
+                "avg_recall": 0.6645762680179343,
+                "avg_f1_score": 0.523070982551763
+            }
+        }
+    }
+}

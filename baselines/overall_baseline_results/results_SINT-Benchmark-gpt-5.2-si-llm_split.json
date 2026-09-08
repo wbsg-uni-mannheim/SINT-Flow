@@ -1,0 +1,107 @@
+{
+    "airline-data": {
+        "true_combinations": 75,
+        "predicted_combinations": 67,
+        "true_positives": 448,
+        "false_positives": 4,
+        "false_negatives": 24,
+        "precision": 0.9911504424778761,
+        "recall": 0.9491525423728814,
+        "f1_score": 0.9696969696969697
+    },
+    "car-listings": {
+        "true_combinations": 449,
+        "predicted_combinations": 389,
+        "true_positives": 389,
+        "false_positives": 0,
+        "false_negatives": 60,
+        "precision": 1.0,
+        "recall": 0.8663697104677061,
+        "f1_score": 0.9284009546539379
+    },
+    "games": {
+        "true_combinations": 230,
+        "predicted_combinations": 220,
+        "true_positives": 220,
+        "false_positives": 0,
+        "false_negatives": 10,
+        "precision": 1.0,
+        "recall": 0.9565217391304348,
+        "f1_score": 0.9777777777777777
+    },
+    "goby_selected": {
+        "true_combinations": 468,
+        "predicted_combinations": 492,
+        "true_positives": 1023,
+        "false_positives": 32,
+        "false_negatives": 357,
+        "precision": 0.9696682464454977,
+        "recall": 0.741304347826087,
+        "f1_score": 0.8402464065708419
+    },
+    "park_events": {
+        "true_combinations": 24,
+        "predicted_combinations": 22,
+        "true_positives": 135,
+        "false_positives": 0,
+        "false_negatives": 9,
+        "precision": 1.0,
+        "recall": 0.9375,
+        "f1_score": 0.967741935483871
+    },
+    "volcanic-eruptions": {
+        "true_combinations": 255,
+        "predicted_combinations": 245,
+        "true_positives": 467,
+        "false_positives": 1,
+        "false_negatives": 14,
+        "precision": 0.9978632478632479,
+        "recall": 0.9708939708939709,
+        "f1_score": 0.9841938883034773
+    },
+    "wikidbs_horror-film-character": {
+        "true_combinations": 42,
+        "predicted_combinations": 35,
+        "true_positives": 90,
+        "false_positives": 0,
+        "false_negatives": 13,
+        "precision": 1.0,
+        "recall": 0.8737864077669902,
+        "f1_score": 0.9326424870466321
+    },
+    "wikidbs_monuments": {
+        "true_combinations": 88,
+        "predicted_combinations": 62,
+        "true_positives": 175,
+        "false_positives": 1,
+        "false_negatives": 70,
+        "precision": 0.9943181818181818,
+        "recall": 0.7142857142857143,
+        "f1_score": 0.831353919239905
+    },
+    "wikidbs_paintings-collection": {
+        "true_combinations": 42,
+        "predicted_combinations": 35,
+        "true_positives": 466,
+        "false_positives": 7,
+        "false_negatives": 89,
+        "precision": 0.985200845665962,
+        "recall": 0.8396396396396396,
+        "f1_score": 0.9066147859922179
+    },
+    "wikidbs_research-articles": {
+        "true_combinations": 156,
+        "predicted_combinations": 142,
+        "true_positives": 826,
+        "false_positives": 28,
+        "false_negatives": 100,
+        "precision": 0.9672131147540983,
+        "recall": 0.8920086393088553,
+        "f1_score": 0.9280898876404494
+    },
+    "average_results": {
+        "average_f1": 0.9266759012406081,
+        "average_precision": 0.9905414079024863,
+        "average_recall": 0.8741462711692278
+    }
+}
