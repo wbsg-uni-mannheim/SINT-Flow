@@ -1,0 +1,46 @@
+{
+    "integrated_schema_by_entity": {
+        "Event": {
+            "attributes": [
+                "DATERANGE",
+                "Venue_id",
+                "CALL_TO_ACTION_URL",
+                "WEBSITE",
+                "TIMERANGE",
+                "ENDDATE",
+                "HOURS",
+                "PRICE_RANGE",
+                "STARTTIME",
+                "PHONE",
+                "IMAGE1",
+                "STARTDATE",
+                "DESCRIPTION",
+                "ARTIST",
+                "TITLE",
+                "ENDTIME",
+                "DATETIME",
+                "EMAIL"
+            ],
+            "foreign_keys": {
+                "Venue_id": {
+                    "Venue": "Venue_id"
+                }
+            }
+        },
+        "Venue": {
+            "attributes": [
+                "Venue_id",
+                "LOC1.LAT",
+                "VENUE_NAME",
+                "LOC1.STATE",
+                "LOC1.CITY",
+                "LOC1.ZIP",
+                "LOC1.FULL_ADDRESS",
+                "DIRECTIONS",
+                "LOC1.ADDRESS",
+                "LOC1.LON"
+            ],
+            "foreign_keys": {}
+        }
+    }
+}
