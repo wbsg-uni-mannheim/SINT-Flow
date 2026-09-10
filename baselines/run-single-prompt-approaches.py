@@ -2,6 +2,7 @@ import sys
 sys.append("..")
 from model import llm_predict
 from evaluation_utils import evaluate_instruction_prompt, evaluate_cot_prompt
+from evaluation import SchemaIntegrationEvaluation
 from utils import CACHE_DIR, parse_json
 import os
 from dotenv import dotenv_values
@@ -156,7 +157,21 @@ if prompt == "_instruction":
     # Process instruction prompt
     for folder in folders:
         runs = sienna.load(f"single_prompt_approaches_per_use_case/{'gpt-5.2' if model_type == 'openai' else 'qwen'}/{folder}_output{prompt}.json")
-        processed_runs, eval_results_content = evaluate_instruction_prompt(runs, folder, benchmark="SINT-Benchmark")
+        processed_runs = evaluate_instruction_prompt(runs, folder, benchmark="SINT-Benchmark")
+        # Evaluate the results of all runs
+        sch_integration_eval = SchemaIntegrationEvaluation(f"data/selected-tables/SINT-Benchmark/", folder=folder)
+        sch_integration_eval.other_parameters={}
+        sch_integration_eval.init_manually(benchmark="SINT-Benchmark", folder=folder, sequence_of_phases=["detect_tables_phase", "schema_matching_phase", "grouping_phase", "schema_integration_phase", "final_integration_phase"], predictions=processed_runs, num_runs=3)
+        sch_integration_eval.init_gt_properties()
+        sch_integration_eval.run_evaluation()
+
+        # Save the evaluation results
+        eval_results_content = {
+            "run_full_results": sch_integration_eval.eval_results,
+            "average_metrics": sch_integration_eval.average_metrics,
+            "std_dev_metrics": sch_integration_eval.std_dev_metrics,
+        }
+        
         sienna.save(processed_runs, f"single_prompt_approaches_per_use_case/{'gpt-5.2' if model_type == 'openai' else 'qwen'}/{folder}_processed{prompt}.json")
         sienna.save(eval_results_content, f"single_prompt_approaches_per_use_case/{'gpt-5.2' if model_type == 'openai' else 'qwen'}/{folder}_evaluation{prompt}.json")
 
