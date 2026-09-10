@@ -1,7 +1,7 @@
 import random
 import time
 from langchain.messages import HumanMessage, AIMessage, SystemMessage
-from utils import langchain_message_to_dict, parse_json, write_txt_file, parse_model_response
+from utils import langchain_message_to_dict, parse_json, parse_model_response, format_time, save_pickle_file, load_pickle_file
 from dataset_utils import table_serialization
 from dataset_utils import load_ground_truth
 import pandas as pd
@@ -12,7 +12,9 @@ from langchain.chat_models import BaseChatModel
 from self_consistency import SelfConsistency
 import pdb
 import tqdm
-import torch
+import os
+import shutil
+# import torch
 
 @tool
 def check_subset_schemata(schemata_1_name: str, schemata_1_attributes: list[str], schemata_2_name: str, schemata_2_attributes: list[str]) -> str:
@@ -102,7 +104,8 @@ def llm_predict(messages, tokenizer, model, max_seq_length, temperature, enable_
             tokenizer.convert_tokens_to_ids("<|eot_id|>")
         ]
         outputs = model.generate(
-            input_ids,
+            # input_ids,
+            input_ids["input_ids"],
             max_new_tokens=max_seq_length,
             eos_token_id=terminators,
             pad_token_id=tokenizer.eos_token_id,
@@ -112,7 +115,7 @@ def llm_predict(messages, tokenizer, model, max_seq_length, temperature, enable_
         )
     else:
         outputs = model.generate(
-            input_ids,
+            input_ids["input_ids"],
             max_new_tokens=max_seq_length,
             pad_token_id=tokenizer.eos_token_id,
             temperature=0.7, 
@@ -122,11 +125,12 @@ def llm_predict(messages, tokenizer, model, max_seq_length, temperature, enable_
             min_p=0.0,
             repetition_penalty=1.0
         )
-    response = outputs[0][input_ids.shape[-1]:]
+    # response = outputs[0][input_ids.shape[-1]:]
+    response = outputs[0][input_ids["input_ids"].shape[-1]:]
     return tokenizer.decode(response, skip_special_tokens=True)
 
 class SchemaIntegrationWorkflow:
-    def __init__(self, folder_name: str, table_path: str, model: BaseChatModel, prompt_messages: dict, sequence_of_phases: list[str], tools_available: list[str], table_format="markdown", table_rows=10, gt_part="schema_by_entity", model_type="openai", benchmark="SINT-Benchmark", model_name=None, tokenizer=None, self_consistency=False):
+    def __init__(self, folder_name: str, table_path: str, model: BaseChatModel, prompt_messages: dict, sequence_of_phases: list[str], tools_available: list[str], table_format="markdown", table_rows=10, gt_part="schema_by_entity", model_type="openai", benchmark="SINT-Benchmark", model_name=None, tokenizer=None, self_consistency=False, run_id=None, **kwargs):
         self.folder_name = folder_name
         self.table_path = table_path
         self.model = model
@@ -140,6 +144,17 @@ class SchemaIntegrationWorkflow:
         self.results = {}
         self.prompt_messages = prompt_messages
         self.gt_part = gt_part
+        self.run_id = run_id
+        self.benchmark = benchmark
+        self.tools_available = tools_available
+
+        self.num_runs = kwargs["num_runs"]
+        self.logfile_name = kwargs["logfile_name"]
+        self.prompt_name = kwargs["prompt_name"]
+        self.reasoning = kwargs["reasoning"]
+        self.schema_matching_batch_size = kwargs["schema_matching_batch_size"]
+        self.merging_batch_size = kwargs["merging_batch_size"]
+
         # Load ground truth
         self.file_names, self.gt_file, self.gt_mappings, self.gt_final_integrated_schema = load_ground_truth(folder_name, benchmark=benchmark)
         self.file_names_to_index = {file_name: i+1 for i, file_name in enumerate(self.file_names)}
@@ -153,7 +168,7 @@ class SchemaIntegrationWorkflow:
         else:
             self.grouping_phase_name = None
         # Record time of each workflow phase
-        self.phase_times = {phase: None for phase in sequence_of_phases}
+        self.phase_times = {phase: 0 for phase in sequence_of_phases}
         if self.table_detection_phase_name:
             self.splitting_after_integration = self.sequence_of_phases.index(self.table_detection_phase_name) > self.sequence_of_phases.index("schema_integration_phase")
         else:
@@ -164,6 +179,7 @@ class SchemaIntegrationWorkflow:
             "detected_tables_grouped_and_mapped": {},
             "column_correspondences": {},
             "removed_correspondences": {},
+            "correct_correspondences": {},
             "integrated_attributes": {},
             "integrated_schemas": {},
             "groups": {},
@@ -212,7 +228,7 @@ class SchemaIntegrationWorkflow:
             response = self.model.invoke(messages_list)
             return response
         else:
-            response_content = llm_predict(messages_list, self.tokenizer, self.model, max_seq_length=2048, temperature=0.001, model_name=self.model_name)
+            response_content = llm_predict(messages_list, self.tokenizer, self.model, max_seq_length=20000, temperature=0.001, model_name=self.model_name)
             return response_content
 
     # Format prompts
@@ -274,7 +290,6 @@ class SchemaIntegrationWorkflow:
         
         else:
             # Initialize model with tools
-            # model_with_tools = self.model.bind_tools(tool_list)
             model_with_tools = self.model.bind_tools(tool_list, tool_choice=tool_choice)
             # Initial model response
             response = model_with_tools.invoke(messages_list)
@@ -315,6 +330,9 @@ class SchemaIntegrationWorkflow:
                         for value in df[column_name].to_list()[:5]:
                             table_records[attribute].append(value)
                         merged_schemas_to_tables[attribute].append(table_name)
+                        if len(df[column_name].to_list()) < 5:
+                            for value in range(5-len(df[column_name].to_list())):
+                                table_records[attribute].append(None)
                     else:
                         for value in range(5):
                             table_records[attribute].append(None)
@@ -416,7 +434,6 @@ class SchemaIntegrationWorkflow:
             messages_list.append(self.add_message("user", f"The column {kwargs['source_attribute']} from table {kwargs['table_name']} is in the first group:\n\n"+"\n\n".join([self.get_column_values(table, column) for table, column in {kwargs['table_name']: None}.items()])))
             messages_list.append(self.add_message("user", f"The column {kwargs['target_attribute']} from table {kwargs['target_table_name']} is in the second group:\n\n"+"\n\n".join([self.get_column_values(table, column) for table, column in {kwargs['target_table_name']: None}.items()])))
 
-        # pdb.set_trace()
         messages_list.append(self.add_message("user", "Your task is schema matching, i.e. finding matches between columns of different tables. Based on the attributes in each group and their column values, do all the columns refer to the same semantic concept and therefore be merged into one column (do not focus on value formats or value overlaps rather only the semantic concept)? Please answer with only yes or no.")) # and an explanation and the semantic concepts of all columns.
         responses = []
         # Run 3 times for self-consistency or once if not
@@ -448,15 +465,57 @@ class SchemaIntegrationWorkflow:
         # Cluster/group attributes based on correspondences
         # Create two types of groups: 1) the actual groups that get reviewed 2) the groups without review (will be used only for analysis)
         for attribute_group_type in ["attribute_groups", "attribute_groups_with_no_removals"]:
-            reviewed_correspondences = {}
-            nr_of_reviews = 0
-            attribute_groups = []
+            
+            if "reviewed_correspondences" not in self.results_parameters:
+                self.results_parameters["reviewed_correspondences"] = {}
+                self.results_parameters["attribute_groups"] = {}
+            
+            if attribute_group_type not in self.results_parameters:
+                self.results_parameters[attribute_group_type] = {}
+            
+            # Initialize dictionary to record which correspondences have already been reviewed and formed attribute groups
+            if entity_group not in self.results_parameters["reviewed_correspondences"]:
+                self.results_parameters["reviewed_correspondences"][entity_group] = {}
+                self.results_parameters["attribute_groups"][entity_group] = []
+
+            if "correct_correspondences" not in self.results_parameters:
+                self.results_parameters["correct_correspondences"] = {}
+            if entity_group not in self.results_parameters["correct_correspondences"]:
+                self.results_parameters["correct_correspondences"][entity_group] = {}
+
+            if attribute_group_type == "attribute_groups_with_no_removals":
+                attribute_groups = []
+                correct_correspondences = {}
+            else:
+                reviewed_correspondences = self.results_parameters["reviewed_correspondences"][entity_group]
+                attribute_groups = self.results_parameters[attribute_group_type][entity_group]
+                correct_correspondences = self.results_parameters["correct_correspondences"][entity_group]
+
             for table_name, table_correspondences in overall_correspondences.items():
                 if table_name in detected_groups[entity_group]:
                     for target_table_name, attribute_correspondences in table_correspondences.items():
                         if target_table_name in detected_groups[entity_group]:
                             for source_attribute, target_attribute in attribute_correspondences.items():
                                 skip_correspondence = False
+                                save_file = False
+
+                                # If it has been marked as a correct correspondence skip
+                                if table_name in correct_correspondences and target_table_name in correct_correspondences[table_name] and source_attribute in correct_correspondences[table_name][target_table_name] and correct_correspondences[table_name][target_table_name][source_attribute] == target_attribute:
+                                    print(f"Skipping correspondence between {table_name}.{source_attribute} and {target_table_name}.{target_attribute} as it has been marked as a correct correspondence.")
+                                    continue
+
+                                # If it has been reviewed in a previous run
+                                if attribute_group_type == "attribute_groups" and table_name in reviewed_correspondences and target_table_name in reviewed_correspondences[table_name] and source_attribute in reviewed_correspondences[table_name][target_table_name] and reviewed_correspondences[table_name][target_table_name][source_attribute] == target_attribute:
+                                    print(f"Skipping correspondence between {table_name}.{source_attribute} and {target_table_name}.{target_attribute} as it has been reviewed in a previous run.")
+                                    # If it was reviewed but not flagged for removal, add it to the correct correspondences
+                                    if table_name not in correct_correspondences:
+                                        correct_correspondences[table_name] = {}
+                                    if target_table_name not in correct_correspondences[table_name]:
+                                        correct_correspondences[table_name][target_table_name] = {}
+                                    if source_attribute not in correct_correspondences[table_name][target_table_name]:
+                                        correct_correspondences[table_name][target_table_name][source_attribute] = target_attribute
+                                    continue
+
                                 # Check if this correspondence has been marked as a false positive, if yes, skip it
                                 if self.results_parameters["removed_correspondences"] != {} and table_name in self.results_parameters["removed_correspondences"] and target_table_name in self.results_parameters["removed_correspondences"][table_name] and source_attribute in self.results_parameters["removed_correspondences"][table_name][target_table_name] and self.results_parameters["removed_correspondences"][table_name][target_table_name][source_attribute] == target_attribute:
                                     # Skip this correspondence as it has been marked as a false positive
@@ -467,6 +526,27 @@ class SchemaIntegrationWorkflow:
                                     # Skip this correspondence as it has been marked as a false positive
                                     print(f"Skipping correspondence between {table_name}.{source_attribute} and {target_table_name}.{target_attribute} as it has been marked as a false positive based on LLM review.")
                                     skip_correspondence = True
+
+                                # If in the removed correspondences a column that is said to be a correct correspondence with the current column is present and that column and the target column are there, directly means that this is a false positive and should be skipped
+                                correct_corrs_for_table = [(other_table, other_col) for other_table, corr in correct_correspondences.get(table_name, {}).items() for col, other_col in corr.items() if col == source_attribute]
+                                # Add also the ones where the current column is in the right side of the correct_correspondences
+                                correct_corrs_for_table += [(other_table, other_col) for other_table, corr in correct_correspondences.items() if table_name in corr for other_col, col in corr[table_name].items() if col == source_attribute]
+
+                                # Loop over the correct correspondences to the source_attribute
+                                for other_table, other_col in correct_corrs_for_table:
+                                    if other_table in self.results_parameters["removed_correspondences"] and target_table_name in self.results_parameters["removed_correspondences"][other_table] and other_col in self.results_parameters["removed_correspondences"][other_table][target_table_name] and self.results_parameters["removed_correspondences"][other_table][target_table_name][other_col] == target_attribute:
+                                        print(f"Skipping correspondence between {table_name}.{source_attribute} and {target_table_name}.{target_attribute} as it has been marked as a false positive based on LLM review due to a correct correspondence with {other_table}.{other_col}.")
+                                        self.results_parameters["removed_correspondences"].setdefault(table_name, {}).setdefault(target_table_name, {})[source_attribute] = target_attribute
+                                        skip_correspondence = True
+                                        # pdb.set_trace()
+                                        break
+                                    # Check the other way around as well
+                                    if target_table_name in self.results_parameters["removed_correspondences"] and other_table in self.results_parameters["removed_correspondences"][target_table_name] and target_attribute in self.results_parameters["removed_correspondences"][target_table_name][other_table] and self.results_parameters["removed_correspondences"][target_table_name][other_table][target_attribute] == other_col:
+                                        print(f"Skipping correspondence between {table_name}.{source_attribute} and {target_table_name}.{target_attribute} as it has been marked as a false positive based on LLM review due to a correct correspondence with {other_table}.{other_col}.")
+                                        self.results_parameters["removed_correspondences"].setdefault(target_table_name, {}).setdefault(other_table, {})[target_attribute] = other_col
+                                        skip_correspondence = True
+                                        # pdb.set_trace()
+                                        break
                                 
                                 if skip_correspondence:
                                     continue
@@ -493,25 +573,36 @@ class SchemaIntegrationWorkflow:
                                         if connected:
                                             # If yes, this means that it has 2 connections to this group and it can be added to the group
                                             found_group.setdefault(table_name, []).append(source_attribute)
+                                            correct_correspondences.setdefault(table_name, {}).setdefault(target_table_name, {})[source_attribute] = target_attribute
                                         else:
+                                            # Check if it has been reviewed before
+                                            if table_name in reviewed_correspondences and target_table_name in reviewed_correspondences[table_name] and source_attribute in reviewed_correspondences[table_name][target_table_name] and reviewed_correspondences[table_name][target_table_name][source_attribute] == target_attribute:
+                                                # Skip
+                                                continue
                                             # If it doesn't have any connections other than 1, ask an LLM if this attribute is okay to be added
                                             reviewed_correspondences.setdefault(table_name, {}).setdefault(target_table_name, {})[source_attribute] = target_attribute
-                                            nr_of_reviews += 1
                                             correct_match = self.detect_schema_matching_false_positives(table_name=table_name, source_attribute=source_attribute, target_table_name=target_table_name, target_attribute=target_attribute, found_target_group=found_group)
                                             if correct_match: #and not skip_correspondence
                                                 found_group.setdefault(table_name, []).append(source_attribute)
+                                                correct_correspondences.setdefault(table_name, {}).setdefault(target_table_name, {})[source_attribute] = target_attribute
+                                                save_file = True
                                     else:
                                         # For analysis, add without checking
                                         if attribute_group_type == "attribute_groups_with_no_removals":
                                             attribute_groups.append({table_name: [source_attribute], target_table_name: [target_attribute]})
                                             continue
+                                        # Check if it has been reviewed before
+                                        if table_name in reviewed_correspondences and target_table_name in reviewed_correspondences[table_name] and source_attribute in reviewed_correspondences[table_name][target_table_name] and reviewed_correspondences[table_name][target_table_name][source_attribute] == target_attribute:
+                                            # Skip
+                                            continue
                                         # Both source and target attributes not assigned to any group yet, create new group
                                         # But first check that this is not a false positive by asking an LLM based on the attributes and their column values
                                         reviewed_correspondences.setdefault(table_name, {}).setdefault(target_table_name, {})[source_attribute] = target_attribute
-                                        nr_of_reviews += 1
                                         correct_match = self.detect_schema_matching_false_positives(table_name=table_name, source_attribute=source_attribute, target_table_name=target_table_name, target_attribute=target_attribute)
                                         if correct_match: #and not skip_correspondence
+                                            correct_correspondences.setdefault(table_name, {}).setdefault(target_table_name, {})[source_attribute] = target_attribute
                                             attribute_groups.append({table_name: [source_attribute], target_table_name: [target_attribute]})
+                                        save_file = True
                                 else:
                                     if any(target_table_name in group and target_attribute in group[target_table_name] for group in attribute_groups):
                                         # Otherwise, if both source and target attributes are in different groups, check if the groups can be merged or if this correspondence is a FP
@@ -531,6 +622,11 @@ class SchemaIntegrationWorkflow:
 
                                         # If the groups are different:
                                         if not attribute_groups.index(found_source_group) == attribute_groups.index(found_target_group):
+                                            # Check if it has been reviewed before
+                                            if table_name in reviewed_correspondences and target_table_name in reviewed_correspondences[table_name] and source_attribute in reviewed_correspondences[table_name][target_table_name] and reviewed_correspondences[table_name][target_table_name][source_attribute] == target_attribute:
+                                                # Skip
+                                                continue
+
                                             # Merge groups without checking
                                             if attribute_group_type == "attribute_groups_with_no_removals":
                                                 # Merge the two groups
@@ -548,7 +644,6 @@ class SchemaIntegrationWorkflow:
                                                 continue
                                             # Ask an LLM if the connection is correct
                                             reviewed_correspondences.setdefault(table_name, {}).setdefault(target_table_name, {})[source_attribute] = target_attribute
-                                            nr_of_reviews += 1
                                             correct_match = self.detect_schema_matching_false_positives(table_name=table_name, source_attribute=source_attribute, target_table_name=target_table_name, target_attribute=target_attribute, found_source_group=found_source_group, found_target_group=found_target_group)
                                             if correct_match: # and not skip_correspondence:
                                                 # Merge groups
@@ -565,6 +660,8 @@ class SchemaIntegrationWorkflow:
                                                 attribute_groups.remove(found_source_group)
                                                 # And add the merged group
                                                 attribute_groups.append(merged_group)
+                                                correct_correspondences.setdefault(table_name, {}).setdefault(target_table_name, {})[source_attribute] = target_attribute
+                                            save_file = True
 
                                     else:
                                         # Source attribute is already in a group, add target attribute to that group
@@ -584,13 +681,19 @@ class SchemaIntegrationWorkflow:
                                         if connected:
                                             # If yes, it means that the target attribute has at least 2 connections to this group so it can be added to the group
                                             found_group.setdefault(target_table_name, []).append(target_attribute)
+                                            correct_correspondences.setdefault(table_name, {}).setdefault(target_table_name, {})[source_attribute] = target_attribute
                                         else:
                                             # If not, ask an LLM if the correspondence is a FP
                                             reviewed_correspondences.setdefault(table_name, {}).setdefault(target_table_name, {})[source_attribute] = target_attribute
-                                            nr_of_reviews += 1
                                             correct_match = self.detect_schema_matching_false_positives(table_name=table_name, source_attribute=source_attribute, target_table_name=target_table_name, target_attribute=target_attribute, found_source_group=found_group)
                                             if correct_match: # and not skip_correspondence:
                                                 found_group.setdefault(target_table_name, []).append(target_attribute)
+                                                correct_correspondences.setdefault(table_name, {}).setdefault(target_table_name, {})[source_attribute] = target_attribute
+                                            save_file = True
+                                
+                                # Save intermediate results
+                                if save_file:
+                                    self.save_intermediate_results()
 
             # Add attributes that were not matched to any other attribute as their own group
             for table_name, table_splits in grouped_tables[entity_group].items():
@@ -600,13 +703,6 @@ class SchemaIntegrationWorkflow:
                             if not any(table_split["table_name"] in group and attribute in group[table_split["table_name"]] for group in attribute_groups):
                                 print(f"Adding unmatched attribute {table_split['table_name']}.{attribute} as its own group.")
                                 attribute_groups.append({table_split["table_name"]: [attribute]})
-
-            if entity_group != "all" and attribute_group_type == "attribute_groups":
-                self.results["schema_matching_phase"]["reviewed_correspondences"][entity_group] = reviewed_correspondences
-                self.results["schema_matching_phase"]["nr_of_reviews"][entity_group] = nr_of_reviews
-            elif attribute_group_type == "attribute_groups":
-                self.results["schema_matching_phase"]["reviewed_correspondences"] = reviewed_correspondences
-                self.results["schema_matching_phase"]["nr_of_reviews"] = nr_of_reviews
             
             attribute_groups_str = "\n".join([f"Group_{gi+1}: "+", ".join(list(set([str(attribute) for attributes in group.values() for attribute in attributes]))) for gi, group in enumerate(attribute_groups)])
             if attribute_groups_str.strip() == "":
@@ -614,7 +710,7 @@ class SchemaIntegrationWorkflow:
                 self.results_parameters[attribute_group_type][entity_group] = [{grouped_tables[entity_group][table][split]["table_name"]: attribute} for table in grouped_tables[entity_group] for split in grouped_tables[entity_group][table] for attribute in grouped_tables[entity_group][table][split]["attributes"]]
             else:
                 self.results_parameters[attribute_group_type][entity_group] = attribute_groups
-    
+
     def update_mappings_after_table_detection(self):
         # Update the mappings according to the detected tables in the normalization phase    
         all_tables_split = {entity: {} for entity in self.results_parameters["detected_tables"]["full_table"]}
@@ -636,11 +732,17 @@ class SchemaIntegrationWorkflow:
     def run_detect_tables_phase(self, **kwargs):
         # Detect tables phase: Detect tables in each input table
         phase_name = "detect_tables_phase"
-        self.results[phase_name] = {"full_model_response":{}, "messages_list": {}, "missing_loop": {}}
+        if phase_name not in self.results:
+            self.results[phase_name] = {"full_model_response":{}, "messages_list": {}, "missing_loop": {}}
+        elif len(self.results[phase_name]) == 0:
+            self.results[phase_name] = {"full_model_response":{}, "messages_list": {}, "missing_loop": {}}
         df_dict = {table_name: pd.read_csv(f"{self.table_path}/{table_name}") for table_name in self.file_names} if not self.splitting_after_integration else {f"full_table": pd.DataFrame(self.get_integrated_df("all")).sample(frac=1)}
 
-        start = time.perf_counter()
-        for ti, (table_name, df) in enumerate(df_dict.items()):
+        for ti, (table_name, df) in tqdm.tqdm(enumerate(df_dict.items()), total=len(df_dict)):
+            if table_name in self.results_parameters["detected_tables"]:
+                # Already split
+                continue
+            start = time.perf_counter()
             correct_response = False
             maximum_iterations = 3
             iteration = 0
@@ -678,13 +780,22 @@ class SchemaIntegrationWorkflow:
             # Record relationships betwen the detected table types
             if len(detected_tables) > 1:
                 self.results_parameters["relationships"][table_name] = list(detected_tables.keys())
+
+            end = time.perf_counter()
+            # Add the time
+            self.phase_times[phase_name] += end - start
+
+            # Save intermediate results
+            self.save_intermediate_results()
             
             # Log Results for debugging
             print(f"Table: {table_name}\n\n{table_serialization(df)}\n")
             print(f"Tables detected: {detected_tables}\n\n")
+            
 
         if self.splitting_after_integration:
             # Check if one entity has only one original table
+            start = time.perf_counter()
             merged_schemas_to_tables = self.results_parameters["merged_schemas_to_tables"]
             single_table_entities = []
             for entity, tables in detected_tables.items():
@@ -704,10 +815,9 @@ class SchemaIntegrationWorkflow:
                 reassignment = parse_model_response(response)
                 self.results_parameters["detected_tables"]["full_table"] = merged_schemas_to_tables
                 self.results_parameters["relationships"]["full_table"] = [entity for entity in self.results_parameters["relationships"]["full_table"] if entity in reassignment]
-
-        end = time.perf_counter()
-        # Record time taken for table detection
-        self.phase_times[phase_name] = end - start
+            
+            end = time.perf_counter()
+            self.phase_times[phase_name] = end - start
 
     def post_table_splitting_processing(self):
         # Add table names for each split detected to be traced back
@@ -752,7 +862,7 @@ class SchemaIntegrationWorkflow:
         # Show first 3 rows of each detected table
         input_str = self.tables_to_string(group_of_tables=self.results_parameters["detected_tables"])
 
-        print(input_str)
+        # print(input_str)
 
         # Run grouping phase
         messages_list = self.get_messages(phase=self.grouping_phase_name+"_with_correspondences", detected_tables=input_str, correspondences=corr_str)
@@ -765,31 +875,10 @@ class SchemaIntegrationWorkflow:
             if len(groups[group]) == 0:
                 del groups[group]
         
-        print(f"Groups found: {groups}\n\n")
-
-        # If there is a group with only one table, this table should be assigned to one of the other groups as it is not a case for integration
-        for group, grouped_tables in groups.items():
-            if len(grouped_tables) == 1:
-                table_to_reassign = grouped_tables[0]
-                # Other groups that the table can be reassigned to: groups with more than 1 table
-                other_groups = {g: t for g, t in groups.items() if g != group and len(t) > 1}
-                reassignment_messages_list = copy.deepcopy(messages_list)
-                reassignment_messages_list.append(self.add_message("assistant", response.content if self.model_type != "hf" else response))
-                reassignment_messages_list.append(self.add_message("user", f"The group {group} contains only one table: {table_to_reassign}. Please reassign this table to one of the other groups. Here are the other groups: {other_groups}. Choose response from the other groups! Respond only with the new group name."))
-                reassignment_response = self.invoke_model(reassignment_messages_list)
-                reassignment_group = reassignment_response.content if self.model_type != "hf" else reassignment_response
-                # Check that the reassignment group is valid
-                if reassignment_group not in other_groups:
-                    print("Error: The reassignment group returned by the model is not valid. Rerunning grouping phase.")
-                    print(f"Groups found: {groups}\n\n")
-                    self.run_grouping_phase()
-                else:
-                    self.results[self.grouping_phase_name]["reassigned_tables"] += 1
-                    groups[reassignment_group].append(table_to_reassign)
-        
+        # print(f"Groups found: {groups}\n\n")
         # Remove the groups that have only one table (after the reassignment)
         groups = {group: grouped_tables for group, grouped_tables in groups.items() if len(grouped_tables) > 1}
-        print(f"New groups: {groups}\n\n")
+        # print(f"New groups: {groups}\n\n")
 
         # Assign tables that are not assigned to any group:
         assigned_tables = [table for grouped_tables in groups.values() for table in grouped_tables]
@@ -892,10 +981,20 @@ class SchemaIntegrationWorkflow:
     def find_column_correspondences(self, group_of_tables, group=None, batch_nr=1):
         phase_name = "schema_matching_phase"
         # Group of tables: Choose group to run schema matching on, can be either all table splits or a specific group
-        column_correspondences = {}
+        column_correspondences = {} if len(self.results_parameters["column_correspondences"]) == 0 else self.results_parameters["column_correspondences"]
         responses = []
         messages_list = []
-        # for table_name, table_splits in tqdm.tqdm(group_of_tables[:1].items(), total=len(group_of_tables[:1])):
+
+        if len(self.results_parameters["column_correspondences"]) == 0:
+            if group:
+                self.results[phase_name]["full_model_responses"][group] = []
+                self.results[phase_name]["messages_list"][group] = []
+                self.results_parameters["column_correspondences"][group] = {}
+            else:
+                self.results[phase_name]["full_model_responses"] = []
+                self.results[phase_name]["messages_list"] = []
+                self.results_parameters["column_correspondences"] = {}
+
         for table_name, table_splits in tqdm.tqdm(group_of_tables.items(), total=len(group_of_tables)):
             # For each table in the group, run schema matching against all other tables
             for table_split in table_splits.values():
@@ -903,13 +1002,21 @@ class SchemaIntegrationWorkflow:
                 batched_table_splits = [[other_table_name, other_table_split] for other_table_name, other_table_splits in group_of_tables.items() for other_table_split in other_table_splits.values() if other_table_split["table_name"] != table_split["table_name"]]
                 batched_table_splits = [batched_table_splits[i:i + batch_nr] for i in range(0, len(batched_table_splits), batch_nr)]
 
-                for batch in batched_table_splits:
+                for batch in tqdm.tqdm(batched_table_splits, total=len(batched_table_splits),leave=False):
                     # Delete from the batch the tables that have already been compared to this table split in the previous batches
                     cleaned_batch = [[other_table_name, other_table_split] for other_table_name, other_table_split in batch if not (other_table_split["table_name"] in column_correspondences and table_split["table_name"] in column_correspondences[other_table_split["table_name"]]) and other_table_name!=table_name]
                     cleaned_batch_names = [other_table_split["table_name"] for other_table_name, other_table_split in batch if not (other_table_split["table_name"] in column_correspondences and table_split["table_name"] in column_correspondences[other_table_split["table_name"]]) and other_table_name!=table_name]
                     
+                    # Clean already done comparisons
+                    cleaned_batch = [[other_table_name, other_table_split] for other_table_name, other_table_split in cleaned_batch if not (table_split["table_name"] in column_correspondences and other_table_split["table_name"] in column_correspondences[table_split["table_name"]]) and other_table_name!=table_name]
+                    cleaned_batch_names = [other_table_split["table_name"] for other_table_name, other_table_split in cleaned_batch if not (table_split["table_name"] in column_correspondences and other_table_split["table_name"] in column_correspondences[table_split["table_name"]]) and other_table_name!=table_name]
+                    
                     if len(cleaned_batch) == 0:
+                        # print(f"All tables in the batch have already been compared to {table_split['table_name']}. Skipping this batch.")
                         continue
+
+                    start_time = time.perf_counter()
+
                     # Prepare prompt
                     # Source table
                     df_1 = pd.read_csv(f"{self.table_path}/{table_name}")
@@ -944,6 +1051,21 @@ class SchemaIntegrationWorkflow:
 
                     responses.append(langchain_message_to_dict(response))
                     messages_list.append(mess)
+
+                    if group:
+                        self.results[phase_name]["full_model_responses"][group].append(langchain_message_to_dict(response))
+                        self.results[phase_name]["messages_list"][group].append(mess)
+                        self.results_parameters["column_correspondences"][group] = column_correspondences
+                    else:
+                        self.results[phase_name]["full_model_responses"].append(langchain_message_to_dict(response))
+                        self.results[phase_name]["messages_list"].append(mess)
+                        self.results_parameters["column_correspondences"] = column_correspondences
+
+                    end_time = time.perf_counter()
+                    self.phase_times["schema_matching_phase"] += end_time - start_time
+
+                    # Save intermediate results
+                    self.save_intermediate_results()
         
         if group:
             self.results[phase_name]["full_model_responses"][group] = responses
@@ -956,29 +1078,49 @@ class SchemaIntegrationWorkflow:
 
     def run_schema_matching_phase(self, **kwargs):
         phase_name = "schema_matching_phase"
-        self.results[phase_name] = {"full_model_responses": {}, "messages_list": {}}
+        if phase_name not in self.results:
+            self.results[phase_name] = {"full_model_responses": {}, "messages_list": {}}
 
-        start_time = time.perf_counter()
         # Schema matching is running after grouping
         if "grouping_phase" in self.results:
             # Schema matching on each group separately
             for group, group_of_tables in self.results_parameters["detected_tables_grouped_and_mapped"].items():
                 self.find_column_correspondences(group_of_tables=group_of_tables, group=group, batch_nr=kwargs["schema_matching_batch_size"])
         # Schema matching is run first on all tables
+        elif self.sequence_of_phases.index("schema_matching_phase") == 0 and len(self.sequence_of_phases) == 1:
+            print("Only schema matching in the sequence of phases. Running schema matching on all tables.")
+            gt_detected_tables = copy.deepcopy(self.gt_file['schema_by_entity'])
+            # Add a table_name to all table splits
+            for ti, (table_name, table_splits) in enumerate(gt_detected_tables.items()):
+                for split, split_info in table_splits.items():
+                    split_info["table_name"] = f"{split}_table_{ti+1}"
+            self.results_parameters["detected_tables"] = gt_detected_tables
+            self.find_column_correspondences(group_of_tables=gt_detected_tables, batch_nr=kwargs["schema_matching_batch_size"])
         elif self.sequence_of_phases.index("schema_matching_phase") == 0:
             group_of_tables = {table_name: {f"table_{file_index}": { "attributes": pd.read_csv(f"{self.table_path}{table_name}").columns.tolist(), "table_name": f"table_{file_index}" }} for table_name, file_index in self.file_names_to_index.items()}
             self.find_column_correspondences(group_of_tables=group_of_tables, batch_nr=kwargs["schema_matching_batch_size"])
         else:
             # Schema matching on the detected split tables
             self.find_column_correspondences(group_of_tables=self.results_parameters["detected_tables"], batch_nr=kwargs["schema_matching_batch_size"])
-        end_time = time.perf_counter()
-        self.phase_times[phase_name] = end_time - start_time
 
     def post_schema_matching_phase_processing(self):
         # Create the attribute groups after schema matching IF grouping phase is done, or grouping phase does not exist
         if "grouping_phase" in self.results:
             grouped_tables = self.results_parameters["detected_tables_grouped_and_mapped"]
             detected_groups = self.results_parameters["groups"]
+        elif self.sequence_of_phases.index("schema_matching_phase") == 0 and len(self.sequence_of_phases) == 1:
+            # Group tables by entity type in table_group
+            grouped_tables = {}
+            detected_groups = {}
+            for table_name, table_splits in self.results_parameters["detected_tables"].items():
+                for table_split, table_split_info in table_splits.items():
+                    group = table_split_info["table_group"]
+                    grouped_tables.setdefault(group, {})
+                    grouped_tables[group].setdefault(table_name, {})
+                    grouped_tables[group][table_name][table_split] = table_split_info
+                    detected_groups.setdefault(group, [])
+                    detected_groups[group].append(table_split_info["table_name"])
+            
         elif "grouping_phase" not in self.sequence_of_phases or ("schema_matching_phase" in self.sequence_of_phases and self.sequence_of_phases.index("schema_matching_phase") < self.sequence_of_phases.index(self.table_detection_phase_name)):
             # If no grouping is run beforehand:
             grouped_tables = {"all": {table_name: {f"table_{ti+1}": { "attributes": pd.read_csv(f"{self.table_path}{table_name}").columns.tolist(), "table_name": f"table_{ti+1}" }} for ti, table_name in enumerate(self.gt_file[self.gt_part])}}
@@ -989,7 +1131,6 @@ class SchemaIntegrationWorkflow:
             # If grouping will be run after schema matching and the splitting of tables has been run
             grouped_tables = {"all": self.results_parameters["detected_tables"]}
             detected_groups = {"all": [table_info["table_name"] for table in self.results_parameters["detected_tables"] for table_info in self.results_parameters["detected_tables"][table].values()]}
-
         # Group matching attributes by correspondences
         for entity_group in detected_groups:
             self.create_attribute_groups(detected_groups, grouped_tables, entity_group)
@@ -1004,6 +1145,11 @@ class SchemaIntegrationWorkflow:
         start_time = time.perf_counter()
 
         if "schema_matching_phase" in self.sequence_of_phases:
+            # if isinstance(self.results_parameters["attribute_groups"], list):
+            #     attr = copy.deepcopy(self.results_parameters["attribute_groups"])
+            #     self.results_parameters["attribute_groups"] = {}
+            #     self.results_parameters["attribute_groups"]["all"] = attr
+            
             # Group matching attributes by correspondences
             for entity_group in detected_groups:
                 attribute_groups = self.results_parameters["attribute_groups"][entity_group]
@@ -1228,12 +1374,15 @@ class SchemaIntegrationWorkflow:
                         if attribute not in updated_integrated_schema[entity]:
                             updated_integrated_schema[entity].append(attribute)
         self.results_parameters["integrated_schemas"] = updated_integrated_schema
-
+        return
     
     def run_final_integration_phase(self, phase_iteration=0, **kwargs):
+        print("Phase iteration: ", phase_iteration)
         phase_name = "final_integration_phase"
         integrated_schemas = self.results_parameters["integrated_schemas"]
+        self.results_parameters["integrated_tables"] = {entity: self.get_integrated_df(entity) for entity in self.results_parameters["integrated_schemas"]}
         integrated_table_records = self.results_parameters["integrated_tables"]
+        
         integrated_tables = {entity: pd.DataFrame(table_rows) for entity, table_rows in integrated_table_records.items()}
     
         # Final phase in schema integration starts
@@ -1257,7 +1406,7 @@ class SchemaIntegrationWorkflow:
         # Prepare string input with the integrated schemas from the previous phase
         integrated_schemas_str = "\n".join([f"{group}: "+", ".join(integrated_schemas[group]) for group in integrated_schemas])
         integrated_tables_str = "\n\n".join([f"{group}:\n\n"+table_serialization(integrated_tables[group], nr_rows=20) for group in integrated_tables])
-        print(integrated_tables_str)
+        # print(integrated_tables_str)
         
         # Generate final integrated schema
         relationships = self.results_parameters["relationships"]
@@ -1266,8 +1415,6 @@ class SchemaIntegrationWorkflow:
         messages_list = self.get_messages(phase=phase_name+"_with_tables", schemata=integrated_schemas_str, rel_str=relationships_str, primary_keys="", integrated_tables=integrated_tables_str)
         tools = [check_subset_schemata, check_if_ids_exist, check_if_entities_are_added]
         full_responses, final_integrated_schema, messages_list = self.run_model_with_tools(messages_list, tools)
-        # full_responses = self.invoke_model(messages_list)
-        # final_integrated_schema = parse_model_response(full_responses)
         correct_response = all(any(attribute in final_integrated_schema[entity]["attributes"] for entity in final_integrated_schema) for group in integrated_schemas for attribute in integrated_schemas[group])
         iteration = 0
 
@@ -1280,12 +1427,13 @@ class SchemaIntegrationWorkflow:
             # Attributes can be moved around/deleted from certain entities but not removed entirely
             removed_attributes = [attribute for group in integrated_schemas for attribute in integrated_schemas[group] if not any(attribute in final_integrated_schema[entity]["attributes"] for entity in final_integrated_schema)]
             adding_attributes_messages_list = copy.deepcopy(messages_list)
-            adding_attributes_messages_list.append(self.add_message("assistant", f"The following attributes were removed in the final integrated schema, but they should be included at least in one of the schemas since attributes should not be removed entirely. Here are the removed attributes: {', '.join(removed_attributes)}. Please add them to the final integrated schema in the correct table and respond with the updated schema."))
+            adding_attributes_messages_list.append(self.add_message("assistant", f"The following attributes were removed, but they should be included at least in one of the entity schemas since attributes should not be removed entirely.\nHere are the removed attributes: {', '.join(removed_attributes)}.\nCheck in which entity they fit best and add them to one of the schemas. Respond with the updated schema."))
+            # Remove any tool calls
+            adding_attributes_messages_list = [msg for msg in adding_attributes_messages_list if "tool_calls" not in msg]
             full_updated_responses = self.invoke_model(adding_attributes_messages_list)
             updated_final_integrated_schema = parse_model_response(full_updated_responses)
             correct_response = all(any(attribute in updated_final_integrated_schema[entity]["attributes"] for entity in updated_final_integrated_schema) for group in integrated_schemas for attribute in integrated_schemas[group])
             iteration += 1
-            # final_integrated_schema = updated_final_integrated_schema
             if iteration >= 5:  # Prevent infinite loop
                 break
         if iteration>0:
@@ -1300,11 +1448,11 @@ class SchemaIntegrationWorkflow:
             added_entities = [entity for entity in final_integrated_schema if entity not in integrated_schemas]
             remove_added_entities_messages_list = copy.deepcopy(messages_list)
             remove_added_entities_messages_list.append(self.add_message("assistant", f"The following entities were added in the final integrated schema, but they should not be included since they were not present in any of the integrated schemas: {', '.join(added_entities)}. Please remove them from the final integrated schema and respond with the updated schema. Don't forget to keep all the attributes from the integrated schemas! The added entities' attributes should be returned to their correct entity."))
+            remove_added_entities_messages_list = [msg for msg in remove_added_entities_messages_list if not "tool_calls" in msg]
             full_updated_responses = self.invoke_model(remove_added_entities_messages_list)
             updated_final_integrated_schema = parse_model_response(full_updated_responses)
             correct_response = all(any(attribute in updated_final_integrated_schema[entity]["attributes"] for entity in updated_final_integrated_schema) for group in integrated_schemas for attribute in integrated_schemas[group]) and all(entity in integrated_schemas for entity in updated_final_integrated_schema)
             iteration += 1
-            # final_integrated_schema = updated_final_integrated_schema
             if iteration >= 5:  # Prevent infinite loop
                 break
         if iteration>0:
@@ -1412,8 +1560,51 @@ class SchemaIntegrationWorkflow:
         self.results_parameters["final_integrated_schema_mappings"] = final_integrated_schema_mappings
         self.results_parameters["new_added_attributes_per_entity"] = new_added_attributes_per_entity
 
+    def save_intermediate_results(self):
+        # Is there already an intermediate results file? If so, load it and update it with the new results
+        if os.path.exists(f"intermediate_results/{self.logfile_name.replace('logs/', '')}.pkl"):
+            intermediate_workflows = load_pickle_file(f"intermediate_results/{self.logfile_name.replace('logs/', '')}.pkl")
+            # Update the workflows with the new results
+            intermediate_workflows["workflows"][self.run_id] = self.results_parameters
+            intermediate_workflows["workflows_results"][self.run_id] = self.results
+            intermediate_workflows["time_info_per_run"][self.run_id] = self.phase_times
+            save_pickle_file(f"intermediate_results/{self.logfile_name.replace('logs/', '')}.pkl", intermediate_workflows)
+        else:
+            # Create all the file
+            intermediate_workflows = {
+                "workflows": {self.run_id: self.results_parameters},
+                "workflows_results": {self.run_id: self.results},
+                "run_info": {
+                    "benchmark": self.benchmark,
+                    "folder_name": self.folder_name,
+                    "model_name": self.model_name,
+                    "reasoning": self.reasoning,
+                    "prompt_name": self.prompt_name,
+                    "sequence_of_phases": self.sequence_of_phases,
+                    "prompts":{
+                        "prompt_name": self.prompt_name,
+                        "prompts": self.prompt_messages
+                    },
+                    "demonstration": 0,
+                    "schema_matching_batch_size": self.schema_matching_batch_size,
+                    "merging_batch_size": self.merging_batch_size,
+                    "logfile_name": self.logfile_name,
+                    "num_runs": self.num_runs,
+                    "other_parameters": {
+                        "tools_available": self.tools_available,
+                        "self-consistency": self.self_consistency,
+                    }
+                },
+                "time_info_per_run": {self.run_id: self.phase_times},
+                "tools": self.tools_available
+            }
+            # If folder doesn't exist, create it
+            if not os.path.exists("intermediate_results"):
+                os.makedirs("intermediate_results")
+            save_pickle_file(f"intermediate_results/{self.logfile_name.replace('logs/', '')}.pkl", intermediate_workflows)
+
 class SchemaIntegrationRuns:
-    def __init__(self, folder_name: str, sequence_of_phases: list[str], table_path: str, model: BaseChatModel, reasoning: str, prompt_name: str, self_consistency: bool, table_format="markdown", table_rows=10, num_runs=1, fds=False, model_type="openai", model_name=None, tokenizer=None, schema_matching_batch_size=1, merging_batch_size="all", benchmark="SINT-Benchmark"):
+    def __init__(self, folder_name: str, sequence_of_phases: list[str], table_path: str, model: BaseChatModel, reasoning: str, prompt_name: str, self_consistency: bool, table_format="markdown", table_rows=10, num_runs=1, fds=False, model_type="openai", model_name=None, tokenizer=None, schema_matching_batch_size=1, merging_batch_size="all", benchmark="SINT-Benchmark", logfile_name=None):
         self.folder_name = folder_name
         self.table_path = table_path
         self.benchmark = benchmark
@@ -1434,7 +1625,10 @@ class SchemaIntegrationRuns:
         self.fds = fds
         self.self_consistency = self_consistency
         self.results = {}
-        self.initialize_logfile()
+        if not logfile_name:
+            self.initialize_logfile()
+        else:
+            self.logfile_name = logfile_name
 
     def get_function(self, phase_name, run_nr):
         workflow = self.workflows[run_nr]
@@ -1455,7 +1649,7 @@ class SchemaIntegrationRuns:
         # For each overall number of runs: initialize a separate workflow
         self.workflows = {}
         for run in range(self.num_runs):
-            self.workflows[run] = SchemaIntegrationWorkflow(folder_name=self.folder_name, table_path=self.table_path, model=self.model, prompt_messages=self.prompt_messages, table_format=self.table_format, table_rows=self.table_rows, gt_part=self.gt_part, sequence_of_phases=self.sequence_of_phases, tools_available=self.tools_available, model_type=self.model_type, model_name=self.model_name, tokenizer=self.tokenizer, benchmark=self.benchmark, self_consistency=self.self_consistency)
+            self.workflows[run] = SchemaIntegrationWorkflow(folder_name=self.folder_name, table_path=self.table_path, model=self.model, prompt_messages=self.prompt_messages, table_format=self.table_format, table_rows=self.table_rows, gt_part=self.gt_part, sequence_of_phases=self.sequence_of_phases, tools_available=self.tools_available, model_type=self.model_type, model_name=self.model_name, tokenizer=self.tokenizer, benchmark=self.benchmark, self_consistency=self.self_consistency, run_id=run, logfile_name=self.logfile_name, schema_matching_batch_size=self.schema_matching_batch_size, merging_batch_size=self.merging_batch_size, reasoning=self.reasoning, num_runs=self.num_runs,prompt_name=self.prompt_name)
 
         # Initialize self-consistency
         if self.self_consistency:
@@ -1467,6 +1661,32 @@ class SchemaIntegrationRuns:
                 "schema_integration_phase": self.self_consistency_run.run_schema_integration_self_consistency,
                 "final_integration_phase": self.self_consistency_run.run_final_integration_self_consistency,
             }
+
+    def initialize_workflow_from_file(self):
+        # Load runs from pickle file and logfile name provided
+        workflows = load_pickle_file(f"intermediate_results/{self.logfile_name.replace('logs/', '')}.pkl")
+        self.record_run_info = workflows["run_info"]
+        self.tools_available = workflows["tools"]
+        self.workflows = {}
+        for run in range(self.num_runs):
+            self.workflows[run] = SchemaIntegrationWorkflow(folder_name=self.record_run_info["folder_name"], table_path=self.table_path, model=self.model, prompt_messages=self.record_run_info["prompts"]["prompts"], table_format=self.table_format, table_rows=self.table_rows, gt_part=self.gt_part, sequence_of_phases=self.record_run_info["sequence_of_phases"], tools_available=self.tools_available, model_type=self.model_type, model_name=self.record_run_info["model_name"], tokenizer=self.tokenizer, benchmark=self.benchmark, self_consistency=self.self_consistency, run_id=run, logfile_name=self.logfile_name, schema_matching_batch_size=self.schema_matching_batch_size, merging_batch_size=self.merging_batch_size, reasoning=self.reasoning, num_runs=self.num_runs,prompt_name=self.prompt_name)
+            self.workflows[run].results_parameters = workflows["workflows"][run]
+            self.workflows[run].results = workflows["workflows_results"][run]
+            self.workflows[run].phase_times = workflows["time_info_per_run"][run]
+
+        # Initialize self-consistency
+        self.self_consistency_run = SelfConsistency(num_runs=self.num_runs, file_names=self.workflows[0].file_names, benchmark=self.benchmark, folder_name=self.folder_name)
+        self.self_consistency_function_mapping = {
+            "detect_tables_phase": self.self_consistency_run.run_table_splitting_self_consistency,
+            "schema_matching_phase": self.self_consistency_run.run_schema_matching_self_consistency,
+            "grouping_phase": self.self_consistency_run.run_grouping_self_consistency,
+            "schema_integration_phase": self.self_consistency_run.run_schema_integration_self_consistency,
+            "final_integration_phase": self.self_consistency_run.run_final_integration_self_consistency,
+        }
+
+        if "self_consistency" in workflows:
+            self.self_consistency_run.results = workflows["self_consistency"]
+            self.self_consistency_run.self_consistency_results = workflows["self_consistency_results"]
 
     def initialize_logfile(self):
         file_prefix = f"llm-workflow-{self.benchmark}-{self.folder_name}-"
@@ -1496,18 +1716,22 @@ class SchemaIntegrationRuns:
                 "self-consistency": self.self_consistency,
             }
         }
-        self.log_file_name = logfile_name
+        self.logfile_name = logfile_name
 
     def run_workflow(self):
-        # Initialize workflow
-        self.initialize_workflow()
-        
+        # Initialize workflow        
         for phase_name in self.sequence_of_phases:
+            if phase_name in self.self_consistency_run.self_consistency_results:
+                print(f"Self-consistency results already exist for phase: {phase_name}. Skipping this phase.")
+                continue
+            
             for run in range(self.num_runs):
                 print(f"Running phase, run {run+1}: {phase_name}")
                 phase_function = self.get_function(phase_name=phase_name, run_nr=run)["function"]
                 # Call function
                 phase_function(run_feedback_loop=True, fds=self.fds, schema_matching_batch_size=self.schema_matching_batch_size, merging_batch_size=self.merging_batch_size)
+                # Save intermediate results in pkl file with the same log file name
+                self.save_intermediate_results()
 
             if self.self_consistency:
                 print(f"Running self-consistency for phase: {phase_name}")
@@ -1537,7 +1761,10 @@ class SchemaIntegrationRuns:
                     phase_postprocessing_function = self.get_function(phase_name=phase_name, run_nr=run)["postprocessing_function"]
                     if phase_postprocessing_function:
                         phase_postprocessing_function()
-        
+
+            # Save intermediate results in pkl file with the same log file name
+            self.save_intermediate_results()
+
         # Record all run results
         for run in range(self.num_runs):
             self.workflows[run].results["parameters"] = self.workflows[run].results_parameters
@@ -1554,4 +1781,25 @@ class SchemaIntegrationRuns:
         }
         if self.self_consistency:
             log_file_content["self_consistency_results"] = self.self_consistency_run.self_consistency_results
-        sienna.save(log_file_content, f"{self.log_file_name}.json")
+        sienna.save(log_file_content, f"{self.logfile_name}.json")
+        # Move the intermediate result file to the finished folder
+        if os.path.exists(f"intermediate_results/{self.logfile_name.replace('logs/', '')}.pkl"):
+            if not os.path.exists("intermediate_results/finished"):
+                os.makedirs("intermediate_results/finished")
+            shutil.move(f"intermediate_results/{self.logfile_name.replace('logs/', '')}.pkl", f"intermediate_results/finished/{self.logfile_name.replace('logs/', '')}.pkl")
+
+    def save_intermediate_results(self):
+        intermediate_workflows = {
+            # Remove model and tokenizer, keep all other
+            "workflows": {run: self.workflows[run].results_parameters for run in self.workflows},
+            "workflows_results": {run: self.workflows[run].results for run in self.workflows},
+            "run_info": self.record_run_info,
+            "time_info_per_run": {run: self.workflows[run].phase_times for run in self.workflows},
+            "tools": self.tools_available
+        }
+
+        if self.self_consistency_run.results:
+            intermediate_workflows["self_consistency"] = self.self_consistency_run.results
+            intermediate_workflows["self_consistency_results"] = self.self_consistency_run.self_consistency_results
+
+        save_pickle_file(f"intermediate_results/{self.logfile_name.replace('logs/', '')}.pkl", intermediate_workflows)

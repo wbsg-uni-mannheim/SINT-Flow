@@ -1,6 +1,7 @@
 import csv
 import sienna
 from dataset_utils import load_ground_truth
+from evaluation_utils import evaluate_schemas
 # from utils import write_txt_file
 import pandas as pd
 import collections
@@ -8,74 +9,19 @@ import numpy as np
 import os
 import copy
 import random
-
-import numpy as np
-def calculate_f1_p_r(report, labels):
-    for label in report:
-        if report[label]['TP'] == 0:
-            precision = 0
-            recall = 0
-        else:
-            precision = report[label]['TP'] / (report[label]['TP'] + report[label]['FP'])
-            recall = report[label]['TP'] / (report[label]['TP'] + report[label]['FN'])
-
-        if np.isnan(precision) or precision == 0:
-            f1 = 0
-        elif np.isnan(recall) or precision == 0:
-            f1 = 0
-        else:
-            f1 = 2*precision*recall / (precision + recall)
-
-        report[label]['p'] =  precision
-        report[label]['r'] =  recall
-        report[label]['f1'] = f1
-    
-    all_fn = 0
-    all_tp = 0
-    all_fp = 0
-
-    for r in report:
-        # if r != num_classes-1:
-        all_fn += report[r]['FN']
-        all_tp += report[r]['TP']
-        all_fp += report[r]['FP']
-        
-    class_f1s = [ report[class_]['f1'] for class_ in report]
-    class_p = [ 0 if np.isnan(report[class_]['p']) else report[class_]['p'] for class_ in report]
-    class_r = [ 0 if np.isnan(report[class_]['r']) else report[class_]['r'] for class_ in report]
-    # macro_f1 = sum(class_f1s[:-1]) / (num_classes-1)
-    macro_f1 = sum(class_f1s) / len(labels)
-    
-    p =  sum(class_p) / len(labels)
-    r =  sum(class_r) / len(labels)
-    micro_f1 = all_tp / ( all_tp + (1/2 * (all_fp + all_fn) )) 
-    
-    per_class_eval = {}
-    errors_per_class = {}
-    for index, t in enumerate(labels):
-        per_class_eval[t] = {"Precision":class_p[index], "Recall": class_r[index], "F1": class_f1s[index]}
-        errors_per_class[t] = report[t]["FN"] + report[t]["FP"]
-    
-    evaluation = {
-        "Micro-F1": micro_f1,
-        "Macro-F1": macro_f1,
-        "Precision": p,
-        "Recall": r
-    }
-    
-    return {
-        "evaluation": evaluation,
-        "per_class_eval": per_class_eval,
-        "errors_per_class": errors_per_class
-    }
+import pdb
 
 class SchemaIntegrationEvaluation:
-    def __init__(self, tables_path, log_file_name):
+    def __init__(self, tables_path, log_file_name=None, folder=None):
         self.tables_path = tables_path
         self.log_file_name = log_file_name
-        self.init_predictions()
+        self.folder = folder
+        self.benchmark = "SINT-Benchmark"
+        if self.log_file_name is not None:
+            self.init_predictions()
         # Load ground truth
-        self.init_gt_properties()
+        if self.log_file_name is not None:
+            self.init_gt_properties()
         self.eval_results = {}
         self.overall_metrics = {}
         self.analysis_results = {}
@@ -94,6 +40,24 @@ class SchemaIntegrationEvaluation:
         self.all_predictions = file["runs"]
         self.predictions = file["runs"] if not self.self_consistency else {"0": file["runs"]["0"]}
 
+    def init_manually(self, benchmark, folder, sequence_of_phases, predictions, num_runs):
+        self.benchmark = benchmark
+        self.folder = folder
+        self.sequence_of_phases = sequence_of_phases
+        self.num_runs = num_runs
+        self.table_splitting_phase_name = "detect_tables_phase"
+
+        self.run_info = {
+            "benchmark": self.benchmark,
+            "folder_name": self.folder,
+            "sequence_of_phases": self.sequence_of_phases,
+            "other_parameters": self.other_parameters,
+            "num_runs": self.num_runs
+        }
+        
+        self.predictions = predictions
+        self.all_predictions = self.predictions
+
     def init_gt_properties(self):
         # initialize Ground truth
         self.file_names, gt_file, gt_mappings, gt_final_integrated_schema = load_ground_truth(self.folder, benchmark=self.benchmark)
@@ -102,8 +66,10 @@ class SchemaIntegrationEvaluation:
         try:
             self.splitting_after_integration = self.sequence_of_phases.index(self.table_splitting_phase_name) > self.sequence_of_phases.index("schema_integration_phase")
         except Exception:
-            self.splitting_after_integration = True
-        # print(gt_integration_part)
+            # Input split tables:
+            self.splitting_after_integration = False
+            # Input original tables:
+            # self.splitting_after_integration = True
         self.gt_file = gt_file[gt_part]
         self.gt_mappings = gt_mappings[gt_integration_part] if gt_integration_part in gt_mappings else gt_mappings
         self.overall_gt_mappings = gt_mappings["column_mappings"]
@@ -123,8 +89,6 @@ class SchemaIntegrationEvaluation:
 
         if self.splitting_after_integration:
             # Merge all attributes, column mappings and schema matching
-            # print(self.folder)
-            # print(self.gt_mappings.keys())
             merged_attributes = list(set([attr for ent, attrs in self.gt_mappings.items() for attr in attrs["attributes"]]))
             # Merge attribute values
             merged_attribute_values = {}
@@ -153,150 +117,7 @@ class SchemaIntegrationEvaluation:
         self.integrated_attribute_labels = [f"{ent}.{attr}" for ent, attrs in self.gt_final_integrated_schema.items() for attr in attrs["attributes"]]
         self.integrated_entity_labels = list(self.gt_final_integrated_schema.keys())
 
-    def evaluate_schemas(self, predictions, actual, entity_labels, attribute_labels, join_tables=None):
-        report_entities = {label: {'TP': 0, 'FP': 0, 'FN': 0} for label in entity_labels}
-        report_attributes = {label: {'TP': 0, 'FP': 0, 'FN': 0} for label in attribute_labels}
-        fps_list = []
-        fns_list = []
 
-        overall_tps_entities = 0
-        overall_fps_entities = 0
-        overall_fns_entities = 0
-
-        overall_tps_attributes = 0
-        overall_fps_attributes = 0
-        overall_fns_attributes = 0
-        
-        errors_per_table = {}
-
-        # TODO: Fix foreign keys evaluation!
-        success_fk_detections = 0
-        # overall_fks = len([fk for entity in actual for fk in actual[entity]["foreign_keys"]])
-        wrong_fk_detections = 0 # FPs
-        missed_fk_detections = 0 # FNs
-
-        # Counting TPs, FPs, FNs for attributes, entities and foreign keys
-        for (table_name, predicted) in predictions.items():
-            for pred in predicted:
-                if pred in actual[table_name]:
-                    # Correct entity prediction
-                    report_entities[pred]['TP'] += 1
-                    overall_tps_entities += 1
-
-                    # Check predicted attributes for this entity
-                    for pred_attr in predicted[pred]["attributes"]:
-                        if pred_attr not in actual[table_name][pred]["attributes"]:
-                            # Incorrect attribute prediction: FP
-                            overall_fps_attributes += 1
-                            if f"{pred}.{pred_attr}" in report_attributes:
-                                report_attributes[f"{pred}.{pred_attr}"]['FP'] += 1
-                            if table_name not in errors_per_table:
-                                errors_per_table[table_name] = []
-                            errors_per_table[table_name].append(f"Wrong attribute detection for entity '{pred}': predicted attribute '{pred_attr}'")
-                            fps_list.append(f"Wrong attribute detection for entity '{pred}': predicted attribute '{pred_attr}'")
-                    
-                    for act_attr in actual[table_name][pred]["attributes"]:
-                        if act_attr not in predicted[pred]["attributes"]:
-                            # Missed attribute prediction: FN
-                            overall_fns_attributes += 1
-                            if f"{pred}.{act_attr}" in report_attributes:
-                                report_attributes[f"{pred}.{act_attr}"]['FN'] += 1
-                            if table_name not in errors_per_table:
-                                errors_per_table[table_name] = []
-                            errors_per_table[table_name].append(f"Missed attribute '{act_attr}' for entity '{pred}'")
-                            fns_list.append(f"Missed attribute '{act_attr}' for entity '{pred}'")
-
-                else:
-                    # Incorrect prediction: FP
-                    overall_fps_entities += 1
-                    if pred in entity_labels:
-                        report_entities[pred]['FP'] += 1 
-                    if table_name not in errors_per_table:
-                        errors_per_table[table_name] = []
-                    errors_per_table[table_name].append(f"Wrong entity type detection: predicted '{pred}'")
-                    fps_list.append(f"Wrong entity type detection: predicted '{pred}'")
-
-                    # Since entity is incorrect: all predicted attributes are also incorrect: FP
-                    for pred_attr in predicted[pred]["attributes"]:
-                        overall_fps_attributes += 1
-                        if any([pred_attr in actual[table_name][act]["attributes"] for act in actual[table_name]]):
-                            found_entity = [act for act in actual[table_name] if pred_attr in actual[table_name][act]["attributes"]][0]
-                            report_attributes[f"{found_entity}.{pred_attr}"]['FP'] += 1
-                        if table_name not in errors_per_table:
-                            errors_per_table[table_name] = []
-                        errors_per_table[table_name].append(f"Wrong attribute detection for entity '{pred}': predicted attribute '{pred_attr}'")
-                        fps_list.append(f"Wrong attribute detection for entity '{pred}': predicted attribute '{pred_attr}'")
-                
-                # If foreign keys should be predicted: Evaluate FKs
-                if "foreign_keys" in predicted[pred]:
-                    if pred in actual[table_name]:
-                        for fk, value in predicted[pred]["foreign_keys"].items():
-                            if fk in actual[table_name][pred]["foreign_keys"].keys():
-                                if value == actual[table_name][pred]["foreign_keys"][fk]:
-                                    success_fk_detections += 1  # TP
-                                else:
-                                    wrong_fk_detections += 1  # FP
-                            else:
-                                wrong_fk_detections += 1
-                        for fk in actual[table_name][pred]["foreign_keys"]:
-                            if fk not in predicted[pred]["foreign_keys"]:
-                                missed_fk_detections += 1  # FN
-                    else:
-                        wrong_fk_detections += len(predicted[pred]["foreign_keys"])
-
-            for act in actual[table_name]:
-                if act not in predicted:
-                    # Missed prediction: FN
-                    overall_fns_entities += 1
-                    report_entities[act]['FN'] += 1
-                    if table_name not in errors_per_table:
-                        errors_per_table[table_name] = []
-                    errors_per_table[table_name].append(f"Missed entity type '{act}'")
-                    fns_list.append(f"Missed entity type '{act}'")
-
-                    # Since entity is missed: all its attributes are also missed: FN
-                    for act_attr in actual[table_name][act]["attributes"]:
-                        overall_fns_attributes += 1
-                        if f"{act}.{act_attr}" in report_attributes:
-                            report_attributes[f"{act}.{act_attr}"]['FN'] += 1
-                        if table_name not in errors_per_table:
-                            errors_per_table[table_name] = []
-                        errors_per_table[table_name].append(f"Missed attribute '{act_attr}' for entity '{act}'")
-                        fns_list.append(f"Missed attribute '{act_attr}' for entity '{act}'")
-
-
-                    # Evaluate FKs: since entity is missed, all FKs are also missed
-                    if "foreign_keys" in actual[table_name][act]:
-                        for fk in actual[table_name][act]["foreign_keys"]:
-                            missed_fk_detections += 1
-
-                else:
-                    for act_attr in actual[table_name][act]["attributes"]:
-                        if act_attr in predicted[act]["attributes"]:
-                            overall_tps_attributes += 1
-                            report_attributes[f"{act}.{act_attr}"]['TP'] += 1
-
-                        # Count duplicates as FPs
-                        if sum([ 1 for p in predicted[act]["attributes"] if p==act_attr]) > 1:
-                            print(act_attr)
-                            overall_fps_attributes += sum([ 1 for p in predicted[act]["attributes"] if p==act_attr])-1
-        
-        # Check the evaluation results are correct
-        assert(overall_tps_entities + overall_fns_entities == sum([ len(actual[table_name]) for table_name in actual]))
-        assert(overall_tps_attributes + overall_fns_attributes == sum([ len(actual[table_name][entity]["attributes"]) for table_name in actual for entity in actual[table_name]]))
-        assert(overall_tps_entities + overall_fps_entities == sum([ len(predictions[table_name]) for table_name in predictions]))
-        assert(overall_tps_attributes + overall_fps_attributes == sum([ len(predictions[table_name][entity]["attributes"]) for table_name in predictions for entity in predictions[table_name]]))
-        
-        eval_results_entity = calculate_f1_p_r(report_entities, entity_labels)
-        eval_results_attributes = calculate_f1_p_r(report_attributes, attribute_labels)
-
-        eval_results_entity["eval_stats"] = {"tps": overall_tps_entities, "fps": overall_fps_entities, "fns": overall_fns_entities, "overall_recall": overall_tps_entities/(overall_tps_entities + overall_fns_entities), "overall_precision": overall_tps_entities/(overall_tps_entities + overall_fps_entities)}
-        eval_results_attributes["eval_stats"] = {"tps": overall_tps_attributes, "fps": overall_fps_attributes, "fns": overall_fns_attributes, "overall_recall": overall_tps_attributes/(overall_tps_attributes + overall_fns_attributes), "overall_precision": overall_tps_attributes/(overall_tps_attributes + overall_fps_attributes)}
-        eval_results_entity["eval_stats"]["overall_f1"] = 2*eval_results_entity["eval_stats"]["overall_precision"]*eval_results_entity["eval_stats"]["overall_recall"] / (eval_results_entity["eval_stats"]["overall_precision"] + eval_results_entity["eval_stats"]["overall_recall"]) if (eval_results_entity["eval_stats"]["overall_precision"] + eval_results_entity["eval_stats"]["overall_recall"])>0 else 0
-        eval_results_attributes["eval_stats"]["overall_f1"] = 2*eval_results_attributes["eval_stats"]["overall_precision"]*eval_results_attributes["eval_stats"]["overall_recall"] / (eval_results_attributes["eval_stats"]["overall_precision"] + eval_results_attributes["eval_stats"]["overall_recall"]) if (eval_results_attributes["eval_stats"]["overall_precision"] + eval_results_attributes["eval_stats"]["overall_recall"])>0 else 0
-
-        return {"eval_results_entity": eval_results_entity, "eval_results_attributes": eval_results_attributes, "errors_list": {"fps": fps_list, "fns": fns_list}}
-    
     def evaluate_detect_tables_phase(self, run_nr):
         # Tables to evaluate
         predicted_table_splits = self.predictions[run_nr]["parameters"]["detected_tables"]
@@ -400,12 +221,16 @@ class SchemaIntegrationEvaluation:
             # Update attribute mappings to by entity
             self.predicted_mapped_attributes = {entity: {pred_attr: self.predicted_mapped_attributes["all"][pred_attr] for pred_attr in self.predictions[run_nr]["parameters"]["detected_tables"]["full_table"][entity]["attributes"]} for entity in self.predictions[run_nr]["parameters"]["detected_tables"]["full_table"]}
 
-        # Evaluate mapped entities
-        self.eval_results[run_nr]["detect_tables_phase"] = self.evaluate_schemas(detected_tables_mapped, self.gt_file, self.entity_labels, self.attribute_labels)
+        # Evaluate entities and attribute assignments
+        self.eval_results[run_nr]["detect_tables_phase"] = evaluate_schemas(detected_tables_mapped, self.gt_file, self.entity_labels, self.attribute_labels)
+        
+        # Save metrics for average calculation
         self.overall_metrics.setdefault("detect_tables_phase_entity", [])
-        self.overall_metrics["detect_tables_phase_entity"].append(self.eval_results[run_nr]["detect_tables_phase"]["eval_results_entity"]["eval_stats"])
+        self.overall_metrics["detect_tables_phase_entity"].append(self.eval_results[run_nr]["detect_tables_phase"]["eval_results_entity"]["evaluation"])
         self.overall_metrics.setdefault("detect_tables_phase_attributes", [])
-        self.overall_metrics["detect_tables_phase_attributes"].append(self.eval_results[run_nr]["detect_tables_phase"]["eval_results_attributes"]["eval_stats"])
+        self.overall_metrics["detect_tables_phase_attributes"].append(self.eval_results[run_nr]["detect_tables_phase"]["eval_results_attributes"]["evaluation"])
+        
+        # Save errors for analysis
         self.analysis_results.setdefault(run_nr, {})
         self.analysis_results[run_nr]["detect_tables_phase"] = self.eval_results[run_nr]["detect_tables_phase"]["errors_list"]
 
@@ -417,7 +242,6 @@ class SchemaIntegrationEvaluation:
         # Evaluate grouping of tables, each table has an assigned group
         groups_mapped = {group: [] for group in self.predictions[run_nr]["parameters"]["groups"]}
         # Using old mappings, map entities again to gt labels
-        # for (table_name, table_splits) in self.predictions[run_nr]["parameters"]["detected_tables_grouped"].items():
         for (table_name, table_splits) in self.predictions[run_nr]["parameters"]["detected_tables"].items():
             for (table_split, table) in table_splits.items():
                 groups_mapped[table["table_group"]].append(self.overall_mappings[table_name][table_split])
@@ -466,7 +290,7 @@ class SchemaIntegrationEvaluation:
         gts = []
 
         for ti, (table_name, table_splits) in enumerate(detected_tables_grouped_mapped.items()):
-            gt_groups = [f"{table_split['table_group']}.{table_split_name}_table_{ti+1}" for (table_split_name, table_split) in self.gt_file[table_name].items()]
+            gt_groups = [f"{table_split['table_group']}.{table_split_name}_table_{self.file_names_to_index[table_name]}" for (table_split_name, table_split) in self.gt_file[table_name].items()]
             predicted_groups = [f"{table_split['table_group']}.{table_split['table_name']}" for table_split in table_splits.values()]
             preds.append(predicted_groups)
             gts.append(gt_groups)
@@ -490,7 +314,7 @@ class SchemaIntegrationEvaluation:
         eval_results["overall_f1"] = 2*eval_results["overall_precision"]*eval_results["overall_recall"] / (eval_results["overall_precision"] + eval_results["overall_recall"]) if (eval_results["overall_precision"] + eval_results["overall_recall"])>0 else 0
         # TODO: Save class-wise evaluation
         # Save evaluation results
-        self.eval_results[run_nr][ "grouping_phase"] = eval_results
+        self.eval_results[run_nr]["grouping_phase"] = eval_results
         # Save for average calculation
         self.overall_metrics.setdefault("grouping_phase", [])
         self.overall_metrics["grouping_phase"].append(eval_results)
@@ -506,7 +330,7 @@ class SchemaIntegrationEvaluation:
         gt_column_correspondences = {f"table_{self.file_names_to_index[table_name]}": {f"table_{self.file_names_to_index[other_table_name]}": table_corrs[other_table_name] for other_table_name in table_corrs} for ti, (table_name, table_corrs) in enumerate(self.schema_matching_correspondences.items())}
 
         # If schema matching is run after splitting tables and before grouping, merge original tables
-        if self.splitting_after_integration or ("schema_matching_phase" in self.sequence_of_phases and self.sequence_of_phases.index("schema_matching_phase")==0):
+        if self.splitting_after_integration or ("schema_matching_phase" in self.sequence_of_phases and self.sequence_of_phases.index("schema_matching_phase")==0 and len(self.sequence_of_phases)>1):
             column_correspondences = self.predictions[run_nr]["parameters"]["original_column_correspondences"] if "original_column_correspondences" in self.predictions[run_nr]["parameters"] else self.predictions[run_nr]["parameters"]["column_correspondences"]
         
             if remove_correspondences:
@@ -530,10 +354,13 @@ class SchemaIntegrationEvaluation:
                             del column_correspondences_updated[table][other_table][attr]
             column_correspondences = column_correspondences_updated
         else:
-            if self.sequence_of_phases.index("schema_matching_phase") > self.sequence_of_phases.index("grouping_phase"):
-                # Flatten the correspondences when they are grouped
-                schema_matching_predictions = {table: table_corrs[table] for entity, table_corrs in self.predictions[run_nr]["parameters"]["column_correspondences"].items() for table in table_corrs}
-            else:
+            try:
+                if self.sequence_of_phases.index("schema_matching_phase") > self.sequence_of_phases.index("grouping_phase"):
+                    # Flatten the correspondences when they are grouped
+                    schema_matching_predictions = {table: table_corrs[table] for entity, table_corrs in self.predictions[run_nr]["parameters"]["column_correspondences"].items() for table in table_corrs}
+                else:
+                    schema_matching_predictions = self.predictions[run_nr]["parameters"]["column_correspondences"]
+            except:
                 schema_matching_predictions = self.predictions[run_nr]["parameters"]["column_correspondences"]
 
             if remove_correspondences:
@@ -603,7 +430,7 @@ class SchemaIntegrationEvaluation:
                             # An incorrect correspondence was removed
                             correct_changes += 1
             self.eval_results[run_nr]["removed_correspondences_evaluation"] = {"total_changes": total_changes, "correct_changes": correct_changes, "incorrect_changes": incorrect_changes, "percentage of correct changes": correct_changes/total_changes if total_changes>0 else 0, "percentage of incorrect changes": incorrect_changes/total_changes if total_changes>0 else 0}
-        
+         
         overall_tps = 0
         overall_fps = 0
         overall_fns = 0
@@ -674,28 +501,36 @@ class SchemaIntegrationEvaluation:
         # If table is split after schema integration, all tables are grouped together
         self.mapped_groups = {"all": "all"} if self.splitting_after_integration else self.mapped_groups
 
-        for integration_type in ["integrated_schemas", "integrated_attributes_no_removals"]:
-            # If the original attribute groups before schema matching loop were not recorded: skip
-            if "attribute_groups_with_no_removals" not in self.predictions[run_nr]["parameters"] and integration_type == "integrated_attributes_no_removals":
+        # Two integration setups for analysis: does the Schema Matching review loop have any impact on the created schema and mappings?
+        # Integrated_schemas_refined: integrated schemas created after the schema matching review loop
+        for integration_setup in ["integrated_schemas_refined", "integrated_schemas_unrefined"]:
+            # If the original attribute groups before schema matching loop were not recorded: skip, old runs
+            if "attribute_groups_with_no_removals" not in self.predictions[run_nr]["parameters"] and integration_setup == "integrated_schemas_unrefined":
+                continue
+            if integration_setup == "integrated_schemas_unrefined" and len(self.predictions[run_nr]["parameters"]["attribute_groups_with_no_removals"]) == 0:
                 continue
 
             # Map the integrated attributes to GT attributes for evaluation
-            predicted_mapped_attributes[integration_type] = {}
+            predicted_mapped_attributes[integration_setup] = {}
             # Based on the above mappings, map all columns to the GT attributes for evaluation
-            predicted_column_mappings[integration_type] = {}
+            predicted_column_mappings[integration_setup] = {}
             # Retrieve the attribute groups
-            attribute_groups = self.predictions[run_nr]["parameters"]["attribute_groups_with_no_removals"] if integration_type == "integrated_attributes_no_removals" else self.predictions[run_nr]["parameters"]["attribute_groups"]
+            attribute_groups = self.predictions[run_nr]["parameters"]["attribute_groups_with_no_removals"] if integration_setup == "integrated_schemas_unrefined" else self.predictions[run_nr]["parameters"]["attribute_groups"]
             
             # Retrieve the integrated schemata for all entity types
             if self.splitting_after_integration:
-                if integration_type == "integrated_attributes_no_removals":
+                if integration_setup == "integrated_schemas_unrefined":
                     random.seed(0)
+                    if isinstance(attribute_groups, list):
+                        attribute_groups = {"all": attribute_groups}
                     predicted_integrated_schemas = {entity: [random.choice(list(set([str(attribute) for attributes in group.values() for attribute in attributes]))) for gi, group in enumerate(attribute_groups)] for entity, attribute_groups in attribute_groups.items()}
                 else:
                     predicted_integrated_schemas = {entity: list(self.predictions[run_nr]["parameters"]["integrated_attributes"][entity].values()) for entity in self.predictions[run_nr]["parameters"]["integrated_attributes"]}
             else:
-                if integration_type == "integrated_attributes_no_removals":
+                if integration_setup == "integrated_schemas_unrefined":
                     random.seed(0)
+                    if isinstance(attribute_groups, list):
+                        attribute_groups = {"all": attribute_groups}
                     predicted_integrated_schemas = {entity: [random.choice(list(set([str(attribute) for attributes in group.values() for attribute in attributes]))) for gi, group in enumerate(attribute_groups)] for entity, attribute_groups in attribute_groups.items() if entity!="all"}
                 else:
                     predicted_integrated_schemas = self.predictions[run_nr]["parameters"]["integrated_schemas"]
@@ -703,8 +538,8 @@ class SchemaIntegrationEvaluation:
             for entity_group in predicted_integrated_schemas:
                 if self.mapped_groups[entity_group] not in self.gt_mappings:
                     # If the entity group was not previously mapped to a GT entity type, all attributes are wrong = FPs
-                    predicted_column_mappings[integration_type][self.mapped_groups[entity_group]] = self.predictions[run_nr]["parameters"]["detected_tables_grouped_and_mapped"][entity_group]
-                    predicted_mapped_attributes[integration_type][entity_group] = {pred_attr: f"None_{pred_attr}" for pred_attr in predicted_integrated_schemas[entity_group]}
+                    predicted_column_mappings[integration_setup][self.mapped_groups[entity_group]] = self.predictions[run_nr]["parameters"]["detected_tables_grouped_and_mapped"][entity_group]
+                    predicted_mapped_attributes[integration_setup][entity_group] = {pred_attr: f"None_{pred_attr}" for pred_attr in predicted_integrated_schemas[entity_group]}
                     continue
 
                 group_attributes_with_values = {}
@@ -719,15 +554,23 @@ class SchemaIntegrationEvaluation:
                     else:
                         attribute_overlaps[pred_attr] = {}
                         # Collect 3 values from all columns that are linked to this predicted attribute
-                        if "original_detected_tables_grouped_and_mapped" in self.predictions[run_nr]["parameters"] and integration_type != "integrated_attributes_no_removals":
+                        if "original_detected_tables_grouped_and_mapped" in self.predictions[run_nr]["parameters"] and integration_setup != "integrated_schemas_unrefined":
                             connected_columns = [f"{table_name}|||{table_split}|||{col}" for table_name, table_splits in self.predictions[run_nr]["parameters"]["original_detected_tables_grouped_and_mapped"][entity_group].items() for table_split, table_info in table_splits.items() if pred_attr in table_info["column_mappings_to_integrated_schema"].values() for col in table_info["column_mappings_to_integrated_schema"].keys() if table_info["column_mappings_to_integrated_schema"][col] == pred_attr]
-                        elif integration_type == "integrated_attributes_no_removals":
+                        elif integration_setup == "integrated_schemas_unrefined":
                             connected_columns = [f"{self.index_to_file_names[int(table_name.split('_table_')[-1])]}|||{table_name}|||{attribute}" if "_table_" in table_name else f"{self.index_to_file_names[int(table_name.split('table_')[-1])]}|||{table_name}|||{attribute}" for table_name, table_attributes in attribute_groups[entity_group][i].items() for attribute in table_attributes]
                         else:
                             connected_columns = [f"{table_name}|||{table_split}|||{col}" for table_name, table_splits in self.predictions[run_nr]["parameters"]["detected_tables_grouped_and_mapped"][entity_group].items() for table_split, table_info in table_splits.items() if pred_attr in table_info["column_mappings_to_integrated_schema"].values() for col in table_info["column_mappings_to_integrated_schema"].keys() if table_info["column_mappings_to_integrated_schema"][col] == pred_attr]
+                        
+                        if len(connected_columns) == 0:
+                            # Probably an error from the model: has added an attribute that does not exist in this group
+                            group_attributes_with_values[pred_attr] = []
+
                         for table_name_split_col in connected_columns:
                             table_name, table_split, col = table_name_split_col.split("|||")
                             df = pd.read_csv(f"{self.tables_path}/{self.folder}/{table_name}")
+                            if col not in df.columns:
+                                print(f"Column {col} not in table {table_name}")
+                                continue
                             for value in df[col].dropna().tolist()[:3]:
                                 group_attributes_with_values.setdefault(pred_attr, []).append(value)
                     
@@ -765,42 +608,43 @@ class SchemaIntegrationEvaluation:
 
                 assert len(mapped_attributes) == len(set(predicted_integrated_schemas[entity_group]))
 
-                # if integration_type == "integrated_schemas":
                 # Update predicted column mappings with mapped attributes: the right-side
+                # First retrieve the detected tables and their column mappings for this entity group
                 if "original_detected_tables_grouped_and_mapped" in self.predictions[run_nr]["parameters"]:
-                    gt_mapped_detected_tables_and_attributes = copy.deepcopy(self.predictions[run_nr]["parameters"]["original_detected_tables_grouped_and_mapped"][entity_group])
+                    mapped_detected_grouped_tables_with_mappings = copy.deepcopy(self.predictions[run_nr]["parameters"]["original_detected_tables_grouped_and_mapped"][entity_group])
                 else:
-                    gt_mapped_detected_tables_and_attributes = copy.deepcopy(self.predictions[run_nr]["parameters"]["detected_tables_grouped_and_mapped"][entity_group])
+                    mapped_detected_grouped_tables_with_mappings = copy.deepcopy(self.predictions[run_nr]["parameters"]["detected_tables_grouped_and_mapped"][entity_group])
 
-                for table_name in gt_mapped_detected_tables_and_attributes:
-                    for table_split in gt_mapped_detected_tables_and_attributes[table_name]:
-                        for col, intcol in gt_mapped_detected_tables_and_attributes[table_name][table_split]["column_mappings_to_integrated_schema"].items():
-                            if integration_type == "integrated_attributes_no_removals":
+                for table_name in mapped_detected_grouped_tables_with_mappings:
+                    for table_split in mapped_detected_grouped_tables_with_mappings[table_name]:
+                        for col, intcol in mapped_detected_grouped_tables_with_mappings[table_name][table_split]["column_mappings_to_integrated_schema"].items():
+                            if integration_setup == "integrated_schemas_unrefined":
                                 # Find in which group col is in the attribute groups with no removals
                                 group_index = [i for i, attribute_group in enumerate(attribute_groups[entity_group]) for table_name in attribute_group if col in attribute_group[table_name]]
                                 # Find the integrated attribute that corresponds to this group index
                                 integrated_attr = mapped_attributes[predicted_integrated_schemas[entity_group][group_index[0]]]
                                 # Update mapping
-                                gt_mapped_detected_tables_and_attributes[table_name][table_split]["column_mappings_to_integrated_schema"][col] = integrated_attr
+                                mapped_detected_grouped_tables_with_mappings[table_name][table_split]["column_mappings_to_integrated_schema"][col] = integrated_attr
                             else:
                                 if intcol in mapped_attributes:
                                     # Map to the GT attribute
-                                    gt_mapped_detected_tables_and_attributes[table_name][table_split]["column_mappings_to_integrated_schema"][col] = mapped_attributes[intcol]
+                                    mapped_detected_grouped_tables_with_mappings[table_name][table_split]["column_mappings_to_integrated_schema"][col] = mapped_attributes[intcol]
+                                # else: keep as is or None, both cases will be picked as errors
 
-                predicted_column_mappings[integration_type][self.mapped_groups[entity_group]] = gt_mapped_detected_tables_and_attributes
-                predicted_mapped_attributes[integration_type][entity_group] = mapped_attributes
+                predicted_column_mappings[integration_setup][self.mapped_groups[entity_group]] = mapped_detected_grouped_tables_with_mappings
+                predicted_mapped_attributes[integration_setup][entity_group] = mapped_attributes
 
-            # Evaluate column mappings
+            # Evaluate COLUMN MAPPINGS
             overall_tps = 0
             overall_fps = 0
             overall_fns = 0
-            for group in predicted_column_mappings[integration_type]:
+            for group in predicted_column_mappings[integration_setup]:
                 if group not in self.gt_mappings:
                     # Count the mappings all as FPs
-                    overall_fps += len([attribute for table_splits in predicted_column_mappings[integration_type][group].values() for table_split in table_splits.values() for attribute in table_split["column_mappings_to_integrated_schema"].keys()])
+                    overall_fps += len([attribute for table_splits in predicted_column_mappings[integration_setup][group].values() for table_split in table_splits.values() for attribute in table_split["column_mappings_to_integrated_schema"].keys()])
                     continue
                 
-                for table_name, table_splits in predicted_column_mappings[integration_type][group].items():
+                for table_name, table_splits in predicted_column_mappings[integration_setup][group].items():
                     # Combine column mappings if two splits from the same table have ended together
                     combined_table_info = {}
 
@@ -826,21 +670,21 @@ class SchemaIntegrationEvaluation:
                             overall_fps += 1
 
             for group in self.gt_mappings:
-                if group not in predicted_column_mappings[integration_type]:
+                if group not in predicted_column_mappings[integration_setup]:
                     overall_fns += len([attribute for cols_maps in self.gt_mappings[group]["column_mappings_by_table"].values() for attribute in cols_maps])
                 else:
                     for table_name, cols_maps in self.gt_mappings[group]["column_mappings_by_table"].items():
                         for original_attr, mapped_attr in self.gt_mappings[group]["column_mappings_by_table"][table_name].items():
                             # This attribute from the GT is not in the predicted mappings, count as FN
-                            if table_name not in predicted_column_mappings[integration_type][group]:
+                            if table_name not in predicted_column_mappings[integration_setup][group]:
                                 overall_fns += 1
-                            elif not any([original_attr in table_split["column_mappings_to_integrated_schema"] for table_split in predicted_column_mappings[integration_type][group][table_name].values()]):
+                            elif not any([original_attr in table_split["column_mappings_to_integrated_schema"] for table_split in predicted_column_mappings[integration_setup][group][table_name].values()]):
                                 overall_fns += 1
 
             combined_predicted_mappings = {}
-            for group in predicted_column_mappings[integration_type]:
+            for group in predicted_column_mappings[integration_setup]:
                 combined_predicted_mappings[group] = {}
-                for table_name, table_splits in predicted_column_mappings[integration_type][group].items():
+                for table_name, table_splits in predicted_column_mappings[integration_setup][group].items():
                     for table_split, table_info in table_splits.items():
                         for original_attr, mapped_attr in table_info["column_mappings_to_integrated_schema"].items():
                             combined_predicted_mappings[group].setdefault(table_name, {})[original_attr] = mapped_attr
@@ -848,34 +692,36 @@ class SchemaIntegrationEvaluation:
             assert(overall_tps + overall_fns == sum([ len([attribute for cols_maps in self.gt_mappings[group]["column_mappings_by_table"].values() for attribute in cols_maps]) for group in self.gt_mappings]))
             assert(overall_tps + overall_fps == len([attribute for group in combined_predicted_mappings for table in combined_predicted_mappings[group] for attribute in combined_predicted_mappings[group][table]]))
 
-            eval_results[integration_type] = {}
-            eval_results[integration_type]["schema_integration_phase_column_mappings"] = {"tps": overall_tps, "fps": overall_fps, "fns": overall_fns, "overall_recall": overall_tps/(overall_tps + overall_fns), "overall_precision": overall_tps/(overall_tps + overall_fps)}
-            eval_results[integration_type]["schema_integration_phase_column_mappings"]["overall_f1"] = 2*eval_results[integration_type]["schema_integration_phase_column_mappings"]["overall_precision"]*eval_results[integration_type]["schema_integration_phase_column_mappings"]["overall_recall"] / (eval_results[integration_type]["schema_integration_phase_column_mappings"]["overall_precision"] + eval_results[integration_type]["schema_integration_phase_column_mappings"]["overall_recall"]) if (eval_results[integration_type]["schema_integration_phase_column_mappings"]["overall_precision"] + eval_results[integration_type]["schema_integration_phase_column_mappings"]["overall_recall"])>0 else 0
+            eval_results[integration_setup] = {}
+            eval_results[integration_setup]["schema_integration_phase_column_mappings"] = {"tps": overall_tps, "fps": overall_fps, "fns": overall_fns, "overall_recall": overall_tps/(overall_tps + overall_fns), "overall_precision": overall_tps/(overall_tps + overall_fps)}
+            eval_results[integration_setup]["schema_integration_phase_column_mappings"]["overall_f1"] = 2*eval_results[integration_setup]["schema_integration_phase_column_mappings"]["overall_precision"]*eval_results[integration_setup]["schema_integration_phase_column_mappings"]["overall_recall"] / (eval_results[integration_setup]["schema_integration_phase_column_mappings"]["overall_precision"] + eval_results[integration_setup]["schema_integration_phase_column_mappings"]["overall_recall"]) if (eval_results[integration_setup]["schema_integration_phase_column_mappings"]["overall_precision"] + eval_results[integration_setup]["schema_integration_phase_column_mappings"]["overall_recall"])>0 else 0
 
 
-        # Evaluate predicted schema (not mappings)
+        # Evaluate PREDICTED SCHEMA
         entity_labels_to_evaluate = ["all"] if "all" in self.mapped_groups.values() else self.entity_labels
-
-        integrated_schema_mapped ={self.mapped_groups[entity]: {"attributes": list(set(predicted_mapped_attributes["integrated_schemas"][entity].values()))} for entity in predicted_mapped_attributes["integrated_schemas"]}
+        integrated_schema_mapped ={self.mapped_groups[entity]: {"attributes": list(set(predicted_mapped_attributes["integrated_schemas_refined"][entity].values()))} for entity in predicted_mapped_attributes["integrated_schemas_refined"]}
         integrated_schema_gt = {entity: {"attributes": self.gt_mappings[entity]["attributes"]} for entity in self.gt_mappings}
         integrated_attributes = [f"{entity}.{attr}" for entity in integrated_schema_gt for attr in integrated_schema_gt[entity]["attributes"]]
-        eval_results["integrated_schemas"]["schema_integration_phase_schema"] = self.evaluate_schemas({"tab": integrated_schema_mapped}, {"tab": integrated_schema_gt}, entity_labels_to_evaluate, integrated_attributes)
+        
+        eval_results["integrated_schemas_refined"]["schema_integration_phase_schema"] = evaluate_schemas({"tab": integrated_schema_mapped}, {"tab": integrated_schema_gt}, entity_labels_to_evaluate, integrated_attributes)
 
-        if "attribute_groups_with_no_removals" in self.predictions[run_nr]["parameters"]:
-            integrated_schema_no_removals_mapped ={self.mapped_groups[entity]: {"attributes": list(set(predicted_mapped_attributes["integrated_attributes_no_removals"][entity].values()))} for entity in predicted_mapped_attributes["integrated_attributes_no_removals"]}
+        if "attribute_groups_with_no_removals" in self.predictions[run_nr]["parameters"] and len(self.predictions[run_nr]["parameters"]["attribute_groups_with_no_removals"]) > 0:
+            integrated_schema_no_removals_mapped ={self.mapped_groups[entity]: {"attributes": list(set(predicted_mapped_attributes["integrated_schemas_unrefined"][entity].values()))} for entity in predicted_mapped_attributes["integrated_schemas_unrefined"]}
             if "schema_matching_phase" in self.sequence_of_phases:
-                eval_results["integrated_attributes_no_removals"]["schema_integration_phase_schema_no_removals"] = self.evaluate_schemas({"tab": integrated_schema_no_removals_mapped}, {"tab": integrated_schema_gt}, entity_labels_to_evaluate, integrated_attributes)
+                eval_results["integrated_schemas_unrefined"]["schema_integration_phase_schema_no_removals"] = evaluate_schemas({"tab": integrated_schema_no_removals_mapped}, {"tab": integrated_schema_gt}, entity_labels_to_evaluate, integrated_attributes)
         
         # Save evaluation results
-        self.eval_results[run_nr]["schema_integration_phase"] = eval_results["integrated_schemas"]["schema_integration_phase_column_mappings"]
+        self.eval_results[run_nr]["schema_integration_phase"] = eval_results["integrated_schemas_refined"]["schema_integration_phase_column_mappings"]
         # Save also for analysis all other schema integration results
         self.eval_results[run_nr]["schema_integration_phase_extended"] = eval_results
 
         # Save for average calculation
-        self.overall_metrics.setdefault("schema_integration_phase", [])
-        self.overall_metrics["schema_integration_phase"].append(eval_results)
+        self.overall_metrics.setdefault("schema_integration_phase_schema", [])
+        self.overall_metrics["schema_integration_phase_schema"].append(eval_results["integrated_schemas_refined"]["schema_integration_phase_schema"]["eval_results_attributes"]["evaluation"])
+        self.overall_metrics.setdefault("schema_integration_phase_mappings", [])
+        self.overall_metrics["schema_integration_phase_mappings"].append(eval_results["integrated_schemas_refined"]["schema_integration_phase_column_mappings"])
         self.predicted_mapped_column_mappings = predicted_column_mappings # mapped predicted column mappings
-        self.predicted_mapped_attributes = predicted_mapped_attributes["integrated_schemas"]
+        self.predicted_mapped_attributes = predicted_mapped_attributes["integrated_schemas_refined"] # mapped predicted attributes
 
     def evaluate_final_integration(self, run_nr):
         final_predicted_schema_mapped = {}
@@ -886,9 +732,7 @@ class SchemaIntegrationEvaluation:
                 print("Entity was not in previous phase!")
                 final_predicted_schema_mapped[entity] = self.predictions[run_nr]["parameters"]["final_integrated_schema"][entity]
                 continue
-                # self.mapped_groups[entity] = entity
-                # self.predicted_mapped_attributes[entity] = {}
-            
+
             final_attributes_mapped[self.mapped_groups[entity]] = {}
             
             # Entity is mapped, map attributes if not mapped already
@@ -898,6 +742,7 @@ class SchemaIntegrationEvaluation:
                     mapped_attr = self.predicted_mapped_attributes[entity][pred_attr]
                 
                 elif any(pred_attr in self.predicted_mapped_attributes[other_entity] for other_entity in self.predicted_mapped_attributes if other_entity != entity):
+                    # This attribute has been moved to this entity, previously it was assigned to another,
                     # Map to the same attribute name in the other entity
                     for other_entity in self.predicted_mapped_attributes:
                         if other_entity != entity and pred_attr in self.predicted_mapped_attributes[other_entity]:
@@ -905,7 +750,7 @@ class SchemaIntegrationEvaluation:
                             break
                 elif "id" in pred_attr.lower():
                     # Check if the added attribute is an added identifier
-                    print("Added identifier: ", pred_attr)
+                    # print("Added identifier: ", pred_attr)
                     if entity.lower() in pred_attr.lower():
                         # Check if this identifier is the identifier for the entity
                         mapped_attr = f"{self.mapped_groups[entity]}_id"
@@ -917,12 +762,11 @@ class SchemaIntegrationEvaluation:
                                     mapped_attr = f"{self.mapped_groups[other_entity]}_id"
                                     break
                         else:
-                            # The entity does not exist
+                            # The entity does not exist, leave as is, it will be picked up as an error
                             mapped_attr = pred_attr
                 else:
-                    # Check if this attribute could have been moved from another entity
-                    # else:
-                    # Attribute is not found and not mapped previously, probably an error or extra attribute that is not needed
+                    # Attribute is not found and not mapped previously in any other entity or the current one, 
+                    # probably an error or extra attribute that is not needed
                     print("attribute was not in previous phase, got added", pred_attr)
                     mapped_attr = pred_attr
                 
@@ -931,12 +775,9 @@ class SchemaIntegrationEvaluation:
                 # Adding an identifier to the table should not be considered as an error
                 # So check if this identifier exists in GT, if not, don't add to the mapped schema
                 if mapped_attr == f"{self.mapped_groups[entity]}_id" and self.mapped_groups[entity] in self.gt_final_integrated_schema and mapped_attr not in self.gt_final_integrated_schema[self.mapped_groups[entity]]["attributes"]:
-                    print("Added identifier does not exist in GT, not adding to mapped schema, but should not be considered as an error", mapped_attr)
+                    # print("Added identifier does not exist in GT, not adding to mapped schema, but should not be considered as an error", mapped_attr)
                     continue
                 final_predicted_schema_mapped[self.mapped_groups[entity]]["attributes"].append(mapped_attr)
-            # if not(any("id" in pred_attr.lower() for pred_attr in final_predicted_schema_mapped[self.mapped_groups[entity]]["attributes"])):
-            #     # add id
-            #     final_predicted_schema_mapped[self.mapped_groups[entity]]["attributes"].append(f"{self.mapped_groups[entity]}_id")
 
         for entity in self.predictions[run_nr]["parameters"]["final_integrated_schema"]:
             if entity not in self.mapped_groups:
@@ -958,7 +799,8 @@ class SchemaIntegrationEvaluation:
                     if fk in final_attributes_mapped[self.mapped_groups[entity]]:
                         mapped_fk = final_attributes_mapped[self.mapped_groups[entity]][fk]
                     else:
-                        print("This attribute was not mapped above! error, this attribute must not exist", fk)
+                        # The attribute was not found in the mapped attributes, which means it's an error
+                        # print("This attribute was not mapped above! error, this attribute must not exist", fk)
                         mapped_fk = fk
                     
                     # Map the referenced attribute from the foreign table, this attribute should exist in the referenced table and should already have been mapped above
@@ -966,23 +808,26 @@ class SchemaIntegrationEvaluation:
                         if reference_attr in final_attributes_mapped[mapped_reference_entity]:
                             mapped_reference_attr = final_attributes_mapped[mapped_reference_entity][reference_attr]
                         else:
-                            print("This referenced attribute was not mapped above! error, this attribute must not exist", reference_attr)
+                            # The referenced attribute was not found in the mapped attributes, which means it's an error
+                            # print("This referenced attribute was not mapped above! error, this attribute must not exist", reference_attr)
                             mapped_reference_attr = reference_attr
                     else:
-                        print("This referenced entity does not exits, so attribute also does not exist! error", reference_entity, reference_attr)
+                        # The referenced entity does not exist, so the attribute also does not exist
+                        # print("This referenced entity does not exits, so attribute also does not exist! error", reference_entity, reference_attr)
                         mapped_reference_attr = reference_attr
 
                     final_predicted_schema_mapped[self.mapped_groups[entity]]["foreign_keys"][mapped_fk] = {mapped_reference_entity: mapped_reference_attr}
+        
         # Evaluate final integrated schema
-        # self.eval_results["final_integration_phase"] = self.evaluate_schemas(final_predicted_schema_mapped, self.gt_final_integrated_schema, self.entity_labels, self.attribute_labels)
-        self.eval_results[run_nr]["final_integration_phase"] = self.evaluate_schemas({"tab": final_predicted_schema_mapped}, {"tab": self.gt_final_integrated_schema}, self.integrated_entity_labels, self.integrated_attribute_labels, self.join_tables)
+        self.eval_results[run_nr]["final_integration_phase"] = evaluate_schemas({"tab": final_predicted_schema_mapped}, {"tab": self.gt_final_integrated_schema}, self.integrated_entity_labels, self.integrated_attribute_labels, self.join_tables)
         self.final_predicted_schema_mapped = final_predicted_schema_mapped
         self.final_attributes_mapped = final_attributes_mapped
+        
         # Save for average calculation
         self.overall_metrics.setdefault("final_integration_entity", [])
-        self.overall_metrics["final_integration_entity"].append(self.eval_results[run_nr]["final_integration_phase"]["eval_results_entity"]["eval_stats"])
+        self.overall_metrics["final_integration_entity"].append(self.eval_results[run_nr]["final_integration_phase"]["eval_results_entity"]["evaluation"])
         self.overall_metrics.setdefault("final_integration_attributes", [])
-        self.overall_metrics["final_integration_attributes"].append(self.eval_results[run_nr]["final_integration_phase"]["eval_results_attributes"]["eval_stats"])
+        self.overall_metrics["final_integration_attributes"].append(self.eval_results[run_nr]["final_integration_phase"]["eval_results_attributes"]["evaluation"])
         self.analysis_results.setdefault(run_nr, {})
         self.analysis_results[run_nr]["final_integration_phase"] = self.eval_results[run_nr]["final_integration_phase"]["errors_list"]
 
@@ -999,6 +844,7 @@ class SchemaIntegrationEvaluation:
                 mapped_final_integrated_schema_mappings[mapped_entity_group][table_name][mapped_entity_group]["attributes"] = []
                 mapped_final_integrated_schema_mappings[mapped_entity_group][table_name][mapped_entity_group]["column_mappings_to_integrated_schema"] = {}
                 mapped_final_integrated_schema_mappings[mapped_entity_group][table_name][mapped_entity_group]["new_attributes"] = []
+                
                 for table_split, table_info in table_splits.items():
                     for column_name, mapped_attribute in table_info["column_mappings_to_integrated_schema"].items():
                         if column_name not in mapped_final_integrated_schema_mappings[mapped_entity_group][table_name][mapped_entity_group]["column_mappings_to_integrated_schema"]:
@@ -1040,14 +886,6 @@ class SchemaIntegrationEvaluation:
                     for column_name, mapped_attribute in table_gt_column_mappings.items():
                         if column_name not in predicted_column_mappings:
                             overall_fns += 1
-                
-                # for attribute in mapped_final_integrated_schema_mappings[entity_group][table_name][table_split]["new_attributes"]:
-                #     if attribute not in self.gt_final_integrated_schema[entity_group]["attributes"]:
-                #         overall_fps += 1
-                #         print("new attribute:", attribute)
-                #         # print(f"False positive new attribute '{attribute}' added to entity group '{entity_group}' for table '{table_name}', but it does not exist in GT")
-                #     else:
-                #         overall_tps += 1
                 
             # Any missed tables from the GT that should have this entity?
             for table_name in self.overall_gt_mappings:
@@ -1100,7 +938,7 @@ class SchemaIntegrationEvaluation:
             for entity_group, tables in mapped_final_integrated_schema_mappings.items():
                 # Calculate bad mappings (FNs) if an id attribute was missed for an entity group
                 number_of_table_splits = sum([len(mapped_final_integrated_schema_mappings[entity_group][table_name]) for table_name in mapped_final_integrated_schema_mappings[entity_group] if table_name in table_names_to_entity_groups.get(entity_group, [])])
-                ids_for_entity_group = len([added_id for added_id in added_ids if entity_group in added_id[0]])
+                # ids_for_entity_group = len([added_id for added_id in added_ids if entity_group in added_id[0]])
                 error_ids_for_entity_group = len([id_error for id_error in id_errors if entity_group in id_error[0]])
 
                 if any(entity_group in id_error[0] for id_error in id_errors):
@@ -1115,21 +953,9 @@ class SchemaIntegrationEvaluation:
                     if correct_ids:
                         overall_tps += number_of_table_splits*correct_ids
                         # correct_ids += number_of_table_splits*correct_ids
-                        print( mapped_final_integrated_schema_mappings[entity_group].keys())
-                        print(number_of_table_splits*correct_ids)
+                        # print( mapped_final_integrated_schema_mappings[entity_group].keys())
+                        # print(number_of_table_splits*correct_ids)
                         overall_predicted_mappings += number_of_table_splits*correct_ids
-
-            # If an entity is missed also their ids can be missed
-            # for entity_group in self.gt_final_integrated_schema:
-            #     if entity_group not in mapped_final_integrated_schema_mappings:
-            #         # If an added id exists for this entity, for each table in the gt this is a false negative
-            #         if any(entity_group in added_id[0] for added_id in added_ids):
-            #             if self.splitting_after_integration:
-            #                 number_of_table_splits = len(self.gt_mappings["all"]["column_mappings_by_table"])
-            #             else:
-            #                 number_of_table_splits = len(self.gt_mappings[entity_group]["column_mappings_by_table"])
-            #             added_fns += number_of_table_splits
-            #             print(f"Missed entity group '{entity_group}' with an id attribute leads to {number_of_table_splits} false negative mappings for this group.")
 
         assert(overall_tps + overall_fns + added_fns == overall_mappings+gt_ids)
         assert(overall_tps + overall_fps == overall_predicted_mappings)
@@ -1188,50 +1014,30 @@ class SchemaIntegrationEvaluation:
                 std_dev_metrics[phase][metric] = std_dev
         return std_dev_metrics
 
-    def save_results(self):
+    def save_results(self, folder_name="evaluation_json", summary_folder_name="evaluation_summary"):
         # If the evaluation file does not exist
-        if f"{self.log_file_name.replace('logs/', '')}_evaluation.json" not in os.listdir("evaluation_json/"):
+        if f"{self.log_file_name.replace('logs/', '')}_evaluation.json" not in os.listdir(f"{folder_name}/"):
             eval_results_content = {
                 "run_full_results": self.eval_results,
                 "average_metrics": self.average_metrics
             }
-            sienna.save(eval_results_content, f"{self.log_file_name.replace('logs/', 'evaluation_json/')}_evaluation.json")
+            sienna.save(eval_results_content, f"{self.log_file_name.replace('logs/', folder_name + '/')}_evaluation.json")
 
             # Phase names
-            phases = ['detect_tables_phase_entity', 'detect_tables_phase_attributes', 'schema_matching_phase', 'schema_matching_phase_removed', 'grouping_phase', 'schema_integration_phase', 'final_integration_entity', 'final_integration_attributes', 'final_integration_mappings']
-            phases_results = [ f"{self.average_metrics[phase]['overall_f1']:.4f}" if phase in self.average_metrics else "-" for phase in phases ]
+            phases = ['detect_tables_phase_entity', 'detect_tables_phase_attributes', 'schema_matching_phase', 'schema_matching_phase_removed', 'grouping_phase', 'schema_integration_phase_schema', "schema_integration_phase_mappings", 'final_integration_entity', 'final_integration_attributes', 'final_integration_mappings', 'schema_integration_phase_minimality_completeness', 'final_schema_minimality_completeness']
+            
+            key = "_".join([str(self.run_info[param]) for param in ["model_name", "prompt_name", "sequence_of_phases"]]) + f"_{self.self_consistency}"
 
-            # Write in a csv file for F1
-            csv_file = f"evaluation_summary/{self.folder}_evaluation_f1_summary.csv"
-            file_exists = os.path.isfile(csv_file)
-            row = [self.benchmark, self.run_info["model_name"], self.run_info["prompt_name"], self.run_info["reasoning"], self.run_info["demonstration"], self.run_info["num_runs"], self.run_info["other_parameters"]["self-consistency"], self.run_info["other_parameters"]["generated_knowledge"]]+phases_results+["->".join(self.run_info["sequence_of_phases"]), self.log_file_name] #, self.other_parameters
-            writing_mode = "a" if file_exists else "w"
-            with open(csv_file, writing_mode, newline='') as csvfile:
-                writer = csv.writer(csvfile)
-                if not file_exists:
-                    writer.writerow(["benchmark", "model_name", "prompt_name", "reasoning", "demonstration", "num_runs", "self_consistency", "generated_knowledge"] + phases + ["sequence_of_phases", "log_file_name"]) #, "other_parameters"
-                writer.writerow(row)
+            json_content = { phase: self.average_metrics[phase] for phase in phases if phase in self.average_metrics }
 
-            # Write in a csv file for Recall
-            phases_results = [ f"{self.average_metrics[phase]['overall_recall']:.4f}" if phase in self.average_metrics else "-" for phase in phases ]
-            csv_file = f"evaluation_summary/{self.folder}_evaluation_recall_summary.csv"
-            file_exists = os.path.isfile(csv_file)
-            row = [self.benchmark, self.run_info["model_name"], self.run_info["prompt_name"], self.run_info["reasoning"], self.run_info["demonstration"], self.run_info["num_runs"], self.run_info["other_parameters"]["self-consistency"], self.run_info["other_parameters"]["generated_knowledge"]]+phases_results+["->".join(self.run_info["sequence_of_phases"]), self.log_file_name] #, self.other_parameters
-            writing_mode = "a" if file_exists else "w"
-            with open(csv_file, writing_mode, newline='') as csvfile:
-                writer = csv.writer(csvfile)
-                if not file_exists:
-                    writer.writerow(["benchmark", "model_name", "prompt_name", "reasoning", "demonstration", "num_runs", "self_consistency", "generated_knowledge"] + phases + ["sequence_of_phases", "log_file_name"]) #, "other_parameters"
-                writer.writerow(row)
+            # Save in JSON file
+            # Check if file for folder already exists, if so load it and update it with the new results
+            json_file = f"{summary_folder_name}/{self.folder}_evaluation_average.json"
 
-            # Write in a csv file for Precision
-            phases_results = [ f"{self.average_metrics[phase]['overall_precision']:.4f}" if phase in self.average_metrics else "-" for phase in phases ]
-            csv_file = f"evaluation_summary/{self.folder}_evaluation_precision_summary.csv"
-            file_exists = os.path.isfile(csv_file)
-            row = [self.benchmark, self.run_info["model_name"], self.run_info["prompt_name"], self.run_info["reasoning"], self.run_info["demonstration"], self.run_info["num_runs"], self.run_info["other_parameters"]["self-consistency"], self.run_info["other_parameters"]["generated_knowledge"]]+phases_results+["->".join(self.run_info["sequence_of_phases"]), self.log_file_name] #, self.other_parameters
-            writing_mode = "a" if file_exists else "w"
-            with open(csv_file, writing_mode, newline='') as csvfile:
-                writer = csv.writer(csvfile)
-                if not file_exists:
-                    writer.writerow(["benchmark", "model_name", "prompt_name", "reasoning", "demonstration", "num_runs", "self_consistency", "generated_knowledge"] + phases + ["sequence_of_phases", "log_file_name"]) #, "other_parameters"
-                writer.writerow(row)
+            if os.path.exists(json_file):
+                previous_file_content = sienna.load(json_file)
+                previous_file_content[key] = json_content
+                sienna.save(previous_file_content, json_file)
+            else:
+                # print(f"Creating new summary file: {json_file}")
+                sienna.save({key: json_content}, json_file)

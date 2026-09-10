@@ -41,13 +41,14 @@ if __name__ == "__main__":
     prompt_name = "long-prompt-updated-4"
     # benchmark = "Real Benchmark"
     benchmark = "SINT-Benchmark"
+    # benchmark = "GOBY"
 
     # Run workflows for each use case
     for folder_name in os.listdir(f"data/selected-tables/{benchmark}/"):
         for sequence_of_phases in [
-            ["detect_tables_phase", "schema_matching_phase", "grouping_phase", "schema_integration_phase", "final_integration_phase"], # Workflow 1 in the paper
+            # ["detect_tables_phase", "schema_matching_phase", "grouping_phase", "schema_integration_phase", "final_integration_phase"], # Workflow 1 in the paper
             # ["detect_tables_phase", "grouping_phase", "schema_integration_phase", "final_integration_phase"], # Workflow 2 in the paper
-            # ["schema_matching_phase", "schema_integration_phase", "detect_tables_phase", "final_integration_phase"], # Workflow 3 in the paper
+            ["schema_matching_phase", "schema_integration_phase", "detect_tables_phase", "final_integration_phase"], # Workflow 3 in the paper
             # ["schema_matching_phase"] # Run only schema matching operator for baseline comparison
         ]:
             # Run config
@@ -63,16 +64,19 @@ if __name__ == "__main__":
                 "model_name": model_name,
                 "reasoning": reasoning,
                 "tokenizer": tokenizer,
-                "demonstration": 0,
                 "self_consistency": True,
                 # "self_consistency": False,
                 "schema_matching_batch_size": 1,
                 "merging_batch_size": "all", 
                 "num_runs": 3,
                 "sequence_of_phases": sequence_of_phases,
+                # "logfile_name": "logs/" # to continue from a previous run, specify the log file name found in logs folder
             }
-    
+
             schema_integration_workflow = SchemaIntegrationRuns(**config)
-            schema_integration_workflow.initialize_workflow()
+            if not config.get("logfile_name"):
+                schema_integration_workflow.initialize_workflow()
+            else:
+                schema_integration_workflow.initialize_workflow_from_file()
+            
             schema_integration_workflow.run_workflow()
-            # pdb.set_trace()

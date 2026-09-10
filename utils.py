@@ -7,6 +7,8 @@ import pdb
 import json
 from sklearn.metrics.pairwise import cosine_similarity
 
+CACHE_DIR = "cache/dir"
+
 def parse_json(json_string):
     # Parse JSON string
     if "```json" in json_string:
@@ -202,3 +204,22 @@ def flatten_list(original_list):
         else:
             flat_list.append(item)
     return flat_list
+
+def save_pickle_file(file_name, output):
+    # Save table predictions in a file:
+    f = open(file_name,'wb')
+    pickle.dump(output,f)
+    f.close()
+
+def load_pickle_file(file_name):
+    # Load .pkl file
+    with open(file_name, "rb") as f:
+        file = pickle.load(f)
+    return file
+
+def format_time(overall_time):
+    hours = int(overall_time // 3600)
+    minutes = int((overall_time % 3600) // 60)
+    seconds = int(overall_time % 60)
+
+    return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
