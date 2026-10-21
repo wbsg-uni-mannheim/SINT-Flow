@@ -160,7 +160,7 @@ class SchemaIntegrationWorkflow:
         self.file_names_to_index = {file_name: i+1 for i, file_name in enumerate(self.file_names)}
         self.index_to_file_names = {i+1: file_name for i, file_name in enumerate(self.file_names)}
         # Phase information
-        self.table_detection_phase_name = "detect_tables_phase"
+        self.table_detection_phase_name = "table_splitting_phase"
         self.table_detection_phase_name = self.table_detection_phase_name if self.table_detection_phase_name in sequence_of_phases else None
 
         if "grouping_phase" in sequence_of_phases:
@@ -170,7 +170,7 @@ class SchemaIntegrationWorkflow:
         # Record time of each workflow phase
         self.phase_times = {phase: 0 for phase in sequence_of_phases}
         if self.table_detection_phase_name:
-            self.splitting_after_integration = self.sequence_of_phases.index(self.table_detection_phase_name) > self.sequence_of_phases.index("schema_integration_phase")
+            self.splitting_after_integration = self.sequence_of_phases.index(self.table_detection_phase_name) > self.sequence_of_phases.index("attribute_merging_phase")
         else:
             self.splitting_after_integration = True
         # Mappings and important results
@@ -239,7 +239,7 @@ class SchemaIntegrationWorkflow:
         message_list = []
         message_list.append(self.add_message("system", prompt_messages["system"]))
         
-        if phase == "detect_tables_phase" or phase == "detect_tables_phase_with_correspondences":          
+        if phase == "table_splitting_phase" or phase == "table_splitting_phase_with_correspondences":          
             # Serialize input table
             df_serialized = table_serialization(kwargs["df"], nr_rows=self.table_rows, format=self.table_format)            
             # Add input table to messages
@@ -256,7 +256,7 @@ class SchemaIntegrationWorkflow:
             message_list.append(self.add_message("user", prompt_messages["human"].replace("[TABLES]", kwargs["detected_tables"]).replace("[DEMONSTRATION]\n\n\n", "")))
             return message_list
     
-        elif phase == "schema_integration_phase" or phase == "schema_integration_phase_with_correspondences":
+        elif phase == "attribute_merging_phase" or phase == "attribute_merging_phase_with_correspondences":
             # Add tables to integrate
             message_list.append(self.add_message("user", prompt_messages["human"].replace("[TABLES]", kwargs["tables_to_integrate"]).replace("[ATTRIBUTE_GROUPS]", kwargs["attribute_groups"]).replace("[DEMONSTRATION]\n\n\n", "")))
             return message_list
@@ -456,7 +456,7 @@ class SchemaIntegrationWorkflow:
             return False
         
     def create_attribute_groups(self, detected_groups, grouped_tables, entity_group):
-        if "grouping_phase" not in self.sequence_of_phases or self.sequence_of_phases.index("schema_matching_phase") < self.sequence_of_phases.index("grouping_phase") or entity_group=="all":#("schema_integration_phase" in self.results and self.results["schema_integration_phase"]["merged_schemas"]):
+        if "grouping_phase" not in self.sequence_of_phases or self.sequence_of_phases.index("schema_matching_phase") < self.sequence_of_phases.index("grouping_phase") or entity_group=="all":#("attribute_merging_phase" in self.results and self.results["attribute_merging_phase"]["merged_schemas"]):
             overall_correspondences = self.results_parameters["column_correspondences"]
         else:
             # Select the correspondences from a specific entity group
@@ -729,9 +729,9 @@ class SchemaIntegrationWorkflow:
         self.results_parameters["detected_tables_grouped_and_mapped"] = all_tables_split
         self.results_parameters["integrated_schemas"] = {entity: list(set(self.results_parameters["detected_tables"]["full_table"][entity]["attributes"])) for entity in self.results_parameters["detected_tables"]["full_table"]}
     
-    def run_detect_tables_phase(self, **kwargs):
+    def run_table_splitting_phase(self, **kwargs): # run_detect_tables_phase
         # Detect tables phase: Detect tables in each input table
-        phase_name = "detect_tables_phase"
+        phase_name = "table_splitting_phase"
         if phase_name not in self.results:
             self.results[phase_name] = {"full_model_response":{}, "messages_list": {}, "missing_loop": {}}
         elif len(self.results[phase_name]) == 0:
@@ -1135,12 +1135,12 @@ class SchemaIntegrationWorkflow:
         for entity_group in detected_groups:
             self.create_attribute_groups(detected_groups, grouped_tables, entity_group)
 
-    def run_schema_integration_phase(self, **kwargs):
+    def run_attribute_merging_phase(self, **kwargs): #run_schema_integration_phase
         grouped_tables = self.results_parameters["detected_tables_grouped_and_mapped"]
         detected_groups = self.results_parameters["groups"]
 
         # Schema integration phase starts
-        phase_name = "schema_integration_phase"
+        phase_name = "attribute_merging_phase"
         self.results[phase_name] = {"full_model_response":{}, "messages_list": {}}
         start_time = time.perf_counter()
 
@@ -1201,9 +1201,9 @@ class SchemaIntegrationWorkflow:
                         # Check that all attribute groups are included in the output
                         assert all(group in integration_response for group in group_to_index)
                     except AssertionError as e:
-                        print(f"Error: The number of attribute groups ({len(attribute_groups)}) does not match the number of attributes in the integrated schema ({len(integration_response)}). Rerunning schema integration phase.")
+                        print(f"Error: The number of attribute groups ({len(attribute_groups)}) does not match the number of attributes in the integrated schema ({len(integration_response)}). Rerunning attribute merging phase.")
                         # pdb.set_trace()
-                        self.run_schema_integration_phase(**kwargs)
+                        self.run_attribute_merging_phase(**kwargs)
 
                     if response:
                         self.results[phase_name]["full_model_response"][entity_group] = langchain_message_to_dict(response)
@@ -1227,7 +1227,7 @@ class SchemaIntegrationWorkflow:
                     print(e)
                     print(f"Error: Not all attributes have been mapped in the integrated schema for entity group {entity_group}. Rerunning phase.")
                     # pdb.set_trace()
-                    self.run_schema_integration_phase(**kwargs)
+                    self.run_attribute_merging_phase(**kwargs)
                 
                 self.results[phase_name]["full_model_response"][entity_group] = langchain_message_to_dict(response)
                 self.results[phase_name]["messages_list"][entity_group] = langchain_message_to_dict(messages_list)
@@ -1236,7 +1236,7 @@ class SchemaIntegrationWorkflow:
         end_time = time.perf_counter()
         self.phase_times[phase_name] = end_time - start_time
 
-    def post_schema_integration_phase_processing(self):
+    def post_attribute_merging_phase_processing(self):
         if "schema_matching_phase" in self.sequence_of_phases:
             # for attribute_group_type in ["attribute_groups", "attribute_groups_with_no_removals"]:
             for entity_group in self.results_parameters["detected_tables_grouped_and_mapped"]:
@@ -1615,7 +1615,7 @@ class SchemaIntegrationRuns:
         self.sequence_of_phases = sequence_of_phases
         self.schema_matching_batch_size = schema_matching_batch_size
         self.merging_batch_size = merging_batch_size
-        self.gt_part = "schema_by_entity" #if "detect_tables_phase" in self.sequence_of_phases else "schema_by_normalization"
+        self.gt_part = "schema_by_entity" #if "table_splitting_phase" in self.sequence_of_phases else "schema_by_normalization"
         self.reasoning = reasoning if reasoning else "None"
         self.model_type = model_type
         self.tokenizer = tokenizer
@@ -1632,14 +1632,14 @@ class SchemaIntegrationRuns:
 
     def get_function(self, phase_name, run_nr):
         workflow = self.workflows[run_nr]
-        if phase_name == "detect_tables_phase":
-            return {"function": workflow.run_detect_tables_phase, "postprocessing_function": workflow.post_table_splitting_processing, "variable": "detected_tables"}
+        if phase_name == "table_splitting_phase":
+            return {"function": workflow.run_table_splitting_phase, "postprocessing_function": workflow.post_table_splitting_processing, "variable": "detected_tables"}
         elif phase_name == "schema_matching_phase":
             return {"function": workflow.run_schema_matching_phase, "postprocessing_function": workflow.post_schema_matching_phase_processing, "variable": "column_correspondences"}
         elif phase_name == "grouping_phase":
             return {"function": workflow.run_grouping_phase, "postprocessing_function": workflow.post_grouping_phase_processing, "variable": "groups"}
-        elif phase_name == "schema_integration_phase":
-            return {"function": workflow.run_schema_integration_phase, "postprocessing_function": workflow.post_schema_integration_phase_processing, "variable": "integrated_attributes"}
+        elif phase_name == "attribute_merging_phase":
+            return {"function": workflow.run_attribute_merging_phase, "postprocessing_function": workflow.post_attribute_merging_phase_processing, "variable": "integrated_attributes"}
         elif phase_name == "final_integration_phase":
             return {"function": workflow.run_final_integration_phase, "postprocessing_function": workflow.post_final_integration_phase_processing, "variable": "final_integrated_schema"}
         else:
@@ -1655,10 +1655,10 @@ class SchemaIntegrationRuns:
         if self.self_consistency:
             self.self_consistency_run = SelfConsistency(num_runs=self.num_runs, file_names=self.workflows[0].file_names, benchmark=self.benchmark, folder_name=self.folder_name)
             self.self_consistency_function_mapping = {
-                "detect_tables_phase": self.self_consistency_run.run_table_splitting_self_consistency,
+                "table_splitting_phase": self.self_consistency_run.run_table_splitting_self_consistency,
                 "schema_matching_phase": self.self_consistency_run.run_schema_matching_self_consistency,
                 "grouping_phase": self.self_consistency_run.run_grouping_self_consistency,
-                "schema_integration_phase": self.self_consistency_run.run_schema_integration_self_consistency,
+                "attribute_merging_phase": self.self_consistency_run.run_attribute_merging_self_consistency,
                 "final_integration_phase": self.self_consistency_run.run_final_integration_self_consistency,
             }
 
@@ -1677,10 +1677,10 @@ class SchemaIntegrationRuns:
         # Initialize self-consistency
         self.self_consistency_run = SelfConsistency(num_runs=self.num_runs, file_names=self.workflows[0].file_names, benchmark=self.benchmark, folder_name=self.folder_name)
         self.self_consistency_function_mapping = {
-            "detect_tables_phase": self.self_consistency_run.run_table_splitting_self_consistency,
+            "table_splitting_phase": self.self_consistency_run.run_table_splitting_self_consistency,
             "schema_matching_phase": self.self_consistency_run.run_schema_matching_self_consistency,
             "grouping_phase": self.self_consistency_run.run_grouping_self_consistency,
-            "schema_integration_phase": self.self_consistency_run.run_schema_integration_self_consistency,
+            "attribute_merging_phase": self.self_consistency_run.run_attribute_merging_self_consistency,
             "final_integration_phase": self.self_consistency_run.run_final_integration_self_consistency,
         }
 

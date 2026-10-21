@@ -11,6 +11,7 @@ The goal of schema integration is, given a set of input schemata or tables, to d
 **Keywords**: Schema Integration, Schema Inference, Schema Management, Schema Integration Benchmark, Large Language Models
 
 ## Initialize environment
+To initialize the environment, the following commands can be run:
 
 `conda create --name schema-integration python=3.11` <br>
 `pip install -r requirements.txt`
@@ -26,10 +27,23 @@ There are five operators that can be arranged in different sequences to form sch
 
 To run the workflows the [`run_schema_int_workflows.py`](run_schema_int_workflows.py) file can be used. The file contains the code for running the three workflows mentioned above. The file contains the possibility of running the workflows using an OpenAI model or a model accessed through the Huggingface library.
 
-The results of the runs are saved in the [`logs`](logs/) folder, which records information on the run, e.g., the name of the prompt used, name of themodel, if the self-consistency strategy is used, the time in seconds taken for each operator to run, etc.
+Important run parameters:
+- `--benchmark`: The name of the benchmark. Possible benchmarks are: `SINT-Benchmark`, `Real Benchmark` and `GOBY`. Others can be added.
+- `--model`: The name of the model to use.
+- `--prompt_name`: The name of the prompt to use.
+- `--self-consistency`: Whether the self-consistency strategy is used.
+- `--sequence_of_phases`: The sequence of phases to run. The possible phases are: `table_splitting_phase`, `schema_matching_phase`, `grouping_phase`, `attribute_merging_phase`, `final_integration_phase`.
+- `--num_runs`: The number of times the chosen workflow is run. Default is 3.
+- `--table_rows`: The number of rows of the input tables shown to the model. Default is 10 for OpenAI models and 5 for the Qwen-3.6-27B model.
+
+Additional run parameters:
+- `--schema_matching_batch_size`: The batch size for the schema matching phase. Default is 1.
+- `--merging_batch_size`: The batch size for the attribute merging phase: how many attributes are shown to the model per batch. Default is `all`, i.e., all attributes are merged in a single batch.
+
+The results of the runs are saved in the [`logs`](logs/) folder in a json file. The file records information on the run, e.g., the name of the prompt used, name of the model, if the self-consistency strategy is used, the time in seconds taken for each operator to run, etc.
 
 ## Prompt Placeholders:
-The prompts used in the experiments are read from the 'prompts/prompts.json' file. There are several placeholders used to input the correct information in the prompts. The following placeholders are used in the prompts:
+The prompts used in the experiments are read from the `'prompts/prompts.json'` file. There are several placeholders used to input the correct information in the prompts. The following placeholders are used in the prompts:
 
 - In **Table Splitting prompts**: [TABLE_INPUT], to show the test table to be split.
 - In **Table Grouping** prompts: [TABLES], to show the split tables which will be grouped.
@@ -44,7 +58,7 @@ SINT-Bench is composed of 10 use cases with overall 93 tables, where each table 
 3. File ending with `_gt_integration.json`: contains the ground truth for the final schema integration output operator, which includes the final integrated schema for each use case and each entity type detected in the input tables of the use-case.
 
 ## Evaluation of the LLM Workflows and Baselines:
-The evaluation of the workflows can be done using the [`run_workflows_evaluation.py`](run_workflows_evaluation.py) file. This file contains the possibility of evaluating the three LLM workflows and aggregate their results.
+The evaluation of the workflows can be done using the [`run_workflows_evaluation.py`](run_workflows_evaluation.py) file. This file contains the possibility of evaluating the three LLM workflows and aggregate their results. The evaluation is done by reading the log files output by the run of a workflow.
 
 The [`run_evaluation.ipynb`](run_evaluation.ipynb) notebook includes the code to evaluate the baselines (COMA, SI-LLM and SMO).
 
@@ -55,23 +69,25 @@ The aggregated results of all runs of each workflow over all use cases are conta
 
 
 ## Running the Single-prompt Approach Baselines
-The prompts and code used for the single-prompt approach baselines can be found in the [`baselines`](baselines/) folder, in the file [`run-single-prompt-approaches.py`](baselines/run-single-prompt-approaches.py). In this setup we test whether a single prompt can be used to generate an integrated schema for a ser of input tables. We test two different prompts:
+The prompts and code used for the single-prompt approach baselines can be found in the [`baselines`](baselines/) folder, in the file [`run-single-prompt-approaches.py`](baselines/run-single-prompt-approaches.py). In this setup we test whether a single prompt can be used to generate an integrated schema for a set of input tables. We test two different prompts:
 
-1. **COT Prompt**: This prompt asks the model to generate an integrated schema for a set of input tables, and to provide reasoning for the generated schema.
+1. **Chain-of-Thought (CoT) Prompt**: This prompt asks the model to generate an integrated schema for a set of input tables, and to provide reasoning for the generated schema.
 
 2. **Instruction Prompt**: This prompt includes detailed instructions on how to generate an integrated schema and asks the model to output the integrated schema, the mappings of the input columns to the integrated attributes and the intermediate results of the steps provided in the instructions.
 
-## Running the Attribute Grouping Baselines
-The code for replicating the baseline results can be found in the [`baselines`](baselines/) folder. We compare the attribute grouping ability of the Schema Matching Operator with three related works:
+In the same file, [`run-single-prompt-approaches.py`](baselines/run-single-prompt-approaches.py), the code for evaluating the results of these approaches is included.
 
-1. **COMA**: COMA is a well-know label and instance-based schema matching method. To run COMA we use the implementation provided in the <a href="https://github.com/delftdata/valentine">Valentine Repository</a>. To replicate the COMA baseline, we provide the file [`run-coma-baseline.py`](baselines/run-coma-baseline.py).
+## Running the Attribute Grouping Baselines
+The code for replicating the baseline results for COMA, SI-LLM and ALITE can be found in the [`baselines`](baselines/) folder. We compare the attribute grouping ability of the Schema Matching Operator with three related works:
+
+1. **COMA**: COMA is a well-known label and instance-based schema matching method. To run COMA we use the implementation provided in the <a href="https://github.com/delftdata/valentine">Valentine Repository</a>. To replicate the COMA baseline, we provide the file [`run-coma-baseline.py`](baselines/run-coma-baseline.py).
 
 2. **ALITE**: ALITE is an integration method that embeds columns of input tables and clusters them to find corresponding attributes between tables. ALITE's code and instructions how to run ALITE can be found in the <a href="https://github.com/northeastern-datalab/alite">ALITE Repository</a>. The files `alite_turl.py` which is used to generated the TURL embeddings and the `align_integration_ids.py` in the `baselines` folder are modified files from the original ALITE repository. The `qwen_embeddings.py` file also contains partial code from the ALITE repository as we generate embeddings using ALITE's iterative method. We provide the generated embeddings for both TURL and Qwen in the [`baselines/run-alite/`](baselines/run-alite/) folder.
 
 3. **SI-LLM**: SI-LLM is a schema inference method that uses LLMs to infer hierarchical schemata from input tables. It finds entity types, attributes and relationships between the entity types. To run SI-LLM we use the prompts provided in the <a href="https://github.com/PierreWoL/SILLM">SI-LLM Repository</a>. To replicate the SI-LLM baseline, we provide the file [`run_si-llm.py`](baselines/run_si-llm.py).
 
 ## Running the Scalability Experiments
-We run the scalability experiments using sets of 25, 50, 75 and 100 tables sampled from the <a href="https://goby-benchmark.github.io/">GOBY benchmark</a>. The file [`run_schema_int_workflows.py`](run_schema_int_workflows.py) can be used for replicating the experiments by specifying the following parameters: `benchmark = "GOBY", sequence_of_phases = ["schema_matching_phase", "schema_integration_phase", "detect_tables_phase", "final_integration_phase"]` and then evaluating them using the [`run_workflows_evaluation.py`](run_workflows_evaluation.py) file.
+We run the scalability experiments using sets of 25, 50, 75 and 100 tables sampled from the <a href="https://goby-benchmark.github.io/">GOBY benchmark</a>. The file [`run_schema_int_workflows.py`](run_schema_int_workflows.py) can be used for replicating the experiments by specifying the following parameters: `benchmark = "GOBY", sequence_of_phases = ["schema_matching_phase", "attribute_merging_phase", "table_splitting_phase", "final_integration_phase"]` and then evaluating them using the [`run_workflows_evaluation.py`](run_workflows_evaluation.py) file.
 
 ## Citation
 

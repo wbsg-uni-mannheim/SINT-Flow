@@ -287,7 +287,7 @@ class SelfConsistency:
         # TODO: What about not above the threshold?
         self.self_consistency_results[phase_name] = final_named_groups
 
-    def run_schema_integration_self_consistency(self, phase_name: str, detected_tables_grouped_and_mapped: dict, **kwargs):
+    def run_attribute_merging_self_consistency(self, phase_name: str, detected_tables_grouped_and_mapped: dict, **kwargs):
         integration_results = self.results[phase_name]
         if "schema_matching_phase" in self.results:
             # For each entity, choose the highest occurence across the runs

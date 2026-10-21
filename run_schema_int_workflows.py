@@ -1,4 +1,5 @@
 from model import SchemaIntegrationRuns
+from utils import CACHE_DIR
 import os
 from dotenv import dotenv_values
 from langchain.chat_models import init_chat_model
@@ -20,8 +21,8 @@ if __name__ == "__main__":
             bnb_4bit_compute_dtype="float16"
         )
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        tokenizer = AutoTokenizer.from_pretrained(model_name, cache_dir="hf_cache/")
-        model = AutoModelForCausalLM.from_pretrained(model_name, dtype=torch.float16, low_cpu_mem_usage=True, device_map="auto", cache_dir="hf_cache/", quantization_config=quant_config)
+        tokenizer = AutoTokenizer.from_pretrained(model_name, cache_dir=CACHE_DIR)
+        model = AutoModelForCausalLM.from_pretrained(model_name, dtype=torch.float16, low_cpu_mem_usage=True, device_map="auto", cache_dir=CACHE_DIR, quantization_config=quant_config)
         if "qwen" in model_name.lower():
             # Update chat format to fix issues with tool calls
             with open("preprocessing/qwen_chat_template.jinja", "r") as f:
@@ -46,9 +47,9 @@ if __name__ == "__main__":
     # Run workflows for each use case
     for folder_name in os.listdir(f"data/selected-tables/{benchmark}/"):
         for sequence_of_phases in [
-            # ["detect_tables_phase", "schema_matching_phase", "grouping_phase", "schema_integration_phase", "final_integration_phase"], # Workflow 1 in the paper
-            # ["detect_tables_phase", "grouping_phase", "schema_integration_phase", "final_integration_phase"], # Workflow 2 in the paper
-            ["schema_matching_phase", "schema_integration_phase", "detect_tables_phase", "final_integration_phase"], # Workflow 3 in the paper
+            # ["table_splitting_phase", "schema_matching_phase", "grouping_phase", "attribute_merging_phase", "final_integration_phase"], # Workflow 1 in the paper
+            # ["table_splitting_phase", "grouping_phase", "attribute_merging_phase", "final_integration_phase"], # Workflow 2 in the paper
+            ["schema_matching_phase", "attribute_merging_phase", "table_splitting_phase", "final_integration_phase"], # Workflow 3 in the paper
             # ["schema_matching_phase"] # Run only schema matching operator for baseline comparison
         ]:
             # Run config

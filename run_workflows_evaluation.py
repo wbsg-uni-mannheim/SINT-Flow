@@ -30,9 +30,9 @@ if __name__ == "__main__":
         # print("Overall time", format_time(sum([sum(use_case_run_info[phase]) for phase in use_case_run_info])), "seconds")
 
         # For evaluating specific workflows, specfy sequence of phases
-        # if schema_evaluator.run_info["sequence_of_phases"] == [ "detect_tables_phase", "schema_matching_phase", "grouping_phase", "schema_integration_phase", "final_integration_phase"]:# and schema_evaluator.self_consistency:
-        # if schema_evaluator.run_info["sequence_of_phases"] == [ "detect_tables_phase", "grouping_phase", "schema_integration_phase", "final_integration_phase"]: # and schema_evaluator.self_consistency
-        # if schema_evaluator.run_info["sequence_of_phases"] == ["schema_matching_phase", "schema_integration_phase", "detect_tables_phase", "final_integration_phase"]:
+        # if schema_evaluator.run_info["sequence_of_phases"] == [ "table_splitting_phase", "schema_matching_phase", "grouping_phase", "attribute_merging_phase", "final_integration_phase"]:# and schema_evaluator.self_consistency:
+        # if schema_evaluator.run_info["sequence_of_phases"] == [ "table_splitting_phase", "grouping_phase", "attribute_merging_phase", "final_integration_phase"]: # and schema_evaluator.self_consistency
+        # if schema_evaluator.run_info["sequence_of_phases"] == ["schema_matching_phase", "attribute_merging_phase", "table_splitting_phase", "final_integration_phase"]:
         # if schema_evaluator.run_info["sequence_of_phases"] == ["schema_matching_phase"]:
             # schema_evaluator = SchemaIntegrationEvaluation(tables_path=f"data/selected-tables/{benchmark}", log_file_name=log_file_name)
             # schema_evaluator.run_evaluation()

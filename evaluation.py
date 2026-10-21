@@ -34,7 +34,7 @@ class SchemaIntegrationEvaluation:
         self.folder = file["run_info"]["folder_name"]
         self.sequence_of_phases = file["run_info"]["sequence_of_phases"]
         self.other_parameters = file["run_info"]["other_parameters"]
-        self.table_splitting_phase_name = "detect_tables_phase" # if "detect_tables_phase" in self.sequence_of_phases else "normalization_phase"
+        self.table_splitting_phase_name = "table_splitting_phase" # if "table_splitting_phase" in self.sequence_of_phases else "normalization_phase"
         self.self_consistency = self.other_parameters["self-consistency"]
         self.num_runs = file["run_info"]["num_runs"] if not self.self_consistency else 1
         self.all_predictions = file["runs"]
@@ -45,7 +45,7 @@ class SchemaIntegrationEvaluation:
         self.folder = folder
         self.sequence_of_phases = sequence_of_phases
         self.num_runs = num_runs
-        self.table_splitting_phase_name = "detect_tables_phase"
+        self.table_splitting_phase_name = "table_splitting_phase"
 
         self.run_info = {
             "benchmark": self.benchmark,
@@ -64,7 +64,7 @@ class SchemaIntegrationEvaluation:
         gt_part = "schema_by_entity"
         gt_integration_part = "integrated_schema_by_entity"
         try:
-            self.splitting_after_integration = self.sequence_of_phases.index(self.table_splitting_phase_name) > self.sequence_of_phases.index("schema_integration_phase")
+            self.splitting_after_integration = self.sequence_of_phases.index(self.table_splitting_phase_name) > self.sequence_of_phases.index("attribute_merging_phase")
         except Exception:
             # Input split tables:
             self.splitting_after_integration = False
@@ -118,7 +118,7 @@ class SchemaIntegrationEvaluation:
         self.integrated_entity_labels = list(self.gt_final_integrated_schema.keys())
 
 
-    def evaluate_detect_tables_phase(self, run_nr):
+    def evaluate_table_splitting_phase(self, run_nr):
         # Tables to evaluate
         predicted_table_splits = self.predictions[run_nr]["parameters"]["detected_tables"]
 
@@ -222,17 +222,17 @@ class SchemaIntegrationEvaluation:
             self.predicted_mapped_attributes = {entity: {pred_attr: self.predicted_mapped_attributes["all"][pred_attr] for pred_attr in self.predictions[run_nr]["parameters"]["detected_tables"]["full_table"][entity]["attributes"]} for entity in self.predictions[run_nr]["parameters"]["detected_tables"]["full_table"]}
 
         # Evaluate entities and attribute assignments
-        self.eval_results[run_nr]["detect_tables_phase"] = evaluate_schemas(detected_tables_mapped, self.gt_file, self.entity_labels, self.attribute_labels)
+        self.eval_results[run_nr]["table_splitting_phase"] = evaluate_schemas(detected_tables_mapped, self.gt_file, self.entity_labels, self.attribute_labels)
         
         # Save metrics for average calculation
-        self.overall_metrics.setdefault("detect_tables_phase_entity", [])
-        self.overall_metrics["detect_tables_phase_entity"].append(self.eval_results[run_nr]["detect_tables_phase"]["eval_results_entity"]["evaluation"])
-        self.overall_metrics.setdefault("detect_tables_phase_attributes", [])
-        self.overall_metrics["detect_tables_phase_attributes"].append(self.eval_results[run_nr]["detect_tables_phase"]["eval_results_attributes"]["evaluation"])
+        self.overall_metrics.setdefault("table_splitting_phase_entity", [])
+        self.overall_metrics["table_splitting_phase_entity"].append(self.eval_results[run_nr]["table_splitting_phase"]["eval_results_entity"]["evaluation"])
+        self.overall_metrics.setdefault("table_splitting_phase_attributes", [])
+        self.overall_metrics["table_splitting_phase_attributes"].append(self.eval_results[run_nr]["table_splitting_phase"]["eval_results_attributes"]["evaluation"])
         
         # Save errors for analysis
         self.analysis_results.setdefault(run_nr, {})
-        self.analysis_results[run_nr]["detect_tables_phase"] = self.eval_results[run_nr]["detect_tables_phase"]["errors_list"]
+        self.analysis_results[run_nr]["table_splitting_phase"] = self.eval_results[run_nr]["table_splitting_phase"]["errors_list"]
 
         # Save mappings to GT
         self.overall_mappings = overall_mappings
@@ -494,7 +494,7 @@ class SchemaIntegrationEvaluation:
         self.analysis_results.setdefault(run_nr, {})
         self.analysis_results[run_nr][phase_name] = {"fps": fps_list, "fns": fns_list}
 
-    def evaluate_schema_integration_phase(self, run_nr):
+    def evaluate_attribute_merging_phase(self, run_nr):
         predicted_column_mappings = {}
         predicted_mapped_attributes = {}
         eval_results = {}
@@ -693,8 +693,8 @@ class SchemaIntegrationEvaluation:
             assert(overall_tps + overall_fps == len([attribute for group in combined_predicted_mappings for table in combined_predicted_mappings[group] for attribute in combined_predicted_mappings[group][table]]))
 
             eval_results[integration_setup] = {}
-            eval_results[integration_setup]["schema_integration_phase_column_mappings"] = {"tps": overall_tps, "fps": overall_fps, "fns": overall_fns, "overall_recall": overall_tps/(overall_tps + overall_fns), "overall_precision": overall_tps/(overall_tps + overall_fps)}
-            eval_results[integration_setup]["schema_integration_phase_column_mappings"]["overall_f1"] = 2*eval_results[integration_setup]["schema_integration_phase_column_mappings"]["overall_precision"]*eval_results[integration_setup]["schema_integration_phase_column_mappings"]["overall_recall"] / (eval_results[integration_setup]["schema_integration_phase_column_mappings"]["overall_precision"] + eval_results[integration_setup]["schema_integration_phase_column_mappings"]["overall_recall"]) if (eval_results[integration_setup]["schema_integration_phase_column_mappings"]["overall_precision"] + eval_results[integration_setup]["schema_integration_phase_column_mappings"]["overall_recall"])>0 else 0
+            eval_results[integration_setup]["attribute_merging_phase_column_mappings"] = {"tps": overall_tps, "fps": overall_fps, "fns": overall_fns, "overall_recall": overall_tps/(overall_tps + overall_fns), "overall_precision": overall_tps/(overall_tps + overall_fps)}
+            eval_results[integration_setup]["attribute_merging_phase_column_mappings"]["overall_f1"] = 2*eval_results[integration_setup]["attribute_merging_phase_column_mappings"]["overall_precision"]*eval_results[integration_setup]["attribute_merging_phase_column_mappings"]["overall_recall"] / (eval_results[integration_setup]["attribute_merging_phase_column_mappings"]["overall_precision"] + eval_results[integration_setup]["attribute_merging_phase_column_mappings"]["overall_recall"]) if (eval_results[integration_setup]["attribute_merging_phase_column_mappings"]["overall_precision"] + eval_results[integration_setup]["attribute_merging_phase_column_mappings"]["overall_recall"])>0 else 0
 
 
         # Evaluate PREDICTED SCHEMA
@@ -703,23 +703,23 @@ class SchemaIntegrationEvaluation:
         integrated_schema_gt = {entity: {"attributes": self.gt_mappings[entity]["attributes"]} for entity in self.gt_mappings}
         integrated_attributes = [f"{entity}.{attr}" for entity in integrated_schema_gt for attr in integrated_schema_gt[entity]["attributes"]]
         
-        eval_results["integrated_schemas_refined"]["schema_integration_phase_schema"] = evaluate_schemas({"tab": integrated_schema_mapped}, {"tab": integrated_schema_gt}, entity_labels_to_evaluate, integrated_attributes)
+        eval_results["integrated_schemas_refined"]["attribute_merging_phase_schema"] = evaluate_schemas({"tab": integrated_schema_mapped}, {"tab": integrated_schema_gt}, entity_labels_to_evaluate, integrated_attributes)
 
         if "attribute_groups_with_no_removals" in self.predictions[run_nr]["parameters"] and len(self.predictions[run_nr]["parameters"]["attribute_groups_with_no_removals"]) > 0:
             integrated_schema_no_removals_mapped ={self.mapped_groups[entity]: {"attributes": list(set(predicted_mapped_attributes["integrated_schemas_unrefined"][entity].values()))} for entity in predicted_mapped_attributes["integrated_schemas_unrefined"]}
             if "schema_matching_phase" in self.sequence_of_phases:
-                eval_results["integrated_schemas_unrefined"]["schema_integration_phase_schema_no_removals"] = evaluate_schemas({"tab": integrated_schema_no_removals_mapped}, {"tab": integrated_schema_gt}, entity_labels_to_evaluate, integrated_attributes)
+                eval_results["integrated_schemas_unrefined"]["attribute_merging_phase_schema_no_removals"] = evaluate_schemas({"tab": integrated_schema_no_removals_mapped}, {"tab": integrated_schema_gt}, entity_labels_to_evaluate, integrated_attributes)
         
         # Save evaluation results
-        self.eval_results[run_nr]["schema_integration_phase"] = eval_results["integrated_schemas_refined"]["schema_integration_phase_column_mappings"]
-        # Save also for analysis all other schema integration results
-        self.eval_results[run_nr]["schema_integration_phase_extended"] = eval_results
+        self.eval_results[run_nr]["attribute_merging_phase"] = eval_results["integrated_schemas_refined"]["attribute_merging_phase_column_mappings"]
+        # Save also for analysis all other attribute merging results
+        self.eval_results[run_nr]["attribute_merging_phase_extended"] = eval_results
 
         # Save for average calculation
-        self.overall_metrics.setdefault("schema_integration_phase_schema", [])
-        self.overall_metrics["schema_integration_phase_schema"].append(eval_results["integrated_schemas_refined"]["schema_integration_phase_schema"]["eval_results_attributes"]["evaluation"])
-        self.overall_metrics.setdefault("schema_integration_phase_mappings", [])
-        self.overall_metrics["schema_integration_phase_mappings"].append(eval_results["integrated_schemas_refined"]["schema_integration_phase_column_mappings"])
+        self.overall_metrics.setdefault("attribute_merging_phase_schema", [])
+        self.overall_metrics["attribute_merging_phase_schema"].append(eval_results["integrated_schemas_refined"]["attribute_merging_phase_schema"]["eval_results_attributes"]["evaluation"])
+        self.overall_metrics.setdefault("attribute_merging_phase_mappings", [])
+        self.overall_metrics["attribute_merging_phase_mappings"].append(eval_results["integrated_schemas_refined"]["attribute_merging_phase_column_mappings"])
         self.predicted_mapped_column_mappings = predicted_column_mappings # mapped predicted column mappings
         self.predicted_mapped_attributes = predicted_mapped_attributes["integrated_schemas_refined"] # mapped predicted attributes
 
@@ -970,11 +970,10 @@ class SchemaIntegrationEvaluation:
 
     def run_evaluation(self):
         SEQUENCE_OF_STEPS_TO_EVALUATION = {
-            "normalization_phase": self.evaluate_detect_tables_phase,
-            "detect_tables_phase": self.evaluate_detect_tables_phase,
+            "table_splitting_phase": self.evaluate_table_splitting_phase,
             "schema_matching_phase": self.evaluate_schema_matching_phase,
             "grouping_phase": self.evaluate_grouping_phase,
-            "schema_integration_phase": self.evaluate_schema_integration_phase,
+            "attribute_merging_phase": self.evaluate_attribute_merging_phase,
             "final_integration_phase": self.evaluate_final_integration,
         }
         
@@ -1024,7 +1023,7 @@ class SchemaIntegrationEvaluation:
             sienna.save(eval_results_content, f"{self.log_file_name.replace('logs/', folder_name + '/')}_evaluation.json")
 
             # Phase names
-            phases = ['detect_tables_phase_entity', 'detect_tables_phase_attributes', 'schema_matching_phase', 'schema_matching_phase_removed', 'grouping_phase', 'schema_integration_phase_schema', "schema_integration_phase_mappings", 'final_integration_entity', 'final_integration_attributes', 'final_integration_mappings', 'schema_integration_phase_minimality_completeness', 'final_schema_minimality_completeness']
+            phases = ['table_splitting_phase_entity', 'table_splitting_phase_attributes', 'schema_matching_phase', 'schema_matching_phase_removed', 'grouping_phase', 'attribute_merging_phase_schema', "attribute_merging_phase_mappings", 'final_integration_entity', 'final_integration_attributes', 'final_integration_mappings', 'attribute_merging_phase_minimality_completeness', 'final_schema_minimality_completeness']
             
             key = "_".join([str(self.run_info[param]) for param in ["model_name", "prompt_name", "sequence_of_phases"]]) + f"_{self.self_consistency}"
 
